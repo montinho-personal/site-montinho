@@ -118,6 +118,7 @@ import { CALORIAS_CEIA_NATAL_POSTS } from "./calorias-ceia-de-natal";
 import { CREATINA_ENGORDA_POSTS } from "./creatina-engorda";
 import { UVA_PASSA_POSTS } from "./uva-passa-engorda";
 import { DOR_NO_TREINO_POSTS } from "./dor-no-treino";
+import { CONDOMINIOS_ALDEIA_POSTS } from "./condominios-aldeia-da-serra";
 import { DOCES_FIT_POSTS } from "./doces-fit";
 import { ALIMENTACAO_SAO_SILVESTRE_POSTS } from "./o-que-comer-antes-da-sao-silvestre";
 import { BLACK_FRIDAY_2026_POSTS } from "./black-friday-2026";
@@ -149,6 +150,7 @@ export const blogPosts = ([
   ...CREATINA_ENGORDA_POSTS,
   ...UVA_PASSA_POSTS,
   ...DOR_NO_TREINO_POSTS,
+  ...CONDOMINIOS_ALDEIA_POSTS,
   ...DOCES_FIT_POSTS,
   ...ALIMENTACAO_SAO_SILVESTRE_POSTS,
   ...BLACK_FRIDAY_2026_POSTS,
@@ -20032,30 +20034,20 @@ RIR 3 = parou com 3 reps sobrando.</p>
     slug: "personal-trainer-morada-dos-lagos",
     title: "Personal Trainer Morada dos Lagos Alphaville | Montinho Personal Trainer",
     metaTitle: "Personal Trainer Morada dos Lagos Alphaville",
-    metaDescription: "Personal trainer no Morada dos Lagos com protocolo individualizado e mais de 20 anos em Alphaville. Resultado real para moradores do condomínio em Carapicuíba.",
-    excerpt: "Personal trainer no Morada dos Lagos com método e atenção exclusiva. Treino individualizado para moradores do condomínio na região de Alphaville.",
+    metaDescription: "Personal trainer no Residencial Morada dos Lagos, na Aldeia da Serra (Barueri): treino em casa ou na academia do condomínio. Veja como funciona e fale no WhatsApp.",
+    excerpt: "Personal trainer para moradores do Morada dos Lagos, na Aldeia da Serra, em Barueri: onde o treino acontece, para quem faz sentido e como começar.",
     category: "Saúde",
     date: "2026-06-26",
+    updatedAt: "2026-11-04",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
-    tags: ["personal trainer", "Morada dos Lagos", "Alphaville", "Carapicuíba", "personal trainer condomínio"],
+    tags: ["personal trainer", "Morada dos Lagos", "Aldeia da Serra", "Barueri", "personal trainer condomínio"],
     faq: [
-      {
-        question: "Personal trainer atende no Morada dos Lagos?",
-        answer: "Sim. Atendo moradores do Morada dos Lagos com protocolo individualizado — presencialmente em academia parceira na região de Alphaville ou no modelo online. Mais de 20 anos de experiência na área.",
-      },
-      {
-        question: "Personal trainer no Morada dos Lagos trabalha com saúde e bem-estar?",
-        answer: "Saúde e bem-estar são pilares do atendimento. O treino de força bem prescrito é um dos maiores aliados da saúde metabólica, cardiovascular e funcional — independentemente da faixa etária. O ambiente do Morada dos Lagos favorece esse estilo de vida.",
-      },
-      {
-        question: "Personal trainer no Morada dos Lagos atende 60+?",
-        answer: "Sim. O treino para moradores acima de 60 anos tem especificidades — preservação de massa muscular, prevenção de quedas, saúde cardiovascular e mobilidade — que são pilares centrais do protocolo para essa faixa etária.",
-      },
-      {
-        question: "Como é o atendimento de personal trainer no Morada dos Lagos?",
-        answer: "Começa com uma avaliação completa de saúde, objetivos e limitações. Depois, protocolo individualizado, sessões com atenção exclusiva, suporte entre treinos e reavaliação mensal. Tudo com transparência de investimento antes de começar.",
-      },
+      { question: "O Morada dos Lagos fica em Barueri?", answer: "Sim. O Residencial Morada dos Lagos é um dos residenciais da Aldeia da Serra do lado de Barueri, perto do Centro Comercial Morada dos Lagos, na Avenida da Barra." },
+      { question: "Tem personal trainer no Morada dos Lagos?", answer: "Sim. Atendo moradores do Morada dos Lagos em casa ou na academia do condomínio, e também no modelo online. O formato é combinado antes, de acordo com a rotina e o espaço disponível." },
+      { question: "Dá para treinar bem na academia do condomínio?", answer: "Para a maioria das pessoas, sim. Com halteres, polia e um banco já dá para progredir por muitos meses, desde que o treino tenha um plano e a carga suba com o tempo." },
+      { question: "Personal trainer no Morada dos Lagos atende quem tem mais de 60 anos?", answer: "Sim. Depois dos 60, o treino de força ajuda a manter músculo, equilíbrio e independência. O começo é mais gradual e o acompanhamento de perto faz diferença na execução." },
+      { question: "Como começa o atendimento?", answer: "Com uma conversa sobre objetivo, rotina e histórico de dores. Depois vem a primeira sessão, onde vejo como você se movimenta, e o plano é ajustado a cada semana conforme a resposta." },
     ],
     faqSchema: [
       { question: "O que faz um personal trainer?", answer: "Um personal trainer avalia o condicionamento físico, define objetivos realistas, prescreve e supervisiona treinos individualizados e acompanha a evolução ao longo do tempo. O acompanhamento profissional aumenta significativamente a adesão e os resultados." },
@@ -20065,43 +20057,42 @@ RIR 3 = parou com 3 reps sobrando.</p>
       { question: "Como escolher um bom personal trainer?", answer: "Busque profissionais com graduação em Educação Física, experiência comprovada com o seu perfil de objetivo, metodologia baseada em evidências científicas e que priorizem sua individualidade. Avalie também comunicação, disponibilidade e compatibilidade de método." }
     ],
     content: `
-<h2>Personal trainer no Morada dos Lagos: saúde e vitalidade para um condomínio à beira dos lagos</h2>
-
-
+<h2>Personal trainer no Morada dos Lagos, na Aldeia da Serra</h2>
 
 <figure style="margin:2rem 0">
-  <img src="/blog-images/personal-trainer-morada-dos-lagos-infographic.svg" alt="Infográfico sobre Personal Trainer Morada dos Lagos Alphaville | Montinho Personal Trainer — Montinho Personal Trainer" title="Personal Trainer Morada dos Lagos Alphaville | Montinho Pers" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+  <img src="/blog-images/personal-trainer-morada-dos-lagos-infographic.svg" alt="Infográfico: personal trainer no Morada dos Lagos, Aldeia da Serra — Montinho Personal Trainer" title="Personal Trainer Morada dos Lagos — Montinho Personal Trainer" width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
-<p>O Morada dos Lagos tem uma identidade única na região de Alphaville — o ambiente com lagos e natureza cria uma atmosfera de tranquilidade que é parte do estilo de vida dos moradores. Quem mora aqui tem uma relação com bem-estar e qualidade de vida que vai além do óbvio — e o treino é parte natural dessa equação.</p>
 
-<p>Atendo moradores do Morada dos Lagos com protocolo individualizado há mais de 20 anos. O foco não é apenas estética — é saúde real, vitalidade e qualidade de movimento que sustenta o estilo de vida que o condomínio proporciona.</p>
+<p>O <strong>Residencial Morada dos Lagos</strong> é um dos residenciais da Aldeia da Serra do lado de <strong>Barueri</strong>, junto da Avenida da Barra, onde fica o Centro Comercial Morada dos Lagos. Atendo moradores daqui em casa ou na academia do condomínio. Para ver os outros residenciais e de que lado da divisa cada um fica, veja o <a href="/blog/condominios-aldeia-da-serra">guia dos condomínios da Aldeia da Serra</a>.</p>
 
-<h2>Saúde funcional no Morada dos Lagos: o que o treino de força entrega</h2>
+<h2>Onde o treino acontece</h2>
+<ul>
+<li><strong>Em casa:</strong> levo o que for preciso para a sessão, e o treino se adapta ao espaço que você tem.</li>
+<li><strong>Na academia do condomínio:</strong> é o formato mais comum. Com halteres, polia e banco já dá para treinar bem por muito tempo. Veja <a href="/blog/academia-em-condominio-como-aproveitar">como aproveitar a academia do condomínio</a>.</li>
+<li><strong>Online:</strong> para quem viaja ou tem agenda que muda toda semana, com acompanhamento à distância.</li>
+</ul>
+<p>Se você prefere uma academia comercial, a mais perto é a do Centro Comercial Morada dos Lagos. As opções da Aldeia e de Alphaville estão em <a href="/blog/academias-em-aldeia-da-serra">academias em Aldeia da Serra</a>. Atendimento em academia de fora depende das regras do local para personal externo e de combinação prévia.</p>
 
-<p>O morador do Morada dos Lagos que busca personal trainer tem, em muitos casos, uma motivação mais profunda do que estética: quer ter energia, disposição e capacidade funcional para aproveitar plenamente a vida. O treino de força bem prescrito é o que entrega isso.</p>
+<h2>O que muda quando alguém acompanha</h2>
+<p>Montar o treino é o começo. O trabalho é o que vem depois: você faltou uma semana e o plano precisa encaixar de novo, a carga parou de subir, um exercício incomoda o joelho e precisa ser trocado, a rotina mudou e o treino de uma hora virou de quarenta minutos. É aí que ter alguém olhando faz diferença, e é você e eu trabalhando juntos.</p>
 
-<p><a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer">Massa muscular é o que preserva o metabolismo, sustenta a mobilidade e protege as articulações ao longo do tempo</a> — e o treino de força é o único estímulo que a constrói e preserva de forma eficiente. E o treino de força é o único estímulo que constrói e preserva massa muscular de forma eficiente. Essa é a base do protocolo que aplico com moradores do Morada dos Lagos. Veja as modalidades na <a href="/consultoria">página de consultoria</a>.</p>
+<h2>Treino depois dos 60 anos</h2>
+<p>Depois dos 60, o treino de força é o que ajuda a manter músculo, equilíbrio e independência para o dia a dia. O começo é mais gradual, a execução é acompanhada de perto e a carga sobe no ritmo que o corpo responde. Veja também <a href="/blog/treino-funcional-para-idosos">treino funcional para idosos</a>.</p>
 
-<h2>Treino para 60+ no Morada dos Lagos</h2>
+<h2>Não se compare</h2>
+<p>Cada um tem a própria genética, rotina e história, com altos e baixos. O que funciona é um jeito de treinar que dê para seguir por anos, com aderência e progressão. Se quiser montar o seu comigo, fale pelo WhatsApp no fim da página ou veja <a href="/blog/personal-trainer-aldeia-da-serra">o atendimento na Aldeia da Serra</a>.</p>
 
-<p>O Morada dos Lagos tem uma comunidade com proporção significativa de moradores acima de 60 anos — e o treino para esse perfil tem especificidades que não aparecem no treino de jovens adultos. Preservação de massa muscular, prevenção de quedas, saúde cardiovascular e mobilidade são pilares que estruturam o protocolo para moradores nessa faixa etária.</p>
-
-<p>O resultado para moradores 60+ não é medido apenas no espelho — é medido na disposição para as atividades do dia a dia, na qualidade do sono, na independência física e na sensação de que o corpo está funcionando melhor. Veja resultados de alunos na <a href="/resultados">página de resultados</a>.</p>
-
-<h2>20 anos de experiência regional no atendimento no Morada dos Lagos</h2>
-
-<p>Trabalho na região de Alphaville e Tamboré há mais de 20 anos. Minha própria trajetória de superação física me dá uma perspectiva que va além da teoria. Leia na <a href="/minha-historia">minha história</a> e acesse a <a href="/personal-trainer-alphaville">página de personal trainer em Alphaville</a> para conhecer mais sobre o atendimento na região.</p>
-
-<p>Além do acompanhamento presencial e online, compartilho dicas práticas de treino e emagrecimento no meu canal. Assista ao Short abaixo para conhecer um pouco do meu trabalho:</p>
+<p>Além do acompanhamento presencial e online, compartilho dicas práticas de treino no meu canal:</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Short do canal — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
-<h3>Leia Também</h3>
+<h3>Leia também</h3>
 <ul>
-<li><a href="/blog/otimizar-sono-para-recuperacao-muscular">A Relação Entre Sono e Emagrecimento</a></li>
-<li><a href="/blog/cortisol-e-treino">Estresse, Cortisol e Ganho de Peso</a></li>
-<li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">Hábitos Saudáveis: Como Criar Consistência</a></li>
+<li><a href="/blog/condominios-aldeia-da-serra">Condomínios em Aldeia da Serra</a></li>
+<li><a href="/blog/personal-trainer-a-domicilio-aldeia-da-serra">Personal trainer a domicílio na Aldeia da Serra</a></li>
+<li><a href="/blog/academias-em-aldeia-da-serra">Academias em Aldeia da Serra</a></li>
 </ul>
 
+<p><small>Localização do residencial: anúncios de imóveis do Residencial Morada dos Lagos em Barueri (Loft e Casa Mineira), consultados em 04/11/2026.</small></p>
 `,
   },
 
@@ -20309,15 +20300,15 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Condomínios atendidos na Aldeia da Serra</h2>
 
-<p>A Aldeia da Serra é formada por condomínios residenciais consolidados, cercados de mata preservada — entre eles Morada dos Pássaros, Morada dos Pinheiros e Morada dos Lagos, além dos demais residenciais do entorno. Em todos, o formato mais comum é o atendimento residencial ou no espaço fitness do próprio condomínio: sem deslocamento, com privacidade e com o protocolo adaptado ao equipamento disponível.</p>
+<p>A Aldeia da Serra é formada por condomínios residenciais consolidados, cercados de mata preservada — entre eles Morada dos Pássaros, Morada dos Pinheiros e Morada dos Lagos, além dos demais residenciais do entorno. Veja quais são e de que lado da divisa cada um fica no <a href="/blog/condominios-aldeia-da-serra">guia dos condomínios da Aldeia da Serra</a>. Em todos, o formato mais comum é o atendimento residencial ou no espaço fitness do próprio condomínio: sem deslocamento, com privacidade e com o protocolo adaptado ao equipamento disponível.</p>
 
 <h2>Academias da região para quem prefere estrutura completa</h2>
 
-<p>Para moradores que preferem treinar com mais variedade de equipamentos, acompanho alunos nas principais academias da região de Alphaville, a poucos minutos da Aldeia da Serra — como a <a href="/blog/smart-fit-alphaville">Smart Fit</a>, a <a href="/blog/ironberg-alphaville">Ironberg</a> e a <a href="/blog/bodytech-alphaville">Bodytech</a>. Se você já tem matrícula em alguma delas, aproveitamos a estrutura que você já paga — eu me desloco até lá.</p>
+<p>Para quem prefere treinar com mais variedade de equipamentos, Alphaville fica a poucos minutos da Aldeia da Serra e concentra as academias de rede, como a <a href="/blog/smart-fit-alphaville">Smart Fit</a>, a <a href="/blog/ironberg-alphaville">Ironberg</a> e a <a href="/blog/bodytech-alphaville">Bodytech</a>. Atender dentro delas depende das regras de cada academia para personal externo e de combinação prévia; o atendimento confirmado é em casa, nos condomínios e na Arena 18.</p>
 
 <figure style="margin:2rem 0;max-width:520px;margin-left:auto;margin-right:auto">
   <img src="/blog-images/treinador-aldeia-da-serra.jpg" alt="Treinador na Aldeia da Serra: Montinho Personal Trainer em treino de musculação em academia da região de Alphaville" title="Treinador Aldeia da Serra — Montinho Personal Trainer" width="1200" height="2131" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
-  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Acompanho alunos da Aldeia da Serra nas academias da região de Alphaville — ou no conforto do seu condomínio.</figcaption>
+  <figcaption style="text-align:center;color:#9ca3af;font-size:0.875rem;margin-top:0.5rem">Na Aldeia da Serra, o treino acontece em casa ou na academia do condomínio.</figcaption>
 </figure>
 
 <h2>Perfil de quem treina comigo na Aldeia da Serra</h2>

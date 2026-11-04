@@ -122,7 +122,7 @@ export const GUIAS_DE_ACADEMIA: GrupoRegiao[] = [
  */
 export const ONDE_ATENDO: GrupoRegiao[] = [
   {
-    titulo: "Condomínios de Alphaville e Tamboré",
+    titulo: "Condomínios de Alphaville, Tamboré e Aldeia da Serra",
     descricao:
       "Atendimento na academia do próprio condomínio, com o equipamento que existe lá dentro.",
     slugs: [
