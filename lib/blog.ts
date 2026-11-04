@@ -15070,6 +15070,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
     metaDescription: "Sente dor no ombro durante o treino? Entenda as causas, quais exercícios evitar e como adaptar sua musculação com segurança. Orientação do Personal Montinho.",
     excerpt: "A dor no ombro é uma das queixas mais comuns na musculação. Entenda as causas, os erros que pioram o quadro e como adaptar o treino para continuar evoluindo com segurança.",
     faqSchema: [
+      { question: "Qual pegada do supino poupa o ombro?", answer: "Uma pegada um pouco mais fechada. Uma revisão de 2007 indica que pegadas de até cerca de 1,5 vez a largura dos ombros parecem reduzir o risco no ombro, com pouca perda de carga. Descer só até onde não dói e trocar a barra por halteres também costumam aliviar." },
+      { question: "Mudar a pegada ou a amplitude alivia a dor no ombro no supino?", answer: "Muitas vezes, sim. Fechar um pouco a pegada, não descer tanto ou usar halteres são os ajustes mais comuns. Dor que continua mesmo com os ajustes precisa de avaliação." },
       { question: "O que faz um personal trainer?", answer: "Um personal trainer avalia o condicionamento físico, define objetivos realistas, prescreve e supervisiona treinos individualizados e acompanha a evolução ao longo do tempo. O acompanhamento profissional aumenta significativamente a adesão e os resultados." },
       { question: "Quantas sessões por semana com personal trainer são ideais?", answer: "Para iniciantes, 3 sessões semanais com personal trainer são ideais para aprender a técnica correta e criar consistência. Alunos mais avançados podem treinar com frequência maior, usando o personal para sessões-chave e monitoramento da periodização." },
       { question: "Personal trainer presencial ou online: qual escolher?", answer: "O personal presencial oferece correção de execução em tempo real, ideal para iniciantes e quem tem histórico de lesões. O online é mais flexível e acessível. A escolha depende do objetivo, experiência prévia e disponibilidade de horário." },
@@ -15269,13 +15271,18 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><a href="/blog/dor-lombar-na-musculacao">Dor Lombar na Musculação: Causas e Como Treinar com Segurança</a></li>
   <li><a href="/blog/academia-para-iniciantes-alphaville">Treino para Iniciantes: Por Onde Começar em Alphaville</a></li>
 </ul>
-    `,
+    
+<p><small>Fontes das perguntas sobre pegada no supino: <a href="https://doi.org/10.1519/00126548-200710000-00001" target="_blank" rel="noopener noreferrer">Green e Comfort, 2007, Strength Cond J</a>; <a href="https://doi.org/10.1519/JSC.0b013e3181dc4330" target="_blank" rel="noopener noreferrer">Kolber et al., 2010, J Strength Cond Res</a>.</small></p>
+`,
     category: "Lesões",
     date: "2026-06-26",
+    updatedAt: "2026-11-04",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["dor no ombro", "manguito rotador", "lesão no ombro", "treino seguro", "síndrome do impacto", "musculação", "personal trainer alphaville", "prevenção de lesões"],
     faq: [
+      { question: "Qual pegada do supino poupa o ombro?", answer: "Uma pegada um pouco mais fechada. Uma revisão de 2007 indica que pegadas de até cerca de 1,5 vez a largura dos ombros parecem reduzir o risco no ombro, com pouca perda de carga. Descer só até onde não dói e trocar a barra por halteres também costumam aliviar." },
+      { question: "Mudar a pegada ou a amplitude alivia a dor no ombro no supino?", answer: "Muitas vezes, sim. Fechar um pouco a pegada, não descer tanto ou usar halteres são os ajustes mais comuns. Dor que continua mesmo com os ajustes precisa de avaliação." },
       {
         question: "Devo parar de treinar com dor no ombro?",
         answer: "Não necessariamente. Dor leve (até 3 em uma escala de 10) durante exercícios adaptados geralmente não requer pausa total. O ideal é identificar quais movimentos provocam dor, substituí-los por variações mais seguras e adicionar exercícios de fortalecimento do manguito rotador. Dor acima de 5/10, que piora durante o exercício ou que acompanha formigamento no braço exige avaliação médica antes de continuar."
@@ -22398,11 +22405,13 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "O levantamento terra é o exercício que mais desenvolve força total — e o que mais lesiona quando executado errado. Aprenda a fazer com segurança.",
     category: "Treinamento",
     date: "2026-06-27",
-    updatedAt: "2026-08-27",
+    updatedAt: "2026-11-04",
     readTime: "9 min",
     author: "Montinho",
     tags: ["levantamento terra", "deadlift", "técnica", "posterior de coxa", "lombar"],
     faqSchema: [
+      { question: "Curvar a coluna no levantamento terra sempre machuca?", answer: "Não. A coluna foi feita para dobrar, e uma meta-análise de 2020 não encontrou relação entre mais flexão da lombar ao levantar e o aparecimento ou a persistência da dor lombar (com evidência de baixa qualidade). O risco aparece quando a carga é maior do que o corpo está preparado para aguentar. Com dor lombar no momento, vale evitar cargas altas com a coluna curvada até melhorar." },
+      { question: "Sentir dor na lombar no levantamento terra é normal?", answer: "Cansaço na lombar é esperado: o terra trabalha muito essa região. Dor, não. Ela é sinal para baixar a carga e rever a execução. Dor que desce para a perna ou não melhora em alguns dias pede avaliação." },
       { question: "Quais são os principais benefícios de Como Fazer Levantamento Terra Corretamente?", answer: "Os benefícios incluem melhora da composição corporal, aumento da força e condicionamento, melhora da saúde metabólica e bem-estar geral. Resultados consistentes dependem de treino planejado, nutrição adequada e recuperação suficiente." },
       { question: "Com que frequência devo praticar para ter resultados?", answer: "A frequência ideal varia conforme o objetivo e condicionamento atual. Para iniciantes, 3 vezes por semana já promovem adaptações significativas. Para resultados avançados, 4 a 5 sessões semanais com periodização adequada são recomendadas." },
       { question: "Quanto tempo leva para ver resultados?", answer: "Adaptações neuromusculares (força percebida) aparecem nas primeiras 2 a 4 semanas. Mudanças visíveis na composição corporal geralmente são perceptíveis entre 6 e 12 semanas de prática consistente com nutrição alinhada ao objetivo." },
@@ -22494,8 +22503,12 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Para visualizar a técnica passo a passo, veja a demonstração do Leandro Twin:</p>
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/50AkPBZwACQ?rel=0" title="Como fazer levantamento terra — Leandro Twin — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
+
+<p><small>Fonte da pergunta sobre curvar a coluna: <a href="https://doi.org/10.2519/jospt.2020.9218" target="_blank" rel="noopener noreferrer">Saraceni et al., 2020, J Orthop Sports Phys Ther</a>.</small></p>
 `,
     faq: [
+      { question: "Curvar a coluna no levantamento terra sempre machuca?", answer: "Não. A coluna foi feita para dobrar, e uma meta-análise de 2020 não encontrou relação entre mais flexão da lombar ao levantar e o aparecimento ou a persistência da dor lombar (com evidência de baixa qualidade). O risco aparece quando a carga é maior do que o corpo está preparado para aguentar. Com dor lombar no momento, vale evitar cargas altas com a coluna curvada até melhorar." },
+      { question: "Sentir dor na lombar no levantamento terra é normal?", answer: "Cansaço na lombar é esperado: o terra trabalha muito essa região. Dor, não. Ela é sinal para baixar a carga e rever a execução. Dor que desce para a perna ou não melhora em alguns dias pede avaliação." },
       {
         question: "Levantamento terra faz mal para a coluna?",
         answer: "Com técnica adequada, não. O levantamento terra fortalece a musculatura paravertebral e os glúteos — os principais protetores da coluna. O risco aparece quando a técnica é inadequada, principalmente com coluna flexionada sob carga.",
@@ -38079,10 +38092,12 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
   excerpt: "O desenvolvimento é o exercício composto mais eficaz para ombros — e um dos mais mal executados. Técnica ruim limita o resultado e sobrecarrega o ombro. Este guia corrige isso.",
   category: "Treinamento",
   date: "2026-06-27",
+  updatedAt: "2026-11-04",
   readTime: "8 min",
   author: "Montinho",
   tags: ["desenvolvimento de ombros", "como fazer desenvolvimento", "shoulder press", "treino ombros", "técnica desenvolvimento"],
     faqSchema: [
+      { question: "Desenvolvimento por trás da cabeça é proibido?", answer: "Não é proibido para todo mundo. Quem tem boa mobilidade no ombro faz sem dor; quem sente incômodo ou tem pouca mobilidade troca pelo desenvolvimento pela frente, que treina o mesmo músculo. Luxação ou instabilidade no ombro pedem evitar." },
       { question: "Posso treinar com dor?", answer: "Depende do tipo de dor. Dor muscular tardia (DOMS) não impede o treino, mas lesões agudas exigem avaliação profissional antes de retornar. O princípio é: se a dor piora durante o movimento, pare e procure avaliação médica ou fisioterápica." },
       { question: "Como prevenir lesões na musculação?", answer: "Progressão gradual de cargas, técnica correta de execução, aquecimento adequado, volume de treino periodizado e sono suficiente são os principais fatores preventivos. A maioria das lesões na academia ocorre por progressão excessivamente rápida." },
       { question: "Devo alongar antes ou depois do treino?", answer: "O alongamento estático antes do treino pode reduzir a força e potência imediatas. O aquecimento ideal pré-treino é dinâmico (mobilidade articular e ativação muscular). O alongamento estático é mais indicado no pós-treino para recuperação e mobilidade." },
@@ -38218,8 +38233,11 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CEI_jdo6e3U?rel=0" title="Treino de ombro completo — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
+
+<p><small>Fonte das perguntas sobre desenvolvimento por trás: <a href="https://doi.org/10.1519/JSC.0b013e3181dc4330" target="_blank" rel="noopener noreferrer">Kolber et al., 2010, J Strength Cond Res</a>.</small></p>
 `,
   faq: [
+      { question: "Desenvolvimento por trás da cabeça é proibido?", answer: "Não é proibido para todo mundo. Quem tem boa mobilidade no ombro faz sem dor; quem sente incômodo ou tem pouca mobilidade troca pelo desenvolvimento pela frente, que treina o mesmo músculo. Luxação ou instabilidade no ombro pedem evitar." },
       {
         question: "Como fazer desenvolvimento de ombros corretamente?",
         answer: "Sentado com encosto, halteres ao lado das orelhas na altura dos ombros, cotovelos a 90° alinhados com o corpo. Empurre para cima exalando, sem travar o cotovelo no topo. Desça controlado até os cotovelos voltarem a 90°. Evite arco lombar excessivo e nunca faça atrás da cabeça — posição que sobrecarrega perigosamente o manguito rotador.",
@@ -38230,7 +38248,7 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
       },
       {
         question: "Posso fazer desenvolvimento atrás da cabeça?",
-        answer: "Não é recomendado. O desenvolvimento atrás da cabeça força o ombro em rotação externa extrema com carga sobre a articulação — posição associada a lesão do manguito rotador e síndrome do impacto subacromial. O desenvolvimento pela frente (ou Arnold press) é igualmente eficaz e significativamente mais seguro.",
+        answer: "Depende. Quem tem boa mobilidade no ombro costuma fazer sem problema. Quem sente dor, ou não consegue levar a barra para trás sem forçar, tem opções pela frente que treinam o mesmo músculo, como o desenvolvimento pela frente e o Arnold press. Uma revisão de 2010 sobre lesões de ombro na musculação sugere cuidado com posições extremas, como por trás da cabeça, em quem tem pouca mobilidade. Quem já teve luxação ou instabilidade no ombro deve evitar.",
       },
       {
         question: "Quantas vezes por semana fazer desenvolvimento?",
