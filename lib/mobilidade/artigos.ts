@@ -24,6 +24,11 @@ export interface ConviteArtigo {
 }
 
 export const ARTIGOS_COM_TESTE_MOBILIDADE: Record<string, ConviteArtigo> = {
+  "ombro-estalando-e-normal": {
+    texto:
+      "Um ombro que não sobe bem acima da cabeça faz a lombar e o resto do corpo compensarem nos exercícios por cima da cabeça. O teste de ombro na parede mede isso em um minuto e entra no protocolo, sem dizer de onde vem o estalo, o que nenhum teste online consegue.",
+    rotulo: "Testar a mobilidade do meu ombro",
+  },
   "mobilidade-articular-pre-treino": {
     texto:
       "Antes de escolher exercícios de mobilidade, vale saber quais regiões realmente pedem trabalho no seu caso. Cinco testes simples respondem isso em cinco minutos — e o protocolo que sai tem dois ou três exercícios, não uma lista.",

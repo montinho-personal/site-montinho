@@ -59,6 +59,9 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
   "brasileiros-ufc-vegas-124": "Hub de quem luta e contra quem: o leitor sai com nomes e horários, sem conta na cabeça; a calculadora fica no artigo do evento.",
   "resultado-ufc-vegas-122": "Página de resultado: o leitor sai sabendo quem ganhou, sem conta na cabeça; a calculadora de luta fica no artigo do card.",
   "resultado-ufc-vegas-123": "Página de resultado: o leitor sai sabendo quem ganhou, sem conta na cabeça; a calculadora de luta fica no artigo do card.",
+  // Grupo "dor no treino" (lib/dor-no-treino.ts, 04/11/2026), das perguntas de execução e dor do app.
+  "anti-inflamatorio-atrapalha-hipertrofia": "Explica o efeito do remédio no ganho de músculo: o leitor sai com uma decisão (não usar remédio como rotina do treino), não com uma conta; nenhuma ferramenta do site trata de remédio.",
+  "treinar-com-dor": "Ajuda a separar dor muscular, dor na articulação e sinal de alerta: o leitor sai com uma decisão de treino, não com uma conta; o Substituidor de Exercícios vai por link no texto.",
   "o-que-comer-a-noite-para-nao-engordar": "O leitor sai com uma escolha de janta e de lanche, não com uma conta; o Beliscômetro e o Monte seu Cardápio ficam linkados no texto.",
   // Cluster miostatina (lib/miostatina.ts): remédio experimental. O registro da
   // calculadora GLP-1 está no teto de 8; a ferramenta entra como link no texto.

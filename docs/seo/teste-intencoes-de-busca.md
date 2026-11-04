@@ -1437,3 +1437,11 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `creatina-engorda` (novo): fatos de Antonio et al. 2021 (JISSN, PMID 33557850) e do posicionamento da ISSN de 2017 (PMID 28615996). Quanto o peso sobe na saturação não entra em número (sem cifra confirmada na fonte primária). Não canibaliza `creatina-retencao-de-liquido-mito`: esse fica com o inchaço e a água em profundidade, e os dois se linkam. Calculadora de Creatina embutida.
 - `uva-passa-engorda` (novo): 299 kcal por 100 g, o mesmo valor em duas bases (tabela do IBGE na Tabela TACO Online e FatSecret Brasil); a TACO não tem uva-passa. Fibra e açúcar ficaram de fora, sem valor confirmado. Link para a Calculadora de Caminhada.
 - Temas avaliados e não criados: farofa, maionese e chester ou peru (já têm seção em `calorias-da-ceia-de-natal`), cerveja zero (já respondida em `cerveja-engorda`), lentilha e romã no Ano-Novo (intenção de simpatia, fora do tema).
+
+## 2026-11-04 — Sem prints: grupo "dor no treino" (das perguntas do app)
+
+- Origem: as 27 perguntas de execução e dor do app (Montinho Desbloqueia, d116 a d142) e 7 de outras categorias que tocam em dor. Cruzando com o acervo (slug e título normalizados), quase tudo já tinha artigo. Três lacunas viraram artigo, a pedido do Montinho, antes dos prints:
+  - `ombro-estalando-e-normal`: "ombro estalando" 1.600/mês + "estalo no ombro" 320 (Planejador do Google Ads). Não há estudo que meça ombro estalando sem dor; o texto diz isso e usa a pista do joelho (Silva 2018) e a revisão de 2025 sobre exames do manguito em ombros sem dor. Teste de Mobilidade com convite próprio (teste de ombro na parede).
+  - `anti-inflamatorio-atrapalha-hipertrofia`: 260/mês + 30 ("tomar anti-inflamatório antes do treino"). Lundberg e Howatson 2018 e Lilja 2018 (dose alta, adultos jovens). Não indica remédio. Sem ferramenta (registrado em ARTIGOS_SEM_FERRAMENTA).
+  - `treinar-com-dor`: volume baixo (50 + 20), mas é a página central do grupo e linka todos os artigos de dor do site. Smith 2017 (BJSM). Substituidor de Exercícios por link; registrado em ARTIGOS_SEM_FERRAMENTA.
+- Ficam para reforço em artigos existentes (pergunta frequente com a fonte do app, 2 PRs de 4): posição dos pés e olhar para cima no agachamento, extensora, afundo, desenvolvimento por trás, pegada no supino, cinto, curvar a coluna no terra.
