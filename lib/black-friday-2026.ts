@@ -273,6 +273,7 @@ export const BLACK_FRIDAY_2026_POSTS: BlogPost[] = [
       "Para que serve cada acessório de musculação, quando ajuda de verdade e quando só atrapalha.",
     category: "Treinamento",
     date: "2026-10-03",
+    updatedAt: "2026-11-04",
     readTime: "5 min",
     author: "Montinho Personal Trainer",
     tags: ["strap", "cinturão de musculação", "luva de academia", "munhequeira", "acessórios de academia"],
@@ -300,8 +301,11 @@ export const BLACK_FRIDAY_2026_POSTS: BlogPost[] = [
 
 <h2>O equipamento não treina por você</h2>
 <p>Nenhuma compra substitui o treino feito com constância. Não compare o seu com o de ninguém: cada um tem a própria genética, rotina e história. Se quiser ajuda para montar um plano que dá para seguir, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<p><small>Fonte da pergunta sobre o cinto: <a href="https://doi.org/10.1249/00005768-199002000-00019" target="_blank" rel="noopener noreferrer">Lander et al., 1990, Med Sci Sports Exerc</a>.</small></p>
 `,
     faq: [
+      { question: "O cinto de musculação protege a coluna de lesão?", answer: "Não de tudo. O cinto ajuda a firmar o tronco nas cargas altas: um estudo com agachamento a 90% da carga máxima mostrou que ele aumentou a pressão abdominal e reduziu as forças estimadas na lombar. Mas ele não substitui a técnica, não é necessário em todo treino, e não achamos estudo mostrando que o cinto previne lesões." },
       { question: "Strap faz mal?", answer: "Não, mas usado em tudo impede a pegada de evoluir. Use nas séries pesadas de puxadas, remadas e terra." },
       { question: "Quando usar cinturão de musculação?", answer: "Em agachamento e levantamento terra pesados, depois de aprender a técnica e a travar o tronco. Em cargas leves, não é necessário." },
       { question: "Luva de academia vale a pena?", answer: "Vale se você quer proteger a mão de calos. Se a luva deixa a pegada escorregadia, magnésio (giz) costuma funcionar melhor." },
