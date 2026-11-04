@@ -48,6 +48,9 @@ export const DOR_NO_TREINO_POSTS: BlogPost[] = [
     author: "Montinho",
     tags: ["ombro estalando", "estalo no ombro", "dor no ombro", "musculação", "mobilidade"],
     faq: [
+      { question: "Ombro estalando no supino, na puxada ou na remada: o que fazer?", answer: "Sem dor, siga. Com dor: no supino, feche um pouco a pegada e desça até onde não dói; na puxada, puxe pela frente, até o queixo, sem levar a barra atrás da cabeça; na remada, controle a volta e não deixe o ombro cair para a frente no fim do movimento." },
+      { question: "Quais exercícios ajudam o ombro estalando?", answer: "Não existe exercício que acabe com o estalo. O que costuma deixar o ombro mais confortável é fortalecer costas e manguito rotador (remadas, rotação externa com elástico, puxada no rosto com corda) e aquecer o ombro antes dos exercícios por cima da cabeça." },
+      { question: "Ombro estalando depois de luxação, queda ou cirurgia: é normal?", answer: "Nesses casos, não dá para tratar como barulho comum. Depois de luxação, queda ou cirurgia, o estalo deve ser avaliado por quem acompanha a recuperação, principalmente se vier com dor, fraqueza ou sensação de que o ombro sai do lugar." },
       { question: "Ombro estalando: como resolver?", answer: "Sem dor, não há o que resolver: é barulho. Com dor, ajuste o exercício que provoca (carga, amplitude, pegada), aqueça o ombro antes e fortaleça costas e manguito rotador. Se a dor não melhora em uma ou duas semanas com os ajustes, procure avaliação." },
       { question: "Ombro estalando quando levanta o braço ou ao girar: é normal?", answer: "Se não dói, costuma ser só barulho do movimento. Se dói ao levantar o braço ou ao girar, principalmente acima da cabeça, ou se a dor aparece no dia a dia, como para pegar algo no alto, vale avaliação." },
       { question: "Ombro estalando e dor no braço ou na escápula: o que pode ser?", answer: "Não dá para saber sem avaliação. Dor que desce pelo braço, formigamento, fraqueza ou dor na escápula que não passa com os ajustes no treino são motivos para procurar um profissional de saúde." },
@@ -129,6 +132,24 @@ export const DOR_NO_TREINO_POSTS: BlogPost[] = [
 <li><strong>Observe uma ou duas semanas.</strong> Melhorou? Siga e aumente aos poucos. Não melhorou? Procure avaliação.</li>
 </ol>
 
+<h2>Ombro estalando em cada exercício</h2>
+<table>
+<thead><tr><th>Exercício</th><th>Ajuste quando o estalo vem com incômodo</th></tr></thead>
+<tbody>
+<tr><td>Supino reto e inclinado</td><td>Pegada um pouco mais fechada, descer até onde não dói, halteres em vez de barra</td></tr>
+<tr><td>Desenvolvimento</td><td>Pela frente da cabeça, amplitude menor no começo</td></tr>
+<tr><td>Elevação lateral e frontal</td><td>Carga menor, subir até a altura do ombro, braço um pouco à frente do corpo</td></tr>
+<tr><td>Flexão de braço</td><td>Mãos um pouco mais fechadas, cotovelos menos abertos, descer até onde não dói</td></tr>
+<tr><td>Barra fixa, puxada e pulley</td><td>Puxar pela frente, até o queixo, sem levar a barra atrás da cabeça; controlar a subida</td></tr>
+<tr><td>Remada</td><td>Controlar a volta, sem deixar o ombro cair para a frente no fim</td></tr>
+<tr><td>Crucifixo e voador</td><td>Abrir menos os braços na parte de baixo do movimento</td></tr>
+</tbody>
+</table>
+<p>Sem dor, nenhum desses ajustes é obrigatório: o estalo sozinho não pede mudança. Para a execução de cada um, veja <a href="/blog/como-fazer-supino-reto">supino reto</a>, <a href="/blog/como-fazer-pulldown-puxada-frontal">puxada frontal</a>, <a href="/blog/como-fazer-remada-baixa">remada baixa</a>, <a href="/blog/flexao-de-braco-como-fazer-e-evoluir">flexão de braço</a> e <a href="/blog/como-fazer-crucifixo-halteres">crucifixo com halteres</a>.</p>
+
+<h2>Exercícios que ajudam o ombro que estala</h2>
+<p>Não existe exercício que acabe com o estalo. O que costuma deixar o ombro mais confortável é equilibrar o treino: fortalecer as costas e o manguito rotador com remadas, rotação externa com elástico e puxada no rosto com corda, e aquecer o ombro antes dos exercícios por cima da cabeça. Treino de ombro não é só empurrar.</p>
+
 <h2>Ombro estalando ao levantar o braço, ao girar ou na elevação lateral</h2>
 <p>Levantar o braço acima da cabeça e girar são os movimentos em que o ombro mais trabalha, e onde o barulho mais aparece. Sem dor, siga normalmente. Com dor, na elevação lateral, pare na altura do ombro, que já trabalha bem o músculo; no desenvolvimento, faça pela frente da cabeça. Se a dor aparece também no dia a dia, como para pegar algo no alto ou vestir uma blusa, vale avaliação. Para quem já tem diagnóstico de bursite, veja <a href="/blog/bursite-no-ombro">bursite no ombro</a>.</p>
 
@@ -142,6 +163,7 @@ export const DOR_NO_TREINO_POSTS: BlogPost[] = [
 <li>perda de força para levantar o braço;</li>
 <li>sensação de que o ombro sai do lugar, ou travamento;</li>
 <li>inchaço, ou começo depois de uma queda ou pancada;</li>
+<li>estalo novo depois de luxação ou cirurgia no ombro;</li>
 <li>dor à noite que acorda você.</li>
 </ul>
 <p>Nenhum artigo e nenhum teste online conseguem dizer a causa de uma dor. O que dá para fazer aqui é separar o que é comum do que pede alguém olhando de perto. Para o caso de dor no ombro durante o treino, veja <a href="/blog/dor-no-ombro-ao-treinar">dor no ombro ao treinar</a>. E remédio é decisão do médico: o uso frequente de anti-inflamatório pode atrapalhar o ganho de músculo, como explica <a href="/blog/anti-inflamatorio-atrapalha-hipertrofia">anti-inflamatório atrapalha a hipertrofia?</a>.</p>
@@ -291,6 +313,14 @@ ${NAO_SE_COMPARE}
     author: "Montinho",
     tags: ["treinar com dor", "dor muscular", "dor na articulação", "lesão", "musculação"],
     faq: [
+      { question: "Treinar com dor ou descansar?", answer: "Dor muscular leve do treino anterior: treine, mais leve ou outro músculo. Incômodo leve numa articulação que não piora: treine com ajustes. Dor forte, que piora, com inchaço, formigamento ou depois de um trauma: descanse do exercício que dói e procure avaliação." },
+      { question: "Como saber se a dor é no músculo ou no nervo?", answer: "A dor no músculo fica no músculo que trabalhou e melhora com movimento leve. Dor de nervo costuma descer pelo braço ou pela perna e vir com formigamento, dormência, sensação de choque ou fraqueza. Esses sinais pedem avaliação antes de treinar a região." },
+      { question: "Quando a dor muscular é preocupante?", answer: "Quando é desproporcional ao treino, não melhora depois de alguns dias, vem com inchaço forte, roxo, fraqueza ou urina escura, ou começou com uma dor aguda e pontual no meio de uma série. Nesses casos, procure um profissional de saúde." },
+      { question: "Como saber se machuquei o músculo na academia?", answer: "Lesão costuma dar dor aguda e localizada na hora, às vezes com uma sensação de puxão ou estalo, e depois dor para contrair ou alongar aquele músculo, inchaço ou roxo. A dor muscular comum aparece um ou dois dias depois e é espalhada pelo músculo." },
+      { question: "Pode treinar glúteo com dor no quadríceps, ou outro músculo dolorido?", answer: "Pode. A dor muscular de um grupo não impede treinar outro. Só evite carregar pesado o músculo que está muito dolorido até ele melhorar." },
+      { question: "Posso treinar com dor nas costas ou na lombar?", answer: "Muitas vezes, sim, com ajustes: carga menor, exercícios com a coluna apoiada e sem dor no movimento. Exercício ajuda a dor lombar crônica. Dor que desce para a perna, formigamento ou fraqueza pedem avaliação antes." },
+      { question: "Posso treinar com dor no ombro?", answer: "Muitas vezes, sim, ajustando pegada, amplitude e carga, e trocando o exercício que dói. Dor forte, perda de força ou ombro que sai do lugar pedem avaliação antes de treinar." },
+      { question: "Dá para treinar com dor de cabeça, de garganta ou gripado?", answer: "Essa não é dor de treino, e o artigo não trata dela. Com febre ou sintomas pelo corpo, o mais prudente é descansar. Dor de cabeça forte, súbita ou diferente do habitual pede atendimento médico, sem treinar." },
       { question: "Pode treinar o mesmo músculo dolorido?", answer: "Pode, se a dor for a muscular do dia seguinte e leve a moderada. Treine esse músculo mais leve ou com menos séries, ou treine outro grupo e deixe ele para o próximo treino. Se a dor muda o jeito de fazer o movimento, espere mais um dia." },
       { question: "Comecei a malhar e estou com muita dor. O que fazer?", answer: "É comum nas primeiras semanas: o corpo ainda não está acostumado. Não pare, mas diminua o volume (menos séries), mantenha o movimento leve nos dias seguintes e aumente aos poucos. Dor muscular desproporcional, inchaço forte, fraqueza ou urina escura depois do treino pedem atendimento médico no mesmo dia." },
       { question: "Malhei perna e não consigo andar: o que fazer?", answer: "Costuma ser a dor muscular do dia seguinte, depois de um treino de perna novo ou mais pesado. Caminhar devagar e fazer movimento leve ajudam mais do que ficar parado. Se a dor for desproporcional, com inchaço forte, fraqueza ou urina escura, procure atendimento médico." },
@@ -385,13 +415,33 @@ ${NAO_SE_COMPARE}
 </ul>
 <p>Se um exercício doeu, não precisa trocar para sempre. Muitas vezes, depois de algumas semanas com carga e amplitude ajustadas, ele volta ao treino normal.</p>
 
-<h2>Dor no joelho, no ombro e na lombar</h2>
+<h2>Treinar com dor ou descansar?</h2>
+<p>A resposta curta, pelo tipo de dor:</p>
+<ul>
+<li><strong>Dor muscular do treino anterior:</strong> treine. Mais leve no músculo dolorido, ou outro músculo. Dá para treinar glúteo com o quadríceps dolorido, por exemplo.</li>
+<li><strong>Incômodo leve numa articulação, que não piora:</strong> treine com ajustes e observe o dia seguinte.</li>
+<li><strong>Dor forte, que piora, com inchaço ou depois de um trauma:</strong> descanse do exercício que dói e procure avaliação.</li>
+</ul>
+
+<h2>Dor no músculo ou no nervo?</h2>
+<p>A dor no músculo fica no músculo que trabalhou, é espalhada e melhora com movimento leve. A dor de nervo tem outra cara: costuma <strong>descer</strong> pelo braço ou pela perna e vir com formigamento, dormência, sensação de choque ou fraqueza. Dor de nervo não é para resolver no treino: pede um profissional de saúde antes de carregar a região. Se a dor desce pela perna, veja também <a href="/blog/dor-no-ciatico-exercicio-tratamento">dor no ciático</a>.</p>
+
+<h2>Como saber se machuquei o músculo na academia?</h2>
+<p>A lesão muscular costuma dar sinal na hora: uma dor aguda e localizada no meio da série, às vezes com sensação de puxão, e depois dor para contrair ou alongar aquele músculo, com inchaço ou roxo. A dor muscular comum é diferente: aparece um ou dois dias depois e se espalha pelo músculo. Na dúvida, pare o exercício que dói e procure avaliação. Sobre a volta ao treino depois de uma lesão, veja <a href="/blog/cicatrizacao-lesao-muscular-reabilitacao-ativa">lesão muscular e reabilitação ativa</a>.</p>
+
+<h2>Dor por região: o que costuma dar para treinar</h2>
 <p>Cada articulação tem os seus ajustes mais comuns:</p>
 <ul>
 <li><strong>Joelho:</strong> dá para treinar com ajustes; fortalecer coxas e quadril é uma das coisas que mais ajudam. Veja <a href="/blog/dor-no-joelho-no-agachamento">dor no joelho no agachamento</a> e <a href="/blog/condromalacia-patelar-musculacao">condromalácia patelar e musculação</a>.</li>
 <li><strong>Ombro:</strong> veja <a href="/blog/dor-no-ombro-ao-treinar">dor no ombro ao treinar</a> e <a href="/blog/ombro-estalando-e-normal">ombro estalando é normal?</a>.</li>
-<li><strong>Lombar:</strong> veja <a href="/blog/dor-lombar-na-musculacao">dor lombar na musculação</a>, <a href="/blog/travou-a-lombar-o-que-fazer">travou a lombar, o que fazer</a> e <a href="/blog/hernia-de-disco-pode-treinar">quem tem hérnia de disco pode treinar?</a>.</li>
+<li><strong>Costas e lombar:</strong> carga menor e exercícios com a coluna apoiada costumam ser bem tolerados; dor que desce para a perna pede avaliação. Veja <a href="/blog/exercicios-para-dor-nas-costas-coluna">exercícios para dor nas costas</a>, <a href="/blog/dor-lombar-na-musculacao">dor lombar na musculação</a>, <a href="/blog/travou-a-lombar-o-que-fazer">travou a lombar, o que fazer</a> e <a href="/blog/hernia-de-disco-pode-treinar">quem tem hérnia de disco pode treinar?</a>.</li>
+<li><strong>Cotovelo e punho:</strong> pegada, carga e amplitude resolvem boa parte. Veja <a href="/blog/tendinite-no-cotovelo-como-treinar">tendinite no cotovelo</a> e <a href="/blog/dor-no-punho-ao-treinar">dor no punho ao treinar</a>.</li>
+<li><strong>Quadril e virilha:</strong> veja <a href="/blog/dor-no-quadril-ao-agachar">dor no quadril ao agachar</a> e <a href="/blog/mobilidade-de-quadril">mobilidade de quadril</a>.</li>
+<li><strong>Pescoço:</strong> veja <a href="/blog/cervicalgia-dor-no-pescoco-treino">dor no pescoço e treino</a>. Dor com formigamento no braço pede avaliação.</li>
 </ul>
+
+<h2>E dor de cabeça, de garganta ou gripe?</h2>
+<p>Essa não é dor de treino, e este artigo não trata dela. Com febre ou sintomas pelo corpo, o mais prudente é descansar e voltar quando melhorar. Dor de cabeça forte, súbita ou diferente do habitual pede atendimento médico, sem treinar.</p>
 
 <h2>Remédio para treinar sem dor?</h2>
 <p>Tomar analgésico ou anti-inflamatório antes do treino para não sentir dor tira justamente a informação que diz se o exercício está passando do ponto. E o uso frequente pode atrapalhar o ganho de músculo. Veja <a href="/blog/anti-inflamatorio-atrapalha-hipertrofia">anti-inflamatório atrapalha a hipertrofia?</a>.</p>
