@@ -1429,3 +1429,11 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
   - `rabanada-engorda`: entraram engorda muito, engorda ou emagrece, salgada, sem ovo, receita (assada mais leve), qual o doce de Natal que mais engorda, o que mata a fome sem engordar. Os números da visão geral por IA não entraram (print não é fonte).
   - `calorias-da-ceia-de-natal`: entraram ceia engorda, com baixa caloria, estou de dieta o que comer, cetogênica/low carb (carboidrato da TACO), tender e chester (sem número próprio: não estão na TACO), 400 calorias no jantar, 2.000 calorias por dia, quantos kg perder até o Natal (link para o artigo e a calculadora de déficit). "Calor" e "nutrição" ficaram de fora.
   - Títulos mantidos: "frita ou assada" e "pernil, peru, farofa" já estão no autocompletar e nos resultados.
+
+## 2026-11-04 — Sem prints: creatina engorda e uva passa engorda
+
+- Escolhidos pelo Planejador de Palavras-chave do Google Ads (Brasil): "creatina engorda" 22.200/mês, "uva passa engorda" 4.400/mês. Nenhum dos dois tinha página própria, e o site não recebia impressão para nenhum dos dois termos.
+- Publicados a pedido do Montinho antes da pesquisa ("pode criar os dois, depois eu mando os prints"). Revisar título, H2 e FAQ quando os prints chegarem.
+- `creatina-engorda` (novo): fatos de Antonio et al. 2021 (JISSN, PMID 33557850) e do posicionamento da ISSN de 2017 (PMID 28615996). Quanto o peso sobe na saturação não entra em número (sem cifra confirmada na fonte primária). Não canibaliza `creatina-retencao-de-liquido-mito`: esse fica com o inchaço e a água em profundidade, e os dois se linkam. Calculadora de Creatina embutida.
+- `uva-passa-engorda` (novo): 299 kcal por 100 g, o mesmo valor em duas bases (tabela do IBGE na Tabela TACO Online e FatSecret Brasil); a TACO não tem uva-passa. Fibra e açúcar ficaram de fora, sem valor confirmado. Link para a Calculadora de Caminhada.
+- Temas avaliados e não criados: farofa, maionese e chester ou peru (já têm seção em `calorias-da-ceia-de-natal`), cerveja zero (já respondida em `cerveja-engorda`), lentilha e romã no Ano-Novo (intenção de simpatia, fora do tema).

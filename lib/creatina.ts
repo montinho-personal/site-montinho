@@ -300,6 +300,8 @@ export const ARTIGOS_COM_CALCULADORA_CREATINA: string[] = [
   "creatina-retencao-de-liquido-mito",
   "melhor-horario-para-tomar-creatina",
   "timing-creatina-quando-tomar",
+  /* "Creatina engorda?": a próxima pergunta depois de "não engorda" é "então quanto eu tomo?". */
+  "creatina-engorda",
 ];
 
 /**
