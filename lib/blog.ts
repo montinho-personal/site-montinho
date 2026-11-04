@@ -20032,8 +20032,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
   {
     slug: "personal-trainer-morada-dos-lagos",
-    title: "Personal Trainer Morada dos Lagos Alphaville | Montinho Personal Trainer",
-    metaTitle: "Personal Trainer Morada dos Lagos Alphaville",
+    title: "Personal Trainer no Morada dos Lagos, Aldeia da Serra | Montinho Personal Trainer",
+    metaTitle: "Personal Trainer no Morada dos Lagos, Aldeia da Serra",
     metaDescription: "Personal trainer no Residencial Morada dos Lagos, na Aldeia da Serra (Barueri): treino em casa ou na academia do condomínio. Veja como funciona e fale no WhatsApp.",
     excerpt: "Personal trainer para moradores do Morada dos Lagos, na Aldeia da Serra, em Barueri: onde o treino acontece, para quem faz sentido e como começar.",
     category: "Saúde",
