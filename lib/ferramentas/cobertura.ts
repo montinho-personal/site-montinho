@@ -97,6 +97,9 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
   "personal-trainer-a-domicilio-aldeia-da-serra":
     "Página de serviço regional. A decisão do leitor é contratar ou não, e o que ele precisa é saber como funciona e o que verificar, não um número.",
 
+  "condominios-aldeia-da-serra":
+    "Guia de bairro: o leitor sai sabendo de que lado da divisa fica cada residencial, sem conta na cabeça. Nenhuma ferramenta do site responde isso.",
+
   "academias-em-aldeia-da-serra":
     "Guia de onde treinar numa região específica. O leitor termina com um endereço e um trajeto na cabeça, não com uma conta — e a ferramenta de academias só cobre Alphaville, onde a Aldeia não entra.",
 
