@@ -7,7 +7,7 @@ import { useAgora } from "@/components/olympia/useAgora";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { FECHAMENTO_COMPARACAO } from "@/lib/filosofia";
 import {
-  REFERENCIAS, fmtFaixa, formataRelogio, fmtPaceFaixa, lerTempo, prever, semanasAteAProva, validaReferencia,
+  REFERENCIAS, fmtFaixa, formataRelogio, fmtPaceFaixa, lerTempoNaDistancia, prever, semanasAteAProva, validaReferencia,
   type Previsao, type ReferenciaId,
 } from "@/lib/sao-silvestre";
 
@@ -28,6 +28,7 @@ export default function PrevisorSaoSilvestre() {
   const [tempo, setTempo] = useState("");
   const [erro, setErro] = useState<string | null>(null);
   const [res, setRes] = useState<Previsao | null>(null);
+  const [nota, setNota] = useState<string | null>(null);
   const agora = useAgora(3600000);
   const semanas = agora === null ? null : semanasAteAProva(agora);
 
@@ -38,11 +39,13 @@ export default function PrevisorSaoSilvestre() {
   const km = REFERENCIAS.find((r) => r.id === ref)!;
 
   const calcular = () => {
-    const seg = lerTempo(tempo);
+    const lido = lerTempoNaDistancia(tempo, km.km);
+    const seg = lido?.seg ?? null;
     if (seg === null) { setErro("Não entendi esse tempo. Digite minutos e segundos, como 28:30 ou 28.30. Acima de uma hora: 1:02:00 ou 1h02."); setRes(null); trackEvent("ss_predictor_error", { reason: "format" }); return; }
     const v = validaReferencia(seg, km.km);
     if (v) { setErro(v); setRes(null); trackEvent("ss_predictor_error", { reason: "range" }); return; }
     setErro(null);
+    setNota(lido?.leuHoras ? `Entendemos ${tempo.trim()} como ${formataRelogio(seg)} (horas e minutos).` : null);
     const p = prever(seg, ref);
     setRes(p);
     trackEvent("ss_predictor_use", { reference: ref, level: p.nivel });
@@ -72,6 +75,7 @@ export default function PrevisorSaoSilvestre() {
       {res && (
         <>
           <section className="border border-[#BA9E50]/50 p-5 sm:p-6" data-testid="ss-resultado">
+            {nota && <p className="text-gray-400 text-sm mb-3">{nota}</p>}
             <p className={rot} style={{ color: OURO }}>Seu tempo provável na São Silvestre</p>
             <p className="text-3xl sm:text-4xl font-bold text-white mt-2">{fmtFaixa(res.faixa)}</p>
             <p className="text-gray-300 mt-2">Pace médio de {fmtPaceFaixa(res.paceFaixa)}</p>

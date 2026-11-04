@@ -67,11 +67,12 @@ export function riegel(tempoSeg: number, deKm: number, paraKm: number): number {
  * 4 = mmss ("2830"), 5 ou 6 = hmmss ("10200").
  */
 export function lerTempo(txt: string): number | null {
-  let t = txt.trim().toLowerCase().replace(/\s*(minutos?|mins?)\s*$/, "");
+  let t = txt.trim().toLowerCase().replace(/\s*(minutos?|mins?)\s*$/, "")
+    .replace(/\s+e\s+/g, " ").replace(/\s*horas?\s*/, "h");
   if (!t) return null;
   const h = t.match(/^(\d{1,2})\s*h\s*(\d{1,2})?\s*(?:m(?:in)?)?\s*(?:(\d{1,2})\s*s?)?$/);
   if (h) t = `${h[1]}:${h[2] ?? "0"}:${h[3] ?? "0"}`;
-  else t = t.replace(/\s*(?:m(?:in)?|'|’)\s*/g, ":").replace(/\s*(?:s|"|”|'')\s*$/, "").replace(/[.,;\s]+/g, ":").replace(/:$/, "");
+  else t = t.replace(/\s*(?:''|"|”)\s*$/, "").replace(/\s*(?:m(?:in)?|'|’)\s*/g, ":").replace(/\s*(?:s|"|”|'')\s*$/, "").replace(/[.,;\s]+/g, ":").replace(/:$/, "");
   if (/^\d+$/.test(t)) {
     if (t.length <= 3) t = `${t}:00`;
     else if (t.length === 4) t = `${t.slice(0, 2)}:${t.slice(2)}`;
@@ -86,9 +87,28 @@ export function lerTempo(txt: string): number | null {
   return seg > 0 ? seg : null;
 }
 
+/**
+ * Lê o tempo já sabendo a distância. Quem digita "1:02" para 10 km ou
+ * "2:05" para a meia quer dizer horas e minutos, mas lerTempo lê minutos e
+ * segundos, e a conta dava "mais rápido que o recorde mundial" (o erro mais
+ * comum do previsor em out/2026). Quando a leitura em minutos é impossível
+ * e a leitura em horas cabe na faixa, vale a de horas. Com "min" ou aspas
+ * escritos, a pessoa disse que são minutos, e nada muda.
+ */
+export function lerTempoNaDistancia(txt: string, km: number): { seg: number; leuHoras: boolean } | null {
+  const seg = lerTempo(txt);
+  if (seg === null) return null;
+  const doisCampos = /^\s*\d{1,2}\s*[:.,;]\s*\d{1,2}\s*$/.test(txt);
+  if (doisCampos && seg < 3600 && seg / km < PACE_MIN) {
+    const horas = seg * 60;
+    if (horas / km >= PACE_MIN && horas / km <= PACE_MAX) return { seg: horas, leuHoras: true };
+  }
+  return { seg, leuHoras: false };
+}
+
 export function validaReferencia(tempoSeg: number, km: number): string | null {
   const pace = tempoSeg / km;
-  if (pace < PACE_MIN) return "Esse tempo é mais rápido que o recorde mundial. Confira se digitou minutos e segundos no lugar certo.";
+  if (pace < PACE_MIN) return "Esse tempo é mais rápido que o recorde mundial. Confira se digitou minutos e segundos no lugar certo. Acima de uma hora, use 1:05:00 ou 1h05.";
   if (pace > PACE_MAX) return "Nesse ritmo a prova vira caminhada, e a fórmula deixa de valer. Veja o guia para quem está começando.";
   return null;
 }
