@@ -15301,6 +15301,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
     metaDescription: "Dor no joelho ao agachar tem causa identificável. Entenda síndrome patelofemoral, joelho valgo e como adaptar o treino com segurança. Por Montinho Personal.",
     excerpt: "A dor no joelho durante o agachamento é um dos problemas mais comuns na musculação e tem causas bem definidas. Entenda o que acontece na articulação e como corrigir sem abandonar o exercício.",
     faqSchema: [
+      { question: "Quem tem dor no joelho pode agachar fundo?", answer: "Depende. Para o joelho saudável, agachar fundo com técnica e carga adequadas não faz mal: uma revisão de 2013 concluiu que o agachamento profundo, com técnica aprendida e carga progressiva, não aumenta o risco para o joelho. Com dor, muitas vezes basta reduzir a profundidade ou a carga por um tempo e ir aumentando a amplitude aos poucos." },
+      { question: "Com dor no joelho, devo parar de treinar perna?", answer: "Não. Fortalecer coxas e quadril é uma das coisas que mais ajudam o joelho com dor. A diretriz de 2019 sobre dor na frente do joelho recomenda esse fortalecimento como tratamento principal, e uma revisão Cochrane mostrou que o exercício reduz a dor e melhora a função na artrose de joelho. O que muda é o exercício, a amplitude e a carga. Lesão recente, inchaço ou falseio pedem avaliação antes." },
       { question: "Posso treinar com dor?", answer: "Depende do tipo de dor. Dor muscular tardia (DOMS) não impede o treino, mas lesões agudas exigem avaliação profissional antes de retornar. O princípio é: se a dor piora durante o movimento, pare e procure avaliação médica ou fisioterápica." },
       { question: "Como prevenir lesões na musculação?", answer: "Progressão gradual de cargas, técnica correta de execução, aquecimento adequado, volume de treino periodizado e sono suficiente são os principais fatores preventivos. A maioria das lesões na academia ocorre por progressão excessivamente rápida." },
       { question: "Devo alongar antes ou depois do treino?", answer: "O alongamento estático antes do treino pode reduzir a força e potência imediatas. O aquecimento ideal pré-treino é dinâmico (mobilidade articular e ativação muscular). O alongamento estático é mais indicado no pós-treino para recuperação e mobilidade." },
@@ -15479,13 +15481,18 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><a href="/blog/dor-lombar-na-musculacao">Dor Lombar na Musculação: Causas e Como Treinar com Segurança</a></li>
   <li><a href="/blog/como-fazer-agachamento-livre-corretamente">Agachamento: Técnica Correta Passo a Passo</a></li>
 </ul>
-    `,
+    
+<p><small>Fontes das perguntas sobre profundidade e treino de perna: <a href="https://doi.org/10.1007/s40279-013-0073-6" target="_blank" rel="noopener noreferrer">Hartmann et al., 2013, Sports Med</a>; <a href="https://doi.org/10.2519/jospt.2019.0302" target="_blank" rel="noopener noreferrer">Willy et al., 2019, diretriz de dor patelofemoral, JOSPT</a>; <a href="https://doi.org/10.1002/14651858.CD004376.pub3" target="_blank" rel="noopener noreferrer">Fransen et al., 2015, Cochrane (artrose de joelho)</a>.</small></p>
+`,
     category: "Lesões",
     date: "2026-06-26",
+    updatedAt: "2026-11-04",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["dor no joelho", "agachamento", "síndrome patelofemoral", "joelho valgo", "tendinopatia patelar", "musculação", "personal trainer alphaville", "lesão no joelho"],
     faq: [
+      { question: "Quem tem dor no joelho pode agachar fundo?", answer: "Depende. Para o joelho saudável, agachar fundo com técnica e carga adequadas não faz mal: uma revisão de 2013 concluiu que o agachamento profundo, com técnica aprendida e carga progressiva, não aumenta o risco para o joelho. Com dor, muitas vezes basta reduzir a profundidade ou a carga por um tempo e ir aumentando a amplitude aos poucos." },
+      { question: "Com dor no joelho, devo parar de treinar perna?", answer: "Não. Fortalecer coxas e quadril é uma das coisas que mais ajudam o joelho com dor. A diretriz de 2019 sobre dor na frente do joelho recomenda esse fortalecimento como tratamento principal, e uma revisão Cochrane mostrou que o exercício reduz a dor e melhora a função na artrose de joelho. O que muda é o exercício, a amplitude e a carga. Lesão recente, inchaço ou falseio pedem avaliação antes." },
       {
         question: "Por que meu joelho dói no agachamento?",
         answer: "As causas mais comuns são: síndrome patelofemoral (mau rastreamento da patela), joelho valgo dinâmico por fraqueza de glúteo médio, déficit de mobilidade do tornozelo, tendinopatia patelar e, menos frequentemente, lesões de menisco. Uma avaliação postural e funcional é necessária para identificar a causa específica no seu caso."
@@ -22257,11 +22264,14 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "O agachamento livre é um dos exercícios mais eficientes — e mais mal executados. Aprenda a técnica que maximiza resultado e protege os joelhos e a coluna.",
     category: "Treinamento",
     date: "2026-06-27",
-    updatedAt: "2026-08-27",
+    updatedAt: "2026-11-04",
     readTime: "9 min",
     author: "Montinho",
     tags: ["agachamento livre", "técnica de treino", "pernas", "quadríceps", "exercício"],
     faqSchema: [
+      { question: "Qual a posição dos pés no agachamento?", answer: "Na largura dos ombros ou um pouco mais aberta, com as pontas viradas levemente para fora, de modo que o joelho acompanhe a direção do pé. Um estudo de 2001 mostrou que base estreita, média e larga mudam a distribuição das forças no quadril e no joelho: nenhuma é errada, e a escolha depende do conforto e do objetivo." },
+      { question: "Pé aberto no agachamento estraga o joelho?", answer: "Não. Cada pessoa tem um ângulo de pé confortável, e um pouco virado para fora é normal. O importante é o joelho acompanhar a direção do pé. Uma revisão de 2001 concluiu que o agachamento bem feito não prejudica o joelho saudável." },
+      { question: "Devo olhar para cima no agachamento?", answer: "Não precisa. Um estudo de 2006 mostrou que olhar à frente ou para cima deu movimentos parecidos, enquanto olhar para baixo aumentou a inclinação do quadril e do tronco. Mantenha a cabeça alinhada, olhando um pouco à frente." },
       { question: "Quais são os principais benefícios de Como Fazer Agachamento Livre Corretamente?", answer: "Os benefícios incluem melhora da composição corporal, aumento da força e condicionamento, melhora da saúde metabólica e bem-estar geral. Resultados consistentes dependem de treino planejado, nutrição adequada e recuperação suficiente." },
       { question: "Com que frequência devo praticar para ter resultados?", answer: "A frequência ideal varia conforme o objetivo e condicionamento atual. Para iniciantes, 3 vezes por semana já promovem adaptações significativas. Para resultados avançados, 4 a 5 sessões semanais com periodização adequada são recomendadas." },
       { question: "Quanto tempo leva para ver resultados?", answer: "Adaptações neuromusculares (força percebida) aparecem nas primeiras 2 a 4 semanas. Mudanças visíveis na composição corporal geralmente são perceptíveis entre 6 e 12 semanas de prática consistente com nutrição alinhada ao objetivo." },
@@ -22354,8 +22364,13 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Para ver a execução completa em vídeo, veja a demonstração do Leandro Twin:</p>
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/zgk71dUUt0Y?rel=0" title="Como fazer agachamento — Leandro Twin — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
+
+<p><small>Fontes das perguntas sobre pés e olhar: <a href="https://doi.org/10.1097/00005768-200106000-00019" target="_blank" rel="noopener noreferrer">Escamilla et al., 2001, Med Sci Sports Exerc (largura da base)</a>; <a href="https://doi.org/10.1097/00005768-200101000-00020" target="_blank" rel="noopener noreferrer">Escamilla, 2001, Med Sci Sports Exerc (biomecânica do joelho)</a>; <a href="https://doi.org/10.1519/R-16434.1" target="_blank" rel="noopener noreferrer">Donnelly et al., 2006, J Strength Cond Res (direção do olhar)</a>.</small></p>
 `,
     faq: [
+      { question: "Qual a posição dos pés no agachamento?", answer: "Na largura dos ombros ou um pouco mais aberta, com as pontas viradas levemente para fora, de modo que o joelho acompanhe a direção do pé. Um estudo de 2001 mostrou que base estreita, média e larga mudam a distribuição das forças no quadril e no joelho: nenhuma é errada, e a escolha depende do conforto e do objetivo." },
+      { question: "Pé aberto no agachamento estraga o joelho?", answer: "Não. Cada pessoa tem um ângulo de pé confortável, e um pouco virado para fora é normal. O importante é o joelho acompanhar a direção do pé. Uma revisão de 2001 concluiu que o agachamento bem feito não prejudica o joelho saudável." },
+      { question: "Devo olhar para cima no agachamento?", answer: "Não precisa. Um estudo de 2006 mostrou que olhar à frente ou para cima deu movimentos parecidos, enquanto olhar para baixo aumentou a inclinação do quadril e do tronco. Mantenha a cabeça alinhada, olhando um pouco à frente." },
       {
         question: "Agachamento faz mal para o joelho?",
         answer: "Com técnica correta, o agachamento livre é seguro para os joelhos e inclusive fortalece as estruturas ao redor (quadríceps, isquiotibiais, ligamentos). O problema não é o exercício — é a execução inadequada, especialmente o valgo de joelho e a profundidade excessiva com mobilidade insuficiente.",
@@ -57794,7 +57809,7 @@ A elevação lateral com técnica perfeita é o que faz os ombros crescerem de f
     excerpt: "O afundo é um dos exercícios mais completos para membros inferiores — e um dos que mais macham joelho quando mal executado. A diferença está em 4 detalhes técnicos.",
     category: "Treinamento",
     date: "2026-06-28",
-    updatedAt: "2026-06-28",
+    updatedAt: "2026-11-04",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["afundo", "passadas", "glúteo", "quadriceps", "técnica", "musculação", "pernas"],
@@ -57901,8 +57916,12 @@ O afundo é um exercício que deve estar no programa de qualquer praticante sér
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/e0NAsR0OhOk?rel=0" title="Dicas para Ganhar Perna — Leandro Twin"Como Fazer Afundo: Técnica Correta" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
+
+<p><small>Fonte das perguntas sobre afundo e joelho: <a href="https://doi.org/10.2519/jospt.2019.0302" target="_blank" rel="noopener noreferrer">Willy et al., 2019, diretriz de dor patelofemoral, JOSPT</a>; não achamos estudo específico sobre o afundo.</small></p>
 `,
     faq: [
+      { question: "Afundo faz mal para o joelho?", answer: "Não. Com a amplitude e a carga ajustadas, o afundo e o agachamento búlgaro estão entre os melhores exercícios para fortalecer pernas e glúteos, inclusive para quem já teve dor no joelho. A diretriz de 2019 sobre dor na frente do joelho recomenda fortalecer quadril e joelho, e os exercícios com uma perna estão entre as opções para isso." },
+      { question: "Sinto dor no joelho no afundo. O que ajustar?", answer: "Passo um pouco mais longo, descida até onde não incomoda, carga menor e apoio numa barra ou parede para o equilíbrio. Na crise de dor, pode ser melhor pausar e voltar com amplitude menor." },
       { question: "Afundo ou agachamento: qual é melhor?", answer: "São complementares. O agachamento livre é superior para força máxima e carga alta. O afundo é melhor para corrigir assimetrias, trabalhar unilateralmente e ativar glúteo em amplitude maior. Use os dois no programa." },
       { question: "Afundo faz mal para o joelho?", answer: "Não, quando executado com técnica correta. O valgo de joelho e o passo muito curto são os principais causadores de dor patelar no afundo. Com técnica adequada, o afundo fortalece a musculatura protetora do joelho." },
       { question: "Afundo reverso ou afundo normal: qual escolher?", answer: "Para quem tem dor patelar ou síndrome femoropatelar, o afundo reverso é mais seguro — reduz o estresse na patela. Para quem não tem problema, o afundo normal é ligeiramente mais funcional e mais fácil de progressar com carga." },
@@ -64047,14 +64066,18 @@ Se você está em Alphaville ou região e quer montar um programa de hipertrofia
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/2zgwrw4IXxs?rel=0" title="Como Fazer Cadeira Extensora: Técnica Correta" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
+
+<p><small>Fonte das perguntas sobre extensora e joelho: <a href="https://doi.org/10.1097/00005768-199804000-00014" target="_blank" rel="noopener noreferrer">Escamilla et al., 1998, Med Sci Sports Exerc</a>.</small></p>
 `,
     category: "Treinamento",
     date: "2026-06-28",
-    updatedAt: "2026-10-09",
+    updatedAt: "2026-11-04",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["cadeira extensora", "quadríceps", "técnica", "hipertrofia", "treino de perna", "leg extension", "joelho"],
     faq: [
+      { question: "Cadeira extensora faz mal para o joelho?", answer: "Não, quando bem dosada. A extensora é um ótimo exercício para o quadríceps e é muito usada em reabilitação. Um estudo de 1998 comparando agachamento, leg press e extensora mostrou que as forças no joelho mudam com o exercício e com o ângulo; por isso, quem sente incômodo costuma resolver ajustando a amplitude, sem abandonar o exercício." },
+      { question: "Sinto dor no joelho na extensora. O que fazer?", answer: "Limite o ângulo (faça só a metade do movimento que não incomoda), baixe a carga ou faça unilateral. Depois de cirurgia de ligamento, a amplitude segue a orientação da equipe de reabilitação." },
       {
         question: "A cadeira extensora faz mal para o joelho?",
         answer: "Para joelhos saudáveis, não. A ACSM considera o exercício seguro em amplitude completa. O mito surgiu de interpretações equivocadas de estudos biomecânicos. Pessoas com histórico de lesão no LCA, condromalacia patelar ou outras condições específicas devem ter a amplitude e a carga individualizadas por um profissional de saúde.",

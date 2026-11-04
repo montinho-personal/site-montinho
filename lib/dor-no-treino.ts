@@ -48,6 +48,11 @@ export const DOR_NO_TREINO_POSTS: BlogPost[] = [
     author: "Montinho",
     tags: ["ombro estalando", "estalo no ombro", "dor no ombro", "musculação", "mobilidade"],
     faq: [
+      { question: "Ombro estalando: como resolver?", answer: "Sem dor, não há o que resolver: é barulho. Com dor, ajuste o exercício que provoca (carga, amplitude, pegada), aqueça o ombro antes e fortaleça costas e manguito rotador. Se a dor não melhora em uma ou duas semanas com os ajustes, procure avaliação." },
+      { question: "Ombro estalando quando levanta o braço ou ao girar: é normal?", answer: "Se não dói, costuma ser só barulho do movimento. Se dói ao levantar o braço ou ao girar, principalmente acima da cabeça, ou se a dor aparece no dia a dia, como para pegar algo no alto, vale avaliação." },
+      { question: "Ombro estalando e dor no braço ou na escápula: o que pode ser?", answer: "Não dá para saber sem avaliação. Dor que desce pelo braço, formigamento, fraqueza ou dor na escápula que não passa com os ajustes no treino são motivos para procurar um profissional de saúde." },
+      { question: "Como saber se o ombro está lesionado?", answer: "Só a avaliação de um profissional de saúde diz. Os sinais que pedem essa avaliação são dor que não passa ou piora, perda de força para levantar o braço, sensação de que o ombro sai do lugar, travamento, dor à noite e começo depois de queda ou pancada." },
+      { question: "Ombro estalando e doendo: posso tomar remédio?", answer: "Quem decide remédio é o médico. E o uso frequente de anti-inflamatório pode atrapalhar o ganho de músculo; veja o artigo sobre anti-inflamatório e hipertrofia." },
       {
         question: "Ombro estalando é normal?",
         answer:
@@ -114,6 +119,22 @@ export const DOR_NO_TREINO_POSTS: BlogPost[] = [
 </ul>
 <p>Se a dor melhora com o ajuste e não piora no dia seguinte, siga assim e aumente aos poucos. Se você já tem um diagnóstico, veja também <a href="/blog/sindrome-do-impacto-no-ombro">síndrome do impacto</a>, <a href="/blog/bursite-no-ombro">bursite no ombro</a> e <a href="/blog/lesao-no-manguito-rotador">lesão no manguito rotador</a>.</p>
 
+<h2>Ombro estalando: como resolver?</h2>
+<p>Se o estalo não dói, não há o que resolver: é barulho, e você pode seguir treinando. Se dói, o caminho costuma ser este:</p>
+<ol>
+<li><strong>Ache o exercício e a parte do movimento que provocam.</strong> Quase sempre é um ou dois, não o treino todo.</li>
+<li><strong>Ajuste esse exercício:</strong> carga menor, amplitude menor, outra pegada ou outra variação.</li>
+<li><strong>Aqueça o ombro</strong> com séries leves antes das séries de trabalho.</li>
+<li><strong>Fortaleça costas e manguito rotador:</strong> remadas e rotação externa equilibram o ombro.</li>
+<li><strong>Observe uma ou duas semanas.</strong> Melhorou? Siga e aumente aos poucos. Não melhorou? Procure avaliação.</li>
+</ol>
+
+<h2>Ombro estalando ao levantar o braço, ao girar ou na elevação lateral</h2>
+<p>Levantar o braço acima da cabeça e girar são os movimentos em que o ombro mais trabalha, e onde o barulho mais aparece. Sem dor, siga normalmente. Com dor, na elevação lateral, pare na altura do ombro, que já trabalha bem o músculo; no desenvolvimento, faça pela frente da cabeça. Se a dor aparece também no dia a dia, como para pegar algo no alto ou vestir uma blusa, vale avaliação. Para quem já tem diagnóstico de bursite, veja <a href="/blog/bursite-no-ombro">bursite no ombro</a>.</p>
+
+<h2>Ombro estalando com dor no braço ou na escápula</h2>
+<p>Dor que desce pelo braço, formigamento, fraqueza na mão ou dor na escápula que não passa com os ajustes do treino não são para resolver no treino. Esses sinais pedem um profissional de saúde, porque podem vir de outro lugar que não o ombro.</p>
+
 <h2>Quando o estalo no ombro precisa de avaliação</h2>
 <p>Procure um profissional de saúde quando o estalo vier com:</p>
 <ul>
@@ -123,7 +144,7 @@ export const DOR_NO_TREINO_POSTS: BlogPost[] = [
 <li>inchaço, ou começo depois de uma queda ou pancada;</li>
 <li>dor à noite que acorda você.</li>
 </ul>
-<p>Nenhum artigo e nenhum teste online conseguem dizer a causa de uma dor. O que dá para fazer aqui é separar o que é comum do que pede alguém olhando de perto. Para o caso de dor no ombro durante o treino, veja <a href="/blog/dor-no-ombro-ao-treinar">dor no ombro ao treinar</a>.</p>
+<p>Nenhum artigo e nenhum teste online conseguem dizer a causa de uma dor. O que dá para fazer aqui é separar o que é comum do que pede alguém olhando de perto. Para o caso de dor no ombro durante o treino, veja <a href="/blog/dor-no-ombro-ao-treinar">dor no ombro ao treinar</a>. E remédio é decisão do médico: o uso frequente de anti-inflamatório pode atrapalhar o ganho de músculo, como explica <a href="/blog/anti-inflamatorio-atrapalha-hipertrofia">anti-inflamatório atrapalha a hipertrofia?</a>.</p>
 
 <h2>E a mobilidade do ombro?</h2>
 <p>Um ombro que não sobe bem acima da cabeça faz o resto do corpo compensar, principalmente a lombar, nos exercícios por cima da cabeça. Não é uma causa de estalo, mas é uma informação útil para montar o treino. O teste de mobilidade do site tem um teste de ombro na parede que leva um minuto. No joelho, o raciocínio é parecido: veja <a href="/blog/joelho-estalando-e-normal">joelho estalando é normal?</a>.</p>
@@ -160,6 +181,11 @@ ${NAO_SE_COMPARE}
     author: "Montinho",
     tags: ["anti-inflamatório", "hipertrofia", "ibuprofeno", "dor no treino", "recuperação"],
     faq: [
+      { question: "Qual anti-inflamatório não atrapalha a hipertrofia?", answer: "Não existe um anti-inflamatório recomendado para quem treina. Os estudos que mostraram ganho menor de músculo foram com uso frequente e dose alta; um uso pontual, por indicação médica, é outra situação. Qual remédio, dose e tempo de uso é decisão do médico." },
+      { question: "Pode tomar anti-inflamatório quem treina?", answer: "Pode, quando o médico indica, pelo tempo que ele indicar. O que não é boa ideia é usar o remédio como rotina do treino ou para treinar sem sentir dor." },
+      { question: "Diclofenaco, nimesulida e ibuprofeno atrapalham a hipertrofia?", answer: "Os três são anti-inflamatórios do mesmo grupo (anti-inflamatórios não esteroides), que agem na enzima COX. É sobre esse grupo que os estudos mostraram ganho menor de músculo com uso frequente em dose alta." },
+      { question: "Paracetamol e dipirona atrapalham a hipertrofia?", answer: "São analgésicos, não anti-inflamatórios no uso comum. A revisão de 2018 cita que o paracetamol também age na COX, mas ainda não está claro se isso muda o resultado de quem treina. Sobre dipirona e hipertrofia, não achamos estudo." },
+      { question: "Dorflex e Torsilax atrapalham a hipertrofia?", answer: "Depende do que tem dentro. Pela bula, o Dorflex tem dipirona, orfenadrina e cafeína, sem anti-inflamatório. O Torsilax tem diclofenaco, que é anti-inflamatório, além de carisoprodol, paracetamol e cafeína. Os dois são para uso indicado por médico, não para tomar antes do treino." },
       {
         question: "Anti-inflamatório atrapalha a hipertrofia?",
         answer:
@@ -208,6 +234,20 @@ ${NAO_SE_COMPARE}
 <h2>E o analgésico comum, como o paracetamol?</h2>
 <p>A revisão de 2018 cita que o paracetamol também age sobre a mesma enzima, o que poderia explicar uma resposta menor do músculo ao treino agudo. O quanto isso pesa no resultado de meses ainda não está claro. Na prática, vale a mesma regra: remédio para dor é para quando o médico indica, não para fazer parte do treino.</p>
 
+<h2>Diclofenaco, nimesulida, ibuprofeno, paracetamol, dipirona: qual atrapalha?</h2>
+<p>A pergunta "qual anti-inflamatório não atrapalha a hipertrofia" não tem uma resposta de prateleira, e não cabe a um site de treino escolher remédio. O que dá para explicar é em que grupo cada um está:</p>
+<table>
+<thead><tr><th>Remédio</th><th>Grupo</th><th>O que se sabe sobre ganho de músculo</th></tr></thead>
+<tbody>
+<tr><td>Ibuprofeno, diclofenaco, nimesulida</td><td>Anti-inflamatórios não esteroides</td><td>É sobre esse grupo que os estudos mostraram ganho menor com uso frequente em dose alta</td></tr>
+<tr><td>Paracetamol</td><td>Analgésico</td><td>A revisão de 2018 cita efeito na mesma enzima; não está claro se muda o resultado</td></tr>
+<tr><td>Dipirona</td><td>Analgésico</td><td>Não achamos estudo sobre dipirona e hipertrofia</td></tr>
+<tr><td>Dorflex</td><td>Dipirona, orfenadrina e cafeína (pela bula)</td><td>Não tem anti-inflamatório na fórmula</td></tr>
+<tr><td>Torsilax</td><td>Diclofenaco, carisoprodol, paracetamol e cafeína (pela bula)</td><td>Tem anti-inflamatório (diclofenaco) na fórmula</td></tr>
+</tbody>
+</table>
+<p>Todos são remédios para usar quando o médico indica, pelo tempo que ele indica. Nenhum deles é "o certo" para tomar antes do treino.</p>
+
 <h2>O que fazer em vez de tomar remédio para treinar</h2>
 <ul>
 <li><strong>Separe dor no músculo de dor na articulação.</strong> A dor muscular do dia seguinte é comum e passa sozinha; veja <a href="/blog/dor-muscular-tardia-doms">dor muscular tardia</a>. Dor na articulação durante o exercício pede ajuste.</li>
@@ -225,6 +265,7 @@ ${NAO_SE_COMPARE}
 <h2>Fontes</h2>
 <ul>
 <li><a href="https://doi.org/10.1111/sms.13275" target="_blank" rel="noopener noreferrer">Lundberg T. R., Howatson G. Analgesic and anti-inflammatory drugs in sports: implications for exercise performance and training adaptations. Scandinavian Journal of Medicine &amp; Science in Sports, 2018</a> (PMID 30102811)</li>
+<li><a href="https://www.saudedireta.com.br/catinc/drugs/bulas/dorflex.pdf" target="_blank" rel="noopener noreferrer">Bula do Dorflex</a> e <a href="https://www.drogariasaopaulo.com.br/arquivos/127612---torsilax-neo-quimica-30-comprimidos.pdf" target="_blank" rel="noopener noreferrer">bula do Torsilax</a> (composição)</li>
 <li>Lilja M. et al. High doses of anti-inflammatory drugs compromise muscle strength and hypertrophic adaptations to resistance training in young adults. Acta Physiologica, 2018</li>
 </ul>
 
@@ -250,6 +291,12 @@ ${NAO_SE_COMPARE}
     author: "Montinho",
     tags: ["treinar com dor", "dor muscular", "dor na articulação", "lesão", "musculação"],
     faq: [
+      { question: "Pode treinar o mesmo músculo dolorido?", answer: "Pode, se a dor for a muscular do dia seguinte e leve a moderada. Treine esse músculo mais leve ou com menos séries, ou treine outro grupo e deixe ele para o próximo treino. Se a dor muda o jeito de fazer o movimento, espere mais um dia." },
+      { question: "Comecei a malhar e estou com muita dor. O que fazer?", answer: "É comum nas primeiras semanas: o corpo ainda não está acostumado. Não pare, mas diminua o volume (menos séries), mantenha o movimento leve nos dias seguintes e aumente aos poucos. Dor muscular desproporcional, inchaço forte, fraqueza ou urina escura depois do treino pedem atendimento médico no mesmo dia." },
+      { question: "Malhei perna e não consigo andar: o que fazer?", answer: "Costuma ser a dor muscular do dia seguinte, depois de um treino de perna novo ou mais pesado. Caminhar devagar e fazer movimento leve ajudam mais do que ficar parado. Se a dor for desproporcional, com inchaço forte, fraqueza ou urina escura, procure atendimento médico." },
+      { question: "Malhei perna e não consigo andar: posso tomar remédio?", answer: "Quem decide remédio é o médico. Para a dor muscular comum, movimento leve, sono e tempo costumam resolver; o uso frequente de anti-inflamatório pode atrapalhar o ganho de músculo. Veja o artigo sobre anti-inflamatório e hipertrofia." },
+      { question: "Posso treinar com dor no joelho?", answer: "Muitas vezes, sim, com ajustes: amplitude menor, carga menor ou outro exercício para a perna. Fortalecer coxas e quadril é uma das coisas que mais ajudam o joelho com dor. Dor forte, inchaço, travamento ou falseio pedem avaliação antes." },
+      { question: "Dor pós-treino é sinal de resultado?", answer: "Não necessariamente. Uma revisão de 2013 mostrou que a dor muscular do dia seguinte não é um bom indicador de que o músculo vai crescer. Dá para evoluir sem sentir dor todo treino; o que conta é a progressão de carga e a constância." },
       {
         question: "Pode treinar com dor?",
         answer:
@@ -295,6 +342,19 @@ ${NAO_SE_COMPARE}
 <p><strong>Pode, com ajustes, quando a dor é leve e se comporta bem.</strong> Uma meta-análise de 2017, publicada no British Journal of Sports Medicine, comparou exercício com alguma dor e exercício sem dor em pessoas com dor crônica nos músculos e articulações. O grupo que treinou com um pouco de dor teve um benefício pequeno na dor a curto prazo, e a médio e longo prazo não houve diferença. Os autores concluíram que sentir um pouco de dor no exercício não precisa ser uma barreira.</p>
 <p>Isso não quer dizer "ignore a dor". Quer dizer que dor leve, acompanhada de perto, não é motivo automático para parar tudo.</p>
 
+<h2>Pode malhar com os músculos doendo?</h2>
+<p>Pode, se for a dor muscular do dia seguinte e ela estiver leve a moderada. Duas saídas funcionam: treinar o mesmo músculo mais leve, com menos séries, ou treinar outro grupo e deixar o dolorido para o próximo treino. Movimento leve ajuda mais do que ficar parado. Só espere mais um dia se a dor mudar o jeito de fazer o exercício.</p>
+<p>E dor não é medida de resultado: uma revisão de 2013 mostrou que a dor do dia seguinte não indica, sozinha, que o músculo vai crescer. Dá para evoluir sem sentir dor todo treino. Mais sobre isso em <a href="/blog/dor-muscular-tardia-doms">dor muscular tardia</a>.</p>
+
+<h2>Comecei a malhar e estou com muita dor: o que fazer?</h2>
+<p>Nas primeiras semanas de academia, ou depois de um treino de perna novo, é comum sair dolorido a ponto de estranhar escada. Não é motivo para desistir:</p>
+<ul>
+<li><strong>Não pare.</strong> Caminhar e se movimentar leve nos dias seguintes ajuda a dor a passar.</li>
+<li><strong>Diminua o volume.</strong> Menos séries nas primeiras semanas, e aumente aos poucos.</li>
+<li><strong>Mantenha a carga que você controla.</strong> A pressa em subir peso é o que mais dói depois.</li>
+</ul>
+<p><strong>Atenção a um caso raro e sério:</strong> dor muscular desproporcional ao treino, com inchaço forte, fraqueza ou urina escura (cor de chá ou de refrigerante de cola) pode ser rabdomiólise, uma lesão muscular que afeta os rins. Nesse caso, procure atendimento médico no mesmo dia, sem treinar.</p>
+
 <h2>Dor muscular, dor na articulação ou sinal de alerta?</h2>
 <table>
 <thead><tr><th>Tipo</th><th>Como costuma ser</th><th>O que fazer</th></tr></thead>
@@ -328,7 +388,7 @@ ${NAO_SE_COMPARE}
 <h2>Dor no joelho, no ombro e na lombar</h2>
 <p>Cada articulação tem os seus ajustes mais comuns:</p>
 <ul>
-<li><strong>Joelho:</strong> veja <a href="/blog/dor-no-joelho-no-agachamento">dor no joelho no agachamento</a> e <a href="/blog/condromalacia-patelar-musculacao">condromalácia patelar e musculação</a>.</li>
+<li><strong>Joelho:</strong> dá para treinar com ajustes; fortalecer coxas e quadril é uma das coisas que mais ajudam. Veja <a href="/blog/dor-no-joelho-no-agachamento">dor no joelho no agachamento</a> e <a href="/blog/condromalacia-patelar-musculacao">condromalácia patelar e musculação</a>.</li>
 <li><strong>Ombro:</strong> veja <a href="/blog/dor-no-ombro-ao-treinar">dor no ombro ao treinar</a> e <a href="/blog/ombro-estalando-e-normal">ombro estalando é normal?</a>.</li>
 <li><strong>Lombar:</strong> veja <a href="/blog/dor-lombar-na-musculacao">dor lombar na musculação</a>, <a href="/blog/travou-a-lombar-o-que-fazer">travou a lombar, o que fazer</a> e <a href="/blog/hernia-de-disco-pode-treinar">quem tem hérnia de disco pode treinar?</a>.</li>
 </ul>
@@ -350,6 +410,8 @@ ${NAO_SE_COMPARE}
 
 <h2>Fontes</h2>
 <ul>
+<li><a href="https://doi.org/10.1519/SSC.0b013e3182a61820" target="_blank" rel="noopener noreferrer">Schoenfeld B. J., Contreras B. Is postexercise muscle soreness a valid indicator of muscular adaptations? Strength and Conditioning Journal, 2013</a></li>
+<li><a href="https://health.stonybrookmedicine.edu/understanding-the-early-signs-of-rhabdomyolysis/" target="_blank" rel="noopener noreferrer">Stony Brook Medicine — sinais de rabdomiólise</a></li>
 <li><a href="https://doi.org/10.1136/bjsports-2016-097383" target="_blank" rel="noopener noreferrer">Smith B. E. et al. Should exercises be painful in the management of chronic musculoskeletal pain? A systematic review and meta-analysis. British Journal of Sports Medicine, 2017</a> (PMID 28596288)</li>
 </ul>
 
