@@ -57,6 +57,7 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
   "treino-de-abdomen-rapido": "Treino pronto para fazer: o leitor sai com o circuito, não com uma conta; quem quer emagrecer a barriga é levado à calculadora de déficit pelo texto.",
   "brasileiros-ufc-vegas-123": "Hub de quem luta e contra quem: o leitor sai com nomes e horários, sem conta na cabeça; a calculadora de jiu-jitsu fica no artigo do evento.",
   "brasileiros-ufc-vegas-124": "Hub de quem luta e contra quem: o leitor sai com nomes e horários, sem conta na cabeça; a calculadora fica no artigo do evento.",
+  "brasileiros-ufc-334": "Hub de quem luta e contra quem: o leitor sai com nomes e horários, sem conta na cabeça; a calculadora fica no artigo do evento.",
   "resultado-ufc-vegas-122": "Página de resultado: o leitor sai sabendo quem ganhou, sem conta na cabeça; a calculadora de luta fica no artigo do card.",
   "resultado-ufc-vegas-123": "Página de resultado: o leitor sai sabendo quem ganhou, sem conta na cabeça; a calculadora de luta fica no artigo do card.",
   // Grupo "dor no treino" (lib/dor-no-treino.ts, 04/11/2026), das perguntas de execução e dor do app.
