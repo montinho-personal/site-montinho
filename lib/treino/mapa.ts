@@ -174,6 +174,7 @@ export const ARTIGO_DO_EXERCICIO: Record<string, string> = {
   "levantamento-terra": "como-fazer-levantamento-terra-corretamente", stiff: "como-fazer-stiff", encolhimento: "como-fazer-encolhimento-trapezio",
   "desenvolvimento-halter": "como-fazer-desenvolvimento-ombros", "desenvolvimento-barra": "como-fazer-desenvolvimento-ombros",
   "elevacao-lateral": "como-fazer-elevacao-lateral", "elevacao-frontal": "como-fazer-elevacao-frontal",
+  "crucifixo-inverso": "crucifixo-inverso", "crucifixo-inverso-halter": "crucifixo-inverso", "crucifixo-inverso-cabo": "crucifixo-inverso",
   "rosca-direta": "como-fazer-rosca-direta", "rosca-martelo": "como-fazer-rosca-martelo", "rosca-concentrada": "como-fazer-rosca-concentrada",
   "triceps-testa": "como-fazer-skull-crusher-triceps-testa", "triceps-frances": "como-fazer-french-press",
   "agachamento-livre": "como-fazer-agachamento-livre-corretamente", "agachamento-frontal": "como-fazer-agachamento-frontal", "agachamento-goblet": "como-fazer-agachamento-goblet",
