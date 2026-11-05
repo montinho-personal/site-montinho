@@ -156,4 +156,9 @@ export const ARTIGOS_COM_CALCULADORA_TDEE: string[] = [
    * quanto isso pesa no gasto do dia. Sétimo do registro.
    */
   "caminhada-japonesa",
+  /**
+   * "Pão com ovo engorda?": o leitor sai com "216 kcal" e a pergunta que
+   * sobra é quanto isso pesa no gasto do dia DELE. Oitavo do registro.
+   */
+  "pao-com-ovo-engorda",
 ];

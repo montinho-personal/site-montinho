@@ -52,6 +52,10 @@ export const FICHAS_POR_ARTIGO: Record<string, FichaDeArtigo> = {
     alimentos: ["feijao-carioca-cozido", "aveia-flocos-crua", "abacate-cru"],
     destaque: "fibra",
   },
+  "pao-com-ovo-engorda": {
+    alimentos: ["pao-trigo-frances", "ovo-de-galinha-inteiro-cozido-10minutos"],
+    destaque: "proteina",
+  },
   "quantos-ovos-por-dia": {
     alimentos: ["ovo-de-galinha-inteiro-cozido-10minutos", "ovo-de-galinha-inteiro-cru"],
     destaque: "proteina",

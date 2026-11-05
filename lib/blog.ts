@@ -117,6 +117,9 @@ import { RABANADA_POSTS } from "./rabanada-engorda";
 import { CALORIAS_CEIA_NATAL_POSTS } from "./calorias-ceia-de-natal";
 import { CREATINA_ENGORDA_POSTS } from "./creatina-engorda";
 import { UVA_PASSA_POSTS } from "./uva-passa-engorda";
+import { CRUCIFIXO_INVERSO_POSTS } from "./crucifixo-inverso";
+import { TABATA_POSTS } from "./tabata";
+import { PAO_COM_OVO_POSTS } from "./pao-com-ovo-engorda";
 import { DOR_NO_TREINO_POSTS } from "./dor-no-treino";
 import { CONDOMINIOS_ALDEIA_POSTS } from "./condominios-aldeia-da-serra";
 import { DOCES_FIT_POSTS } from "./doces-fit";
@@ -149,6 +152,9 @@ export const blogPosts = ([
   ...CALORIAS_CEIA_NATAL_POSTS,
   ...CREATINA_ENGORDA_POSTS,
   ...UVA_PASSA_POSTS,
+  ...CRUCIFIXO_INVERSO_POSTS,
+  ...TABATA_POSTS,
+  ...PAO_COM_OVO_POSTS,
   ...DOR_NO_TREINO_POSTS,
   ...CONDOMINIOS_ALDEIA_POSTS,
   ...DOCES_FIT_POSTS,
