@@ -12,6 +12,7 @@
  */
 import { GRUPOS_FOLLOW_UP } from "@/lib/crm/ciclo";
 import { ENVIOS_INICIAIS, dataDoCheckIn, tarefasDeEnvio, tarefasDeOnboarding } from "@/lib/crm/onboarding";
+import { iniciarOnboardingDeCliente } from "@/lib/crm/onboarding-servidor";
 import { lerDatas } from "@/lib/crm/aulas";
 import { FUSO } from "@/lib/crm/copy";
 import { etapaProtegida, podeDesfazerPerdido, type SnapshotPerda } from "@/lib/crm/perda";
@@ -389,15 +390,17 @@ export async function marcarGanho(fd: FormData) {
   await atividade(sb, u.id, { contact_id: opp.contact_id, client_id: clientId, tipo: existente ? "reactivated" : "client_started", descricao: existente ? "Cliente reativado" : "Cliente iniciado", ocorreu_em: wonAt });
   // Tarefas abertas do lead deixam de fazer sentido.
   await sb.from("crm_tasks").update({ completed_at: new Date().toISOString() }).eq("lead_id", opp.lead_id).is("completed_at", null);
-  // Onboarding: D+3, D+10, D+21. Só se ainda não houver check-in aberto para este cliente
-  // (um ganho registrado duas vezes não pode virar seis tarefas).
-  const { data: abertas } = await sb.from("crm_tasks").select("id").eq("client_id", clientId).eq("tipo", "onboarding").is("completed_at", null).limit(1);
-  if (!abertas?.length) {
-    for (const t of [...tarefasDeEnvio(data), ...tarefasDeOnboarding(data)]) {
-      await tarefa(sb, u.id, { contact_id: opp.contact_id, client_id: clientId, tipo: t.tipo, titulo: t.titulo, due_at: t.due_at, priority: t.priority });
-    }
+  // Onboarding: o ganho abre o fluxo do aluno (modelo do serviço/plano, ou o padrão),
+  // com a data do ganho como início. Nunca duplica: com um aberto, devolve o mesmo.
+  // Substitui as tarefas antigas (primeiros envios + D+3/10/21), que ficam como
+  // histórico de quem entrou antes. Se o onboarding falhar, o ganho já está salvo:
+  // o registro fica na linha do tempo e o botão "Iniciar onboarding" da ficha resolve.
+  try {
+    await iniciarOnboardingDeCliente(sb, u.id, clientId, { inicio: data });
+  } catch (e) {
+    await atividade(sb, u.id, { contact_id: opp.contact_id, client_id: clientId, tipo: "note", descricao: `Onboarding não iniciou sozinho (${e instanceof Error ? e.message : "erro"}). Inicie pela ficha do cliente.` });
   }
-  revalidarTudo([`/crm/leads/${opp.lead_id}`, `/crm/clientes/${clientId}`]);
+  revalidarTudo([`/crm/leads/${opp.lead_id}`, `/crm/clientes/${clientId}`, "/crm/onboarding"]);
   redirect(`/crm/clientes/${clientId}`);
 }
 

@@ -15,6 +15,8 @@ const PRINCIPAL = [
   { href: "/crm/clientes", rotulo: "Clientes", icone: "★" },
 ];
 const MAIS = [
+  { href: "/crm/onboarding", rotulo: "Onboarding" },
+  { href: "/crm/onboarding/tarefas", rotulo: "Minhas tarefas" },
   { href: "/crm/renovacoes", rotulo: "Renovações" },
   { href: "/crm/follow-ups", rotulo: "Follow-ups" },
   { href: "/crm/agenda", rotulo: "Agenda" },
@@ -28,7 +30,17 @@ const MAIS = [
   { href: "/crm/configuracoes", rotulo: "Configurações" },
 ];
 
-export default function Shell({ children, usuario, sair }: { children: ReactNode; usuario: { nome: string | null; email: string; role: string }; sair: () => Promise<void> }) {
+/** O sino do onboarding: avisos não lidos. Ler não conclui a tarefa. */
+function Sino({ n }: { n: number }) {
+  return (
+    <Link href="/crm/onboarding/avisos" prefetch={false} aria-label={n ? `${n} avisos de onboarding não lidos` : "Avisos de onboarding"} className="relative rounded-lg border border-white/15 px-2 py-1 text-sm">
+      <span aria-hidden>🔔</span>
+      {n > 0 && <span className="absolute -right-1.5 -top-1.5 min-w-[18px] rounded-full bg-rose-500 px-1 text-center text-[11px] font-semibold leading-[18px] text-white">{n > 99 ? "99+" : n}</span>}
+    </Link>
+  );
+}
+
+export default function Shell({ children, usuario, sair, avisos = 0 }: { children: ReactNode; usuario: { nome: string | null; email: string; role: string }; sair: () => Promise<void>; avisos?: number }) {
   const pathname = usePathname();
   const menu = useRef<HTMLDetailsElement>(null);
   // <details> nativo não fecha sozinho ao tocar fora nem ao navegar.
@@ -40,7 +52,7 @@ export default function Shell({ children, usuario, sair }: { children: ReactNode
     return () => { document.removeEventListener("pointerdown", fechar); document.removeEventListener("keydown", tecla); };
   }, []);
   useEffect(() => { if (menu.current) menu.current.open = false; }, [pathname]);
-  const ativo = (href: string) => (href === "/crm" ? pathname === "/crm" : pathname.startsWith(href));
+  const ativo = (href: string) => (href === "/crm" || href === "/crm/onboarding" ? pathname === href || (href === "/crm/onboarding" && /^\/crm\/onboarding\/(?!tarefas)/.test(pathname)) : pathname.startsWith(href));
   return (
     <div className="min-h-screen bg-zinc-950 text-white lg:grid lg:grid-cols-[240px_1fr]">
       <aside className="hidden border-r border-white/10 bg-black/40 lg:flex lg:flex-col">
@@ -61,6 +73,7 @@ export default function Shell({ children, usuario, sair }: { children: ReactNode
           <form action="/crm/leads" method="get" className="flex-1 px-3">
             <input name="q" placeholder="Buscar nome, telefone…" className="w-full rounded-lg border border-white/15 bg-black/40 px-3 py-1.5 text-sm" aria-label="Buscar" />
           </form>
+          <div className="mr-2"><Sino n={avisos} /></div>
           <details ref={menu} className="relative">
             <summary className="cursor-pointer list-none rounded-lg border border-white/15 px-2 py-1 text-sm">Mais</summary>
             <div className="absolute right-0 mt-2 w-56 rounded-lg border border-white/10 bg-zinc-900 p-1 shadow-xl">
@@ -73,6 +86,7 @@ export default function Shell({ children, usuario, sair }: { children: ReactNode
           <form action="/crm/leads" method="get" className="w-full max-w-md">
             <input name="q" placeholder="Buscar por nome, telefone ou e-mail…" className="w-full rounded-lg border border-white/15 bg-black/40 px-3 py-2 text-sm" aria-label="Buscar" />
           </form>
+          <Sino n={avisos} />
           <Link href="/crm/leads/novo" prefetch={false} className="rounded-lg bg-white px-4 py-2 text-sm font-medium text-black hover:bg-zinc-200">+ Novo lead</Link>
         </div>
         <main className="flex-1">{children}</main>
