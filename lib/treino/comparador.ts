@@ -413,6 +413,9 @@ export const ARTIGOS_COM_COMPARADOR: Record<string, [string, string]> = {
   "crossover-vs-crucifixo": ["cross-over", "crucifixo-maquina"],
   /* Página do exercício: a dúvida que sobra é crucifixo inverso ou face pull. */
   "crucifixo-inverso": ["crucifixo-inverso-halter", "face-pull"],
+  "face-pull": ["face-pull", "crucifixo-inverso-cabo"],
+  "triceps-corda": ["triceps-pulley", "triceps-testa"],
+  "remada-alta": ["remada-alta", "elevacao-lateral"],
   "panturrilha-em-pe-vs-sentada": ["panturrilha-em-pe", "panturrilha-sentado"],
 };
 

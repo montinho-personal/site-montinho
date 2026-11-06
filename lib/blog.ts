@@ -120,6 +120,7 @@ import { UVA_PASSA_POSTS } from "./uva-passa-engorda";
 import { CRUCIFIXO_INVERSO_POSTS } from "./crucifixo-inverso";
 import { TABATA_POSTS } from "./tabata";
 import { PAO_COM_OVO_POSTS } from "./pao-com-ovo-engorda";
+import { EXERCICIOS_POLIA_OMBRO_POSTS } from "./exercicios-polia-ombro";
 import { DOR_NO_TREINO_POSTS } from "./dor-no-treino";
 import { CONDOMINIOS_ALDEIA_POSTS } from "./condominios-aldeia-da-serra";
 import { DOCES_FIT_POSTS } from "./doces-fit";
@@ -155,6 +156,7 @@ export const blogPosts = ([
   ...CRUCIFIXO_INVERSO_POSTS,
   ...TABATA_POSTS,
   ...PAO_COM_OVO_POSTS,
+  ...EXERCICIOS_POLIA_OMBRO_POSTS,
   ...DOR_NO_TREINO_POSTS,
   ...CONDOMINIOS_ALDEIA_POSTS,
   ...DOCES_FIT_POSTS,
@@ -62229,9 +62231,9 @@ Sim, é a versão "livre" da remada. Exige mais estabilidade de core, mas é uma
   },
   {
     slug: "como-fazer-abducao-quadril-maquina",
-    title: "Como Fazer Abdução de Quadril na Máquina — Técnica e Variações",
-    metaTitle: "Como Fazer Abdução de Quadril na Máquina — Técnica Correta",
-    metaDescription: "Aprenda a técnica correta da abdução de quadril na máquina: posição, amplitude, erros comuns e as melhores variações para o glúteo médio.",
+    title: "Cadeira Abdutora: Como Fazer a Abdução de Quadril na Máquina",
+    metaTitle: "Cadeira Abdutora: Como Fazer e Qual Músculo Trabalha",
+    metaDescription: "Cadeira abdutora trabalha o glúteo médio. Veja a posição certa no banco, quanto abrir as pernas, os erros comuns e se vale inclinar o tronco para frente.",
     excerpt: "A abdução de quadril na máquina é fundamental para o glúteo médio — mas só funciona bem quando bem executada. Veja a técnica correta, os erros mais comuns e as variações mais eficazes.",
     content: `<p>A máquina de abdução de quadril é uma das mais usadas nas academias — especialmente por mulheres que querem desenvolver os glúteos. Mas entre sentar, empurrar os joelhos para fora e voltar, pouquíssimas pessoas usam a máquina de forma realmente eficiente. O resultado: glúteo médio pouco desenvolvido e uma falsa sensação de que "a máquina não funciona".</p>
 

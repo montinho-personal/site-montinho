@@ -1484,3 +1484,17 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - Fontes que não abriram daqui: ACE Fitness e ExRx (host não resolve); o PubMed abriu só a tela de cookies. Pela regra, parei de tentar sites novos.
 - Avaliados e não criados: "treino metabólico" (3.600, fica como próxima pauta), "pode treinar com dor de cabeça" (590, saúde, precisa de fonte oficial), "kickboxing emagrece" (140).
 - Pendente: pedir ao Montinho o export do Answer the Public e o print da primeira página dos três termos para revisar título, H2 e FAQ.
+
+## 2026-11-06 — Sem prints: face pull, tríceps corda, remada alta; título da cadeira abdutora
+
+- Pedido do Montinho: criar face pull, tríceps corda e remada alta, e trocar o título da abdução de quadril. Volumes do Planejador de Palavras-chave do Google Ads (Brasil); canibalização conferida com slug e título normalizados (`treino-de-triceps` é treino do grupo, não o exercício; os dois se linkam).
+  - `face-pull`: "face pull" 135.000/mês. Comparador embutido (face pull x crucifixo inverso no cabo).
+  - `triceps-corda`: "triceps corda" 135.000, "triceps pulley corda" 9.900, "tríceps na corda" 6.600. Comparador (tríceps pulley x tríceps testa).
+  - `remada-alta`: "remada alta" 90.500, "remada alta polia" 27.100, "com barra" 18.100, "com halteres" 6.600. Comparador (remada alta x elevação lateral).
+  - Os três num arquivo só (`lib/exercicios-polia-ombro.ts`). Sem número de estudo. Os ids `face-pull`, `triceps-pulley` e `remada-alta` do mapa de treino passam a apontar para eles.
+- `como-fazer-abducao-quadril-maquina`, título e descrição trocados com aprovação do Montinho (sem `updatedAt`: o conteúdo não mudou).
+  - ATUAL: "Como Fazer Abdução de Quadril na Máquina — Técnica Correta" / "Aprenda a técnica correta da abdução de quadril na máquina: posição, amplitude, erros comuns e as melhores variações para o glúteo médio."
+  - PROPOSTA (aplicada): "Cadeira Abdutora: Como Fazer e Qual Músculo Trabalha" / "Cadeira abdutora trabalha o glúteo médio. Veja a posição certa no banco, quanto abrir as pernas, os erros comuns e se vale inclinar o tronco para frente." H1: "Cadeira Abdutora: Como Fazer a Abdução de Quadril na Máquina".
+  - MOTIVO: quem busca digita "cadeira abdutora" (246.000/mês) e "abdutora" (90.500), bem mais que "abdução de quadril" (40.500) e "abdução de quadril na máquina" (5.400); "cadeira abdutora trabalha qual músculo" tem 2.400. "Técnica correta" não aparece na pesquisa.
+  - Linha de base no GSC (09/10 a 05/11): 779 impressões, 0 cliques, CTR 0%, posição média 9,0. Comparar em 28 dias (04/12/2026). Se o clique não subir, voltar.
+- Pendente: export do Answer the Public e print da primeira página dos três termos novos.
