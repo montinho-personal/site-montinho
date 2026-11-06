@@ -1527,3 +1527,9 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 
 - `banana-engorda`: entraram "2, 3, 4 bananas" e "comer muita banana" (tabela), "o que engorda mais, banana ou pão" (PAA), "com aveia" e "com leite", "a barriga" e "incha a barriga" (sem afirmar causa), "quantas por dia na dieta" (H2) e a coluna de 75 g para maçã, ouro e da terra (comparação). "À noite", "ou emagrece" e "qual engorda mais" já estavam.
 - Título e descrição mantidos. Sem `updatedAt`: publicado hoje.
+
+## 2026-11-06 — Prints: amendoim engorda
+
+- `amendoim-engorda`: entraram "é bom para quê" e "benefícios" (só nutrientes da TACO), "quem está de dieta pode comer", "todos os dias", "japonês" e "cozido" (sem número: a TACO não tem os dois), "sem casca", "a barriga", "pasta de amendoim engorda" (com link para o guia da pasta), "doce de amendoim" (paçoca e pé-de-moleque) e "como usar para emagrecer".
+- Fora: "gorduras boas (mono e poli-insaturadas)", da visão geral por IA: a base do site não tem a divisão de ácidos graxos.
+- Título e descrição mantidos. Sem `updatedAt`: publicado hoje.

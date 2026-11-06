@@ -43,6 +43,11 @@ import type { BlogPost } from "./blog";
  * com aveia e leite, barriga). Aveia em flocos 393,8 kcal/100 g, 1 colher de
  * sopa = 15 g (POF). Maçã, ouro e da terra a 75 g são só comparação.
  *
+ * Amendoim revisto em 06/11 com os prints (benefícios, todo dia, japonês,
+ * cozido, sem casca, barriga, como usar para emagrecer). Torrado salgado:
+ * magnésio 159 mg e sódio 376 mg por 100 g (punhado: 48 mg e 113 mg). A TACO
+ * não tem o amendoim japonês nem o cozido: sem número para eles.
+ *
  * Ferramenta: nenhuma embutida (ARTIGOS_SEM_FERRAMENTA). A conta que sobra é
  * "quanto isso pesa no meu dia", mas os registros de TDEE, déficit, macros e
  * cardápio estão no teto de 8; as calorias da porção vêm prontas no texto e
@@ -379,7 +384,7 @@ export const ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS: BlogPost[] = [
       "Quantas calorias tem o amendoim por punhado, colher e pacote, a diferença entre cru, torrado, paçoca e pé-de-moleque, e como comer sem exagerar.",
     category: "Nutrição",
     date: "2026-11-06",
-    readTime: "5 min",
+    readTime: "7 min",
     author: "Montinho",
     tags: ["amendoim", "calorias", "lanches", "gordura", "dieta"],
     faq: [
@@ -399,9 +404,29 @@ export const ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS: BlogPost[] = [
           "Para a maioria das pessoas, um punhado (perto de 30 g) por dia cabe bem. Mais que isso pode caber, desde que você conte as calorias no total do dia.",
       },
       {
+        question: "Quem está de dieta pode comer amendoim?",
+        answer:
+          "Pode, contando a porção. Um punhado (30 g) tem perto de 182 kcal e cabe na maioria das dietas. O cuidado é não comer do pacote: sirva a porção num pote e guarde o resto.",
+      },
+      {
+        question: "Comer amendoim todos os dias engorda?",
+        answer:
+          "Não, se a porção couber no total do dia. Um punhado por dia, todo dia, soma perto de 182 kcal. O que engorda é o pacote inteiro todo dia sem contar.",
+      },
+      {
         question: "Amendoim cru ou torrado engorda mais?",
         answer:
           "Em 100 g, o torrado salgado tem perto de 606 kcal e o cru, perto de 544 kcal, porque perde água ao torrar. A diferença por punhado é pequena; o que pesa é a quantidade.",
+      },
+      {
+        question: "Amendoim japonês engorda?",
+        answer:
+          "É mais calórico que parece, porque vem coberto por uma casquinha de farinha e costuma ser frito. A TACO não tem o amendoim japonês; a fonte certa para as calorias é o rótulo do pacote, e a porção a contar é a mesma: um punhado.",
+      },
+      {
+        question: "Amendoim engorda a barriga?",
+        answer:
+          "Nenhum alimento engorda só a barriga: a gordura se acumula no corpo todo, de acordo com o total de calorias. O amendoim engorda a barriga do mesmo jeito que engorda o resto: quando passa do gasto.",
       },
       {
         question: "Paçoca engorda?",
@@ -439,7 +464,10 @@ export const ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS: BlogPost[] = [
 <p><strong>Engorda o que passa do seu gasto, repetido por semanas.</strong> O amendoim não é vilão: tem fibra (7,8 g em 100 g) e alguma proteína, e sustenta. Mas é um alimento em que pouco volume tem muita caloria. Quem come direto do pacote come mais do que imagina.</p>
 <p>O jeito mais simples de controlar: <strong>servir um punhado num pote e guardar o pacote</strong>.</p>
 
-<h2>Cru, torrado, paçoca e pé-de-moleque</h2>
+<h2>Para que o amendoim é bom?</h2>
+<p>Pela TACO, um punhado (30 g) de amendoim torrado traz perto de 6,8 g de proteína, 2,3 g de fibra e 48 mg de magnésio. É um lanche que sustenta, fácil de levar e barato. A outra face é a mesma do começo: são 182 kcal em pouco volume, e o torrado salgado tem perto de 113 mg de sódio no punhado.</p>
+
+<h2>Cru, torrado, cozido, japonês, paçoca e pé-de-moleque</h2>
 <table>
 <thead><tr><th>Em 100 g</th><th>Calorias</th></tr></thead>
 <tbody>
@@ -449,11 +477,25 @@ export const ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS: BlogPost[] = [
 <tr><td>Pé-de-moleque</td><td>503 kcal</td></tr>
 </tbody>
 </table>
-<p>O torrado tem mais calorias por peso que o cru porque perde água. A paçoca e o pé-de-moleque têm um pouco menos por peso, mas trazem bastante açúcar. Para a pasta de amendoim, veja <a href="/blog/pasta-de-amendoim-como-escolher">como escolher a pasta de amendoim</a>.</p>
+<ul>
+<li><strong>Sem casca ou com casca:</strong> é o mesmo amendoim; a casca não se come. Conte o peso já descascado.</li>
+<li><strong>Cozido:</strong> a TACO não tem o amendoim cozido. Como ele absorve água, tende a ter menos calorias por peso que o torrado; o cru é a referência mais próxima.</li>
+<li><strong>Japonês:</strong> vem coberto por uma casquinha de farinha e costuma ser frito. A TACO não tem esse item; veja as calorias no rótulo do pacote.</li>
+</ul>
+<p>O torrado tem mais calorias por peso que o cru porque perde água. A paçoca e o pé-de-moleque têm um pouco menos por peso, mas trazem bastante açúcar. <strong>Pasta de amendoim engorda?</strong> Pelo mesmo motivo do grão: é calórica, e a colher costuma vir cheia demais. Veja <a href="/blog/pasta-de-amendoim-como-escolher">como escolher a pasta de amendoim</a>.</p>
 
 <h2>Quanto amendoim comer por dia?</h2>
 <p>Para a maioria das pessoas, <strong>um punhado, perto de 30 g</strong>, cabe bem. Mais que isso pode caber, desde que você conte no total do dia. Quem quer emagrecer costuma se dar melhor com a porção já separada; quem quer ganhar peso pode usar o amendoim justamente porque soma calorias com pouco volume.</p>
 <p>Para saber quantas calorias cabem no seu dia, use a <a href="/ferramentas/calculadora-deficit-calorico">Calculadora de Déficit Calórico</a>.</p>
+
+<h2>Como usar o amendoim para emagrecer</h2>
+<ul>
+<li><strong>Sirva a porção num pote</strong> e guarde o pacote. É o que mais funciona.</li>
+<li><strong>Use no lugar de um lanche mais calórico</strong>, como biscoito recheado ou salgadinho, e não além dele.</li>
+<li><strong>Junte com fruta</strong> para ter mais volume na mesma refeição.</li>
+<li><strong>Prefira o sem sal ou o cru</strong> se você come todo dia, para não somar sódio.</li>
+</ul>
+<p>Amendoim engorda a barriga? Nenhum alimento engorda só a barriga: a gordura se acumula no corpo todo, de acordo com o total de calorias.</p>
 
 <h2>Amendoim e ganho de massa</h2>
 <p>Um punhado tem perto de 6,8 g de proteína. Ajuda, mas o amendoim é mais gordura que proteína: 16 g de gordura no mesmo punhado. Para ganhar massa, o que mais importa é a proteína do dia inteiro. Veja <a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">quanta proteína por dia</a>.</p>
