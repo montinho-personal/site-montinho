@@ -39,6 +39,10 @@ import type { BlogPost } from "./blog";
  * linguiça de porco frita 279,5 kcal e 20,5 g prot (50 g é exemplo nosso;
  * a TACO não tem calabresa); farinha de milho amarela 350,6 kcal.
  *
+ * Banana revista em 06/11 com os prints (2, 3 ou 4 por dia, banana ou pão,
+ * com aveia e leite, barriga). Aveia em flocos 393,8 kcal/100 g, 1 colher de
+ * sopa = 15 g (POF). Maçã, ouro e da terra a 75 g são só comparação.
+ *
  * Ferramenta: nenhuma embutida (ARTIGOS_SEM_FERRAMENTA). A conta que sobra é
  * "quanto isso pesa no meu dia", mas os registros de TDEE, déficit, macros e
  * cardápio estão no teto de 8; as calorias da porção vêm prontas no texto e
@@ -227,7 +231,7 @@ export const ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS: BlogPost[] = [
       "Quantas calorias tem uma banana, prata, nanica, maçã ou da terra, por que ela não engorda sozinha, e como encaixar no café, no treino e à noite.",
     category: "Nutrição",
     date: "2026-11-06",
-    readTime: "5 min",
+    readTime: "7 min",
     author: "Montinho",
     tags: ["banana", "calorias", "frutas", "pré-treino", "dieta"],
     faq: [
@@ -245,6 +249,26 @@ export const ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS: BlogPost[] = [
         question: "Qual banana engorda mais?",
         answer:
           "Em 100 g, a banana da terra é a mais calórica (128 kcal), seguida da ouro (112), da prata (98), da nanica (92) e da maçã (87). A diferença entre prata, nanica e maçã é pequena; o que muda mais é o tamanho da fruta.",
+      },
+      {
+        question: "Comer 2 bananas por dia engorda?",
+        answer:
+          "Não. Duas bananas prata somam perto de 147 kcal, o que cabe com folga na maioria das dietas. Três ficam perto de 221 kcal e quatro, perto de 295 kcal; aí já vale contar no total do dia.",
+      },
+      {
+        question: "O que engorda mais, banana ou pão?",
+        answer:
+          "O pão. Um pão francês (50 g) tem perto de 150 kcal; uma banana prata (75 g), perto de 74 kcal. Em 100 g, são 300 kcal do pão contra 98 da banana.",
+      },
+      {
+        question: "Banana com aveia ou com leite engorda?",
+        answer:
+          "Somam calorias, mas cabem. Uma banana com 2 colheres de sopa de aveia (30 g) fica perto de 192 kcal. Com leite, a conta depende do copo e do tipo de leite; vitamina com açúcar ou leite condensado é o que pesa.",
+      },
+      {
+        question: "Banana engorda a barriga ou incha a barriga?",
+        answer:
+          "Nenhum alimento engorda só a barriga: a gordura se acumula no corpo todo, de acordo com o total de calorias. Algumas pessoas sentem a barriga estufada depois de comer fruta, principalmente em quantidade; se for frequente, vale conversar com médico ou nutricionista.",
       },
       {
         question: "Banana à noite engorda?",
@@ -277,12 +301,12 @@ export const ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS: BlogPost[] = [
 <tbody>
 <tr><td><strong>Prata</strong></td><td>98 kcal</td><td><strong>cerca de 74 kcal</strong></td></tr>
 <tr><td><strong>Nanica</strong></td><td>92 kcal</td><td><strong>cerca de 69 kcal</strong></td></tr>
-<tr><td>Maçã</td><td>87 kcal</td><td>—</td></tr>
-<tr><td>Ouro</td><td>112 kcal</td><td>—</td></tr>
-<tr><td>Da terra</td><td>128 kcal</td><td>—</td></tr>
+<tr><td>Maçã</td><td>87 kcal</td><td>cerca de 65 kcal</td></tr>
+<tr><td>Ouro</td><td>112 kcal</td><td>cerca de 84 kcal</td></tr>
+<tr><td>Da terra</td><td>128 kcal</td><td>cerca de 96 kcal (a fruta costuma ser bem maior)</td></tr>
 </tbody>
 </table>
-<p>Valores da TACO, a Tabela Brasileira de Composição de Alimentos, com o peso de 1 banana da tabela de medidas do IBGE (75 g, para a prata e a nanica). A banana da terra costuma ser bem maior e é comida cozida ou frita, então a porção muda bastante.</p>
+<p>Valores da TACO, a Tabela Brasileira de Composição de Alimentos, com o peso de 1 banana da tabela de medidas do IBGE (75 g). Na maçã, na ouro e na da terra, os 75 g servem só para comparar: a banana ouro costuma ser menor, e a da terra, bem maior, comida cozida ou frita.</p>
 <p>Uma banana prata tem perto de 19,5 g de carboidrato, 1,5 g de fibra e 268 mg de potássio. Você vai encontrar a ficha da prata e da nanica no fim do artigo.</p>
 
 <h2>Banana engorda: sim ou não?</h2>
@@ -292,15 +316,39 @@ export const ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS: BlogPost[] = [
 <h2>Qual banana engorda mais?</h2>
 <p>Em 100 g, a banana da terra é a mais calórica, seguida da ouro, da prata, da nanica e da maçã. Entre prata, nanica e maçã, a diferença é pequena, de 5 a 10 kcal por fruta. O que muda mais é o tamanho: uma banana grande pode ter o dobro de uma pequena.</p>
 
+<h2>Comer 2, 3 ou 4 bananas por dia engorda?</h2>
+<table>
+<thead><tr><th>Bananas prata por dia</th><th>Calorias</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>cerca de 74 kcal</td></tr>
+<tr><td>2</td><td>cerca de 147 kcal</td></tr>
+<tr><td>3</td><td>cerca de 221 kcal</td></tr>
+<tr><td>4</td><td>cerca de 295 kcal</td></tr>
+</tbody>
+</table>
+<p>Duas bananas por dia não engordam ninguém que está com o resto do dia no lugar. A partir de três ou quatro, a conta já pesa o mesmo que uma refeição pequena, e vale contar no total. Comer muita banana engorda pelo mesmo motivo que comer muito de qualquer coisa: as calorias somam.</p>
+
+<h2>O que engorda mais, banana ou pão?</h2>
+<p>O pão. Um pão francês (50 g) tem perto de 150 kcal, o dobro de uma banana prata (perto de 74 kcal). Em 100 g, o pão tem 300 kcal e a banana, 98. Trocar o pão pela banana no lanche diminui as calorias, mas também a proteína; o ideal é a banana acompanhada de iogurte, ovo ou leite.</p>
+
+<h2>Banana com aveia, com leite ou com pasta de amendoim</h2>
+<ul>
+<li><strong>Com aveia:</strong> uma banana com 2 colheres de sopa de aveia (30 g) fica perto de 192 kcal, com mais fibra. Bom café da manhã ou pré-treino.</li>
+<li><strong>Com leite (vitamina):</strong> a conta depende do tamanho do copo e do tipo de leite. O que pesa costuma ser o açúcar, o leite condensado ou o achocolatado.</li>
+<li><strong>Com pasta de amendoim:</strong> bom lanche, mas a pasta é calórica. Veja <a href="/blog/pasta-de-amendoim-como-escolher">como escolher a pasta de amendoim</a>.</li>
+</ul>
+
+<h2>Banana engorda a barriga?</h2>
+<p>Nenhum alimento engorda só a barriga: a gordura se acumula no corpo todo, de acordo com o total de calorias. Algumas pessoas sentem a barriga estufada depois de comer fruta, principalmente em quantidade, e isso não é gordura. Se for frequente, vale conversar com médico ou nutricionista. Veja <a href="/blog/barriga-inchada-ou-gordura">barriga inchada ou gordura</a>.</p>
+
 <h2>Banana à noite, antes e depois do treino</h2>
 <ul>
 <li><strong>À noite:</strong> o horário não engorda. Uma banana é um lanche leve. Veja <a href="/blog/o-que-comer-a-noite-para-nao-engordar">o que comer à noite</a>.</li>
 <li><strong>Antes do treino:</strong> uma das melhores opções. Carboidrato fácil de digerir, de 30 a 60 minutos antes. Mais em <a href="/blog/frutas-antes-do-treino">frutas antes do treino</a>.</li>
 <li><strong>Depois do treino:</strong> combina bem com uma fonte de proteína, como iogurte, leite ou whey.</li>
-<li><strong>Com aveia ou pasta de amendoim:</strong> bom lanche, mas a pasta é calórica. Veja <a href="/blog/pasta-de-amendoim-como-escolher">como escolher a pasta de amendoim</a>.</li>
 </ul>
 
-<h2>Quantas bananas por dia?</h2>
+<h2>Quantas bananas comer por dia na dieta?</h2>
 <p>Para a maioria das pessoas, <strong>uma a três bananas por dia</strong> cabem bem, junto com outras frutas. Duas bananas somam perto de 150 kcal. Quem tem doença renal ou orientação médica para controlar potássio deve seguir o que o médico disser.</p>
 <p>Para saber quantas calorias cabem no seu dia, use a <a href="/ferramentas/calculadora-deficit-calorico">Calculadora de Déficit Calórico</a>.</p>
 
@@ -309,8 +357,8 @@ export const ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS: BlogPost[] = [
 
 <h2>Fontes</h2>
 <ul>
-<li><a href="https://www.cfn.org.br/wp-content/uploads/2017/03/taco_4_edicao_ampliada_e_revisada.pdf" target="_blank" rel="noopener noreferrer">TACO — Tabela Brasileira de Composição de Alimentos, 4ª edição (NEPA/Unicamp)</a>: banana prata, nanica, maçã, ouro e da terra</li>
-<li><a href="https://biblioteca.ibge.gov.br/" target="_blank" rel="noopener noreferrer">IBGE — POF 2008-2009, Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil</a> (1 banana)</li>
+<li><a href="https://www.cfn.org.br/wp-content/uploads/2017/03/taco_4_edicao_ampliada_e_revisada.pdf" target="_blank" rel="noopener noreferrer">TACO — Tabela Brasileira de Composição de Alimentos, 4ª edição (NEPA/Unicamp)</a>: banana prata, nanica, maçã, ouro e da terra, pão francês, aveia em flocos</li>
+<li><a href="https://biblioteca.ibge.gov.br/" target="_blank" rel="noopener noreferrer">IBGE — POF 2008-2009, Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil</a> (1 banana, 1 pão francês, 1 colher de sopa de aveia)</li>
 </ul>
 
 <h2>Leia também</h2>
