@@ -421,7 +421,7 @@ export const ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS: BlogPost[] = [
       {
         question: "Amendoim japonês engorda?",
         answer:
-          "É mais calórico que parece, porque vem coberto por uma casquinha de farinha e costuma ser frito. A TACO não tem o amendoim japonês; a fonte certa para as calorias é o rótulo do pacote, e a porção a contar é a mesma: um punhado.",
+          "Ele vem coberto por uma casquinha de farinha e costuma ser frito, o que soma calorias à do grão. A TACO não tem o amendoim japonês; a fonte certa para as calorias é o rótulo do pacote, e a porção a contar é a mesma: um punhado.",
       },
       {
         question: "Amendoim engorda a barriga?",
