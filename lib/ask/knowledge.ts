@@ -98,7 +98,7 @@ const BUSINESS_DOCS: BusinessDoc[] = [
     heading: "Como falar com o Montinho",
     keywords: ["contato", "whatsapp", "falar", "telefone", "mensagem", "instagram"],
     text:
-      "O canal principal de contato é o WhatsApp +55 (11) 98106-3409, disponível pelos botões do site. Também é possível conhecer o trabalho pelo Instagram @montinhopersonal. A conversa inicial é gratuita e sem compromisso.",
+      "O canal principal de contato é o WhatsApp +55 (11) 98106-3409, disponível pelos botões do site. Também é possível conhecer o trabalho pelo Instagram @montinho_personal. A conversa inicial é gratuita e sem compromisso.",
   },
   {
     /**

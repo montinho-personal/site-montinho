@@ -374,7 +374,7 @@ export default async function BlogPost({ params }: Props) {
       name: "Montinho",
       url: `${SITE_URL}/minha-historia`,
       jobTitle: "Personal Trainer",
-      sameAs: ["https://www.instagram.com/montinhopersonal/"],
+      sameAs: ["https://www.instagram.com/montinho_personal/"],
     },
     publisher: {
       "@type": "Organization",
