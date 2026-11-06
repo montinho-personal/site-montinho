@@ -1005,6 +1005,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-11-04",
+    updatedAt: "2026-11-06",
     readTime: "5 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC 334", "Amanda Nunes", "Kayla Harrison", "Caio Borralho"],
@@ -1067,12 +1068,13 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
 <tr><td>Macy Chiasson x <strong>Bia Mesquita</strong></td><td>Peso-galo feminino</td></tr>
 <tr><td>Adrian Yanez x Juan Diaz</td><td>Peso-galo</td></tr>
-<tr><td>Nazim Sadykhov x <strong>Jefferson Nascimento</strong></td><td>Peso-leve</td></tr>
+<tr><td>Jared Gordon x <strong>Melquizael Costa</strong></td><td>Peso-leve</td></tr>
+<tr><td>Evan Elder x <strong>Samuel Sanches</strong></td><td>Peso-leve</td></tr>
 </tbody></table>
 <p>A ordem das lutas pode mudar até o dia do evento.</p>
 
 <h2>Charles do Bronx e Poatan lutam no UFC 334?</h2>
-<p>Não. <strong>Charles Oliveira</strong>, o Do Bronx, e <strong>Alex Pereira</strong>, o Poatan, não estão no card oficial do UFC 334, conferido em 4 de novembro de 2026. Os brasileiros do evento são Amanda Nunes, Caio Borralho, Cesar Almeida, Bia Mesquita e Jefferson Nascimento. Se o card mudar, esta página é atualizada.</p>
+<p>Não. <strong>Charles Oliveira</strong>, o Do Bronx, e <strong>Alex Pereira</strong>, o Poatan, não estão no card oficial do UFC 334, conferido em 6 de novembro de 2026. Os brasileiros do evento são Amanda Nunes, Caio Borralho, Cesar Almeida, Bia Mesquita, Melquizael Costa e Samuel Sanches. Se o card mudar, esta página é atualizada.</p>
 
 <h2>Corte de peso: o que acontece antes da luta</h2>
 <p>Todos passam pela pesagem na véspera, e muitos perdem vários quilos de água nos dias anteriores. É prática de atleta profissional, com equipe, e não serve de modelo para quem quer emagrecer. Entenda em <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a> e veja como eles treinam em <a href="/blog/treino-de-lutador-mma">treino de lutador de MMA</a>.</p>
@@ -1106,7 +1108,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
       { question: "Quantas derrotas tem a Amanda Nunes?", answer: "Cinco. No UFC, perdeu para Cat Zingano (2014) e Julianna Peña (2021), que ela venceu na revanche. As outras foram antes do UFC: Alexis Davis, no Strikeforce, e duas no começo da carreira." },
       { question: "Amanda Nunes se aposentou?", answer: "Ela anunciou a aposentadoria depois de vencer Irene Aldana, em junho de 2023, e voltou atrás: luta contra Kayla Harrison no UFC 334, em 14 de novembro de 2026." },
       { question: "Por que a luta de Amanda Nunes foi cancelada?", answer: "Não foi cancelada, foi adiada. A luta contra Kayla Harrison estava prevista para o UFC 324 e saiu depois que Harrison operou o pescoço. Foi remarcada para o UFC 334." },
-      { question: "Quais brasileiros lutam no UFC 334?", answer: "Amanda Nunes e Caio Borralho no card principal, Cesar Almeida no preliminar, e Bia Mesquita e Jefferson Nascimento nas preliminares iniciais." },
+      { question: "Quais brasileiros lutam no UFC 334?", answer: "Amanda Nunes e Caio Borralho no card principal, Cesar Almeida no preliminar, e Bia Mesquita, Melquizael Costa e Samuel Sanches nas preliminares iniciais. A luta de Jefferson Nascimento contra Nazim Sadykhov saiu do card oficial em novembro." },
       { question: "Qual é a luta principal do UFC 334?", answer: "Ciryl Gane x Josh Hokit, pelo cinturão do peso-pesado. A co-principal é Kayla Harrison x Amanda Nunes, pelo cinturão do peso-galo feminino." },
       { question: "Quem vai lutar no UFC 334?", answer: "No card principal: Gane x Hokit, Harrison x Amanda Nunes, Caio Borralho x Belgaroui, Medić x Holland e Hasan x Gurule. O card completo, com as 12 lutas, está na tabela desta página." },
       { question: "Quantas lutas tem o UFC 334?", answer: "12 lutas: 5 no card principal, 4 no card preliminar e 3 nas preliminares iniciais, pelo card oficial de 4 de novembro de 2026." },
@@ -1119,12 +1121,13 @@ export const UFC_2026_POSTS: BlogPost[] = [
     title: "Brasileiros no UFC 334: quem luta, contra quem e que horas",
     metaTitle: "Brasileiros no UFC 334: Amanda Nunes, Borralho e Mais",
     metaDescription:
-      "Os brasileiros do UFC 334 (14/11): Amanda Nunes pelo cinturão contra Kayla Harrison, Caio Borralho, Cesar Almeida, Bia Mesquita e Jefferson Nascimento. Adversários e horários.",
+      "Os brasileiros do UFC 334 (14/11): Amanda Nunes pelo cinturão contra Kayla Harrison, Caio Borralho, Cesar Almeida, Bia Mesquita, Melquizael Costa e Samuel Sanches. Adversários e horários.",
     excerpt:
-      "Amanda Nunes, Caio Borralho, Cesar Almeida, Bia Mesquita e Jefferson Nascimento no UFC 334: contra quem lutam e a que horas.",
+      "Amanda Nunes, Caio Borralho, Cesar Almeida, Bia Mesquita, Melquizael Costa e Samuel Sanches no UFC 334: contra quem lutam e a que horas.",
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-11-04",
+    updatedAt: "2026-11-06",
     readTime: "3 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC 334", "brasileiros no UFC", "Amanda Nunes", "Caio Borralho"],
@@ -1144,7 +1147,8 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <h3>Preliminares iniciais (19h)</h3>
 <ul>
 <li><strong>Bia Mesquita</strong> x Macy Chiasson: peso-galo feminino.</li>
-<li><strong>Jefferson Nascimento</strong> x Nazim Sadykhov: peso-leve.</li>
+<li><strong>Melquizael Costa</strong> x Jared Gordon: peso-leve.</li>
+<li><strong>Samuel Sanches</strong> x Evan Elder: peso-leve.</li>
 </ul>
 
 <h2>Que horas lutam os brasileiros?</h2>
@@ -1163,7 +1167,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <li><a href="https://www.ufc.com.br/athlete/caio-borralho" target="_blank" rel="noopener noreferrer">UFC — Caio Borralho (perfil oficial)</a></li>
 </ul>`,
     faq: [
-      { question: "Quais brasileiros lutam no UFC 334?", answer: "Amanda Nunes e Caio Borralho no card principal, Cesar Almeida no preliminar, e Bia Mesquita e Jefferson Nascimento nas preliminares iniciais." },
+      { question: "Quais brasileiros lutam no UFC 334?", answer: "Amanda Nunes e Caio Borralho no card principal, Cesar Almeida no preliminar, e Bia Mesquita, Melquizael Costa e Samuel Sanches nas preliminares iniciais. A luta de Jefferson Nascimento contra Nazim Sadykhov saiu do card oficial em novembro." },
       { question: "Contra quem luta Amanda Nunes no UFC 334?", answer: "Contra a campeã Kayla Harrison, pelo cinturão do peso-galo feminino." },
       { question: "Charles do Bronx ou Poatan lutam no UFC 334?", answer: "Não. Charles Oliveira e Alex Pereira não estão no card oficial, conferido em 4 de novembro de 2026." },
       { question: "Contra quem luta Caio Borralho no UFC 334?", answer: "Contra o holandês Yousri Belgaroui, no peso-médio, no card principal." },
