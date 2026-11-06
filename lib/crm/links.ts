@@ -105,6 +105,8 @@ export const LINKS: Record<string, LinkControlado> = {
    * vídeo está pronto para gravar e mandar, e é isso que a página pede.
    */
   "yt-filmar": { destino: "/revisao-de-execucao", utm_source: "youtube", utm_medium: "video", utm_campaign: "como_filmar_exercicio", utm_content: "descricao", tipo: "social" },
+  // Shorts de meme (06/11/2026): campanha única "memes_personal" e um utm_content por vídeo, para comparar os memes entre si.
+  "yt-meme-gato": { destino: "/consultoria-online", utm_source: "youtube", utm_medium: "video", utm_campaign: "memes_personal", utm_content: "gato_julgamento", tipo: "social" },
   "wa-filmar": { destino: "/revisao-de-execucao", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "como_filmar_exercicio", tipo: "social" },
 };
 
