@@ -1506,3 +1506,12 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `triceps-corda`: entraram "para que serve", "qual cabeça", "qual altura da polia" e "polia baixa", "francês" (720) e "testa" (880) como variações com link para os artigos de cada um, "unilateral" (260), "no cross" (480 + 170), "pegada invertida", "corda ou barra" (reta, V, W), "substituir" (170), "corda ou banco" (140) e "feminino". A visão geral por IA cita tronco levemente inclinado e volta até cerca de 90 graus; entrou como execução, não como dado. Fora: "puxador tríceps corda" (compra do acessório) e GIF.
 - `remada-alta`: entraram "para que serve" (390), "trabalha qual músculo" (720), "ombro ou costas", "pegada aberta ou fechada" (720 + 590), "polia com corda" (880), "no cross com barra reta" e "triângulo", "barra W", "smith" (480), "anilha" (880), "kettlebell" e "elástico" (320 cada), "unilateral", "remada alta articulada" (590, que é a máquina de costas, outro exercício), "substituto", "encolhimento ou remada alta" e "face pull ou remada alta com corda". Fora: combinações com agachamento e terra sumo, "HBC" e "hammer" (marca de máquina). "Também conhecida como puxada vertical", da visão geral por IA, não entrou (sem fonte).
 - Títulos e descrições mantidos: já trazem os termos principais ("como fazer", "polia", "músculos trabalhados", "com barra, halteres e polia"). Sem `updatedAt`: os três foram publicados hoje.
+
+## 2026-11-06 — Sem prints: cuscuz, banana e amendoim engorda
+
+- Pedido do Montinho: "criar os próximos artigos". Grupo "engorda?" sugerido antes, com volumes do Planejador de Palavras-chave do Google Ads (Brasil): "cuscuz engorda" 22.200/mês (+ "cuscuz calorias" 2.900, "cuscuz emagrece" 1.300), "banana engorda" 14.800 (+ "banana calorias" 5.400), "amendoim engorda" 12.100 (+ "amendoim calorias" 3.600).
+- Canibalização: `melhores-frutas-para-emagrecer` tem "Banana engorda?" como uma pergunta do FAQ, num artigo de frutas em geral; `pasta-de-amendoim-como-escolher` é guia de compra da pasta. Os artigos se linkam.
+- Números da TACO e porções da POF/IBGE pela base do site. O cuscuz não tem medida caseira na base: o prato de 200 g é exemplo, e o texto diz isso.
+- Ferramenta: nenhuma embutida (TDEE, déficit, macros e cardápio no teto de 8); ficha de alimento e link para a calculadora de déficit.
+- "Treino metabólico" (3.600) fica como próxima pauta.
+- Pendente: export do Answer the Public e print da primeira página dos três termos.
