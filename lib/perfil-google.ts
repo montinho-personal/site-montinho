@@ -13,7 +13,7 @@
  */
 import testimonials from "@/data/testimonials.json";
 
-export const INSTAGRAM_URL = "https://www.instagram.com/montinhopersonal/";
+export const INSTAGRAM_URL = "https://www.instagram.com/montinho_personal/";
 
 /** URL pública do perfil, ou null enquanto não estiver preenchida. */
 export function urlDoPerfilGoogle(): string | null {

@@ -622,7 +622,7 @@ export default function PersonalTrainerSantanaDeParnaiba() {
             </p>
             <h3 className="text-white font-semibold text-lg pt-2">Santana de Parnaíba, não o bairro de Santana</h3>
             <p>
-              O atendimento é em Santana de Parnaíba, cidade vizinha de Barueri e Alphaville — não no bairro de Santana, na zona norte de São Paulo. Os treinos e resultados dos alunos estão no Instagram <a href="https://www.instagram.com/montinhopersonal" target="_blank" rel="noopener noreferrer" className="text-white underline underline-offset-4 hover:text-gray-300">@montinhopersonal</a>.
+              O atendimento é em Santana de Parnaíba, cidade vizinha de Barueri e Alphaville — não no bairro de Santana, na zona norte de São Paulo. Os treinos e resultados dos alunos estão no Instagram <a href="https://www.instagram.com/montinho_personal" target="_blank" rel="noopener noreferrer" className="text-white underline underline-offset-4 hover:text-gray-300">@montinho_personal</a>.
             </p>
           </div>
           <a
