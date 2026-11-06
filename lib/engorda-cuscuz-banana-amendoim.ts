@@ -32,6 +32,13 @@ import type { BlogPost } from "./blog";
  * carb, 268 mg potássio; nanica = 69 kcal. Amendoim: punhado 182 kcal e
  * 6,8 g prot; colher de sopa 103 kcal; pacote 303 kcal.
  *
+ * Cuscuz revisto em 06/11 com os prints (mais que arroz/pão, flocão,
+ * acompanhamentos, todo dia, incha a barriga). Acompanhamentos: ovo frito
+ * 240,2 kcal/100 g; feijão carioca cozido 76,4 kcal e 4,8 g prot (1 concha =
+ * 140 g); peito de frango grelhado 159,2 kcal e 32 g prot (1 filé = 100 g);
+ * linguiça de porco frita 279,5 kcal e 20,5 g prot (50 g é exemplo nosso;
+ * a TACO não tem calabresa); farinha de milho amarela 350,6 kcal.
+ *
  * Ferramenta: nenhuma embutida (ARTIGOS_SEM_FERRAMENTA). A conta que sobra é
  * "quanto isso pesa no meu dia", mas os registros de TDEE, déficit, macros e
  * cardápio estão no teto de 8; as calorias da porção vêm prontas no texto e
@@ -49,7 +56,7 @@ export const ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS: BlogPost[] = [
       "Quantas calorias tem o cuscuz de milho, como ele se compara com arroz e pão, o que muda com ovo, manteiga e queijo, e como encaixar no café, na janta e no treino.",
     category: "Nutrição",
     date: "2026-11-06",
-    readTime: "5 min",
+    readTime: "7 min",
     author: "Montinho",
     tags: ["cuscuz", "calorias", "café da manhã", "carboidrato", "dieta"],
     faq: [
@@ -69,7 +76,17 @@ export const ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS: BlogPost[] = [
           "É uma das combinações mais equilibradas: 200 g de cuscuz com um ovo cozido ficam perto de 293 kcal e 10 g de proteína. O ovo frito ou a manteiga por cima somam mais calorias, mas a refeição continua cabendo na maioria das dietas.",
       },
       {
-        question: "Cuscuz é melhor que pão para emagrecer?",
+        question: "Quem está de dieta pode comer cuscuz?",
+        answer:
+          "Pode. O cuscuz de milho tem poucas calorias por peso e cabe na maioria das dietas. O que pede atenção é o tamanho do prato e o que vai junto: manteiga, queijo e calabresa somam mais que o próprio cuscuz.",
+      },
+      {
+        question: "Cuscuz engorda mais que arroz?",
+        answer:
+          "Não. Em 100 g, o cuscuz de milho cozido tem perto de 113 kcal e o arroz branco cozido, perto de 128 kcal. A diferença é pequena; o tamanho do prato pesa mais que a escolha entre os dois.",
+      },
+      {
+        question: "O que engorda mais, o pão ou o cuscuz?",
         answer:
           "Por peso, o cuscuz tem bem menos calorias: perto de 113 kcal em 100 g, contra 300 do pão francês, porque o cuscuz cozido tem muita água. Mas o que conta é a porção que você come; os dois cabem numa dieta.",
       },
@@ -77,6 +94,21 @@ export const ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS: BlogPost[] = [
         question: "Cuscuz à noite engorda?",
         answer:
           "O horário não engorda. O que conta é o total do dia. Cuscuz com ovo à noite é uma janta leve e prática, se as calorias do resto do dia couberem.",
+      },
+      {
+        question: "Cuscuz com manteiga, queijo ou calabresa engorda?",
+        answer:
+          "Somam calorias. 5 g de manteiga são perto de 36 kcal; 50 g de linguiça de porco frita, perto de 140 kcal, mais que metade de um prato de cuscuz. Cabem, mas são eles que costumam pesar, não o cuscuz.",
+      },
+      {
+        question: "Comer cuscuz todo dia engorda?",
+        answer:
+          "Não, se o total do dia couber no seu gasto. Muita gente come cuscuz todo dia no café da manhã. A variedade ajuda a acertar outros nutrientes, mas comer todo dia não é problema por si só.",
+      },
+      {
+        question: "Cuscuz incha a barriga?",
+        answer:
+          "Algumas pessoas sentem a barriga estufada depois de um prato grande, como acontece com qualquer refeição volumosa. Se acontece sempre, vale observar a porção e o que vai junto; inchaço frequente é para conversar com médico ou nutricionista.",
       },
       {
         question: "Cuscuz emagrece?",
@@ -106,6 +138,16 @@ export const ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS: BlogPost[] = [
 <p>Valores da TACO, a Tabela Brasileira de Composição de Alimentos. O cuscuz cozido tem bastante água, por isso pesa menos calorias que o pão no mesmo peso. O cuscuz paulista é outro prato, feito com farinha de milho, óleo e recheios, e tem mais gordura (4,6 g contra 0,7 g em 100 g).</p>
 <p>Você vai encontrar a ficha do cuscuz e do ovo no fim do artigo, com os números da tabela.</p>
 
+<h2>Cuscuz engorda mais que arroz ou pão?</h2>
+<p><strong>Não.</strong> No mesmo peso, o cuscuz cozido tem um pouco menos calorias que o arroz (113 contra 128 kcal em 100 g) e bem menos que o pão francês (300 kcal), porque tem muita água. Na prática:</p>
+<ul>
+<li><strong>Cuscuz ou arroz:</strong> quase empate. O que decide é o tamanho do prato.</li>
+<li><strong>Cuscuz ou pão:</strong> 200 g de cuscuz (perto de 227 kcal) têm menos calorias que 2 pães franceses (perto de 300 kcal) e enchem mais o prato.</li>
+</ul>
+
+<h2>Cuscuz de flocão engorda?</h2>
+<p>O flocão é a farinha de milho flocada, que vira o cuscuz depois de hidratada e cozida no vapor. O "cuscuz de flocão" é o próprio cuscuz de milho desta página. A farinha seca tem perto de 351 kcal em 100 g; depois de pronta, com a água que absorve, o cuscuz fica perto de 113 kcal em 100 g. Por isso compare sempre o cuscuz pronto, e não a farinha do pacote.</p>
+
 <h2>Um prato de cuscuz: quanto dá?</h2>
 <p>A tabela de medidas do IBGE não traz uma porção caseira de cuscuz, então usamos 200 g como exemplo, um prato de café da manhã. Pese o seu uma vez para saber quanto você costuma servir.</p>
 <table>
@@ -123,12 +165,32 @@ export const ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS: BlogPost[] = [
 <p><strong>Engorda o que passa do seu gasto, repetido por semanas.</strong> O cuscuz sozinho é um carboidrato com poucas calorias por peso, barato e que sustenta. O problema aparece quando o prato dobra e chega com manteiga, queijo coalho e linguiça: aí a refeição passa fácil do dobro.</p>
 <p>A versão que mais ajuda quem quer emagrecer é a mais simples: cuscuz com ovo cozido ou mexido com pouca gordura, e um pouco de manteiga se você faz questão.</p>
 
-<h2>Cuscuz com ovo, manteiga ou queijo</h2>
+<h2>Cuscuz com ovo, manteiga, queijo, calabresa, frango ou feijão</h2>
+<p>O cuscuz é a base; o que vai junto é o que muda a conta. Sempre com 200 g de cuscuz (perto de 227 kcal e 4 g de proteína):</p>
+<table>
+<thead><tr><th>Cuscuz (200 g) +</th><th>Total</th><th>Proteína</th></tr></thead>
+<tbody>
+<tr><td>1 ovo cozido (45 g)</td><td>cerca de 293 kcal</td><td>10 g</td></tr>
+<tr><td>1 ovo frito (45 g)</td><td>cerca de 335 kcal</td><td>11 g</td></tr>
+<tr><td>1 concha de feijão (140 g)</td><td>cerca de 334 kcal</td><td>11 g</td></tr>
+<tr><td>1 filé de frango grelhado (100 g)</td><td>cerca de 386 kcal</td><td>36 g</td></tr>
+<tr><td>50 g de linguiça de porco frita</td><td>cerca de 367 kcal</td><td>15 g</td></tr>
+<tr><td>5 g de manteiga</td><td>cerca de 263 kcal</td><td>4 g</td></tr>
+</tbody>
+</table>
+<p>Valores da TACO; peso do ovo, da concha de feijão e do filé de frango pela tabela de medidas do IBGE. A TACO não tem calabresa nem queijo coalho: a linguiça de porco frita entra como referência, e os 50 g são exemplo nosso.</p>
 <ul>
-<li><strong>Com ovo:</strong> a melhor dupla. O ovo traz a proteína que o cuscuz não tem. Veja <a href="/blog/quantos-ovos-por-dia">quantos ovos por dia</a>.</li>
+<li><strong>Com ovo ou frango:</strong> as melhores duplas para quem quer emagrecer ou ganhar massa, porque trazem a proteína que o cuscuz não tem. Veja <a href="/blog/quantos-ovos-por-dia">quantos ovos por dia</a>.</li>
+<li><strong>Com feijão:</strong> combinação comum no Nordeste, com mais proteína e fibra. Cabe bem numa dieta.</li>
 <li><strong>Com manteiga:</strong> 5 g somam perto de 36 kcal. Uma colher bem cheia passa disso fácil.</li>
-<li><strong>Com queijo coalho ou linguiça:</strong> sobem bastante as calorias e a gordura. Cabem de vez em quando, ou em porção menor.</li>
+<li><strong>Com queijo, calabresa ou com leite:</strong> sobem as calorias e, no caso da calabresa e do queijo, a gordura. Cabem de vez em quando, ou em porção menor.</li>
 </ul>
+
+<h2>Comer cuscuz todo dia engorda? E a "dieta do cuscuz"?</h2>
+<p>Comer cuscuz todo dia não engorda se o total do dia couber no seu gasto. Muita gente come cuscuz todo dia no café da manhã e emagrece. Não existe uma "dieta do cuscuz" que emagreça por causa do cuscuz: o que emagrece é o déficit de calorias mantido por semanas, e o cuscuz é só uma base barata e leve para montar esse cardápio.</p>
+
+<h2>Cuscuz incha a barriga?</h2>
+<p>Algumas pessoas sentem a barriga estufada depois de um prato grande, como acontece com qualquer refeição volumosa. Se acontece sempre, observe a porção e o que vai junto. Inchaço frequente é para conversar com médico ou nutricionista. Veja também <a href="/blog/barriga-inchada-ou-gordura">barriga inchada ou gordura</a>.</p>
 
 <h2>Cuscuz no café da manhã, à noite e no treino</h2>
 <ul>
@@ -143,8 +205,8 @@ export const ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS: BlogPost[] = [
 
 <h2>Fontes</h2>
 <ul>
-<li><a href="https://www.cfn.org.br/wp-content/uploads/2017/03/taco_4_edicao_ampliada_e_revisada.pdf" target="_blank" rel="noopener noreferrer">TACO — Tabela Brasileira de Composição de Alimentos, 4ª edição (NEPA/Unicamp)</a>: cuscuz de milho cozido, cuscuz paulista, arroz cozido, pão francês, ovo cozido, manteiga</li>
-<li><a href="https://biblioteca.ibge.gov.br/" target="_blank" rel="noopener noreferrer">IBGE — POF 2008-2009, Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil</a> (1 ovo e 1 pão francês)</li>
+<li><a href="https://www.cfn.org.br/wp-content/uploads/2017/03/taco_4_edicao_ampliada_e_revisada.pdf" target="_blank" rel="noopener noreferrer">TACO — Tabela Brasileira de Composição de Alimentos, 4ª edição (NEPA/Unicamp)</a>: cuscuz de milho cozido, cuscuz paulista, farinha de milho, arroz cozido, pão francês, ovo cozido e frito, feijão carioca, frango grelhado, linguiça de porco frita, manteiga</li>
+<li><a href="https://biblioteca.ibge.gov.br/" target="_blank" rel="noopener noreferrer">IBGE — POF 2008-2009, Tabela de Medidas Referidas para os Alimentos Consumidos no Brasil</a> (1 ovo, 1 pão francês, 1 concha de feijão e 1 filé de frango)</li>
 </ul>
 
 <h2>Leia também</h2>
