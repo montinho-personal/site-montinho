@@ -52,6 +52,18 @@ export const FICHAS_POR_ARTIGO: Record<string, FichaDeArtigo> = {
     alimentos: ["feijao-carioca-cozido", "aveia-flocos-crua", "abacate-cru"],
     destaque: "fibra",
   },
+  "cuscuz-engorda": {
+    alimentos: ["cuscuz-de-milho-cozido-com-sal", "ovo-de-galinha-inteiro-cozido-10minutos"],
+    destaque: "carboidrato",
+  },
+  "banana-engorda": {
+    alimentos: ["banana-prata-crua", "banana-nanica-crua"],
+    destaque: "carboidrato",
+  },
+  "amendoim-engorda": {
+    alimentos: ["amendoim-torrado-salgado", "amendoim-grao-cru"],
+    destaque: "lipideos",
+  },
   "pao-com-ovo-engorda": {
     alimentos: ["pao-trigo-frances", "ovo-de-galinha-inteiro-cozido-10minutos"],
     destaque: "proteina",

@@ -69,6 +69,9 @@ Status: pedir a indexação no Search Console.
 | /blog/face-pull | novo (06/11, sem os prints) | | |
 | /blog/triceps-corda | novo (06/11, sem os prints) | | |
 | /blog/remada-alta | novo (06/11, sem os prints) | | |
+| /blog/cuscuz-engorda | novo (06/11, sem os prints) | | |
+| /blog/banana-engorda | novo (06/11, sem os prints) | | |
+| /blog/amendoim-engorda | novo (06/11, sem os prints) | | |
 | /blog/ombro-estalando-e-normal | novo (04/11, das perguntas de dor do app; sem os prints) | | |
 | /blog/anti-inflamatorio-atrapalha-hipertrofia | novo (04/11, das perguntas de dor do app; sem os prints) | | |
 | /blog/treinar-com-dor | novo (04/11, das perguntas de dor do app; sem os prints) | | |

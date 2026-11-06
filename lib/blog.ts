@@ -121,6 +121,7 @@ import { CRUCIFIXO_INVERSO_POSTS } from "./crucifixo-inverso";
 import { TABATA_POSTS } from "./tabata";
 import { PAO_COM_OVO_POSTS } from "./pao-com-ovo-engorda";
 import { EXERCICIOS_POLIA_OMBRO_POSTS } from "./exercicios-polia-ombro";
+import { ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS } from "./engorda-cuscuz-banana-amendoim";
 import { DOR_NO_TREINO_POSTS } from "./dor-no-treino";
 import { CONDOMINIOS_ALDEIA_POSTS } from "./condominios-aldeia-da-serra";
 import { DOCES_FIT_POSTS } from "./doces-fit";
@@ -157,6 +158,7 @@ export const blogPosts = ([
   ...TABATA_POSTS,
   ...PAO_COM_OVO_POSTS,
   ...EXERCICIOS_POLIA_OMBRO_POSTS,
+  ...ENGORDA_CUSCUZ_BANANA_AMENDOIM_POSTS,
   ...DOR_NO_TREINO_POSTS,
   ...CONDOMINIOS_ALDEIA_POSTS,
   ...DOCES_FIT_POSTS,
