@@ -596,12 +596,12 @@ export const UFC_2026_POSTS: BlogPost[] = [
   },
   {
     slug: "resultado-ufc-vegas-124-bonfim-brady",
-    title: "Resultado UFC Vegas 124: quem ganhou Gabriel Bonfim x Sean Brady",
-    metaTitle: "Resultado UFC Vegas 124: Quem Ganhou Bonfim x Brady",
+    title: "Resultado UFC Vegas 124: Johnny Walker vence Cortes Acosta",
+    metaTitle: "Resultado UFC Vegas 124: Johnny Walker Vence Cortes Acosta",
     metaDescription:
-      "Resultado do UFC Vegas 124 (7/11): quem ganhou Gabriel Bonfim x Sean Brady e o resultado de Virna Jandiroba e dos brasileiros do card. Atualizado na noite da luta.",
+      "Johnny Walker nocauteou Waldo Cortes Acosta no 3º round do UFC Vegas 124 (7/11). Veja como foram Virna Jandiroba e os outros brasileiros do card.",
     excerpt:
-      "Quem ganhou Bonfim x Brady e o resultado dos brasileiros do UFC Vegas 124, atualizado ao fim de cada luta.",
+      "Johnny Walker vence Cortes Acosta por nocaute técnico e o resultado de cada brasileiro do UFC Vegas 124."
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-10-03",

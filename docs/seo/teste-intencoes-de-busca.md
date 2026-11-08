@@ -1533,3 +1533,11 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `amendoim-engorda`: entraram "é bom para quê" e "benefícios" (só nutrientes da TACO), "quem está de dieta pode comer", "todos os dias", "japonês" e "cozido" (sem número: a TACO não tem os dois), "sem casca", "a barriga", "pasta de amendoim engorda" (com link para o guia da pasta), "doce de amendoim" (paçoca e pé-de-moleque) e "como usar para emagrecer".
 - Fora: "gorduras boas (mono e poli-insaturadas)", da visão geral por IA: a base do site não tem a divisão de ácidos graxos.
 - Título e descrição mantidos. Sem `updatedAt`: publicado hoje.
+
+## 2026-11-08 — Título do resultado do UFC Vegas 124
+
+- `resultado-ufc-vegas-124-bonfim-brady`, título e descrição trocados com aprovação do Montinho (sem `updatedAt` extra: o conteúdo já foi atualizado no mesmo dia com os resultados).
+  - ATUAL: "Resultado UFC Vegas 124: Quem Ganhou Bonfim x Brady" / "Resultado do UFC Vegas 124 (7/11): quem ganhou Gabriel Bonfim x Sean Brady e o resultado de Virna Jandiroba e dos brasileiros do card. Atualizado na noite da luta."
+  - PROPOSTA (aplicada): "Resultado UFC Vegas 124: Johnny Walker Vence Cortes Acosta" / "Johnny Walker nocauteou Waldo Cortes Acosta no 3º round do UFC Vegas 124 (7/11). Veja como foram Virna Jandiroba e os outros brasileiros do card."
+  - MOTIVO: Bonfim x Brady foi cancelada em 29/10; a luta principal virou Walker x Cortes Acosta, e é ela que as pessoas buscam. O slug não muda.
+  - Linha de base no GSC (últimos 28 dias até 08/11): 126 impressões, 1 clique, CTR 0,8%, posição média 11,0. Comparar em 06/12/2026.
