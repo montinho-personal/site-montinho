@@ -601,7 +601,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
     metaDescription:
       "Johnny Walker nocauteou Waldo Cortes Acosta no 3º round do UFC Vegas 124 (7/11). Veja como foram Virna Jandiroba e os outros brasileiros do card.",
     excerpt:
-      "Johnny Walker vence Cortes Acosta por nocaute técnico e o resultado de cada brasileiro do UFC Vegas 124."
+      "Johnny Walker vence Cortes Acosta por nocaute técnico e o resultado de cada brasileiro do UFC Vegas 124.",
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-10-03",
