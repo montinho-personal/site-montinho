@@ -338,7 +338,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-11-02",
-    updatedAt: "2026-11-04",
+    updatedAt: "2026-11-08",
     readTime: "4 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC Vegas 124", "Johnny Walker", "Waldo Cortes Acosta", "Walker x Cortes Acosta"],
@@ -396,7 +396,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 </ul>
 
 <h2>Quem ganhou?</h2>
-<p>O resultado sai em <a href="/blog/resultado-ufc-vegas-124-bonfim-brady">resultado do UFC Vegas 124</a>, atualizado na noite da luta.</p>
+<p><strong>Johnny Walker venceu Waldo Cortes Acosta por nocaute técnico aos 2min27 do terceiro round.</strong> Dos dez brasileiros do card, venceram Walker, Lucas Fernando, Karine Silva e José Souza. Virna Jandiroba perdeu para Tatiana Suarez por decisão unânime. Todos os resultados em <a href="/blog/resultado-ufc-vegas-124-bonfim-brady">resultado do UFC Vegas 124</a>.</p>
 
 <h2>Quanto se gasta numa aula de boxe</h2>
 <p>Walker é um lutador de trocação, e boa parte do treino dele é de pé, com luvas. Se você treina boxe ou muay thai e quer saber quanto gasta numa aula, faça a conta com o seu peso na calculadora abaixo.</p>
@@ -411,6 +411,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <li>Nova luta principal e saída de Bonfim x Brady: Cageside Press, MMA News e Yahoo Sports, de 29/10 a 01/11/2026.</li>
 </ul>`,
     faq: [
+      { question: "Quem ganhou Johnny Walker x Cortes Acosta?", answer: "Johnny Walker venceu por nocaute técnico aos 2min27 do terceiro round, em 7 de novembro de 2026." },
       { question: "Quando luta o Johnny Walker?", answer: "Sábado, 7 de novembro de 2026, contra Waldo Cortes Acosta, na luta principal do UFC Vegas 124, em Las Vegas." },
       { question: "Que horas luta o Johnny Walker?", answer: "O card principal começa às 22h (Brasília) e a luta dele é a principal, a última da noite. O card preliminar começa às 19h." },
       { question: "Onde assistir ao UFC Vegas 124?", answer: "No Paramount+ e no UFC Fight Pass." },
@@ -525,13 +526,29 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-10-28",
-    updatedAt: "2026-11-04",
+    updatedAt: "2026-11-08",
     readTime: "3 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC Vegas 124", "brasileiros no UFC", "Johnny Walker", "Virna Jandiroba", "Gabriel Bonfim"],
     content: `<img src="/blog-images/ufc-vegas-124-gabriel-bonfim-sean-brady-capa.webp" alt="Brasileiros no UFC Vegas 124, sábado 7/11, em Las Vegas" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
 <p>Onze brasileiros estão no <strong>UFC Vegas 124</strong>, no <strong>sábado, 7 de novembro de 2026</strong>, no Meta Apex, em Las Vegas. <strong>Johnny Walker</strong> faz a luta principal contra o dominicano Waldo Cortes Acosta, no peso-pesado. Horários, transmissão e o card completo em <a href="/blog/ufc-vegas-124-johnny-walker-cortes-acosta">Walker x Cortes Acosta: horário e onde assistir</a>.</p>
 <p><strong>Mudança no card:</strong> Gabriel Bonfim, o Marretinha, faria a luta principal contra Sean Brady, mas Brady se machucou e os dois saíram do evento. Veja <a href="/blog/ufc-vegas-124-gabriel-bonfim-sean-brady">o que aconteceu com Bonfim x Brady</a>. Em 4 de novembro, o UFC mudou a ordem do card: Priscila Cachoeira e o estreante Marcos Degli subiram para o card principal, e Wellington Turman foi para o preliminar. Atualizado em 4 de novembro de 2026.</p>
+
+<h2>Quem ganhou? Os resultados dos brasileiros</h2>
+<table><thead><tr><th>Brasileiro</th><th>Resultado</th></tr></thead><tbody>
+<tr><td><strong>Johnny Walker</strong></td><td>Venceu Waldo Cortes Acosta por nocaute técnico, 3º round (2min27)</td></tr>
+<tr><td><strong>Lucas Fernando</strong></td><td>Venceu Billy Elekana por decisão unânime</td></tr>
+<tr><td><strong>Karine Silva</strong></td><td>Venceu Gabriella Fernandes por decisão unânime, de virada</td></tr>
+<tr><td><strong>José Souza</strong></td><td>Venceu Jonny Parsons por nocaute</td></tr>
+<tr><td><strong>Virna Jandiroba</strong></td><td>Perdeu para Tatiana Suarez por decisão unânime</td></tr>
+<tr><td><strong>Priscila Cachoeira</strong></td><td>Perdeu para Nina Milošević por nocaute técnico, 2º round</td></tr>
+<tr><td><strong>Marcos Degli</strong></td><td>Perdeu para Mitch Raposo por decisão unânime, na estreia</td></tr>
+<tr><td><strong>Gabriel Lorenco</strong></td><td>Perdeu para Thomas Petersen por nocaute técnico</td></tr>
+<tr><td><strong>José Delano</strong></td><td>Perdeu para Murtazali Magomedov por decisão unânime</td></tr>
+<tr><td><strong>Wellington Turman</strong></td><td>Perdeu para Seokhyeon Ko por decisão unânime</td></tr>
+<tr><td><strong>Gabriella Fernandes</strong></td><td>Perdeu para Karine Silva (duelo brasileiro)</td></tr>
+</tbody></table>
+<p>Detalhes de cada luta em <a href="/blog/resultado-ufc-vegas-124-bonfim-brady">resultado do UFC Vegas 124</a>.</p>
 
 <h2>Quem são os brasileiros do UFC Vegas 124</h2>
 <h3>Card principal (22h)</h3>
@@ -568,6 +585,7 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <li><a href="https://agfight.com/ufc/gabriel-marretinha-enfrenta-sean-brady-na-luta-principal-do-ufc-vegas-124/" target="_blank" rel="noopener noreferrer">Ag. Fight — Marretinha enfrenta Sean Brady na luta principal do UFC Vegas 124</a></li>
 </ul>`,
     faq: [
+      { question: "Quais brasileiros venceram no UFC Vegas 124?", answer: "Johnny Walker, Lucas Fernando, Karine Silva e José Souza. Os outros sete perderam, incluindo Virna Jandiroba para Tatiana Suarez." },
       { question: "Quais brasileiros lutam no UFC Vegas 124?", answer: "Onze: Johnny Walker (luta principal), Virna Jandiroba, Lucas Fernando, Priscila Cachoeira e Marcos Degli no card principal; Karine Silva, Gabriella Fernandes, Gabriel Lorenco, José Delano, Wellington Turman e José Souza no preliminar." },
       { question: "O Marretinha luta no UFC Vegas 124?", answer: "Não mais. Gabriel Bonfim, o Marretinha, faria a luta principal contra Sean Brady, mas Brady se machucou e os dois saíram do card. A luta principal passou a ser Johnny Walker x Waldo Cortes Acosta." },
       { question: "Contra quem luta Virna Jandiroba no UFC Vegas 124?", answer: "Contra Tatiana Suarez, no peso-palha feminino, no card principal." },
@@ -587,33 +605,36 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-10-03",
-    updatedAt: "2026-11-04",
+    updatedAt: "2026-11-08",
     readTime: "3 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC Vegas 124", "resultado UFC", "Johnny Walker", "Gabriel Bonfim"],
-    content: `<blockquote><p><strong>As lutas ainda não aconteceram.</strong> O UFC Vegas 124 é no sábado, 7 de novembro, em Las Vegas. Esta página é atualizada com o resultado de cada luta assim que ele for confirmado.</p></blockquote>
+    content: `<blockquote><p><strong>Resultados confirmados.</strong> O UFC Vegas 124 aconteceu no sábado, 7 de novembro de 2026, no Meta Apex, em Las Vegas. Dos dez brasileiros do card, quatro venceram: Johnny Walker, Lucas Fernando, Karine Silva e José Souza.</p></blockquote>
 
 <p><strong>Mudança no card:</strong> Bonfim x Brady foi cancelada depois que Brady se machucou, e Bonfim saiu do evento. A luta principal passou a ser Waldo Cortes Acosta x Johnny Walker. Veja <a href="/blog/ufc-vegas-124-gabriel-bonfim-sean-brady">o que aconteceu com Bonfim x Brady</a>.</p>
 
 <h2>Quem ganhou Johnny Walker x Waldo Cortes Acosta?</h2>
-<p><strong>Resultado: aguardando a luta.</strong> É a luta principal da noite, no peso-pesado.</p>
+<p><strong>Johnny Walker venceu por nocaute técnico aos 2min27 do terceiro round.</strong> Na luta principal, no peso-pesado, o brasileiro passou apertado nos primeiros rounds e virou com uma direita no terceiro. Foi a segunda vitória seguida dele desde que subiu do meio-pesado.</p>
+
+<h2>Quem ganhou Virna Jandiroba x Tatiana Suarez?</h2>
+<p><strong>Tatiana Suarez venceu por decisão unânime</strong> (30-27, 30-27 e 29-28), na luta co-principal do peso-palha feminino. A norte-americana controlou a luta no wrestling pelos três rounds, e Virna se afasta da disputa de cinturão.</p>
 
 <h2>Resultados dos brasileiros no UFC Vegas 124</h2>
 <table><thead><tr><th>Luta</th><th>Resultado</th></tr></thead><tbody>
-<tr><td><strong>Johnny Walker</strong> x Waldo Cortes Acosta</td><td>Aguardando</td></tr>
-<tr><td><strong>Virna Jandiroba</strong> x Tatiana Suarez</td><td>Aguardando</td></tr>
-<tr><td><strong>Lucas Fernando</strong> x Billy Elekana</td><td>Aguardando</td></tr>
-<tr><td><strong>Priscila Cachoeira</strong> x Nina Milošević</td><td>Aguardando</td></tr>
-<tr><td><strong>Marcos Degli</strong> x Mitch Raposo</td><td>Aguardando</td></tr>
-<tr><td><strong>Gabriel Lorenco</strong> x Thomas Petersen</td><td>Aguardando</td></tr>
-<tr><td><strong>Karine Silva</strong> x <strong>Gabriella Fernandes</strong></td><td>Aguardando</td></tr>
-<tr><td><strong>José Delano</strong> x Murtazali Magomedov</td><td>Aguardando</td></tr>
-<tr><td><strong>Wellington Turman</strong> x Seokhyeon Ko</td><td>Aguardando</td></tr>
-<tr><td><strong>José Souza</strong> x Jonny Parsons</td><td>Aguardando</td></tr>
+<tr><td><strong>Johnny Walker</strong> x Waldo Cortes Acosta</td><td><strong>Walker venceu</strong> por nocaute técnico, 3º round (2min27)</td></tr>
+<tr><td><strong>Virna Jandiroba</strong> x Tatiana Suarez</td><td>Suarez venceu por decisão unânime</td></tr>
+<tr><td><strong>Lucas Fernando</strong> x Billy Elekana</td><td><strong>Lucas Fernando venceu</strong> por decisão unânime</td></tr>
+<tr><td><strong>Priscila Cachoeira</strong> x Nina Milošević</td><td>Milošević venceu por nocaute técnico, 2º round</td></tr>
+<tr><td><strong>Marcos Degli</strong> x Mitch Raposo</td><td>Raposo venceu por decisão unânime (estreia de Degli no UFC)</td></tr>
+<tr><td><strong>Gabriel Lorenco</strong> x Thomas Petersen</td><td>Petersen venceu por nocaute técnico</td></tr>
+<tr><td><strong>Karine Silva</strong> x <strong>Gabriella Fernandes</strong></td><td><strong>Karine Silva venceu</strong> por decisão unânime, de virada</td></tr>
+<tr><td><strong>José Delano</strong> x Murtazali Magomedov</td><td>Magomedov venceu por decisão unânime</td></tr>
+<tr><td><strong>Wellington Turman</strong> x Seokhyeon Ko</td><td>Ko venceu por decisão unânime</td></tr>
+<tr><td><strong>José Souza</strong> x Jonny Parsons</td><td><strong>José Souza venceu</strong> por nocaute</td></tr>
 </tbody></table>
 
-<h2>Horário e onde assistir</h2>
-<p>Transmissão no Paramount+. Horários e card completo em <a href="/blog/ufc-vegas-124-johnny-walker-cortes-acosta">Walker x Cortes Acosta: horário e onde assistir</a>.</p>
+<h2>Como foi a noite dos brasileiros</h2>
+<p>Quatro vitórias e seis derrotas, uma delas certa por causa do duelo entre Karine Silva e Gabriella Fernandes. Além de Walker na principal, Lucas Fernando venceu no card principal, e Karine e José Souza venceram nas preliminares. Wellington Turman chegou à quarta derrota seguida, e Marcos Degli perdeu na estreia. O card completo, com horários, está em <a href="/blog/ufc-vegas-124-johnny-walker-cortes-acosta">Walker x Cortes Acosta</a>.</p>
 
 <h2>Não se compare</h2>
 <p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
@@ -626,12 +647,16 @@ export const UFC_2026_POSTS: BlogPost[] = [
 <li><a href="https://agfight.com/ufc/gabriel-marretinha-enfrenta-sean-brady-na-luta-principal-do-ufc-vegas-124/" target="_blank" rel="noopener noreferrer">Ag. Fight — Marretinha enfrenta Sean Brady na luta principal do UFC Vegas 124</a></li>
 <li>Veículos consultados: MMA Sucka, Yahoo Sports, Mais Goiás, Wikipédia.</li>
 <li><a href="https://www.ufc.com.br/event/ufc-fight-night-november-07-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Vegas 124: Cortes Acosta x Walker (página oficial, card e horários, conferida em 04/11/2026)</a></li>
+<li>Resultados conferidos em 08/11/2026 em veículos independentes: Yahoo Sports, Fightmag, MMA Mania e My MMA News (em inglês); Ag. Fight, Super Lutas e Terra (em português); e UFC Brasil (notícia de resultados).</li>
+<li><a href="https://agfight.com/ufc/ufc-vegas-124-virna-jandiroba-sofre-com-estilo-carrapato-de-rival-e-se-afasta-do-cinturao" target="_blank" rel="noopener noreferrer">Ag. Fight — Virna Jandiroba perde para Tatiana Suarez</a></li>
+<li><a href="https://agfight.com/ufc/com-pedro-rizzo-e-marco-ruas-no-corner-lucas-fernando-vence-no-ufc-vegas-124" target="_blank" rel="noopener noreferrer">Ag. Fight — Lucas Fernando vence no UFC Vegas 124</a></li>
 <li>Saída de Brady (infecção no joelho, segundo ele) e de Bonfim do evento: Cageside Press, MMA News e Yahoo Sports, de 29/10 a 01/11/2026.</li>
 </ul>`,
     faq: [
       { question: "Quem ganhou Gabriel Bonfim x Sean Brady?", answer: "A luta não vai acontecer: foi cancelada depois que Brady se machucou, e Bonfim saiu do UFC Vegas 124." },
-      { question: "Quem ganhou Johnny Walker x Cortes Acosta?", answer: "A luta é no sábado, 7 de novembro de 2026, na principal do UFC Vegas 124. O resultado entra nesta página assim que for confirmado." },
-      { question: "Quem ganhou o UFC Vegas 124?", answer: "O evento acontece na noite de 7/11. Os resultados entram aqui ao fim de cada luta." },
+      { question: "Quem ganhou Johnny Walker x Cortes Acosta?", answer: "Johnny Walker venceu Waldo Cortes Acosta por nocaute técnico aos 2min27 do terceiro round, na luta principal do UFC Vegas 124, em 7 de novembro de 2026." },
+      { question: "Quem ganhou Virna Jandiroba x Tatiana Suarez?", answer: "Tatiana Suarez venceu por decisão unânime (30-27, 30-27 e 29-28)." },
+      { question: "Quais brasileiros venceram no UFC Vegas 124?", answer: "Johnny Walker, Lucas Fernando, Karine Silva e José Souza. Perderam Virna Jandiroba, Priscila Cachoeira, Marcos Degli, Gabriel Lorenco, José Delano e Wellington Turman; Gabriella Fernandes perdeu para Karine no duelo brasileiro." },
     ],
   },
   {
