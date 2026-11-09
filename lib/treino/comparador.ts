@@ -416,6 +416,7 @@ export const ARTIGOS_COM_COMPARADOR: Record<string, [string, string]> = {
   "face-pull": ["face-pull", "crucifixo-inverso-cabo"],
   "triceps-corda": ["triceps-pulley", "triceps-testa"],
   "remada-alta": ["remada-alta", "elevacao-lateral"],
+  "rosca-scott": ["rosca-scott", "rosca-direta"],
   "panturrilha-em-pe-vs-sentada": ["panturrilha-em-pe", "panturrilha-sentado"],
 };
 
