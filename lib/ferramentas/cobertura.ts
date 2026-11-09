@@ -59,6 +59,7 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
   "cuscuz-engorda": "As calorias do prato vêm prontas na tabela e na ficha de alimento; a conta do dia inteiro iria para a TDEE ou a de déficit, as duas no teto de 8, e a de déficit vai por link no texto.",
   "banana-engorda": "As calorias de uma banana vêm prontas na tabela e na ficha de alimento; a conta do dia inteiro iria para a TDEE ou a de déficit, as duas no teto de 8, e a de déficit vai por link no texto.",
   "amendoim-engorda": "As calorias por colher, punhado e pacote vêm prontas na tabela e na ficha de alimento; a conta do dia inteiro iria para a TDEE ou a de déficit, as duas no teto de 8, e a de déficit vai por link no texto.",
+  "abacate-engorda": "As calorias por colher, fatia e unidade vêm prontas na tabela e na ficha de alimento; a conta do dia inteiro iria para a TDEE ou a de déficit, as duas no teto de 8, e a de déficit vai por link no texto.",
   "treino-tabata": "Treino pronto com tempo fixo (20 s de esforço, 10 s de pausa, 8 rodadas): o leitor sai com o protocolo, não com uma conta; o gasto de 4 minutos não tem número confiável, e quem quer emagrecer vai à calculadora de déficit pelo link.",
   "treino-de-abdomen-rapido": "Treino pronto para fazer: o leitor sai com o circuito, não com uma conta; quem quer emagrecer a barriga é levado à calculadora de déficit pelo texto.",
   "brasileiros-ufc-vegas-123": "Hub de quem luta e contra quem: o leitor sai com nomes e horários, sem conta na cabeça; a calculadora de jiu-jitsu fica no artigo do evento.",

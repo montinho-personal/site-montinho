@@ -60,6 +60,10 @@ export const FICHAS_POR_ARTIGO: Record<string, FichaDeArtigo> = {
     alimentos: ["banana-prata-crua", "banana-nanica-crua"],
     destaque: "carboidrato",
   },
+  "abacate-engorda": {
+    alimentos: ["abacate-cru", "azeite-de-oliva-extra-virgem"],
+    destaque: "lipideos",
+  },
   "amendoim-engorda": {
     alimentos: ["amendoim-torrado-salgado", "amendoim-grao-cru"],
     destaque: "lipideos",

@@ -1541,3 +1541,10 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
   - PROPOSTA (aplicada): "Resultado UFC Vegas 124: Johnny Walker Vence Cortes Acosta" / "Johnny Walker nocauteou Waldo Cortes Acosta no 3º round do UFC Vegas 124 (7/11). Veja como foram Virna Jandiroba e os outros brasileiros do card."
   - MOTIVO: Bonfim x Brady foi cancelada em 29/10; a luta principal virou Walker x Cortes Acosta, e é ela que as pessoas buscam. O slug não muda.
   - Linha de base no GSC (últimos 28 dias até 08/11): 126 impressões, 1 clique, CTR 0,8%, posição média 11,0. Comparar em 06/12/2026.
+
+## 2026-11-09 — Sem prints: rosca Scott e abacate engorda
+
+- Pedido do Montinho: "criar próximos 2 artigos". Volumes do Planejador de Palavras-chave do Google Ads (Brasil): "rosca scott" 74.000/mês (o site tinha rosca direta, martelo e concentrada, não a Scott); "abacate engorda" 12.100 (sem página própria). Avaliados e deixados para depois: "arroz engorda" 9.900, "aveia engorda" 9.900, "granola engorda" 8.100, "macarrão engorda" 5.400, "treino metabólico" 3.600.
+- `rosca-scott`: Comparador (rosca Scott x rosca direta); o id do mapa de treino passa a apontar para o artigo. Sem número de estudo.
+- `abacate-engorda`: TACO e porções da POF/IBGE pela base do site; sem número para avocado e leite (não estão na base). Ficha de alimento e link para a calculadora de déficit (ARTIGOS_SEM_FERRAMENTA).
+- Pendente: export do Answer the Public e prints dos dois termos.
