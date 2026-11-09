@@ -1548,3 +1548,9 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `rosca-scott`: Comparador (rosca Scott x rosca direta); o id do mapa de treino passa a apontar para o artigo. Sem número de estudo.
 - `abacate-engorda`: TACO e porções da POF/IBGE pela base do site; sem número para avocado e leite (não estão na base). Ficha de alimento e link para a calculadora de déficit (ARTIGOS_SEM_FERRAMENTA).
 - Pendente: export do Answer the Public e prints dos dois termos.
+
+## 2026-11-09 — Export do Answer the Public + prints: rosca Scott e abacate engorda
+
+- `rosca-scott`: entraram "para que serve" e "qual músculo" (bíceps, braquial e braquiorradial), "qual cabeça" (sem afirmar isolamento de uma cabeça), "como ajustar o banco", variações (halteres, unilateral, alternada, martelo/pegada neutra, polia/cross, máquina articulada, barra W x reta, pegada aberta x fechada, 21), diferença para rosca direta e rosca inclinada, "o que substitui" e "sem banco/em casa", "engrossa o braço", "dor no cotovelo" e a origem do nome. Fora: "gif" (formato), marca de máquina ("Cimerian"), "banco supino com rosca scott" (compra de equipamento).
+- `abacate-engorda`: entraram meio abacate e 500 g, "banana ou abacate" (PAA), tabela do que vai junto (açúcar, mascavo, mel, leite condensado, leite em pó, aveia), "vitamina engorda quantos quilos", "com açúcar ou sem", "com whey/aveia/banana", "gravidez e o bebê na barriga" (encaminha ao obstetra e ao nutricionista, sem afirmação), "incha a barriga" e "quem não pode comer" (diabetes e potássio, sem recomendação médica). Fora: caroço e farinha do caroço, "remédios que engordam" e cardápio para engordar (outro tema), criança. A visão geral por IA cita 160 kcal/100 g e "gorduras boas": a TACO dá 96 kcal para o abacate brasileiro (o valor maior é do avocado), e a base não tem a divisão de ácidos graxos.
+- Títulos e descrições mantidos. Sem `updatedAt`: publicados hoje.
