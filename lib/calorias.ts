@@ -412,3 +412,15 @@ export const ORIENTACAO_MENOR_IDADE_GANHO =
 
 export const NOTA_AJUSTE_GANHO =
   "Confira pela média semanal do peso: para iniciantes e intermediários, algo perto de 0,25% a 0,5% do peso por semana. Parado por duas ou três semanas, suba 100 a 150 kcal; subindo rápido com a cintura junto, reduza um pouco.";
+
+/**
+ * Cartão de link (não a calculadora embutida, que está no teto de 8).
+ * Artigos "X engorda?": o alimento vem com as calorias prontas na ficha, e a
+ * pergunta que sobra é a do dia inteiro.
+ */
+export const ARTIGOS_COM_LINK_DEFICIT: string[] = [
+  "cuscuz-engorda",
+  "banana-engorda",
+  "amendoim-engorda",
+  "abacate-engorda",
+];

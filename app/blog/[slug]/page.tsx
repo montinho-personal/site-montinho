@@ -24,7 +24,7 @@ import { ARTIGOS_COM_CALCULADORA, NOTA_POR_ARTIGO } from "@/lib/proteina";
 import { ARTIGOS_COM_FICHA } from "@/lib/alimentos/artigos";
 import FichaNoArtigo from "@/components/alimentos/FichaNoArtigo";
 import CalculadoraProteina from "@/components/proteina/CalculadoraProteina";
-import { ARTIGOS_COM_CALCULADORA_DEFICIT } from "@/lib/calorias";
+import { ARTIGOS_COM_CALCULADORA_DEFICIT, ARTIGOS_COM_LINK_DEFICIT } from "@/lib/calorias";
 import { ARTIGOS_COM_CALCULADORA_TDEE } from "@/lib/tdee";
 import { ARTIGOS_COM_CALCULADORA_CARDAPIO } from "@/lib/cardapio/motor";
 import CalculadoraDeficit from "@/components/calorias/CalculadoraDeficit";
@@ -43,6 +43,7 @@ import { ARTIGOS_COM_LINK_ROTINA_LOCAL, tipoRotinaLocal } from "@/lib/rotina/loc
 import CalculadoraMacros from "@/components/macros/CalculadoraMacros";
 import CalculadoraOneRM from "@/components/onerm/CalculadoraOneRM";
 import LinkFerramenta1RM from "@/components/onerm/LinkFerramenta1RM";
+import LinkFerramentaDeficit from "@/components/calorias/LinkFerramentaDeficit";
 import { ARTIGOS_COM_CALCULADORA_FC, ARTIGOS_COM_LINK_FC } from "@/lib/fc";
 import { ARTIGOS_COM_CALCULADORA_POLICHINELO, ARTIGOS_COM_LINK_POLICHINELO } from "@/lib/polichinelo";
 import { ARTIGOS_COM_CALCULADORA_CAMINHADA, ARTIGOS_COM_LINK_CAMINHADA } from "@/lib/caminhada";
@@ -684,6 +685,7 @@ export default async function BlogPost({ params }: Props) {
           */}
           {ARTIGOS_COM_FICHA.includes(post.slug) && <FichaNoArtigo slug={post.slug} />}
           {ARTIGOS_COM_LINK_1RM.includes(post.slug) && <LinkFerramenta1RM slug={post.slug} />}
+          {ARTIGOS_COM_LINK_DEFICIT.includes(post.slug) && <LinkFerramentaDeficit slug={post.slug} />}
           {ARTIGOS_COM_LINK_VOLUME.includes(post.slug) && <LinkFerramentaVolume slug={post.slug} />}
           {ARTIGOS_COM_LINK_ROTINA_LOCAL.includes(post.slug) && <LinkFerramentaRotina slug={post.slug} tipo={tipoRotinaLocal(post.slug)} />}
           {ARTIGOS_COM_LINK_FC.includes(post.slug) && <LinkFerramentaFC slug={post.slug} />}

@@ -54,12 +54,8 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
   // está no teto de 8, e a calculadora já vai no artigo do card.
   "bluefit-tambore": "Guia de unidade (endereço, horário, convênio): o leitor sai sabendo se a academia serve para ele, sem conta na cabeça.",
   "academia-de-condominio-quais-aparelhos-comprar": "Decisão de compra para síndico e comissão (ordem dos aparelhos, espaço, manutenção, regras): nenhuma ferramenta do site faz essa escolha.",
-  // Grupo "engorda?" de 06/11/2026 (lib/engorda-cuscuz-banana-amendoim.ts):
-  // TDEE, déficit, macros e cardápio estão no teto de 8.
-  "cuscuz-engorda": "As calorias do prato vêm prontas na tabela e na ficha de alimento; a conta do dia inteiro iria para a TDEE ou a de déficit, as duas no teto de 8, e a de déficit vai por link no texto.",
-  "banana-engorda": "As calorias de uma banana vêm prontas na tabela e na ficha de alimento; a conta do dia inteiro iria para a TDEE ou a de déficit, as duas no teto de 8, e a de déficit vai por link no texto.",
-  "amendoim-engorda": "As calorias por colher, punhado e pacote vêm prontas na tabela e na ficha de alimento; a conta do dia inteiro iria para a TDEE ou a de déficit, as duas no teto de 8, e a de déficit vai por link no texto.",
-  "abacate-engorda": "As calorias por colher, fatia e unidade vêm prontas na tabela e na ficha de alimento; a conta do dia inteiro iria para a TDEE ou a de déficit, as duas no teto de 8, e a de déficit vai por link no texto.",
+  // Grupo "engorda?" (cuscuz, banana, amendoim, abacate) saiu daqui em
+  // 10/11/2026: ganhou o cartão de link da déficit (ARTIGOS_COM_LINK_DEFICIT).
   "treino-tabata": "Treino pronto com tempo fixo (20 s de esforço, 10 s de pausa, 8 rodadas): o leitor sai com o protocolo, não com uma conta; o gasto de 4 minutos não tem número confiável, e quem quer emagrecer vai à calculadora de déficit pelo link.",
   "treino-de-abdomen-rapido": "Treino pronto para fazer: o leitor sai com o circuito, não com uma conta; quem quer emagrecer a barriga é levado à calculadora de déficit pelo texto.",
   "brasileiros-ufc-vegas-123": "Hub de quem luta e contra quem: o leitor sai com nomes e horários, sem conta na cabeça; a calculadora de jiu-jitsu fica no artigo do evento.",
