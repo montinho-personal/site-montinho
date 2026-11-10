@@ -22150,8 +22150,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Para resultados consistentes, a consistência geral importa mais do que uma saída eventual. Se precisar de uma estrutura de treino que se encaixe na sua vida real, incluindo fins de semana, consulte a <a href="/consultoria">página de consultoria</a>.</p>
 
 <div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/Rbpr8Nsl-qk?rel=0" title="Testosterona baixa atrapalha seu treino? — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p class="yt-caption">Em 1 minuto: por que o problema quase nunca é a caloria do copo, e sim o que vem junto com ela e a conta do dia seguinte.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/pxstc1eDnJU?rel=0" title="Eu emagreci 40 kg sem parar de beber cerveja — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
 <h3>Leia Também</h3>
@@ -27236,8 +27236,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Se você quer montar um plano individualizado que respeite a sua rotina em Alphaville, com estratégias específicas para o seu estilo de vida, <a href="/consultoria">fale comigo na consultoria</a>. Trabalho há mais de 20 anos com executivos que pensavam que emagrecer era incompatível com a vida que levam — e que provaram o contrário.</p>
 
 <div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/6Xup3BEMacM?rel=0" title="Dieta para sair de 30pct de gordura para 10pct — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p class="yt-caption">Em 1 minuto: por que o problema quase nunca é a caloria do copo, e sim o que vem junto com ela e a conta do dia seguinte.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/pxstc1eDnJU?rel=0" title="Eu emagreci 40 kg sem parar de beber cerveja — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
 <h3>Leia Também</h3>
@@ -60218,8 +60218,8 @@ Beber 1-2x por semana com moderação e compensação é muito diferente de bebe
 Se você quer um plano de emagrecimento que inclua estratégia para álcool, atendo em Alphaville e online. [Entre em contato](https://wa.me/5511981063409).
 
 <div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="Dicas de musculação e estilo de vida — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p class="yt-caption">Em 1 minuto: por que o problema quase nunca é a caloria do copo, e sim o que vem junto com ela e a conta do dia seguinte.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/pxstc1eDnJU?rel=0" title="Eu emagreci 40 kg sem parar de beber cerveja — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
 `,
@@ -71662,7 +71662,10 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 
 <p>Todo ano é a mesma cena: Carnaval, culpa, improviso, recomeço do zero. E se este fosse o último ano desse ciclo? Na minha <a href="/consultoria">consultoria personalizada</a>, você recebe um plano que já prevê as festas, os excessos e as retomadas — desenhado para a sua vida real. Não é sobre nunca exagerar. É sobre nunca mais se perder.</p>
 
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mHZKGBlPHg4?rel=0" title="Como montar uma dieta — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="yt-embed">
+<p class="yt-caption">Em 1 minuto: por que o problema quase nunca é a caloria do copo, e sim o que vem junto com ela e a conta do dia seguinte.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/pxstc1eDnJU?rel=0" title="Eu emagreci 40 kg sem parar de beber cerveja — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
 
 <h2>Leia também</h2>
 <ul><li><a href="/blog/por-que-voce-nao-consegue-emagrecer">Por que você não consegue emagrecer (e como mudar isso de vez)</a></li><li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">5 hábitos do dia a dia que sabotam seu emagrecimento</a></li><li><a href="/blog/o-que-fazer-entre-natal-e-ano-novo">O Que Fazer entre o Natal e o Ano Novo para não Perder o Ritmo</a></li></ul>
@@ -71954,7 +71957,10 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 
 <p>É para isso que existe a consultoria online do Montinho: um plano de hipertrofia desenhado para a sua vida como ela é, com festas, viagens e imprevistos já dentro da conta. Agende sua <a href="/consultoria">consultoria personalizada</a> e vamos montar isso juntos.</p>
 
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/ts4KbdQEKv4?rel=0" title="Como conquistar hipertrofia mais rápido — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="yt-embed">
+<p class="yt-caption">Em 1 minuto: por que o problema quase nunca é a caloria do copo, e sim o que vem junto com ela e a conta do dia seguinte.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/pxstc1eDnJU?rel=0" title="Eu emagreci 40 kg sem parar de beber cerveja — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
 
 <h2>Leia também</h2>
 <ul><li><a href="/blog/como-ganhar-massa-muscular">Como ganhar massa muscular de verdade: guia completo</a></li><li><a href="/blog/erros-comuns-no-treino-de-musculacao">7 erros comuns na musculação que sabotam seus resultados</a></li><li><a href="/blog/melhor-epoca-para-fazer-bulking">Melhor Época para Fazer Bulking: Inverno Vale a Pena?</a></li></ul>
@@ -72097,7 +72103,10 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 
 <p>E aqui vai a virada: tudo isso — o plano da véspera, o kit da folia, a retomada calibrada — pode chegar pronto para você, desenhado para a sua rotina real, com alguém acompanhando cada semana do ano. É o que entrego na consultoria online: a ciência inteira, mastigada, no seu bolso. Agende sua <a href="/consultoria">consultoria personalizada</a> e atravesse qualquer Carnaval — e qualquer fase — intacto.</p>
 
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="yt-embed">
+<p class="yt-caption">Em 1 minuto: por que o problema quase nunca é a caloria do copo, e sim o que vem junto com ela e a conta do dia seguinte.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/pxstc1eDnJU?rel=0" title="Eu emagreci 40 kg sem parar de beber cerveja — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
 
 <h2>Leia também</h2>
 <ul><li><a href="/blog/como-ganhar-massa-muscular">Como ganhar massa muscular de verdade: guia completo</a></li><li><a href="/blog/erros-comuns-no-treino-de-musculacao">7 erros comuns na musculação que sabotam seus resultados</a></li><li><a href="/blog/como-perder-barriga-depois-das-festas">Como Perder Barriga Depois das Festas</a></li></ul>
@@ -75236,7 +75245,10 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <p>Todas essas estratégias funcionam melhor quando alguém as desenha para a sua vida — sua agenda de festas, seu corpo, seu objetivo. É isso que a <strong>consultoria online do Montinho</strong> entrega: a ciência deste artigo transformada em plano pessoal, mastigado, para você atravessar dezembro no controle.</p>
 <p><a href="/consultoria">Fale com o Montinho e comece sua consultoria.</a></p>
 
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="yt-embed">
+<p class="yt-caption">Em 1 minuto: por que o problema quase nunca é a caloria do copo, e sim o que vem junto com ela e a conta do dia seguinte.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/pxstc1eDnJU?rel=0" title="Eu emagreci 40 kg sem parar de beber cerveja — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
 
 <h2>Leia também</h2>
 <ul><li><a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">Quanta proteína por dia para ganhar massa muscular</a></li><li><a href="/blog/habitos-que-sabotam-seu-emagrecimento">5 hábitos do dia a dia que sabotam seu emagrecimento</a></li><li><a href="/blog/como-manter-massa-muscular-nas-ferias-verao">Como Manter a Massa Muscular nas Férias de Verão</a></li></ul>
@@ -93014,8 +93026,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>O fígado não precisa de perfeição. Precisa de consistência: treinos regulares, déficit calórico sustentável, menos álcool e açúcar, mais sono. Comece pequeno, mas comece agora — cada semana de treino é uma semana em que seu fígado trabalha a seu favor.</p>
 
-<p>Como a reversão da esteatose passa pela perda de gordura corporal, vale assistir este tutorial completo:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<div class="yt-embed">
+<p class="yt-caption">Em 1 minuto: por que o problema quase nunca é a caloria do copo, e sim o que vem junto com ela e a conta do dia seguinte.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/pxstc1eDnJU?rel=0" title="Eu emagreci 40 kg sem parar de beber cerveja — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
 
 <h3>Leia Também</h3>
 <ul>
@@ -100503,8 +100518,11 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Cerveja engorda quando gera excesso calórico — pelas próprias calorias e, principalmente, pelo comportamento que vem junto. A barriga de chope é gordura abdominal comum, construída por anos de superávit, não um efeito exclusivo da bebida. Com teto de doses, frequência controlada e um plano alimentar que caiba na sua rotina, cerveja e emagrecimento podem coexistir.</p>
 
-<p>Para aprofundar no impacto estético da cerveja no corpo — do acúmulo de gordura à retenção —, veja a análise completa no vídeo:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/GTKcN6-7-Bg?rel=0" title="Como a cerveja impacta na parte estética do corpo — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<div class="yt-embed">
+<p class="yt-caption">Em 1 minuto: por que o problema quase nunca é a caloria do copo, e sim o que vem junto com ela e a conta do dia seguinte.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/pxstc1eDnJU?rel=0" title="Eu emagreci 40 kg sem parar de beber cerveja — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
 
 <h3>Leia Também</h3>
 
@@ -106730,9 +106748,12 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>E vale lembrar o de sempre: individualidade importa. Duas pessoas com o mesmo peso podem reagir de formas diferentes ao mesmo copo, por metabolismo, medicação, histórico de saúde e sono. O que vale para o vizinho pode não valer para você. Consistência no básico — treino de força, proteína adequada, sono e déficit sustentável — continua sendo o que decide o resultado.</p>
 
-<p>O Leandro Twin explica em linguagem simples por que o álcool pesa mais no processo do que só as calorias — vale como complemento ao que escrevi aqui.</p>
 
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/VsoV-psb5X0?rel=0" title="Álcool atrapalha o emagrecimento?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<div class="yt-embed">
+<p class="yt-caption">Em 1 minuto: por que o problema quase nunca é a caloria do copo, e sim o que vem junto com ela e a conta do dia seguinte.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/pxstc1eDnJU?rel=0" title="Eu emagreci 40 kg sem parar de beber cerveja — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
 
 <h2>Referências</h2>
 <ul>
