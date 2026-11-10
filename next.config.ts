@@ -106,6 +106,10 @@ const nextConfig: NextConfig = {
       // 10/11/2026: canibalização achada no "Rastreada, mas não indexada" (17 impressões
       // contra 893). O artigo antigo era a versão genérica do mesmo tema, sem nada próprio.
       { source: "/blog/personal-trainer-vale-a-pena", destination: "/blog/vale-a-pena-contratar-personal-trainer", permanent: true },
+      // 10/11/2026: as duas disputavam "academias em Alphaville" com a de 10 melhores, que é a que o Google
+      // prefere (posição 9,3 contra 9,0 e 32,2 em 28 dias). O conteúdo próprio delas foi para lá.
+      { source: "/blog/academias-em-alphaville", destination: "/blog/10-melhores-academias-de-alphaville", permanent: true },
+      { source: "/blog/melhor-academia-de-alphaville", destination: "/blog/10-melhores-academias-de-alphaville", permanent: true },
 
       /*
        * 404 do Search Console em 01/09/2026.

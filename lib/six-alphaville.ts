@@ -112,7 +112,7 @@ export const SIX_ALPHAVILLE_POSTS: BlogPost[] = [
 <p>Estrutura boa ajuda a ir treinar, mas o resultado vem do treino: progressão de carga, técnica e constância. E não se compare com quem você vê na academia: cada um tem a própria genética, rotina e história. O que funciona é um protocolo que você consiga seguir por anos. Se quiser montar o seu, na academia que escolher, <a href="/personal-trainer-alphaville">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
 
 <h2>Outras academias da região</h2>
-<p>Veja as <a href="/blog/10-melhores-academias-de-alphaville">10 melhores academias de Alphaville</a>, o <a href="/blog/academias-em-alphaville">guia de academias em Alphaville</a> (24 horas, Wellhub, TotalPass e faixa de preço) e a outra premium da região, a <a href="/blog/fabrica-premium-alphaville">Fábrica Premium Alphaville</a>.</p>`,
+<p>Veja as <a href="/blog/10-melhores-academias-de-alphaville">10 melhores academias de Alphaville</a> (24 horas, Wellhub, TotalPass e faixa de preço), o <a href="/academias-alphaville">guia de academias de Alphaville por perfil</a> e a outra premium da região, a <a href="/blog/fabrica-premium-alphaville">Fábrica Premium Alphaville</a>.</p>`,
     faq: [
       { question: "Onde fica a Six Alphaville?", answer: "Na Av. Copacabana, 325, no Empresarial 18 do Forte, em Alphaville, Barueri (CEP 06472-001), segundo o Instagram oficial. A academia ocupa o 23º andar, na cobertura do prédio." },
       { question: "Quanto custa a mensalidade da Six Alphaville?", answer: "Segundo o fundador Eilson Studart Filho, em entrevista à revista VERO, entre R$ 2.500 e R$ 3.000 por mês, com os serviços do modelo all inclusive. A academia não publica tabela de planos: confirme o valor atual com a Six." },
