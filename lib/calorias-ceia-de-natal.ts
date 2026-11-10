@@ -210,6 +210,11 @@ export const CALORIAS_CEIA_NATAL_POSTS: BlogPost[] = [
 <li><strong>Volte para a rotina no dia 26.</strong> Uma ceia não desfaz meses. A semana de "já que estraguei", sim.</li>
 </ul>
 
+<div class="yt-embed">
+<p class="yt-caption">Em 1 minuto: por que o problema quase nunca é a caloria do copo, e sim o que vem junto com ela e a conta do dia seguinte.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/pxstc1eDnJU?rel=0" title="Eu emagreci 40 kg sem parar de beber cerveja — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+
 <h2>Não se compare</h2>
 <p>Na mesma mesa vai ter quem come pouco, quem repete três vezes e quem passa a noite falando de dieta. Nenhum deles é a sua régua. Cada um tem a própria genética, rotina e história, com altos e baixos. O que muda o seu corpo é um jeito de comer e de treinar que dê para manter o ano inteiro, ceia incluída.</p>
 

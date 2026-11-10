@@ -51,6 +51,30 @@ export interface VideoCanal {
 
 export const VIDEOS_CANAL: VideoCanal[] = [
   {
+    /* Short do álcool no emagrecimento (link enviado pelo Montinho em 10/11/2026). Números da conta: TACO/Unicamp. */
+    id: "pxstc1eDnJU",
+    slug: "alcool-atrapalha-o-emagrecimento",
+    titulo: "Eu emagreci 40 kg sem parar de beber cerveja",
+    metaTitle: "Álcool Atrapalha o Emagrecimento? Eu Emagreci Bebendo (Vídeo)",
+    descricao:
+      "O problema quase nunca é a caloria do copo: uma lata tem cerca de 140 kcal. O que pesa é a porção que vem junto e a conta do dia seguinte. Como eu emagreci bebendo uma vez por semana, e por que o álcool só atrapalha.",
+    chamada: "Perdi mais de 40 kg sem parar de tomar cerveja. Em 1 minuto, a conta que quase ninguém faz.",
+    texto: [
+      "Eu perdi mais de 40 quilos e não parei de tomar cerveja. O problema quase nunca é a caloria que tem no copo: uma lata tem umas 140 calorias. O problema maior é o que vem junto com ela: a porção, o petisco, o \"só mais uma\". A porção que chega junto pesa mais que várias latas.",
+      "E tem a conta que ninguém faz: a do dia seguinte. Você acorda mal, não treina ou treina fraco, pula o cardio, bate aquela vontade de comer besteira e larga a dieta. Aí volta todo aquele ciclo.",
+      "O que eu fiz foi beber uma vez por semana, normalmente no sábado, porque no domingo eu não tinha treino e dava para descansar. De segunda a sexta era 100%: musculação, cardio e comida na balança. E no sábado eu garantia o cardio, uma comida boa e não ficava petiscando.",
+      "Mas o álcool não vai te ajudar em nada, ele só atrapalha. Só que tem gente que, se corta tudo de uma vez, chuta o balde e larga tudo. Para essa pessoa, ficar sem atrapalha mais ainda. Por isso o que funciona é o equilíbrio: você decide quando, quanto e o que vai junto. É um jeito de viver que você consegue manter.",
+    ],
+    artigos: [
+      { href: "/blog/alcool-e-emagrecimento", nome: "Álcool e emagrecimento" },
+      { href: "/blog/cerveja-engorda", nome: "Cerveja engorda?" },
+      { href: "/blog/vinho-engorda", nome: "Vinho engorda?" },
+      { href: "/blog/alcool-atrapalha-o-treino", nome: "Álcool atrapalha o treino?" },
+    ],
+    ferramenta: { href: "/ferramentas/calculadora-deficit-calorico", nome: "Calculadora de Déficit Calórico" },
+    publicadoEm: "2026-11-10",
+  },
+  {
     /* Guia de filmagem para a revisão de execução (link enviado pelo Montinho em 04/11/2026). */
     id: "L5w4DBU2la8",
     slug: "como-filmar-seu-exercicio",
