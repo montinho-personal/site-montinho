@@ -103,6 +103,9 @@ const nextConfig: NextConfig = {
       { source: "/blog/avaliacao-fisica-para-que-serve", destination: "/blog/personal-trainer-online-como-funciona", permanent: true },
       // Consolidação de duplicata: o artigo antigo tratava o mesmo tema do novo
       { source: "/blog/maquinas-ou-pesos-livres", destination: "/blog/maquina-ou-peso-livre", permanent: true },
+      // 10/11/2026: canibalização achada no "Rastreada, mas não indexada" (17 impressões
+      // contra 893). O artigo antigo era a versão genérica do mesmo tema, sem nada próprio.
+      { source: "/blog/personal-trainer-vale-a-pena", destination: "/blog/vale-a-pena-contratar-personal-trainer", permanent: true },
 
       /*
        * 404 do Search Console em 01/09/2026.
