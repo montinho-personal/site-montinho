@@ -37,8 +37,6 @@ export const CAMINHO_POR_ARTIGO: Record<string, CaminhoId> = {
    */
   "academia-ou-personal-trainer": "geral",
   "como-escolher-uma-academia": "geral",
-  "academias-em-alphaville": "geral",
-  "melhor-academia-de-alphaville": "geral",
   "academias-em-barueri": "geral",
 
   /* Treino: já está treinando em casa, e a dúvida é como organizar. */

@@ -525,7 +525,6 @@ const CAUDA_VAGA_PENDENTE = new Set([
   "musculacao-e-colesterol",
   "zinco-e-testosterone",
   "dieta-para-comecar-o-ano",
-  "melhor-academia-de-alphaville",
   "melhores-academias-de-barueri",
   "vale-a-pena-contratar-personal-trainer",
   "smart-fit-alphaville",
