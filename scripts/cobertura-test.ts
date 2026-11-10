@@ -22,7 +22,7 @@ import { CAMINHO_POR_ARTIGO } from "../lib/ferramentas/comece-artigos";
 import { ARTIGOS_COM_CALCULADORA } from "../lib/proteina";
 import { ARTIGOS_COM_CALCULADORA_CARDAPIO } from "../lib/cardapio/motor";
 import { ARTIGOS_COM_CALCULADORA_TDEE } from "../lib/tdee";
-import { ARTIGOS_COM_CALCULADORA_DEFICIT } from "../lib/calorias";
+import { ARTIGOS_COM_CALCULADORA_DEFICIT, ARTIGOS_COM_LINK_DEFICIT } from "../lib/calorias";
 import { ARTIGOS_COM_CALCULADORA_1RM, ARTIGOS_COM_LINK_1RM } from "../lib/onerm";
 import { ARTIGOS_COM_CALCULADORA_MACROS } from "../lib/macros";
 import { ARTIGOS_COM_CALCULADORA_VOLUME, ARTIGOS_COM_LINK_VOLUME } from "../lib/treino/volume";
@@ -81,6 +81,7 @@ const REGISTROS: [string, string[]][] = [
   ["cardápio", ARTIGOS_COM_CALCULADORA_CARDAPIO],
   ["TMB/TDEE", ARTIGOS_COM_CALCULADORA_TDEE],
   ["déficit", ARTIGOS_COM_CALCULADORA_DEFICIT],
+  ["déficit (link)", ARTIGOS_COM_LINK_DEFICIT],
   ["1RM", ARTIGOS_COM_CALCULADORA_1RM],
   ["1RM (link)", ARTIGOS_COM_LINK_1RM],
   ["macros", ARTIGOS_COM_CALCULADORA_MACROS],
