@@ -200,6 +200,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+function normalizarSlug(slug: string): string {
+  let s = slug;
+  try {
+    s = decodeURIComponent(slug);
+  } catch {}
+  return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
 export default async function BlogPost({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -220,6 +228,13 @@ export default async function BlogPost({ params }: Props) {
   if (!post) {
     const minusculo = slug.toLowerCase();
     if (minusculo !== slug && getBlogPost(minusculo)) permanentRedirect(`/blog/${minusculo}`);
+    /*
+     * Mesma ideia para acento: o Search Console de 10/11/2026 listou
+     * /blog/dieta-paleo-e-musculação, /blog/varizes-e-musculação e afins como
+     * 404. Os slugs reais não têm acento.
+     */
+    const semAcento = normalizarSlug(slug);
+    if (semAcento !== slug && getBlogPost(semAcento)) permanentRedirect(`/blog/${semAcento}`);
     notFound();
   }
 

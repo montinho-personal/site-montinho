@@ -131,6 +131,50 @@ const nextConfig: NextConfig = {
        * caixa antes de decidir — e vale para qualquer variação de maiúsculas,
        * não só para esta URL.
        */
+
+      /*
+       * 404 do Search Console em 10/11/2026 (42 URLs com impressão, nenhuma
+       * linkada pelo site). Erros de digitação de link externo ou de
+       * assistente de IA. Cada uma vai para o artigo que ela claramente quis
+       * dizer; a que não tem destino óbvio fica 404
+       * (musculacao-durante-uso-como-adaptar: Mounjaro ou retatrutida?).
+       * Variações só de acento ou caixa são tratadas em app/blog/[slug]/page.tsx.
+       */
+      { source: "/blog/1-kg-de-gordura-sao-7-700-kcal-mas-a-balanca-nao-obedece", destination: "/blog/quantas-calorias-tem-1kg-de-gordura", permanent: true },
+      { source: "/blog/quantas-kg-de-gordura-sao-7700-kcal-mas-a-balanca-nao-obedece", destination: "/blog/quantas-calorias-tem-1kg-de-gordura", permanent: true },
+      { source: "/blog/quantas-calorias-tem-1kg-gordura", destination: "/blog/quantas-calorias-tem-1kg-de-gordura", permanent: true },
+      { source: "/blog/academias-abertas-oned-feriado", destination: "/blog/academias-abertas-nos-feriados", permanent: true },
+      { source: "/blog/agachamento-causa-varizes-vamos-esclarecer-essa-duvida", destination: "/blog/varizes-e-musculacao", permanent: true },
+      { source: "/blog/chin-up-v-pull-up", destination: "/blog/chin-up-vs-pull-up", permanent: true },
+      { source: "/blog/como-afundo-passadas", destination: "/blog/como-fazer-afundo-passadas", permanent: true },
+      { source: "/blog/como-voltar-academia-despois-de-parado", destination: "/blog/como-voltar-academia-depois-de-parado", permanent: true },
+      { source: "/blog/crossover-vs-cruzifixo", destination: "/blog/crossover-vs-crucifixo", permanent: true },
+      { source: "/blog/da-para-comer-pamonha-emagrecer", destination: "/blog/da-para-comer-pamonha-e-emagrecer", permanent: true },
+      { source: "/blog/dormencia-e-formigamento-access", destination: "/blog/dormencia-e-formigamento-ao-treinar", permanent: true },
+      { source: "/blog/eliptico-eliptico-emagrece", destination: "/blog/eliptico-emagrece", permanent: true },
+      { source: "/blog/fazer-abdominal-todo-dia-perde-barriga", destination: "/blog/abdominal-todo-dia-perde-barriga", permanent: true },
+      { source: "/blog/hack-vs-hack-vs-leg-press", destination: "/blog/hack-vs-leg-press", permanent: true },
+      { source: "/blog/hip-disc-musculacao", destination: "/blog/hip-dips-musculacao", permanent: true },
+      { source: "/blog/hip-musculacao", destination: "/blog/hip-dips-musculacao", permanent: true },
+      { source: "/blog/lista-de-compras-semanal", destination: "/blog/lista-de-compras-fitness-semanal", permanent: true },
+      { source: "/blog/lista-de-compras-semanal-fitness", destination: "/blog/lista-de-compras-fitness-semanal", permanent: true },
+      { source: "/blog/musculacao-depois-dos-60", destination: "/blog/musculacao-apos-60-anos", permanent: true },
+      { source: "/blog/quantas-calorias-o-corpo-gasta-por-dia", destination: "/blog/quantas-calorias-eu-gasto-por-dia", permanent: true },
+      { source: "/blog/quantas-horas-horas-de-sono-para-ganhar-massa-e-emagrecer", destination: "/blog/quantas-horas-de-sono-para-ganhar-massa-e-emagrecer", permanent: true },
+      { source: "/blog/quanto-tempo-de-esteira-for-emagrecer", destination: "/blog/quanto-tempo-de-esteira-para-emagrecer", permanent: true },
+      { source: "/blog/quanto-tempo-de-esteira-perder-peso", destination: "/blog/quanto-tempo-de-esteira-para-emagrecer", permanent: true },
+      { source: "/blog/ramon-dino-mr-olympia-horario", destination: "/blog/ramon-dino-mr-olympia-2026-horario", permanent: true },
+      { source: "/blog/resultado-classic-physique-olympia-2026", destination: "/blog/resultado-classic-physique-mr-olympia-2026", permanent: true },
+      { source: "/blog/resultado-open-mr-olympia-2026", destination: "/blog/resultado-mr-olympia-open-2026", permanent: true },
+      { source: "/blog/retatrutida-faz-perdar-musculos", destination: "/blog/retatrutida-faz-perder-musculos", permanent: true },
+      { source: "/blog/retatrutida-faz-perde-musculos", destination: "/blog/retatrutida-faz-perder-musculos", permanent: true },
+      { source: "/blog/retatrutida-faz-perdu-musculos", destination: "/blog/retatrutida-faz-perder-musculos", permanent: true },
+      { source: "/blog/smart-fit-vs-smart-fit-vs-bodytech", destination: "/blog/smart-fit-vs-bodytech", permanent: true },
+      { source: "/blog/smart_fit_vs_bluefit", destination: "/blog/smart-fit-vs-bluefit", permanent: true },
+      { source: "/blog/zonas-de-frequencia-cardiacas", destination: "/blog/zonas-de-frequencia-cardiaca", permanent: true },
+      { source: "/blog/montinhopersonal.com.br/blog/:slug", destination: "/blog/:slug", permanent: true },
+      { source: "/br/:slug", destination: "/blog/:slug", permanent: true },
+      { source: "/calorias-para-ganhar-massa-muscular", destination: "/blog/calorias-para-ganhar-massa-muscular", permanent: true },
     ];
   },
 };
