@@ -28,7 +28,7 @@ export default function OfertaNoCorpo({ canal, local }: { canal: "artigo" | "fer
   if (canal === "artigo" && !p.paginasDoTema.test(pathname)) return null;
 
   const hora = new Date(Date.parse(p.ate)).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit", timeZone: "America/Sao_Paulo" });
-  const selo = p.vendedor === "Amazon" ? "Vendido pela Amazon" : "Vendido pela loja oficial da marca";
+  const selo = p.vendedor === "Amazon" ? "Vendido pela Amazon" : p.vendedor ? "Vendido pela loja oficial da marca" : null;
   return (
     <aside className="my-8 overflow-hidden rounded-2xl border-2 border-amber-400/70 bg-[#0b0b0b] not-prose" aria-label="Oferta relâmpago">
       <div className="flex flex-wrap items-center justify-between gap-2 bg-gradient-to-r from-red-700 to-red-600 px-4 py-2">
@@ -46,7 +46,7 @@ export default function OfertaNoCorpo({ canal, local }: { canal: "artigo" | "fer
           </p>
         )}
         <ul className="mt-3 flex flex-wrap gap-1.5">
-          <li className="rounded-full bg-emerald-500/15 px-2.5 py-0.5 text-xs font-medium text-emerald-300">✓ {selo}</li>
+          {selo && <li className="rounded-full bg-emerald-500/15 px-2.5 py-0.5 text-xs font-medium text-emerald-300">✓ {selo}</li>}
           {p.selos.map((s) => <li key={s} className="rounded-full bg-white/10 px-2.5 py-0.5 text-xs text-gray-200">✓ {s}</li>)}
         </ul>
         <a
