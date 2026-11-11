@@ -15,7 +15,17 @@ import { trackEvent } from "@/lib/analytics";
  * como experiência ruim. Espera 25% de rolagem ou 12 s, espera o aviso de
  * cookies, e quem fechou não vê de novo esta oferta.
  */
-const fechadaKey = (id: string) => `montinho:promo:fechada:${id}`;
+/*
+ * Modo "só hoje" (pedido do Montinho em 11/11): abre em 3 s (2 s nas páginas
+ * do tema) ou com 5% de rolagem. Quem fecha volta a ver depois de 2 páginas,
+ * no máximo 2 vezes por visita; na visita seguinte, recomeça.
+ */
+const ssKey = (id: string) => `montinho:promo:${id}`;
+type Estado = { pv: number; fechou: number; pvFechou: number };
+const ssEst = (id: string): Estado => {
+  try { return { pv: 0, fechou: 0, pvFechou: -99, ...JSON.parse(sessionStorage.getItem(ssKey(id)) ?? "{}") }; } catch { return { pv: 0, fechou: 0, pvFechou: -99 }; }
+};
+const ssSalva = (id: string, e: Estado) => { try { sessionStorage.setItem(ssKey(id), JSON.stringify(e)); } catch { /* sem storage */ } };
 const ls = {
   get: (k: string) => { try { return localStorage.getItem(k); } catch { return null; } },
   set: (k: string, v: string) => { try { localStorage.setItem(k, v); } catch { /* sem storage */ } },
@@ -27,6 +37,15 @@ function falta(ate: number, agora: number) {
   return `${p(Math.floor(s / 3600))}:${p(Math.floor((s % 3600) / 60))}:${p(s % 60)}`;
 }
 
+function Digito({ v, r }: { v: string; r: string }) {
+  return (
+    <span className="flex flex-col items-center">
+      <span className="min-w-[1.9rem] rounded-md bg-black/40 px-1.5 py-0.5 text-center text-base sm:text-lg font-black tabular-nums text-white">{v}</span>
+      <span className="mt-0.5 text-[9px] font-semibold uppercase tracking-wider text-red-100/80">{r}</span>
+    </span>
+  );
+}
+
 export default function OfertaRelampago() {
   const pathname = usePathname() ?? "/";
   const [aberta, setAberta] = useState(false);
@@ -36,7 +55,10 @@ export default function OfertaRelampago() {
   const permitida = promoValida(p) && !ROTAS_SEM_PROMO.some((r) => r.test(pathname));
 
   useEffect(() => {
-    if (!permitida || !p || ls.get(fechadaKey(p.id))) return;
+    if (!permitida || !p) return;
+    const est = ssEst(p.id);
+    est.pv += 1; ssSalva(p.id, est);
+    if (est.fechou >= 2 || est.pv < est.pvFechou + 2) return;
     const doTema = p.paginasDoTema.test(pathname);
     let feito = false;
     const mostra = () => {
@@ -48,10 +70,10 @@ export default function OfertaRelampago() {
     };
     const onScroll = () => {
       const h = document.documentElement;
-      if (h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight) >= (doTema ? 0.1 : 0.25)) mostra();
+      if (h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight) >= 0.05) mostra();
     };
-    const t = setTimeout(mostra, doTema ? 5_000 : 12_000);
-    const onCookies = () => setTimeout(mostra, 1_500);
+    const t = setTimeout(mostra, doTema ? 2_000 : 3_000);
+    const onCookies = () => setTimeout(mostra, 800);
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("montinho:cookies", onCookies);
     return () => { clearTimeout(t); window.removeEventListener("scroll", onScroll); window.removeEventListener("montinho:cookies", onCookies); };
@@ -68,7 +90,7 @@ export default function OfertaRelampago() {
   if (agora >= fim) return null;
 
   const fecha = (como: string) => {
-    ls.set(fechadaKey(p.id), "1");
+    const est = ssEst(p.id); ssSalva(p.id, { ...est, fechou: est.fechou + 1, pvFechou: est.pv });
     setAberta(false);
     trackEvent("promo_relampago_fechar", { promo: p.id, como });
   };
@@ -76,12 +98,6 @@ export default function OfertaRelampago() {
   const selo = p.vendedor === "Amazon" ? "Vendido pela Amazon" : p.vendedor ? "Vendido pela loja oficial da marca" : null;
 
   const [hh, mm, ss2] = falta(fim, agora).split(":");
-  const Digito = ({ v, r }: { v: string; r: string }) => (
-    <span className="flex flex-col items-center">
-      <span className="min-w-[1.9rem] rounded-md bg-black/40 px-1.5 py-0.5 text-center text-base sm:text-lg font-black tabular-nums text-white">{v}</span>
-      <span className="mt-0.5 text-[9px] font-semibold uppercase tracking-wider text-red-100/80">{r}</span>
-    </span>
-  );
 
   return (
     <div
