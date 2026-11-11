@@ -58,7 +58,7 @@ export default function OfertaNoCorpo({ canal, local }: { canal: "artigo" | "fer
           onClick={() => trackEvent("promo_relampago_click", { promo: p.id, pagina: pathname, local })}
           className="mt-4 block rounded-xl bg-gradient-to-b from-amber-300 to-amber-500 px-4 py-3.5 text-center text-base font-black text-black shadow-lg shadow-amber-500/25 hover:from-amber-200 hover:to-amber-400"
         >
-          Garantir o desconto na Amazon →
+          {p.cta ?? "Garantir o desconto na Amazon →"}
         </a>
         <p className="mt-2.5 text-[10.5px] leading-snug text-gray-500">{AVISO_AFILIADO}</p>
       </div>

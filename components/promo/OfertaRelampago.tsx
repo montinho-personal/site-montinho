@@ -152,7 +152,7 @@ export default function OfertaRelampago() {
           onClick={() => trackEvent("promo_relampago_click", { promo: p.id, pagina: pathname })}
           className="mt-3 sm:mt-4 block rounded-xl bg-gradient-to-b from-amber-300 to-amber-500 px-4 py-3 sm:py-3.5 text-center text-base font-black text-black shadow-lg shadow-amber-500/25 hover:from-amber-200 hover:to-amber-400"
         >
-          Garantir o desconto na Amazon →
+          {p.cta ?? "Garantir o desconto na Amazon →"}
         </a>
         <div className="mt-2 flex items-center justify-between text-xs">
           <Link href={p.artigo.href} onClick={() => trackEvent("promo_relampago_artigo", { promo: p.id })} className="text-gray-400 underline underline-offset-2 hover:text-white">
