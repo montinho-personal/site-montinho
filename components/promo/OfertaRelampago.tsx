@@ -134,7 +134,7 @@ export default function OfertaRelampago() {
           <div className="mt-2 sm:mt-3 rounded-lg border border-amber-400/30 bg-amber-400/[0.07] px-3 py-2">
             {p.comparacao.destaque && <p className="text-base sm:text-lg font-black text-white leading-tight">{p.comparacao.destaque}</p>}
             <p className="mt-1 text-[13px] sm:text-sm font-semibold text-amber-200 leading-snug">{p.comparacao.texto}</p>
-            <p className="mt-1 hidden sm:block text-[10.5px] text-gray-500">{p.comparacao.fonte}</p>
+            <p className="mt-1 text-[10px] sm:text-[10.5px] text-gray-500">{p.comparacao.fonte}</p>
           </div>
         )}
 
