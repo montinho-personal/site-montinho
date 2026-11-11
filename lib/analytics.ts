@@ -7,6 +7,11 @@ export type AnalyticsEvent =
   | "click_whatsapp"
   /** Clique em cartão de afiliado da Amazon (produto e artigo, nada de saúde). */
   | "click_afiliado"
+  /** Oferta relâmpago (lib/promo/relampago.ts): id da promo e página, nada pessoal. */
+  | "promo_relampago_view"
+  | "promo_relampago_click"
+  | "promo_relampago_fechar"
+  | "promo_relampago_artigo"
   /** Montinho Mata a Vontade (sem restrições/alergias: só se teve ou não). */
   | "mata_vontade_inicio"
   | "mata_vontade_etapa"
