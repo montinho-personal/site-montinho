@@ -41,7 +41,8 @@ export default function OfertaNoCorpo({ canal, local }: { canal: "artigo" | "fer
         <p className="mt-0.5 text-xl font-extrabold leading-tight text-white">{p.produto}</p>
         <p className="mt-2 text-sm leading-relaxed text-gray-300">{p.argumento}</p>
         {p.comparacao && (
-          <p className="mt-3 rounded-lg border border-amber-400/30 bg-amber-400/[0.07] px-3 py-2 text-sm font-semibold text-amber-200">
+          <p className="mt-3 rounded-lg border border-amber-400/30 bg-amber-400/[0.07] px-3 py-2.5 text-sm font-semibold text-amber-200">
+            {p.comparacao.destaque && <span className="mb-1 block text-lg font-black leading-tight text-white">{p.comparacao.destaque}</span>}
             {p.comparacao.texto}
             <span className="mt-1 block text-[10.5px] font-normal text-gray-500">{p.comparacao.fonte}</span>
           </p>

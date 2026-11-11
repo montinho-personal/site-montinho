@@ -29,7 +29,7 @@ export type PromoRelampago = {
   /** Por que esse produto: fato, com o artigo que sustenta. */
   argumento: string;
   /** Preço da própria loja da marca (não da Amazon), com hora e fonte do print. */
-  comparacao?: { texto: string; fonte: string };
+  comparacao?: { destaque?: string; texto: string; fonte: string };
   artigo: { href: string; nome: string };
 };
 
@@ -48,8 +48,9 @@ export const PROMO_ATIVA: PromoRelampago | null = {
   argumento:
     "Creatina monohidratada pura, o suplemento com mais estudo para força e ganho de massa. O pote de 250 g rende 50 doses de 5 g.",
   comparacao: {
-    texto: "No site oficial da Growth, este pote sai por R$ 34,90 hoje, mais frete. Pelo link, na Amazon, sai por menos.",
-    fonte: "Preço do site da Growth Supplements visto em 11/11/2026, às 9h59.",
+    destaque: "50 doses. R$\u00a00,70 cada no site oficial.",
+    texto: "Lá, o pote sai por R$\u00a034,90, e o frete só é grátis acima de R$\u00a0250. Pelo link, na Amazon, ele sai por menos e vem com entrega Prime.",
+    fonte: "Preço, doses e frete do site da Growth Supplements, vistos em 11/11/2026, às 9h59.",
   },
   artigo: { href: "/blog/creatina-para-hipertrofia", nome: "Por que creatina? Veja o guia" },
 };
