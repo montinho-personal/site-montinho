@@ -442,3 +442,8 @@ summary::-webkit-details-marker {
   [class*="border-white"], [class*="border-\[#BA9E50\]"] { border-color: #bbb !important; }
   a { text-decoration: none; color: inherit; }
 }
+
+@keyframes promoIn {
+  from { transform: translateY(16px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

@@ -7,6 +7,7 @@ import Footer from "@/components/layout/Footer";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 import CookieBanner from "@/components/layout/CookieBanner";
 import StickyBar from "@/components/sticky/StickyBar";
+import OfertaRelampago from "@/components/promo/OfertaRelampago";
 import AnalyticsTracker from "@/components/analytics/AnalyticsTracker";
 import HandoffTracker from "@/components/crm/HandoffTracker";
 import SiteChrome, { MainDoSite } from "@/components/layout/SiteChrome";
@@ -209,6 +210,7 @@ export default function RootLayout({
           <Footer />
           <WhatsAppFloat />
           <StickyBar />
+          <OfertaRelampago />
         </SiteChrome>
         <SiteChrome sempreEm={["/lp/"]}><CookieBanner /></SiteChrome>
         <AnalyticsTracker />
