@@ -73,7 +73,7 @@ export default function OfertaRelampago() {
     trackEvent("promo_relampago_fechar", { promo: p.id, como });
   };
   const hora = new Date(fim).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit", timeZone: "America/Sao_Paulo" });
-  const selo = p.vendedor === "Amazon" ? "Vendido pela Amazon" : "Vendido pela loja oficial da marca";
+  const selo = p.vendedor === "Amazon" ? "Vendido pela Amazon" : p.vendedor ? "Vendido pela loja oficial da marca" : null;
 
   const [hh, mm, ss2] = falta(fim, agora).split(":");
   const Digito = ({ v, r }: { v: string; r: string }) => (
@@ -122,7 +122,7 @@ export default function OfertaRelampago() {
         )}
 
         <ul className="mt-2 sm:mt-3 flex flex-wrap gap-1.5">
-          <li className="rounded-full bg-emerald-500/15 px-2.5 py-0.5 text-xs font-medium text-emerald-300">✓ {selo}</li>
+          {selo && <li className="rounded-full bg-emerald-500/15 px-2.5 py-0.5 text-xs font-medium text-emerald-300">✓ {selo}</li>}
           {p.selos.map((s) => (
             <li key={s} className="rounded-full bg-white/10 px-2.5 py-0.5 text-xs text-gray-200">✓ {s}</li>
           ))}
