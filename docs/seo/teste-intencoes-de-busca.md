@@ -1562,3 +1562,11 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - Passo 1 (aprovado pelo Montinho): as duas saem com 301 para a de 10 melhores. Vieram para ela as perguntas próprias (mais cara, mais econômica, tem Smart Fit, preço da Scelta, Wellhub ou TotalPass), as faixas premium e econômica nos filtros rápidos e o checklist antes de assinar. A frase "com o que eu conferi nas unidades onde atendo alunos" não veio (regra de locais de atendimento). `updatedAt` 2026-11-10. Título e descrição mantidos.
 - 93 links internos passaram a apontar direto para a de 10 melhores; os 23 duplicados no mesmo "Leia também" saíram.
 - Medir em 28 dias (≈08/12): impressões, cliques e posição da de 10 melhores contra a linha de base. Passos 2 e 3 (`academias-perto-de-alphaville`, `academias-mais-completas-alphaville`, links da `/academias-alphaville`) só depois dessa medição.
+
+## 2026-11-11 — Prints: arroz, aveia e granola engorda
+
+- Pedido do Montinho: "pode criar os 3 sem os prints"; os prints do Google (autocompletar, visão geral por IA, PAA e buscas relacionadas) chegaram durante a escrita e decidiram H2 e FAQ. Volumes do Planejador (Brasil): "arroz engorda" 9.900, "aveia engorda" 9.900, "granola engorda" 8.100. Sem export do Answer the Public.
+- `arroz-engorda`: calorias por colher, escumadeira e concha (branco e integral), "3 colheres", "100 gramas", "barriga", "incha", "à noite", "branco ou integral", "feijão, batata ou macarrão" (macarrão só cru: a TACO não tem o cozido), "quem está de dieta". Fora: "engorda o cachorro".
+- `aveia-engorda`: por colher, "engorda ou emagrece", com leite, banana, mel e ovo, mingau à noite, "aveia ou arroz", "por que incha", "todos os dias", "o bebê" (encaminha ao pediatra), quanto por dia. Fora: cavalo e gado; farelo e bolo de aveia sem número (não estão na base).
+- `granola-engorda`: a TACO não tem granola; o número vem de uma receita de exemplo nossa calculada com a TACO, dita como exemplo, e o texto manda ao rótulo. Entraram com iogurte, leite, banana e açaí, "aveia ou granola", "light" (Anvisa, RDC 54/2012), como escolher no mercado, "incha", "todo dia".
+- Ferramenta: cartão de link da Calculadora de Déficit nos três; ficha de alimento no arroz e na aveia (granola não está na base).

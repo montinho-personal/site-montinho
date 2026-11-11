@@ -64,6 +64,14 @@ export const FICHAS_POR_ARTIGO: Record<string, FichaDeArtigo> = {
     alimentos: ["abacate-cru", "azeite-de-oliva-extra-virgem"],
     destaque: "lipideos",
   },
+  "arroz-engorda": {
+    alimentos: ["arroz-tipo-1-cozido", "arroz-integral-cozido"],
+    destaque: "carboidrato",
+  },
+  "aveia-engorda": {
+    alimentos: ["aveia-flocos-crua"],
+    destaque: "fibra",
+  },
   "amendoim-engorda": {
     alimentos: ["amendoim-torrado-salgado", "amendoim-grao-cru"],
     destaque: "lipideos",
