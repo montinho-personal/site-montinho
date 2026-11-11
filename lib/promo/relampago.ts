@@ -49,12 +49,17 @@ export const PROMO_ATIVA: PromoRelampago | null = {
   selos: ["Escolha da Amazon", "Entrega Prime"],
   argumento:
     "Creatina monohidratada pura, o suplemento com mais estudo para força e ganho de massa. O pote de 250 g rende 50 doses de 5 g.",
+  /*
+   * 11/11/2026: o Montinho decidiu mostrar o preço da Amazon, avisado de que
+   * o Acordo Operacional dos Associados só permite preço vindo da API. Vai
+   * com a hora do print e sai do ar sozinho às 23h54.
+   */
   comparacao: {
-    destaque: "O mesmo pote da Growth, mais barato que no site oficial.",
-    texto: "No site da Growth: R$\u00a034,90 (R$\u00a00,70 por dose) e frete pago em compras abaixo de R$\u00a0250. No botão abaixo, na Amazon: preço menor e frete grátis com Prime. Só até as 23h54.",
-    fonte: "Preço, doses e frete do site da Growth Supplements, vistos em 11/11/2026, às 9h59.",
+    destaque: "De R$\u00a042,90 por R$\u00a029,61 no Pix: R$\u00a00,59 por dose.",
+    texto: "É 15% menos que no site oficial da Growth, onde o mesmo pote custa R$\u00a034,90 e ainda tem frete. Mesma marca, mesmo pote, com entrega Prime. Só até as 23h54.",
+    fonte: "Preços vistos na Amazon (Pix, 11/11 às 9h57) e no site da Growth (11/11 às 9h59). Podem mudar a qualquer momento.",
   },
-  cta: "Pagar menos que no site oficial →",
+  cta: "Garantir por R$\u00a029,61 no Pix →",
   artigo: { href: "/blog/creatina-para-hipertrofia", nome: "Por que creatina? Veja o guia" },
 };
 
