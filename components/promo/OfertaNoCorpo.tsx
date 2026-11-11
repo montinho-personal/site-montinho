@@ -16,16 +16,17 @@ export default function OfertaNoCorpo({ canal, local }: { canal: "artigo" | "fer
   const [agora, setAgora] = useState<number | null>(null);
   const p = PROMO_ATIVA;
   useEffect(() => {
-    setAgora(Date.now());
+    const t = setTimeout(() => setAgora(Date.now()), 0);
     const i = setInterval(() => setAgora(Date.now()), 30_000);
-    return () => clearInterval(i);
+    return () => { clearTimeout(t); clearInterval(i); };
   }, []);
   useEffect(() => {
     if (agora !== null && promoValida(p, agora)) trackEvent("promo_relampago_view", { promo: p.id, pagina: pathname, local });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [agora !== null]);
   if (agora === null || !promoValida(p, agora)) return null;
-  if (canal === "artigo" && !p.paginasDoTema.test(pathname)) return null;
+  // Modo "só hoje": o cartão entra em todo artigo do blog, não só nos do tema.
+  if (canal === "artigo" && !pathname.startsWith("/blog/")) return null;
 
   const hora = new Date(Date.parse(p.ate)).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit", timeZone: "America/Sao_Paulo" });
   const selo = p.vendedor === "Amazon" ? "Vendido pela Amazon" : p.vendedor ? "Vendido pela loja oficial da marca" : null;
