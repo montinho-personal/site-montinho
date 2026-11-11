@@ -1152,12 +1152,12 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-11-04",
-    updatedAt: "2026-11-06",
+    updatedAt: "2026-11-11",
     readTime: "3 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC 334", "brasileiros no UFC", "Amanda Nunes", "Caio Borralho"],
     content: `<img src="/blog-images/ufc-334-amanda-nunes-kayla-harrison-capa.webp" alt="Brasileiros no UFC 334, sábado 14/11, em Nova York" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<p>Cinco brasileiros estão no <strong>UFC 334</strong>, no <strong>sábado, 14 de novembro de 2026</strong>, no Madison Square Garden, em Nova York. <strong>Amanda Nunes</strong> volta ao UFC para desafiar a campeã Kayla Harrison pelo cinturão do peso-galo. Horários, transmissão e o card completo em <a href="/blog/ufc-334-amanda-nunes-kayla-harrison">UFC 334: Amanda Nunes x Kayla Harrison</a>. Atualizado em 4 de novembro de 2026.</p>
+<p>Seis brasileiros estão no <strong>UFC 334</strong>, no <strong>sábado, 14 de novembro de 2026</strong>, no Madison Square Garden, em Nova York. <strong>Amanda Nunes</strong> volta ao UFC para desafiar a campeã Kayla Harrison pelo cinturão do peso-galo. Horários, transmissão e o card completo em <a href="/blog/ufc-334-amanda-nunes-kayla-harrison">UFC 334: Amanda Nunes x Kayla Harrison</a>. Atualizado em 11 de novembro de 2026.</p>
 
 <h2>Quem são os brasileiros do UFC 334</h2>
 <h3>Card principal (23h)</h3>
