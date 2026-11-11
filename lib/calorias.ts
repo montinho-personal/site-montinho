@@ -423,4 +423,7 @@ export const ARTIGOS_COM_LINK_DEFICIT: string[] = [
   "banana-engorda",
   "amendoim-engorda",
   "abacate-engorda",
+  "arroz-engorda",
+  "aveia-engorda",
+  "granola-engorda",
 ];
