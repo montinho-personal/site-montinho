@@ -1570,3 +1570,12 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `aveia-engorda`: por colher, "engorda ou emagrece", com leite, banana, mel e ovo, mingau à noite, "aveia ou arroz", "por que incha", "todos os dias", "o bebê" (encaminha ao pediatra), quanto por dia. Fora: cavalo e gado; farelo e bolo de aveia sem número (não estão na base).
 - `granola-engorda`: a TACO não tem granola; o número vem de uma receita de exemplo nossa calculada com a TACO, dita como exemplo, e o texto manda ao rótulo. Entraram com iogurte, leite, banana e açaí, "aveia ou granola", "light" (Anvisa, RDC 54/2012), como escolher no mercado, "incha", "todo dia".
 - Ferramenta: cartão de link da Calculadora de Déficit nos três; ficha de alimento no arroz e na aveia (granola não está na base).
+
+## 2026-11-11 — Sem prints: pipoca, manga e melancia engorda
+
+- Pedido do Montinho: "pode fazer, depois me lembra de enviar os prints". Volumes do Planejador (Brasil): "pipoca engorda" 22.200/mês, "manga engorda" e "melancia engorda" 12.100 cada. Avaliados e deixados para depois: "feijão engorda" e "pão de queijo engorda" 8.100, "macarrão", "milho" e "maçã engorda" 5.400, "treino metabólico" 3.600. "Batata doce engorda" (12.100) fica para uma atualização de `batata-doce-emagrece`, não para artigo novo.
+- `pipoca-engorda`: TACO tem só a pipoca com óleo; sem número para pipoca sem óleo, de micro-ondas e de cinema (rótulo). Pesos de porção são exemplos nossos (o IBGE não traz medida de pipoca).
+- `manga-engorda`: Palmer, Tommy Atkins, Haden e polpa congelada pela TACO; porções de 150 e 200 g são exemplos nossos.
+- `melancia-engorda`: pedaço, fatia e porção pelo IBGE.
+- Ferramenta: cartão de link da Calculadora de Déficit e ficha de alimento nos três.
+- Pendente: prints do Google (e o export do Answer the Public, se houver) dos três termos para revisar H2 e FAQ.
