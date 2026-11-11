@@ -5,6 +5,7 @@ import Link from "next/link";
 import Compartilhar from "@/components/share/Compartilhar";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
+import OfertaNoCorpo from "@/components/promo/OfertaNoCorpo";
 import {
   AVISO_SEGURANCA,
   DIAS_ATE_SATURAR_SEM,
@@ -541,6 +542,8 @@ export default function CalculadoraCreatina({ placement }: { placement: string }
                 </Link>
               )}
             </div>
+
+            <OfertaNoCorpo canal="ferramenta" local={`calculadora-creatina:${placement}`} />
 
             {/* ── CTA ── */}
             <div className="border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-6 mt-8 relative" data-testid="cta-creatina">

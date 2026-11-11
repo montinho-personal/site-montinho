@@ -13,6 +13,10 @@
  */
 export type PromoRelampago = {
   id: string;
+  /** Caminho do link rastreado: /oferta/<apelido>. */
+  apelido: string;
+  /** Artigos e ferramentas onde a oferta também entra no corpo da página, e o aviso aparece mais cedo. */
+  paginasDoTema: RegExp;
   marca: string;
   produto: string;
   url: string;
@@ -29,6 +33,8 @@ export type PromoRelampago = {
 
 export const PROMO_ATIVA: PromoRelampago | null = {
   id: "creatina-growth-250g-2026-11-11",
+  apelido: "creatina-growth",
+  paginasDoTema: /creatina|suplement|whey|hipertrofia|ganhar-massa|massa-muscular/,
   marca: "Growth Supplements",
   produto: "Creatina monohidratada 250 g, sem sabor",
   url: "https://link.amazon/B0cLtgysF",
@@ -49,3 +55,13 @@ export const ROTAS_SEM_PROMO = [/^\/crm/, /^\/lp\//, /^\/l\//, /^\/r\//, /^\/app
 
 export const promoValida = (p: PromoRelampago | null, agora = Date.now()): p is PromoRelampago =>
   !!p && p.vendedor !== null && agora < Date.parse(p.ate);
+
+/** Canais aceitos no link rastreado (?c=). Qualquer outro vira "outro". */
+export const CANAIS_OFERTA = ["popup", "artigo", "ferramenta", "ig-stories", "ig-bio", "whatsapp", "whatsapp-status", "youtube", "outro"] as const;
+
+/** Link rastreado da oferta: conta o clique (página e canal) e segue para a Amazon. */
+export const linkOferta = (p: PromoRelampago, canal: (typeof CANAIS_OFERTA)[number], pagina?: string) =>
+  `/oferta/${p.apelido}?c=${canal}${pagina ? `&de=${encodeURIComponent(pagina)}` : ""}`;
+
+export const promoPorApelido = (a: string): PromoRelampago | null =>
+  PROMO_ATIVA && (PROMO_ATIVA.apelido === a || PROMO_ATIVA.id === a) ? PROMO_ATIVA : null;

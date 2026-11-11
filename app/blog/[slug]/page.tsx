@@ -56,6 +56,7 @@ import { ARTIGOS_COM_CALCULADORA_CORRIDA } from "@/lib/corrida";
 import CalculadoraCorrida from "@/components/corrida/CalculadoraCorrida";
 import { ARTIGOS_COM_CALCULADORA_GLP1 } from "@/lib/glp1";
 import CartoesAfiliado from "@/components/afiliados/CartoesAfiliado";
+import OfertaNoCorpo from "@/components/promo/OfertaNoCorpo";
 import CalculadoraDescanso from "@/components/descanso/CalculadoraDescanso";
 import Comparador from "@/components/comparador/Comparador";
 import { ARTIGOS_COM_COMPARADOR } from "@/lib/treino/comparador";
@@ -522,6 +523,7 @@ export default async function BlogPost({ params }: Props) {
       <article className="py-16 bg-black">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <CartoesAfiliado slug={post.slug} variante="topo" />
+          <OfertaNoCorpo canal="artigo" local="artigo-topo" />
           {calcSplit && (
             <>
               <Prosa html={calcSplit.before} slug={post.slug} />

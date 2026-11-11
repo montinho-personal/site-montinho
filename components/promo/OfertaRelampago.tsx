@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { PROMO_ATIVA, ROTAS_SEM_PROMO, promoValida } from "@/lib/promo/relampago";
+import { PROMO_ATIVA, ROTAS_SEM_PROMO, promoValida, linkOferta } from "@/lib/promo/relampago";
 import { AVISO_AFILIADO } from "@/lib/afiliados";
 import { trackEvent } from "@/lib/analytics";
 
@@ -37,6 +37,7 @@ export default function OfertaRelampago() {
 
   useEffect(() => {
     if (!permitida || !p || ls.get(fechadaKey(p.id))) return;
+    const doTema = p.paginasDoTema.test(pathname);
     let feito = false;
     const mostra = () => {
       if (feito) return;
@@ -47,9 +48,9 @@ export default function OfertaRelampago() {
     };
     const onScroll = () => {
       const h = document.documentElement;
-      if (h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight) >= 0.25) mostra();
+      if (h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight) >= (doTema ? 0.1 : 0.25)) mostra();
     };
-    const t = setTimeout(mostra, 12_000);
+    const t = setTimeout(mostra, doTema ? 5_000 : 12_000);
     const onCookies = () => setTimeout(mostra, 1_500);
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("montinho:cookies", onCookies);
@@ -128,7 +129,7 @@ export default function OfertaRelampago() {
         </ul>
 
         <a
-          href={p.url}
+          href={linkOferta(p, "popup", pathname)}
           target="_blank"
           rel="sponsored nofollow noopener noreferrer"
           onClick={() => trackEvent("promo_relampago_click", { promo: p.id, pagina: pathname })}
