@@ -51,6 +51,36 @@ export interface VideoCanal {
 
 export const VIDEOS_CANAL: VideoCanal[] = [
   {
+    /* Short da São Silvestre (link enviado pelo Montinho em 12/11/2026). Narração com a voz dele; imagens ilustrativas geradas por IA. */
+    id: "mgsqMgAx63c",
+    slug: "primeira-sao-silvestre-como-chegar-inteiro",
+    titulo: "Primeira São Silvestre? Como chegar inteiro aos 15 km",
+    metaTitle: "Primeira São Silvestre: Como Chegar Inteiro aos 15 km (Vídeo)",
+    descricao:
+      "A São Silvestre se decide em três momentos: a descida logo depois da largada, o meio da prova e a subida da Brigadeiro, depois do km 12. Como correr cada um e o que não mudar no dia da prova.",
+    chamada: "15 km, a Paulista lotada e uma pergunta: será que eu chego inteiro? Os três momentos que decidem a prova.",
+    texto: [
+      "Quinze quilômetros, a Paulista lotada, o último dia do ano. E uma pergunta só na cabeça: será que eu chego inteiro? Chega. Mas a São Silvestre não se vence na força, se vence na cabeça.",
+      "Primeiro, a largada. A multidão empurra, a rua desce e dá vontade de voar. Não voa: desce solto, passo curto, num ritmo que pareça fácil demais. Quem dispara aqui paga lá na frente.",
+      "Segundo, o meio da prova. O centro de São Paulo, gente na calçada, música, festa. Aproveita, mas guarda energia, porque a prova de verdade ainda não começou.",
+      "Terceiro, a Brigadeiro. Ela chega depois do quilômetro 12, quando a perna já está pesada. Aqui não é velocidade, é esforço: encurta a passada, usa os braços. E se precisar caminhar, caminha. Isso é estratégia, não é derrota.",
+      "No dia, nada de novidade: tênis já usado, comida que você conhece, água nos postos. E não se compara com quem está do lado. Corre a sua prova.",
+    ],
+    artigos: [
+      { href: "/blog/primeira-sao-silvestre-dicas", nome: "Primeira São Silvestre: dicas" },
+      { href: "/blog/percurso-sao-silvestre", nome: "Percurso da São Silvestre" },
+      { href: "/blog/treino-sao-silvestre-13-semanas", nome: "Treino para a São Silvestre em 13 semanas" },
+      { href: "/blog/o-que-comer-antes-da-sao-silvestre", nome: "O que comer antes da São Silvestre" },
+    ],
+    ferramenta: { href: "/ferramentas/previsor-sao-silvestre", nome: "Previsor da São Silvestre" },
+    publicadoEm: "2026-11-12",
+    capa: {
+      vertical: "/videos/primeira-sao-silvestre-como-chegar-inteiro/capa-vertical.jpg",
+      horizontal: "/videos/primeira-sao-silvestre-como-chegar-inteiro/capa-horizontal.jpg",
+      cartao: "/videos/primeira-sao-silvestre-como-chegar-inteiro/capa-cartao.jpg",
+    },
+  },
+  {
     /* Short do álcool no emagrecimento (link enviado pelo Montinho em 10/11/2026). Números da conta: TACO/Unicamp. */
     id: "pxstc1eDnJU",
     slug: "alcool-atrapalha-o-emagrecimento",
