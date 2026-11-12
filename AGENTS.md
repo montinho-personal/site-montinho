@@ -218,6 +218,21 @@ que foi conferido, o que foi corrigido e os limites. Os totais precisam
 bater com uma consulta direta à fonte. Relatório sem auditoria não é
 enviado, e nada é chamado de "confirmado" sem ter sido checado na fonte.
 
+# Vídeo pronto: pacote de postagem, sempre em bloco de copiar e colar
+
+Regra pedida pelo Montinho em 12/11/2026. Todo vídeo entregue para postar
+sai junto com o pacote de postagem, sem ele precisar pedir:
+
+- título, descrição e tags, cada um num bloco de código (copiar e colar);
+- a descrição já com o **link rastreado** (`/l/<código>`), nunca o link cru
+  da página. Um código por vídeo e por rede (`yt-`, `ig-`, `wa-`),
+  cadastrado em `lib/crm/links.ts` e publicado ANTES de mandar o link — um
+  `/l/` que ainda não está no ar não registra clique;
+- a capa (embutida no primeiro quadro e em arquivo separado).
+
+Vale para qualquer texto que ele vá colar em outro lugar (legenda, roteiro
+de teleprompter, mensagem de WhatsApp): sempre em bloco de código.
+
 # Aviso ao Bing (IndexNow) é automático
 
 A cada push para `main`, o workflow `.github/workflows/indexnow.yml` espera

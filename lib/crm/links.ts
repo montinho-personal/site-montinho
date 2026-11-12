@@ -98,6 +98,13 @@ export const LINKS: Record<string, LinkControlado> = {
   "wa-mob-superiores": { destino: "/", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "mobilidade_superiores", tipo: "social" },
   /** Vídeo "Como tirar suas medidas" (30/10/2026). Home, como os de mobilidade. */
   "yt-medidas": { destino: "/", utm_source: "youtube", utm_medium: "video", utm_campaign: "como_tirar_medidas", utm_content: "descricao", tipo: "social" },
+  /**
+   * Vídeo "Primeira São Silvestre: como chegar inteiro aos 15 km" (12/11/2026).
+   * Leva ao Previsor, que é a chamada do fim do vídeo; um código por rede.
+   */
+  "yt-saosilvestre": { destino: "/ferramentas/previsor-sao-silvestre", utm_source: "youtube", utm_medium: "video", utm_campaign: "previsor_sao_silvestre", utm_content: "descricao", tipo: "social" },
+  "ig-saosilvestre": { destino: "/ferramentas/previsor-sao-silvestre", utm_source: "instagram", utm_medium: "organic_social", utm_campaign: "reels", utm_content: "previsor_sao_silvestre", tipo: "social" },
+  "wa-saosilvestre": { destino: "/ferramentas/previsor-sao-silvestre", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "previsor_sao_silvestre", tipo: "social" },
   "wa-medidas": { destino: "/", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "como_tirar_medidas", tipo: "social" },
   /**
    * Vídeo "Como filmar o seu exercício" (04/11/2026), o guia da revisão de
