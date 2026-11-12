@@ -85,6 +85,11 @@ export const SAO_SILVESTRE_2026_POSTS: BlogPost[] = [
 <h2>Quem ganhou em 2025</h2>
 <p>Na 100ª edição, <strong>Muse Gizachew</strong> (Etiópia) venceu no masculino, com 44min28s, e <strong>Sisilia Panga</strong> (Tanzânia) no feminino, com 51min08s. Os melhores brasileiros foram <strong>Fábio Jesus</strong> e <strong>Núbia Oliveira</strong>, ambos em 3º lugar.</p>
 
+<div class="yt-embed">
+<p class="yt-caption">Em 1 minuto: os três momentos que decidem a São Silvestre — a descida da largada, o meio da prova e a subida da Brigadeiro.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/mgsqMgAx63c?rel=0" title="Primeira São Silvestre? Como chegar inteiro aos 15 km — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+
 <h2>Corra a sua prova</h2>
 <p>Na São Silvestre, cada um corre contra o próprio relógio. Não se compare com quem está do lado: a sua genética, a sua rotina e a sua história são só suas. O que faz diferença é um plano que você consiga seguir até dezembro — e depois dele. Se quiser montar esse plano comigo, com força e corrida no mesmo treino, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
 
@@ -194,6 +199,11 @@ ${FONTES_SS}`,
 </ul>
 <p>Datas de retirada do kit e horários de 2026 saem no regulamento; o <a href="/blog/inscricao-sao-silvestre-2026">guia da inscrição</a> é atualizado quando forem divulgados.</p>
 
+<div class="yt-embed">
+<p class="yt-caption">Em 1 minuto: os três momentos que decidem a São Silvestre — a descida da largada, o meio da prova e a subida da Brigadeiro.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/mgsqMgAx63c?rel=0" title="Primeira São Silvestre? Como chegar inteiro aos 15 km — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+
 <h2>Corra a sua prova</h2>
 <p>Na São Silvestre tem gente de todo tipo: quem vai buscar recorde e quem vai para completar a primeira prova da vida. Não se compare com quem está do seu lado — cada um tem a própria genética, rotina e história, com altos e baixos. O que faz diferença é um plano que você consiga seguir até dezembro e continuar depois dele. Se quiser montar esse plano comigo, ajustado ao seu nível e à sua agenda, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
 
@@ -264,6 +274,11 @@ ${FONTES_SS}`,
 
 <h2>Serviços no percurso</h2>
 <p>A organização monta pontos de hidratação, banheiros e atendimento médico ao longo dos 15 km. O mapa com a posição de cada serviço é publicado no site oficial da prova antes da largada; confira na semana da corrida.</p>
+
+<div class="yt-embed">
+<p class="yt-caption">Em 1 minuto: os três momentos que decidem a São Silvestre — a descida da largada, o meio da prova e a subida da Brigadeiro.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/mgsqMgAx63c?rel=0" title="Primeira São Silvestre? Como chegar inteiro aos 15 km — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
 
 <h2>Corra a sua prova</h2>
 <p>Ninguém corre a São Silvestre do mesmo jeito: tem quem desça voando e quem caminhe a Brigadeiro inteira. Não se compare com quem está do seu lado — cada um tem a própria genética, rotina e história. O que importa é conhecer o seu percurso e o seu ritmo. Se quiser se preparar comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
@@ -414,6 +429,11 @@ ${FONTES_SS}`,
 <h2>Quanto tempo você vai levar?</h2>
 <p>Na primeira São Silvestre, a meta é terminar bem — mas é natural querer ter uma ideia. O <a href="/ferramentas/previsor-sao-silvestre">Previsor da São Silvestre</a> parte do seu tempo em 5 km, 10 km ou meia e mostra a faixa provável nos 15 km, já com a subida na conta.</p>
 
+<div class="yt-embed">
+<p class="yt-caption">Em 1 minuto: os três momentos que decidem a São Silvestre — a descida da largada, o meio da prova e a subida da Brigadeiro.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/mgsqMgAx63c?rel=0" title="Primeira São Silvestre? Como chegar inteiro aos 15 km — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+
 <h2>Corra a sua prova</h2>
 <p>Na primeira São Silvestre você vai ver gente mais rápida, mais lenta, fantasiada, caminhando e correndo. Não se compare com ninguém: cada um tem a própria genética, rotina e história, com altos e baixos. A sua prova é contra o seu relógio — e o objetivo é voltar no ano que vem. Se quiser se preparar comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
 
@@ -477,6 +497,11 @@ ${FONTES_SS}`,
 
 <h2>Quanto tempo você vai fazer?</h2>
 <p>Nenhum tênis substitui o treino — mas é natural querer saber quanto tempo você levaria. O <a href="/ferramentas/previsor-sao-silvestre">Previsor da São Silvestre</a> faz a conta a partir do seu tempo em 5 km, 10 km ou meia. E o <a href="/blog/treino-sao-silvestre-13-semanas">plano de treino de 13 semanas</a> mostra como chegar lá.</p>
+
+<div class="yt-embed">
+<p class="yt-caption">Em 1 minuto: os três momentos que decidem a São Silvestre — a descida da largada, o meio da prova e a subida da Brigadeiro.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/mgsqMgAx63c?rel=0" title="Primeira São Silvestre? Como chegar inteiro aos 15 km — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
 
 <h2>Corra a sua prova</h2>
 <p>Na largada você vai ver de tudo: tênis de mil reais, tênis gasto e tênis oficial. Não se compare com ninguém — nem com o tênis do lado. O que faz a sua prova é o treino que você conseguiu manter. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
@@ -542,6 +567,11 @@ ${FONTES_SS}`,
 
 <h2>Quanto tempo você vai levar nos 15 km?</h2>
 <p>Já com o kit em mãos, vale ter uma ideia de ritmo para não sair rápido demais na descida da largada. O previsor abaixo parte do seu tempo em outra distância. E, se é sua primeira vez, leia as <a href="/blog/primeira-sao-silvestre-dicas">dicas para a primeira São Silvestre</a>.</p>
+
+<div class="yt-embed">
+<p class="yt-caption">Em 1 minuto: os três momentos que decidem a São Silvestre — a descida da largada, o meio da prova e a subida da Brigadeiro.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/mgsqMgAx63c?rel=0" title="Primeira São Silvestre? Como chegar inteiro aos 15 km — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
 
 <h2>Não se compare</h2>
 <p>Cada um tem a própria genética, rotina e história. Na São Silvestre tem gente que corre para ganhar e gente que caminha boa parte do trajeto, e as duas terminam a prova. Se quiser ajuda para chegar bem em 31/12, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>

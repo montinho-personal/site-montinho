@@ -193,6 +193,23 @@ export default function PrevisorSaoSilvestrePage() {
           </div>
 
           <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>Os três momentos que decidem a prova</h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Em 1 minuto: a descida logo depois da largada, o meio da prova e a subida da Brigadeiro — e o que não mudar no
+              dia. Mais detalhes em <Link href="/videos/primeira-sao-silvestre-como-chegar-inteiro" className={ln}>Primeira São Silvestre: como chegar inteiro</Link>.
+            </p>
+            <div className="yt-wrapper yt-wrapper--vertical">
+              <iframe
+                src="https://www.youtube.com/embed/mgsqMgAx63c?rel=0"
+                title="Primeira São Silvestre? Como chegar inteiro aos 15 km — Montinho Personal Trainer"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+
+          <div>
             <h2 className="text-2xl font-bold text-white mb-5" style={h}>Perguntas frequentes</h2>
             <FAQ itens={faq} placement="ferramenta-sao-silvestre" />
           </div>

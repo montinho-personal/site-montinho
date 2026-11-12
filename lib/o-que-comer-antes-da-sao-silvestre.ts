@@ -174,6 +174,11 @@ export const ALIMENTACAO_SAO_SILVESTRE_POSTS: BlogPost[] = [
 <h2>Depois da prova</h2>
 <p>Nas primeiras horas, uma refeição com <strong>carboidrato e proteína</strong>: arroz, batata ou pão com frango, carne, ovos ou iogurte. A proteína de 0,25 a 0,4 g por quilo na refeição, perto de 20 a 30 g para 70 kg, é a faixa das diretrizes. Água até a urina voltar à cor clara. Depois disso é Réveillon, e você mereceu.</p>
 
+<div class="yt-embed">
+<p class="yt-caption">Em 1 minuto: os três momentos que decidem a São Silvestre — a descida da largada, o meio da prova e a subida da Brigadeiro.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/mgsqMgAx63c?rel=0" title="Primeira São Silvestre? Como chegar inteiro aos 15 km — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+
 <h2>Não se compare</h2>
 <p>No pelotão vai ter gente com cinto de gel, gente que toma café na largada e gente que corre de fantasia comendo pipoca. Não copie ninguém. Cada um tem a própria genética, rotina e história. O que funciona é o que você testou nos seus treinos, no seu horário.</p>
 
