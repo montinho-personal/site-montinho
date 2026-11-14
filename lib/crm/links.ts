@@ -105,6 +105,13 @@ export const LINKS: Record<string, LinkControlado> = {
   "yt-saosilvestre": { destino: "/ferramentas/previsor-sao-silvestre", utm_source: "youtube", utm_medium: "video", utm_campaign: "previsor_sao_silvestre", utm_content: "descricao", tipo: "social" },
   "ig-saosilvestre": { destino: "/ferramentas/previsor-sao-silvestre", utm_source: "instagram", utm_medium: "organic_social", utm_campaign: "reels", utm_content: "previsor_sao_silvestre", tipo: "social" },
   "wa-saosilvestre": { destino: "/ferramentas/previsor-sao-silvestre", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "previsor_sao_silvestre", tipo: "social" },
+  /**
+   * Vídeo "Parabéns, Natália!" (14/11/2026): a evolução de uma aluna em três
+   * avaliações, divulgado com autorização dela. Leva à consultoria online.
+   */
+  "ig-evolucao": { destino: "/consultoria-online", utm_source: "instagram", utm_medium: "organic_social", utm_campaign: "reels", utm_content: "evolucao_aluna", tipo: "social" },
+  "wa-evolucao": { destino: "/consultoria-online", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "evolucao_aluna", tipo: "social" },
+  "yt-evolucao": { destino: "/consultoria-online", utm_source: "youtube", utm_medium: "video", utm_campaign: "evolucao_aluna", utm_content: "descricao", tipo: "social" },
   "wa-medidas": { destino: "/", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "como_tirar_medidas", tipo: "social" },
   /**
    * Vídeo "Como filmar o seu exercício" (04/11/2026), o guia da revisão de
