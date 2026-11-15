@@ -139,6 +139,11 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
 <p>A <a href="/consultoria-online">consultoria online</a> vale para qualquer lugar do Brasil: plano montado para a sua rotina, vídeo de execução de cada exercício, correção dos seus vídeos, ajustes quando a carga trava ou a semana muda, e conversa direta comigo pelo WhatsApp. Não tem aula ao vivo, e o plano alimentar fica com o nutricionista.</p>
 <p>Se você ainda não sabe qual combina com você, a primeira conversa serve exatamente para isso.</p>
 
+<div class="yt-embed">
+<p class="yt-caption">Na consultoria online, a correção vem do vídeo. Veja como gravar a série do jeito que dá para avaliar.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/L5w4DBU2la8?rel=0" title="Como filmar o seu exercício para eu corrigir a execução — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+
 <h2>Não se compare</h2>
 <p>Não escolha o formato porque um amigo evoluiu com ele. Cada um tem a própria genética, rotina e história, com altos e baixos. O formato certo é o que você consegue manter por anos, com aderência e progressão, e isso depende da sua semana, não da dele.</p>`,
   },
@@ -244,6 +249,11 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
 <h2>Como é na minha consultoria</h2>
 <p>Na <a href="/consultoria-online">consultoria online</a>, o plano começa pela conversa sobre objetivo, rotina, histórico e onde você vai treinar. Depois vêm os check-ins de evolução e as reavaliações periódicas, junto com a análise dos vídeos da sua execução. Se quiser começar só pela execução, a <a href="/revisao-de-execucao">revisão gratuita de execução</a> é o primeiro passo.</p>
 
+<div class="yt-embed">
+<p class="yt-caption">Por que o peso de um dia engana, e por que a média da semana conta mais na reavaliação.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/9X968Kqa2-Y?rel=0" title="A balança mente? Por que o peso sobe mesmo emagrecendo — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+
 <h2>Não se compare</h2>
 <p>A foto da avaliação é para comparar você com você. Cada um tem a própria genética, rotina e história, com altos e baixos, e a foto do antes e depois de outra pessoa não diz nada sobre o seu ritmo. O que importa é encontrar um jeito de treinar que você consiga seguir por anos, com aderência e progressão.</p>`,
   },
@@ -340,6 +350,11 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
 
 <h2>Como é comigo</h2>
 <p>Na <a href="/consultoria-online">consultoria online</a>, o plano é feito para a sua academia, com vídeo de execução de cada exercício, correção dos seus vídeos, ajustes e conversa direta comigo pelo WhatsApp. Você continua onde já treina; quem muda é o jeito de treinar.</p>
+
+<div class="yt-embed">
+<p class="yt-caption">Aparelho ocupado no horário de pico? Veja como achar o que fazer no lugar em 3 passos.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/Mck7dwGz0as?rel=0" title="O aparelho está ocupado? Descubra o que fazer no lugar em 3 passos — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
 
 <h2>Não se compare</h2>
 <p>A academia cheia é o lugar onde mais dá vontade de olhar a carga do outro. Cada um tem a própria genética, rotina e história, com altos e baixos. A sua régua é a sua ficha: a mesma execução, com um pouco mais de carga ou uma repetição a mais que na semana passada.</p>`,

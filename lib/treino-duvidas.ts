@@ -115,6 +115,11 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
 </ul>
 <p>Não precisa ser presencial todo dia. Na <a href="/consultoria-online">consultoria online</a> você continua treinando sozinho, no seu horário, e eu acompanho pelos seus vídeos e pela evolução das cargas, ajustando quando algo para. Para começar só pela execução, a <a href="/revisao-de-execucao">revisão gratuita de execução</a> é um bom teste.</p>
 
+<div class="yt-embed">
+<p class="yt-caption">Um dia você vai errar uma semana. O que separa quem evolui treinando sozinho de quem desiste.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="O que todo mundo que evoluiu no shape tem em comum — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+
 <h2>Não se compare</h2>
 <p>Sozinho na academia, é fácil medir o seu progresso pelo de quem está ao lado. Cada um tem a própria genética, rotina e história, com altos e baixos. A sua régua é a sua planilha: a carga de hoje contra a de um mês atrás.</p>`,
   },
@@ -203,6 +208,11 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
 <h2>E se a ficha não passar no checklist?</h2>
 <p>Ajuste o que dá: some séries onde falta, distribua o músculo em dois dias, coloque os exercícios grandes primeiro. Para ver como montar do zero, veja <a href="/blog/como-montar-treino-de-hipertrofia">como montar um treino de hipertrofia</a> e, se a dúvida for a divisão, <a href="/blog/treino-abc-ou-upper-lower">treino ABC ou upper/lower</a>.</p>
 <p>Se preferir que alguém faça isso com você, na <a href="/consultoria-online">consultoria online</a> eu monto o plano para a sua semana e para a sua academia, e mudo quando a carga trava.</p>
+
+<div class="yt-embed">
+<p class="yt-caption">Por que a ficha de outra pessoa, mesmo que funcione para ela, raramente encaixa na sua semana.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/yqPAYRVTe0E?rel=0" title="Pare de copiar o treino do influencer — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
 
 <h2>Não se compare</h2>
 <p>A ficha boa para o colega pode não ser boa para você. Cada um tem a própria genética, rotina e história, com altos e baixos. A melhor ficha é a que você consegue seguir por meses, com aderência e progressão.</p>`,
@@ -306,6 +316,11 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
 <p>O que você consegue cumprir. Se quatro dias é a sua realidade, comece pelo upper/lower. Se você vai seis dias e gosta de treino curto, ABCABC. Se são três, pense em full body. E qualquer divisão só funciona com carga subindo ao longo das semanas (<a href="/blog/progressao-de-carga">progressão de carga</a>).</p>
 <p>A Calculadora de Volume, no fim do artigo, conta as séries de cada músculo na sua divisão. Se quiser ajuda para escolher e ajustar, a <a href="/consultoria-online">consultoria online</a> monta a divisão para os seus dias reais.</p>
 
+<div class="yt-embed">
+<p class="yt-caption">Do diagnóstico à divisão que cabe na sua semana e ao volume por músculo: o caminho para montar o seu treino em 5 passos.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/BoXag2fY0u0?rel=0" title="Como montar seu treino de musculação em 5 passos — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+
 <h2>Não se compare</h2>
 <p>A divisão que o atleta usa seis dias por semana não é a sua se você treina três. Cada um tem a própria genética, rotina e história, com altos e baixos. A divisão certa é a que você consegue seguir por anos, com aderência e progressão.</p>`,
   },
@@ -390,6 +405,11 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
 
 <h2>Como funciona comigo</h2>
 <p>Na <a href="/consultoria-online">consultoria online</a>, o plano parte dos dias que você realmente tem. Se a semana aperta e você só consegue ir duas vezes, o treino muda para render nessas duas, em vez de você ficar "devendo" treino. O plano alimentar fica com o nutricionista; eu cuido do treino e da constância.</p>
+
+<div class="yt-embed">
+<p class="yt-caption">O número de treinos não responde quanto comer. Veja como calcular as suas calorias para emagrecer.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/KtmKJkZqkyw?rel=0" title="Quanto comer pra emagrecer? Calcule suas calorias — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
 
 <h2>Não se compare</h2>
 <p>Quem emagrece treinando seis vezes por semana tem outra rotina, outra genética e outra história, com altos e baixos que você não vê. O que importa é encontrar um ritmo que você consiga manter por anos, com aderência e progressão, e três treinos cumpridos valem mais que seis planejados.</p>`,
@@ -481,6 +501,11 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
 
 <h2>Como acompanho isso com os alunos</h2>
 <p>Na <a href="/consultoria-online">consultoria online</a> e no presencial, eu olho a mesma coisa: as cargas de cada semana, as medidas, as fotos e a frequência. Quando a carga para de subir, quando a semana sai do previsto ou quando você evolui mais rápido do que o plano previa, o treino muda. É esse olhar de fora que costuma faltar a quem treina sozinho.</p>
+
+<div class="yt-embed">
+<p class="yt-caption">Pump e músculo queimando enganam. Em menos de um minuto, o que realmente mostra que o treino está funcionando.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/xb1sP6z01-s?rel=0" title="Não sentiu o músculo? Pump não é sinônimo de hipertrofia — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
 
 <h2>Não se compare</h2>
 <p>O resultado do colega não é a régua do seu. Cada um tem a própria genética, rotina e história, com altos e baixos. A sua régua é você de um mês atrás: a carga, a medida e a foto daquela época.</p>`,
