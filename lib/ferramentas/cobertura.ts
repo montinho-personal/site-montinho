@@ -41,6 +41,11 @@ export const DATA_DA_REGRA = "2026-08-29";
  * artigo cabe numa ferramenta.
  */
 export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
+  // Dúvidas de formato de acompanhamento e de quem treina sozinho (15/11/2026).
+  "consultoria-online-ou-personal-presencial": "Escolha entre dois formatos de acompanhamento: o leitor sai sabendo qual combina com a rotina dele, sem conta na cabeça; valores vão por link para o artigo de quanto custa.",
+  "avaliacao-fisica-consultoria-online": "Explica como medir em casa (fotos, fita, peso médio); a única conta possível, cintura sobre altura, vai por link no texto para a calculadora de relação cintura-altura.",
+  "personal-online-smart-fit": "Como funciona a consultoria para quem treina em academia de rede: o leitor sai com o que avaliar, sem conta; o substituidor de exercícios vai por link no texto.",
+  "treinar-sozinho-na-academia-da-resultado": "O leitor sai com os sinais de que travou e o que conferir; as contas (séries por semana, progressão) estão nos artigos linkados no texto.",
   "doces-fit": "Receitas de doce fit: o leitor sai com a receita, não com uma conta; o Mata a Vontade (receita pela vontade do momento), o Beliscômetro e a Calculadora de Whey vão por link no texto.",
   // Guias de Hyrox de 23/10/2026 (lib/hyrox-guias.ts). Treino e estações vão
   // com a Calculadora de Tempo; Hyrox x CrossFit, com a de calorias.

@@ -432,4 +432,8 @@ export const ARTIGOS_COM_LINK_DEFICIT: string[] = [
   "feijao-engorda",
   "pao-de-queijo-engorda",
   "maca-engorda",
+  /* Musculação para emagrecer, quantas vezes por semana (15/11/2026): o
+     artigo diz que quem decide é o déficit do dia inteiro, e a conta que
+     sobra é quanto comer. */
+  "musculacao-para-emagrecer-quantas-vezes-por-semana",
 ];
