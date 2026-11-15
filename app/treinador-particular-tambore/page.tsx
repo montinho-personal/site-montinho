@@ -8,6 +8,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Treinador Particular Tamboré | Montinho Personal Trainer" },
@@ -212,6 +213,17 @@ export default function TreinadorParticularTambore() {
         <LinkFerramentaRotina slug="treinador-particular-tambore" tipo="personal" />
       </div>
 
+
+      <VitrineResultados
+        pagina="treinador-particular-tambore"
+        destaque="adriana-nascimento"
+        outros={["natalia-nascimento", "elisa-cruz", "bruna-rodrigues"]}
+        introducao={
+          <p>
+            Treinador particular é alguém que conhece o seu histórico e percebe quando algo muda: o desempenho caiu, a rotina apertou, um exercício incomodou. As histórias abaixo vieram desse tipo de acompanhamento.
+          </p>
+        }
+      />
 
       <PacoteFlexivel onde="treinador-particular-tambore" />
 

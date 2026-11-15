@@ -8,6 +8,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer a Domicílio Tamboré | Montinho Personal Trainer" },
@@ -279,6 +280,17 @@ export default function PersonalTrainerDomicilioTambore() {
         <LinkFerramentaRotina slug="personal-trainer-a-domicilio-tambore" tipo="personal" />
       </div>
 
+
+      <VitrineResultados
+        pagina="personal-trainer-a-domicilio-tambore"
+        destaque="adriana-nascimento"
+        outros={["natalia-nascimento", "elisa-cruz", "bruna-rodrigues"]}
+        introducao={
+          <p>
+            Treinar em casa funciona quando o treino é montado para o espaço e o equipamento que existem ali. As histórias abaixo não aconteceram todas em casa, mas seguem o mesmo princípio: um plano feito para a realidade de cada pessoa, ajustado ao longo dos meses.
+          </p>
+        }
+      />
 
       <PacoteFlexivel onde="personal-trainer-a-domicilio-tambore" />
 

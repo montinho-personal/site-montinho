@@ -8,6 +8,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer para Hipertrofia Tamboré | Montinho Personal Trainer" },
@@ -199,6 +200,17 @@ export default function PersonalTrainerHipertrofiaTambore() {
         <LinkFerramentaRotina slug="personal-trainer-para-hipertrofia-tambore" tipo="personal" />
       </div>
 
+
+      <VitrineResultados
+        pagina="personal-trainer-para-hipertrofia-tambore"
+        destaque="natalia-nascimento"
+        outros={["elisa-cruz", "bruna-rodrigues", "adriana-nascimento"]}
+        introducao={
+          <p>
+            Os resultados com foto que tenho hoje são de emagrecimento, não de ganho de massa. Mostro mesmo assim porque o princípio é o mesmo: carga que progride, técnica corrigida e alguém percebendo quando o treino parou de render.
+          </p>
+        }
+      />
 
       <PacoteFlexivel onde="personal-trainer-para-hipertrofia-tambore" />
 

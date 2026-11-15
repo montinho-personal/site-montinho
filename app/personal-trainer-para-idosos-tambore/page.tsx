@@ -8,6 +8,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer para Idosos Tamboré | Montinho Personal Trainer" },
@@ -186,6 +187,17 @@ export default function PersonalTrainerIdososTambore() {
         <LinkFerramentaRotina slug="personal-trainer-para-idosos-tambore" tipo="personal" />
       </div>
 
+
+      <VitrineResultados
+        pagina="personal-trainer-para-idosos-tambore"
+        destaque="adriana-nascimento"
+        outros={["natalia-nascimento", "elisa-cruz", "bruna-rodrigues"]}
+        introducao={
+          <p>
+            As histórias abaixo são de adultos entre 34 e 43 anos que buscavam emagrecer, não de alunos acima dos 60. Mostro porque o que fez diferença para elas também vale depois dos 60: um plano que respeita o ponto de partida, progressão sem pressa e acompanhamento próximo.
+          </p>
+        }
+      />
 
       <PacoteFlexivel onde="personal-trainer-para-idosos-tambore" />
 

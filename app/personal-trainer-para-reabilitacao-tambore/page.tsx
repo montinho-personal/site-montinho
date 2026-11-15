@@ -8,6 +8,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer para Reabilitação Tamboré | Montinho Personal Trainer" },
@@ -203,6 +204,17 @@ export default function PersonalTrainerReabilitacaoTambore() {
         <LinkFerramentaRotina slug="personal-trainer-para-reabilitacao-tambore" tipo="personal" />
       </div>
 
+
+      <VitrineResultados
+        pagina="personal-trainer-para-reabilitacao-tambore"
+        destaque="natalia-nascimento"
+        outros={["elisa-cruz", "bruna-rodrigues", "adriana-nascimento"]}
+        introducao={
+          <p>
+            Os resultados abaixo são de emagrecimento, não de reabilitação de lesão. Mostro porque eles têm em comum o que importa também na volta depois de uma lesão: um treino que respeita os limites do momento e alguém observando a resposta antes de avançar.
+          </p>
+        }
+      />
 
       <PacoteFlexivel onde="personal-trainer-para-reabilitacao-tambore" />
 

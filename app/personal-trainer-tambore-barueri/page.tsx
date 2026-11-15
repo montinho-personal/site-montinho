@@ -8,6 +8,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer Tamboré e Barueri | Montinho Personal Trainer" },
@@ -205,6 +206,17 @@ export default function PersonalTrainerTamboreBarueri() {
         <LinkFerramentaRotina slug="personal-trainer-tambore-barueri" tipo="personal" />
       </div>
 
+
+      <VitrineResultados
+        pagina="personal-trainer-tambore-barueri"
+        destaque="bruna-rodrigues"
+        outros={["natalia-nascimento", "elisa-cruz", "adriana-nascimento"]}
+        introducao={
+          <p>
+            Entre Tamboré e Barueri, a rotina costuma ser corrida e o treino é a primeira coisa a sair da agenda. As histórias abaixo mostram o que acontece quando o plano é feito para caber nessa rotina e alguém acompanha de perto.
+          </p>
+        }
+      />
 
       <PacoteFlexivel onde="personal-trainer-tambore-barueri" />
 

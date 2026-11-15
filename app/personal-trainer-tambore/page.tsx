@@ -11,6 +11,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer no Tamboré (Barueri): Planos e Atendimento | Montinho" },
@@ -570,6 +571,17 @@ export default function PersonalTrainerTambore() {
           </div>
         </div>
       </section>
+
+      <VitrineResultados
+        pagina="personal-trainer-tambore"
+        destaque="natalia-nascimento"
+        outros={["elisa-cruz", "bruna-rodrigues", "adriana-nascimento"]}
+        introducao={
+          <p>
+            Antes de ler o que os alunos costumam dizer, veja o que o acompanhamento produziu na prática. Cada uma dessas pessoas começou de um ponto diferente, com uma rotina diferente. O que elas têm em comum é ter mantido o treino por meses, com alguém percebendo quando era hora de mudar alguma coisa.
+          </p>
+        }
+      />
 
       {/* DEPOIMENTO CONTEXTUALIZADO */}
       <section className="py-16 border-t border-white/10 bg-black">

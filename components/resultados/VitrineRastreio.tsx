@@ -49,7 +49,8 @@ export default function VitrineRastreio({
       aria-labelledby={ariaLabelledby}
       onClick={(e) => {
         const alvo = (e.target as HTMLElement).closest<HTMLElement>("[data-vitrine-acao]");
-        if (!alvo) return;
+        // Só conta clique em link de verdade (o CTA pode vir embrulhado num div).
+        if (!alvo || !(e.target as HTMLElement).closest("a")) return;
         const acao = alvo.dataset.vitrineAcao;
         if (acao === "resultados") trackEvent("vitrine_resultados_click", { pagina });
         if (acao === "cta") trackEvent("vitrine_cta_click", { pagina });

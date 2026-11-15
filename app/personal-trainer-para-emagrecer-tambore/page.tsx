@@ -8,6 +8,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer para Emagrecer Tamboré | Montinho Personal Trainer" },
@@ -210,6 +211,17 @@ export default function PersonalTrainerEmagrecerTambore() {
         <LinkFerramentaRotina slug="personal-trainer-para-emagrecer-tambore" tipo="personal" />
       </div>
 
+
+      <VitrineResultados
+        pagina="personal-trainer-para-emagrecer-tambore"
+        destaque="bruna-rodrigues"
+        outros={["elisa-cruz", "adriana-nascimento", "natalia-nascimento"]}
+        introducao={
+          <p>
+            Emagrecer de forma que se mantém depende menos de um treino extremo e mais de um plano que você consegue seguir por meses. Essas alunas perderam peso treinando de forma consistente, com ajustes sempre que o corpo e a rotina pediram.
+          </p>
+        }
+      />
 
       <PacoteFlexivel onde="personal-trainer-para-emagrecer-tambore" />
 

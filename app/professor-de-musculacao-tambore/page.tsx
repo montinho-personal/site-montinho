@@ -8,6 +8,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Professor de Musculação Tamboré | Montinho Personal Trainer" },
@@ -188,6 +189,17 @@ export default function ProfessorMusculacaoTambore() {
         <LinkFerramentaRotina slug="professor-de-musculacao-tambore" tipo="personal" />
       </div>
 
+
+      <VitrineResultados
+        pagina="professor-de-musculacao-tambore"
+        destaque="elisa-cruz"
+        outros={["bruna-rodrigues", "natalia-nascimento", "adriana-nascimento"]}
+        introducao={
+          <p>
+            Musculação bem feita não é repetir a mesma ficha por meses. É ajustar exercício, carga e volume conforme a resposta. Foi esse trabalho, semana após semana, que levou às transformações abaixo.
+          </p>
+        }
+      />
 
       <PacoteFlexivel onde="professor-de-musculacao-tambore" />
 

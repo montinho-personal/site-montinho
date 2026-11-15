@@ -7,6 +7,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer Online Tamboré | Montinho Personal Trainer" },
@@ -186,6 +187,17 @@ export default function PersonalTrainerOnlineTambore() {
         <LinkFerramentaRotina slug="personal-trainer-online-tambore" tipo="personal" />
       </div>
 
+
+      <VitrineResultados
+        pagina="personal-trainer-online-tambore"
+        destaque="elisa-cruz"
+        outros={["adriana-nascimento", "bruna-rodrigues", "natalia-nascimento"]}
+        introducao={
+          <p>
+            Elisa, Adriana e Bruna treinaram no modelo híbrido, que combina sessões presenciais com acompanhamento online. O resultado delas mostra que o acompanhamento não depende de estar ao lado o tempo todo: depende de alguém olhando o treino e ajustando o que precisa.
+          </p>
+        }
+      />
 
       <PacoteFlexivel onde="personal-trainer-online-tambore" />
 
