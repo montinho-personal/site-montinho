@@ -11,6 +11,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer em Alphaville: Planos e Atendimento | Montinho" },
@@ -557,6 +558,20 @@ export default function PersonalTrainerAlphaville() {
           </div>
         </div>
       </section>
+
+      {/* RESULTADOS REAIS — vitrine (dados de /resultados, lib/resultados.ts) */}
+      <VitrineResultados
+        pagina="personal-trainer-alphaville"
+        destaque="natalia-nascimento"
+        outros={["elisa-cruz", "bruna-rodrigues", "adriana-nascimento"]}
+        introducao={
+          <p>
+            Nenhuma dessas histórias seguiu uma ficha pronta. O treino de cada um foi montado para o ponto de partida dele e
+            ajustado ao longo do caminho: quando a rotina mudou, quando a carga parou de subir, quando um exercício não encaixou.
+            O que elas têm em comum é a consistência, semana após semana, com alguém olhando de perto.
+          </p>
+        }
+      />
 
       {/* DORES E LIMITAÇÕES */}
       <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>

@@ -7,6 +7,11 @@ export type AnalyticsEvent =
   | "click_whatsapp"
   /** Clique em cartão de afiliado da Amazon (produto e artigo, nada de saúde). */
   | "click_afiliado"
+  /** Vitrine de transformações (components/resultados): página e slug do aluno, nada pessoal. */
+  | "vitrine_view"
+  | "vitrine_comparador"
+  | "vitrine_resultados_click"
+  | "vitrine_cta_click"
   /** Oferta relâmpago (lib/promo/relampago.ts): id da promo e página, nada pessoal. */
   | "promo_relampago_view"
   | "promo_relampago_click"
