@@ -126,6 +126,7 @@ import { ROSCA_SCOTT_ABACATE_POSTS } from "./rosca-scott-abacate";
 import { ARROZ_AVEIA_GRANOLA_POSTS } from "./arroz-aveia-granola";
 import { PIPOCA_MANGA_MELANCIA_POSTS } from "./pipoca-manga-melancia";
 import { FEIJAO_PAODEQUEIJO_MACA_POSTS } from "./feijao-paodequeijo-maca";
+import { ROSCA_CAVALINHO_ARNOLD_POSTS } from "./rosca-cavalinho-arnold";
 import { DOR_NO_TREINO_POSTS } from "./dor-no-treino";
 import { CONDOMINIOS_ALDEIA_POSTS } from "./condominios-aldeia-da-serra";
 import { DOCES_FIT_POSTS } from "./doces-fit";
@@ -167,6 +168,7 @@ export const blogPosts = ([
   ...ARROZ_AVEIA_GRANOLA_POSTS,
   ...PIPOCA_MANGA_MELANCIA_POSTS,
   ...FEIJAO_PAODEQUEIJO_MACA_POSTS,
+  ...ROSCA_CAVALINHO_ARNOLD_POSTS,
   ...DOR_NO_TREINO_POSTS,
   ...CONDOMINIOS_ALDEIA_POSTS,
   ...DOCES_FIT_POSTS,
