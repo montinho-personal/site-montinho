@@ -200,6 +200,18 @@ descrição daqui em diante (continua valendo o ATUAL / PROPOSTA / MOTIVO).
   posição da página) no dia da troca e comparar em 28 dias. Se o clique
   não subir, voltar.
 
+## O Montinho não passa dieta
+
+Regra pedida pelo Montinho em 15/11/2026. Nenhum texto do site pode dizer
+ou sugerir que ele passa dieta, plano alimentar, cardápio, estratégia
+nutricional, orientação de macros ou "plano de treino e alimentação". O
+serviço é treino; a alimentação é com o nutricionista, e o treino caminha
+junto com o plano dele. Pode falar de rotina, sono e constância, e os
+artigos podem continuar explicando nutrição em termos gerais (déficit,
+proteína, calculadoras), desde que não apresentem isso como algo que ele
+prescreve. Ao escrever CTA de consultoria, use "treino", não "treino e
+dieta".
+
 ## Locais de atendimento: guia de academia ≠ local confirmado
 
 Atendimento presencial confirmado: **Arena 18**, condomínios e em casa.

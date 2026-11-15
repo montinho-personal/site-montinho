@@ -4818,7 +4818,7 @@ export const blogPosts = ([
       {
         question: "O que está incluído numa consultoria de personal trainer online?",
         answer:
-          "No meu modelo de consultoria online: anamnese inicial detalhada, programa de treino individualizado, orientações nutricionais básicas (distribuição de macros e proteína por objetivo), revisões periódicas do programa com base no desempenho registrado, e canal de comunicação direto para dúvidas e ajustes.",
+          "No meu modelo de consultoria online: anamnese inicial detalhada, programa de treino individualizado, revisões periódicas do programa com base no desempenho registrado, e canal de comunicação direto para dúvidas e ajustes.",
       },
       {
         question: "Personal trainer online é mais barato que o presencial?",
@@ -4913,11 +4913,9 @@ export const blogPosts = ([
 
 <p>Cada sessão tem exercícios, séries, repetições, intervalos de descanso e notas de execução. O programa já contempla progressão dentro do mesociclo — você sabe exatamente o que fazer em cada semana.</p>
 
-<h3>3. Orientações nutricionais</h3>
+<h3>3. Alimentação: com o nutricionista</h3>
 
-<p>Não sou nutricionista e não faço prescrição de cardápio. Mas faço orientação de macros e proteína por objetivo — que é o que realmente move o resultado na maioria dos casos.</p>
-
-<p>Se o aluno precisa de 2 g/kg de proteína por dia mas está consumindo 0,8 g/kg, a correção disso resolve mais do que qualquer suplemento. Esse tipo de ajuste está dentro do que ofereço.</p>
+<p>Não passo dieta nem plano alimentar: isso é trabalho de nutricionista. Se você já tem acompanhamento nutricional, o treino é montado para caminhar junto com ele. No dia a dia, a gente conversa sobre rotina, sono e constância, que fazem diferença no resultado.</p>
 
 <h3>4. Revisões periódicas</h3>
 
@@ -4992,7 +4990,7 @@ export const blogPosts = ([
 
 <p>Os resultados da consultoria online são comparáveis ao presencial para a maioria das pessoas — desde que o acompanhamento seja real e os registros de treino sejam feitos com consistência.</p>
 
-<p>O que os alunos da consultoria reportam nas primeiras 8 a 12 semanas: melhor organização do treino, progressão de carga consistente onde antes havia estagnação, ajuste da alimentação proteica e melhora visível na composição corporal.</p>
+<p>O que os alunos da consultoria reportam nas primeiras 8 a 12 semanas: melhor organização do treino, progressão de carga consistente onde antes havia estagnação, mais constância nas semanas difíceis e melhora visível na composição corporal.</p>
 
 <p>Para entender quanto tempo leva para esses resultados aparecerem, o artigo sobre <a href="/blog/quanto-tempo-para-aparecer-resultado-na-academia">quanto tempo leva para aparecer resultado na academia</a> tem as expectativas realistas por nível.</p>
 
@@ -7060,7 +7058,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Os dois elementos inegociáveis em qualquer cenário: proteína alta (2.2 a 3.1 g/kg) e treino de força mantido.</p>
 
-<p>Se você quer estruturar uma fase de cutting ou recomposição com protocolo individualizado — incluindo cálculo de macros e programação de treino — esse é o trabalho que fazemos na <a href="/consultoria">consultoria personalizada</a>.</p>
+<p>Se você quer estruturar uma fase de cutting ou recomposição com um treino individualizado e acompanhado de perto — com a alimentação ajustada pelo seu nutricionista — esse é o trabalho que fazemos na <a href="/consultoria">consultoria personalizada</a>.</p>
 
 <p><strong>Leia também:</strong></p>
 <ul>
@@ -12918,7 +12916,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Este artigo é sobre exatamente isso: os 4 pilares que transformam a Retatrutida de "ferramenta de perda de peso" em "ferramenta de transformação de composição corporal".</p>
 
 <blockquote>
-  <p>Importante: o que eu, como personal trainer, posso te ajudar é com treino e nutrição. Tudo relacionado ao medicamento — dosagem, ajustes, efeitos colaterais — é conversa com o seu médico. Esses dois papéis são complementares, não substituíveis.</p>
+  <p>Importante: o que eu, como personal trainer, posso te ajudar é com o treino; a alimentação é com o nutricionista. Tudo relacionado ao medicamento — dosagem, ajustes, efeitos colaterais — é conversa com o seu médico. Esses dois papéis são complementares, não substituíveis.</p>
 </blockquote>
 
 <h2>Por que a composição corporal importa mais do que o número na balança</h2>
@@ -13205,7 +13203,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Quer ajuda para manter o resultado?</h2>
 
-<p>Se você está emagrecendo — com ou sem medicamento — e quer estruturar o processo de forma que o resultado se mantenha a longo prazo, posso te ajudar com treino e nutrição personalizada. Acesse a página de <a href="/consultoria">consultoria online</a>.</p>
+<p>Se você está emagrecendo — com ou sem medicamento — e quer estruturar o processo de forma que o resultado se mantenha a longo prazo, posso te ajudar com o treino personalizado, junto com o seu nutricionista. Acesse a página de <a href="/consultoria">consultoria online</a>.</p>
 
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
@@ -13701,7 +13699,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Quer ajuda para estruturar seu treino e alimentação com Retatrutida?</h2>
 
-<p>Montar uma estratégia de treino e nutrição que respeite a supressão de apetite da Retatrutida e ainda preserve o máximo de massa muscular possível é o que ofereço na minha <a href="/consultoria">consultoria online</a>. O programa é adaptado ao seu contexto — incluindo o uso de medicamentos.</p>
+<p>Montar um treino que respeite a supressão de apetite da Retatrutida e ainda preserve o máximo de massa muscular possível é o que ofereço na minha <a href="/consultoria">consultoria online</a>. O programa é adaptado ao seu contexto — incluindo o uso de medicamentos.</p>
 
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
@@ -16739,7 +16737,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>A água é um nutriente indispensável para a hipertrofia. Uma desidratação de apenas 2% já compromete a força em até 10%, o que significa menos cargas, menos repetições e menos estímulo para o crescimento muscular. Beba 30 a 35 ml de água por kg de peso ao dia, distribua ao longo do dia, hidrate-se antes, durante e após o treino, e não espere a sede como sinal.</p>
 
-<p>Quer montar uma estratégia nutricional e de treino personalizada? <a href="/consultoria">Entre em contato</a> para uma consultoria.</p>
+<p>Quer montar um treino personalizado? <a href="/consultoria">Entre em contato</a> para uma consultoria.</p>
 
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
@@ -16856,7 +16854,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Para emagrecimento, o total calórico do dia tem peso muito maior do que o timing do carboidrato. Treinar em jejum ou com um lanche leve são opções igualmente válidas.</p>
 
-<p>Quer montar uma estratégia nutricional e de treino personalizada? <a href="/consultoria">Entre em contato</a> para uma consultoria.</p>
+<p>Quer montar um treino personalizado? <a href="/consultoria">Entre em contato</a> para uma consultoria.</p>
 
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
@@ -17001,7 +16999,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>O foco deve estar no que realmente move o ponteiro: déficit calórico moderado, proteína adequada, treino de força e consistência.</p>
 
-<p>Quer montar uma estratégia nutricional e de treino personalizada? <a href="/consultoria">Entre em contato</a> para uma consultoria.</p>
+<p>Quer montar um treino personalizado? <a href="/consultoria">Entre em contato</a> para uma consultoria.</p>
 
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
@@ -17353,7 +17351,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       {
         question: "Personal trainer no Alphaville Residencial 2 trabalha com emagrecimento?",
         answer:
-          "Sim. Emagrecimento é um dos objetivos mais frequentes entre os alunos da região. O protocolo para emagrecimento inclui treino de força para preservar massa muscular, orientação alimentar prática e progressão planejada para resultado duradouro — sem efeito sanfona.",
+          "Sim. Emagrecimento é um dos objetivos mais frequentes entre os alunos da região. O protocolo para emagrecimento inclui treino de força para preservar massa muscular, progressão planejada e conversa sobre rotina e constância (a alimentação fica com o nutricionista) para resultado duradouro — sem efeito sanfona.",
       },
       {
         question: "É necessário avaliação antes de começar com personal trainer no Residencial 2?",
@@ -21518,7 +21516,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Estratégia prática</h2>
 <p>Se você treina em jejum e prioriza hipertrofia, considere: uma dose de proteína (20–30g) logo após o treino quebra o jejum de forma estratégica, maximiza a síntese proteica pós-exercício e não compromete os benefícios metabólicos buscados. O restante da janela alimentar cobre o volume calórico e proteico do dia.</p>
 
-<p>Para montar uma estratégia de treino e nutrição adequada ao seu perfil, acesse a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">quanta proteína consumir por dia para ganhar massa muscular</a>.</p>
+<p>Para montar um treino adequado ao seu perfil, acesse a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular">quanta proteína consumir por dia para ganhar massa muscular</a>.</p>
 
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
@@ -22038,7 +22036,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>E se treinar de madrugada ou tarde da noite?</h2>
 <p>Coma normalmente. O medo de "comer tarde" e engordar é um mito. O corpo continua sintetizando músculo e usando nutrientes durante o sono — este é um dos períodos mais anabólicos do dia, desde que você se alimente adequadamente antes de dormir.</p>
 
-<p>Para um plano alimentar integrado ao treino personalizado para o seu objetivo, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/whey-protein-como-tomar">whey protein</a> — a opção prática para pós-treino.</p>
+<p>Para um treino personalizado para o seu objetivo, que caminhe junto com o plano do seu nutricionista, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/whey-protein-como-tomar">whey protein</a> — a opção prática para pós-treino.</p>
 
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
@@ -22133,7 +22131,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Como combinar JI com treino</h2>
 <p>Se treinar na janela de jejum, considere tomar uma pequena dose de proteína (20g de whey ou alguns BCAAs) antes do treino para reduzir o catabolismo sem quebrar os efeitos metabólicos do jejum. Se treinar na janela alimentar, não há restrição — coma normalmente ao redor do treino.</p>
 
-<p>Para um protocolo personalizado que combine estratégia alimentar e treino para o seu objetivo, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a> — a base de qualquer estratégia de emagrecimento.</p>
+<p>Para um treino personalizado para o seu objetivo, que caminhe junto com a orientação do seu nutricionista, consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a> — a base de qualquer estratégia de emagrecimento.</p>
 
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
@@ -25336,7 +25334,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li>Check-in com médico e profissional de treino a cada 6–8 semanas</li>
 </ul>
 
-<p>O GLP-1 é uma ferramenta poderosa — mas ferramentas exigem operadores. Para um acompanhamento que integre o tratamento medicamentoso com o programa de treino e a estratégia nutricional, consulte a <a href="/consultoria">página de consultoria</a>. Veja também os artigos específicos sobre <a href="/blog/ozempic-e-treino">Ozempic e treino</a>, <a href="/blog/wegovy-e-musculacao">Wegovy e musculação</a>, e a série completa sobre <a href="/blog/como-potencializar-resultados-retatrutida">Retatrutida</a>.</p>
+<p>O GLP-1 é uma ferramenta poderosa — mas ferramentas exigem operadores. Para um programa de treino que acompanhe o tratamento medicamentoso, junto com o seu médico e o seu nutricionista, consulte a <a href="/consultoria">página de consultoria</a>. Veja também os artigos específicos sobre <a href="/blog/ozempic-e-treino">Ozempic e treino</a>, <a href="/blog/wegovy-e-musculacao">Wegovy e musculação</a>, e a série completa sobre <a href="/blog/como-potencializar-resultados-retatrutida">Retatrutida</a>.</p>
 
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/25355851/" target="_blank" rel="noopener noreferrer">Revisão — saúde e exercício (PubMed)</a>.</p>
 
@@ -28303,7 +28301,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Entender isso não é desculpa para não ter resultados — é o fundamento para ter resultados reais e sustentáveis. Com treino de força periodizado, proteína adequada, déficit calórico moderado e compreensão do ciclo menstrual, o emagrecimento feminino acontece. Pode ser num ritmo diferente do masculino, mas acontece.</p>
 
-<p>Se você quer montar um protocolo de treino e nutrição que respeite a fisiologia feminina e seja compatível com a sua rotina de executiva em Alphaville, <a href="/consultoria">entre em contato para uma consultoria personalizada</a>. Trabalho há mais de 20 anos com mulheres executivas que superaram exatamente essa frustração — e que hoje têm resultados que seus parceiros invejam.</p>
+<p>Se você quer montar um treino que respeite a fisiologia feminina e seja compatível com a sua rotina de executiva em Alphaville, <a href="/consultoria">entre em contato para uma consultoria personalizada</a>. Trabalho há mais de 20 anos com mulheres executivas que superaram exatamente essa frustração — e que hoje têm resultados que seus parceiros invejam.</p>
 
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
@@ -58199,7 +58197,7 @@ Verdade: para ganho de massa máximo, dietas com carboidratos adequados ainda s�
 
 ## Conclusão
 
-Ganhar músculo com low carb é possível — mas exige mais atenção à proteína, timing de carboidratos em torno do treino e suplementação de creatina. Para a maioria das pessoas que treina musculação sem objetivo de competição, uma abordagem moderada (100-200g de carboidratos/dia, concentrados ao redor do treino) é superior ao low carb estrito. Se você quer montar uma estratégia nutricional personalizada para o seu treino em Alphaville ou online, [fale com o Montinho pelo WhatsApp](https://wa.me/5511981063409).
+Ganhar músculo com low carb é possível — mas exige mais atenção à proteína, timing de carboidratos em torno do treino e suplementação de creatina. Para a maioria das pessoas que treina musculação sem objetivo de competição, uma abordagem moderada (100-200g de carboidratos/dia, concentrados ao redor do treino) é superior ao low carb estrito. Se você quer um treino personalizado em Alphaville ou online, que converse com a orientação do seu nutricionista, [fale com o Montinho pelo WhatsApp](https://wa.me/5511981063409).
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -59655,7 +59653,7 @@ Dieta paleo e musculação podem coexistir, mas a adaptação é necessária. Se
 
 Para resultado máximo de hipertrofia, uma dieta convencional flexível com alta proteína tende a ser mais prática.
 
-Atendo em Alphaville e online. [Entre em contato](https://wa.me/5511981063409) para personalizar seu plano nutricional.
+Atendo em Alphaville e online. [Entre em contato](https://wa.me/5511981063409) para personalizar o seu treino; o plano alimentar fica com o nutricionista.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -66497,7 +66495,7 @@ Entenda melhor a modalidade no artigo [como funciona o personal trainer online](
 O objetivo mais comum. O trabalho combina treino de força (principal motor da mudança de composição corporal) com estratégia nutricional adequada. Nada de dieta radical ou cardio excessivo — método sustentável que gera resultado e permanece a longo prazo.
 
 ### Hipertrofia e ganho de massa
-Para quem quer aumentar a massa muscular, a programação inclui periodização adequada, progressão sistemática de carga e volume, e orientações nutricionais para suportar o crescimento muscular.
+Para quem quer aumentar a massa muscular, a programação inclui periodização adequada, progressão sistemática de carga e volume, e a alimentação, com o nutricionista, para suportar o crescimento muscular.
 
 ### Saúde e qualidade de vida
 Muitos alunos não buscam transformação estética radical — querem controlar o peso, melhorar os exames, ter mais energia no dia a dia, dormir melhor e envelhecer com qualidade. O treino para saúde geral tem a mesma seriedade e personalização dos demais objetivos.
@@ -68269,7 +68267,7 @@ A vitamina C é essencial — não há dúvida. Mas o conceito de "quanto mais, 
 
 Reservar doses pontuais de vitamina C para o protocolo de colágeno (48 mg, 1h antes do treino) ou para períodos de alta carga com risco imunológico (500 mg/dia distante do treino) é a abordagem mais inteligente baseada nas evidências atuais.
 
-**Quer um plano nutricional que otimize sua recuperação e performance sem sabotagem às adaptações? Converse com o Montinho Personal Trainer.**
+**Quer um treino que otimize sua recuperação e performance sem sabotar as adaptações? Converse com o Montinho Personal Trainer.**
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
@@ -71875,7 +71873,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <p>Manter a dieta no Carnaval não é sobre resistir à festa — é sobre atravessá-la com inteligência. Escolhas melhores, não escolhas perfeitas. Quem domina isso curte a folia inteira e chega à quarta-feira com o processo intacto.</p>
 
 <h2>One More Thing</h2>
-<p>E se você nunca mais precisasse improvisar em feriado nenhum? É exatamente isso que a consultoria online do Montinho constrói: um plano alimentar e de treino desenhado para a sua vida real — com Carnaval, festas e tudo o que ela tem de bom — ajustado por quem acompanha seus resultados de perto. Entre em contato e agende sua <a href="/consultoria">consultoria personalizada</a>.</p>
+<p>E se você nunca mais precisasse improvisar em feriado nenhum? É exatamente isso que a consultoria online do Montinho constrói: um plano de treino desenhado para a sua vida real — com Carnaval, festas e tudo o que ela tem de bom — ajustado por quem acompanha seus resultados de perto. Entre em contato e agende sua <a href="/consultoria">consultoria personalizada</a>.</p>
 
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mHZKGBlPHg4?rel=0" title="Como montar uma dieta — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -73344,7 +73342,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <p>Se os quatro apontam na direção certa, você não está engordando. Está construindo.</p>
 
 <h2>One More Thing</h2>
-<p>Tudo o que você leu aqui funciona — mas funciona em dose, timing e progressão que mudam de corpo para corpo. É por isso que existe a consultoria online do Montinho: a ciência inteira deste artigo transformada em um protocolo com o seu nome, ajustado a cada semana conforme seus números respondem. <a href="/consultoria">Fale com o Montinho e receba um plano de treino e alimentação feito para o seu perfil.</a> Atendimento presencial em Alphaville e online para todo o Brasil.</p>
+<p>Tudo o que você leu aqui funciona — mas funciona em dose, timing e progressão que mudam de corpo para corpo. É por isso que existe a consultoria online do Montinho: a ciência inteira deste artigo transformada em um protocolo com o seu nome, ajustado a cada semana conforme seus números respondem. <a href="/consultoria">Fale com o Montinho e receba um plano de treino feito para o seu perfil.</a> Atendimento presencial em Alphaville e online para todo o Brasil.</p>
 
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/DpBnBbwGgUU?rel=0" title="Dieta e treino para recomposição corporal — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -73558,7 +73556,7 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 
 
 <h2>One More Thing</h2>
-<p>Você agora tem a conta, o calendário e os cenários. Falta a peça que transforma matemática em corpo: execução guiada. É aí que entra a consultoria do Montinho — toda a ciência deste artigo traduzida em treino estruturado, orientação alimentar e acompanhamento contínuo, sob medida para o seu ponto de partida. Presencial em Alphaville e região, ou online. Você tem 5 meses. Dá para chegar em dezembro irreconhecível — no melhor sentido.</p>
+<p>Você agora tem a conta, o calendário e os cenários. Falta a peça que transforma matemática em corpo: execução guiada. É aí que entra a consultoria do Montinho — toda a ciência deste artigo traduzida em treino estruturado e acompanhamento contínuo, sob medida para o seu ponto de partida. Presencial em Alphaville e região, ou online. Você tem 5 meses. Dá para chegar em dezembro irreconhecível — no melhor sentido.</p>
 <p><a href="/consultoria"><strong>Clique aqui para agendar sua consultoria e começar seu projeto verão hoje mesmo.</strong></a></p>
 
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -75628,7 +75626,7 @@ Sexta: treino e rotina de volta. Um dia de retomada resolve tudo.</p>
 <p>Saúde de verdade inclui prazer à mesa. A ceia com a família é um desses momentos raros — e o objetivo nunca foi comer contando gramas com ansiedade. É comer com presença, gratidão e consciência. <strong>A ceia perfeita não é a mais leve. É a que você aproveita de verdade.</strong></p>
 
 <h2>E uma última coisa.</h2>
-<p>Tudo o que você leu — preparar o dia, ler a mesa, dominar o dia seguinte — é o que uma boa estratégia nutricional faz o ano inteiro, em cada festa, viagem e segunda-feira. É exatamente isso que entrego na consultoria: um plano individualizado que cabe na sua vida real, festas incluídas, com a ciência mastigada e o acompanhamento na palma da mão. Atendo em Alphaville e região, e também no formato online. <a href="/consultoria">Fale comigo</a> — e faça de dezembro o mês em que você celebrou sem recomeçar do zero.</p>
+<p>Tudo o que você leu — preparar o dia, ler a mesa, dominar o dia seguinte — é o que um bom planejamento faz o ano inteiro, em cada festa, viagem e segunda-feira. No treino, é isso que entrego na consultoria: um plano individualizado que cabe na sua vida real, festas incluídas, com a ciência mastigada e o acompanhamento na palma da mão. Atendo em Alphaville e região, e também no formato online. <a href="/consultoria">Fale comigo</a> — e faça de dezembro o mês em que você celebrou sem recomeçar do zero.</p>
 
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mHZKGBlPHg4?rel=0" title="Como montar uma dieta — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -77666,7 +77664,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Quanto chocolate posso comer na Páscoa?", answer: "Não existe um número exato, mas preferir chocolates amargos e comer devagar ajuda a se satisfazer com menor quantidade." },
       { question: "Qual chocolate é menos calórico?", answer: "Chocolates com 70% ou mais de cacau têm menos açúcar e gorduras ruins, sendo a opção mais saudável." },
       { question: "O que fazer se exagerei no chocolate?", answer: "Retome a alimentação normal na próxima refeição, hidrate-se bem e mantenha o treino. Um dia não desfaz semanas de trabalho." },
-      { question: "Como o personal trainer Montinho pode ajudar?", answer: "Com consultoria personalizada, Montinho cria estratégias de alimentação e treino adaptadas ao seu estilo de vida, incluindo as épocas festivas." },
+      { question: "Como o personal trainer Montinho pode ajudar?", answer: "Com consultoria personalizada, Montinho cria um treino adaptado ao seu estilo de vida, incluindo as épocas festivas; a alimentação fica com o nutricionista." },
     ],
     content: `
 <h2>O Vilão da Páscoa Não é o Chocolate</h2>
@@ -77720,7 +77718,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>O protocolo de recuperação é simples: próxima refeição normal, mais água, treino leve no dia seguinte. Seu corpo é resiliente — especialmente quando existe uma rotina sólida por trás.</p>
 
 <h2>One More Thing: E se a Páscoa Fosse Só o Começo?</h2>
-<p>Tudo o que você leu funciona. Mas imagine não precisar montar esse quebra-cabeça sozinho — nem na Páscoa, nem no Natal, nem em julho na praia. Na consultoria personalizada do Montinho, a ciência inteira deste artigo chega até você mastigada: treino, estratégia alimentar e acompanhamento desenhados para a sua vida, incluindo cada data festiva do calendário.</p>
+<p>Tudo o que você leu funciona. Mas imagine não precisar montar esse quebra-cabeça sozinho — nem na Páscoa, nem no Natal, nem em julho na praia. Na consultoria personalizada do Montinho, a ciência inteira deste artigo chega até você mastigada: treino e acompanhamento desenhados para a sua vida, incluindo cada data festiva do calendário.</p>
 <p><a href="/consultoria"><strong>Clique aqui para conhecer a consultoria personalizada do Montinho e dar o próximo passo na sua saúde.</strong></a></p>
 
 
@@ -77738,7 +77736,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "É possível não engordar na Páscoa?", answer: "Sim, com estratégias simples de alimentação consciente e manutenção do exercício físico, é possível passar a Páscoa sem ganho significativo de peso." },
       { question: "Qual chocolate é menos calórico?", answer: "Chocolates com 70% ou mais de cacau têm menos açúcar e gorduras ruins, sendo a opção mais saudável." },
       { question: "O que fazer se exagerei no chocolate?", answer: "Retome a alimentação normal na próxima refeição, hidrate-se bem e mantenha o treino. Um dia não desfaz semanas de trabalho." },
-      { question: "Como o personal trainer Montinho pode ajudar?", answer: "Com consultoria personalizada, Montinho cria estratégias de alimentação e treino adaptadas ao seu estilo de vida, incluindo as épocas festivas." },
+      { question: "Como o personal trainer Montinho pode ajudar?", answer: "Com consultoria personalizada, Montinho cria um treino adaptado ao seu estilo de vida, incluindo as épocas festivas; a alimentação fica com o nutricionista." },
     ],
   },
   {
@@ -89561,7 +89559,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Quer esse circuito desenhado para o seu nível, com progressão semanal? <a href="/consultoria">Conheça a consultoria online</a>.</p>
 <h2>One more thing: a corda acelera, o método multiplica</h2>
 <p>Verdade que poupa meses de frustração: <strong>cardio sozinho emagrece devagar</strong> — e a corda, por mais eficiente por minuto, não escapa dessa regra. O corpo se adapta, o gasto isolado é pequeno perto de uma alimentação desregulada, e sem musculação você perde músculo junto.</p>
-<p>O multiplicador é o método completo: <strong>musculação + déficit calórico + acompanhamento</strong>. Na consultoria online, monto exatamente isso para você — treino (com ou sem corda), estratégia alimentar realista e ajustes conforme seu progresso, em qualquer lugar do Brasil. <a href="/contato">Agende uma avaliação</a> e transforme 15 minutos de corda em um plano que funciona.</p>
+<p>O multiplicador é o método completo: <strong>musculação + déficit calórico + acompanhamento</strong>. Na consultoria online, monto exatamente isso para você — treino (com ou sem corda), metas realistas e ajustes conforme seu progresso, em qualquer lugar do Brasil. <a href="/contato">Agende uma avaliação</a> e transforme 15 minutos de corda em um plano que funciona.</p>
 
 <p>Para entender por que o cardio — corda incluída — merece lugar na rotina, e qual o papel real dele no emagrecimento:</p>
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mOn0uTTR57A?rel=0" title="A importância do cardio" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -89778,7 +89776,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <h2>One more thing: o problema nunca foi a refeição</h2>
 <p>Pular ou não pular é detalhe. O que define seu resultado é ter um <strong>sistema</strong>: calorias certas para o seu corpo, refeições que cabem na sua rotina e ajustes quando a vida muda.</p>
-<p>É isso que o Montinho constrói com cada aluno na <a href="/consultoria">consultoria online</a>: um plano alimentar e de treino desenhado para a sua fome, seus horários e seu histórico — inclusive se a sua relação com a comida anda difícil. Quer começar entendendo seu ponto de partida? <a href="/contato">Agende uma avaliação</a>.</p>
+<p>É isso que o Montinho constrói com cada aluno na <a href="/consultoria">consultoria online</a>: um plano de treino desenhado para os seus horários e o seu histórico, que caminha junto com a orientação do seu nutricionista. Quer começar entendendo seu ponto de partida? <a href="/contato">Agende uma avaliação</a>.</p>
 <blockquote><p><strong>Soundbite:</strong> disciplina não é aguentar fome. É montar um plano em que a fome não manda.</p></blockquote>
 
 <p>E como montar essas refeições na prática, com as calorias e proteínas certas para o seu objetivo? Este vídeo mostra o passo a passo de como estruturar uma dieta do zero:</p>
@@ -89961,7 +89959,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Aqui vai a virada: <strong>informação não é o seu problema</strong>. Você agora sabe exatamente quanta água beber. Mas saber e fazer todos os dias, junto com treino certo e comida certa, são coisas muito diferentes.</p>
 
-<p>É aí que entra o acompanhamento. O <strong>Montinho</strong> monta seu plano completo — treino, estratégia alimentar e os hábitos que sustentam tudo, incluindo a hidratação — e acompanha sua execução de perto, com ajustes reais conforme seu corpo responde.</p>
+<p>É aí que entra o acompanhamento. O <strong>Montinho</strong> monta o seu treino e cuida dos hábitos que sustentam tudo, como sono e constância — e acompanha sua execução de perto, com ajustes reais conforme seu corpo responde.</p>
 
 <p>Você não precisa de mais uma regra genérica de internet. Precisa de um plano feito para o <strong>seu peso, sua rotina e seu objetivo</strong>. Onde quer que você esteja no Brasil, <a href="/consultoria">conheça a consultoria online</a> e tenha isso resolvido de uma vez.</p>
 
@@ -90285,7 +90283,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Vale lembrar: alimentação organizada potencializa, mas não substitui movimento. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda</a> ao menos 150 minutos semanais de atividade física — e a marmita certa é o combustível desse treino.</p>
 <h2>A peça que falta: o plano por trás dos potes</h2>
 <p>Você pode dominar a logística do domingo e ainda assim estagnar — porque a pergunta decisiva não é "como cozinhar em lote", e sim <strong>"quanto e o quê colocar em cada pote para o SEU objetivo"</strong>.</p>
-<p>É exatamente isso que a <a href="/consultoria">consultoria online do Montinho</a> resolve: estratégia alimentar e treino desenhados para a sua rotina, com ajustes semanais, onde quer que você more.</p>
+<p>É exatamente isso que a <a href="/consultoria">consultoria online do Montinho</a> resolve no treino: um plano desenhado para a sua rotina, com ajustes semanais, onde quer que você more.</p>
 <p>Quer transformar suas duas horas de domingo em resultado visível? <a href="/contato">Agende uma avaliação</a> e monte sua primeira semana com um plano de verdade.</p>
 
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">A marmita é a execução, mas ela precisa servir a um plano: quantidades e alimentos alinhados ao seu objetivo. Veja no vídeo como montar esse plano no Montinho FitChef, com os alimentos que você já come.</p>
@@ -97728,7 +97726,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Comer de 3 em 3 horas não acelera o metabolismo — isso a ciência já encerrou. Mas também não é vilão: é um formato como qualquer outro, que funciona para algumas pessoas e atrapalha outras. O metabolismo não liga para o seu relógio; sua fome, sim.</p>
 
-<p>Se você quer um plano alimentar e de treino desenhado para a SUA rotina e o SEU padrão de fome, é exatamente isso que faço na <a href="/consultoria">consultoria</a>.</p>
+<p>Se você quer um plano de treino desenhado para a SUA rotina, é exatamente isso que faço na <a href="/consultoria">consultoria</a>.</p>
 
 <p>Eu vivi anos preso em regras que não funcionavam. No vídeo abaixo, do meu canal, falo sobre quebrar esse ciclo de vez:</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/n7om2a9r59s?rel=0" title="Como quebrar o ciclo do efeito sanfona e emagrecer de vez — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
@@ -100696,7 +100694,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Recebo com frequência alunas e alunos que fazem Pilates há dois ou três anos, adoram as aulas, melhoraram da dor nas costas — e não perderam um quilo. A frustração não é culpa do método: é de quem vendeu o método como emagrecedor. Quando organizamos a alimentação e adicionamos treino de força, o corpo finalmente responde, e o Pilates continua lá, agora no papel certo.</p>
 
-<p>Se esse é o seu caso — anos de aula e o ponteiro da balança parado —, o problema é o plano, não você. Na <a href="/consultoria">consultoria</a>, monto a estrutura completa: treino, metas e estratégia alimentar que conversam entre si.</p>
+<p>Se esse é o seu caso — anos de aula e o ponteiro da balança parado —, o problema é o plano, não você. Na <a href="/consultoria">consultoria</a>, monto o treino e as metas para a sua rotina, conversando com o plano do seu nutricionista.</p>
 
 
 
