@@ -84,7 +84,7 @@ const faq = [
   {
     question: "Como conferir se o personal é habilitado antes de contratar?",
     answer:
-      "Pergunte o número de registro no CREF. Pela Lei nº 9.696/1998, orientar exercício é atividade do profissional de Educação Física registrado no Conselho Regional. Muitos condomínios pedem esse registro para liberar personal externo.",
+      "Pergunte sobre a formação em Educação Física. Pela Lei nº 9.696/1998, orientar exercício é atividade do profissional de Educação Física. Muitos condomínios pedem a comprovação para liberar personal externo.",
   },
 ];
 
