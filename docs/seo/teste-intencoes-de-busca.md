@@ -1579,3 +1579,12 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `melancia-engorda`: pedaço, fatia e porção pelo IBGE.
 - Ferramenta: cartão de link da Calculadora de Déficit e ficha de alimento nos três.
 - Pendente: prints do Google (e o export do Answer the Public, se houver) dos três termos para revisar H2 e FAQ.
+
+## 2026-11-15 — Sem prints: feijão, pão de queijo e maçã engorda
+
+- Pedido do Montinho: "pode criar próximos artigos" (fila de 11/11). Volumes do Planejador (Brasil): "feijão engorda" e "pão de queijo engorda" 8.100/mês, "maçã engorda" 5.400.
+- `feijao-engorda`: TACO (carioca, preto e outros tipos cozidos, tropeiro) e porções do IBGE; prato arroz + feijão com o mesmo número do artigo do arroz.
+- `pao-de-queijo-engorda`: TACO tem só o assado; sem medida caseira no IBGE, pesos de 20, 40 e 50 g são exemplos nossos. Congelado e glúten: rótulo.
+- `maca-engorda`: fuji e argentina com casca pela TACO, unidade/fatia/porção pelo IBGE. Maçã verde e suco: sem valor na base.
+- Ferramenta: cartão de link da Calculadora de Déficit e ficha de alimento nos três.
+- Pendente: prints do Google (ou export do Answer the Public) dos três termos.

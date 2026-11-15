@@ -429,4 +429,7 @@ export const ARTIGOS_COM_LINK_DEFICIT: string[] = [
   "pipoca-engorda",
   "manga-engorda",
   "melancia-engorda",
+  "feijao-engorda",
+  "pao-de-queijo-engorda",
+  "maca-engorda",
 ];
