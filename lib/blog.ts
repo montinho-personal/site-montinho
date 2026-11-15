@@ -4798,7 +4798,7 @@ export const blogPosts = ([
       "Personal trainer online não é só receber uma planilha por WhatsApp. Entenda como funciona de verdade, o que muda em relação ao presencial e para quem é a melhor opção.",
     category: "Treinamento",
     date: "2026-06-26",
-    updatedAt: "2026-06-26",
+    updatedAt: "2026-11-15",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -4839,6 +4839,36 @@ export const blogPosts = ([
         question: "Qual a diferença entre personal trainer online e um app de treino?",
         answer:
           "Um app oferece programas pré-prontos não ajustados para você. Uma consultoria online com personal trainer real oferece programa montado para o seu histórico, seus objetivos e suas limitações específicas — e ajustado continuamente com base no que está ou não funcionando para você. A diferença prática nos resultados é significativa.",
+      },
+      {
+        question: "Personal trainer online para emagrecer funciona mesmo?",
+        answer:
+          "Funciona quando o treino mantém a massa muscular e alguém ajusta o plano quando a rotina muda ou você falta. A perda de gordura é decidida pelo déficit calórico do dia inteiro, e o plano alimentar é com o nutricionista.",
+      },
+      {
+        question: "Personal online para hipertrofia: como funciona?",
+        answer:
+          "Você registra cargas e repetições e manda vídeos da execução; o personal acompanha se a carga está subindo e se cada músculo recebe séries suficientes, e muda o plano quando a evolução trava.",
+      },
+      {
+        question: "Personal trainer online funciona para iniciantes?",
+        answer:
+          "Funciona com vídeo de cada exercício, correção da sua execução e exercícios do seu nível. Quem nunca treinou e não confia na própria execução costuma aprender mais rápido com algumas sessões presenciais no começo.",
+      },
+      {
+        question: "Preciso enviar vídeos dos exercícios para o personal online?",
+        answer:
+          "Sim, é deles que vem a correção. Não precisa filmar todos os treinos: os exercícios principais, de tempos em tempos e sempre que surgir dúvida.",
+      },
+      {
+        question: "Personal online consegue corrigir minha execução?",
+        answer:
+          "Consegue, pelo vídeo: a correção vem depois da série, com orientação para a próxima vez. Não é em tempo real como no presencial, mas permite comparar a execução de hoje com a de semanas atrás.",
+      },
+      {
+        question: "Quanto tempo leva para ver resultados com personal online?",
+        answer:
+          "O mesmo que no presencial. A força costuma subir nas primeiras semanas; medidas e fotos levam mais tempo. A comparação é sempre com você mesmo, a cada algumas semanas.",
       },
     ],
     faqSchema: [
@@ -4927,11 +4957,36 @@ export const blogPosts = ([
   <li>Quem quer resultados sérios mas precisa de flexibilidade de horário e local</li>
 </ul>
 
-<p>Não é indicada para:</p>
+<p>Pede mais cuidado para:</p>
 <ul>
-  <li>Iniciantes absolutos sem nenhuma noção de técnica — a base técnica presencial nas primeiras semanas evita lesões e constrói melhor fundação</li>
+  <li>Iniciantes absolutos sem nenhuma noção de técnica: funciona com vídeos e correção, mas algumas sessões presenciais no começo aceleram o aprendizado (veja abaixo)</li>
   <li>Pessoas com restrições médicas complexas que exigem avaliação em tempo real constante</li>
 </ul>
+
+<h2>Personal online funciona para o seu objetivo?</h2>
+
+<h3>Personal trainer online para emagrecer: funciona mesmo?</h3>
+<p>Funciona, desde que fique claro quem faz o quê. Quem decide a perda de gordura é o déficit calórico do dia inteiro, e o plano alimentar é trabalho de nutricionista. O papel do treino é manter (e até ganhar) massa muscular enquanto o peso cai, e o do acompanhamento é perceber quando você faltou a semana inteira, quando a força começou a cair demais ou quando a rotina mudou, e ajustar antes de você desistir. Quantos treinos fazer está em <a href="/blog/musculacao-para-emagrecer-quantas-vezes-por-semana">musculação para emagrecer: quantas vezes por semana</a>.</p>
+
+<h3>Personal online para hipertrofia: como funciona?</h3>
+<p>É onde o online costuma render mais, porque hipertrofia depende de coisas que dá para acompanhar a distância: séries suficientes por músculo na semana, séries perto da falha e carga subindo. Você registra cargas e repetições, eu olho a evolução e mudo o plano quando a carga trava por algumas semanas seguidas. Os números de volume estão em <a href="/blog/quantas-series-para-hipertrofia">quantas séries para hipertrofia</a>.</p>
+
+<h3>Personal trainer online funciona para iniciantes?</h3>
+<p>Funciona, com três condições: vídeo de execução de cada exercício, envio da sua execução para correção e exercícios escolhidos para o seu nível. Iniciantes, aliás, são os que mais evoluem quando aprendem certo desde o começo. Mas quem nunca treinou, tem medo de se machucar ou não confia na própria execução costuma aprender mais rápido com algumas sessões presenciais no início e o restante online. A comparação completa está em <a href="/blog/consultoria-online-ou-personal-presencial">consultoria online ou personal presencial</a>.</p>
+
+<h2>Vídeos, execução e aplicativo</h2>
+
+<h3>Preciso enviar vídeos dos exercícios para o personal online?</h3>
+<p>Na minha consultoria, sim: é dos seus vídeos que vem a correção. Não precisa filmar todos os treinos. Os exercícios principais, de tempos em tempos e sempre que surgir dúvida, já bastam. Celular apoiado, de lado ou na diagonal, pegando o corpo inteiro e a série completa. O passo a passo está em <a href="/blog/como-filmar-seu-exercicio">como filmar o seu exercício</a>.</p>
+
+<h3>Personal online consegue corrigir minha execução?</h3>
+<p>Consegue, mas de um jeito diferente do presencial. A correção não vem no meio da série: vem depois, assistindo ao vídeo, às vezes em câmera lenta, e com uma orientação específica para a próxima vez. Em compensação, dá para comparar o vídeo de hoje com o de um mês atrás. Quer ver como é na prática? A <a href="/revisao-de-execucao">revisão gratuita de execução</a> é exatamente isso: você manda uma série e eu devolvo a análise.</p>
+
+<h3>Como funciona o treino personalizado pelo aplicativo?</h3>
+<p>O aplicativo é onde o plano fica, não quem o monta. No app do Montinho, o treino do dia já mostra a carga da última vez, o descanso conta sozinho, cada exercício tem vídeo e a minha nota fica no exercício certo. Em dia corrido, você diz quanto tempo tem e o app monta a versão possível. Quem monta e muda o plano continua sendo eu, a partir dos seus registros e vídeos. Veja o <a href="/videos/app-do-montinho">vídeo do app</a> e a diferença para um app genérico em <a href="/blog/app-de-treino-funciona">app de treino funciona?</a>.</p>
+
+<h2>Quanto tempo leva para ver resultados com personal online?</h2>
+<p>O mesmo que no presencial, porque o corpo responde ao treino, não ao formato. A força costuma subir nas primeiras semanas; medidas e fotos levam mais tempo. Por isso a gente compara você com você mesmo a cada algumas semanas: carga, cintura, fotos e quantos treinos você fez. Os sinais que valem e os que enganam estão em <a href="/blog/como-saber-se-o-treino-esta-funcionando">como saber se o treino está funcionando</a>.</p>
 
 <h2>Resultados: o que é possível esperar</h2>
 
@@ -81885,7 +81940,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Sete critérios objetivos (e cinco sinais de alerta) para não errar na escolha do profissional que vai cuidar do seu corpo.",
     category: "Academias",
     date: "2026-07-02",
-    updatedAt: "2026-07-02",
+    updatedAt: "2026-11-15",
     readTime: "8 min",
     author: "Montinho",
     tags: ["como escolher personal trainer","personal trainer alphaville","personal trainer barueri","treino individualizado","guia"],
@@ -81944,8 +81999,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>O que um iniciante deve exigir desde o primeiro treino</h2>
 
 <p>Se o personal que você está avaliando não cobre esses fundamentos — técnica antes de carga, progressão gradual, constância acima de intensidade — ele está pulando etapas que vão te custar caro depois.</p>
+<h2>Como escolher uma consultoria de treino online</h2>
+<p>Os 7 critérios valem também para o online, com quatro perguntas a mais, porque a distância muda o jeito de acompanhar:</p>
+<ol>
+<li><strong>Como a execução é corrigida?</strong> A boa consultoria pede vídeos e devolve correção específica. Sem isso, ninguém está olhando o seu movimento.</li>
+<li><strong>Com que frequência o plano é revisto, e com base em quê?</strong> Cargas, repetições, medidas e fotos. "Treino novo todo mês" não é revisão.</li>
+<li><strong>Como é o contato?</strong> Direto com o profissional, por um canal que você usa no dia a dia, ou só por formulário?</li>
+<li><strong>O plano é feito para a sua estrutura?</strong> Academia de rede, condomínio, casa ou hotel: o treino precisa caber no que você tem.</li>
+</ol>
+<p>A melhor consultoria online não é a que promete mais, e sim a que mostra como vai perceber quando algo parar de funcionar. Para decidir entre online e presencial, veja <a href="/blog/consultoria-online-ou-personal-presencial">consultoria online ou personal presencial</a>; para entender o formato, <a href="/blog/personal-trainer-online-como-funciona">personal trainer online: como funciona</a>.</p>
+
 <h2>Agora, a parte em que eu me candidato</h2>
-<p>Seria estranho escrever este guia e fingir neutralidade, então vou ser direto: eu, Montinho, atendo presencialmente em <strong>Alphaville, Barueri e Santana de Parnaíba</strong> — de academias no eixo da Alameda Rio Negro a condomínios da Fazendinha e do Centro Histórico de Santana de Parnaíba — e a distância via <a href="/consultoria">consultoria personalizada</a>.</p>
+<p>Seria estranho escrever este guia e fingir neutralidade, então vou ser direto: eu, Montinho, atendo presencialmente em <strong>Alphaville, Barueri e Santana de Parnaíba</strong> — na Arena 18, em condomínios e em casa; em outras academias, dependendo das regras do local para personal externo e de combinação prévia — e a distância via <a href="/consultoria-online">consultoria online</a>.</p>
 <p>E aqui está o convite honesto: <strong>use os 7 critérios deste guia contra mim.</strong> Na avaliação inicial, pergunte sobre método, progressão, registro de evolução e limites profissionais. Se eu não passar na sua régua, você sai com o checklist certo para avaliar o próximo — e isso já valeu a leitura.</p>
 <p>Importante: se você já treina bem sozinho e só precisa de um ajuste pontual, direi isso na cara. Personal fixo não é para todo mundo, e confiança vale mais que contrato. <a href="/contato">Agende uma avaliação</a> ou veja como funciona o atendimento de <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a>.</p>
 
@@ -81963,6 +82028,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Preciso ter química com o personal trainer?", answer: "Sim — você passará horas por semana com essa pessoa. Estilo de comunicação incompatível é uma das maiores causas de abandono. Use a aula experimental para testar a relação, não só o treino." },
       { question: "Personal pode me passar dieta e suplementos?", answer: "Dieta é atribuição de nutricionista. Um bom personal orienta hábitos gerais e encaminha para os profissionais certos. Quem oferece atalhos farmacológicos deve ser descartado imediatamente." },
       { question: "E se eu não puder pagar sessões presenciais frequentes?", answer: "Considere o formato compartilhado (duplas/trios) ou a consultoria online, que entrega plano individualizado e ajustes contínuos por um investimento menor que o presencial exclusivo." },
+      { question: "Como escolher a melhor consultoria de treino online?", answer: "Veja se o treino é montado para você, se a execução é corrigida por vídeo, com que frequência e com base em quê o plano é revisto, e se o contato é direto com o profissional. Confira o registro no CREF e desconfie de promessa de resultado em prazo fixo." },
     ],
   },
   {
@@ -87531,7 +87597,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Entenda as faixas de preço de uma consultoria online de treino no Brasil, o que está incluído no valor e como escolher sem cair na cilada do barato que sai caro.",
     category: "Treinamento",
     date: "2026-07-08",
-    updatedAt: "2026-07-08",
+    updatedAt: "2026-11-15",
     readTime: "9 min",
     author: "Montinho",
     tags: ["consultoria online","preço","treino personalizado","quanto custa","planilha de treino"],
@@ -87609,11 +87675,24 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Se a resposta for vaga em qualquer ponto, desconfie. A <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener noreferrer">OMS recomenda atividade física regular</a> para todos os adultos — mas consistência só vem quando o plano cabe na sua vida real. É isso que a boa consultoria garante. Quer ver como funciona na prática? <a href="/consultoria">Conheça a consultoria online</a>.</p>
 
+<h2>Personal trainer online barato: o que avaliar antes de contratar</h2>
+
+<p>Preço baixo não é defeito. O problema é quando o preço baixo vem de tirar justamente o que faz a consultoria funcionar. Antes de fechar, confira:</p>
+<ul>
+<li><strong>Quem monta o treino?</strong> Se ninguém pergunta sua rotina, seu histórico e onde você treina, é ficha pronta com nome de consultoria.</li>
+<li><strong>Alguém olha a sua execução?</strong> Sem vídeo e sem correção, você paga para repetir o erro.</li>
+<li><strong>O que acontece quando a carga para de subir?</strong> Se a resposta é "no próximo mês vem outro treino", não existe ajuste, existe troca de planilha.</li>
+<li><strong>Dá para falar com o profissional?</strong> Ou só com um robô, um grupo ou um atendente?</li>
+<li><strong>Tem registro no CREF?</strong> Peça e confira.</li>
+<li><strong>Promete resultado em prazo fixo?</strong> Desconfie.</li>
+</ul>
+<p>Se as respostas forem boas, o barato pode valer. Se forem vagas, o barato custa os meses em que você treina sem sair do lugar. Para comparar com o presencial, veja <a href="/blog/consultoria-online-ou-personal-presencial">consultoria online ou personal presencial</a>.</p>
+
 <h2>E se você mora em Alphaville, Barueri ou Santana de Parnaíba?</h2>
 
 <p>Aqui vai o que quase ninguém te conta: <strong>o formato certo depende da sua rotina, não da moda</strong>. Quem trabalha no Centro Industrial e Empresarial de Alphaville ou perto do Shopping Tamboré e vive de reunião em reunião muitas vezes rende mais com a flexibilidade do online. Quem precisa de supervisão em cada repetição rende mais no presencial.</p>
 
-<p>O Montinho atende <strong>presencialmente em Alphaville, Barueri e Santana de Parnaíba</strong> — em academias, condomínios e domicílio — e oferece <strong>consultoria online que cabe em qualquer orçamento</strong>, com a mesma individualização de quem treina ao vivo há anos com executivos e famílias da região.</p>
+<p>O Montinho atende <strong>presencialmente em Alphaville, Barueri e Santana de Parnaíba</strong> — na Arena 18, em condomínios e em casa; em outras academias, dependendo das regras do local para personal externo e de combinação prévia — e oferece <strong>consultoria online</strong> para quem precisa de flexibilidade, com a mesma individualização de quem treina ao vivo há anos com executivos e famílias da região.</p>
 
 <p>Ou seja: você não precisa escolher entre "caro demais" e "genérico demais". <strong>Existe um meio-termo profissional — e ele tem endereço na sua região.</strong> <a href="/contato">Solicite uma proposta pelo WhatsApp</a> e receba um plano na medida do seu objetivo e do seu bolso. Se preferir o presencial, veja como funciona o <a href="/personal-trainer-barueri">personal trainer em Barueri</a> ou o <a href="/personal-trainer-santana-de-parnaiba">personal trainer em Santana de Parnaíba</a>.</p>
 
@@ -87630,7 +87709,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Quanto custa uma consultoria online de treino?", answer: "As mensalidades variam bastante no Brasil conforme experiência do profissional, individualização e frequência de acompanhamento — em geral, custam menos que o personal presencial por não haver deslocamento. Solicite uma proposta atualizada pelo WhatsApp." },
       { question: "Consultoria online é mais barata que personal presencial?", answer: "Sim, na maioria dos casos. Sem deslocamento e sem horário exclusivo, o custo por aluno cai — mantendo o treino individualizado e o acompanhamento a distância." },
       { question: "O que devo exigir de uma consultoria online?", answer: "Avaliação inicial detalhada, treino adaptado à sua estrutura, ajustes periódicos e canal de suporte para dúvidas e correção de execução. Sem isso, é só planilha genérica." },
-      { question: "Como contratar a consultoria do Montinho?", answer: "Solicite uma proposta pelo WhatsApp na página de contato ou conheça a página da consultoria. O plano é montado conforme seu objetivo, rotina e orçamento." }
+      { question: "Como contratar a consultoria do Montinho?", answer: "Solicite uma proposta pelo WhatsApp na página de contato ou conheça a página da consultoria. O plano é montado conforme seu objetivo, rotina e orçamento." },
+      { question: "Personal trainer online barato vale a pena?", answer: "Pode valer, se o preço baixo não vier de tirar o essencial: treino montado para você, correção da execução por vídeo, ajuste quando a carga trava e contato direto com o profissional. Confira também o registro no CREF e desconfie de promessa de resultado em prazo fixo." },
     ],
   },
   {
