@@ -29,6 +29,8 @@ export default function ComparadorAntesDepois({
   altAntes,
   altDepois,
   prioridade = false,
+  alturaMax = 70,
+  sizes = "(min-width: 1024px) 420px, (min-width: 768px) 45vw, 92vw",
 }: {
   fotos: FotosVitrine;
   nome: string;
@@ -37,6 +39,9 @@ export default function ComparadorAntesDepois({
   altAntes: string;
   altDepois: string;
   prioridade?: boolean;
+  /** Altura máxima da foto, em % da altura da tela (svh). */
+  alturaMax?: number;
+  sizes?: string;
 }) {
   const [pos, setPos] = useState(50);
   const [mexeu, setMexeu] = useState(false);
@@ -64,14 +69,12 @@ export default function ComparadorAntesDepois({
     if (e.currentTarget.hasPointerCapture(e.pointerId)) e.currentTarget.releasePointerCapture(e.pointerId);
   };
 
-  const sizes = "(min-width: 1024px) 420px, (min-width: 768px) 45vw, 92vw";
-
   return (
     <figure
       className="m-0 mx-auto"
       // As metades são retratos altos (~1:2). Sem limite, a foto passa da
       // altura da tela e a pessoa não vê o puxador e as etiquetas juntos.
-      style={{ width: `min(100%, calc(70svh * ${fotos.largura} / ${fotos.altura}))` }}
+      style={{ width: `min(100%, calc(${alturaMax}svh * ${fotos.largura} / ${fotos.altura}))` }}
     >
       <div
         ref={caixa}

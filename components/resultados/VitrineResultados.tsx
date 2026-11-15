@@ -136,15 +136,28 @@ export default function VitrineResultados({
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {resto.map((r) => (
                 <article key={r.slug} className="border border-white/10 bg-black flex flex-col">
-                  <div className="aspect-square bg-black">
-                    <Image
-                      src={r.photo!}
-                      alt={`Antes e depois de ${r.name}${r.duration ? `, ${r.duration} de acompanhamento` : ""}: ${r.result}`}
-                      width={600}
-                      height={600}
-                      sizes="(min-width: 1024px) 360px, (min-width: 640px) 45vw, 92vw"
-                      className="h-full w-full object-contain"
-                    />
+                  <div className="bg-black p-3">
+                    {r.vitrine ? (
+                      <ComparadorAntesDepois
+                        fotos={r.vitrine}
+                        nome={r.name}
+                        slug={r.slug}
+                        pagina={pagina}
+                        alturaMax={55}
+                        sizes="(min-width: 1024px) 300px, (min-width: 640px) 40vw, 80vw"
+                        altAntes={`Antes: ${r.name} no início do acompanhamento com o Montinho`}
+                        altDepois={`Depois: ${r.name}${r.duration ? ` após ${r.duration} de acompanhamento` : " depois do acompanhamento"} (${r.result})`}
+                      />
+                    ) : (
+                      <Image
+                        src={r.photo!}
+                        alt={`Antes e depois de ${r.name}${r.duration ? `, ${r.duration} de acompanhamento` : ""}: ${r.result}`}
+                        width={600}
+                        height={600}
+                        sizes="(min-width: 1024px) 360px, (min-width: 640px) 45vw, 92vw"
+                        className="aspect-square h-full w-full object-contain"
+                      />
+                    )}
                   </div>
                   <div className="p-5 flex flex-col flex-1">
                     <div className="flex items-baseline justify-between gap-3">
