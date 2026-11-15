@@ -144,6 +144,11 @@ export const ROSCA_CAVALINHO_ARNOLD_POSTS: BlogPost[] = [
 <p>Para a maioria das pessoas, <strong>2 a 4 séries de 8 a 15 repetições com cada braço</strong>, parando a 1 ou 2 repetições da falha. Conte por braço: 10 repetições são 10 de cada lado, não 5 e 5. Quando completar o topo da faixa com boa execução, suba o halter na próxima sessão (<a href="/blog/progressao-de-carga">progressão de carga</a>).</p>
 <p>Ela encaixa no treino de braço ou no fim do treino de costas, já que as puxadas também usam o bíceps. Mais ideias em <a href="/blog/treino-de-biceps">treino de bíceps</a>.</p>
 
+<div class="yt-embed">
+<p class="yt-caption">Não sentiu o bíceps queimar na rosca? Em menos de um minuto, por que execução, esforço e carga subindo contam mais do que o pump.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/xb1sP6z01-s?rel=0" title="Não sentiu o músculo? Pump não é sinônimo de hipertrofia — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+
 ${NAO_SE_COMPARE("rosca alternada", "A sua régua é o seu próprio braço: o mesmo halter subindo com o corpo parado, ou uma repetição a mais que na semana passada.")}
 
 <h2>Leia também</h2>
@@ -263,6 +268,11 @@ ${NAO_SE_COMPARE("rosca alternada", "A sua régua é o seu próprio braço: o me
 <p>Para a maioria das pessoas, <strong>3 a 4 séries de 6 a 12 repetições</strong>, parando a 1 ou 2 repetições da falha. A carga certa é a que você puxa sem mudar a posição das costas. Quando completar o topo da faixa assim, acrescente um pouco de peso (<a href="/blog/progressao-de-carga">progressão de carga</a>).</p>
 <p>Ela costuma entrar no começo ou no meio do treino de costas. Veja como montar o resto em <a href="/blog/treino-de-costas-hipertrofia">treino de costas para hipertrofia</a>.</p>
 
+<div class="yt-embed">
+<p class="yt-caption">Barra T ocupada ou sem o triângulo? Veja como achar um substituto para a remada em 3 passos.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/Mck7dwGz0as?rel=0" title="O aparelho está ocupado? Descubra o que fazer no lugar em 3 passos — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+
 ${NAO_SE_COMPARE("remada cavalinho", "A sua régua é a sua postura: as mesmas costas retas da primeira à última repetição, com um pouco mais de carga ou uma repetição a mais que na semana passada.")}
 
 <h2>Leia também</h2>
@@ -375,6 +385,11 @@ ${NAO_SE_COMPARE("remada cavalinho", "A sua régua é a sua postura: as mesmas c
 
 <h2>Quantas séries e repetições?</h2>
 <p>Para a maioria das pessoas, <strong>2 a 4 séries de 8 a 12 repetições</strong>, parando a 1 ou 2 repetições da falha. Quando completar o topo da faixa com o giro controlado, suba o halter na próxima sessão (<a href="/blog/progressao-de-carga">progressão de carga</a>). Ele costuma entrar no começo do treino de ombro; o resto da sessão está em <a href="/blog/treino-de-ombros-hipertrofia">treino de ombros para hipertrofia</a>.</p>
+
+<div class="yt-embed">
+<p class="yt-caption">O giro do Arnold é difícil de conferir no espelho. Veja como filmar a sua série para eu corrigir a execução.</p>
+<div class="yt-wrapper yt-wrapper--vertical"><iframe src="https://www.youtube.com/embed/L5w4DBU2la8?rel=0" title="Como filmar o seu exercício para eu corrigir a execução — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
 
 ${NAO_SE_COMPARE("desenvolvimento Arnold", "A sua régua é o seu ombro: o mesmo giro controlado, sem dor, com um pouco mais de carga ou uma repetição a mais que na semana passada.")}
 
