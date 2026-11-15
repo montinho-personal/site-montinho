@@ -42,6 +42,13 @@ export const LINKS: Record<string, LinkControlado> = {
    * para os números de antes e depois ficarem na mesma linha do GA4.
    */
   "yt-beliscadas": { destino: "/blog/habitos-que-sabotam-seu-emagrecimento", utm_source: "youtube", utm_medium: "video", utm_campaign: "beliscadas", utm_content: "descricao", tipo: "social" },
+  /**
+   * Vitrine de transformações no guiafitnessalphaville.com.br, que lê o feed
+   * /api/vitrine. Um código para o botão e outro para "ver todas", para saber
+   * qual dos dois traz gente.
+   */
+  "guia-vitrine": { destino: "/personal-trainer-alphaville", utm_source: "guiafitnessalphaville", utm_medium: "referral", utm_campaign: "vitrine", utm_content: "cta", tipo: "other" },
+  "guia-resultados": { destino: "/resultados", utm_source: "guiafitnessalphaville", utm_medium: "referral", utm_campaign: "vitrine", utm_content: "ver_todas", tipo: "other" },
   "gbp": { destino: "/", utm_source: "google", utm_medium: "perfil_empresa", utm_campaign: "perfil", utm_content: "botao_site", tipo: "other" },
   /**
    * Story que aponta para um artigo específico.
