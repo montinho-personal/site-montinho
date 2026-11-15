@@ -177,8 +177,8 @@ export default function PersonalTrainerEmagrecerTambore() {
               },
               {
                 num: "03",
-                title: "Orientação alimentar prática",
-                text: "Não prescrevo dieta — oriento estratégias alimentares práticas que criam déficit calórico sem passar fome. Para acompanhamento nutricional detalhado, recomendo nutricionista parceiro.",
+                title: "Alimentação com o nutricionista",
+                text: "Não passo dieta nem plano alimentar: isso é trabalho de nutricionista. O treino é montado para caminhar junto com o plano dele, e no dia a dia a gente conversa sobre rotina, sono e constância.",
               },
               {
                 num: "04",
