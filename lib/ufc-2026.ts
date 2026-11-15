@@ -1020,6 +1020,63 @@ export const UFC_2026_POSTS: BlogPost[] = [
     ],
   },
   {
+    slug: "resultado-ufc-334",
+    title: "Resultado do UFC 334: quem ganhou Amanda Nunes x Kayla Harrison",
+    metaTitle: "Resultado UFC 334: Quem Ganhou Amanda Nunes x Kayla Harrison",
+    metaDescription:
+      "Kayla Harrison finalizou Amanda Nunes no 4º round do UFC 334 (14/11) e Gane manteve o cinturão. Veja como foram Caio Borralho, Bia Mesquita e os outros brasileiros.",
+    excerpt:
+      "Quem ganhou o UFC 334: Harrison x Amanda Nunes, Gane x Hokit e o resultado dos seis brasileiros do card.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-11-15",
+    readTime: "3 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC 334", "resultado UFC", "Amanda Nunes", "Kayla Harrison", "Caio Borralho"],
+    content: `<img src="/blog-images/ufc-334-amanda-nunes-kayla-harrison-capa.webp" alt="Resultado do UFC 334 — Amanda Nunes x Kayla Harrison" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<blockquote><p><strong>UFC 334 terminou.</strong> O evento foi no sábado, 14 de novembro, no Madison Square Garden, em Nova York. Resultados conferidos na página do UFC e em mais de um veículo de imprensa.</p></blockquote>
+
+<h2>Quem ganhou Amanda Nunes x Kayla Harrison?</h2>
+<p><strong>Kayla Harrison venceu Amanda Nunes por finalização (mata-leão), no 4º round</strong>, e manteve o cinturão do peso-galo feminino. Era a volta de Amanda ao octógono depois da aposentadoria.</p>
+
+<h2>Quem ganhou a luta principal, Gane x Hokit?</h2>
+<p><strong>Ciryl Gane venceu Josh Hokit por decisão unânime</strong>, com 48-47 nos três cartões, e manteve o cinturão do peso-pesado.</p>
+
+<h2>Resultados dos brasileiros no UFC 334</h2>
+<p>Dos seis brasileiros do card, <strong>quatro venceram</strong>: Caio Borralho, Cesar Almeida, Bia Mesquita e Melquizael Costa.</p>
+<table><thead><tr><th>Luta</th><th>Parte do card</th><th>Resultado</th></tr></thead><tbody>
+<tr><td>Ciryl Gane x Josh Hokit</td><td>Principal (cinturão peso-pesado)</td><td>Gane venceu por decisão unânime (48-47 nos três cartões) e manteve o cinturão</td></tr>
+<tr><td><strong>Amanda Nunes</strong> x Kayla Harrison</td><td>Co-principal (cinturão peso-galo)</td><td>Harrison venceu por finalização (mata-leão), no 4º round, e manteve o cinturão</td></tr>
+<tr><td><strong>Caio Borralho</strong> x Yousri Belgaroui</td><td>Principal</td><td><strong>Borralho venceu</strong> por decisão unânime</td></tr>
+<tr><td><strong>Cesar Almeida</strong> x Donte Johnson</td><td>Preliminar</td><td><strong>Almeida venceu</strong> por TKO (socos), no 1º round, aos 3min20</td></tr>
+<tr><td><strong>Bia Mesquita</strong> x Macy Chiasson</td><td>Preliminares iniciais</td><td><strong>Bia venceu</strong> por finalização (mata-leão), no 1º round</td></tr>
+<tr><td><strong>Melquizael Costa</strong> x Jared Gordon</td><td>Preliminares iniciais</td><td><strong>Melquizael venceu</strong> por decisão unânime</td></tr>
+<tr><td><strong>Samuel Sanches</strong> x Evan Elder</td><td>Preliminares iniciais</td><td>Elder venceu por decisão unânime</td></tr>
+</tbody></table>
+<p>Card, horários e transmissão em <a href="/blog/ufc-334-amanda-nunes-kayla-harrison">UFC 334: Amanda Nunes x Kayla Harrison</a>; adversários de cada brasileiro em <a href="/blog/brasileiros-ufc-334">brasileiros no UFC 334</a>.</p>
+
+<h2>Como os lutadores chegaram à luta</h2>
+<p>Todos passaram pela pesagem na véspera. Entenda o processo em <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a> e a rotina em <a href="/blog/treino-de-lutador-mma">treino de lutador de MMA</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com/event/ufc-334" target="_blank" rel="noopener noreferrer">UFC — UFC 334: Gane x Hokit (resultados oficiais)</a></li>
+<li><a href="https://www.cbssports.com/ufc/news/ufc-334-results-live-updates-josh-hokit-ciryl-gane/live/" target="_blank" rel="noopener noreferrer">CBS Sports — UFC 334 results</a></li>
+<li><a href="https://www.sherdog.com/news/news/UFC-334-Gane-vs-Hokit-playbyplay-results-round-scoring-203625" target="_blank" rel="noopener noreferrer">Sherdog — UFC 334 play-by-play e resultados</a></li>
+<li>Veículos consultados: Yahoo Sports, MMA Mania, Fightmag.</li>
+</ul>`,
+    faq: [
+      { question: "Quem ganhou o UFC 334?", answer: "Na luta principal, Ciryl Gane venceu Josh Hokit por decisão unânime e manteve o cinturão do peso-pesado. No co-principal, Kayla Harrison finalizou Amanda Nunes no 4º round e manteve o cinturão do peso-galo." },
+      { question: "Quem ganhou Amanda Nunes x Kayla Harrison?", answer: "Kayla Harrison, por finalização (mata-leão), no 4º round, mantendo o cinturão do peso-galo feminino." },
+      { question: "Quem ganhou Gane x Hokit?", answer: "Ciryl Gane, por decisão unânime (48-47 nos três cartões), mantendo o cinturão do peso-pesado." },
+      { question: "Quem ganhou Caio Borralho x Yousri Belgaroui?", answer: "Caio Borralho, por decisão unânime." },
+      { question: "Quais brasileiros venceram no UFC 334?", answer: "Caio Borralho (decisão unânime sobre Yousri Belgaroui), Cesar Almeida (TKO no 1º round sobre Donte Johnson), Bia Mesquita (finalização no 1º round sobre Macy Chiasson) e Melquizael Costa (decisão unânime sobre Jared Gordon). Amanda Nunes e Samuel Sanches perderam." },
+    ],
+  },
+  {
     slug: "ufc-334-amanda-nunes-kayla-harrison",
     title: "UFC 334: Amanda Nunes x Kayla Harrison — data, horário, card e onde assistir",
     metaTitle: "UFC 334: Card Completo, Data e Horário das Lutas",
@@ -1030,13 +1087,17 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-11-04",
-    updatedAt: "2026-11-06",
+    updatedAt: "2026-11-15",
     readTime: "5 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC 334", "Amanda Nunes", "Kayla Harrison", "Caio Borralho"],
     content: `<img src="/blog-images/ufc-334-amanda-nunes-kayla-harrison-capa.webp" alt="Capa: UFC 334 — Amanda Nunes x Kayla Harrison pelo cinturão peso-galo, sábado 14/11, card principal às 23h" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<blockquote><p>Informações verificadas em 4 de novembro de 2026 na página oficial do evento. O card ainda pode mudar; esta página é atualizada até a luta.</p></blockquote>
-<p>O <strong>UFC 334</strong> acontece no <strong>sábado, 14 de novembro de 2026</strong>, no Madison Square Garden, em Nova York. A brasileira <strong>Amanda Nunes</strong> volta ao octógono para desafiar a campeã norte-americana <strong>Kayla Harrison</strong> pelo cinturão do peso-galo feminino. A luta principal é Ciryl Gane x Josh Hokit, pelo cinturão do peso-pesado.</p>
+<blockquote><p><strong>UFC 334 terminou.</strong> Resultados conferidos em 15 de novembro de 2026 na página do UFC e em mais de um veículo.</p></blockquote>
+
+<h2>Quem ganhou?</h2>
+<p><strong>Kayla Harrison finalizou Amanda Nunes no 4º round</strong> (mata-leão) e manteve o cinturão do peso-galo. Na luta principal, <strong>Ciryl Gane venceu Josh Hokit por decisão unânime</strong> e manteve o cinturão do peso-pesado. Entre os brasileiros, Caio Borralho, Cesar Almeida, Bia Mesquita e Melquizael Costa venceram. Todos os resultados em <a href="/blog/resultado-ufc-334">resultado do UFC 334</a>.</p>
+
+<p>O <strong>UFC 334</strong> aconteceu no <strong>sábado, 14 de novembro de 2026</strong>, no Madison Square Garden, em Nova York. A brasileira <strong>Amanda Nunes</strong> volta ao octógono para desafiar a campeã norte-americana <strong>Kayla Harrison</strong> pelo cinturão do peso-galo feminino. A luta principal é Ciryl Gane x Josh Hokit, pelo cinturão do peso-pesado.</p>
 
 <h2>Quando vai ser o UFC 334? Data, horário e onde assistir</h2>
 <table><thead><tr><th>Item</th><th>O que se sabe</th></tr></thead><tbody>
@@ -1152,12 +1213,24 @@ export const UFC_2026_POSTS: BlogPost[] = [
     category: "Treinamento",
     tipo: "noticia",
     date: "2026-11-04",
-    updatedAt: "2026-11-11",
+    updatedAt: "2026-11-15",
     readTime: "3 min",
     author: "Montinho Personal Trainer",
     tags: ["UFC", "UFC 334", "brasileiros no UFC", "Amanda Nunes", "Caio Borralho"],
     content: `<img src="/blog-images/ufc-334-amanda-nunes-kayla-harrison-capa.webp" alt="Brasileiros no UFC 334, sábado 14/11, em Nova York" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<p>Seis brasileiros estão no <strong>UFC 334</strong>, no <strong>sábado, 14 de novembro de 2026</strong>, no Madison Square Garden, em Nova York. <strong>Amanda Nunes</strong> volta ao UFC para desafiar a campeã Kayla Harrison pelo cinturão do peso-galo. Horários, transmissão e o card completo em <a href="/blog/ufc-334-amanda-nunes-kayla-harrison">UFC 334: Amanda Nunes x Kayla Harrison</a>. Atualizado em 11 de novembro de 2026.</p>
+<p>Seis brasileiros lutaram no <strong>UFC 334</strong>, no <strong>sábado, 14 de novembro de 2026</strong>, no Madison Square Garden, em Nova York. <strong>Amanda Nunes</strong> voltou ao UFC para desafiar a campeã Kayla Harrison pelo cinturão do peso-galo. Horários, transmissão e o card completo em <a href="/blog/ufc-334-amanda-nunes-kayla-harrison">UFC 334: Amanda Nunes x Kayla Harrison</a>. Atualizado em 15 de novembro de 2026, com os resultados.</p>
+
+<h2>Quem ganhou?</h2>
+<p>Quatro dos seis brasileiros venceram. Detalhes em <a href="/blog/resultado-ufc-334">resultado do UFC 334</a>.</p>
+<table><thead><tr><th>Luta</th><th>Parte do card</th><th>Resultado</th></tr></thead><tbody>
+<tr><td>Ciryl Gane x Josh Hokit</td><td>Principal (cinturão peso-pesado)</td><td>Gane venceu por decisão unânime (48-47 nos três cartões) e manteve o cinturão</td></tr>
+<tr><td><strong>Amanda Nunes</strong> x Kayla Harrison</td><td>Co-principal (cinturão peso-galo)</td><td>Harrison venceu por finalização (mata-leão), no 4º round, e manteve o cinturão</td></tr>
+<tr><td><strong>Caio Borralho</strong> x Yousri Belgaroui</td><td>Principal</td><td><strong>Borralho venceu</strong> por decisão unânime</td></tr>
+<tr><td><strong>Cesar Almeida</strong> x Donte Johnson</td><td>Preliminar</td><td><strong>Almeida venceu</strong> por TKO (socos), no 1º round, aos 3min20</td></tr>
+<tr><td><strong>Bia Mesquita</strong> x Macy Chiasson</td><td>Preliminares iniciais</td><td><strong>Bia venceu</strong> por finalização (mata-leão), no 1º round</td></tr>
+<tr><td><strong>Melquizael Costa</strong> x Jared Gordon</td><td>Preliminares iniciais</td><td><strong>Melquizael venceu</strong> por decisão unânime</td></tr>
+<tr><td><strong>Samuel Sanches</strong> x Evan Elder</td><td>Preliminares iniciais</td><td>Elder venceu por decisão unânime</td></tr>
+</tbody></table>
 
 <h2>Quem são os brasileiros do UFC 334</h2>
 <h3>Card principal (23h)</h3>
