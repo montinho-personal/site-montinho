@@ -29,7 +29,7 @@ const faq = [
   {
     question: "Como identificar o melhor personal trainer no Tamboré?",
     answer:
-      "Verifique a formação em Educação Física, a metodologia de trabalho, os resultados de alunos anteriores e a clareza com que o profissional explica as decisões de treino. O melhor personal trainer não é o que tem mais seguidores nas redes sociais — é o que entrega resultado consistente e explica o raciocínio por trás de cada escolha.",
+      "Pergunte sobre a formação e a história de vida do profissional, a metodologia de trabalho, os resultados de alunos anteriores e a clareza com que o profissional explica as decisões de treino. O melhor personal trainer não é o que tem mais seguidores nas redes sociais — é o que entrega resultado consistente e explica o raciocínio por trás de cada escolha.",
   },
   {
     question: "O melhor personal trainer no Tamboré é o mais caro?",
@@ -39,7 +39,7 @@ const faq = [
   {
     question: "Qual a formação do melhor personal trainer no Tamboré?",
     answer:
-      "Graduação em Educação Física é o ponto de partida. Pós-graduação em áreas como fisiologia do exercício, musculação, reabilitação ou nutrição esportiva agrega. Mais importante ainda é a atualização constante — o conhecimento científico sobre treino evoluiu muito nos últimos anos e o profissional precisa acompanhar.",
+      "A formação é o ponto de partida. Pós-graduação em áreas como fisiologia do exercício, musculação, reabilitação ou nutrição esportiva agrega. Mais importante ainda é a atualização constante — o conhecimento científico sobre treino evoluiu muito nos últimos anos e o profissional precisa acompanhar.",
   },
   {
     question: "Melhor personal trainer no Tamboré atende online também?",
@@ -127,7 +127,7 @@ export default function MelhorPersonalTrainerTambore() {
           </h2>
           <div className="space-y-5 text-gray-300 leading-relaxed font-light">
             <p>
-              Em Tamboré e Alphaville há muitos profissionais de educação física. Alguns com formação sólida, outros com apenas um certificado de fim de semana. Alguns com método científico atualizado, outros com fichas de treino prontas para todo mundo. A diferença entre eles não é visível no Instagram — é perceptível no resultado.
+              Em Tamboré e Alphaville há muitos personal trainers. Alguns com formação sólida, outros com apenas um certificado de fim de semana. Alguns com método científico atualizado, outros com fichas de treino prontas para todo mundo. A diferença entre eles não é visível no Instagram — é perceptível no resultado.
             </p>
             <p>
               Um personal trainer de qualidade faz perguntas antes de prescrever. Avalia postura, histórico de lesões, objetivos reais e disponibilidade de tempo antes de escrever uma única série. O protocolo que entrega é específico — não adaptado de outro aluno. E as sessões que conduz são exclusivas: atenção total, correção técnica em tempo real, sem divisão de foco.
@@ -162,7 +162,7 @@ export default function MelhorPersonalTrainerTambore() {
           </h2>
           <ul className="space-y-4 mb-10">
             {[
-              "Formação em Educação Física e histórico profissional verificável",
+              "Formação e história de vida que dá para conhecer",
               "Método claro e explicado — não 'confie em mim e faça'",
               "Protocolo construído do zero para cada aluno, sem fichas adaptadas",
               "Avaliação antes de prescrever qualquer exercício",

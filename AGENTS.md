@@ -212,13 +212,16 @@ proteína, calculadoras), desde que não apresentem isso como algo que ele
 prescreve. Ao escrever CTA de consultoria, use "treino", não "treino e
 dieta".
 
-## Não citar CREF nem CONFEF
+## Não citar CREF, CONFEF nem Educação Física
 
 Regra do Montinho, reforçada em 15/11/2026. Nenhum texto do site cita CREF,
-CONFEF ou "conselho regional/federal", nem como checklist ("peça o
-registro no CREF"). Quando o texto precisa da ideia, use "formação em
-Educação Física" ou "profissional de Educação Física", e a Lei nº
-9.696/1998 pode continuar citada.
+CONFEF, "conselho regional/federal" ou "Educação Física" como credencial
+(graduação, formação, profissional de Educação Física), nem em checklist.
+Quando o texto precisa da ideia, use algo genérico: "pergunte sobre a
+formação e a história de vida do profissional"; para nomear quem orienta o
+treino, "personal trainer". A Lei nº 9.696/1998 pode ser citada sem nomear
+a área. Lembrança de escola ("aula de educação física") não é credencial e
+pode ficar.
 
 ## Locais de atendimento: guia de academia ≠ local confirmado
 

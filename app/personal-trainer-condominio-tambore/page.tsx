@@ -84,7 +84,7 @@ const faq = [
   {
     question: "Como conferir se o personal é habilitado antes de contratar?",
     answer:
-      "Pergunte sobre a formação em Educação Física. Pela Lei nº 9.696/1998, orientar exercício é atividade do profissional de Educação Física. Muitos condomínios pedem a comprovação para liberar personal externo.",
+      "Pergunte sobre a formação e a história de vida do profissional. Muitos condomínios pedem documentação para liberar personal externo.",
   },
 ];
 
