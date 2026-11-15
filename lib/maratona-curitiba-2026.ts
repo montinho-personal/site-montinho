@@ -18,20 +18,29 @@ export const MARATONA_CURITIBA_2026_POSTS: BlogPost[] = [
     category: "Corrida",
     tipo: "noticia",
     date: "2026-10-03",
+    updatedAt: "2026-11-15",
     readTime: "3 min",
     author: "Montinho Personal Trainer",
     tags: ["Maratona de Curitiba", "resultado maratona", "corrida de rua", "Curitiba"],
     content: `<img src="/blog-images/maratona-de-curitiba-2026-capa.webp" alt="Resultado da Maratona de Curitiba 2026 — domingo, 15 de novembro" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<blockquote><p><strong>A prova ainda não aconteceu. A Maratona de Curitiba 2026 é no domingo, 15 de novembro.</strong> Esta página é atualizada com os vencedores assim que o resultado oficial for divulgado.</p></blockquote>
+<blockquote><p><strong>Atualizado em 15/11/2026, dia da prova.</strong> O vencedor dos 42 km masculino está confirmado pelo perfil oficial da prova. As outras categorias entram aqui quando o resultado oficial da cronometragem for publicado.</p></blockquote>
 
 <h2>Quem ganhou a Maratona de Curitiba 2026?</h2>
-<p><strong>Resultado: aguardando a prova.</strong> Os vencedores da maratona e da meia, no masculino e no feminino, entram aqui no domingo, 15 de novembro, com o resultado oficial.</p>
+<p>O marroquino <strong>Aziz Ait</strong> venceu os 42 km da Santander Maratona de Curitiba 2026 em <strong>2h13min24s</strong>, novo recorde da prova. O recorde anterior era de Ederson Vilela, tricampeão em 2025, com 2h15min13s.</p>
+<table>
+<thead><tr><th>Prova</th><th>Masculino</th><th>Feminino</th></tr></thead>
+<tbody>
+<tr><td>42 km</td><td>Aziz Ait (Marrocos), 2h13min24s, recorde da prova</td><td>Aguardando o resultado oficial</td></tr>
+<tr><td>21 km</td><td>Aguardando o resultado oficial</td><td>Aguardando o resultado oficial</td></tr>
+</tbody>
+</table>
+<p>A prova teve cerca de 16 mil inscritos, 55% deles de fora de Curitiba, com atletas de outros estados e de mais de 20 países. A largada foi às 5h, na Praça Nossa Senhora de Salete, no Centro Cívico, com percursos de 42, 21, 10 e 5 km.</p>
 
 <h2>Como consultar o seu resultado</h2>
 <p>O resultado individual, com o tempo líquido pelo chip, sai no site oficial da prova e na cronometragem depois da chegada. Quer saber que pace sustentar na próxima? Veja a tabela de pace em <a href="/blog/maratona-de-curitiba-2026">Maratona de Curitiba 2026</a>.</p>
 
-<h2>Quando é a Maratona de Curitiba 2026?</h2>
-<p><strong>Domingo, 15 de novembro de 2026</strong>, com provas de 5, 10, 21 e 42 km e largada no Centro Cívico. Na edição anterior, a prova reuniu 16,2 mil corredores.</p>
+<h2>Quando foi a Maratona de Curitiba 2026?</h2>
+<p><strong>Domingo, 15 de novembro de 2026</strong>, com provas de 5, 10, 21 e 42 km e largada no Centro Cívico.</p>
 
 <h2>Não se compare</h2>
 <p>Quem sobe ao pódio tem a própria genética, rotina e história, com altos e baixos. O que importa para você é encontrar um treino que dê para seguir pelo resto da vida, com aderência e progressão. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
@@ -40,9 +49,12 @@ export const MARATONA_CURITIBA_2026_POSTS: BlogPost[] = [
 <ul>
 <li><a href="https://maratonadecuritiba.com.br/" target="_blank" rel="noopener noreferrer">Santander Maratona de Curitiba — site oficial</a></li>
 <li><a href="https://www.curitiba.pr.gov.br/noticias/maratona-de-curitiba-esta-com-inscricoes-abertas-e-espera-publico-internacional/84225" target="_blank" rel="noopener noreferrer">Prefeitura de Curitiba</a></li>
+<li><a href="https://www.instagram.com/maratonadecuritibaoficial/" target="_blank" rel="noopener noreferrer">Instagram oficial da Maratona de Curitiba</a> (campeão e tempo, 15/11/2026)</li>
+<li><a href="https://www.bemparana.com.br/noticias/parana/maratona-de-curitiba-reune-16-mil-atletas-e-termina-com-campeao-batendo-recorde/" target="_blank" rel="noopener noreferrer">Bem Paraná, 15/11/2026</a></li>
 </ul>`,
     faq: [
-      { question: "Quem ganhou a Maratona de Curitiba 2026?", answer: "A prova acontece no domingo, 15 de novembro de 2026. Os vencedores entram nesta página assim que o resultado oficial for divulgado." },
+      { question: "Quem ganhou a Maratona de Curitiba 2026?", answer: "Nos 42 km masculino, o marroquino Aziz Ait, com 2h13min24s, novo recorde da prova. As outras categorias entram nesta página quando o resultado oficial for publicado." },
+      { question: "Qual o recorde da Maratona de Curitiba?", answer: "No masculino, 2h13min24s, de Aziz Ait, em 15 de novembro de 2026. O recorde anterior era de Ederson Vilela, com 2h15min13s em 2025." },
       { question: "Onde vejo meu resultado da Maratona de Curitiba?", answer: "No site oficial da prova e na cronometragem, depois da chegada, com o tempo líquido pelo chip." },
     ],
   },
