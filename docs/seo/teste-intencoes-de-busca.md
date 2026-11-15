@@ -1588,3 +1588,12 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `maca-engorda`: fuji e argentina com casca pela TACO, unidade/fatia/porção pelo IBGE. Maçã verde e suco: sem valor na base.
 - Ferramenta: cartão de link da Calculadora de Déficit e ficha de alimento nos três.
 - Pendente: prints do Google (ou export do Answer the Public) dos três termos.
+
+## 2026-11-15 — Sem prints: rosca alternada, remada cavalinho e desenvolvimento Arnold
+
+- Pedido do Montinho: "pode criar os 3 sem os prints" (musculação). Volumes do Planejador (Brasil): "rosca alternada" 74.000/mês, "remada cavalinho" 49.500, "desenvolvimento arnold" 40.500.
+- Canibalização: a primeira proposta (cadeira abdutora 201.000 e tríceps francês 135.000) já tinha artigo, `como-fazer-abducao-quadril-maquina` e `como-fazer-french-press`, com slug sem a palavra buscada. A checagem passa a cruzar o mapa de treino (`lib/treino/mapa.ts`), que liga cada exercício ao seu artigo. Descartados também: elevação pélvica (hip thrust), peck deck (voador), remada serrote (unilateral), agachamento hack, abdominal infra (abdômen inferior) e terra romeno (perto demais dos dois de stiff).
+- Os três num arquivo só (`lib/rosca-cavalinho-arnold.ts`). Sem número de estudo. Os ids `rosca-alternada`, `remada-cavalinho` e `desenvolvimento-arnold` do mapa de treino passam a apontar para eles.
+- Ferramenta: comparador embutido (rosca alternada x rosca direta; remada cavalinho x remada curvada; Arnold x desenvolvimento com halteres).
+- Capas tipográficas feitas no próprio repositório (Kairogen sem créditos), no padrão creme/vermelho/mostarda.
+- Pendente: prints do Google (ou export do Answer the Public) dos três termos. Próximo da fila: graviton (14.800/mês).

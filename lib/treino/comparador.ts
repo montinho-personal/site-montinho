@@ -418,6 +418,9 @@ export const ARTIGOS_COM_COMPARADOR: Record<string, [string, string]> = {
   "remada-alta": ["remada-alta", "elevacao-lateral"],
   "rosca-scott": ["rosca-scott", "rosca-direta"],
   "panturrilha-em-pe-vs-sentada": ["panturrilha-em-pe", "panturrilha-sentado"],
+  "rosca-alternada": ["rosca-alternada", "rosca-direta"],
+  "remada-cavalinho": ["remada-cavalinho", "remada-curvada"],
+  "desenvolvimento-arnold": ["desenvolvimento-arnold", "desenvolvimento-halter"],
 };
 
 // ── Pergunte ao Montinho ──────────────────────────────────────────────────
