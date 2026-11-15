@@ -84,6 +84,18 @@ export const FICHAS_POR_ARTIGO: Record<string, FichaDeArtigo> = {
     alimentos: ["melancia-crua"],
     destaque: "carboidrato",
   },
+  "feijao-engorda": {
+    alimentos: ["feijao-carioca-cozido", "feijao-preto-cozido"],
+    destaque: "fibra",
+  },
+  "pao-de-queijo-engorda": {
+    alimentos: ["pao-de-queijo-assado"],
+    destaque: "lipideos",
+  },
+  "maca-engorda": {
+    alimentos: ["maca-fuji-com-casca-crua"],
+    destaque: "carboidrato",
+  },
   "amendoim-engorda": {
     alimentos: ["amendoim-torrado-salgado", "amendoim-grao-cru"],
     destaque: "lipideos",
