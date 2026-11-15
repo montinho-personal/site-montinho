@@ -520,4 +520,10 @@ export const ARTIGOS_COM_LINK_VOLUME: string[] = [
   "quantos-exercicios-por-musculo",
   /* "Perna 2 ou 3 vezes": a frequência é o jeito de distribuir as séries da semana. */
   "treinar-perna-2-ou-3-vezes-por-semana",
+  /* Checklist da ficha (15/11/2026): a primeira pergunta é quantas séries
+     cada músculo recebe na semana, e a calculadora faz essa conta. */
+  "como-saber-se-a-ficha-de-treino-e-boa",
+  /* ABC x upper/lower: a divisão só importa pelo volume e pela frequência
+     que ela dá a cada músculo. */
+  "treino-abc-ou-upper-lower",
 ];

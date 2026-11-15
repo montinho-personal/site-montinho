@@ -1597,3 +1597,12 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - Ferramenta: comparador embutido (rosca alternada x rosca direta; remada cavalinho x remada curvada; Arnold x desenvolvimento com halteres).
 - Capas tipográficas feitas no próprio repositório (Kairogen sem créditos), no padrão creme/vermelho/mostarda.
 - Pendente: prints do Google (ou export do Answer the Public) dos três termos. Próximo da fila: graviton (14.800/mês).
+
+## 2026-11-15 — Sem prints: 8 artigos da lista de pautas (consultoria online e dúvidas de treino)
+
+- Pedido do Montinho: lista de 40 perguntas; "pode criar, depois mando os prints". Checagem de canibalização (sem acento e sem hífen, slug, título e páginas de `app/`): 22 já tinham artigo, 9 viram seção de artigo existente (online para emagrecer, hipertrofia, iniciante, vídeos, correção, tempo de resultado e app → `personal-trainer-online-como-funciona`; online barato → `quanto-custa-consultoria-online-de-treino`; como escolher consultoria → `como-escolher-um-bom-personal-trainer`), ainda não feitas.
+- Novos: `consultoria-online-ou-personal-presencial`, `avaliacao-fisica-consultoria-online`, `personal-online-smart-fit` (`lib/consultoria-online-duvidas.ts`); `treinar-sozinho-na-academia-da-resultado`, `como-saber-se-a-ficha-de-treino-e-boa`, `treino-abc-ou-upper-lower`, `musculacao-para-emagrecer-quantas-vezes-por-semana` (junta "emagrecer treinando 3 vezes por semana"), `como-saber-se-o-treino-esta-funcionando` (`lib/treino-duvidas.ts`).
+- O que a consultoria inclui sai de `/consultoria-online`; sem preço. Smart Fit só como lugar onde o aluno da consultoria treina; presencial segue a regra de locais. Volume e frequência com os números que o site já usa, com link.
+- Ferramenta: link de Volume (ficha, ABC x upper/lower), link de Déficit (quantas vezes para emagrecer), link de 1RM (treino funcionando); os outros quatro em `ARTIGOS_SEM_FERRAMENTA` com o motivo.
+- Capas tipográficas feitas no repositório (Kairogen sem créditos).
+- Pendente: prints do Google (ou export do Answer the Public) dos oito temas.

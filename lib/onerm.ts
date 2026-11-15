@@ -380,4 +380,8 @@ export const ARTIGOS_COM_LINK_1RM: string[] = [
   "como-fazer-levantamento-terra-corretamente",
   "como-fazer-desenvolvimento-ombros",
   "como-fazer-remada-curvada-tecnica",
+  /* "Treino está funcionando?": o sinal mais confiável é a força subindo, e
+     o 1RM estimado deixa comparar cargas e repetições diferentes ao longo
+     dos meses. Link, não embed: o artigo é sobre sinais, não sobre carga. */
+  "como-saber-se-o-treino-esta-funcionando",
 ];
