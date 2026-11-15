@@ -20575,7 +20575,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       },
       { question: "Personal no condomínio em Alphaville atende idosos?", answer: "Atende. Na academia do condomínio, o idoso treina perto de casa e num ambiente tranquilo. O treino prioriza força, equilíbrio e mobilidade, respeitando as limitações de cada um." },
       { question: "Tem aula experimental no condomínio em Alphaville?", answer: "Tem, e é gratuita. Marcamos pelo WhatsApp e a aula acontece no espaço fitness do seu condomínio, com o equipamento que você vai usar." },
-      { question: "Como verificar as credenciais do personal antes de contratar?", answer: "Peça o número de registro no CREF: pela Lei nº 9.696/1998, orientar exercício é atividade do profissional de Educação Física registrado. Muitos condomínios pedem esse registro para liberar o acesso de personal externo." },
+      { question: "Como verificar as credenciais do personal antes de contratar?", answer: "Pergunte sobre a formação em Educação Física: pela Lei nº 9.696/1998, orientar exercício é atividade do profissional de Educação Física. Muitos condomínios pedem essa comprovação para liberar o acesso de personal externo." },
     ],
     faqSchema: [
       { question: "O que faz um personal trainer?", answer: "Um personal trainer avalia o condicionamento físico, define objetivos realistas, prescreve e supervisiona treinos individualizados e acompanha a evolução ao longo do tempo. O acompanhamento profissional aumenta significativamente a adesão e os resultados." },
@@ -82026,7 +82026,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Preciso ter química com o personal trainer?", answer: "Sim — você passará horas por semana com essa pessoa. Estilo de comunicação incompatível é uma das maiores causas de abandono. Use a aula experimental para testar a relação, não só o treino." },
       { question: "Personal pode me passar dieta e suplementos?", answer: "Dieta é atribuição de nutricionista. Um bom personal orienta hábitos gerais e encaminha para os profissionais certos. Quem oferece atalhos farmacológicos deve ser descartado imediatamente." },
       { question: "E se eu não puder pagar sessões presenciais frequentes?", answer: "Considere o formato compartilhado (duplas/trios) ou a consultoria online, que entrega plano individualizado e ajustes contínuos por um investimento menor que o presencial exclusivo." },
-      { question: "Como escolher a melhor consultoria de treino online?", answer: "Veja se o treino é montado para você, se a execução é corrigida por vídeo, com que frequência e com base em quê o plano é revisto, e se o contato é direto com o profissional. Confira o registro no CREF e desconfie de promessa de resultado em prazo fixo." },
+      { question: "Como escolher a melhor consultoria de treino online?", answer: "Veja se o treino é montado para você, se a execução é corrigida por vídeo, com que frequência e com base em quê o plano é revisto, e se o contato é direto com o profissional. Confira a formação em Educação Física e desconfie de promessa de resultado em prazo fixo." },
     ],
   },
   {
@@ -87681,7 +87681,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <li><strong>Alguém olha a sua execução?</strong> Sem vídeo e sem correção, você paga para repetir o erro.</li>
 <li><strong>O que acontece quando a carga para de subir?</strong> Se a resposta é "no próximo mês vem outro treino", não existe ajuste, existe troca de planilha.</li>
 <li><strong>Dá para falar com o profissional?</strong> Ou só com um robô, um grupo ou um atendente?</li>
-<li><strong>Tem registro no CREF?</strong> Peça e confira.</li>
+<li><strong>Tem formação em Educação Física?</strong> Pergunte e confira.</li>
 <li><strong>Promete resultado em prazo fixo?</strong> Desconfie.</li>
 </ul>
 <p>Se as respostas forem boas, o barato pode valer. Se forem vagas, o barato custa os meses em que você treina sem sair do lugar. Para comparar com o presencial, veja <a href="/blog/consultoria-online-ou-personal-presencial">consultoria online ou personal presencial</a>.</p>
@@ -87708,7 +87708,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Consultoria online é mais barata que personal presencial?", answer: "Sim, na maioria dos casos. Sem deslocamento e sem horário exclusivo, o custo por aluno cai — mantendo o treino individualizado e o acompanhamento a distância." },
       { question: "O que devo exigir de uma consultoria online?", answer: "Avaliação inicial detalhada, treino adaptado à sua estrutura, ajustes periódicos e canal de suporte para dúvidas e correção de execução. Sem isso, é só planilha genérica." },
       { question: "Como contratar a consultoria do Montinho?", answer: "Solicite uma proposta pelo WhatsApp na página de contato ou conheça a página da consultoria. O plano é montado conforme seu objetivo, rotina e orçamento." },
-      { question: "Personal trainer online barato vale a pena?", answer: "Pode valer, se o preço baixo não vier de tirar o essencial: treino montado para você, correção da execução por vídeo, ajuste quando a carga trava e contato direto com o profissional. Confira também o registro no CREF e desconfie de promessa de resultado em prazo fixo." },
+      { question: "Personal trainer online barato vale a pena?", answer: "Pode valer, se o preço baixo não vier de tirar o essencial: treino montado para você, correção da execução por vídeo, ajuste quando a carga trava e contato direto com o profissional. Confira também a formação em Educação Física e desconfie de promessa de resultado em prazo fixo." },
     ],
   },
   {
@@ -119371,14 +119371,14 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
     updatedAt: "2026-10-08",
     readTime: "6 min",
     author: "Montinho",
-    tags: ["personal trainer", "instrutor de academia", "professor de academia", "CREF", "Educação Física", "academia"],
+    tags: ["personal trainer", "instrutor de academia", "professor de academia", "Educação Física", "academia"],
     faq: [
       { question: "Um instrutor de academia é o mesmo que personal trainer?", answer: "Não. Os dois são profissionais de Educação Física, mas o instrutor atende todos os alunos do salão ao mesmo tempo e já está incluído na mensalidade, enquanto o personal trainer é contratado à parte para acompanhar uma pessoa durante todo o treino." },
       { question: "Qual a diferença entre instrutor e personal trainer?", answer: "A atenção e quem paga por ela. O instrutor monta ou revisa a ficha, tira dúvidas e corrige quem está perto, dividido entre muitos alunos. O personal acompanha cada série de uma pessoa, escolhe a carga na hora e ajusta o plano conforme ela responde." },
-      { question: "Instrutor de academia precisa ser formado?", answer: "Sim. A Lei nº 9.696/1998 diz que o exercício das atividades de Educação Física é prerrogativa de quem está registrado no Conselho Regional de Educação Física (CREF), e o registro exige diploma de curso superior de Educação Física (ou as exceções previstas na própria lei). Vale para o instrutor e para o personal." },
-      { question: "Personal trainer precisa de faculdade?", answer: "Precisa. Personal trainer é um profissional de Educação Física e, pela Lei nº 9.696/1998, precisa estar registrado no CREF, o que exige diploma de curso superior de Educação Física reconhecido pelo MEC, salvo as exceções da própria lei." },
+      { question: "Instrutor de academia precisa ser formado?", answer: "Sim. A Lei nº 9.696/1998 diz que o exercício das atividades de Educação Física é prerrogativa dos profissionais de Educação Física registrados, e o registro exige diploma de curso superior de Educação Física (ou as exceções previstas na própria lei). Vale para o instrutor e para o personal." },
+      { question: "Personal trainer precisa de faculdade?", answer: "Precisa. Personal trainer é um profissional de Educação Física e, pela Lei nº 9.696/1998, precisa ter o registro profissional, o que exige diploma de curso superior de Educação Física reconhecido pelo MEC, salvo as exceções da própria lei." },
       { question: "Instrutor de academia é professor?", answer: "No dia a dia, sim: é comum chamar o instrutor de \"professor\". O nome que a lei usa para os dois é Profissional de Educação Física." },
-      { question: "Qual a diferença entre coach e personal trainer?", answer: "\"Coach\" não é uma profissão definida em lei e é usado para muita coisa, de mentoria de hábitos a consultoria online. Personal trainer é o profissional de Educação Física que planeja e acompanha o seu treino. Se a pessoa vai prescrever e orientar exercício, a lei pede registro no CREF, qualquer que seja o nome no cartão." },
+      { question: "Qual a diferença entre coach e personal trainer?", answer: "\"Coach\" não é uma profissão definida em lei e é usado para muita coisa, de mentoria de hábitos a consultoria online. Personal trainer é o profissional de Educação Física que planeja e acompanha o seu treino. Se a pessoa vai prescrever e orientar exercício, a lei pede um profissional de Educação Física registrado, qualquer que seja o nome no cartão." },
       { question: "Vale a pena pagar um personal se a academia já tem instrutor?", answer: "Depende de quanto atenção você precisa. Se você já sabe executar os exercícios e só precisa de uma ficha atualizada de tempos em tempos, o instrutor resolve. Se a carga parou de subir, se aparece dor, se você está começando ou vive faltando, ter alguém acompanhando cada treino costuma fazer diferença." },
       { question: "Quanto custa um personal trainer?", answer: "Varia com a cidade, o local do treino (academia, condomínio ou casa), a frequência semanal e o tipo de plano. Algumas academias ainda cobram taxa de personal externo. O instrutor, por outro lado, já vem incluído na mensalidade." },
     ],
@@ -119398,7 +119398,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <tr><td><strong>Treino</strong></td><td>Ficha montada ou revisada de tempos em tempos</td><td>Plano ajustado conforme você responde</td></tr>
 <tr><td><strong>Durante a série</strong></td><td>Corrige quando vê ou quando você chama</td><td>Acompanha cada série e escolhe a carga na hora</td></tr>
 <tr><td><strong>Onde</strong></td><td>No salão da academia onde trabalha</td><td>Academia, condomínio, casa ou online</td></tr>
-<tr><td><strong>Formação</strong></td><td colspan="2">Profissional de Educação Física com registro no CREF (Lei nº 9.696/1998)</td></tr>
+<tr><td><strong>Formação</strong></td><td colspan="2">Profissional de Educação Física com registro profissional (Lei nº 9.696/1998)</td></tr>
 </tbody>
 </table>
 
@@ -119432,7 +119432,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 
 <p>Sim. A <a href="https://www.planalto.gov.br/ccivil_03/leis/l9696.htm" target="_blank" rel="noopener noreferrer">Lei nº 9.696/1998</a> regulamenta a profissão e diz que "o exercício das atividades de Educação Física e a designação de Profissional de Educação Física é prerrogativa dos profissionais regularmente registrados nos Conselhos Regionais de Educação Física".</p>
 
-<p>Para se registrar no CREF, a lei exige, em regra, diploma de curso superior de Educação Física reconhecido pelo MEC — com exceções previstas no próprio texto, como diploma estrangeiro revalidado. Isso vale tanto para o instrutor quanto para o personal.</p>
+<p>Para obter o registro profissional, a lei exige, em regra, diploma de curso superior de Educação Física reconhecido pelo MEC — com exceções previstas no próprio texto, como diploma estrangeiro revalidado. Isso vale tanto para o instrutor quanto para o personal.</p>
 
 <h2>Instrutor de academia é professor?</h2>
 
@@ -119440,7 +119440,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 
 <h2>E o coach, onde entra?</h2>
 
-<p>"Coach" não é uma profissão definida em lei. O termo aparece em mentoria de hábitos, consultoria online, assessoria esportiva e muito mais. O que importa é o que a pessoa faz: se ela vai planejar e orientar o seu treino, a lei pede que seja profissional de Educação Física registrado no CREF, qualquer que seja o nome no perfil.</p>
+<p>"Coach" não é uma profissão definida em lei. O termo aparece em mentoria de hábitos, consultoria online, assessoria esportiva e muito mais. O que importa é o que a pessoa faz: se ela vai planejar e orientar o seu treino, a lei pede que seja profissional de Educação Física registrado, qualquer que seja o nome no perfil.</p>
 
 <h2>Quando o instrutor basta e quando vale um personal</h2>
 
@@ -119878,7 +119878,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
       { question: "Qual aparelho comprar primeiro para a academia do condomínio?", answer: "Halteres com suporte e um banco ajustável. São baratos perto de uma máquina, ocupam pouco espaço e servem para treinar o corpo inteiro, do morador iniciante ao avançado." },
       { question: "Esteira ou bicicleta para academia de condomínio?", answer: "Se só couber um, a esteira costuma ser o mais disputado. A bicicleta ocupa menos espaço, faz menos barulho e serve melhor a quem tem dor no joelho ou está com sobrepeso. Com espaço para dois, tenha os dois." },
       { question: "Que piso usar na academia do condomínio?", answer: "Piso emborrachado próprio para academia, mais grosso na área de pesos livres. Ele protege a laje e o próprio piso da queda de anilhas e halteres e reduz o barulho para os apartamentos de baixo." },
-      { question: "Personal trainer pode dar aula na academia do condomínio?", answer: "Depende do regulamento interno. Muitos condomínios permitem com cadastro do profissional, comprovante de registro no CREF e horários definidos. O ideal é a regra estar escrita, para não virar discussão caso a caso." },
+      { question: "Personal trainer pode dar aula na academia do condomínio?", answer: "Depende do regulamento interno. Muitos condomínios permitem com cadastro do profissional, comprovante de formação em Educação Física e horários definidos. O ideal é a regra estar escrita, para não virar discussão caso a caso." },
       { question: "Como evitar que os aparelhos quebrem?", answer: "Com contrato de manutenção preventiva, regras de uso afixadas e alguém responsável por anotar defeitos. Aparelho parado por meses com placa de 'em manutenção' é o que mais gera reclamação de morador." },
       { question: "Academia de condomínio precisa de professor?", answer: "Não é comum ter professor fixo. O que muitos condomínios fazem é liberar personal externo com regras, ou contratar horários de orientação para os moradores." },
       { question: "Quanto custa uma academia para condomínio?", answer: "Depende de três coisas: quantos aparelhos de cardio entram (são os mais caros e os que mais pedem manutenção), se a sala precisa de obra (piso, ar-condicionado, elétrica) e se o condomínio compra, aluga ou contrata um pacote completo. Peça pelo menos três orçamentos com o mesmo layout e inclua instalação, piso e manutenção na comparação." },
@@ -119991,7 +119991,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <p>Não é comum ter professor fixo, e o morador treina por conta própria. O que muitos condomínios fazem é liberar personal externo com regras, ou contratar horários de orientação para os moradores. Para quem está começando, voltando de lesão ou tem mais idade, treinar com alguém orientando faz diferença: a academia é a mesma, o que muda é saber o que fazer com ela.</p>
 
 <h2>Personal trainer externo: deixe a regra escrita</h2>
-<p>A academia do condomínio funciona melhor quando o regulamento já diz se personal externo pode atender e como: cadastro do profissional, comprovante de registro no CREF, horários e limite de alunos ao mesmo tempo. Sem regra escrita, cada caso vira assembleia.</p>
+<p>A academia do condomínio funciona melhor quando o regulamento já diz se personal externo pode atender e como: cadastro do profissional, comprovante de formação em Educação Física, horários e limite de alunos ao mesmo tempo. Sem regra escrita, cada caso vira assembleia.</p>
 <p>Na prática, é assim que a academia do condomínio mais rende: o morador treina perto de casa, com o equipamento que existe ali, e o profissional adapta o treino ao que o espaço tem. Eu atendo assim em condomínios de Alphaville e Tamboré; veja como funciona em <a href="/personal-trainer-condominio-tambore">personal trainer em condomínio</a>.</p>
 
 <h2>Os erros mais comuns</h2>
@@ -120542,7 +120542,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <li>ele acompanha cada série ou só passa a ficha?</li>
 <li>ajusta o treino quando você falta, viaja ou a carga para de subir?</li>
 <li>faz avaliação no começo e compara a evolução depois?</li>
-<li>tem registro no CREF, como pede a <a href="https://www.planalto.gov.br/ccivil_03/leis/l9696.htm" target="_blank" rel="noopener noreferrer">Lei nº 9.696/1998</a>?</li>
+<li>é profissional de Educação Física, como pede a <a href="https://www.planalto.gov.br/ccivil_03/leis/l9696.htm" target="_blank" rel="noopener noreferrer">Lei nº 9.696/1998</a>?</li>
 </ul>
 
 <p>Se a dúvida é se vale gastar com isso, o artigo <a href="/blog/vale-a-pena-contratar-personal-trainer">personal trainer vale a pena?</a> ajuda a decidir.</p>

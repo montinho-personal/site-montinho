@@ -212,6 +212,14 @@ proteína, calculadoras), desde que não apresentem isso como algo que ele
 prescreve. Ao escrever CTA de consultoria, use "treino", não "treino e
 dieta".
 
+## Não citar CREF nem CONFEF
+
+Regra do Montinho, reforçada em 15/11/2026. Nenhum texto do site cita CREF,
+CONFEF ou "conselho regional/federal", nem como checklist ("peça o
+registro no CREF"). Quando o texto precisa da ideia, use "formação em
+Educação Física" ou "profissional de Educação Física", e a Lei nº
+9.696/1998 pode continuar citada.
+
 ## Locais de atendimento: guia de academia ≠ local confirmado
 
 Atendimento presencial confirmado: **Arena 18**, condomínios e em casa.
