@@ -447,3 +447,10 @@ summary::-webkit-details-marker {
   from { transform: translateY(16px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+
+/* Vitrine de transformações: o range do comparador é invisível, então o foco
+   do teclado aparece no puxador. */
+.vitrine-caixa:has(.vitrine-range:focus-visible) .vitrine-puxador {
+  outline: 3px solid #BA9E50;
+  outline-offset: 3px;
+}
