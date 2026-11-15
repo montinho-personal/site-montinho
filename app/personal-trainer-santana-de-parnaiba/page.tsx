@@ -11,6 +11,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer em Santana de Parnaíba: Planos e Atendimento | Montinho" },
@@ -391,6 +392,17 @@ export default function PersonalTrainerSantanaDeParnaiba() {
         </div>
         <VideoApp variante="presencial" onde="santana-de-parnaiba" />
       </section>
+
+      <VitrineResultados
+        pagina="personal-trainer-santana-de-parnaiba"
+        destaque="elisa-cruz"
+        outros={["natalia-nascimento", "bruna-rodrigues", "adriana-nascimento"]}
+        introducao={
+          <p>
+            Em Santana de Parnaíba, muita gente treina na academia do condomínio ou em casa, com o equipamento que tem. As histórias abaixo mostram o que acontece quando o treino é montado para essa realidade e alguém acompanha a execução, semana após semana, ajustando o que não encaixou.
+          </p>
+        }
+      />
 
       {/* DORES E LIMITAÇÕES */}
       <section className="py-16 border-t border-white/10" style={{ background: "#0d0d0d" }}>

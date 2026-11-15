@@ -8,6 +8,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Academia com Personal Trainer Tamboré | Montinho Personal Trainer" },
@@ -191,6 +192,17 @@ export default function AcademiaPersonalTrainerTambore() {
         <LinkFerramentaRotina slug="academia-com-personal-trainer-tambore" tipo="academia" />
       </div>
 
+
+      <VitrineResultados
+        pagina="academia-com-personal-trainer-tambore"
+        destaque="elisa-cruz"
+        outros={["natalia-nascimento", "bruna-rodrigues", "adriana-nascimento"]}
+        introducao={
+          <p>
+            Ter um personal na academia que você já frequenta muda menos o lugar e mais o jeito de treinar. As histórias abaixo mostram o que a constância, com alguém acompanhando, produziu ao longo de meses.
+          </p>
+        }
+      />
 
       <PacoteFlexivel onde="academia-com-personal-trainer-tambore" />
 

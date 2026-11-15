@@ -8,6 +8,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer Condomínio Tamboré | Montinho Personal Trainer" },
@@ -244,6 +245,17 @@ export default function PersonalTrainerCondomínioTambore() {
         <LinkFerramentaRotina slug="personal-trainer-condominio-tambore" tipo="personal" />
       </div>
 
+
+      <VitrineResultados
+        pagina="personal-trainer-condominio-tambore"
+        destaque="natalia-nascimento"
+        outros={["elisa-cruz", "bruna-rodrigues", "adriana-nascimento"]}
+        introducao={
+          <p>
+            A academia do condomínio costuma ter menos aparelhos do que uma academia comercial, e isso raramente é o problema. O que faz diferença é o plano certo para aquele espaço e alguém acompanhando a evolução. Veja onde a constância levou algumas alunas.
+          </p>
+        }
+      />
 
       <PacoteFlexivel onde="personal-trainer-condominio-tambore" />
 

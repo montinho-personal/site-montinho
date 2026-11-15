@@ -8,6 +8,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer para Iniciantes Tamboré | Montinho Personal Trainer" },
@@ -203,6 +204,17 @@ export default function PersonalTrainerIniciantesTambore() {
         <LinkFerramentaRotina slug="personal-trainer-para-iniciantes-tambore" tipo="personal" />
       </div>
 
+
+      <VitrineResultados
+        pagina="personal-trainer-para-iniciantes-tambore"
+        destaque="elisa-cruz"
+        outros={["natalia-nascimento", "bruna-rodrigues", "adriana-nascimento"]}
+        introducao={
+          <p>
+            Nem todas essas alunas começaram do zero: algumas já treinavam havia anos sem estratégia, outras viviam o efeito sanfona. O que vale também para quem está começando é o ponto em comum: treino montado para o nível em que a pessoa está, com a carga subindo no ritmo dela.
+          </p>
+        }
+      />
 
       <PacoteFlexivel onde="personal-trainer-para-iniciantes-tambore" />
 

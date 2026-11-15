@@ -11,6 +11,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer em Barueri: Planos e Atendimento | Montinho" },
@@ -513,6 +514,17 @@ export default function PersonalTrainerBarueri() {
           </div>
         </div>
       </section>
+
+      <VitrineResultados
+        pagina="personal-trainer-barueri"
+        destaque="natalia-nascimento"
+        outros={["elisa-cruz", "bruna-rodrigues", "adriana-nascimento"]}
+        introducao={
+          <p>
+            Para quem mora em Barueri, o treino costuma ter de caber entre o trânsito da Castello e o horário do escritório. Nenhuma das histórias abaixo seguiu uma ficha pronta: o plano foi montado para a rotina de cada pessoa e ajustado quando ela mudou, quando a carga parou de subir ou quando uma semana saiu do previsto.
+          </p>
+        }
+      />
 
       {/* DORES E LIMITAÇÕES */}
       <section className="py-16 border-t border-white/10 bg-black">

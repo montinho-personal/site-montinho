@@ -8,6 +8,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer Feminino Tamboré | Montinho Personal Trainer" },
@@ -191,6 +192,17 @@ export default function PersonalTrainerFemininoTambore() {
         <LinkFerramentaRotina slug="personal-trainer-feminino-tambore" tipo="personal" />
       </div>
 
+
+      <VitrineResultados
+        pagina="personal-trainer-feminino-tambore"
+        destaque="natalia-nascimento"
+        outros={["bruna-rodrigues", "elisa-cruz", "adriana-nascimento"]}
+        introducao={
+          <p>
+            São mulheres que já tinham tentado antes: efeito sanfona, métodos que prometiam pressa, anos de academia sem estratégia. O que mudou foi um plano feito para a vida que cada uma levava, e alguém ajustando o caminho quando a semana não saía como o previsto.
+          </p>
+        }
+      />
 
       <PacoteFlexivel onde="personal-trainer-feminino-tambore" />
 

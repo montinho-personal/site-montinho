@@ -8,6 +8,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal Trainer no Tamboré | Montinho Personal Trainer" },
@@ -205,6 +206,17 @@ export default function PersonalTrainerEmTambore() {
         <LinkFerramentaRotina slug="personal-trainer-em-tambore" tipo="personal" />
       </div>
 
+
+      <VitrineResultados
+        pagina="personal-trainer-em-tambore"
+        destaque="elisa-cruz"
+        outros={["natalia-nascimento", "bruna-rodrigues", "adriana-nascimento"]}
+        introducao={
+          <p>
+            Cada aluno chega com uma rotina, um histórico e um objetivo diferentes. As histórias abaixo não seguiram a mesma ficha: o treino foi montado para o ponto de partida de cada uma e ajustado ao longo dos meses.
+          </p>
+        }
+      />
 
       <PacoteFlexivel onde="personal-trainer-em-tambore" />
 

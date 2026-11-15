@@ -7,6 +7,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Quanto Custa Personal Trainer Tamboré | Montinho Personal Trainer" },
@@ -231,6 +232,17 @@ export default function QuantoCustaPersonalTrainerTambore() {
         <LinkFerramentaRotina slug="quanto-custa-personal-trainer-tambore" tipo="personal" />
       </div>
 
+
+      <VitrineResultados
+        pagina="quanto-custa-personal-trainer-tambore"
+        destaque="natalia-nascimento"
+        outros={["elisa-cruz", "bruna-rodrigues", "adriana-nascimento"]}
+        introducao={
+          <p>
+            Antes de comparar valores, vale ver o que o investimento rendeu para quem manteve o acompanhamento. Estas são histórias reais de alunas, com o resultado de cada uma e, quando registrado, o tempo de acompanhamento.
+          </p>
+        }
+      />
 
       <PacoteFlexivel onde="quanto-custa-personal-trainer-tambore" />
 

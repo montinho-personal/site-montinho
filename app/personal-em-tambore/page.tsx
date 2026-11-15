@@ -8,6 +8,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Personal no Tamboré | Montinho Personal Trainer" },
@@ -213,6 +214,17 @@ export default function PersonalEmTambore() {
         <LinkFerramentaRotina slug="personal-em-tambore" tipo="personal" />
       </div>
 
+
+      <VitrineResultados
+        pagina="personal-em-tambore"
+        destaque="bruna-rodrigues"
+        outros={["natalia-nascimento", "elisa-cruz", "adriana-nascimento"]}
+        introducao={
+          <p>
+            Personal no Tamboré não é só ter alguém contando repetições. É alguém que percebe quando você faltou a semana inteira, quando a carga parou de subir ou quando um exercício não encaixou, e muda o plano a tempo. Foi assim com as histórias abaixo.
+          </p>
+        }
+      />
 
       <PacoteFlexivel onde="personal-em-tambore" />
 

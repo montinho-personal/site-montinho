@@ -37,6 +37,8 @@ export default function VitrineResultados({
   outros,
   limite = 3,
   mensagemWhatsApp = "Olá, Montinho! Vi os resultados dos seus alunos no site e queria saber como funciona o acompanhamento.",
+  cta,
+  semSaidas = false,
 }: {
   /** Identificador da página: vai no rastreio e no data-cta-id do botão. */
   pagina: string;
@@ -46,6 +48,10 @@ export default function VitrineResultados({
   outros?: string[];
   limite?: number;
   mensagemWhatsApp?: string;
+  /** Substitui o botão padrão (ex.: o LpCta das landing pages, que tem rastreio próprio). */
+  cta?: React.ReactNode;
+  /** Landing page de anúncio: sem link para /resultados nem /consultoria. */
+  semSaidas?: boolean;
 }) {
   const principal = COM_FOTOS.find((r) => r.slug === destaque) ?? COM_FOTOS[0];
   if (!principal?.vitrine) return null;
@@ -157,6 +163,7 @@ export default function VitrineResultados({
           </div>
         )}
 
+        {!semSaidas && (
         <p className="mt-8">
           <Link
             href="/resultados"
@@ -166,6 +173,7 @@ export default function VitrineResultados({
             Ver todas as transformações e histórias
           </Link>
         </p>
+        )}
 
         {/* Não se compare + CTA */}
         <div className="mt-14 grid gap-10 lg:grid-cols-2 items-start">
@@ -176,9 +184,13 @@ export default function VitrineResultados({
               </p>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
                 {compAntes}
-                <Link href="/consultoria" className="text-white underline underline-offset-4 hover:text-gray-300">
-                  acompanhamento personalizado
-                </Link>
+                {semSaidas ? (
+                  "acompanhamento personalizado"
+                ) : (
+                  <Link href="/consultoria" className="text-white underline underline-offset-4 hover:text-gray-300">
+                    acompanhamento personalizado
+                  </Link>
+                )}
                 {compDepois}
               </p>
             </aside>
@@ -190,6 +202,7 @@ export default function VitrineResultados({
             <p className="mt-3 text-gray-300 leading-relaxed">
               Conheça o acompanhamento personalizado do Montinho e descubra uma estratégia de treino adaptada à sua realidade.
             </p>
+            {cta ? <div className="mt-6" data-vitrine-acao="cta">{cta}</div> : (
             <a
               href={getWhatsAppUrl(mensagemWhatsApp)}
               data-wa-origem="vitrine"
@@ -201,6 +214,7 @@ export default function VitrineResultados({
             >
               Quero começar minha transformação
             </a>
+            )}
             <p className="mt-4 text-xs text-gray-400">
               Resultados individuais: cada pessoa tem o próprio ponto de partida e o próprio ritmo. Nenhum resultado é garantido.
             </p>

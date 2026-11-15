@@ -8,6 +8,7 @@ import LinkFerramentaRotina from "@/components/rotina/LinkFerramentaRotina";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
 import PacoteFlexivel from "@/components/servicos/PacoteFlexivel";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 export const metadata: Metadata = {
   title: { absolute: "Melhor Personal Trainer Tamboré | Montinho Personal Trainer" },
@@ -190,6 +191,17 @@ export default function MelhorPersonalTrainerTambore() {
         <LinkFerramentaRotina slug="melhor-personal-trainer-tambore" tipo="personal" />
       </div>
 
+
+      <VitrineResultados
+        pagina="melhor-personal-trainer-tambore"
+        destaque="natalia-nascimento"
+        outros={["elisa-cruz", "bruna-rodrigues", "adriana-nascimento"]}
+        introducao={
+          <p>
+            A melhor forma de avaliar um personal é ver o que aconteceu com quem treinou com ele. Estas são histórias reais, com fotos reais, de alunas que treinaram comigo.
+          </p>
+        }
+      />
 
       <PacoteFlexivel onde="melhor-personal-trainer-tambore" />
 

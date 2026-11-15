@@ -5,6 +5,7 @@ import { BORDOES } from "@/lib/bordoes";
 import LpCta, { LpCtaFixa } from "@/components/lp/LpCta";
 import VideoRecomecar from "@/components/video/VideoRecomecar";
 import VideoApp from "@/components/video/VideoApp";
+import VitrineResultados from "@/components/resultados/VitrineResultados";
 
 /**
  * Landing page de anúncio (Google Ads) — personal presencial em Alphaville
@@ -62,11 +63,6 @@ const LOCAIS = [
   { t: "Academia do seu condomínio", d: "É onde treina boa parte dos meus alunos. Monto o treino com o equipamento que existe ali — e o que falta, a gente resolve com criatividade e técnica." },
   { t: "A academia onde você já treina", d: "Não precisa mudar de lugar nem cancelar plano. Eu vou até onde a sua rotina já acontece." },
   { t: "Na sua casa", d: "Com o espaço e o equipamento disponíveis. Funciona melhor do que a maioria imagina quando o treino é bem montado." },
-];
-const RESULTADOS = [
-  { nome: "Bruna Rodrigues", r: "−22 kg", foto: "/antes-depois-montinho-personal-trainer-alphaville-sp.jpg", t: "Durante anos viveu entre começar e recomeçar. Montamos um plano para a vida que ela levava, e a constância substituiu a culpa." },
-  { nome: "Elisa Cruz", r: "−20 kg", foto: "/antes-depois-montinho-personal-trainer-4.jpg", t: "“Pela primeira vez consegui manter a consistência e ver resultados de verdade.”" },
-  { nome: "Natália Nascimento", r: "−13 kg", foto: "/antes-depois-natalia-montinho-personal.webp", t: "“Percebi que não precisava treinar mais, e sim treinar com estratégia.”" },
 ];
 const PASSOS = [
   { n: "1", t: "Você me chama no WhatsApp", d: "Eu mesmo respondo. Sem robô e sem formulário." },
@@ -195,21 +191,20 @@ export default function LpPersonalAlphaville() {
         <div className="mt-8"><LpCta label="Ver se atendo no meu condomínio" message={MSG_LOCAL} posicao="onde_atendo" lp={LP} /></div>
       </section>
 
-      {/* RESULTADOS */}
-      <section className="border-y border-white/10" style={{ background: "#0d0d0d" }}>
-        <div className="mx-auto max-w-5xl px-5 py-14 sm:py-20">
-          <Titulo>Resultados de quem parou de treinar sozinho</Titulo>
-          <p className="mt-2 text-sm text-gray-400">Alunos reais, resultados reais. Cada corpo responde no seu tempo: isto é o que aconteceu com eles, não uma promessa para você.</p>
-          <div className="mt-8 grid gap-6 sm:grid-cols-3">
-            {RESULTADOS.map((r) => (
-              <figure key={r.nome} className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <Image src={r.foto} alt={`Antes e depois: ${r.nome}, ${r.r}`} width={600} height={600} loading="lazy" className="aspect-square w-full object-cover" sizes="(max-width: 640px) 100vw, 33vw" />
-                <figcaption className="p-4"><div className="text-2xl font-bold">{r.r}</div><div className="text-sm text-gray-300">{r.nome} · treino presencial</div><p className="mt-2 text-sm text-gray-400">{r.t}</p></figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/*
+        RESULTADOS — vitrine com comparador (components/resultados). Sem
+        rotas de fuga: semSaidas tira os links para /resultados e
+        /consultoria, e o botão é o LpCta desta landing, com o mesmo rastreio
+        dos outros CTAs.
+      */}
+      <VitrineResultados
+        pagina="lp-personal-alphaville"
+        destaque="natalia-nascimento"
+        outros={["bruna-rodrigues", "elisa-cruz"]}
+        semSaidas
+        introducao={<p>Alunos reais, resultados reais. Cada corpo responde no seu tempo: isto é o que aconteceu com eles, não uma promessa para você.</p>}
+        cta={<LpCta label="Quero começar minha transformação" message={MSG_MEIO} posicao="vitrine" lp={LP} />}
+      />
 
       {/* AVALIAÇÕES */}
       <section className="mx-auto max-w-5xl px-5 py-14 sm:py-20">
