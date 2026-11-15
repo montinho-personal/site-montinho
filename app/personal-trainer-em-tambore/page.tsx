@@ -131,7 +131,7 @@ export default function PersonalTrainerEmTambore() {
                 Conheço Tamboré de dentro. A rotina de condomínio, os horários do trânsito para São Paulo, as academias da região, os estilos de vida de quem vive aqui. Quando monto um protocolo de treino, estou pensando na realidade de quem acorda às 6h, entra no carro às 7h e ainda quer ter energia no fim do dia.
               </p>
               <p>
-                Sou formado em Educação Física, com pós-graduação e mais de duas décadas de prática com alunos reais — executivos, mães, profissionais liberais, pessoas com histórico de lesão e de sedentarismo. O que aprendi ao longo desse tempo é que resultado exige método, método exige individualização e individualização exige conhecer a pessoa.
+                Tenho formação, pós-graduação e mais de duas décadas de prática com alunos reais — executivos, mães, profissionais liberais, pessoas com histórico de lesão e de sedentarismo. O que aprendi ao longo desse tempo é que resultado exige método, método exige individualização e individualização exige conhecer a pessoa.
               </p>
               <p>
                 Antes de ser personal trainer, fui aluno frustrado. Convivi com excesso de peso, tentei métodos que não funcionavam e entendi na pele o que é querer resultado e não ter direção. Essa experiência moldou minha forma de trabalhar — com empatia e sem atalhos.

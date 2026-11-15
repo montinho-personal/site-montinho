@@ -126,7 +126,7 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
 
 <h2>O que avaliar antes de contratar qualquer um dos dois</h2>
 <ul>
-<li><strong>Formação em Educação Física.</strong> Pergunte e confira.</li>
+<li><strong>Formação e história de vida.</strong> Pergunte sobre as duas.</li>
 <li><strong>Plano feito para você.</strong> Ficha igual para todo mundo não é acompanhamento, seja online ou presencial.</li>
 <li><strong>Como a execução é corrigida.</strong> No online, pergunte se ele assiste aos seus vídeos e como devolve a correção.</li>
 <li><strong>O que acontece quando a carga para de subir.</strong> A resposta mostra se existe ajuste ou só entrega de ficha.</li>
@@ -340,7 +340,7 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
 
 <h2>O que avaliar antes de contratar</h2>
 <ul>
-<li>Formação em Educação Física.</li>
+<li>Formação e história de vida do profissional.</li>
 <li>Plano montado com os aparelhos da sua unidade, não uma ficha genérica.</li>
 <li>Correção da execução por vídeo.</li>
 <li>Ajuste quando a carga trava ou a sua semana muda.</li>

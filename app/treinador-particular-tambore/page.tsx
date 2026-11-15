@@ -29,7 +29,7 @@ const faq = [
   {
     question: "Qual a diferença entre treinador particular e personal trainer no Tamboré?",
     answer:
-      "São essencialmente a mesma coisa. O termo 'treinador particular' é usado popularmente para descrever um profissional de educação física que atende de forma exclusiva e individualizada — o que corresponde exatamente à função do personal trainer. O que importa é a qualificação do profissional, o método aplicado e os resultados que entrega.",
+      "São essencialmente a mesma coisa. O termo 'treinador particular' é usado popularmente para descrever um profissional que atende de forma exclusiva e individualizada — o que corresponde exatamente à função do personal trainer. O que importa é a qualificação do profissional, o método aplicado e os resultados que entrega.",
   },
   {
     question: "Treinador particular no Tamboré atende em academia ou a domicílio?",

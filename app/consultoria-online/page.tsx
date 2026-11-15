@@ -151,7 +151,7 @@ const faqLp = [
   },
   {
     q: "É seguro contratar um personal trainer online?",
-    a: "É, quando dá para saber com quem você está falando. Confira a formação em Educação Física, converse antes de pagar, veja se o plano vem com correção da execução por vídeo e desconfie de promessa de resultado em prazo fixo.",
+    a: "É, quando dá para saber com quem você está falando. Pergunte sobre a formação e a história de vida do profissional, converse antes de pagar, veja se o plano vem com correção da execução por vídeo e desconfie de promessa de resultado em prazo fixo.",
   },
 ];
 
