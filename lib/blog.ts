@@ -129,6 +129,7 @@ import { FEIJAO_PAODEQUEIJO_MACA_POSTS } from "./feijao-paodequeijo-maca";
 import { ROSCA_CAVALINHO_ARNOLD_POSTS } from "./rosca-cavalinho-arnold";
 import { CONSULTORIA_ONLINE_DUVIDAS_POSTS } from "./consultoria-online-duvidas";
 import { TREINO_DUVIDAS_POSTS } from "./treino-duvidas";
+import { EFEITO_AFTERBURN_POSTS } from "./efeito-afterburn";
 import { DOR_NO_TREINO_POSTS } from "./dor-no-treino";
 import { CONDOMINIOS_ALDEIA_POSTS } from "./condominios-aldeia-da-serra";
 import { DOCES_FIT_POSTS } from "./doces-fit";
@@ -174,6 +175,7 @@ export const blogPosts = ([
   ...ROSCA_CAVALINHO_ARNOLD_POSTS,
   ...CONSULTORIA_ONLINE_DUVIDAS_POSTS,
   ...TREINO_DUVIDAS_POSTS,
+  ...EFEITO_AFTERBURN_POSTS,
   ...DOR_NO_TREINO_POSTS,
   ...CONDOMINIOS_ALDEIA_POSTS,
   ...DOCES_FIT_POSTS,

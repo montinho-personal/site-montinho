@@ -199,6 +199,7 @@ export const TABATA_POSTS: BlogPost[] = [
 <li><a href="/blog/hiit-funciona">HIIT funciona?</a></li>
 <li><a href="/blog/treino-hiit-em-casa">Treino HIIT em casa</a></li>
 <li><a href="/blog/quanto-de-cardio-fazer">Quanto de cardio fazer</a></li>
+<li><a href="/blog/efeito-afterburn-epoc">Efeito afterburn: o corpo queima depois do treino?</a></li>
 <li><a href="/blog/burpee-como-fazer">Burpee: como fazer</a></li>
 <li><a href="/blog/polichinelo-emagrece">Polichinelo emagrece?</a></li>
 <li><a href="/blog/cardio-antes-ou-depois-da-musculacao">Cardio antes ou depois da musculação</a></li>
