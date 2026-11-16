@@ -57,8 +57,9 @@ que ficou de fora.
 
 | Publicado em | Artigos |
 |---|---|
-| 05/11 | `pao-com-ovo-engorda` |
-| 11/11 | `pipoca-engorda`, `manga-engorda`, `melancia-engorda` |
+| ~~05/11~~ | ~~`pao-com-ovo-engorda`~~ revisado em 16/11 |
+| ~~11/11~~ | ~~`pipoca-engorda`~~ revisado em 16/11 |
+| 11/11 | `manga-engorda`, `melancia-engorda` |
 | 15/11 | `feijao-engorda`, `pao-de-queijo-engorda`, `maca-engorda` |
 | 15/11 | `rosca-alternada`, `remada-cavalinho`, `desenvolvimento-arnold` |
 | 15/11 | 8 de consultoria online e dúvidas de treino (`consultoria-online-ou-personal-presencial`, `avaliacao-fisica-consultoria-online`, `personal-online-smart-fit`, `treinar-sozinho-na-academia-da-resultado`, `como-saber-se-a-ficha-de-treino-e-boa`, `treino-abc-ou-upper-lower`, `musculacao-para-emagrecer-quantas-vezes-por-semana`, `como-saber-se-o-treino-esta-funcionando`) |

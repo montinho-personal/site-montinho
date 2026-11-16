@@ -1644,3 +1644,10 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - Air bike: H2 do PAA e do autocompletar (o que é, diferença para a ergométrica, calorias, emagrece, músculos, como usar, treino, esteira, elíptico). Calorias pela escada de watts da ergométrica do site (Compêndio de 2011, a mesma da Calculadora de Bicicleta, embutida). A visão de IA fala em "até 750 calorias em 30 minutos": não entrou como fato; o texto mostra que exigiria cerca de 20 MET.
 - Fora, conferido no acervo: vale artigo "nomes dos aparelhos de academia" (pauta 10). Viram seção: barra fixa para que serve → `como-fazer-barra-fixa`; pedalar 30 min e minutos de bike para barriga → `bicicleta-emagrece`; air bike no CrossFit → `crossfit-emagrece`. Não cabem: gráviton da física e da Marvel ("O Graviton foi provado?"), marcas de air bike (Assault, Gallant, Kikos, Movement, Schwinn, Oneal, Fokus, Brave, WCT), valor, usada, profissional (compra), graviton valor.
 - Capas: uma ilustração do Kairogen (1 crédito) com as duas cenas, recortada para cada capa; título, ícones e logo montados no padrão.
+
+## 2026-11-16 — Rotina diária (dia 1): pão com ovo e pipoca
+
+- Primeiro dia da rotina de 2 revisões por dia (AGENTS.md). Uma busca principal por artigo, celular, São Paulo: "pão com ovo engorda" e "pipoca engorda". Evidência em `docs/seo/serp/`.
+- `pao-com-ovo-engorda`: o artigo já cobria quase tudo (à noite, manhã, janta, frito, integral, calorias, na dieta). +2 FAQ: dois pães com ovo (432 kcal) e 2 ovos por dia (com link para `quantos-ovos-por-dia`). Fora: "dieta do ovo, quantos quilos em 3 dias" (promessa); "o que comer à noite para matar a fome" já tem `o-que-comer-a-noite-para-nao-engordar`, linkado.
+- `pipoca-engorda`: H2 "Pipoca engorda mais que arroz ou pão?" (PAA, TACO por porção) e "Como fazer pipoca para não engordar" (PAA e autocompletar: azeite, sem óleo, sal, sazon, de saco); +4 FAQ (arroz, pão, como fazer, 100 g). A visão de IA diz "30 a 32 kcal por xícara" e "balde de cinema passa de 500 kcal": não entraram (sem fonte checada).
+- Nada novo para a pauta: o que ficou de fora era promessa, navegação ("google") ou já tem artigo.

@@ -158,6 +158,40 @@ pedir:
 
 Pauta é sugestão: nada é escrito sem o Montinho escolher.
 
+# Rotina diária de revisão: 2 por dia
+
+Pedido do Montinho em 16/11/2026. Todo dia, uma tarefa agendada revisa
+**2 artigos** com pesquisa do SerpApi e alimenta a pauta.
+
+**Por que 2 por dia (decisão de ritmo):** cada revisão exige julgamento
+por item (o que entra, o que sai, fonte de cada dado), e a cota do SerpApi
+é uma só para todos os sites do Montinho (250 buscas por mês no plano
+grátis). Não é medo de penalidade do Google.
+
+**Ordem:** primeiro a fila de "Revisões pendentes" de `docs/seo/pauta.md`
+(artigos publicados sem pesquisa). Quando a fila acabar, os artigos com
+impressão no Search Console e CTR baixo ou posição entre 5 e 20 (consulta
+pelo Supermetrics, dos últimos 28 dias), um de cada vez.
+
+**Orçamento de busca por revisão:** a busca principal (página + 
+autocompletar = 2), mais 1 se a visão de IA vier em duas etapas. Busca
+secundária só se a principal vier fraca (sem PAA e sem outras pesquisas).
+Não repetir busca já feita. Se o SerpApi responder sem cota ou fora do
+ar, pare e avise o Montinho; não peça print sem ele concordar.
+
+**Cada revisão segue o fluxo inteiro:** canibalização, fontes (fato só com
+fonte oficial ou dois veículos), H2 e FAQ do que as pessoas buscam,
+`updatedAt` só com mudança real, evidência em `docs/seo/serp/`, registro
+em `docs/seo/teste-intencoes-de-busca.md` e a separação do que ficou de
+fora (vale artigo, vira seção, não cabe) atualizando `docs/seo/pauta.md`.
+Título e descrição: só proposta (ATUAL / PROPOSTA / MOTIVO), nunca troca
+sem o Montinho aprovar.
+
+**Publicação:** testes do repositório (tsc e os testes do que foi tocado,
+comparando com as falhas de base), PR, merge, conferir no ar. No fim,
+mandar ao Montinho os links, as intenções separadas por tipo com ✅/❌ e as
+propostas de título que esperam aprovação.
+
 # Capa de artigo: só no padrão, ou nenhuma
 
 Regra pedida pelo Montinho em 16/11/2026. A capa do blog segue um padrão
