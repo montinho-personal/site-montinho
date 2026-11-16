@@ -48,6 +48,7 @@ import { ARTIGOS_COM_CALCULADORA_MUAY } from "../lib/muaythai";
 import { ARTIGOS_COM_CALCULADORA_ARTES_MARCIAIS } from "../lib/artes-marciais";
 import { ARTIGOS_COM_CALCULADORA_CORDA } from "../lib/corda";
 import { ARTIGOS_COM_CALCULADORA_BICICLETA } from "../lib/bicicleta";
+import { ARTIGOS_COM_CALCULADORA_DESCANSO } from "../lib/descanso";
 import { ARTIGOS_COM_CALCULADORA_ESCADA } from "../lib/escada";
 import { ARTIGOS_COM_CALCULADORA_CROSSFIT } from "../lib/crossfit";
 import { ARTIGOS_COM_CALCULADORA_HYROX } from "../lib/hyrox";
@@ -114,6 +115,7 @@ const REGISTROS: [string, string[]][] = [
   ["artes marciais", ARTIGOS_COM_CALCULADORA_ARTES_MARCIAIS],
   ["corda", ARTIGOS_COM_CALCULADORA_CORDA],
   ["bicicleta", ARTIGOS_COM_CALCULADORA_BICICLETA],
+  ["descanso", ARTIGOS_COM_CALCULADORA_DESCANSO],
   ["escada", ARTIGOS_COM_CALCULADORA_ESCADA],
   ["crossfit", ARTIGOS_COM_CALCULADORA_CROSSFIT],
   ["hyrox", ARTIGOS_COM_CALCULADORA_HYROX],

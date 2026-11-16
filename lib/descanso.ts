@@ -277,4 +277,6 @@ export const FONTES_DESCANSO = [
 ];
 
 /** Artigos que embutem a calculadora inteira, logo depois da primeira seção. */
-export const ARTIGOS_COM_CALCULADORA_DESCANSO: string[] = ["descanso-entre-series"];
+/* Treino metabólico (16/11/2026): a diferença prática para o tensional é o
+   descanso, e o objetivo "resistência muscular" dá a faixa curta. */
+export const ARTIGOS_COM_CALCULADORA_DESCANSO: string[] = ["descanso-entre-series", "treino-metabolico"];

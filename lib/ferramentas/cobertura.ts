@@ -41,6 +41,8 @@ export const DATA_DA_REGRA = "2026-08-29";
  * artigo cabe numa ferramenta.
  */
 export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
+  // Guia de nomes de aparelhos (16/11/2026).
+  "aparelhos-de-academia-nomes": "Guia de nomes: o leitor sai sabendo como se chama cada aparelho e o músculo que ele trabalha, sem conta na cabeça; cada aparelho aponta para o artigo de execução do site.",
   // Dúvidas de formato de acompanhamento e de quem treina sozinho (15/11/2026).
   "consultoria-online-ou-personal-presencial": "Escolha entre dois formatos de acompanhamento: o leitor sai sabendo qual combina com a rotina dele, sem conta na cabeça; valores vão por link para o artigo de quanto custa.",
   "avaliacao-fisica-consultoria-online": "Explica como medir em casa (fotos, fita, peso médio); a única conta possível, cintura sobre altura, vai por link no texto para a calculadora de relação cintura-altura.",
