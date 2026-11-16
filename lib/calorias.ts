@@ -436,4 +436,7 @@ export const ARTIGOS_COM_LINK_DEFICIT: string[] = [
      artigo diz que quem decide é o déficit do dia inteiro, e a conta que
      sobra é quanto comer. */
   "musculacao-para-emagrecer-quantas-vezes-por-semana",
+  /* Efeito afterburn (16/11/2026): o leitor quer saber quanto o gasto pós-
+     treino pesa no emagrecimento, e a conta que decide é o déficit do dia. */
+  "efeito-afterburn-epoc",
 ];
