@@ -1606,3 +1606,10 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - Ferramenta: link de Volume (ficha, ABC x upper/lower), link de Déficit (quantas vezes para emagrecer), link de 1RM (treino funcionando); os outros quatro em `ARTIGOS_SEM_FERRAMENTA` com o motivo.
 - Capas tipográficas feitas no repositório (Kairogen sem créditos).
 - Pendente: prints do Google (ou export do Answer the Public) dos oito temas.
+
+## 2026-11-16 — Sem prints: academias de jiu-jitsu em Osasco, Carapicuíba, Cotia/Granja Viana e Santana de Parnaíba
+
+- Pedido do Montinho ("pode criar", e Santana como artigo próprio, não seção do de Barueri). Volumes do Planejador (Brasil): "jiu jitsu osasco" 480/mês, "carapicuiba" 210, "cotia" 210, "granja viana" 50, "santana de parnaiba" 50. Alphaville (110) segue dentro do artigo de Barueri.
+- `lib/lutas-regiao.ts`, no modelo de `lutas-barueri.ts`. Academias só com fonte apontável (site/perfil oficial ou página de parceira no Wellhub), dita no texto; diretório sozinho ficou de fora. Sem preço, horário ou telefone; nunca dizendo que o Montinho atende nelas.
+- Ferramenta: calculadora de jiu-jitsu embutida (`ARTIGOS_COM_CALCULADORA_JIU`), como em Barueri.
+- Pendente: prints do Google (ou export do Answer the Public) dos quatro termos.
