@@ -25,9 +25,9 @@ export const CRUCIFIXO_INVERSO_POSTS: BlogPost[] = [
   {
     slug: "crucifixo-inverso",
     title: "Crucifixo Inverso: Como Fazer, Músculos e Erros Comuns",
-    metaTitle: "Crucifixo Inverso: Como Fazer, Músculos e Erros",
+    metaTitle: "Crucifixo Inverso: Para Que Serve e Como Fazer",
     metaDescription:
-      "Crucifixo inverso trabalha o deltoide posterior, a parte de trás do ombro. Veja como fazer com halteres, na máquina e na polia, e os erros que tiram o ombro do exercício.",
+      "O crucifixo inverso trabalha a parte de trás do ombro. Veja como fazer com halteres, na máquina e na polia, e o que usar quando a máquina está ocupada.",
     excerpt:
       "O que o crucifixo inverso trabalha, como fazer com halteres, na máquina (voador inverso) e na polia, os erros mais comuns e quando trocar pelo face pull.",
     category: "Treino",
