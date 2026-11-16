@@ -153,6 +153,8 @@ pedir:
    a data e o porquê, na ordem em que você faria. Volume do Planejador ajuda
    a ordenar quando der para consultar; volume baixo não descarta.
 5. Na resposta final, mande essa separação junto com as intenções de busca.
+6. Mantenha `docs/seo/pauta.md` como a lista única do site: ao publicar um
+   item da pauta ou revisar um artigo da fila, risque a linha e anote o slug.
 
 Pauta é sugestão: nada é escrito sem o Montinho escolher.
 
