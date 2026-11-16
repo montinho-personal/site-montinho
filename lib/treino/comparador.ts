@@ -421,6 +421,8 @@ export const ARTIGOS_COM_COMPARADOR: Record<string, [string, string]> = {
   "rosca-alternada": ["rosca-alternada", "rosca-direta"],
   "remada-cavalinho": ["remada-cavalinho", "remada-curvada"],
   "desenvolvimento-arnold": ["desenvolvimento-arnold", "desenvolvimento-halter"],
+  /* Graviton (16/11/2026): a troca que sobra é pela puxada frontal. */
+  graviton: ["barra-fixa-assistida", "puxada-frente"],
 };
 
 // ── Pergunte ao Montinho ──────────────────────────────────────────────────

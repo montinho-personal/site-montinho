@@ -359,4 +359,6 @@ export const NOTA_SEGURANCA =
  * O `bicicleta-emagrece` saiu do registro de link da calculadora de
  * atividades: a regra da casa é uma ferramenta por artigo.
  */
-export const ARTIGOS_COM_CALCULADORA_BICICLETA: string[] = ["bicicleta-emagrece"];
+/* Air bike (16/11/2026): o visor mostra watts, e a pergunta que sobra é
+   quanto o treino gastou; a calculadora resolve no modo ergométrica. */
+export const ARTIGOS_COM_CALCULADORA_BICICLETA: string[] = ["bicicleta-emagrece", "air-bike"];
