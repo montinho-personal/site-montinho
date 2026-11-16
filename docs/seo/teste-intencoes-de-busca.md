@@ -1659,3 +1659,11 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - A visão de IA diz "prato cozido com água e sal ≈ 200 kcal" e "molho branco leva a 400": não entraram (sem fonte); a tabela de acompanhamentos dá os números pela TACO.
 - Fora, conferido no acervo e no Planejador: vale artigo "miojo engorda" (8.100) e "pão / pão francês engorda" (4.400 + 1.900), na pauta. Vira seção: "sopa de macarrão engorda" (390). Não cabe: "o que comer à noite para matar a fome" (já tem artigo, linkado).
 - Sem capa: Kairogen sem crédito; anotado em "Capas pendentes".
+
+## 2026-11-16 — Artigos novos da pauta (musculação primeiro): treino metabólico e nomes dos aparelhos
+
+- Pedido do Montinho: "quero que crie primeiro os que falam de musculação". SerpApi, celular, São Paulo: "treino metabólico" e "aparelhos de academia nomes". Evidência: `docs/seo/serp/metabolico-aparelhos-2026-11-16.json`. Planejador: "treino metabolico" 3.600, "aparelhos de academia nomes" 3.600, "treino tensional" 90.
+- `treino-metabolico`: o que é, metabólico x tensional (autocompletar e outras pesquisas), para que serve, emagrece, como montar na academia e em casa, exemplo pronto, x HIIT e funcional. Fonte: Schoenfeld 2010 (PubMed) e as do descanso. Calculadora de Descanso embutida (registro incluído no teste de cobertura). A visão de IA fala de "afterburn por horas": entrou corrigido, com link para `efeito-afterburn-epoc`.
+- `aparelhos-de-academia-nomes`: tabelas por grupo (perna e glúteo, peito, costas, ombro e braço, cardio), pesos livres, mais usados, como usar, cada aparelho com link para o artigo de execução. Sem ferramenta.
+- Fora: "afinar o braço" e "perder barriga" (promessa de gordura localizada, respondida no texto com link); "dieta metabólica, cardápio" (dieta, não cabe); "nomes e fotos/pdf" (material para baixar); "academia ao ar livre" (12.100, vira seção de `treino-ao-ar-livre-estruturado`); "aparelhos completos" e "profissional" (compra, seção de `academia-de-condominio-quais-aparelhos-comprar`); "gym" (navegação).
+- Sem capa: Kairogen sem crédito; os dois em "Capas pendentes".

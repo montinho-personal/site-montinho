@@ -11,6 +11,8 @@ veio e por que vale.
 
 ## 1. Artigos novos (na ordem em que eu faria)
 
+Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de treino e musculação que entrar na pauta vai para o topo, à frente da série de alimentos.
+
 | # | Artigo sugerido | Volume/mês | Veio de | Por que vale |
 |---|---|---|---|---|
 | ~~1~~ | ~~Graviton~~ publicado em 16/11 como `graviton` | 14.800 | fila de musculação (15/11) | Exercício de academia sem artigo; hoje só aparece como alias no mapa de treino. Liga com `como-fazer-barra-fixa`. |
@@ -19,11 +21,11 @@ veio e por que vale.
 | 3a | Miojo engorda? | 8.100 | outras pesquisas e PAA de "macarrão engorda" (16/11) | Sem artigo; `macarrao-engorda` tem só um trecho curto (TACO: 436 kcal, 17,2 g de gordura e 1.516 mg de sódio em 100 g). Ao publicar, o trecho passa a linkar o artigo. |
 | 4 | Milho engorda? | 5.400 | série "engorda" (11/11) | Só fichas de alimento (milho verde, fubá). Mesmo modelo. |
 | 4a | Pão engorda? Pão francês engorda? | 4.400 + 1.900 | outras pesquisas de "macarrão engorda" (16/11) | Só existem `pao-integral-engorda` e `pao-com-ovo-engorda`. Um artigo só para "pão" e "pão francês" (TACO: 300 kcal/100 g; unidade de 50 g pela POF). |
-| 5 | Treino metabólico: o que é e para quem serve | 3.600 | Planejador (05/11) e PAA de "epoc exercicio" (16/11) | Sem artigo; termo usado em aula de academia sem definição clara. |
+| ~~5~~ | ~~Treino metabólico~~ publicado em 16/11 como `treino-metabolico` | 3.600 | — | — |
 | 6 | Esportes que mais queimam calorias | 210 | pauta de HYROX (08/10) | Ver antes se não cabe como seção em `exercicio-que-mais-queima-calorias`; só vira artigo se a pesquisa mostrar intenção diferente (esporte, não exercício). |
 | 7 | Kickboxing emagrece? | 110 | Planejador (05/11) | Série de lutas (`boxe-emagrece`, `muay-thai-emagrece`) sem kickboxing. |
 | 8 | Pode treinar com dor de cabeça? | 70 | autocompletar de `treinar-com-dor` (04/11) | Tema de saúde: só com fonte oficial. Ver se não cabe em `posso-treinar-com-gripe` como "treinar doente". |
-| 10 | Nomes dos aparelhos de academia e para que serve cada um | ? | PAA de "graviton academia" ("Qual o nome do aparelho para costas?") (16/11) | Sem guia de aparelhos no acervo (só `academia-de-condominio-quais-aparelhos-comprar`, que é de compra). Quem chega na academia não sabe o nome das máquinas. |
+| ~~10~~ | ~~Nomes dos aparelhos de academia~~ publicado em 16/11 como `aparelhos-de-academia-nomes` | 3.600 | — | — |
 | 9 | Fome depois do treino: por que acontece | 20 | PAA de "continua queimando calorias depois do treino" (16/11) | Sem artigo. Explicar sem prescrever alimentação (plano é do nutricionista). Volume baixo, mas aparece no PAA. |
 | ~~—~~ | ~~Efeito afterburn (EPOC)~~ | 18.100 ("epoc") | visão de IA do tabata (16/11) | Publicado em 16/11 como `efeito-afterburn-epoc`. |
 
@@ -32,6 +34,8 @@ veio e por que vale.
 | Assunto | Onde entra | Veio de |
 |---|---|---|
 | Batata doce engorda? (12.100/mês) | `batata-doce-emagrece` | série "engorda" (11/11) |
+| Academia ao ar livre: como usar os aparelhos da praça (12.100/mês para "academia ao ar livre") | `treino-ao-ar-livre-estruturado` (se a pesquisa mostrar intenção diferente da do artigo, vira artigo próprio) | autocompletar de "aparelhos de academia nomes" (16/11) |
+| Aparelhos de academia completos (o que uma academia precisa ter) | `academia-de-condominio-quais-aparelhos-comprar` | PAA de "aparelhos de academia nomes" (16/11) |
 | Sopa de macarrão engorda? (390/mês) | `sopa-emagrece` ou `macarrao-engorda`, quando houver dado de sopa na base | outras pesquisas de "macarrão engorda" (16/11) |
 | Zona de queima de gordura ("fat burn") | `zonas-de-frequencia-cardiaca` (já explica a "zona de queima" da esteira; falta o FAQ "o que é fat burn?") | PAA de "efeito afterburn" (16/11) |
 | Muay thai: desvantagens e em quanto tempo define o corpo | `beneficios-do-muay-thai` | pauta de lutas (outubro) |
@@ -51,6 +55,7 @@ Não são artigos; são PDFs ou imagens que pedem decisão de formato.
 - Treino de costas completo (PDF)
 - Treino 3x por semana (PDF)
 - Exercícios por músculo (PDF ou imagem)
+- Nomes dos aparelhos de academia com fotos (PDF ou imagem), do autocompletar "nomes e fotos" e "nomes e função pdf" (16/11)
 
 ## 4. Revisões pendentes (pesquisa no SerpApi)
 
@@ -77,4 +82,6 @@ Quando houver crédito, faça a capa e risque a linha.
 
 | Artigo | Publicado em | Cena sugerida |
 |---|---|---|
+| `treino-metabolico` | 16/11/2026 | pessoa em circuito com kettlebell, cronômetro ao fundo |
+| `aparelhos-de-academia-nomes` | 16/11/2026 | fileira de máquinas (leg press, puxada, extensora) vista de lado |
 | `macarrao-engorda` | 16/11/2026 | prato de macarrão ao sugo com garfo, e um pacote de massa seca ao lado |
