@@ -143,6 +143,7 @@ import { MARATONA_BRASILIA_2026_POSTS } from "./maratona-brasilia-2026";
 import { FABRICA_PREMIUM_POSTS } from "./fabrica-premium";
 import { SIX_ALPHAVILLE_POSTS } from "./six-alphaville";
 import { LUTAS_BARUERI_POSTS } from "./lutas-barueri";
+import { LUTAS_REGIAO_POSTS } from "./lutas-regiao";
 import { MIOSTATINA_POSTS } from "./miostatina";
 
 export const blogPosts = ([
@@ -188,6 +189,7 @@ export const blogPosts = ([
   ...FABRICA_PREMIUM_POSTS,
   ...SIX_ALPHAVILLE_POSTS,
   ...LUTAS_BARUERI_POSTS,
+  ...LUTAS_REGIAO_POSTS,
   ...OLYMPIA_2026_POSTS,
   {
     slug: "parar-de-tomar-mounjaro",
