@@ -1,12 +1,62 @@
-# Pauta: candidatos vindos das buscas que ficaram de fora
+# Pauta do site
 
-Regra em AGENTS.md ("O que ficou de fora vira candidato a pauta"). Cada
-linha diz de qual pesquisa veio e por que vale um artigo. Nada aqui é
-escrito sem o Montinho escolher.
+Lista única do que falta criar ou rever. Regra em AGENTS.md ("O que ficou de
+fora vira candidato a pauta"): toda pesquisa nova acrescenta aqui o que
+ficou de fora e vale artigo. Nada é escrito sem o Montinho escolher. Volume
+do Planejador de Palavras-chave do Google Ads (Brasil), consultado em
+16/11/2026; volume baixo não descarta.
 
-| # | Artigo sugerido | Veio de | Data | Por que vale |
+Ao publicar, risque a linha e anote o slug. Ao acrescentar, diga de onde
+veio e por que vale.
+
+## 1. Artigos novos (na ordem em que eu faria)
+
+| # | Artigo sugerido | Volume/mês | Veio de | Por que vale |
 |---|---|---|---|---|
-| ~~1~~ | ~~Efeito afterburn (EPOC)~~ publicado em 16/11 como `efeito-afterburn-epoc` | visão de IA de "treino tabata" e "protocolo tabata" | 2026-11-16 | A IA vende o "afterburn" como benefício do tabata; o site só cita EPOC de passagem em artigos de HIIT, sem número com fonte. Precisa de estudo (PubMed) antes de escrever. |
-| 2 | Treino metabólico: o que é e para quem serve | PAA de "epoc exercicio" ("O que é exercício metabólico?") | 2026-11-16 | Sem artigo no acervo; "treino metabólico" tem 3.600 buscas/mês no Planejador (anotado em 05/11). |
-| 3 | Fome depois do treino: por que acontece e o que fazer | PAA de "continua queimando calorias depois do treino" | 2026-11-16 | Sem artigo no acervo. Explicar sem prescrever alimentação (o plano é do nutricionista). |
-| 4 | Zona de queima de gordura (fat burn) existe? | PAA de "efeito afterburn" ("O que é fat burn?") | 2026-11-16 | Sem artigo; relógio e esteira mostram a "zona fat burn" e confundem gordura usada no treino com gordura perdida. |
+| 1 | Graviton (barra fixa assistida): como usar e quando largar | 14.800 | fila de musculação (15/11) | Exercício de academia sem artigo; hoje só aparece como alias no mapa de treino. Liga com `como-fazer-barra-fixa`. |
+| 2 | Air bike: o que é, como usar e quanto queima | 8.100 | pauta de 08/10 (HYROX/CrossFit) | Sem artigo. Calorias só com MET de fonte verificada (Compêndio de Atividades); sem isso, o texto não dá número. |
+| 3 | Macarrão engorda? | 5.400 | série "engorda" (09/11 e 11/11) | Só existe a ficha de alimento (`macarrao-trigo-cru`). Mesmo modelo da série, com TACO e link de déficit. |
+| 4 | Milho engorda? | 5.400 | série "engorda" (11/11) | Só fichas de alimento (milho verde, fubá). Mesmo modelo. |
+| 5 | Treino metabólico: o que é e para quem serve | 3.600 | Planejador (05/11) e PAA de "epoc exercicio" (16/11) | Sem artigo; termo usado em aula de academia sem definição clara. |
+| 6 | Esportes que mais queimam calorias | 210 | pauta de HYROX (08/10) | Ver antes se não cabe como seção em `exercicio-que-mais-queima-calorias`; só vira artigo se a pesquisa mostrar intenção diferente (esporte, não exercício). |
+| 7 | Kickboxing emagrece? | 110 | Planejador (05/11) | Série de lutas (`boxe-emagrece`, `muay-thai-emagrece`) sem kickboxing. |
+| 8 | Pode treinar com dor de cabeça? | 70 | autocompletar de `treinar-com-dor` (04/11) | Tema de saúde: só com fonte oficial. Ver se não cabe em `posso-treinar-com-gripe` como "treinar doente". |
+| 9 | Fome depois do treino: por que acontece | 20 | PAA de "continua queimando calorias depois do treino" (16/11) | Sem artigo. Explicar sem prescrever alimentação (plano é do nutricionista). Volume baixo, mas aparece no PAA. |
+| ~~—~~ | ~~Efeito afterburn (EPOC)~~ | 18.100 ("epoc") | visão de IA do tabata (16/11) | Publicado em 16/11 como `efeito-afterburn-epoc`. |
+
+## 2. Viram seção ou FAQ de um artigo que já existe
+
+| Assunto | Onde entra | Veio de |
+|---|---|---|
+| Batata doce engorda? (12.100/mês) | `batata-doce-emagrece` | série "engorda" (11/11) |
+| Zona de queima de gordura ("fat burn") | `zonas-de-frequencia-cardiaca` (já explica a "zona de queima" da esteira; falta o FAQ "o que é fat burn?") | PAA de "efeito afterburn" (16/11) |
+| Muay thai: desvantagens e em quanto tempo define o corpo | `beneficios-do-muay-thai` | pauta de lutas (outubro) |
+| Hérnia de disco e jiu-jitsu | `hernia-de-disco-pode-treinar` (com fonte médica) | pauta de lutas (outubro) |
+| É possível ganhar 1 kg de músculo em 1 mês? | simulador de ganho de massa / artigo de hipertrofia para iniciantes | pesquisa de exercícios por músculo |
+| Peso oficial das estações | `estacoes-do-hyrox` (só com fonte oficial HYROX) | pauta de HYROX (08/10) |
+| 4 ou 7 exercícios para perder barriga | `exercicio-para-perder-barriga` | PAA do tabata e do EPOC (16/11) |
+| Quantas calorias queimar por treino | `exercicio-que-mais-queima-calorias` | PAA do EPOC (16/11) |
+
+## 3. Materiais para baixar (iscas)
+
+Não são artigos; são PDFs ou imagens que pedem decisão de formato.
+
+- Treino de costas completo (PDF)
+- Treino 3x por semana (PDF)
+- Exercícios por músculo (PDF ou imagem)
+
+## 4. Revisões pendentes (pesquisa no SerpApi)
+
+Artigos publicados antes da pesquisa, na ordem da fila. Cada revisão segue
+CLAUDE.md ("Pesquisa no Google pelo SerpApi") e termina com a separação do
+que ficou de fora.
+
+| Publicado em | Artigos |
+|---|---|
+| 05/11 | `pao-com-ovo-engorda` |
+| 11/11 | `pipoca-engorda`, `manga-engorda`, `melancia-engorda` |
+| 15/11 | `feijao-engorda`, `pao-de-queijo-engorda`, `maca-engorda` |
+| 15/11 | `rosca-alternada`, `remada-cavalinho`, `desenvolvimento-arnold` |
+| 15/11 | 8 de consultoria online e dúvidas de treino (`consultoria-online-ou-personal-presencial`, `avaliacao-fisica-consultoria-online`, `personal-online-smart-fit`, `treinar-sozinho-na-academia-da-resultado`, `como-saber-se-a-ficha-de-treino-e-boa`, `treino-abc-ou-upper-lower`, `musculacao-para-emagrecer-quantas-vezes-por-semana`, `como-saber-se-o-treino-esta-funcionando`) |
+| 16/11 | `academias-de-jiu-jitsu-em-osasco`, `-carapicuiba`, `-cotia`, `-santana-de-parnaiba` (busca na cidade de cada página) |
+| ~~05/11~~ | ~~`crucifixo-inverso`, `treino-tabata`~~ revisados em 16/11 |
