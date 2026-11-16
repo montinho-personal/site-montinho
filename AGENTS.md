@@ -165,8 +165,10 @@ Pedido do Montinho em 16/11/2026. Todo dia, uma tarefa agendada revisa
 
 **Por que 2 por dia (decisão de ritmo):** cada revisão exige julgamento
 por item (o que entra, o que sai, fonte de cada dado), e a cota do SerpApi
-é uma só para todos os sites do Montinho (250 buscas por mês no plano
-grátis). Não é medo de penalidade do Google.
+é uma só para todos os sites do Montinho (plano pago desde 16/11/2026,
+1.000 buscas por mês; o orçamento somado das rotinas está no CLAUDE.md da
+branch `claude/new-website-setup-ws1hs9`). Não é medo de penalidade do
+Google.
 
 **Ordem:** primeiro a fila de "Revisões pendentes" de `docs/seo/pauta.md`
 (artigos publicados sem pesquisa). Quando a fila acabar, os artigos com
