@@ -13,14 +13,15 @@ veio e por que vale.
 
 | # | Artigo sugerido | Volume/mês | Veio de | Por que vale |
 |---|---|---|---|---|
-| 1 | Graviton (barra fixa assistida): como usar e quando largar | 14.800 | fila de musculação (15/11) | Exercício de academia sem artigo; hoje só aparece como alias no mapa de treino. Liga com `como-fazer-barra-fixa`. |
-| 2 | Air bike: o que é, como usar e quanto queima | 8.100 | pauta de 08/10 (HYROX/CrossFit) | Sem artigo. Calorias só com MET de fonte verificada (Compêndio de Atividades); sem isso, o texto não dá número. |
+| ~~1~~ | ~~Graviton~~ publicado em 16/11 como `graviton` | 14.800 | fila de musculação (15/11) | Exercício de academia sem artigo; hoje só aparece como alias no mapa de treino. Liga com `como-fazer-barra-fixa`. |
+| ~~2~~ | ~~Air bike~~ publicado em 16/11 como `air-bike` | 8.100 | pauta de 08/10 (HYROX/CrossFit) | Sem artigo. Calorias só com MET de fonte verificada (Compêndio de Atividades); sem isso, o texto não dá número. |
 | 3 | Macarrão engorda? | 5.400 | série "engorda" (09/11 e 11/11) | Só existe a ficha de alimento (`macarrao-trigo-cru`). Mesmo modelo da série, com TACO e link de déficit. |
 | 4 | Milho engorda? | 5.400 | série "engorda" (11/11) | Só fichas de alimento (milho verde, fubá). Mesmo modelo. |
 | 5 | Treino metabólico: o que é e para quem serve | 3.600 | Planejador (05/11) e PAA de "epoc exercicio" (16/11) | Sem artigo; termo usado em aula de academia sem definição clara. |
 | 6 | Esportes que mais queimam calorias | 210 | pauta de HYROX (08/10) | Ver antes se não cabe como seção em `exercicio-que-mais-queima-calorias`; só vira artigo se a pesquisa mostrar intenção diferente (esporte, não exercício). |
 | 7 | Kickboxing emagrece? | 110 | Planejador (05/11) | Série de lutas (`boxe-emagrece`, `muay-thai-emagrece`) sem kickboxing. |
 | 8 | Pode treinar com dor de cabeça? | 70 | autocompletar de `treinar-com-dor` (04/11) | Tema de saúde: só com fonte oficial. Ver se não cabe em `posso-treinar-com-gripe` como "treinar doente". |
+| 10 | Nomes dos aparelhos de academia e para que serve cada um | ? | PAA de "graviton academia" ("Qual o nome do aparelho para costas?") (16/11) | Sem guia de aparelhos no acervo (só `academia-de-condominio-quais-aparelhos-comprar`, que é de compra). Quem chega na academia não sabe o nome das máquinas. |
 | 9 | Fome depois do treino: por que acontece | 20 | PAA de "continua queimando calorias depois do treino" (16/11) | Sem artigo. Explicar sem prescrever alimentação (plano é do nutricionista). Volume baixo, mas aparece no PAA. |
 | ~~—~~ | ~~Efeito afterburn (EPOC)~~ | 18.100 ("epoc") | visão de IA do tabata (16/11) | Publicado em 16/11 como `efeito-afterburn-epoc`. |
 
@@ -36,6 +37,9 @@ veio e por que vale.
 | Peso oficial das estações | `estacoes-do-hyrox` (só com fonte oficial HYROX) | pauta de HYROX (08/10) |
 | 4 ou 7 exercícios para perder barriga | `exercicio-para-perder-barriga` | PAA do tabata e do EPOC (16/11) |
 | Quantas calorias queimar por treino | `exercicio-que-mais-queima-calorias` | PAA do EPOC (16/11) |
+| Para que serve a barra fixa | `como-fazer-barra-fixa` | PAA de "graviton academia" (16/11) |
+| Emagrecer pedalando 30 minutos por dia; minutos de bike para perder barriga | `bicicleta-emagrece` | PAA de "air bike" e "air bike emagrece" (16/11) |
+| Air bike no CrossFit | `crossfit-emagrece` | autocompletar de "air bike" (16/11) |
 
 ## 3. Materiais para baixar (iscas)
 
