@@ -64,3 +64,13 @@ que ficou de fora.
 | 15/11 | 8 de consultoria online e dúvidas de treino (`consultoria-online-ou-personal-presencial`, `avaliacao-fisica-consultoria-online`, `personal-online-smart-fit`, `treinar-sozinho-na-academia-da-resultado`, `como-saber-se-a-ficha-de-treino-e-boa`, `treino-abc-ou-upper-lower`, `musculacao-para-emagrecer-quantas-vezes-por-semana`, `como-saber-se-o-treino-esta-funcionando`) |
 | 16/11 | `academias-de-jiu-jitsu-em-osasco`, `-carapicuiba`, `-cotia`, `-santana-de-parnaiba` (busca na cidade de cada página) |
 | ~~05/11~~ | ~~`crucifixo-inverso`, `treino-tabata`~~ revisados em 16/11 |
+
+## 5. Capas pendentes
+
+Artigos publicados sem capa porque faltou crédito do Kairogen para fazer no
+padrão (regra em AGENTS.md, "Capa de artigo: só no padrão, ou nenhuma").
+Quando houver crédito, faça a capa e risque a linha.
+
+| Artigo | Publicado em | Cena sugerida |
+|---|---|---|
+| (nenhum por enquanto) | | |
