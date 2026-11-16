@@ -1613,3 +1613,10 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `lib/lutas-regiao.ts`, no modelo de `lutas-barueri.ts`. Academias só com fonte apontável (site/perfil oficial ou página de parceira no Wellhub), dita no texto; diretório sozinho ficou de fora. Sem preço, horário ou telefone; nunca dizendo que o Montinho atende nelas.
 - Ferramenta: calculadora de jiu-jitsu embutida (`ARTIGOS_COM_CALCULADORA_JIU`), como em Barueri.
 - Pendente: prints do Google (ou export do Answer the Public) dos quatro termos.
+
+## 2026-11-16 — SerpApi: revisão do crucifixo inverso
+
+- Primeira revisão com o SerpApi no lugar dos prints. Três buscas, como celular, em São Paulo (assunto geral): "crucifixo inverso", "crucifixo inverso com halteres", "crucifixo inverso maquina". Evidência: `docs/seo/serp/crucifixo-inverso-2026-11-16.json`.
+- O que mudou no texto: H2 novos "Para que serve", "Halteres, máquina ou polia: qual escolher?" e "O que substitui o crucifixo inverso?" (PAA nas três buscas); nomes do exercício (invertido, voador, fly, peck deck, dorsal); variações com halteres (em pé, sentado, banco inclinado, unilateral), pegada neutra x pronada, ajuste da máquina, polia alta e unilateral; erro de amplitude exagerada (visão de IA). FAQ +5 (parte das costas, trapézio, o que significa invertido, o que substitui, como ajustar a máquina). `updatedAt` 2026-11-16.
+- Fora: "smart fit" (nome de academia), "gif" (formato), "como definir a parte interna das costas" (promessa estética). Postura entra sem promessa de correção (visão de IA não é fonte).
+- Sem "Outras pessoas pesquisaram" no celular nas três buscas. Título e descrição mantidos; proposta mandada ao Montinho com ATUAL / PROPOSTA / MOTIVO.
