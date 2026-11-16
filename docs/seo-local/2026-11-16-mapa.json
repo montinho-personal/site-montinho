@@ -1,0 +1,831 @@
+{
+ "data": "2026-11-16",
+ "centro": "-23.4969,-46.8490 (Alphaville), zoom 13",
+ "buscas": [
+  {
+   "busca": "personal trainer alphaville",
+   "resultados": [
+    {
+     "posicao": 1,
+     "nome": "Rafael Varela Personal Trainer Alphaville",
+     "nota": 5,
+     "avaliacoes": 15,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 2,
+     "nome": "Personal Trainer Alphaville - Manuela Mergian",
+     "nota": 5,
+     "avaliacoes": 17,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 3,
+     "nome": "Pierre Ferreira Treinador",
+     "nota": 5,
+     "avaliacoes": 57,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 4,
+     "nome": "Ramires Personal Ironberg Alphaville",
+     "nota": 5,
+     "avaliacoes": 40,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 5,
+     "nome": "Sergio Filho - Personal Trainer (Presencial e Online)",
+     "nota": 5,
+     "avaliacoes": 44,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 6,
+     "nome": "PERSONAL IA",
+     "nota": 5,
+     "avaliacoes": 12,
+     "tipo": "Sala de fitness",
+     "temEndereco": true
+    },
+    {
+     "posicao": 7,
+     "nome": "Jana Amâncio Personal Trainer Alphaville-Tamboré- Santana De Parnaíba",
+     "nota": 5,
+     "avaliacoes": 49,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 8,
+     "nome": "THE TRAINER - Personal Trainer Alphaville - Tamboré",
+     "nota": 4.5,
+     "avaliacoes": 2,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 9,
+     "nome": "Fábrica Premium Alphaville",
+     "nota": 4.9,
+     "avaliacoes": 35,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 10,
+     "nome": "Leonardo Verissimo",
+     "nota": 5,
+     "avaliacoes": 23,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 11,
+     "nome": "Bruna Trindade | Personal Trainer Alphaville",
+     "nota": 5,
+     "avaliacoes": 54,
+     "tipo": "Personal trainer",
+     "temEndereco": false
+    },
+    {
+     "posicao": 12,
+     "nome": "Diogo Matuoka",
+     "nota": 5,
+     "avaliacoes": 103,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 13,
+     "nome": "Studio Integrado Mormaii Fitness SP Alphaville",
+     "nota": 4.9,
+     "avaliacoes": 49,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 14,
+     "nome": "Rafael Figueiredo Personal Trainer - Alphaville - Tamboré - Barueri - Santana de Parnaíba",
+     "nota": 5,
+     "avaliacoes": 36,
+     "tipo": "Personal trainer",
+     "temEndereco": false
+    },
+    {
+     "posicao": 15,
+     "nome": "Six Alphaville",
+     "nota": null,
+     "avaliacoes": null,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 16,
+     "nome": "Personal Trainer Alphaville",
+     "nota": null,
+     "avaliacoes": null,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 17,
+     "nome": "Treinador Alexsandro Oliveira – Alphaville",
+     "nota": null,
+     "avaliacoes": null,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 18,
+     "nome": "OBOX TRAINING CLUB",
+     "nota": 4.8,
+     "avaliacoes": 26,
+     "tipo": "Sala de fitness",
+     "temEndereco": true
+    },
+    {
+     "posicao": 19,
+     "nome": "Ironberg Alphaville",
+     "nota": 4.4,
+     "avaliacoes": 271,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 20,
+     "nome": "Espaço PULSE - Saúde Integrativa (Treinos EMS e Fisioterapia) - Alphaville/Barueri",
+     "nota": 5,
+     "avaliacoes": 36,
+     "tipo": "Sala de fitness",
+     "temEndereco": true
+    }
+   ]
+  },
+  {
+   "busca": "personal trainer tamboré",
+   "resultados": [
+    {
+     "posicao": 1,
+     "nome": "THE TRAINER - Personal Trainer Alphaville - Tamboré",
+     "nota": 4.5,
+     "avaliacoes": 2,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 2,
+     "nome": "Alain Matheus Personal Trainer",
+     "nota": 5,
+     "avaliacoes": 7,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 3,
+     "nome": "Top Team Tamboré",
+     "nota": null,
+     "avaliacoes": null,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 4,
+     "nome": "Personalbrsp",
+     "nota": 4,
+     "avaliacoes": 4,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 5,
+     "nome": "Jana Amâncio Personal Trainer Alphaville-Tamboré- Santana De Parnaíba",
+     "nota": 5,
+     "avaliacoes": 49,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 6,
+     "nome": "Vitor Barreto - Personal Trainer",
+     "nota": 5,
+     "avaliacoes": 31,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 7,
+     "nome": "Pierre Ferreira Treinador",
+     "nota": 5,
+     "avaliacoes": 57,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 8,
+     "nome": "Juliana Falkenberg Personal Studio",
+     "nota": 5,
+     "avaliacoes": 74,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 9,
+     "nome": "Personal Trainer Alphaville - Manuela Mergian",
+     "nota": 5,
+     "avaliacoes": 17,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 10,
+     "nome": "Studio Falaschi - Funcional e Corrida",
+     "nota": 5,
+     "avaliacoes": 27,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 11,
+     "nome": "Sergio Filho - Personal Trainer (Presencial e Online)",
+     "nota": 5,
+     "avaliacoes": 44,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 12,
+     "nome": "Rafael Varela Personal Trainer Alphaville",
+     "nota": 5,
+     "avaliacoes": 15,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 13,
+     "nome": "Personal trainer",
+     "nota": null,
+     "avaliacoes": null,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 14,
+     "nome": "DANIEL ABRANTES PERSONAL TRAINER",
+     "nota": null,
+     "avaliacoes": null,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 15,
+     "nome": "Ramires Personal Ironberg Alphaville",
+     "nota": 5,
+     "avaliacoes": 40,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 16,
+     "nome": "PERSONAL IA",
+     "nota": 5,
+     "avaliacoes": 12,
+     "tipo": "Sala de fitness",
+     "temEndereco": true
+    },
+    {
+     "posicao": 17,
+     "nome": "Personal Trainer Altieres Lourenço",
+     "nota": null,
+     "avaliacoes": null,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 18,
+     "nome": "Rafael Figueiredo Personal Trainer - Alphaville - Tamboré - Barueri - Santana de Parnaíba",
+     "nota": 5,
+     "avaliacoes": 36,
+     "tipo": "Personal trainer",
+     "temEndereco": false
+    },
+    {
+     "posicao": 19,
+     "nome": "Personal Eder",
+     "nota": 5,
+     "avaliacoes": 1,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 20,
+     "nome": "Gabriel Manieri - Personal Trainer",
+     "nota": null,
+     "avaliacoes": null,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    }
+   ]
+  },
+  {
+   "busca": "personal trainer barueri",
+   "resultados": [
+    {
+     "posicao": 1,
+     "nome": "Sari I Personal Trainer",
+     "nota": 4.9,
+     "avaliacoes": 13,
+     "tipo": "Personal Trainer para mulheres",
+     "temEndereco": true
+    },
+    {
+     "posicao": 2,
+     "nome": "Rafael Varela Personal Trainer Alphaville",
+     "nota": 5,
+     "avaliacoes": 15,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 3,
+     "nome": "Ramires Personal Ironberg Alphaville",
+     "nota": 5,
+     "avaliacoes": 40,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 4,
+     "nome": "Sergio Filho - Personal Trainer (Presencial e Online)",
+     "nota": 5,
+     "avaliacoes": 44,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 5,
+     "nome": "Personal Trainer Alphaville - Manuela Mergian",
+     "nota": 5,
+     "avaliacoes": 17,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 6,
+     "nome": "Juliana Falkenberg Personal Studio",
+     "nota": 5,
+     "avaliacoes": 74,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 7,
+     "nome": "Jana Amâncio Personal Trainer Alphaville-Tamboré- Santana De Parnaíba",
+     "nota": 5,
+     "avaliacoes": 49,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 8,
+     "nome": "PERSONAL IA",
+     "nota": 5,
+     "avaliacoes": 12,
+     "tipo": "Sala de fitness",
+     "temEndereco": true
+    },
+    {
+     "posicao": 9,
+     "nome": "4PERFORM",
+     "nota": 4.9,
+     "avaliacoes": 153,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 10,
+     "nome": "Paulo Oliveira Personal Trainer",
+     "nota": 5,
+     "avaliacoes": 7,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 11,
+     "nome": "Leonardo Verissimo",
+     "nota": 5,
+     "avaliacoes": 23,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 12,
+     "nome": "Academia - Barueri",
+     "nota": 4.5,
+     "avaliacoes": 201,
+     "tipo": "Personal Trainer para mulheres",
+     "temEndereco": true
+    },
+    {
+     "posicao": 13,
+     "nome": "Treinador Alexsandro Oliveira – Alphaville",
+     "nota": null,
+     "avaliacoes": null,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 14,
+     "nome": "Academia Perfect Body Ltda",
+     "nota": 4.5,
+     "avaliacoes": 75,
+     "tipo": "Personal Trainer para mulheres",
+     "temEndereco": true
+    },
+    {
+     "posicao": 15,
+     "nome": "THE TRAINER - Personal Trainer Alphaville - Tamboré",
+     "nota": 4.5,
+     "avaliacoes": 2,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 16,
+     "nome": "New Ritmo Fitness Academia",
+     "nota": 4.6,
+     "avaliacoes": 59,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 17,
+     "nome": "Pierre Ferreira Treinador",
+     "nota": 5,
+     "avaliacoes": 57,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 18,
+     "nome": "Fight & Fitness Personal 24h",
+     "nota": null,
+     "avaliacoes": null,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 19,
+     "nome": "Vitor Barreto - Personal Trainer",
+     "nota": 5,
+     "avaliacoes": 31,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 20,
+     "nome": "RENAFIT BOX TRAINER",
+     "nota": 4.8,
+     "avaliacoes": 23,
+     "tipo": "Academia",
+     "temEndereco": true
+    }
+   ]
+  },
+  {
+   "busca": "personal trainer santana de parnaíba",
+   "resultados": [
+    {
+     "posicao": 1,
+     "nome": "Pierre Ferreira Treinador",
+     "nota": 5,
+     "avaliacoes": 57,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 2,
+     "nome": "Diogo Matuoka",
+     "nota": 5,
+     "avaliacoes": 103,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 3,
+     "nome": "Forth Academia",
+     "nota": 4.9,
+     "avaliacoes": 125,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 4,
+     "nome": "Studio Falaschi - Funcional e Corrida",
+     "nota": 5,
+     "avaliacoes": 27,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 5,
+     "nome": "BusterFit",
+     "nota": 4.5,
+     "avaliacoes": 266,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 6,
+     "nome": "Alain Matheus Personal Trainer",
+     "nota": 5,
+     "avaliacoes": 7,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 7,
+     "nome": "Academia Box Parnaíba - CrossTraining",
+     "nota": 4.8,
+     "avaliacoes": 103,
+     "tipo": "Sala de fitness",
+     "temEndereco": true
+    },
+    {
+     "posicao": 8,
+     "nome": "Sergio Filho - Personal Trainer (Presencial e Online)",
+     "nota": 5,
+     "avaliacoes": 44,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 9,
+     "nome": "Fábrica Premium Alphaville",
+     "nota": 4.9,
+     "avaliacoes": 35,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 10,
+     "nome": "Rafael Varela Personal Trainer Alphaville",
+     "nota": 5,
+     "avaliacoes": 15,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 11,
+     "nome": "Box Vida Saudável - Condicionamento Físico, Emagrecimento e Saúde",
+     "nota": 5,
+     "avaliacoes": 18,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 12,
+     "nome": "Meta Fit Academia",
+     "nota": 4.8,
+     "avaliacoes": 73,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 13,
+     "nome": "OBOX TRAINING CLUB",
+     "nota": 4.8,
+     "avaliacoes": 26,
+     "tipo": "Sala de fitness",
+     "temEndereco": true
+    },
+    {
+     "posicao": 14,
+     "nome": "Jana Amâncio Personal Trainer Alphaville-Tamboré- Santana De Parnaíba",
+     "nota": 5,
+     "avaliacoes": 49,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 15,
+     "nome": "Team Cruz Santana de Parnaíba",
+     "nota": 4.6,
+     "avaliacoes": 72,
+     "tipo": "Sala de fitness",
+     "temEndereco": true
+    },
+    {
+     "posicao": 16,
+     "nome": "Soufitness Academia",
+     "nota": 4.7,
+     "avaliacoes": 200,
+     "tipo": "Sala de fitness",
+     "temEndereco": true
+    },
+    {
+     "posicao": 17,
+     "nome": "Academia XSuperAção",
+     "nota": 4.8,
+     "avaliacoes": 105,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 18,
+     "nome": "Arena Academia",
+     "nota": 4.7,
+     "avaliacoes": 66,
+     "tipo": "Sala de fitness",
+     "temEndereco": true
+    },
+    {
+     "posicao": 19,
+     "nome": "Personal Robert Rodrigues",
+     "nota": 4,
+     "avaliacoes": 1,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 20,
+     "nome": "Academia power start ltda",
+     "nota": 4.6,
+     "avaliacoes": 14,
+     "tipo": "Academia",
+     "temEndereco": true
+    }
+   ]
+  },
+  {
+   "busca": "personal trainer a domicílio alphaville",
+   "resultados": [
+    {
+     "posicao": 1,
+     "nome": "Rafael Varela Personal Trainer Alphaville",
+     "nota": 5,
+     "avaliacoes": 15,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 2,
+     "nome": "Pierre Ferreira Treinador",
+     "nota": 5,
+     "avaliacoes": 57,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 3,
+     "nome": "Personal Trainer Alphaville - Manuela Mergian",
+     "nota": 5,
+     "avaliacoes": 17,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 4,
+     "nome": "Sergio Filho - Personal Trainer (Presencial e Online)",
+     "nota": 5,
+     "avaliacoes": 44,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 5,
+     "nome": "PERSONAL IA",
+     "nota": 5,
+     "avaliacoes": 12,
+     "tipo": "Sala de fitness",
+     "temEndereco": true
+    },
+    {
+     "posicao": 6,
+     "nome": "Ramires Personal Ironberg Alphaville",
+     "nota": 5,
+     "avaliacoes": 40,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 7,
+     "nome": "THE TRAINER - Personal Trainer Alphaville - Tamboré",
+     "nota": 4.5,
+     "avaliacoes": 2,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 8,
+     "nome": "Fast Treino",
+     "nota": 4,
+     "avaliacoes": 7,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 9,
+     "nome": "Leonardo Verissimo",
+     "nota": 5,
+     "avaliacoes": 23,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 10,
+     "nome": "Diogo Matuoka",
+     "nota": 5,
+     "avaliacoes": 103,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 11,
+     "nome": "Jana Amâncio Personal Trainer Alphaville-Tamboré- Santana De Parnaíba",
+     "nota": 5,
+     "avaliacoes": 49,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 12,
+     "nome": "BodyBe Alphaville",
+     "nota": 4.9,
+     "avaliacoes": 108,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 13,
+     "nome": "Academia 24 Wellness - Unidade Alphaville",
+     "nota": 4.5,
+     "avaliacoes": 319,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 14,
+     "nome": "Sari I Personal Trainer",
+     "nota": 4.9,
+     "avaliacoes": 13,
+     "tipo": "Personal Trainer para mulheres",
+     "temEndereco": true
+    },
+    {
+     "posicao": 15,
+     "nome": "Juliana Falkenberg Personal Studio",
+     "nota": 5,
+     "avaliacoes": 74,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 16,
+     "nome": "Fábrica Premium Alphaville",
+     "nota": 4.9,
+     "avaliacoes": 35,
+     "tipo": "Academia",
+     "temEndereco": true
+    },
+    {
+     "posicao": 17,
+     "nome": "OBOX TRAINING CLUB",
+     "nota": 4.8,
+     "avaliacoes": 26,
+     "tipo": "Sala de fitness",
+     "temEndereco": true
+    },
+    {
+     "posicao": 18,
+     "nome": "Espaço PULSE - Saúde Integrativa (Treinos EMS e Fisioterapia) - Alphaville/Barueri",
+     "nota": 5,
+     "avaliacoes": 36,
+     "tipo": "Sala de fitness",
+     "temEndereco": true
+    },
+    {
+     "posicao": 19,
+     "nome": "Personal Trainer Alphaville",
+     "nota": null,
+     "avaliacoes": null,
+     "tipo": "Personal trainer",
+     "temEndereco": true
+    },
+    {
+     "posicao": 20,
+     "nome": "Bruna Trindade | Personal Trainer Alphaville",
+     "nota": 5,
+     "avaliacoes": 54,
+     "tipo": "Personal trainer",
+     "temEndereco": false
+    }
+   ]
+  }
+ ]
+}
