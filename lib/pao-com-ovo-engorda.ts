@@ -1,6 +1,9 @@
 import type { BlogPost } from "./blog";
 
 /**
+ * Revisado em 16/11/2026 com o SerpApi ("pão com ovo engorda", celular, São
+ * Paulo): +2 FAQ (dois pães com ovo: 2 × 216 = 432 kcal; 2 ovos por dia).
+ *
  * "Pão com ovo engorda?" (05/11/2026). 5.400 buscas por mês, mais 1.600 de
  * "pão com ovo calorias", no Planejador de Palavras-chave do Google Ads
  * (Brasil). Publicado a pedido do Montinho ANTES dos prints; título, H2 e FAQ
@@ -35,6 +38,7 @@ export const PAO_COM_OVO_POSTS: BlogPost[] = [
       "Quantas calorias tem o pão com ovo, o que muda entre frito, cozido e mexido na manteiga, pão francês ou integral, e como encaixar no café da manhã, à noite e no treino.",
     category: "Nutrição",
     date: "2026-11-05",
+    updatedAt: "2026-11-16",
     readTime: "5 min",
     author: "Montinho",
     tags: ["pão com ovo", "calorias", "café da manhã", "proteína", "dieta"],
@@ -68,6 +72,16 @@ export const PAO_COM_OVO_POSTS: BlogPost[] = [
         question: "Pão com ovo antes do treino é bom?",
         answer:
           "É uma boa opção: o pão dá carboidrato para energia e o ovo, proteína. Coma de 1 a 2 horas antes, para não treinar com o estômago cheio.",
+      },
+      {
+        question: "Dois pães com ovo engorda?",
+        answer:
+          "Dois pães franceses com um ovo cozido em cada dão cerca de 432 kcal, o dobro da versão com um pão. Cabe no dia de muita gente, mas é uma refeição grande: se a fome pede mais, dois ovos com um pão só seguram melhor com menos calorias.",
+      },
+      {
+        question: "Comer 2 ovos por dia faz mal?",
+        answer:
+          "Para a maioria das pessoas saudáveis, dois ovos por dia cabem numa alimentação equilibrada. Quem tem colesterol alto, diabetes ou doença do coração deve combinar a quantidade com o médico ou o nutricionista. Veja mais em quantos ovos por dia.",
       },
       {
         question: "Pão francês ou integral com ovo?",

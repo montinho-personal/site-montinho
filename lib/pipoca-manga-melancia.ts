@@ -1,6 +1,10 @@
 import type { BlogPost } from "./blog";
 
 /**
+ * Pipoca revisada em 16/11/2026 com o SerpApi ("pipoca engorda", celular, São
+ * Paulo): H2 arroz ou pão (TACO: arroz cozido 128, pão francês 300, azeite e
+ * óleo 884 kcal/100 g; pão 50 g pela POF) e como fazer para não engordar; +4 FAQ.
+ *
  * "Pipoca engorda?", "Manga engorda?" e "Melancia engorda?" (11/11/2026).
  * Planejador de Palavras-chave do Google Ads (Brasil): "pipoca engorda"
  * 22.200/mês; "manga engorda" e "melancia engorda" 12.100 cada. Pedido do
@@ -46,6 +50,7 @@ export const PIPOCA_MANGA_MELANCIA_POSTS: BlogPost[] = [
       "Quantas calorias tem a pipoca, por que a manteiga e o açúcar mudam tudo, pipoca de micro-ondas e de cinema, pipoca à noite, na dieta e comparada com chips e chocolate.",
     category: "Nutrição",
     date: "2026-11-11",
+    updatedAt: "2026-11-16",
     readTime: "6 min",
     author: "Montinho",
     tags: ["pipoca", "calorias", "lanche", "fibra", "dieta"],
@@ -106,6 +111,26 @@ export const PIPOCA_MANGA_MELANCIA_POSTS: BlogPost[] = [
           "Pode, em quem não está acostumado a tanta fibra de uma vez. Beba água e comece com pouco. Se o incômodo for frequente, procure médico ou nutricionista.",
       },
       {
+        question: "O que engorda mais, arroz ou pipoca?",
+        answer:
+          "No mesmo peso, a pipoca: 448 kcal em 100 g contra 128 kcal do arroz cozido, porque o arroz tem muita água. Na porção, a conta empata: 30 g de pipoca com óleo dão cerca de 134 kcal, o mesmo que 100 g de arroz cozido.",
+      },
+      {
+        question: "O que engorda mais, pipoca ou pão?",
+        answer:
+          "No peso, a pipoca (448 kcal em 100 g contra 300 kcal do pão francês). Na porção, 1 pão francês de 50 g tem cerca de 150 kcal, perto de 33 g de pipoca com óleo, que rende uma tigela bem maior.",
+      },
+      {
+        question: "Como fazer a pipoca para não engordar?",
+        answer:
+          "Use pouco óleo ou azeite (um fio, medido), ou a pipoqueira de ar; tempere com sal na medida, ervas ou páprica, e deixe a manteiga, o açúcar e o leite condensado para de vez em quando. E sirva a porção num pote, em vez de comer direto da panela.",
+      },
+      {
+        question: "Quantas calorias tem 100 g de pipoca estourada?",
+        answer:
+          "Cerca de 448 kcal para pipoca feita com óleo de soja e sem sal, segundo a TACO. Como a pipoca pesa pouco, 100 g já é um balde grande; uma porção comum fica entre 20 e 30 g.",
+      },
+      {
         question: "O que engorda mais, pipoca ou batata chips?",
         answer:
           "A chips. 30 g de batata chips têm perto de 163 kcal, contra 134 kcal de 30 g de pipoca feita com óleo, e a pipoca tem muito mais fibra.",
@@ -162,6 +187,27 @@ export const PIPOCA_MANGA_MELANCIA_POSTS: BlogPost[] = [
 </tbody>
 </table>
 <p>No mesmo peso, a pipoca tem menos calorias e muito mais fibra que a chips e o chocolate, e ocupa bem mais espaço no pote. Veja <a href="/blog/chocolate-engorda">chocolate engorda?</a>.</p>
+
+<h2>Pipoca engorda mais que arroz ou pão?</h2>
+<p>Depende de como você compara. No mesmo peso, a pipoca é a mais calórica, porque é milho seco com óleo, sem água. Na porção que as pessoas comem, a conta fica parecida:</p>
+<table>
+<thead><tr><th>Porção</th><th>Calorias</th></tr></thead>
+<tbody>
+<tr><td>30 g de pipoca com óleo</td><td>cerca de 134 kcal</td></tr>
+<tr><td>100 g de arroz branco cozido</td><td>cerca de 128 kcal</td></tr>
+<tr><td>1 pão francês (50 g)</td><td>cerca de 150 kcal</td></tr>
+</tbody>
+</table>
+<p>Valores da TACO; o peso do pão é o da pesquisa de orçamentos do IBGE, e os outros pesos são exemplos nossos. A diferença está no volume: 30 g de pipoca enchem uma tigela, e é isso que ajuda a segurar a fome. Veja também <a href="/blog/arroz-engorda">arroz engorda?</a>.</p>
+
+<h2>Como fazer pipoca para não engordar</h2>
+<ul>
+<li><strong>Meça a gordura.</strong> Óleo e azeite têm cerca de 884 kcal em 100 g. Um fio de 5 g soma perto de 44 kcal na panela inteira; despejar sem medir pode somar o triplo.</li>
+<li><strong>Sem óleo também estoura.</strong> Na pipoqueira de ar ou no micro-ondas, em vasilha própria, a pipoca sai com bem menos gordura.</li>
+<li><strong>Tempere sem calorias.</strong> Sal na medida, ervas, páprica, orégano ou pimenta. Tempero pronto em pó costuma ter muito sódio: veja o rótulo.</li>
+<li><strong>Pipoca de saco e de micro-ondas:</strong> são industrializadas e mudam de marca para marca. A porção e as calorias estão no rótulo.</li>
+<li><strong>Sirva num pote.</strong> Comer direto da panela ou do balde é o jeito mais fácil de perder a conta.</li>
+</ul>
 
 <h2>Pipoca incha a barriga?</h2>
 <p>Pode, em quem não está acostumado a tanta fibra de uma vez. Beba água e comece com pouco. Se o incômodo for frequente, procure médico ou nutricionista. Veja <a href="/blog/barriga-inchada-ou-gordura">barriga inchada ou gordura</a>.</p>
