@@ -81,7 +81,7 @@ export const EFEITO_AFTERBURN_POSTS: BlogPost[] = [
           "Tem, como qualquer exercício. Uma corrida leve gera pouco; tiros e corridas longas em ritmo forte geram mais. Mesmo assim, o grosso das calorias da corrida é gasto enquanto você corre.",
       },
     ],
-    content: `<img src="/blog-images/efeito-afterburn-epoc-capa.webp" alt="Capa: Afterburn existe? Queima depois do treino. Ilustração de um relógio com uma fatia pequena destacada e uma chama" title="Efeito Afterburn (EPOC) — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+    content: `<img src="/blog-images/efeito-afterburn-epoc-capa.webp" alt="Capa: Efeito afterburn. Queima depois do treino? Ilustração de um homem sentado no banco depois do treino, com toalha no ombro e um cronômetro ao fundo" title="Efeito Afterburn (EPOC) — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 
 <p>O <strong>efeito afterburn</strong> é a promessa de que o corpo continua queimando calorias depois que o treino acaba. Ele existe. O problema é o tamanho que o marketing dá a ele: "queima por 48 horas", "emagrece mesmo parado". Os estudos mostram um bônus real, mas pequeno, e é isso que vale saber antes de escolher treino por causa dele.</p>
 
