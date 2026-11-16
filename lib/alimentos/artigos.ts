@@ -84,6 +84,10 @@ export const FICHAS_POR_ARTIGO: Record<string, FichaDeArtigo> = {
     alimentos: ["melancia-crua"],
     destaque: "carboidrato",
   },
+  "macarrao-engorda": {
+    alimentos: ["macarrao-trigo-cru", "macarrao-instantaneo"],
+    destaque: "carboidrato",
+  },
   "feijao-engorda": {
     alimentos: ["feijao-carioca-cozido", "feijao-preto-cozido"],
     destaque: "fibra",
