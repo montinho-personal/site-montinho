@@ -1,0 +1,153 @@
+[
+ {
+  "busca": "macarrão engorda",
+  "data": "2026-11-16",
+  "aparelho": "mobile",
+  "local": "Sao Paulo,State of Sao Paulo,Brazil",
+  "autocompletar": [
+   "macarrão engorda mais que arroz",
+   "macarrão engorda muito",
+   "macarrão engorda ou emagrece",
+   "macarrão engorda quantos quilos",
+   "macarrão engorda ou não",
+   "macarrão engorda sim ou não",
+   "macarrão engorda mais que arroz e feijão",
+   "macarrão engorda menos que arroz",
+   "macarrão engorda à noite",
+   "macarrão engorda com sardinha"
+  ],
+  "pessoas_tambem_perguntam": [
+   "O que comer à noite para matar a fome e não engordar?",
+   "Qual a vantagem do macarrão de arroz?",
+   "Quantas calorias tem 2 pratos de macarrão?",
+   "Quantas calorias em 100 g de macarrão integral?"
+  ],
+  "outras_pessoas_pesquisaram": [
+   "Macarrão engorda à noite",
+   "Macarrão engorda quantos quilos",
+   "Macarrão engorda mais que arroz",
+   "Arroz engorda",
+   "Macarrão engorda com sardinha",
+   "Sopa de macarrão engorda",
+   "Feijão engorda",
+   "Macarrão com feijão engorda",
+   "Macarrão com ovo engorda",
+   "Macarrão com carne moída engorda",
+   "Macarrão alho e óleo engorda",
+   "Pão engorda"
+  ],
+  "visao_ia": {
+   "texto": [
+    "O macarrão em si não engorda; o ganho de peso acontece apenas quando você consome mais calorias do que o seu corpo gasta ao longo do dia.",
+    "O que realmente faz engordar?",
+    "- O molho e os acompanhamentos: Um prato de macarrão cozido apenas com água e sal tem cerca de 200 calorias. Quando você adiciona um molho branco com creme de leite, esse valor pode subir para 400 calorias. Molhos à base de tomate tendem a ser mais leves (cerca de 280 calorias).",
+    "- O tamanho da porção: Exagerar na quantidade de massa no prato aumenta o total calórico de forma direta.",
+    "- Ingredientes ultraprocessados: Macarrões instantâneos (miojo) costumam ser mais calóricos e ricos em sódio e gorduras.",
+    "Dicas para incluir o macarrão na dieta",
+    "- Prefira molhos mais leves: Opte por molhos de tomate caseiros (ao sugo), vegetais ou proteínas magras (como frango ou carne moída magra) em vez de molhos com queijo em excesso ou creme de leite.",
+    "- Adicione fibras e proteínas: Combinar a massa com vegetais (abobrinha, cenoura, rúcula) e uma fonte de proteína ajuda a aumentar a saciedade.",
+    "- Controle a porção: Comer com moderação permite manter uma alimentação equilibrada sem precisar cortar o alimento.",
+    "Para entender melhor sobre mitos das massas, você pode conferir o artigo do site Vida Simples ou ver dicas de substituição de molhos no perfil do Instagram.",
+    "Veja neste vídeo mais detalhes sobre como os molhos e as calorias do macarrão influenciam na dieta:",
+    "Se quiser, me diga:",
+    "- Qual é o seu tipo de macarrão favorito?",
+    "- Quais acompanhamentos você costuma usar?",
+    "Eu posso te dar ideias de como deixar a refeição ainda mais equilibrada."
+   ],
+   "fontes": [
+    {
+     "titulo": "Qual ENGORDA Mais? ARROZ, MACARRÃO ou BATATA? Dicas e ...",
+     "fonte": "YouTube",
+     "link": "https://www.youtube.com/watch?v=jxKpm05CZ6c&t=311"
+    },
+    {
+     "titulo": "Macarrão engorda?",
+     "fonte": "YouTube",
+     "link": "https://www.youtube.com/watch?v=QCB3nY4rMW8&t=9"
+    },
+    {
+     "titulo": "Does pasta make you gain weight? Or can you include it in your diet and lose ...",
+     "fonte": "YouTube",
+     "link": "https://www.youtube.com/watch?v=hhUBGD9mras&t=117"
+    },
+    {
+     "titulo": "Comer macarrão engorda? Mitos e verdades sobre massas de trigo",
+     "fonte": "Vida Simples",
+     "link": "https://vidasimples.co/saude-do-corpo/comer-macarrao-engorda-mitos-e-verdades-sobre-massas-de-trigo/"
+    },
+    {
+     "titulo": "Afinal de contas, macarrão engorda? – Santa Amália",
+     "fonte": "camil.com.br",
+     "link": "https://santaamalia.com.br/santo-blog/post/afinal-de-contas-macarrao-engorda/"
+    },
+    {
+     "titulo": "Macarrão engorda ou não? Especialista revela a verdade (e ...",
+     "fonte": "Estadão",
+     "link": "https://www.estadao.com.br/paladar/radar/macarrao-engorda-ou-nao-especialista-revela-a-verdade/"
+    },
+    {
+     "titulo": "Esse post é para quem acha que comer massa engorda ... - Instagram",
+     "fonte": "Instagram",
+     "link": "https://www.instagram.com/p/C7mIv2Ps7-L/"
+    },
+    {
+     "titulo": "Does Pasta with Sauce make you GAIN WEIGHT? #ThisOrThat",
+     "fonte": "YouTube",
+     "link": "https://www.youtube.com/watch?v=S-XjA0x4fmg&t=10"
+    },
+    {
+     "titulo": "Macarrão engorda? Veja mitos e verdades sobre o carboidrato | Receitas",
+     "fonte": "Globo",
+     "link": "https://receitas.globo.com/blog/alimentacao-e-saude/macarrao-engorda-veja-mitos-e-verdades-sobre-o-carboidrato.ghtml"
+    },
+    {
+     "titulo": "Macarrão sem culpa: veja dicas para não tirar o alimento do cardápio",
+     "fonte": "ANAD – Associação Nacional de Atenção ao Diabetes",
+     "link": "https://www.anad.org.br/macarrao-sem-culpa-veja-dicas-para-nao-tirar-o-alimento-do-cardapio/"
+    }
+   ]
+  },
+  "organicos": [
+   {
+    "posicao": 1,
+    "titulo": "Esqueça o macarrão! Veja os alimentos que realmente estão engordando você",
+    "link": "https://escolaeducacao.com.br/esqueca-o-macarrao-veja-os-alimentos-que-realmente-estao-engordando-voce/"
+   },
+   {
+    "posicao": 2,
+    "titulo": "Macarrão entra na lista do bom carboidrato",
+    "link": "https://catracalivre.com.br/saude-bem-estar/macarrao-dieta-bom-carboidrato/"
+   },
+   {
+    "posicao": 3,
+    "titulo": "Pode ou não pode ? Essa costuma ser uma dúvida bem comum.⁣ ⁣ O macarrão é um ...",
+    "link": "https://www.instagram.com/p/CPdbqjusBD0/"
+   },
+   {
+    "posicao": 4,
+    "titulo": "Nutricionista desmente mitos sobre massas e carboidratos",
+    "link": "https://www.terra.com.br/diversao/arte-e-cultura/nutricionista-desmente-mitos-sobre-massas-e-carboidratos,bbc57342e78d5da1a92edeef281713c3g97kri2k.html"
+   },
+   {
+    "posicao": 5,
+    "titulo": "Como comer macarrão sem engordar: nutricionista explica truques",
+    "link": "https://curtamais.com.br/goiania/macarrao-sem-engordar/"
+   },
+   {
+    "posicao": 6,
+    "titulo": "Macarrão é saudável? Cientistas concluem que massa faz bem; entenda",
+    "link": "https://www.oliberal.com/mundo/macarrao-e-saudavel-cientistas-concluem-que-massa-faz-bem-entenda-1.634384"
+   },
+   {
+    "posicao": 7,
+    "titulo": "Comer macarrão é saudável? E como afeta nosso peso?",
+    "link": "https://blogdacondessa.com.br/blog/saude/comer-macarrao-e-saudavel-e-como-afeta-nosso-peso/"
+   },
+   {
+    "posicao": 8,
+    "titulo": "Pesquisa diz que macarrão é 'bom carboidrato' | Comportamento",
+    "link": "https://pleno.news/comportamento/pesquisa-diz-que-macarrao-e-bom-carboidrato.html?amp=1"
+   }
+  ]
+ }
+]

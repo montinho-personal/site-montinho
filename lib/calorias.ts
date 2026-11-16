@@ -439,4 +439,5 @@ export const ARTIGOS_COM_LINK_DEFICIT: string[] = [
   /* Efeito afterburn (16/11/2026): o leitor quer saber quanto o gasto pós-
      treino pesa no emagrecimento, e a conta que decide é o déficit do dia. */
   "efeito-afterburn-epoc",
+  "macarrao-engorda",
 ];

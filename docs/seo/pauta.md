@@ -15,8 +15,10 @@ veio e por que vale.
 |---|---|---|---|---|
 | ~~1~~ | ~~Graviton~~ publicado em 16/11 como `graviton` | 14.800 | fila de musculação (15/11) | Exercício de academia sem artigo; hoje só aparece como alias no mapa de treino. Liga com `como-fazer-barra-fixa`. |
 | ~~2~~ | ~~Air bike~~ publicado em 16/11 como `air-bike` | 8.100 | pauta de 08/10 (HYROX/CrossFit) | Sem artigo. Calorias só com MET de fonte verificada (Compêndio de Atividades); sem isso, o texto não dá número. |
-| 3 | Macarrão engorda? | 5.400 | série "engorda" (09/11 e 11/11) | Só existe a ficha de alimento (`macarrao-trigo-cru`). Mesmo modelo da série, com TACO e link de déficit. |
+| ~~3~~ | ~~Macarrão engorda?~~ publicado em 16/11 como `macarrao-engorda` | 5.400 | série "engorda" | — |
+| 3a | Miojo engorda? | 8.100 | outras pesquisas e PAA de "macarrão engorda" (16/11) | Sem artigo; `macarrao-engorda` tem só um trecho curto (TACO: 436 kcal, 17,2 g de gordura e 1.516 mg de sódio em 100 g). Ao publicar, o trecho passa a linkar o artigo. |
 | 4 | Milho engorda? | 5.400 | série "engorda" (11/11) | Só fichas de alimento (milho verde, fubá). Mesmo modelo. |
+| 4a | Pão engorda? Pão francês engorda? | 4.400 + 1.900 | outras pesquisas de "macarrão engorda" (16/11) | Só existem `pao-integral-engorda` e `pao-com-ovo-engorda`. Um artigo só para "pão" e "pão francês" (TACO: 300 kcal/100 g; unidade de 50 g pela POF). |
 | 5 | Treino metabólico: o que é e para quem serve | 3.600 | Planejador (05/11) e PAA de "epoc exercicio" (16/11) | Sem artigo; termo usado em aula de academia sem definição clara. |
 | 6 | Esportes que mais queimam calorias | 210 | pauta de HYROX (08/10) | Ver antes se não cabe como seção em `exercicio-que-mais-queima-calorias`; só vira artigo se a pesquisa mostrar intenção diferente (esporte, não exercício). |
 | 7 | Kickboxing emagrece? | 110 | Planejador (05/11) | Série de lutas (`boxe-emagrece`, `muay-thai-emagrece`) sem kickboxing. |
@@ -30,6 +32,7 @@ veio e por que vale.
 | Assunto | Onde entra | Veio de |
 |---|---|---|
 | Batata doce engorda? (12.100/mês) | `batata-doce-emagrece` | série "engorda" (11/11) |
+| Sopa de macarrão engorda? (390/mês) | `sopa-emagrece` ou `macarrao-engorda`, quando houver dado de sopa na base | outras pesquisas de "macarrão engorda" (16/11) |
 | Zona de queima de gordura ("fat burn") | `zonas-de-frequencia-cardiaca` (já explica a "zona de queima" da esteira; falta o FAQ "o que é fat burn?") | PAA de "efeito afterburn" (16/11) |
 | Muay thai: desvantagens e em quanto tempo define o corpo | `beneficios-do-muay-thai` | pauta de lutas (outubro) |
 | Hérnia de disco e jiu-jitsu | `hernia-de-disco-pode-treinar` (com fonte médica) | pauta de lutas (outubro) |
@@ -74,4 +77,4 @@ Quando houver crédito, faça a capa e risque a linha.
 
 | Artigo | Publicado em | Cena sugerida |
 |---|---|---|
-| (nenhum por enquanto) | | |
+| `macarrao-engorda` | 16/11/2026 | prato de macarrão ao sugo com garfo, e um pacote de massa seca ao lado |

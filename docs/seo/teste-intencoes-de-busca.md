@@ -1651,3 +1651,11 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `pao-com-ovo-engorda`: o artigo já cobria quase tudo (à noite, manhã, janta, frito, integral, calorias, na dieta). +2 FAQ: dois pães com ovo (432 kcal) e 2 ovos por dia (com link para `quantos-ovos-por-dia`). Fora: "dieta do ovo, quantos quilos em 3 dias" (promessa); "o que comer à noite para matar a fome" já tem `o-que-comer-a-noite-para-nao-engordar`, linkado.
 - `pipoca-engorda`: H2 "Pipoca engorda mais que arroz ou pão?" (PAA, TACO por porção) e "Como fazer pipoca para não engordar" (PAA e autocompletar: azeite, sem óleo, sal, sazon, de saco); +4 FAQ (arroz, pão, como fazer, 100 g). A visão de IA diz "30 a 32 kcal por xícara" e "balde de cinema passa de 500 kcal": não entraram (sem fonte checada).
 - Nada novo para a pauta: o que ficou de fora era promessa, navegação ("google") ou já tem artigo.
+
+## 2026-11-16 — Artigo novo da pauta: macarrão engorda
+
+- SerpApi, celular, São Paulo: "macarrão engorda" (busca principal só). Evidência: `docs/seo/serp/macarrao-engorda-2026-11-16.json`.
+- H2 e FAQ do autocompletar, PAA e outras pesquisas: calorias, mais que arroz (cru com cru: 371 x 358), acompanhamentos (sardinha, ovo, carne moída, alho e óleo, feijão), à noite, quantos quilos, 2 pratos, integral e de arroz, miojo. A TACO não tem macarrão comum cozido nem integral; conta pelo peso cru.
+- A visão de IA diz "prato cozido com água e sal ≈ 200 kcal" e "molho branco leva a 400": não entraram (sem fonte); a tabela de acompanhamentos dá os números pela TACO.
+- Fora, conferido no acervo e no Planejador: vale artigo "miojo engorda" (8.100) e "pão / pão francês engorda" (4.400 + 1.900), na pauta. Vira seção: "sopa de macarrão engorda" (390). Não cabe: "o que comer à noite para matar a fome" (já tem artigo, linkado).
+- Sem capa: Kairogen sem crédito; anotado em "Capas pendentes".
