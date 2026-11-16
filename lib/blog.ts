@@ -79081,7 +79081,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Promoções de academia na Black Friday são reais ou armadilha? O Montinho analisa o que realmente compensa e como fazer a escolha certa para a sua saúde.",
     category: "Treinamento",
     date: "2026-07-01",
-    updatedAt: "2026-07-01",
+    updatedAt: "2026-11-16",
     readTime: "7 min",
     author: "Montinho",
     tags: ["black friday academia","promoção academia","personal trainer","vale a pena","Alphaville SP"],
@@ -79090,9 +79090,13 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "O que verificar antes de fechar negócio na Black Friday de academia?", answer: "Verifique se o desconto é real, as condições contratuais (fidelidade, cancelamento), a estrutura da academia e se ela tem o que você precisa." },
       { question: "Promoção de personal trainer na Black Friday vale a pena?", answer: "Sim, especialmente se for com um profissional de confiança. Acompanhamento individualizado multiplica os resultados de qualquer programa de treino." },
       { question: "Como não cair em golpes na Black Friday fitness?", answer: "Pesquise o preço antes do período de promoções, leia o contrato com atenção e prefira estabelecimentos com boa reputação." },
-      { question: "O Montinho oferece promoções de Black Friday?", answer: "Fique de olho no site montinhopersonal.com.br e nas redes sociais do Montinho para ofertas especiais de Black Friday." },
+      { question: "O Montinho oferece promoções de Black Friday?", answer: "Se houver alguma condição especial de Black Friday na consultoria, ela é anunciada no site e nos stories do Instagram do Montinho. Fora disso, o valor de cada plano vai na proposta pelo WhatsApp, antes de você decidir." },
     ],
     content: `
+<div style="border-left:4px solid #BA9E50;padding:.75rem 1rem;margin:1.5rem 0;background:rgba(186,158,80,.08)">
+<p><strong>Black Friday 2026: sexta-feira, 27 de novembro.</strong> A Cyber Monday vem logo depois, na segunda, 30 de novembro. Não existe um "esquenta" oficial: cada loja define o seu, e muitas começam as ofertas antecipadas no início de novembro. Anote hoje o preço do que você quer comprar para comparar no dia.</p>
+</div>
+
 <h2>A Indústria que Lucra com a Sua Desistência</h2>
 <p>Todo novembro, o mercado fitness monta o mesmo espetáculo: matrículas pela metade do preço, planos anuais que custam uma mensalidade, pacotes "imperdíveis" de tudo. E todo janeiro, as academias lotam de gente que pagou — e sumiu em março. Esse é o segredo sujo do setor: <strong>o modelo de negócio de muita academia é você pagar e não aparecer</strong>.</p>
 
@@ -79146,7 +79150,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h3>1. Orientação Profissional: o Multiplicador</h3>
 <p>Equipamento sem direção é peso morto. Matrícula sem plano é boleto. O que multiplica tudo é <strong>orientação individualizada</strong> — ela elimina os meses (e os reais) desperdiçados treinando errado. Se aparecer uma oferta genuína de consultoria com um profissional de confiança, essa é a compra mais inteligente da sua Black Friday.</p>
 <p>A consultoria do Montinho, presencial em Alphaville e no formato online, é exatamente esse tipo de investimento: menos tentativa e erro, mais resultado por hora treinada.</p>
-<p><a href="/consultoria"><strong>Conheça os planos de consultoria do Montinho e verifique as condições especiais de Black Friday.</strong></a></p>
+<p><a href="/consultoria"><strong>Conheça a consultoria do Montinho e veja se ela faz sentido para você.</strong></a></p>
 
 <h3>2. Equipamentos que Trabalham para Você</h3>
 <p>Halteres, elásticos, barras, tapete. Equipamento de qualidade costuma ter desconto real em novembro — e é a base de uma academia em casa que funciona. Especialmente se você já sabe o que fazer com cada peça.</p>
@@ -79183,6 +79187,17 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>No vídeo abaixo, do meu canal, mostro o poder da disciplina — a sensação de dever cumprido que sustenta qualquer transformação.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
+<h2>Guias para comprar sem errar</h2>
+<p>Antes de colocar no carrinho, veja o que olhar em cada item:</p>
+<ul>
+<li><a href="/blog/mega-oferta-prime-2026">Suplementos, equipamentos e acessórios: o que comparar em cada promoção</a></li>
+<li><a href="/blog/smartwatch-para-treino">Smartwatch para treino</a> e <a href="/blog/fone-para-treinar">fone para treinar</a></li>
+<li><a href="/blog/balanca-de-bioimpedancia-vale-a-pena">Balança de bioimpedância vale a pena?</a></li>
+<li><a href="/blog/acessorios-de-academia-strap-cinturao-luva">Strap, cinturão, luva e munhequeira: quando usar</a></li>
+<li><a href="/blog/cozinha-para-dieta-o-que-comprar">Cozinha de quem faz dieta: o que comprar</a></li>
+<li><a href="/blog/pasta-de-amendoim-como-escolher">Pasta de amendoim</a>, <a href="/blog/multivitaminico-vale-a-pena">multivitamínico</a> e <a href="/blog/garrafa-para-treinar-como-escolher">garrafa para treinar</a></li>
+</ul>
+
 <h2>Leia também</h2>
 <ul><li><a href="/blog/como-ganhar-massa-muscular">Como ganhar massa muscular de verdade: guia completo</a></li><li><a href="/blog/erros-comuns-no-treino-de-musculacao">7 erros comuns na musculação que sabotam seus resultados</a></li><li><a href="/blog/calorias-alimentos-festa-junina">Quantas Calorias têm os Alimentos da Festa Junina?</a></li></ul>
 `,
@@ -79190,7 +79205,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       { question: "Vale a pena comprar matrícula de academia na Black Friday?", answer: "Depende. Se você tem comprometimento e já tem um plano de treino, pode valer muito. Mas se vai por impulso sem estratégia, provavelmente o dinheiro será desperdiçado." },
       { question: "O que verificar antes de fechar negócio na Black Friday de academia?", answer: "Verifique se o desconto é real, as condições contratuais (fidelidade, cancelamento), a estrutura da academia e se ela tem o que você precisa." },
       { question: "Como não cair em golpes na Black Friday fitness?", answer: "Pesquise o preço antes do período de promoções, leia o contrato com atenção e prefira estabelecimentos com boa reputação." },
-      { question: "O Montinho oferece promoções de Black Friday?", answer: "Fique de olho no site montinhopersonal.com.br e nas redes sociais do Montinho para ofertas especiais de Black Friday." },
+      { question: "O Montinho oferece promoções de Black Friday?", answer: "Se houver alguma condição especial de Black Friday na consultoria, ela é anunciada no site e nos stories do Instagram do Montinho. Fora disso, o valor de cada plano vai na proposta pelo WhatsApp, antes de você decidir." },
     ],
   },
 {
@@ -79323,18 +79338,22 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
     excerpt: "Black Friday é o momento de investir em saúde com desconto. Veja quais promoções fitness realmente valem a pena e como aproveitar ao máximo — incluindo a consultoria do Montinho.",
     category: "Treinamento",
     date: "2026-07-01",
-    updatedAt: "2026-07-01",
+    updatedAt: "2026-11-16",
     readTime: "8 min",
     author: "Montinho",
     tags: ["promoções fitness black friday","academia black friday","personal trainer","suplementos","equipamentos"],
     faqSchema: [
-      { question: "Quando começam as promoções fitness da Black Friday?", answer: "Muitas lojas e profissionais antecipam as promoções para a semana ou mesmo o mês antes. Fique atento a partir de novembro." },
+      { question: "Quando começam as promoções fitness da Black Friday?", answer: "A Black Friday 2026 é na sexta-feira, 27 de novembro, e a Cyber Monday na segunda, 30. Não existe esquenta oficial: cada loja define o seu, e muitas antecipam ofertas no início de novembro. Anote o preço antes para comparar." },
       { question: "Quais produtos fitness valem mais a pena na Black Friday?", answer: "Suplementos de marcas confiáveis, equipamentos de qualidade e serviços como consultoria com personal trainer costumam ter os melhores descontos reais." },
       { question: "Como evitar compras por impulso na Black Friday fitness?", answer: "Faça uma lista do que você realmente precisa antes do evento, pesquise os preços normais e compre apenas o que estava planejando." },
       { question: "Promoção de consultoria com personal trainer online é confiável?", answer: "Sim, desde que o profissional tenha histórico verificável e depoimentos reais. Pesquise bem antes de fechar." },
-      { question: "O Montinho tem promoções especiais na Black Friday?", answer: "Acompanhe o site montinhopersonal.com.br e as redes sociais do Montinho para ficar por dentro das ofertas especiais de Black Friday." },
+      { question: "O Montinho tem promoções especiais na Black Friday?", answer: "Se houver alguma condição especial de Black Friday na consultoria, ela é anunciada no site e nos stories do Instagram do Montinho. Fora disso, o valor de cada plano vai na proposta pelo WhatsApp, antes de você decidir." },
     ],
     content: `
+<div style="border-left:4px solid #BA9E50;padding:.75rem 1rem;margin:1.5rem 0;background:rgba(186,158,80,.08)">
+<p><strong>Black Friday 2026: sexta-feira, 27 de novembro.</strong> A Cyber Monday vem logo depois, na segunda, 30 de novembro. Não existe um "esquenta" oficial: cada loja define o seu, e muitas começam as ofertas antecipadas no início de novembro. Anote hoje o preço do que você quer comprar para comparar no dia.</p>
+</div>
+
 <h2>A Pegadinha da Metade do Dobro</h2>
 <p>Toda Black Friday, o universo fitness vira um cassino: academia, suplemento, equipamento, roupa, tudo com "desconto imperdível". E todo ano milhões de pessoas caem na mesma armadilha — compram o que não vão usar pela metade do preço que nunca existiu.</p>
 
@@ -79354,7 +79373,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Aqui está o segredo que quase ninguém conta: sem orientação profissional, qualquer equipamento, suplemento ou matrícula perde de 60 a 80% do potencial. Com um bom personal, até um treino simples em casa vira máquina de resultado.</p>
 <p>Por isso, se aparecer uma oferta genuína de consultoria com personal trainer, essa é a compra de maior retorno da sua Black Friday. <strong>Equipamento sem direção é peso morto. Direção transforma qualquer equipamento.</strong></p>
 <p>A consultoria do Montinho inclui avaliação individualizada, plano de treino sob medida e acompanhamento contínuo — presencial em Alphaville/SP e online para todo o Brasil.</p>
-<p><a href="/consultoria"><strong>Aproveite as condições especiais da Black Friday e conheça a consultoria do Montinho agora.</strong></a></p>
+<p><a href="/consultoria"><strong>Conheça a consultoria do Montinho e veja se ela faz sentido para você.</strong></a></p>
 
 <h3>Nível 2: Suplementos — Estoque, Não Experimente</h3>
 <p>É o melhor momento do ano para estocar o que você <strong>já usa</strong>. Descontos reais de 20 a 40% são comuns nas marcas sérias.</p>
@@ -79408,7 +79427,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <h2>One More Thing</h2>
 <p>Depois de todo esse mapa, uma verdade simples: o melhor ativo à venda nesta Black Friday não está em prateleira nenhuma. É você. E a compra que multiplica todas as outras — o suplemento, o halter, a matrícula — é a que coloca ciência e direção por trás de cada uma delas. É exatamente isso que a consultoria online do Montinho entrega: avaliação, plano sob medida e acompanhamento de quem faz disso profissão. O Montinho está disponível para tirar dúvidas e apontar o melhor caminho para o seu perfil e objetivos.</p>
-<p><a href="/consultoria"><strong>Fale com o Montinho e descubra o melhor plano para você nesta Black Friday.</strong></a></p>
+<p><a href="/consultoria"><strong>Fale com o Montinho e descubra o plano que cabe na sua rotina.</strong></a></p>
 
 
 
@@ -79420,14 +79439,25 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
+<h2>Guias para comprar sem errar</h2>
+<p>Antes de colocar no carrinho, veja o que olhar em cada item:</p>
+<ul>
+<li><a href="/blog/mega-oferta-prime-2026">Suplementos, equipamentos e acessórios: o que comparar em cada promoção</a></li>
+<li><a href="/blog/smartwatch-para-treino">Smartwatch para treino</a> e <a href="/blog/fone-para-treinar">fone para treinar</a></li>
+<li><a href="/blog/balanca-de-bioimpedancia-vale-a-pena">Balança de bioimpedância vale a pena?</a></li>
+<li><a href="/blog/acessorios-de-academia-strap-cinturao-luva">Strap, cinturão, luva e munhequeira: quando usar</a></li>
+<li><a href="/blog/cozinha-para-dieta-o-que-comprar">Cozinha de quem faz dieta: o que comprar</a></li>
+<li><a href="/blog/pasta-de-amendoim-como-escolher">Pasta de amendoim</a>, <a href="/blog/multivitaminico-vale-a-pena">multivitamínico</a> e <a href="/blog/garrafa-para-treinar-como-escolher">garrafa para treinar</a></li>
+</ul>
+
 <h2>Leia também</h2>
 <ul><li><a href="/blog/como-ganhar-massa-muscular">Como ganhar massa muscular de verdade: guia completo</a></li><li><a href="/blog/erros-comuns-no-treino-de-musculacao">7 erros comuns na musculação que sabotam seus resultados</a></li><li><a href="/blog/quando-comecar-projeto-verao">Quando Começar o Projeto Verão?</a></li></ul>
 `,
     faq: [
-      { question: "Quando começam as promoções fitness da Black Friday?", answer: "Muitas lojas e profissionais antecipam as promoções para a semana ou mesmo o mês antes. Fique atento a partir de novembro." },
+      { question: "Quando começam as promoções fitness da Black Friday?", answer: "A Black Friday 2026 é na sexta-feira, 27 de novembro, e a Cyber Monday na segunda, 30. Não existe esquenta oficial: cada loja define o seu, e muitas antecipam ofertas no início de novembro. Anote o preço antes para comparar." },
       { question: "Quais produtos fitness valem mais a pena na Black Friday?", answer: "Suplementos de marcas confiáveis, equipamentos de qualidade e serviços como consultoria com personal trainer costumam ter os melhores descontos reais." },
       { question: "Como evitar compras por impulso na Black Friday fitness?", answer: "Faça uma lista do que você realmente precisa antes do evento, pesquise os preços normais e compre apenas o que estava planejando." },
-      { question: "O Montinho tem promoções especiais na Black Friday?", answer: "Acompanhe o site montinhopersonal.com.br e as redes sociais do Montinho para ficar por dentro das ofertas especiais de Black Friday." },
+      { question: "O Montinho tem promoções especiais na Black Friday?", answer: "Se houver alguma condição especial de Black Friday na consultoria, ela é anunciada no site e nos stories do Instagram do Montinho. Fora disso, o valor de cada plano vai na proposta pelo WhatsApp, antes de você decidir." },
     ],
   },
 
