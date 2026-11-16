@@ -136,6 +136,26 @@ Como usar:
   pessoas querem saber, mas fato só entra com fonte oficial ou dois veículos
   independentes, como em qualquer outro conteúdo.
 
+## O que ficou de fora vira candidato a pauta
+
+Regra pedida pelo Montinho em 16/11/2026, para todo artigo novo ou revisado
+com pesquisa (SerpApi, export ou prints). No fim da tarefa, sem ele precisar
+pedir:
+
+1. Junte as buscas marcadas com ❌ (fora do tema da página).
+2. Compare cada uma com o acervo, normalizando hífen e acento (slug, título
+   e páginas de `app/`), como na checagem de canibalização.
+3. Separe em três grupos: **vale um artigo** (o site não cobre e cabe no
+   que o Montinho faz), **vira seção ou FAQ de um artigo existente** (diga
+   qual) e **não cabe** (pessoa, marca, promessa, outro serviço, nada a ver),
+   com o motivo de cada uma.
+4. As que valem artigo entram em `docs/seo/pauta.md` com a busca de origem,
+   a data e o porquê, na ordem em que você faria. Volume do Planejador ajuda
+   a ordenar quando der para consultar; volume baixo não descarta.
+5. Na resposta final, mande essa separação junto com as intenções de busca.
+
+Pauta é sugestão: nada é escrito sem o Montinho escolher.
+
 # Data de atualização: só quando o conteúdo muda de verdade
 
 Todo artigo do blog editado de forma substancial (seção nova, FAQ nova,
