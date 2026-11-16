@@ -42,4 +42,4 @@ verificação; preencher áreas atendidas e serviços; fotos e postagens recente
 avaliações que citem o lugar do treino; ligar o perfil à página de Alphaville do site.
 Sem endereço falso e sem bairro no nome do perfil.
 
-**Pendente:** o Renato informar onde fica o endereço de verificação do perfil.
+**Endereço de verificação (informado pelo Renato em 16/11/2026):** Alphaville, Barueri. A distância, portanto, não explica a posição: o centro do perfil já está na área das buscas. Sobram como causas prováveis o endereço oculto (perfil de área de cobertura) e a falta do bairro no nome, que os líderes têm. Alavancas dentro das regras: avaliações recentes que citem Alphaville e Tamboré, áreas atendidas e serviços completos, fotos e postagens, e o site como reforço (página de Alphaville ligada ao perfil).
