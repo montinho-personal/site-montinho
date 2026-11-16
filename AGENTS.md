@@ -158,6 +158,24 @@ pedir:
 
 Pauta é sugestão: nada é escrito sem o Montinho escolher.
 
+# Capa de artigo: só no padrão, ou nenhuma
+
+Regra pedida pelo Montinho em 16/11/2026. A capa do blog segue um padrão
+só: ilustração em estilo serigrafia gerada no Kairogen (papel creme,
+vermelho, preto e mostarda, sem texto, sem logo e sem pessoa real), com
+título em letra condensada, três ícones redondos com rótulo e o logo
+montados por cima, sem encostar na ilustração.
+
+- Antes de criar, confira o saldo (`get_credits`) e o preço
+  (`estimate_cost`). Uma imagem com duas cenas lado a lado, recortada, serve
+  para duas capas pelo preço de uma.
+- **Sem crédito para fazer no padrão, não faça capa.** Nada de capa só
+  tipográfica, desenho improvisado ou imagem de outro artigo. O artigo sai
+  sem a tag `<img>` de capa (o compartilhamento usa o `og-image.jpg` padrão)
+  e o slug entra em "Capas pendentes" de `docs/seo/pauta.md`.
+- Quando houver crédito de novo, faça as pendentes e tire da lista. Trocar
+  ou acrescentar a capa não muda o `updatedAt`.
+
 # Data de atualização: só quando o conteúdo muda de verdade
 
 Todo artigo do blog editado de forma substancial (seção nova, FAQ nova,
