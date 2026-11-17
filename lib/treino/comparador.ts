@@ -423,6 +423,9 @@ export const ARTIGOS_COM_COMPARADOR: Record<string, [string, string]> = {
   "desenvolvimento-arnold": ["desenvolvimento-arnold", "desenvolvimento-halter"],
   /* Graviton (16/11/2026): a troca que sobra é pela puxada frontal. */
   graviton: ["barra-fixa-assistida", "puxada-frente"],
+  /* Supino na máquina e abdominal supra (17/11/2026). */
+  "supino-na-maquina": ["supino-maquina", "supino-reto-barra"],
+  "abdominal-supra": ["abdominal-supra", "abdominal-infra"],
 };
 
 // ── Pergunte ao Montinho ──────────────────────────────────────────────────

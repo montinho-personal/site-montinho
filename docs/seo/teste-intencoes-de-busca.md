@@ -1667,3 +1667,11 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `aparelhos-de-academia-nomes`: tabelas por grupo (perna e glúteo, peito, costas, ombro e braço, cardio), pesos livres, mais usados, como usar, cada aparelho com link para o artigo de execução. Sem ferramenta.
 - Fora: "afinar o braço" e "perder barriga" (promessa de gordura localizada, respondida no texto com link); "dieta metabólica, cardápio" (dieta, não cabe); "nomes e fotos/pdf" (material para baixar); "academia ao ar livre" (12.100, vira seção de `treino-ao-ar-livre-estruturado`); "aparelhos completos" e "profissional" (compra, seção de `academia-de-condominio-quais-aparelhos-comprar`); "gym" (navegação).
 - Sem capa: Kairogen sem crédito; os dois em "Capas pendentes".
+
+## 2026-11-17 — Artigos novos da pauta (musculação): supino na máquina e abdominal supra
+
+- Itens M1 e M2 (exercícios do cadastro sem artigo; Planejador: "supino maquina" 90.500, "abdominal supra" 74.000). SerpApi, celular, São Paulo; a página de "abdominal supra" deu 503 na primeira tentativa e foi repetida uma vez. Evidência: `docs/seo/serp/supino-maquina-abdominal-supra-2026-11-17.json`.
+- `supino-na-maquina`: para que serve, como fazer e ajustar o banco, pegada neutra x pronada, tipos (sentado, articulado, convergente, deitado, inclinado), x Smith, máquina x barra x halteres, erros, séries. Comparador supino na máquina x supino reto; `supino-maquina` e `supino-inclinado-maquina` passam a apontar para o artigo no mapa.
+- `abdominal-supra`: o que trabalha (mesma linha de `abdomen-inferior-exercicios`: um músculo só, ênfase regional), como fazer, supra x infra, variações (solo, peso, polia, máquina, declinado, bola), erros, substitutos, perde barriga, diástase (com link e cautela), séries. Comparador supra x infra.
+- Fora: "abdominal oblíquo" (27.100, vale artigo, M3a); "abdominal supra TAF" (70, pauta de baixo volume, só com edital); "supino em casa / sem máquina" (vira seção de `treino-de-peito-em-casa`); "supino halter" e "supino inclinado" já têm artigo.
+- Sem capa: Kairogen sem crédito; os dois em "Capas pendentes".

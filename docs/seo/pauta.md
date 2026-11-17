@@ -15,9 +15,10 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 
 | # | Artigo sugerido | Volume/mês | Veio de | Por que vale |
 |---|---|---|---|---|
-| M1 | Supino na máquina | 90.500 | exercícios do cadastro sem artigo (17/11) | Só existem supino reto e inclinado com barra/halteres. Comparador possível: supino na máquina x supino reto. |
-| M2 | Abdominal supra | 74.000 | idem | O "infra" já tem `abdomen-inferior-exercicios`; o supra não tem página. |
+| ~~M1~~ | ~~Supino na máquina~~ publicado em 17/11 como `supino-na-maquina` | 90.500 | — | — |
+| ~~M2~~ | ~~Abdominal supra~~ publicado em 17/11 como `abdominal-supra` | 74.000 | — | — |
 | M3 | Rosca inversa | 27.100 | idem | Sem artigo; braço e antebraço. |
+| M3a | Abdominal oblíquo | 27.100 | outras pesquisas de "abdominal supra" ("supra e infra e oblíquo"), 17/11 | Sem artigo; completa a série supra, infra (`abdomen-inferior-exercicios`) e prancha. |
 | M4 | Supino declinado | 18.100 | idem | Sem artigo. |
 | M5 | Tríceps no banco | 18.100 | idem | Sem artigo; faz em casa também. |
 | M6 | Levantamento terra sumô | 18.100 | idem | Variação sem página (o terra convencional e o agachamento sumô já têm). |
@@ -46,6 +47,7 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | 7 | Kickboxing emagrece? | 110 | Planejador (05/11) | Série de lutas (`boxe-emagrece`, `muay-thai-emagrece`) sem kickboxing. |
 | 8 | Pode treinar com dor de cabeça? | 70 | autocompletar de `treinar-com-dor` (04/11) | Tema de saúde: só com fonte oficial. Ver se não cabe em `posso-treinar-com-gripe` como "treinar doente". |
 | ~~10~~ | ~~Nomes dos aparelhos de academia~~ publicado em 16/11 como `aparelhos-de-academia-nomes` | 3.600 | — | — |
+| 9a | Abdominal no TAF (teste físico de concurso) | 70 | autocompletar de "abdominal supra" (17/11) | Sem artigo; volume baixo. Só com o edital oficial de cada concurso como fonte (cada um tem regra própria). |
 | 9 | Fome depois do treino: por que acontece | 20 | PAA de "continua queimando calorias depois do treino" (16/11) | Sem artigo. Explicar sem prescrever alimentação (plano é do nutricionista). Volume baixo, mas aparece no PAA. |
 | ~~—~~ | ~~Efeito afterburn (EPOC)~~ | 18.100 ("epoc") | visão de IA do tabata (16/11) | Publicado em 16/11 como `efeito-afterburn-epoc`. |
 
@@ -54,6 +56,7 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | Assunto | Onde entra | Veio de |
 |---|---|---|
 | Prancha lateral (27.100/mês) | `prancha-abdominal-como-fazer-e-beneficios` (se a pesquisa mostrar intenção própria, vira artigo) | exercícios do cadastro sem artigo (17/11) |
+| Supino em casa (210/mês), "supino sem máquina" | `treino-de-peito-em-casa` | outras pesquisas de "supino na máquina" (17/11) |
 | Batata doce engorda? (12.100/mês) | `batata-doce-emagrece` | série "engorda" (11/11) |
 | Academia ao ar livre: como usar os aparelhos da praça (12.100/mês para "academia ao ar livre") | `treino-ao-ar-livre-estruturado` (se a pesquisa mostrar intenção diferente da do artigo, vira artigo próprio) | autocompletar de "aparelhos de academia nomes" (16/11) |
 | Aparelhos de academia completos (o que uma academia precisa ter) | `academia-de-condominio-quais-aparelhos-comprar` | PAA de "aparelhos de academia nomes" (16/11) |
@@ -103,6 +106,8 @@ Quando houver crédito, faça a capa e risque a linha.
 
 | Artigo | Publicado em | Cena sugerida |
 |---|---|---|
+| `supino-na-maquina` | 17/11/2026 | pessoa sentada na máquina de supino empurrando as alças |
+| `abdominal-supra` | 17/11/2026 | pessoa deitada no colchonete fazendo crunch |
 | `treino-metabolico` | 16/11/2026 | pessoa em circuito com kettlebell, cronômetro ao fundo |
 | `aparelhos-de-academia-nomes` | 16/11/2026 | fileira de máquinas (leg press, puxada, extensora) vista de lado |
 | `macarrao-engorda` | 16/11/2026 | prato de macarrão ao sugo com garfo, e um pacote de massa seca ao lado |

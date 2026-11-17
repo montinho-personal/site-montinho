@@ -133,6 +133,7 @@ import { EFEITO_AFTERBURN_POSTS } from "./efeito-afterburn";
 import { GRAVITON_AIR_BIKE_POSTS } from "./graviton-air-bike";
 import { MACARRAO_ENGORDA_POSTS } from "./macarrao-engorda";
 import { METABOLICO_APARELHOS_POSTS } from "./metabolico-aparelhos";
+import { SUPINO_MAQUINA_ABDOMINAL_SUPRA_POSTS } from "./supino-maquina-abdominal-supra";
 import { DOR_NO_TREINO_POSTS } from "./dor-no-treino";
 import { CONDOMINIOS_ALDEIA_POSTS } from "./condominios-aldeia-da-serra";
 import { DOCES_FIT_POSTS } from "./doces-fit";
@@ -182,6 +183,7 @@ export const blogPosts = ([
   ...GRAVITON_AIR_BIKE_POSTS,
   ...MACARRAO_ENGORDA_POSTS,
   ...METABOLICO_APARELHOS_POSTS,
+  ...SUPINO_MAQUINA_ABDOMINAL_SUPRA_POSTS,
   ...DOR_NO_TREINO_POSTS,
   ...CONDOMINIOS_ALDEIA_POSTS,
   ...DOCES_FIT_POSTS,
