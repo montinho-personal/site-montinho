@@ -63,13 +63,16 @@ avisar). Cada busca gasta 2 (página + autocompletar), 3 com a visão de IA em d
 etapas. Buscar só o que a peça precisa (em geral 3 buscas), nunca em massa, e não
 repetir busca já feita no mesmo dia.
 
-**Orçamento do mês (1.000 pesquisas, todos os sites somados; conta de 16/11/2026):**
-rotina diária do Direito de Verdade (2 revisões, 2 buscas cada) cerca de 300; rotinas
-do Personal por Perto (artigos e cidades, 2 + 2 por dia) cerca de 360; rotina do Site do
-Montinho cerca de 120 a 150; rotina do Crédito por Perto (1 revisão por dia) cerca de 60
-a 90; rotinas mensais (com o alerta do Crédito) cerca de 35. Total: 875 a 935, com pouca sobra para pedidos
-avulsos. Rotina nova, ou maior, só depois de refazer esta conta com o Renato; passou de
-850 no mês, só pesquisar o que ele pedir.
+**Orçamento do mês (1.000 pesquisas, todos os sites somados; conta de 17/11/2026):**
+rotinas diárias: Direito de Verdade (2 revisões, 2 buscas cada) cerca de 300; Personal por
+Perto (artigos e cidades, 2 + 2 por dia) cerca de 360; Site do Montinho cerca de 120 a 150;
+Crédito por Perto (1 por dia) cerca de 60 a 90; Onde Treinar Alphaville (1 por dia) cerca
+de 150 a 180. Rotinas mensais (dia 16): visão de IA com ideias de artigo nos 5 sites, mapa
+do Montinho e alertas de regra do Direito e do Crédito, cerca de 150. Total: 1.140 a 1.230,
+**acima da cota**, por decisão do Renato (17/11/2026: "segue tudo para todos"). Por isso:
+quando o SerpApi disser que a cota acabou, parar a tarefa na hora, não pesquisar às cegas
+nem pedir print, e avisar o Renato na conversa do site: ele decide se aumenta o plano ou
+espera a renovação para continuar. Rotina nova ou maior continua sendo pedido dele.
 
 **Evidência:** um JSON enxuto de cada busca (busca, data, aparelho, local,
 autocompletar, perguntas, outras pesquisas, texto e fontes da visão de IA, orgânicos com
@@ -96,9 +99,11 @@ sendo a fonte da posição e dos cliques do próprio site; o SerpApi não substi
    local. Anotar a decisão no doc da peça.
 2. **Visão de IA.** Em toda pesquisa, registrar no doc quem a visão de IA cita e como é a
    resposta (tamanho, lista, tabela, exemplo com número). Escrever o lead e a primeira
-   seção de modo que respondam do mesmo jeito direto, com fonte oficial. Uma vez por mês,
-   a rotina mensal repete as buscas principais do site e anota em
-   `docs/seo/visao-de-ia.md` se o site passou a ser citado.
+   seção de modo que respondam do mesmo jeito direto, com fonte oficial. Uma vez por mês
+   (dia 16, junto com o mapa local), a rotina mensal repete até 8 buscas principais do site
+   e anota em `docs/seo/visao-de-ia.md` se a visão de IA aparece, se cita o site, quem cita
+   e como é a página citada; as perguntas que o site ainda não cobre viram candidatas na
+   pauta (vale um artigo, não recomendo, cabe em página existente).
 3. **Concorrentes.** No doc da peça, anotar os domínios que ocupam os primeiros lugares e
    se são fracos (rede social, fórum, página antiga): essas buscas têm prioridade na pauta.
 4. **Sazonalidade.** Antes de pautar tema sazonal, consultar o Google Trends pelo SerpApi
