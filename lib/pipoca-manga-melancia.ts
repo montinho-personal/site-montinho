@@ -5,6 +5,14 @@ import type { BlogPost } from "./blog";
  * Paulo): H2 arroz ou pão (TACO: arroz cozido 128, pão francês 300, azeite e
  * óleo 884 kcal/100 g; pão 50 g pela POF) e como fazer para não engordar; +4 FAQ.
  *
+ * Manga e melancia revisadas em 17/11/2026 com o SerpApi ("manga engorda" e
+ * "melancia engorda", celular, São Paulo). Manga: H2 manga inteira na dieta e
+ * incha a barriga; FAQ com sal, inteira, frutas menos calóricas, inchaço.
+ * Melancia: tabela nutricional (TACO: 0,9 g proteína, lipídeos em traço,
+ * 104 mg potássio, 6,2 mg vitamina C em 100 g), suco, fruta mais calórica
+ * (TACO: coco cru 406, tamarindo 276, pequi 205, abacate 96 kcal/100 g),
+ * barriga e gravidez. Manga inteira de 300 g de polpa é exemplo nosso.
+ *
  * "Pipoca engorda?", "Manga engorda?" e "Melancia engorda?" (11/11/2026).
  * Planejador de Palavras-chave do Google Ads (Brasil): "pipoca engorda"
  * 22.200/mês; "manga engorda" e "melancia engorda" 12.100 cada. Pedido do
@@ -241,7 +249,8 @@ export const PIPOCA_MANGA_MELANCIA_POSTS: BlogPost[] = [
       "Quantas calorias tem a manga Palmer, Tommy e Haden, quanto comer, manga à noite, com leite e em suco, e como ela se compara a banana, maçã, mamão e melancia.",
     category: "Nutrição",
     date: "2026-11-11",
-    readTime: "6 min",
+    updatedAt: "2026-11-17",
+    readTime: "7 min",
     author: "Montinho",
     tags: ["manga", "frutas", "calorias", "carboidrato", "dieta"],
     faq: [
@@ -289,6 +298,26 @@ export const PIPOCA_MANGA_MELANCIA_POSTS: BlogPost[] = [
         question: "Engorda mais manga ou banana?",
         answer:
           "A banana. 100 g de banana prata têm perto de 98 kcal; a manga Tommy, 51, e a Palmer, 73.",
+      },
+      {
+        question: "Estou de dieta, posso comer uma manga inteira?",
+        answer:
+          "Pode, contando no total do dia. Uma manga grande com 300 g de polpa (exemplo nosso) tem perto de 152 kcal na Tommy e 217 na Palmer, menos que muito lanche de pacote.",
+      },
+      {
+        question: "Manga com sal engorda?",
+        answer:
+          "O sal não tem calorias, então não muda o quanto a manga engorda. Só não exagere no sal por causa do sódio.",
+      },
+      {
+        question: "A manga causa inchaço na barriga?",
+        answer:
+          "Em algumas pessoas, muita fruta de uma vez pode dar gases e desconforto. Isso é inchaço, não gordura, e passa. Se acontece sempre, observe a quantidade e procure médico ou nutricionista.",
+      },
+      {
+        question: "Quais são as frutas menos calóricas?",
+        answer:
+          "Pela TACO, em 100 g: melão (29 kcal), morango (30), melancia (33), laranja-pera (37) e mamão papaia (40). A manga Tommy tem 51.",
       },
       {
         question: "Quanta manga posso comer por dia?",
@@ -348,15 +377,21 @@ export const PIPOCA_MANGA_MELANCIA_POSTS: BlogPost[] = [
 <h2>Manga tem muito açúcar?</h2>
 <p>Tem o açúcar natural da fruta: de 12,8 g (Tommy) a 19,4 g (Palmer) de carboidrato em 100 g, segundo a TACO. Para a maioria das pessoas, isso cabe sem problema. Quem tem diabetes deve combinar a porção com o médico ou nutricionista. Veja <a href="/blog/musculacao-e-diabetes-tipo-2">musculação e diabetes tipo 2</a>.</p>
 
+<h2>Manga incha a barriga?</h2>
+<p>Em algumas pessoas, muita fruta de uma vez pode dar gases e desconforto. Isso é <strong>inchaço, não gordura</strong>: passa em algumas horas. Se acontece sempre, observe a quantidade e procure médico ou nutricionista. Veja <a href="/blog/barriga-inchada-ou-gordura">barriga inchada ou gordura</a>.</p>
+
 <h2>Quanta manga comer por dia?</h2>
 <p>Para a maioria das pessoas, <strong>150 a 200 g por dia</strong> cabem bem, junto com outras frutas. Mais que isso pode caber, desde que você conte no total do dia. Para saber quantas calorias cabem no seu, use a <a href="/ferramentas/calculadora-deficit-calorico">Calculadora de Déficit Calórico</a>.</p>
+
+<h2>Estou de dieta: posso comer uma manga inteira?</h2>
+<p>Pode, contando no total do dia. O tamanho varia muito, mas uma manga grande com <strong>300 g de polpa</strong> (exemplo nosso) tem perto de <strong>152 kcal na Tommy</strong> e <strong>217 na Palmer</strong>. Se a manga inteira for o lanche da tarde, ela cabe; se vier depois de uma sobremesa, soma as duas. E com sal, como muita gente come: o sal não tem calorias, então não muda a conta.</p>
 
 <h2>Não se compare</h2>
 <p>Tem gente que come manga todo dia e emagrece, e gente que corta a fruta e não sai do lugar. A diferença está no resto do dia, no gasto e na história de cada um. Cada um tem a própria genética, rotina e história, com altos e baixos. O que muda o seu corpo é um jeito de comer que dê para manter, com a manga dentro, se você gosta dela.</p>
 
 <h2>Fontes</h2>
 <ul>
-<li>${TACO}: manga Palmer, Tommy Atkins e Haden crua, polpa de manga congelada, banana prata, maçã fuji, uva itália, abacaxi, mamão papaia, laranja-pera, melancia, morango, açúcar refinado</li>
+<li>${TACO}: manga Palmer, Tommy Atkins e Haden crua (300 g de polpa: exemplo nosso), polpa de manga congelada, banana prata, maçã fuji, uva itália, abacaxi, mamão papaia, laranja-pera, melancia, morango, açúcar refinado</li>
 </ul>
 
 <h2>Leia também</h2>
@@ -377,7 +412,8 @@ export const PIPOCA_MANGA_MELANCIA_POSTS: BlogPost[] = [
       "Quantas calorias tem a melancia por fatia e pedaço, quanto de água e açúcar, melancia à noite, na dieta, com diabetes e comparada com outras frutas.",
     category: "Nutrição",
     date: "2026-11-11",
-    readTime: "5 min",
+    updatedAt: "2026-11-17",
+    readTime: "6 min",
     author: "Montinho",
     tags: ["melancia", "frutas", "calorias", "dieta", "emagrecimento"],
     faq: [
@@ -427,6 +463,31 @@ export const PIPOCA_MANGA_MELANCIA_POSTS: BlogPost[] = [
           "Para a maioria das pessoas, de 1 a 2 fatias (200 a 400 g) por dia cabem bem. Meio quilo tem perto de 163 kcal.",
       },
       {
+        question: "Melancia engorda a barriga?",
+        answer:
+          "Não. Nenhum alimento leva gordura para um lugar escolhido; ela sai e entra no corpo todo, pelo total do dia. Se a barriga estufa depois de muita melancia, é inchaço, não gordura.",
+      },
+      {
+        question: "Qual a tabela nutricional da melancia?",
+        answer:
+          "Pela TACO, 100 g de melancia crua têm 33 kcal, 8,1 g de carboidrato, 0,9 g de proteína, gordura em traço, 0,1 g de fibra, 90,7 g de água, 104 mg de potássio e 6,2 mg de vitamina C.",
+      },
+      {
+        question: "É bom tomar suco de melancia todos os dias?",
+        answer:
+          "Sem açúcar, o suco tem as mesmas calorias da fruta batida. O cuidado é a quantidade: num copo vai muita melancia, e se entrar açúcar, ele soma (20 g de açúcar têm perto de 77 kcal).",
+      },
+      {
+        question: "Qual é a fruta mais calórica?",
+        answer:
+          "Entre as frutas da TACO, o coco cru (406 kcal em 100 g), o tamarindo (276) e o pequi (205). O abacate tem 96, e a banana prata, 98. A melancia, com 33, fica entre as menos calóricas.",
+      },
+      {
+        question: "Melancia engorda na gravidez?",
+        answer:
+          "As calorias são as mesmas de fora da gravidez. Na gestação, quanto e o que comer é com o médico e o nutricionista do pré-natal.",
+      },
+      {
         question: "Engorda mais melancia ou manga?",
         answer:
           "A manga. 100 g de melancia têm 33 kcal; a manga Tommy, 51, e a Palmer, 73.",
@@ -448,6 +509,22 @@ export const PIPOCA_MANGA_MELANCIA_POSTS: BlogPost[] = [
 </tbody>
 </table>
 <p>Valores da TACO, a Tabela Brasileira de Composição de Alimentos, com as porções da tabela de medidas do IBGE (o meio quilo é exemplo nosso). Você vai encontrar a ficha da melancia no fim do artigo.</p>
+
+<h2>Tabela nutricional da melancia</h2>
+<table>
+<thead><tr><th>Em 100 g de melancia crua</th><th>Quantidade</th></tr></thead>
+<tbody>
+<tr><td>Calorias</td><td>33 kcal</td></tr>
+<tr><td>Carboidrato</td><td>8,1 g</td></tr>
+<tr><td>Proteína</td><td>0,9 g</td></tr>
+<tr><td>Gordura</td><td>traço (quase zero)</td></tr>
+<tr><td>Fibra</td><td>0,1 g</td></tr>
+<tr><td>Água</td><td>90,7 g</td></tr>
+<tr><td>Potássio</td><td>104 mg</td></tr>
+<tr><td>Vitamina C</td><td>6,2 mg</td></tr>
+</tbody>
+</table>
+<p>Valores da TACO.</p>
 
 <h2>Por que a melancia tem tão poucas calorias?</h2>
 <p>Porque é quase toda água: pela TACO, <strong>90,7 g em cada 100 g</strong>. Sobra pouco espaço para açúcar, e quase nada de gordura e proteína. É o mesmo motivo de o melão (29 kcal em 100 g) e o morango (30) também ficarem lá embaixo na tabela.</p>
@@ -475,20 +552,26 @@ export const PIPOCA_MANGA_MELANCIA_POSTS: BlogPost[] = [
 <tr><td>Melão</td><td>29 kcal</td></tr>
 </tbody>
 </table>
-<p>Veja <a href="/blog/manga-engorda">manga engorda?</a> e <a href="/blog/banana-engorda">banana engorda?</a>.</p>
+<p>Na outra ponta, as frutas mais calóricas da TACO são o coco cru (406 kcal em 100 g), o tamarindo (276) e o pequi (205); o abacate tem 96. Veja <a href="/blog/manga-engorda">manga engorda?</a> e <a href="/blog/banana-engorda">banana engorda?</a>.</p>
+
+<h2>Suco de melancia engorda? Pode tomar todo dia?</h2>
+<p>Sem açúcar, o suco tem as mesmas calorias da melancia batida. O cuidado é a quantidade: num copo cabe muita fruta, e é fácil tomar dois. Se entrar açúcar, ele soma: 20 g têm perto de 77 kcal. Todo dia, sem açúcar e no lugar de um refrigerante, cabe na maioria das dietas.</p>
+
+<h2>Melancia engorda a barriga?</h2>
+<p>Não. Nenhum alimento leva gordura para um lugar escolhido: ela entra e sai do corpo todo, pelo total do dia. Veja <a href="/blog/gordura-localizada-mitos-e-fatos">gordura localizada</a>.</p>
 
 <h2>Melancia incha a barriga?</h2>
 <p>Em algumas pessoas, muita fruta de uma vez pode dar desconforto. Se acontece sempre, observe a quantidade e procure médico ou nutricionista. Veja <a href="/blog/barriga-inchada-ou-gordura">barriga inchada ou gordura</a>.</p>
 
 <h2>Quanta melancia comer por dia?</h2>
-<p>Para a maioria das pessoas, <strong>1 a 2 fatias por dia</strong> (200 a 400 g) cabem bem. Mesmo meio quilo soma perto de 163 kcal. Para saber quantas calorias cabem no seu dia, use a <a href="/ferramentas/calculadora-deficit-calorico">Calculadora de Déficit Calórico</a>.</p>
+<p>Para a maioria das pessoas, <strong>1 a 2 fatias por dia</strong> (200 a 400 g) cabem bem. Mesmo meio quilo soma perto de 163 kcal, e 1 kg, perto de 326. Engorda se comer muito? Só se o total do dia passar do seu gasto, e com melancia isso exige muita fruta. Para saber quantas calorias cabem no seu dia, use a <a href="/ferramentas/calculadora-deficit-calorico">Calculadora de Déficit Calórico</a>.</p>
 
 <h2>Não se compare</h2>
 <p>Tem gente que come melancia todo dia e emagrece, e gente que come só fruta e não sai do lugar. A diferença está no resto do dia, no gasto e na história de cada um. Cada um tem a própria genética, rotina e história, com altos e baixos. O que muda o seu corpo é um jeito de comer que dê para manter, com a fruta que você gosta dentro.</p>
 
 <h2>Fontes</h2>
 <ul>
-<li>${TACO}: melancia crua, melão, morango, mamão papaia, laranja-pera, maçã fuji, manga Palmer, banana prata</li>
+<li>${TACO}: melancia crua (composição completa), melão, coco cru, tamarindo, pequi, abacate, morango, mamão papaia, laranja-pera, maçã fuji, manga Palmer, banana prata</li>
 <li>${IBGE} (pedaço, fatia e porção de melancia)</li>
 </ul>
 
