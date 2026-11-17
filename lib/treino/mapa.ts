@@ -169,7 +169,7 @@ export const ARTIGO_DO_EXERCICIO: Record<string, string> = {
   "supino-reto-barra": "como-fazer-supino-reto", "supino-inclinado-barra": "como-fazer-supino-inclinado", "supino-inclinado-halter": "como-fazer-supino-inclinado",
   "crucifixo-halter": "como-fazer-crucifixo-halteres", "crucifixo-maquina": "como-fazer-voador-pec-deck", "cross-over": "como-fazer-cross-over-com-halteres",
   "paralelas-peito": "como-fazer-mergulho-paralelas", "paralelas-triceps": "como-fazer-mergulho-paralelas", pullover: "como-fazer-pullover",
-  "barra-fixa": "como-fazer-barra-fixa", "barra-fixa-assistida": "graviton", "puxada-frente": "como-fazer-pulldown-puxada-frontal", "puxada-triangulo": "como-fazer-puxada-fechada",
+  "barra-fixa": "como-fazer-barra-fixa", "barra-fixa-assistida": "graviton", "supino-maquina": "supino-na-maquina", "supino-inclinado-maquina": "supino-na-maquina", "abdominal-supra": "abdominal-supra", "puxada-frente": "como-fazer-pulldown-puxada-frontal", "puxada-triangulo": "como-fazer-puxada-fechada",
   "remada-curvada": "como-fazer-remada-curvada-tecnica", "remada-baixa": "como-fazer-remada-baixa", "remada-unilateral": "como-fazer-remada-unilateral",
   "levantamento-terra": "como-fazer-levantamento-terra-corretamente", stiff: "como-fazer-stiff", encolhimento: "como-fazer-encolhimento-trapezio",
   "desenvolvimento-halter": "como-fazer-desenvolvimento-ombros", "desenvolvimento-barra": "como-fazer-desenvolvimento-ombros",
