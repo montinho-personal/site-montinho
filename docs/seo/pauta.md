@@ -41,6 +41,7 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | ~~3~~ | ~~Macarrão engorda?~~ publicado em 16/11 como `macarrao-engorda` | 5.400 | série "engorda" | — |
 | 3a | Miojo engorda? | 8.100 | outras pesquisas e PAA de "macarrão engorda" (16/11) | Sem artigo; `macarrao-engorda` tem só um trecho curto (TACO: 436 kcal, 17,2 g de gordura e 1.516 mg de sódio em 100 g). Ao publicar, o trecho passa a linkar o artigo. |
 | 4 | Milho engorda? | 5.400 | série "engorda" (11/11) | Só fichas de alimento (milho verde, fubá). Mesmo modelo. |
+| 4b | Laranja engorda? (laranja ajuda a emagrecer) | — | outras pesquisas de "manga engorda" (17/11) | Série "engorda": só existe a ficha da laranja-pera. TACO: laranja-pera 37 kcal/100 g. Volume a consultar. |
 | 4a | Pão engorda? Pão francês engorda? | 4.400 + 1.900 | outras pesquisas de "macarrão engorda" (16/11) | Só existem `pao-integral-engorda` e `pao-com-ovo-engorda`. Um artigo só para "pão" e "pão francês" (TACO: 300 kcal/100 g; unidade de 50 g pela POF). |
 | ~~5~~ | ~~Treino metabólico~~ publicado em 16/11 como `treino-metabolico` | 3.600 | — | — |
 | 6 | Esportes que mais queimam calorias | 210 | pauta de HYROX (08/10) | Ver antes se não cabe como seção em `exercicio-que-mais-queima-calorias`; só vira artigo se a pesquisa mostrar intenção diferente (esporte, não exercício). |
@@ -92,7 +93,7 @@ que ficou de fora.
 |---|---|
 | ~~05/11~~ | ~~`pao-com-ovo-engorda`~~ revisado em 16/11 |
 | ~~11/11~~ | ~~`pipoca-engorda`~~ revisado em 16/11 |
-| 11/11 | `manga-engorda`, `melancia-engorda` |
+| ~~11/11~~ | ~~`manga-engorda`, `melancia-engorda`~~ revisados em 17/11 |
 | 15/11 | `feijao-engorda`, `pao-de-queijo-engorda`, `maca-engorda` |
 | 15/11 | `rosca-alternada`, `remada-cavalinho`, `desenvolvimento-arnold` |
 | 15/11 | 8 de consultoria online e dúvidas de treino (`consultoria-online-ou-personal-presencial`, `avaliacao-fisica-consultoria-online`, `personal-online-smart-fit`, `treinar-sozinho-na-academia-da-resultado`, `como-saber-se-a-ficha-de-treino-e-boa`, `treino-abc-ou-upper-lower`, `musculacao-para-emagrecer-quantas-vezes-por-semana`, `como-saber-se-o-treino-esta-funcionando`) |
