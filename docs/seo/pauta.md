@@ -15,6 +15,26 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 
 | # | Artigo sugerido | Volume/mês | Veio de | Por que vale |
 |---|---|---|---|---|
+| M1 | Supino na máquina | 90.500 | exercícios do cadastro sem artigo (17/11) | Só existem supino reto e inclinado com barra/halteres. Comparador possível: supino na máquina x supino reto. |
+| M2 | Abdominal supra | 74.000 | idem | O "infra" já tem `abdomen-inferior-exercicios`; o supra não tem página. |
+| M3 | Rosca inversa | 27.100 | idem | Sem artigo; braço e antebraço. |
+| M4 | Supino declinado | 18.100 | idem | Sem artigo. |
+| M5 | Tríceps no banco | 18.100 | idem | Sem artigo; faz em casa também. |
+| M6 | Levantamento terra sumô | 18.100 | idem | Variação sem página (o terra convencional e o agachamento sumô já têm). |
+| M7 | Abdominal bicicleta | 18.100 | idem | Sem artigo. |
+| M8 | Rosca 21 | 14.800 | idem | Sem artigo. |
+| M9 | Tríceps coice | 14.800 | idem | Sem artigo. |
+| M10 | Ponte de glúteo | 12.100 | idem | Sem artigo; diferente da elevação pélvica (no chão, sem banco). Linkar `elevacao-pelvica` e `como-fazer-hip-thrust`. |
+| M11 | Farmer walk (caminhada do fazendeiro) | 9.900 | idem | Sem artigo. |
+| M12 | Supino fechado | 5.400 | idem | Sem artigo. |
+| M13 | Good morning | 5.400 | idem | Sem artigo. |
+| M14 | Rosca de punho | 5.400 | idem | Sem artigo. |
+| M15 | Roda abdominal | 4.400 | idem | Sem artigo. |
+| M16 | Barra australiana (remada invertida) | 4.400 | idem | Sem artigo. |
+| M17 | Step up (subida no banco) | 2.900 | idem | Sem artigo. |
+| M18 | Glúteo na máquina | 2.900 | idem | Sem artigo. |
+| M19 | Nordic curl | 2.400 | idem | Sem artigo. |
+| M20 | Afundo lateral | 2.400 | idem | Sem artigo. |
 | ~~1~~ | ~~Graviton~~ publicado em 16/11 como `graviton` | 14.800 | fila de musculação (15/11) | Exercício de academia sem artigo; hoje só aparece como alias no mapa de treino. Liga com `como-fazer-barra-fixa`. |
 | ~~2~~ | ~~Air bike~~ publicado em 16/11 como `air-bike` | 8.100 | pauta de 08/10 (HYROX/CrossFit) | Sem artigo. Calorias só com MET de fonte verificada (Compêndio de Atividades); sem isso, o texto não dá número. |
 | ~~3~~ | ~~Macarrão engorda?~~ publicado em 16/11 como `macarrao-engorda` | 5.400 | série "engorda" | — |
@@ -33,6 +53,7 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 
 | Assunto | Onde entra | Veio de |
 |---|---|---|
+| Prancha lateral (27.100/mês) | `prancha-abdominal-como-fazer-e-beneficios` (se a pesquisa mostrar intenção própria, vira artigo) | exercícios do cadastro sem artigo (17/11) |
 | Batata doce engorda? (12.100/mês) | `batata-doce-emagrece` | série "engorda" (11/11) |
 | Academia ao ar livre: como usar os aparelhos da praça (12.100/mês para "academia ao ar livre") | `treino-ao-ar-livre-estruturado` (se a pesquisa mostrar intenção diferente da do artigo, vira artigo próprio) | autocompletar de "aparelhos de academia nomes" (16/11) |
 | Aparelhos de academia completos (o que uma academia precisa ter) | `academia-de-condominio-quais-aparelhos-comprar` | PAA de "aparelhos de academia nomes" (16/11) |
