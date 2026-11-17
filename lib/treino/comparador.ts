@@ -426,6 +426,8 @@ export const ARTIGOS_COM_COMPARADOR: Record<string, [string, string]> = {
   /* Supino na máquina e abdominal supra (17/11/2026). */
   "supino-na-maquina": ["supino-maquina", "supino-reto-barra"],
   "abdominal-supra": ["abdominal-supra", "abdominal-infra"],
+  "rosca-inversa": ["rosca-inversa", "rosca-martelo"],
+  "abdominal-obliquo": ["abdominal-bicicleta", "rotacao-tronco"],
 };
 
 // ── Pergunte ao Montinho ──────────────────────────────────────────────────

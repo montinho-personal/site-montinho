@@ -1675,3 +1675,12 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `abdominal-supra`: o que trabalha (mesma linha de `abdomen-inferior-exercicios`: um músculo só, ênfase regional), como fazer, supra x infra, variações (solo, peso, polia, máquina, declinado, bola), erros, substitutos, perde barriga, diástase (com link e cautela), séries. Comparador supra x infra.
 - Fora: "abdominal oblíquo" (27.100, vale artigo, M3a); "abdominal supra TAF" (70, pauta de baixo volume, só com edital); "supino em casa / sem máquina" (vira seção de `treino-de-peito-em-casa`); "supino halter" e "supino inclinado" já têm artigo.
 - Sem capa: Kairogen sem crédito; os dois em "Capas pendentes".
+
+## 2026-11-17 — Artigos novos da pauta (musculação): rosca inversa e abdominal oblíquo
+
+- Itens M3 e M3a (Planejador: "rosca inversa" 27.100, "abdominal obliquo" 27.100). SerpApi, celular, São Paulo: "rosca inversa" e "abdominal oblíquo". Evidência: `docs/seo/serp/rosca-inversa-obliquo-2026-11-17.json`. Nenhuma das duas trouxe "Outras pessoas pesquisaram".
+- Formato: os orgânicos são quase todos vídeo (YouTube, shorts) e páginas de exercício com animação; a visão de IA cita Tua Saúde, TotalPass e vídeos (rosca) e só Instagram, YouTube e Facebook (oblíquo). Texto sozinho tende a entrar atrás dos vídeos; o lead e a primeira seção respondem direto (o que é, qual músculo, como fazer).
+- `rosca-inversa`: H2 e FAQ do autocompletar e do PAA (para que serve, qual músculo, barra reta, barra W, halteres, polia/cross/cabo, unilateral, diferença para direta e martelo, como substituir, em pé ou sentado). Comparador rosca inversa x martelo; `rosca-inversa` e `rosca-inversa-polia` passam a apontar para o artigo no mapa. "Prevenção de lesões" (visão de IA) não entrou como fato.
+- `abdominal-obliquo`: função (PAA), como fazer no solo, variações do autocompletar (alternado, unilateral, cruzado, toque nos pés, bicicleta, halter/peso, polia e polia alta, máquina, banco romano, lateral), prancha lateral, engrossa a cintura (mesma linha de `treino-para-cintura-fina`), gordura localizada, "3 melhores abdominais" e "qual substitui" (FAQ). Comparador abdominal bicicleta x rotação de tronco.
+- Fora: "21 tipos de exercícios abdominais" (vira seção de `abdomen` ou `treino-de-abdomen-em-casa`); "rosca inversa com rotação", "com corda deitado" e "em inclinação com um braço" (variações raras de orgânico, não cabem); "abdominal bicicleta" já é M7 e "rosca de punho" já é M14 na pauta.
+- Sem capa: Kairogen sem crédito; os dois em "Capas pendentes".
