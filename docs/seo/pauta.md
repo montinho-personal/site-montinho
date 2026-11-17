@@ -17,8 +17,8 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 |---|---|---|---|---|
 | ~~M1~~ | ~~Supino na máquina~~ publicado em 17/11 como `supino-na-maquina` | 90.500 | — | — |
 | ~~M2~~ | ~~Abdominal supra~~ publicado em 17/11 como `abdominal-supra` | 74.000 | — | — |
-| M3 | Rosca inversa | 27.100 | idem | Sem artigo; braço e antebraço. |
-| M3a | Abdominal oblíquo | 27.100 | outras pesquisas de "abdominal supra" ("supra e infra e oblíquo"), 17/11 | Sem artigo; completa a série supra, infra (`abdomen-inferior-exercicios`) e prancha. |
+| ~~M3~~ | ~~Rosca inversa~~ publicado em 17/11 como `rosca-inversa` | 27.100 | — | — |
+| ~~M3a~~ | ~~Abdominal oblíquo~~ publicado em 17/11 como `abdominal-obliquo` | 27.100 | — | — |
 | M4 | Supino declinado | 18.100 | idem | Sem artigo. |
 | M5 | Tríceps no banco | 18.100 | idem | Sem artigo; faz em casa também. |
 | M6 | Levantamento terra sumô | 18.100 | idem | Variação sem página (o terra convencional e o agachamento sumô já têm). |
@@ -56,6 +56,7 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | Assunto | Onde entra | Veio de |
 |---|---|---|
 | Prancha lateral (27.100/mês) | `prancha-abdominal-como-fazer-e-beneficios` (se a pesquisa mostrar intenção própria, vira artigo) | exercícios do cadastro sem artigo (17/11) |
+| Tipos de abdominais (lista com os principais e o que cada um trabalha) | `abdomen` ou `treino-de-abdomen-em-casa` | PAA de "abdominal oblíquo" ("Quais são os 21 tipos de exercícios abdominais?"), 17/11 |
 | Supino em casa (210/mês), "supino sem máquina" | `treino-de-peito-em-casa` | outras pesquisas de "supino na máquina" (17/11) |
 | Batata doce engorda? (12.100/mês) | `batata-doce-emagrece` | série "engorda" (11/11) |
 | Academia ao ar livre: como usar os aparelhos da praça (12.100/mês para "academia ao ar livre") | `treino-ao-ar-livre-estruturado` (se a pesquisa mostrar intenção diferente da do artigo, vira artigo próprio) | autocompletar de "aparelhos de academia nomes" (16/11) |
@@ -106,6 +107,8 @@ Quando houver crédito, faça a capa e risque a linha.
 
 | Artigo | Publicado em | Cena sugerida |
 |---|---|---|
+| `rosca-inversa` | 17/11/2026 | pessoa em pé fazendo rosca com a barra, palmas para baixo |
+| `abdominal-obliquo` | 17/11/2026 | pessoa deitada girando o tronco, cotovelo em direção ao joelho oposto |
 | `supino-na-maquina` | 17/11/2026 | pessoa sentada na máquina de supino empurrando as alças |
 | `abdominal-supra` | 17/11/2026 | pessoa deitada no colchonete fazendo crunch |
 | `treino-metabolico` | 16/11/2026 | pessoa em circuito com kettlebell, cronômetro ao fundo |
