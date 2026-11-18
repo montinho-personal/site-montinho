@@ -1832,3 +1832,5 @@ Evidência: `docs/seo/serp/academias-diaria-aula-experimental-alphaville-2026-11
 **Links internos.** Guias `nitrogym-alphaville`, `ironberg-alphaville` e `smart-fit-alphaville` (uma frase antes de "Leia também", sem `updatedAt`), `/academias-alphaville` e `/academia-ideal-alphaville`.
 
 **Título e descrição (página nova; linha de base do GSC zero em 18/11).** "Academia com Diária e Aula Experimental em Alphaville" / "Quer treinar hoje ou testar antes de assinar? Veja as academias de Alphaville e região com diária, aula avulsa e aula experimental, com preço, regra e fonte."
+
+**Ajuste no mesmo dia (18/11), a pedido do Montinho.** Só a Arena 18 mostra preço (aula experimental grátis com ele). Todas as outras ofertas aparecem como "Valor a consultar", inclusive as que a fonte publicava (day use da NitroGym, drop in da BlackSheep, aula experimental grátis do CrossFit Barueri e da G13). Saíram o filtro "só com preço confirmado" e a conta de idas no mês, que dependiam do preço; texto e FAQ deixaram de citar valores.

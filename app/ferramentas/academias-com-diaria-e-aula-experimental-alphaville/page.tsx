@@ -5,7 +5,7 @@ import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
 import DiariaExperimental from "@/components/diaria/DiariaExperimental";
-import { CONFERENCIA, NAO_CONFIRMADAS, OFERTAS, brl, dataTxt, filtrar, precoTxt } from "@/lib/diaria-experimental";
+import { CONFERENCIA, NAO_CONFIRMADAS, OFERTAS, dataTxt, filtrar, precoTxt } from "@/lib/diaria-experimental";
 
 /**
  * Academias com diária e aula experimental em Alphaville e região.
@@ -26,11 +26,11 @@ const NOME = "Academias com Diária e Aula Experimental em Alphaville";
 export const metadata: Metadata = {
   title: "Academia com Diária e Aula Experimental em Alphaville",
   description:
-    "Quer treinar hoje ou testar antes de assinar? Veja as academias de Alphaville e região com diária, aula avulsa e aula experimental, com preço, regra e fonte.",
+    "Quer treinar hoje ou testar antes de assinar? Veja as academias de Alphaville e região com diária, aula avulsa e aula experimental, com regra e fonte.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
   openGraph: {
     title: `${NOME} | Montinho Personal Trainer`,
-    description: "Diária, aula avulsa e aula experimental nas academias de Alphaville e região: o que inclui, quanto custa, se precisa agendar e de onde veio cada dado.",
+    description: "Diária, aula avulsa e aula experimental nas academias de Alphaville e região: o que inclui, como contratar, se precisa agendar e de onde veio cada dado.",
     url: `${SITE_URL}${CAMINHO}`,
     type: "website",
     images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 }],
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 const appSchema = aplicativoSchema({
   nome: NOME,
   descricao:
-    "Lista filtrável das academias de Alphaville, Tamboré, Barueri e Santana de Parnaíba com diária, aula avulsa, aula experimental ou visita guiada, com preço quando publicado, forma de contratar, necessidade de agendamento, fonte oficial e data da conferência.",
+    "Lista filtrável das academias de Alphaville, Tamboré, Barueri e Santana de Parnaíba com diária, aula avulsa, aula experimental ou visita guiada, com forma de contratar, necessidade de agendamento, fonte oficial e data da conferência.",
   caminho: CAMINHO,
   categoria: "UtilitiesApplication",
 });
@@ -61,14 +61,13 @@ const IRON = of("ironberg-avulsa");
 const DROPIN = of("blacksheep-dropin");
 const DIARIAS = filtrar({ modo: "diaria", soMusculacao: false, soComPreco: false });
 const TESTES = filtrar({ modo: "experimental", soMusculacao: false, soComPreco: false });
-const GRATIS = TESTES.filter((o) => o.preco === 0 && !o.daCasa).map((o) => o.academia);
 const VISITAS = TESTES.filter((o) => !o.treino).map((o) => o.academia);
 const ULTIMA = OFERTAS.map((o) => o.conferidaEm).sort().at(-1)!;
 
 const faq: ItemFAQ[] = [
   {
     question: "Tem academia com diária em Alphaville?",
-    answer: `Tem. Com fonte oficial, a ${NITRO.academia} cobra ${brl(NITRO.preco!)} pelo day use de musculação, pago no local, e a ${IRON.academia} vende aula avulsa na recepção, no dia do treino, com valor informado só na unidade. Para cross training, a ${DROPIN.academia} tem aula avulsa (drop in).`,
+    answer: `Tem. Com fonte oficial, a ${NITRO.academia} tem day use de musculação, pago no local, e a ${IRON.academia} vende aula avulsa na recepção, no dia do treino. Para cross training, a ${DROPIN.academia} tem aula avulsa (drop in). O valor é a consultar com cada academia.`,
   },
   {
     question: "Como funciona a diária na academia?",
@@ -76,7 +75,7 @@ const faq: ItemFAQ[] = [
   },
   {
     question: "Quanto custa uma aula avulsa na academia?",
-    answer: `Depende da academia, e muitas não publicam o valor. Entre as conferidas em Alphaville e região, a ${NITRO.academia} publica ${brl(NITRO.preco!)} pelo day use. A ${IRON.academia} informa o valor só na recepção, e a rede da ${DROPIN.academia} lista R$ 75 pelo drop in na tabela geral, com o valor da unidade a confirmar.`,
+    answer: "Depende da academia, e o valor muda sem aviso. Por isso esta lista não mostra preço: confirme o valor da diária ou da aula avulsa direto na recepção ou no canal oficial da unidade antes de ir.",
   },
   {
     question: "Como funciona a aula experimental na academia?",
@@ -84,11 +83,11 @@ const faq: ItemFAQ[] = [
   },
   {
     question: "Aula experimental em academia é paga?",
-    answer: `Algumas são grátis e outras não publicam o valor. Em Alphaville e região, ${GRATIS.join(" e ")} publicam aula experimental grátis. Na Arena 18, a aula experimental de musculação com o Montinho também é gratuita. As demais informam o valor só no contato.`,
+    answer: "Depende da academia: o valor é a consultar com cada uma. Na Arena 18, a aula experimental de musculação com o Montinho é gratuita e agendada pelo WhatsApp.",
   },
   {
     question: "Tem day use na Smart Fit de Alphaville?",
-    answer: "Não foi possível confirmar. A central de ajuda da rede fala em passe diário, mas a regra, o preço e as unidades em que vale não foram confirmados em fonte oficial, então a Smart Fit não entra na lista. Confirme no aplicativo da rede ou na recepção da unidade.",
+    answer: "Não foi possível confirmar. A central de ajuda da rede fala em passe diário, mas a regra e as unidades em que vale não foram confirmadas em fonte oficial, então a Smart Fit não entra na lista. Confirme no aplicativo da rede ou na recepção da unidade.",
   },
   {
     question: "Onde fazer aula experimental de musculação em Alphaville?",
@@ -96,7 +95,7 @@ const faq: ItemFAQ[] = [
   },
   {
     question: "Diária ou mensalidade: o que compensa?",
-    answer: `Multiplique a diária pelas idas do mês e compare com o plano mensal da mesma academia. Na ${NITRO.academia}, 4 idas dão ${brl(NITRO.preco! * 4)} e 8 idas dão ${brl(NITRO.preco! * 8)}. A diária compensa para quem está de passagem ou quer testar; para quem vai treinar toda semana, o plano quase sempre sai mais em conta.`,
+    answer: "Multiplique o valor da diária pelas idas do mês e compare com o plano mensal da mesma academia. A diária compensa para quem está de passagem ou quer testar; para quem vai treinar toda semana, o plano quase sempre sai mais em conta.",
   },
 ];
 
@@ -127,7 +126,7 @@ export default function DiariaExperimentalPage() {
           </h1>
           <Compartilhar contexto="tool" titulo={NOME} caminho={CAMINHO} local="tool_top" ferramenta="diaria-experimental" aparencia="discreto" className="mb-4" />
           <p className="text-gray-300 text-lg leading-relaxed">
-            Para quem quer treinar hoje sem fazer plano, ou experimentar antes de assinar. Veja o que cada academia oferece, quanto custa, se precisa agendar e de onde veio cada informação.
+            Para quem quer treinar hoje sem fazer plano, ou experimentar antes de assinar. Veja o que cada academia oferece, como contratar, se precisa agendar e de onde veio cada informação.
           </p>
         </div>
       </section>
@@ -144,7 +143,7 @@ export default function DiariaExperimentalPage() {
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Tem academia com diária em Alphaville?</h2>
             <p className="text-gray-300 leading-relaxed mb-3">
               <strong className="text-white">
-                Tem. Para musculação, a {NITRO.academia} cobra {brl(NITRO.preco!)} pelo day use, pago no local, e a {IRON.academia} vende aula avulsa na recepção, com o valor informado só na unidade.
+                Tem. Para musculação, a {NITRO.academia} tem day use, pago no local, e a {IRON.academia} vende aula avulsa na recepção, no dia do treino. O valor é a consultar com cada academia.
               </strong>
             </p>
             <p className="text-gray-300 leading-relaxed mb-4">
@@ -228,7 +227,7 @@ export default function DiariaExperimentalPage() {
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Diária ou mensalidade: o que compensa</h2>
             <p className="text-gray-300 leading-relaxed">
-              <strong className="text-white">Multiplique a diária pelas idas do mês e compare com o plano mensal da mesma academia.</strong> Na {NITRO.academia}, 4 idas dão {brl(NITRO.preco! * 4)}, 8 idas dão {brl(NITRO.preco! * 8)} e 12 idas dão {brl(NITRO.preco! * 12)}. A diária serve para quem está de passagem ou quer testar. Para quem vai treinar toda semana, o plano quase sempre sai mais em conta, e a constância é o que faz o treino dar resultado. A lista acima faz essa conta para a quantidade de idas que você escolher.
+              <strong className="text-white">Multiplique o valor da diária pelas idas do mês e compare com o plano mensal da mesma academia.</strong> A diária serve para quem está de passagem ou quer testar. Para quem vai treinar toda semana, o plano quase sempre sai mais em conta, e a constância é o que faz o treino dar resultado.
             </p>
           </div>
 
@@ -251,7 +250,7 @@ export default function DiariaExperimentalPage() {
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>De onde vêm os dados</h2>
             <p className="text-gray-300 leading-relaxed">
               <strong className="text-white">Cada oferta mostra a fonte oficial e a data em que foi conferida.</strong> A conferência nos sites das academias foi feita pelo{" "}
-              <a href={CONFERENCIA.url} className={ln} target="_blank" rel="noopener noreferrer">{CONFERENCIA.por}</a>, guia local que eu também mantenho, e a mais recente é de {dataTxt(ULTIMA)}. Lá a mesma lista tem filtro por data e hora de chegada. As academias citadas não pagam para aparecer. Preço e regra mudam sem aviso: confirme com a unidade antes de ir.
+              <a href={CONFERENCIA.url} className={ln} target="_blank" rel="noopener noreferrer">{CONFERENCIA.por}</a>, guia local que eu também mantenho, e a mais recente é de {dataTxt(ULTIMA)}. Lá a mesma lista tem filtro por data e hora de chegada. As academias citadas não pagam para aparecer. Valor e regra mudam sem aviso: confirme com a unidade antes de ir.
             </p>
           </div>
 
