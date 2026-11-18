@@ -161,7 +161,8 @@ Pauta é sugestão: nada é escrito sem o Montinho escolher.
 # Rotina diária de revisão: 2 por dia
 
 Pedido do Montinho em 16/11/2026. Todo dia, uma tarefa agendada revisa
-**2 artigos** com pesquisa do SerpApi e alimenta a pauta.
+**2 artigos** com pesquisa do SerpApi, aplica **2 itens** de "Viram seção
+ou FAQ de um artigo que já existe" (desde 18/11/2026) e alimenta a pauta.
 
 **Por que 2 por dia (decisão de ritmo):** cada revisão exige julgamento
 por item (o que entra, o que sai, fonte de cada dado), e a cota do SerpApi
@@ -188,10 +189,22 @@ fora (vale artigo, vira seção, não cabe) atualizando `docs/seo/pauta.md`.
 Título e descrição: só proposta (ATUAL / PROPOSTA / MOTIVO), nunca troca
 sem o Montinho aprovar.
 
+**Mais 2 itens de "Viram seção ou FAQ" por dia** (pedido do Montinho em
+18/11/2026). Além das 2 revisões, aplique 2 itens da seção 2 de
+`docs/seo/pauta.md`, os de maior volume primeiro: a seção ou o FAQ entra
+no artigo indicado, com a pesquisa que já está registrada (sem busca nova
+no SerpApi). Mesmo critério de qualquer conteúdo: fato só com fonte,
+`updatedAt` com a data do dia (é mudança real), sem dieta. Se a pesquisa
+mostrar que o assunto pede artigo próprio (a linha diz quando), não
+aplique: mova para "Artigos novos" e pegue o próximo. Risque a linha com a
+data e registre em `docs/seo/teste-intencoes-de-busca.md`. Entra no mesmo
+PR das revisões.
+
 **Publicação:** testes do repositório (tsc e os testes do que foi tocado,
 comparando com as falhas de base), PR, merge, conferir no ar. No fim,
-mandar ao Montinho os links, as intenções separadas por tipo com ✅/❌ e as
-propostas de título que esperam aprovação.
+mandar ao Montinho os links (das revisões e dos 2 itens aplicados), as
+intenções separadas por tipo com ✅/❌ e as propostas de título que esperam
+aprovação.
 
 # Capa de artigo: só no padrão, ou nenhuma
 
