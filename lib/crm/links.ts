@@ -131,6 +131,9 @@ export const LINKS: Record<string, LinkControlado> = {
   "yt-filmar": { destino: "/revisao-de-execucao", utm_source: "youtube", utm_medium: "video", utm_campaign: "como_filmar_exercicio", utm_content: "descricao", tipo: "social" },
   // Shorts de meme (06/11/2026): campanha única "memes_personal" e um utm_content por vídeo, para comparar os memes entre si.
   "yt-meme-gato": { destino: "/consultoria-online", utm_source: "youtube", utm_medium: "video", utm_campaign: "memes_personal", utm_content: "gato_julgamento", tipo: "social" },
+  // Bio das páginas de memes do Montinho (18/11/2026): mesma campanha dos Shorts de meme, uma origem por rede.
+  "ig-memes": { destino: "/consultoria-online", utm_source: "instagram", utm_medium: "organic_social", utm_campaign: "memes_personal", utm_content: "bio_pagina_memes", tipo: "social" },
+  "tiktok-memes": { destino: "/consultoria-online", utm_source: "tiktok", utm_medium: "organic_social", utm_campaign: "memes_personal", utm_content: "bio_pagina_memes", tipo: "social" },
   "wa-filmar": { destino: "/revisao-de-execucao", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "como_filmar_exercicio", tipo: "social" },
   /* Short "HYROX em 1 minuto" (18/11/2026): a tela final fala em treino para HYROX em Alphaville e Barueri. */
   "yt-hyrox-8-vezes": { destino: "/preparacao-para-hyrox", utm_source: "youtube", utm_medium: "video", utm_campaign: "hyrox", utm_content: "descricao", tipo: "social" },
