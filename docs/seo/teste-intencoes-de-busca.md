@@ -1719,3 +1719,8 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `zonas-de-frequencia-cardiaca` ("fat burn", 1.000, do PAA de "efeito afterburn"): FAQ "O que é fat burn?" e o termo na seção "Zona para queimar gordura" (é a zona 2 do painel; proporção não é total).
 - `crossfit-emagrece` ("air bike crossfit", 720, do autocompletar de "air bike"): H2 "Air bike no CrossFit" (como aparece no WOD, o número do monitor é estimativa, ritmo) e FAQ; link para `air-bike`. Sem número de calorias novo (o artigo `air-bike` já traz as contas pelo Compêndio).
 
+## 2026-11-18 — "Viram seção ou FAQ" (itens 7 e 8)
+
+- `treino-de-peito-em-casa` ("supino em casa", 210, das outras pesquisas de "supino na máquina"): H2 "Supino em casa: como fazer sem banco e sem barra" (supino no chão, press no elástico, flexão com carga) e FAQ; link para `supino-na-maquina`.
+- `como-fazer-barra-fixa` ("para que serve a barra fixa", 40, do PAA de "graviton academia"): H2 "Para que serve a barra fixa?" e FAQ; links para `forca-de-pegada-e-antebraco` e `graviton`.
+
