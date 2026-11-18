@@ -1700,3 +1700,11 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - Search Console (30 dias, buscas "personal … alphaville"): a home recebe 115 impressões (posição ~9); `/personal-trainer-alphaville`, 2. Home e página disputam o termo; o Google escolheu a home.
 - Propostas enviadas ao Montinho (esperando aprovação): página dedicada vira "planos e valores" (título novo) e descrição sem "na sua academia"; home reforçada com Alphaville; conferir o link do Perfil da Empresa.
 - Autocompletar e PAA fora do tema: "mulher", "ironberg", "bruna trindade", "personal gym", Bruna Marquezine, salário nos EUA, quantos personais no Brasil. Nada para a pauta.
+
+## 2026-11-18 — "Viram seção ou FAQ" (primeiros 2 itens da regra nova)
+
+- Regra de 18/11 (AGENTS.md): 2 itens da seção 2 da pauta por dia, sem busca nova no SerpApi.
+- Prancha lateral (27.100, o maior): não aplicada como seção; movida para "Artigos novos" (M3b). É exercício com id no cadastro e volume de artigo próprio, como o abdominal oblíquo.
+- `batata-doce-emagrece` ("batata doce engorda?", 12.100): H2 "Batata-doce engorda?" com tabela por porção (TACO: cozida 76,8 kcal e 18,4 g de carboidrato em 100 g; inglesa cozida 51,6; arroz cozido 128) e FAQ. O "em excesso" virou subseção, com 384 kcal em 500 g pela TACO no lugar de "~400".
+- `treino-ao-ar-livre-estruturado` ("academia ao ar livre", 12.100): H2 "Academia ao ar livre: como usar os aparelhos da praça" (aparelhos mais comuns, como usar, o que trabalham, progressão e cuidados) e FAQ. Sem número sem fonte.
+

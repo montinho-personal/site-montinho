@@ -41735,9 +41735,10 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "Parques urbanos com equipamentos de fitness são uma academia a céu aberto subutilizada. Com estrutura correta, dá para construir força, resistência e um físico sólido sem pagar mensalidade.",
   category: "Treinamento",
   date: "2026-06-27",
-  readTime: "9 min",
+  updatedAt: "2026-11-18",
+  readTime: "10 min",
   author: "Montinho",
-  tags: ["treino ao ar livre", "treino no parque", "calistenia parque", "treino sem academia", "exercício outdoor"],
+  tags: ["treino ao ar livre", "treino no parque", "academia ao ar livre", "calistenia parque", "treino sem academia", "exercício outdoor"],
     faqSchema: [
       { question: "Quantas vezes por semana devo treinar para ganhar massa muscular?", answer: "Para hipertrofia, a literatura científica aponta que treinar cada grupo muscular 2 vezes por semana com volume adequado é mais eficaz do que treinar apenas 1 vez. 3 a 5 sessões semanais são o intervalo mais comum para iniciantes a avançados." },
       { question: "Qual a carga ideal para hipertrofia?", answer: "Estudos de Brad Schoenfeld e Eric Helms mostram que cargas entre 30% e 85% do 1RM podem promover hipertrofia quando levadas próximo à falha. O intervalo de 6 a 20 repetições com esforço progressivo é o mais prático e eficaz." },
@@ -41770,6 +41771,25 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <tr><td>Morro/rampa</td><td>Hill sprint, caminhada em inclinação, lunges na subida</td><td>Quadríceps, glúteo, cardio</td></tr>
 </tbody>
 </table>
+
+<h2>Academia ao ar livre: como usar os aparelhos da praça</h2>
+
+<p>Muitas praças e parques têm uma <strong>academia ao ar livre</strong>, com aparelhos fixos, geralmente coloridos, que usam o peso do corpo como carga. Os nomes variam de um fabricante para outro, mas os mais comuns são estes:</p>
+
+<table>
+<thead><tr><th>Aparelho</th><th>Como usar</th><th>O que trabalha</th></tr></thead>
+<tbody>
+<tr><td>Simulador de caminhada</td><td>Pés nas plataformas, mãos na barra, passadas longas e controladas</td><td>Cardio, quadril e pernas</td></tr>
+<tr><td>Esqui ou elíptico</td><td>Braços e pernas alternados, ritmo constante</td><td>Cardio, corpo todo</td></tr>
+<tr><td>Pressão de pernas (leg press)</td><td>Sentado, empurre a plataforma sem travar o joelho no fim</td><td>Quadríceps e glúteo</td></tr>
+<tr><td>Remada sentada</td><td>Puxe as alças até o tronco, cotovelos junto ao corpo, volte devagar</td><td>Costas e bíceps</td></tr>
+<tr><td>Supino e puxada (multiexercitador)</td><td>Empurre para a frente ou puxe de cima para baixo, sem tranco</td><td>Peito, ombro, costas</td></tr>
+<tr><td>Rotação de tronco</td><td>Gire o tronco devagar para os dois lados, quadril parado</td><td>Mobilidade do tronco</td></tr>
+<tr><td>Barras</td><td>Barra fixa, remada invertida, paralelas</td><td>Costas, braço, peito</td></tr>
+</tbody>
+</table>
+
+<p>Como a carga é o seu corpo, a progressão vem de outras coisas: mais repetições, descida mais lenta, menos pausa ou passar de um aparelho para a barra. Três cuidados: confira se o aparelho está firme e sem peça solta; faça o movimento controlado, porque os aparelhos com pêndulo deixam o impulso fazer o trabalho; e pare se doer. Os aparelhos ajudam bem no começo, mas o programa abaixo usa principalmente barra, banco e chão, que permitem progredir por mais tempo.</p>
 
 <h2>Programa de 4 semanas ao ar livre</h2>
 
@@ -41870,6 +41890,10 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
       {
         question: "Treino ao ar livre é tão eficaz quanto academia?",
         answer: "Para iniciantes e intermediários, sim — com programa estruturado e progressão clara. Para avançados com metas de força máxima ou hipertrofia de alta magnitude, a academia tem vantagem por permitir cargas progressivas muito maiores. Uma combinação híbrida (academia + outdoor) frequentemente é a abordagem mais eficaz e sustentável.",
+      },
+      {
+        question: "Como usar a academia ao ar livre da praça?",
+        answer: "Use cada aparelho com movimento controlado, sem deixar o pêndulo fazer o trabalho, e confira antes se ele está firme. Como a carga é o peso do corpo, progrida com mais repetições, descida mais lenta ou menos pausa. Os mais comuns são simulador de caminhada, esqui, pressão de pernas, remada e multiexercitador.",
       },
       {
         question: "Quantos dias por semana treinar ao ar livre?",
@@ -106312,7 +106336,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Frango com batata-doce virou uniforme de quem treina. Mas a batata-doce tem mais calorias que a batata inglesa — e não emagrece ninguém sozinha. Explico o que ela tem de bom de verdade e como usá-la com inteligência.",
     category: "Nutrição",
     date: "2026-08-04",
-    updatedAt: "2026-08-12",
+    updatedAt: "2026-11-18",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["batata-doce", "emagrecimento", "carboidratos", "índice glicêmico", "dieta fitness"],
@@ -106322,6 +106346,12 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
           "Batata-doce emagrece mesmo?",
         answer:
           "Não por si só. Nenhum alimento emagrece sozinho — quem emagrece é o déficit calórico sustentado. A batata-doce ajuda porque sacia bem por caloria, o que torna o déficit mais fácil de manter. Mas em excesso, ela soma calorias como qualquer alimento.",
+      },
+      {
+        question:
+          "Batata-doce engorda?",
+        answer:
+          "Sozinha, não. Pela TACO, 100 g de batata-doce cozida têm 77 kcal; 200 g, perto de 154. Ela engorda como qualquer alimento: só se o total do dia passar do seu gasto por semanas. O risco é a fama de que 'não engorda', que faz muita gente comer sem contar.",
       },
       {
         question:
@@ -106398,8 +106428,20 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <h2>Frango com batata-doce todo dia: precisa?</h2>
 <p>Não precisa e, para a maioria das pessoas, nem convém. Dieta monótona demais é uma das grandes causas de desistência — e desistência é o caminho mais curto para o <a href="/blog/como-evitar-efeito-sanfona">efeito sanfona</a>. O prato frango + batata-doce + salada é uma excelente estrutura, mas a mesma estrutura funciona com peixe + arroz + legumes ou carne magra + mandioca + salada. O que importa é repetir o padrão (proteína + carbo controlado + vegetais), não o alimento específico.</p>
 <p>Também vale lembrar que emagrecimento não se decide só no almoço: os beliscos, os líquidos calóricos e o jantar desestruturado costumam pesar mais que a escolha do carboidrato. Se a sua noite é o ponto fraco, o artigo sobre <a href="/blog/jantar-leve-para-emagrecer">jantar leve para emagrecer</a> pode ajudar mais que qualquer troca de batata. E se a fome entre refeições te derruba, veja <a href="/blog/lanches-saudaveis-para-emagrecer">lanches saudáveis para emagrecer</a>.</p>
-<h2>Batata-doce engorda em excesso?</h2>
-<p>Como qualquer alimento: sim. 500 g de batata-doce são ~400 kcal — e tem muita gente comendo isso “liberadamente” porque ouviu que batata-doce não engorda. Nenhum alimento engorda ou emagrece sozinho; o excesso calórico engorda, o déficit emagrece, e a batata-doce obedece à mesma física de todo o resto. A vantagem dela é tornar o déficit mais confortável pela saciedade. A desvantagem é a falsa licença que a fama fit dá para o exagero.</p>
+<h2>Batata-doce engorda?</h2>
+<p>Sozinha, não. Pela TACO, a batata-doce cozida tem <strong>77 kcal em 100 g</strong>:</p>
+<table>
+<thead><tr><th>Batata-doce cozida</th><th>Calorias</th><th>Carboidrato</th></tr></thead>
+<tbody>
+<tr><td>100 g</td><td>77 kcal</td><td>18,4 g</td></tr>
+<tr><td>200 g</td><td>cerca de 154 kcal</td><td>cerca de 37 g</td></tr>
+<tr><td>300 g</td><td>cerca de 230 kcal</td><td>cerca de 55 g</td></tr>
+<tr><td>500 g</td><td>cerca de 384 kcal</td><td>cerca de 92 g</td></tr>
+</tbody>
+</table>
+<p>Valores da TACO; as porções em gramas são exemplos. A batata inglesa cozida tem 52 kcal em 100 g, e o arroz branco cozido, 128.</p>
+<h3>E em excesso?</h3>
+<p>Como qualquer alimento: engorda. 500 g de batata-doce são ~384 kcal — e tem muita gente comendo isso “liberadamente” porque ouviu que batata-doce não engorda. Nenhum alimento engorda ou emagrece sozinho; o excesso calórico engorda, o déficit emagrece, e a batata-doce obedece à mesma física de todo o resto. A vantagem dela é tornar o déficit mais confortável pela saciedade. A desvantagem é a falsa licença que a fama fit dá para o exagero.</p>
 <h2>Resumo direto</h2>
 <ul>
 <li>Batata-doce cozida: ~77-86 kcal/100 g — mais calórica que a batata inglesa cozida.</li>
