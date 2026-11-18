@@ -1791,3 +1791,44 @@ Evidência: `docs/seo/serp/calculadora-preco-personal-alphaville-2026-11-18.json
 **Terceiro ajuste (18/11), a pedido do Montinho.** Aula avulsa em Alphaville: R$ 100 a 350, informada por ele (antes R$ 100 a 250, da referência editorial). Resolve a sobreposição com o teto da aula no pacote (R$ 300). Tamboré, Aldeia da Serra, Barueri e Santana de Parnaíba seguem com a avulsa da referência (R$ 90 a 220).
 
 **Quarto ajuste (18/11), a pedido do Montinho.** Aula avulsa de R$ 100 a 350 também em Tamboré e Aldeia da Serra (informada por ele). Barueri e Santana de Parnaíba seguem com a avulsa da referência (R$ 90 a 220).
+
+
+## 2026-11-18 — Ferramenta nova: academias com diária e aula experimental em Alphaville
+
+Página: `/ferramentas/academias-com-diaria-e-aula-experimental-alphaville`. Dados: `lib/diaria-experimental.ts`. Teste: `scripts/diaria-experimental-test.ts`.
+Evidência: `docs/seo/serp/academias-diaria-aula-experimental-alphaville-2026-11-18.json` (SerpApi, celular, Barueri). 3 buscas + 3 autocompletar = 6 da cota. A visão de IA de "aula experimental academia alphaville" veio só com o token e não foi buscada.
+
+**Decisão do Montinho (18/11).** O Guia Fitness Alphaville, outro site dele, já tem uma ferramenta sobre o mesmo assunto. Ele quer as duas: "a ideia é ter vários sites disputando a 1ª página". Texto e estrutura daqui são próprios; a página cita o Guia como quem fez a conferência.
+
+**Formato.** As três buscas trazem mapa (busca local) e nenhuma ferramenta nem página que responda "quem tem diária". A lista filtrável com fonte e data é o que falta.
+
+**Concorrentes (muito fracos).** Webnode de uma academia, páginas de Facebook e Instagram, subdomínios de automação (n8n) que abrem em branco, portal de agendamento (hubfit), Wellhub de outro bairro, diretórios (fitfit, fitclick, academiasbr, dailysweat). O site já aparece em "day use academia barueri" com o guia de academias perto da estação.
+
+**Visão de IA.** Não apareceu nas buscas de diária e de day use. Em "aula experimental academia alphaville" existe, mas veio só o token. Sem resposta pronta do Google, o lead e o primeiro H2 respondem direto: quem tem, quanto custa e como pagar.
+
+**O que cada intenção mudou.**
+
+| Tipo | Busca | Entrou? | Onde / por quê |
+|---|---|---|---|
+| Autocompletar | academia diária perto de mim / barata | ✅ | lista por bairro, com preço quando publicado, e filtro "só com preço confirmado" |
+| Autocompletar | aula experimental academia como funciona | ✅ | H2 "Aula experimental: como funciona e quem oferece" e FAQ |
+| Autocompletar | aula experimental academia paga | ✅ | FAQ "Aula experimental em academia é paga?" |
+| Autocompletar | aula experimental / day use academia smart fit | ✅ (parcial) | FAQ e "O que ficou fora da lista": não confirmada em fonte oficial |
+| Autocompletar | day use academia six | ✅ | a SIX entra como visita guiada (não é treino) |
+| Autocompletar | diária / day use academia gaviões, bluefit | ❌ | sem fonte oficial conferida; não entra sem fonte |
+| Autocompletar | aula experimental academia lei | ❌ | pergunta jurídica; precisa de fonte legal |
+| Autocompletar | day use academia significado | ✅ | "Como funciona a diária" explica os nomes (diária, day use, aula avulsa, drop in) |
+| Autocompletar | cidades (Curitiba, Recife…), marcas de fora (Ultra, Pratique, Panobianco, Evolve, Sesc, "da Virgínia") | ❌ | fora da região ou marca sem unidade conferida |
+| PAA | Como funciona a diária na academia? | ✅ | H2 e FAQ |
+| PAA | Quanto custa uma aula avulsa na academia? | ✅ | FAQ, com os três casos conferidos |
+| PAA | É obrigatório ter aula experimental na academia? | ❌ | pergunta jurídica; precisa de fonte legal |
+| PAA | Qual é a academia mais cara de Alphaville? | ❌ | cabe em `quanto-custa-academia-em-alphaville` |
+| PAA | Qual é mais barato, Gympass ou TotalPass? | ❌ | comparação de convênios; outro tema |
+| PAA | Existe academia 24 horas…? / Qual a academia mais famosa de São Paulo? / calistenia, Ibirapuera, teste ergométrico, lugares para ir | ❌ | fora do tema |
+| Outras pesquisas | 24 wellness alphaville; academia 24 wellness | ❌ | sem oferta de diária conferida; o site já tem o guia da 24 Wellness |
+
+**De onde vêm os dados.** Fonte oficial de cada academia, conferida pelo Guia Fitness Alphaville: NitroGym Tamboré (day use R$ 90, 18/11), Ironberg (aula avulsa na recepção, valor só na unidade, 18/11), BlackSheep (drop in R$ 75 na tabela da rede e aula experimental por WhatsApp, 13/11), CrossFit Barueri (aula experimental grátis, 18/11), G13 (aula experimental grátis, 17/11), Tecfit (treino experimental, 18/11), SIX e Fábrica Premium (visita agendada, 18/11). Arena 18: aula experimental gratuita com o Montinho (informação dele, já publicada no site). **Limite:** os sites das academias não abrem no ambiente desta sessão; não houve segunda checagem aqui. Smart Fit (passe diário) e Scelta ficaram fora por estarem "a confirmar".
+
+**Links internos.** Guias `nitrogym-alphaville`, `ironberg-alphaville` e `smart-fit-alphaville` (uma frase antes de "Leia também", sem `updatedAt`), `/academias-alphaville` e `/academia-ideal-alphaville`.
+
+**Título e descrição (página nova; linha de base do GSC zero em 18/11).** "Academia com Diária e Aula Experimental em Alphaville" / "Quer treinar hoje ou testar antes de assinar? Veja as academias de Alphaville e região com diária, aula avulsa e aula experimental, com preço, regra e fonte."
