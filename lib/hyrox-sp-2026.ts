@@ -47,6 +47,9 @@ export const HYROX_SP_2026_POSTS: BlogPost[] = [
 <h2>Não se compare</h2>
 <p>Quem sobe ao pódio tem a própria genética, rotina e história, com altos e baixos. O que importa para você é encontrar um treino que dê para seguir pelo resto da vida, com aderência e progressão. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja em 1 minuto como é a prova: 8 km de corrida, 8 estações e a parte que mais pesa no seu tempo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/A-sB4wESQBY?rel=0" title="HYROX em 1 minuto: qual é a parte mais longa da prova? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Fontes</h2>
 <ul>
 <li><a href="https://hyrox.com/event/hyrox-sao-paulo-2/" target="_blank" rel="noopener noreferrer">HYROX — HYROX São Paulo (oficial)</a></li>
@@ -144,6 +147,9 @@ export const HYROX_SP_2026_POSTS: BlogPost[] = [
 
 <h2>Não se compare</h2>
 <p>No HYROX você larga ao lado de atleta de elite e de quem está estreando. Não se compare com ninguém: cada um tem a própria genética, rotina e história. O que importa é terminar a sua prova e continuar treinando depois dela. Se quiser se preparar comigo, com força e corrida no mesmo plano, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja em 1 minuto como é a prova: 8 km de corrida, 8 estações e a parte que mais pesa no seu tempo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/A-sB4wESQBY?rel=0" title="HYROX em 1 minuto: qual é a parte mais longa da prova? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Fontes</h2>
 <ul>

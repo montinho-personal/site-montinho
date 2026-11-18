@@ -4,6 +4,7 @@ import { SITE_URL } from "@/lib/blog";
 import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 import CalculadoraHyrox from "@/components/hyrox/CalculadoraHyrox";
 import {
   ESTACOES,
@@ -240,6 +241,13 @@ export default function CalculadoraHyroxPage() {
               Revisado em 23 de setembro de 2026 por <Link href="/minha-historia" className={ln}>Montinho</Link>, personal
               trainer em Alphaville. Estimativas de gasto energético, não orientação médica.
             </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-white mb-4" style={h}>HYROX em 1 minuto, em vídeo</h2>
+            <p className="text-gray-300 leading-relaxed mb-6">8 trechos de 1 km, 8 estações e a parte que mais pesa no seu tempo: a corrida.</p>
+            <YoutubeShortEmbed videoId="A-sB4wESQBY" title="HYROX em 1 minuto: qual é a parte mais longa da prova? — Montinho Personal Trainer" />
+            <p className="text-gray-400 text-sm mt-3"><Link href="/videos/hyrox-em-1-minuto" className="underline underline-offset-4 hover:text-white">Ver a página do vídeo</Link></p>
           </div>
 
           <div>

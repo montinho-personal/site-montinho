@@ -119499,6 +119499,9 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <p>Hyrox é uma prova de 8 km de corrida com oito estações no meio. Uma prova média gasta cerca de 1.025 kcal para 70 kg, e a corrida responde por mais da metade do tempo e do gasto. Para a primeira prova: base de corrida, força duas vezes por semana, treinos de corrida cansada e, se quiser estrear com calma, a categoria em dupla.</p>
 <p>Monto a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a> — corrida, força e estações na semana certa — para alunos em Alphaville, Barueri e Santana de Parnaíba, e pela <a href="/consultoria-online">consultoria online</a> para o Brasil todo. <a href="/contato">Agende uma avaliação</a>.</p>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja em 1 minuto como é a prova: 8 km de corrida, 8 estações e a parte que mais pesa no seu tempo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/A-sB4wESQBY?rel=0" title="HYROX em 1 minuto: qual é a parte mais longa da prova? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/hyrox-alphaville-onde-treinar">Hyrox em Alphaville: onde treinar e como se preparar</a></li>
@@ -120288,6 +120291,9 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <h2>Preparação com acompanhamento</h2>
 <p>O que mais atrapalha quem se prepara sozinho não é falta de vontade: é a semana em que a corrida e a força caem no mesmo dia, a perna chega cansada no treino seguinte e o ritmo de prova nunca é testado. Eu monto a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a> (corrida, força e estações na semana certa) e ajusto conforme o que acontece em cada treino, na <a href="/consultoria-online">consultoria online</a> ou presencialmente nos locais de <a href="/onde-atendo">onde atendo</a>.</p>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja em 1 minuto como é a prova: 8 km de corrida, 8 estações e a parte que mais pesa no seu tempo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/A-sB4wESQBY?rel=0" title="HYROX em 1 minuto: qual é a parte mais longa da prova? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/treino-de-hyrox">Treino de Hyrox: planilha de 8 semanas</a></li>
@@ -120379,6 +120385,9 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <h2>Preparação com acompanhamento</h2>
 <p>O que mais atrapalha quem se prepara sozinho é a semana em que corrida e força caem no mesmo dia, a perna chega cansada no treino seguinte e o ritmo de prova nunca é testado. Eu monto a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a> e ajusto conforme o que acontece em cada treino, na <a href="/consultoria-online">consultoria online</a> ou presencialmente na Arena 18, em condomínios e em casa, como está em <a href="/onde-atendo">onde atendo</a>. Os boxes deste guia estão aqui como referência de onde treinar as estações.</p>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja em 1 minuto como é a prova: 8 km de corrida, 8 estações e a parte que mais pesa no seu tempo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/A-sB4wESQBY?rel=0" title="HYROX em 1 minuto: qual é a parte mais longa da prova? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/hyrox-alphaville-onde-treinar">Hyrox em Alphaville: onde treinar e como se preparar</a></li>
@@ -120463,6 +120472,9 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 
 <h2>Preparação com acompanhamento</h2>
 <p>O que mais atrapalha quem se prepara sozinho é a semana em que corrida e força caem no mesmo dia e o ritmo de prova nunca é testado. Eu monto a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a> e ajusto conforme o que acontece em cada treino, na <a href="/consultoria-online">consultoria online</a> ou presencialmente na Arena 18, em condomínios e em casa, como está em <a href="/onde-atendo">onde atendo</a>. O OBOX está aqui como referência de onde treinar as estações.</p>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja em 1 minuto como é a prova: 8 km de corrida, 8 estações e a parte que mais pesa no seu tempo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/A-sB4wESQBY?rel=0" title="HYROX em 1 minuto: qual é a parte mais longa da prova? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul>
@@ -120550,6 +120562,9 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 
 <h2>Preparação com acompanhamento</h2>
 <p>Na Aldeia, o que mais derruba a preparação é a distância: a semana em que descer a serra não cabe e o treino some junto. Eu monto a preparação para o Hyrox em casa ou no espaço fitness do condomínio, com o que existe ali, e encaixo as sessões de box quando elas fazem diferença. Também dá para fazer pela <a href="/consultoria-online">consultoria online</a>; veja como funciona a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a>. Os boxes deste guia estão aqui como referência de onde treinar as estações; os locais em que eu atendo estão em <a href="/onde-atendo">onde atendo</a>.</p>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja em 1 minuto como é a prova: 8 km de corrida, 8 estações e a parte que mais pesa no seu tempo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/A-sB4wESQBY?rel=0" title="HYROX em 1 minuto: qual é a parte mais longa da prova? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul>

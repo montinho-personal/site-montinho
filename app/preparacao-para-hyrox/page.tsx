@@ -4,6 +4,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SITE_URL } from "@/lib/blog";
 import FAQ from "@/components/ui/FAQ";
 import VideoApp from "@/components/video/VideoApp";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
 
 /**
  * Preparação para Hyrox com personal trainer.
@@ -227,6 +228,14 @@ export default function PreparacaoHyroxPage() {
             <li><Link href="/blog/hyrox-em-dupla" className={ln}>Hyrox em dupla: o melhor jeito de estrear</Link></li>
             <li><Link href="/blog/hyrox-brasil-2026" className={ln}>Calendário do Hyrox no Brasil</Link></li>
           </ul>
+        </div>
+      </section>
+
+      <section className="py-16 border-t border-white/10 bg-black">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-white mb-4" style={h}>O HYROX em 1 minuto</h2>
+          <p className="text-gray-300 leading-relaxed mb-6">8 trechos de 1 km, 8 estações e a parte que mais pesa no seu tempo: a corrida. É por isso que a preparação junta força e corrida no mesmo treino.</p>
+          <YoutubeShortEmbed videoId="A-sB4wESQBY" title="HYROX em 1 minuto: qual é a parte mais longa da prova? — Montinho Personal Trainer" />
         </div>
       </section>
 
