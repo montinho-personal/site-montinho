@@ -88,7 +88,7 @@ const faq: ItemFAQ[] = [
   },
   {
     question: "Quanto custa personal trainer online?",
-    answer: `A referência é de ${faixaTxt(ALPHA.online)} por mês para Alphaville, ${faixaTxt(REFERENCIAS.barueri.online)} para Barueri e ${faixaTxt(REFERENCIAS["santana-de-parnaiba"].online)} para Santana de Parnaíba. O online não é cobrado por aula: você paga o planejamento, os ajustes e o acompanhamento a distância.`,
+    answer: `A faixa é de ${faixaTxt(ALPHA.online)} por mês para Alphaville, ${faixaTxt(REFERENCIAS.barueri.online)} para Barueri e ${faixaTxt(REFERENCIAS["santana-de-parnaiba"].online)} para Santana de Parnaíba: o piso é informado pelo Montinho e o teto vem da referência editorial do Personal por Perto. O online não é cobrado por aula: você paga o planejamento, os ajustes e o acompanhamento a distância.`,
   },
   {
     question: "Personal no condomínio custa mais caro?",
@@ -160,7 +160,7 @@ export default function CalculadoraPrecoPersonalPage() {
               </strong>
             </p>
             <p className="text-gray-300 leading-relaxed">
-              A faixa por aula no pacote é a leitura do Montinho, que atende na região. A da aula avulsa ({faixaTxt(ALPHA.avulsa)}) e a do online são {FONTE_REFERENCIA.rotulo} do portal{" "}
+              A faixa por aula no pacote é a leitura do Montinho, que atende na região. O piso do online também é dele. A faixa da aula avulsa ({faixaTxt(ALPHA.avulsa)}) e o teto do online são {FONTE_REFERENCIA.rotulo} do portal{" "}
               <a href={PPP_CALC} className={ln} target="_blank" rel="noopener noreferrer">{FONTE_REFERENCIA.nome}</a>. Nenhuma delas é pesquisa de preços com amostra: servem para você chegar a uma conversa sabendo se o valor proposto está dentro ou muito fora do esperado.
             </p>
           </div>
@@ -199,7 +199,7 @@ export default function CalculadoraPrecoPersonalPage() {
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Alphaville, Tamboré, Aldeia da Serra, Barueri e Santana de Parnaíba</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              <strong className="text-white">Alphaville, Tamboré e Aldeia da Serra ficam em {faixaTxt(AULA_ALPHA)} por aula no pacote; Barueri e Santana de Parnaíba, em {faixaTxt(AULA_BARUERI)}.</strong> Para aula avulsa e online, a referência do Personal por Perto só tem faixa própria para Alphaville, Barueri e Santana de Parnaíba: Tamboré e Aldeia da Serra usam a da cidade, e a calculadora avisa isso no resultado.
+              <strong className="text-white">Alphaville, Tamboré e Aldeia da Serra ficam em {faixaTxt(AULA_ALPHA)} por aula no pacote; Barueri e Santana de Parnaíba, em {faixaTxt(AULA_BARUERI)}.</strong> Para aula avulsa e para o teto do online, a referência do Personal por Perto só tem faixa própria para Alphaville, Barueri e Santana de Parnaíba: Tamboré e Aldeia da Serra usam a da cidade, e a calculadora avisa isso no resultado.
             </p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -255,7 +255,7 @@ export default function CalculadoraPrecoPersonalPage() {
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Personal trainer online: quanto custa por mês</h2>
             <p className="text-gray-300 leading-relaxed">
-              <strong className="text-white">A referência para Alphaville é de {faixaTxt(ALPHA.online)} por mês, e a frequência não muda o valor.</strong> O online não é o presencial mais barato, é outro serviço: você recebe o planejamento, os ajustes e o acompanhamento a distância, e treina no horário que couber. O presencial entrega alguém do seu lado corrigindo na hora. Para decidir entre os dois, veja{" "}
+              <strong className="text-white">Em Alphaville, de {faixaTxt(ALPHA.online)} por mês, e o valor não depende de quantas vezes você treina.</strong> O online não é o presencial mais barato, é outro serviço: você recebe o planejamento, os ajustes e o acompanhamento a distância, e treina no horário que couber. O presencial entrega alguém do seu lado corrigindo na hora. Para decidir entre os dois, veja{" "}
               <Link href="/blog/consultoria-online-ou-personal-presencial" className={ln}>consultoria online ou personal presencial</Link>.
             </p>
           </div>
@@ -292,7 +292,8 @@ export default function CalculadoraPrecoPersonalPage() {
             </p>
             <ul className="text-gray-300 leading-relaxed space-y-2 list-disc pl-5 mb-4">
               <li><strong className="text-white">Aula dentro do pacote presencial:</strong> {FONTE_PACOTE.rotulo}, em {DATA_PACOTE}. É a leitura de quem trabalha no mercado local, sem amostra.</li>
-              <li><strong className="text-white">Aula avulsa e online:</strong> estimativas editoriais do portal {FONTE_REFERENCIA.nome}, construídas pelo perfil de cada cidade e consultadas em {DATA_REF}.</li>
+              <li><strong className="text-white">Online:</strong> piso de {faixaTxt(ALPHA.online).split(" a ")[0]} por mês informado pelo Montinho; o teto de cada cidade vem da referência abaixo.</li>
+              <li><strong className="text-white">Aula avulsa e teto do online:</strong> estimativas editoriais do portal {FONTE_REFERENCIA.nome}, construídas pelo perfil de cada cidade e consultadas em {DATA_REF}.</li>
             </ul>
             <p className="text-gray-300 leading-relaxed mb-4">Por isso esta página nunca diz "preço médio", não cita quantidade de profissionais e não mostra valor exato. A conta:</p>
             <ul className="text-gray-300 leading-relaxed space-y-2 list-disc pl-5">

@@ -72,15 +72,17 @@ export default function CalculadoraPrecoPersonal() {
           </div>
         </fieldset>
 
-        <fieldset disabled={online} className={online ? "opacity-50" : ""}>
+        {!online && (
+        <fieldset>
           <legend className="block text-sm text-gray-300 mb-2">Quantas vezes por semana</legend>
           <div className="flex flex-wrap gap-2">
             {FREQUENCIAS.map((f) => (
-              <button key={f} type="button" aria-pressed={freq === f} onClick={() => { setFreq(f); mudou(); }} className={opcao(freq === f && !online)}>{f}×</button>
+              <button key={f} type="button" aria-pressed={freq === f} onClick={() => { setFreq(f); mudou(); }} className={opcao(freq === f)}>{f}×</button>
             ))}
           </div>
-          {online && <p className="text-xs text-gray-400 mt-2">Online é cobrado por mês, não por aula: a frequência não muda a faixa.</p>}
         </fieldset>
+        )}
+        {online && <p className="text-sm text-gray-400">Online é cobrado por mês, não por aula.</p>}
 
         <button type="submit" className={`w-full bg-white text-black px-6 py-3.5 text-sm font-semibold min-h-[52px] hover:bg-gray-100 ${foco}`}>Calcular a faixa de preço</button>
         <p className="text-xs text-gray-500">Gratuita, sem cadastro. A conta roda no seu navegador.</p>
@@ -120,7 +122,7 @@ export default function CalculadoraPrecoPersonal() {
           </details>
 
           <p className="text-gray-500 text-xs mt-4">
-            {res.formato.presencial ? <>A aula dentro do pacote é {FONTE_PACOTE.rotulo}. A aula avulsa é {FONTE_REFERENCIA.rotulo} do portal {FONTE_REFERENCIA.nome}. </> : <>A faixa do online é {FONTE_REFERENCIA.rotulo} do portal {FONTE_REFERENCIA.nome}. </>}
+            {res.formato.presencial ? <>A aula dentro do pacote é {FONTE_PACOTE.rotulo}. A aula avulsa é {FONTE_REFERENCIA.rotulo} do portal {FONTE_REFERENCIA.nome}. </> : <>O piso do online é {FONTE_PACOTE.rotulo}; o teto é {FONTE_REFERENCIA.rotulo} do portal {FONTE_REFERENCIA.nome}. </>}
             Nenhuma das duas é pesquisa de preços com amostra nem o valor de um profissional específico, e elas não distinguem aula de 30 e de 60 minutos, aula em dupla nem experiência do profissional.
           </p>
 

@@ -7,7 +7,9 @@
  *     atende na região, em 18/11/2026. Alphaville, Tamboré e Aldeia da
  *     Serra: R$ 50 a 300 por aula; Barueri e Santana de Parnaíba: R$ 40 a
  *     250. É a leitura de quem trabalha no mercado, não pesquisa com amostra.
- *  2. Aula avulsa e acompanhamento online: referência editorial do portal
+ *  2. Online: piso de R$ 110 por mês informado pelo Montinho; o teto vem da
+ *     referência abaixo.
+ *  3. Aula avulsa e teto do online: referência editorial do portal
  *     Personal por Perto (personalporperto.com.br), montada por perfil de
  *     cidade, consultada em 18/11/2026. Também sem amostra.
  *
@@ -55,14 +57,17 @@ export interface Referencia {
   nome: string;
   /** Aula avulsa presencial. */
   avulsa: Faixa;
-  /** Acompanhamento online, por mês. */
+  /** Acompanhamento online, por mês: piso do Montinho, teto da referência editorial. */
   online: Faixa;
 }
 
+/** Piso do acompanhamento online, por mês: informado pelo Montinho em 18/11/2026. O teto de cada cidade é o da referência editorial. */
+export const ONLINE_MINIMO = 110;
+
 export const REFERENCIAS: Record<RefId, Referencia> = {
-  alphaville: { nome: "Alphaville", avulsa: [100, 250], online: [220, 550] },
-  barueri: { nome: "Barueri", avulsa: [90, 220], online: [200, 500] },
-  "santana-de-parnaiba": { nome: "Santana de Parnaíba", avulsa: [90, 220], online: [190, 500] },
+  alphaville: { nome: "Alphaville", avulsa: [100, 250], online: [ONLINE_MINIMO, 550] },
+  barueri: { nome: "Barueri", avulsa: [90, 220], online: [ONLINE_MINIMO, 500] },
+  "santana-de-parnaiba": { nome: "Santana de Parnaíba", avulsa: [90, 220], online: [ONLINE_MINIMO, 500] },
 };
 
 export interface Local {
@@ -79,13 +84,13 @@ export const LOCAIS: Local[] = [
     id: "tambore",
     nome: "Tamboré",
     ref: "barueri",
-    aviso: "Aula avulsa e online: Tamboré não tem faixa própria na referência do Personal por Perto, então o resultado usa a de Barueri.",
+    aviso: "Aula avulsa e teto do online: Tamboré não tem faixa própria na referência do Personal por Perto, então o resultado usa a de Barueri.",
   },
   {
     id: "aldeia-da-serra",
     nome: "Aldeia da Serra",
     ref: "santana-de-parnaiba",
-    aviso: "Aula avulsa e online: Aldeia da Serra não tem faixa própria na referência do Personal por Perto, então o resultado usa a de Santana de Parnaíba.",
+    aviso: "Aula avulsa e teto do online: Aldeia da Serra não tem faixa própria na referência do Personal por Perto, então o resultado usa a de Santana de Parnaíba.",
   },
   {
     id: "barueri-centro",
@@ -171,7 +176,8 @@ export function calcular(localId: LocalId, formatoId: FormatoId, freq: Frequenci
   const origemRef = `${FONTE_REFERENCIA.rotulo} do ${FONTE_REFERENCIA.nome} para ${ref.nome}, não é pesquisa de preços`;
 
   if (!formato.presencial) {
-    memoria.push(`Acompanhamento online: ${faixaTxt(ref.online)} por mês (${origemRef}).`);
+    memoria.push(`Piso do acompanhamento online: ${brl(ref.online[0])} por mês (${FONTE_PACOTE.rotulo}; não é pesquisa com amostra).`);
+    memoria.push(`Teto: ${brl(ref.online[1])} por mês (${origemRef}).`);
     memoria.push("Online é cobrado por mês, não por aula: a frequência escolhida não muda a faixa.");
     return { local, formato, ref, freq, sessoes, mensal: ref.online, avulsa: null, aulaNoPacote: null, memoria };
   }
