@@ -73,7 +73,7 @@ export const BENEFICIOS_MUAY_THAI_POSTS: BlogPost[] = [
       "Fôlego, potência, agilidade, gasto calórico alto e uma aula que dá vontade de voltar. Veja o que os estudos mostram sobre os benefícios do muay thai, o que ainda é pouco estudado e como somar a luta com a musculação.",
     category: "Treinamento",
     date: "2026-10-24",
-    updatedAt: "2026-10-27",
+    updatedAt: "2026-11-18",
     readTime: "10 min",
     author: "Montinho",
     tags: ["muay thai", "artes marciais", "condicionamento", "saúde mental", "musculação"],
@@ -92,6 +92,11 @@ export const BENEFICIOS_MUAY_THAI_POSTS: BlogPost[] = [
         question: "O muay thai define o corpo feminino?",
         answer:
           "Ajuda, mas não sozinho. Corpo definido é menos gordura por cima de músculo: o muay thai ajuda na primeira parte, porque gasta muitas calorias, e pouco na segunda, porque não sobe carga. Com duas aulas de luta e duas ou três de musculação na semana, e a alimentação acertada, a definição aparece.",
+      },
+      {
+        question: "Em quanto tempo o muay thai define o corpo?",
+        answer:
+          "Não dá para cravar um prazo. O fôlego melhora em poucas semanas: num estudo de 5 semanas de kickboxing, o condicionamento subiu, mas a composição corporal não mudou. A definição leva meses e depende de perder gordura (alimentação) e de ganhar músculo (musculação junto).",
       },
       {
         question: "Como fica o corpo de quem pratica muay thai?",
@@ -178,6 +183,9 @@ export const BENEFICIOS_MUAY_THAI_POSTS: BlogPost[] = [
 
 <h2>Como fica o corpo de quem pratica muay thai?</h2>
 <p>O que os estudos medem é o que muda primeiro: mais fôlego, braços mais explosivos, quadril mais solto, mais agilidade. A aparência muda mais devagar e depende de duas coisas fora da aula: a alimentação, que decide quanto de gordura sai, e a musculação, que decide quanto de músculo aparece. No estudo de 5 semanas de kickboxing, quem lutou melhorou o condicionamento, mas a composição corporal ficou igual (<a href="${FONTE_OUERGUI.url}" target="_blank" rel="noopener noreferrer">Ouergui e colegas, 2014</a>).</p>
+
+<h3>Em quanto tempo o muay thai define o corpo?</h3>
+<p>Não dá para cravar um prazo, e desconfie de quem promete um. A ordem costuma ser esta: o fôlego e a coordenação melhoram nas primeiras semanas; a aparência demora meses. No estudo de 5 semanas de kickboxing citado acima, o condicionamento subiu e a composição corporal ficou igual. Definição depende de tirar gordura, que é o déficit do dia inteiro, e de ter músculo por baixo, que é a musculação. Por isso quem treina luta duas vezes por semana e musculação duas ou três costuma ver a mudança antes.</p>
 
 <h2>Quantas calorias uma aula de muay thai gasta</h2>
 <p>Depende de quanto da aula é técnica e de quantos rounds fortes ela tem. A conta abaixo é a da <a href="/ferramentas/calculadora-calorias-muay-thai">Calculadora de Calorias no Muay Thai</a>, com rounds de 3 minutos e 1 minuto de descanso, usando os valores do <a href="${FONTE_COMPENDIO_MUAY.url}" target="_blank" rel="noopener noreferrer">Compêndio de Atividades Físicas</a>:</p>
