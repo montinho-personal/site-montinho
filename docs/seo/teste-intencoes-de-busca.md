@@ -1693,3 +1693,10 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `melancia-engorda`: H2 "Tabela nutricional da melancia" (PAA), "Suco de melancia engorda? Pode tomar todo dia?" (PAA) e "Melancia engorda a barriga?" (autocompletar); frutas mais calóricas (PAA) na seção de comparação; "se comer muito" com 1 kg; +5 FAQ (barriga, tabela, suco, fruta mais calórica, gravidez). "Índice glicêmico alto, carga baixa" (visão de IA) não entrou sem fonte checada.
 - Fora: "laranja ajuda a emagrecer" vale artigo (pauta 4b, série engorda); "banana ajuda a emagrecer" já tem `banana-engorda`; "quantas calorias tem uma manga" já está coberta. Não cabem: "manga ajuda a soltar o intestino" (saúde intestinal, fora do serviço), "perder 5 kg em 1 semana" (promessa), "3 frutas que devemos comer todos os dias" (sem fonte que nomeie três), "manga engorda cavalo" (animal), "manga engorda mais que pizza" (a TACO não tem pizza).
 - Título e descrição: mantidos; nenhuma proposta (os termos do autocompletar, "à noite" e "na dieta", já estão nos títulos).
+
+## 2026-11-18 — Página de Alphaville: diagnóstico (sem mudança no texto ainda)
+
+- SerpApi, celular, Barueri: "personal trainer alphaville". Evidência: `docs/seo/serp/personal-trainer-alphaville-2026-11-18.json`. Sem visão de IA e sem outras pesquisas; mapa com Manuela Mergian, Ramires Ironberg e Sergio Filho; orgânicos fracos (Facebook, Instagram, diretórios).
+- Search Console (30 dias, buscas "personal … alphaville"): a home recebe 115 impressões (posição ~9); `/personal-trainer-alphaville`, 2. Home e página disputam o termo; o Google escolheu a home.
+- Propostas enviadas ao Montinho (esperando aprovação): página dedicada vira "planos e valores" (título novo) e descrição sem "na sua academia"; home reforçada com Alphaville; conferir o link do Perfil da Empresa.
+- Autocompletar e PAA fora do tema: "mulher", "ironberg", "bruna trindade", "personal gym", Bruna Marquezine, salário nos EUA, quantos personais no Brasil. Nada para a pauta.
