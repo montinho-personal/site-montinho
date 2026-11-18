@@ -59,7 +59,7 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 |---|---|---|
 | ~~Prancha lateral (27.100/mês)~~ | movida para "Artigos novos" (M3b) em 18/11: volume de artigo próprio, exercício com id no cadastro (`prancha-lateral`), mesmo caso do abdominal oblíquo | exercícios do cadastro sem artigo (17/11) |
 | ~~Tipos de abdominais (6.600/mês)~~ aplicado em 18/11 (H2 com os 4 grupos e FAQ) | `treino-de-abdomen-em-casa` | PAA de "abdominal oblíquo" ("Quais são os 21 tipos de exercícios abdominais?"), 17/11 |
-| Supino em casa (210/mês), "supino sem máquina" | `treino-de-peito-em-casa` | outras pesquisas de "supino na máquina" (17/11) |
+| ~~Supino em casa (210/mês), "supino sem máquina"~~ aplicado em 18/11 (H2 e FAQ) | `treino-de-peito-em-casa` | outras pesquisas de "supino na máquina" (17/11) |
 | ~~Batata doce engorda? (12.100/mês)~~ aplicado em 18/11 (H2 com tabela da TACO e FAQ) | `batata-doce-emagrece` | série "engorda" (11/11) |
 | ~~Academia ao ar livre: como usar os aparelhos da praça (12.100/mês para "academia ao ar livre")~~ aplicado em 18/11 (H2 com tabela dos aparelhos e FAQ) | `treino-ao-ar-livre-estruturado` (se a pesquisa mostrar intenção diferente da do artigo, vira artigo próprio) | autocompletar de "aparelhos de academia nomes" (16/11) |
 | ~~Aparelhos de academia completa (2.900/mês)~~ aplicado em 18/11 (H2 com as 5 áreas e FAQ) | `academia-de-condominio-quais-aparelhos-comprar` | PAA de "aparelhos de academia nomes" (16/11) |
@@ -71,7 +71,7 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | Peso oficial das estações | `estacoes-do-hyrox` (só com fonte oficial HYROX) | pauta de HYROX (08/10) |
 | 4 ou 7 exercícios para perder barriga | `exercicio-para-perder-barriga` | PAA do tabata e do EPOC (16/11) |
 | Quantas calorias queimar por treino | `exercicio-que-mais-queima-calorias` | PAA do EPOC (16/11) |
-| Para que serve a barra fixa (40/mês) | `como-fazer-barra-fixa` | PAA de "graviton academia" (16/11) |
+| ~~Para que serve a barra fixa (40/mês)~~ aplicado em 18/11 (H2 e FAQ) | `como-fazer-barra-fixa` | PAA de "graviton academia" (16/11) |
 | Emagrecer pedalando 30 minutos por dia; minutos de bike para perder barriga | `bicicleta-emagrece` | PAA de "air bike" e "air bike emagrece" (16/11) |
 | ~~Air bike no CrossFit (720/mês)~~ aplicado em 18/11 (H2 e FAQ, link para `air-bike`) | `crossfit-emagrece` | autocompletar de "air bike" (16/11) |
 

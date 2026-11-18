@@ -38225,6 +38225,7 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
   excerpt: "A barra fixa é o exercício mais democrático — e mais temido — da academia. Qualquer pessoa pode chegar lá com a progressão certa. Este guia mostra o caminho.",
   category: "Treinamento",
   date: "2026-06-27",
+  updatedAt: "2026-11-18",
   readTime: "10 min",
   author: "Montinho",
   tags: ["barra fixa", "como fazer barra fixa", "pull-up", "chin-up", "treino de costas"],
@@ -38246,6 +38247,17 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
   <img src="/blog-images/como-fazer-barra-fixa-infographic.svg" alt="Infográfico sobre Como Fazer Barra Fixa do Zero: Progressão Para Iniciantes e Avançados — Montinho Personal Trainer" title="Como Fazer Barra Fixa do Zero: Progressão Para Iniciantes e " width="1200" height="630" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 </figure>
 <p>A realidade: praticamente qualquer pessoa saudável pode aprender a fazer barra fixa com a progressão correta. Aqui está o caminho.</p>
+
+<h2>Para que serve a barra fixa?</h2>
+
+<ul>
+<li><strong>Fortalecer as costas e os braços</strong> com o peso do próprio corpo: é um dos exercícios de puxar mais completos.</li>
+<li><strong>Melhorar a força de pegada</strong>, porque você fica pendurado o tempo todo. Veja <a href="/blog/forca-de-pegada-e-antebraco">força de pegada e antebraço</a>.</li>
+<li><strong>Medir a força relativa</strong>: quantas repetições você faz com o seu peso é um teste simples de evolução.</li>
+<li><strong>Treinar em qualquer lugar</strong>: barra de porta, praça ou academia.</li>
+</ul>
+
+<p>Quem ainda não consegue subir pode começar no <a href="/blog/graviton">graviton</a> ou na puxada, e usar a progressão abaixo.</p>
 
 <h2>Músculos trabalhados na barra fixa</h2>
 
@@ -38383,6 +38395,10 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
 
 `,
   faq: [
+      {
+        question: "Para que serve a barra fixa?",
+        answer: "Para fortalecer costas e braços com o peso do corpo, melhorar a força de pegada e medir a sua evolução pelo número de repetições. Dá para fazer em casa, na praça ou na academia.",
+      },
       {
         question: "Como aprender a fazer barra fixa do zero?",
         answer: "Comece pela fase negativa (excêntrica): suba com apoio até o queixo acima da barra e desça controlado em 3-5 segundos. Depois progrida para barra assistida com elástico ou máquina. Quando conseguir puxar ~80-85% do peso corporal na puxada frontal, provavelmente fará a primeira barra fixa. A ativação da escápula antes de puxar é a chave.",
@@ -103618,11 +103634,17 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Da para construir peitoral em casa? Da — com flexoes bem progredidas, variacoes inteligentes e, se possivel, elasticos. Veja o treino completo, como progredir sem carga e o que esperar de forma realista.",
     category: "Treino",
     date: "2026-07-30",
-    updatedAt: "2026-08-12",
+    updatedAt: "2026-11-18",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["treino em casa", "peito", "flexão", "calistenia", "hipertrofia"],
     faq: [
+      {
+        question:
+          "Como fazer supino em casa sem banco e sem barra?",
+        answer:
+          "Deitado no chão, com halteres, garrafões ou mochila (o supino no chão), ou em pé com um elástico preso atrás de você (o press no elástico). A flexão com elástico nas costas é o que mais se aproxima de um supino carregado.",
+      },
       {
         question:
           "Da para ganhar peitoral so com flexao?",
@@ -103712,6 +103734,18 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 </ul>
 
 <p>Montei um guia completo em <a href="/blog/treino-com-elasticos-em-casa">treino com elásticos em casa</a> — vale para peito e para o corpo todo.</p>
+
+<h2>Supino em casa: como fazer sem banco e sem barra</h2>
+
+<p>Sem banco e sem barra, dá para chegar perto do supino de três jeitos:</p>
+
+<ul>
+<li><strong>Supino no chão:</strong> deitado de costas, joelhos dobrados, empurre para cima dois halteres, garrafões de água ou uma mochila carregada abraçada com as duas mãos. O chão para o cotovelo um pouco antes do fim do movimento, o que poupa o ombro.</li>
+<li><strong>Press no elástico:</strong> prenda o elástico atrás de você (num batente firme ou passando pelas costas) e empurre para a frente, como no supino em pé. Mudando a altura do elástico, você muda o ângulo.</li>
+<li><strong>Flexão com carga:</strong> elástico nas costas ou mochila. É a que mais se aproxima de um supino carregado, porque o peito leva o peso do corpo mais a carga extra.</li>
+</ul>
+
+<p>Para saber como o supino da academia funciona e comparar com a máquina, veja <a href="/blog/supino-na-maquina">supino na máquina</a>.</p>
 
 <h2>O treino de peito em casa, pronto para usar</h2>
 
