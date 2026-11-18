@@ -9,7 +9,8 @@
  *     250. É a leitura de quem trabalha no mercado, não pesquisa com amostra.
  *  2. Online: piso de R$ 110 por mês informado pelo Montinho; o teto vem da
  *     referência abaixo.
- *  3. Aula avulsa e teto do online: referência editorial do portal
+ *  3. Aula avulsa em Alphaville: R$ 100 a 350, informada pelo Montinho.
+ *  4. Aula avulsa nas demais cidades e teto do online: referência editorial do portal
  *     Personal por Perto (personalporperto.com.br), montada por perfil de
  *     cidade, consultada em 18/11/2026. Também sem amostra.
  *
@@ -57,6 +58,8 @@ export interface Referencia {
   nome: string;
   /** Aula avulsa presencial. */
   avulsa: Faixa;
+  /** true quando a faixa da avulsa foi informada pelo Montinho, e não lida da referência editorial. */
+  avulsaDoMontinho: boolean;
   /** Acompanhamento online, por mês: piso do Montinho, teto da referência editorial. */
   online: Faixa;
 }
@@ -65,9 +68,9 @@ export interface Referencia {
 export const ONLINE_MINIMO = 110;
 
 export const REFERENCIAS: Record<RefId, Referencia> = {
-  alphaville: { nome: "Alphaville", avulsa: [100, 250], online: [ONLINE_MINIMO, 550] },
-  barueri: { nome: "Barueri", avulsa: [90, 220], online: [ONLINE_MINIMO, 500] },
-  "santana-de-parnaiba": { nome: "Santana de Parnaíba", avulsa: [90, 220], online: [ONLINE_MINIMO, 500] },
+  alphaville: { nome: "Alphaville", avulsa: [100, 350], avulsaDoMontinho: true, online: [ONLINE_MINIMO, 550] },
+  barueri: { nome: "Barueri", avulsa: [90, 220], avulsaDoMontinho: false, online: [ONLINE_MINIMO, 500] },
+  "santana-de-parnaiba": { nome: "Santana de Parnaíba", avulsa: [90, 220], avulsaDoMontinho: false, online: [ONLINE_MINIMO, 500] },
 };
 
 export interface Local {
@@ -190,7 +193,7 @@ export function calcular(localId: LocalId, formatoId: FormatoId, freq: Frequenci
   memoria.push(`Sessões por mês: ${freq} × 52 ÷ 12 = ${((freq * 52) / 12).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}, arredondado para ${sessoes}.`);
   memoria.push(`Faixa mensal: ${brl(aula[0])} × ${sessoes} = ${brl(min)} e ${brl(aula[1])} × ${sessoes} = ${brl(max)}.`);
   memoria.push("Arredondamento: dezena mais próxima até R$ 1.000, cinquentena acima.");
-  memoria.push(`Aula avulsa, fora de pacote: ${faixaTxt(ref.avulsa)} (${origemRef}).`);
+  memoria.push(`Aula avulsa, fora de pacote: ${faixaTxt(ref.avulsa)} (${ref.avulsaDoMontinho ? `${FONTE_PACOTE.rotulo}; não é pesquisa com amostra` : origemRef}).`);
 
   return { local, formato, ref, freq, sessoes, mensal, avulsa: ref.avulsa, aulaNoPacote: aula, memoria };
 }
