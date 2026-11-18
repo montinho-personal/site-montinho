@@ -4,7 +4,7 @@
  * fallback declarado e nenhuma palavra que finja pesquisa de campo.
  */
 import * as fs from "fs";
-import { FORMATOS, FREQUENCIAS, LOCAIS, REFERENCIAS, arredondar, calcular, sessoesPorMes } from "../lib/preco-personal";
+import { FORMATOS, FREQUENCIAS, LOCAIS, PACOTE_AULA, REFERENCIAS, arredondar, calcular, sessoesPorMes } from "../lib/preco-personal";
 
 let falhas = 0;
 const ok = (nome: string, cond: boolean, extra = "") => { if (!cond) { falhas++; console.log(`  FALHOU  ${nome} ${extra}`); } else console.log(`  ok      ${nome}`); };
@@ -16,15 +16,15 @@ ok("arredonda para a cinquentena acima de R$ 1.000", arredondar(1024) === 1000 &
 const todos = LOCAIS.flatMap((l) => FORMATOS.flatMap((f) => FREQUENCIAS.map((q) => calcular(l.id, f.id, q))));
 ok("todo resultado é faixa (mínimo menor que máximo)", todos.every((r) => r.mensal[0] < r.mensal[1] && (!r.avulsa || r.avulsa[0] < r.avulsa[1]) && (!r.aulaNoPacote || r.aulaNoPacote[0] < r.aulaNoPacote[1])));
 ok("todo valor exibido obedece ao arredondamento", todos.every((r) => [...r.mensal, ...(r.aulaNoPacote ?? [])].every((v) => v === arredondar(v))));
-ok("2× e 3× usam a faixa do pacote, sem extrapolar", todos.filter((r) => r.formato.presencial && (r.freq === 2 || r.freq === 3)).every((r) => !r.extrapolado && r.mensal[0] === REFERENCIAS[r.local.ref].mensal[0] && r.mensal[1] === REFERENCIAS[r.local.ref].mensal[1]));
-ok("1×, 4× e 5× presenciais são marcados como extrapolação", todos.filter((r) => r.formato.presencial && ![2, 3].includes(r.freq)).every((r) => r.extrapolado && r.memoria.some((m) => m.includes("extrapolação"))));
-ok("mais aulas nunca custam menos por mês", LOCAIS.every((l) => { const m = [1, 3, 4, 5].map((f) => calcular(l.id, "academia", f as 1).mensal[1]); return m[0] < m[1] && m[1] < m[2] && m[2] < m[3]; }));
+ok("mensal presencial = aula no pacote × sessões, arredondado", todos.filter((r) => r.formato.presencial).every((r) => r.mensal[0] === arredondar(PACOTE_AULA[r.local.id][0] * r.sessoes) && r.mensal[1] === arredondar(PACOTE_AULA[r.local.id][1] * r.sessoes)));
+ok("aula no pacote: R$ 50 a 300 em Alphaville, Tamboré e Aldeia; R$ 40 a 250 em Barueri e Santana", ["alphaville", "tambore", "aldeia-da-serra"].every((l) => PACOTE_AULA[l as "alphaville"].join() === "50,300") && ["barueri-centro", "santana-de-parnaiba"].every((l) => PACOTE_AULA[l as "alphaville"].join() === "40,250"));
+ok("mais aulas nunca custam menos por mês", LOCAIS.every((l) => { const m = [1, 2, 3, 5].map((f) => calcular(l.id, "academia", f as 1).mensal[1]); return m[0] < m[1] && m[1] < m[2] && m[2] < m[3]; }));
 ok("online é mensal e não muda com a frequência", LOCAIS.every((l) => FREQUENCIAS.every((f) => { const r = calcular(l.id, "online", f); return r.avulsa === null && r.aulaNoPacote === null && r.mensal[0] === REFERENCIAS[l.ref].online[0] && r.mensal[1] === REFERENCIAS[l.ref].online[1]; })));
-ok("Alphaville 3×: R$ 500 a R$ 1.500 por mês", calcular("alphaville", "condominio", 3).mensal.join() === "500,1500");
-ok("Alphaville 5×: R$ 1.000 a R$ 3.000 por mês", calcular("alphaville", "condominio", 5).mensal.join() === "1000,3000");
+ok("Alphaville 3×: R$ 650 a R$ 3.900 por mês", calcular("alphaville", "condominio", 3).mensal.join() === "650,3900");
+ok("Barueri 2×: R$ 360 a R$ 2.250 por mês", calcular("barueri-centro", "academia", 2).mensal.join() === "360,2250");
 ok("fallback nunca é silencioso", LOCAIS.filter((l) => l.id !== l.ref).every((l) => !!l.aviso && l.aviso.includes(REFERENCIAS[l.ref].nome)));
 ok("local com faixa própria não leva aviso", LOCAIS.filter((l) => l.id === l.ref).every((l) => l.aviso === null));
-ok("a memória diz de onde vem o número", todos.every((r) => r.memoria[0].includes("referência editorial") && r.memoria[0].includes("não é pesquisa")));
+ok("a memória diz de onde vem cada número", todos.every((r) => r.memoria.some((m) => m.includes("referência editorial")) && (!r.formato.presencial || r.memoria[0].includes("informada pelo Montinho"))));
 
 const fontes = ["app/ferramentas/calculadora-preco-personal-trainer-alphaville/page.tsx", "components/preco/CalculadoraPrecoPersonal.tsx"].map((f) => fs.readFileSync(f, "utf8")).join("\n");
 const semComentario = fontes.replace(/\/\*[\s\S]*?\*\//g, "");

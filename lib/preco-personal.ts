@@ -1,26 +1,23 @@
 /**
  * Calculadora de preço de personal trainer para Alphaville e região.
  *
- * DE ONDE VÊM OS NÚMEROS
+ * DE ONDE VÊM OS NÚMEROS (duas origens, sempre declaradas na tela)
  *
- * As faixas abaixo NÃO são pesquisa de campo. São a referência editorial do
- * portal Personal por Perto (personalporperto.com.br), montada por perfil de
- * cidade, consultada em 18/11/2026. Não existe amostra: por isso a tela
- * nunca diz "preço médio", nunca cita quantidade de profissionais e nunca
- * mostra valor exato, só faixa.
+ *  1. Aula dentro do pacote presencial: faixa informada pelo Montinho, que
+ *     atende na região, em 18/11/2026. Alphaville, Tamboré e Aldeia da
+ *     Serra: R$ 50 a 300 por aula; Barueri e Santana de Parnaíba: R$ 40 a
+ *     250. É a leitura de quem trabalha no mercado, não pesquisa com amostra.
+ *  2. Aula avulsa e acompanhamento online: referência editorial do portal
+ *     Personal por Perto (personalporperto.com.br), montada por perfil de
+ *     cidade, consultada em 18/11/2026. Também sem amostra.
  *
- * Quando este site tiver preços reais coletados (com data e fonte), eles
- * entram em REFERENCIAS com `origem` própria e a tela passa a dizer quantos
- * são e de quando.
+ * Por isso a tela nunca diz "preço médio", nunca cita quantidade de
+ * profissionais e nunca mostra valor exato, só faixa.
  *
  * A CONTA (toda no navegador, sem servidor e sem IA)
  *
  *  - sessões por mês = vezes por semana × 52 ÷ 12, arredondado;
- *  - 2 e 3 vezes por semana: a faixa mensal é o próprio dado de pacote da
- *    referência, que é definido para essa frequência;
- *  - 1, 4 e 5 vezes: o valor por aula dentro do pacote (faixa mensal ÷ 11,
- *    a média entre 9 e 13 sessões) × sessões do mês, marcado como
- *    extrapolação;
+ *  - faixa mensal presencial = aula dentro do pacote × sessões do mês;
  *  - online é mensal e não muda com a frequência;
  *  - arredondamento único: dezena até R$ 1.000, cinquentena acima;
  *  - recorte sem dado próprio usa o mais amplo e diz isso na tela.
@@ -39,20 +36,33 @@ export const FONTE_REFERENCIA = {
   rotulo: "referência editorial",
 } as const;
 
+/** Aula dentro do pacote presencial: faixa informada pelo Montinho. */
+export const FONTE_PACOTE = {
+  nome: "Montinho",
+  informadaEm: "2026-11-18",
+  rotulo: "faixa informada pelo Montinho, que atende na região",
+} as const;
+
+export const PACOTE_AULA: Record<LocalId, Faixa> = {
+  alphaville: [50, 300],
+  tambore: [50, 300],
+  "aldeia-da-serra": [50, 300],
+  "barueri-centro": [40, 250],
+  "santana-de-parnaiba": [40, 250],
+};
+
 export interface Referencia {
   nome: string;
   /** Aula avulsa presencial. */
   avulsa: Faixa;
-  /** Pacote mensal presencial de 2 a 3 vezes por semana. */
-  mensal: Faixa;
   /** Acompanhamento online, por mês. */
   online: Faixa;
 }
 
 export const REFERENCIAS: Record<RefId, Referencia> = {
-  alphaville: { nome: "Alphaville", avulsa: [100, 250], mensal: [500, 1500], online: [220, 550] },
-  barueri: { nome: "Barueri", avulsa: [90, 220], mensal: [450, 1300], online: [200, 500] },
-  "santana-de-parnaiba": { nome: "Santana de Parnaíba", avulsa: [90, 220], mensal: [450, 1300], online: [190, 500] },
+  alphaville: { nome: "Alphaville", avulsa: [100, 250], online: [220, 550] },
+  barueri: { nome: "Barueri", avulsa: [90, 220], online: [200, 500] },
+  "santana-de-parnaiba": { nome: "Santana de Parnaíba", avulsa: [90, 220], online: [190, 500] },
 };
 
 export interface Local {
@@ -69,19 +79,19 @@ export const LOCAIS: Local[] = [
     id: "tambore",
     nome: "Tamboré",
     ref: "barueri",
-    aviso: "Tamboré não tem faixa própria na referência. O resultado usa a referência de Barueri.",
+    aviso: "Aula avulsa e online: Tamboré não tem faixa própria na referência do Personal por Perto, então o resultado usa a de Barueri.",
   },
   {
     id: "aldeia-da-serra",
     nome: "Aldeia da Serra",
     ref: "santana-de-parnaiba",
-    aviso: "Aldeia da Serra não tem faixa própria na referência. O resultado usa a referência de Santana de Parnaíba.",
+    aviso: "Aula avulsa e online: Aldeia da Serra não tem faixa própria na referência do Personal por Perto, então o resultado usa a de Santana de Parnaíba.",
   },
   {
     id: "barueri-centro",
     nome: "Centro de Barueri",
     ref: "barueri",
-    aviso: "A referência é da cidade de Barueri inteira, não só do centro.",
+    aviso: "As faixas são da cidade de Barueri inteira, não só do centro.",
   },
   { id: "santana-de-parnaiba", nome: "Santana de Parnaíba", ref: "santana-de-parnaiba", aviso: null },
 ];
@@ -123,9 +133,6 @@ export const FORMATOS: Formato[] = [
 
 export const FREQUENCIAS: Frequencia[] = [1, 2, 3, 4, 5];
 
-/** Média entre 9 e 13 sessões: quantas aulas o pacote de 2 a 3 vezes por semana representa. */
-export const SESSOES_DO_PACOTE = 11;
-
 /** Arredondamento único da ferramenta: dezena até R$ 1.000, cinquentena acima. */
 export function arredondar(valor: number): number {
   const passo = valor <= 1000 ? 10 : 50;
@@ -151,8 +158,6 @@ export interface Resultado {
   avulsa: Faixa | null;
   /** Presencial: quanto cada aula representa dentro do pacote. Online: null. */
   aulaNoPacote: Faixa | null;
-  /** true quando a faixa mensal foi calculada (1, 4 e 5 vezes), não lida direto da referência. */
-  extrapolado: boolean;
   /** A conta, linha a linha, para quem quiser conferir. */
   memoria: string[];
 }
@@ -163,38 +168,25 @@ export function calcular(localId: LocalId, formatoId: FormatoId, freq: Frequenci
   const ref = REFERENCIAS[local.ref];
   const sessoes = sessoesPorMes(freq);
   const memoria: string[] = [];
-  const origem = `Referência usada: ${ref.nome} (${FONTE_REFERENCIA.rotulo} do ${FONTE_REFERENCIA.nome}, não é pesquisa de preços).`;
+  const origemRef = `${FONTE_REFERENCIA.rotulo} do ${FONTE_REFERENCIA.nome} para ${ref.nome}, não é pesquisa de preços`;
 
   if (!formato.presencial) {
-    memoria.push(origem);
-    memoria.push(`Acompanhamento online em ${ref.nome}: ${faixaTxt(ref.online)} por mês.`);
+    memoria.push(`Acompanhamento online: ${faixaTxt(ref.online)} por mês (${origemRef}).`);
     memoria.push("Online é cobrado por mês, não por aula: a frequência escolhida não muda a faixa.");
-    return { local, formato, ref, freq, sessoes, mensal: ref.online, avulsa: null, aulaNoPacote: null, extrapolado: false, memoria };
+    return { local, formato, ref, freq, sessoes, mensal: ref.online, avulsa: null, aulaNoPacote: null, memoria };
   }
 
-  memoria.push(origem);
+  const aula = PACOTE_AULA[local.id];
+  const min = aula[0] * sessoes;
+  const max = aula[1] * sessoes;
+  const mensal: Faixa = [arredondar(min), arredondar(max)];
+  memoria.push(`Aula dentro do pacote em ${local.nome}: ${faixaTxt(aula)} (${FONTE_PACOTE.rotulo}; não é pesquisa com amostra).`);
   memoria.push(`Sessões por mês: ${freq} × 52 ÷ 12 = ${((freq * 52) / 12).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}, arredondado para ${sessoes}.`);
-  memoria.push(`Aula avulsa presencial em ${ref.nome}: ${faixaTxt(ref.avulsa)}.`);
-  memoria.push(`Pacote mensal de 2 a 3 vezes por semana em ${ref.nome}: ${faixaTxt(ref.mensal)}.`);
-
-  const extrapolado = freq !== 2 && freq !== 3;
-  let mensal: Faixa;
-  if (!extrapolado) {
-    mensal = [arredondar(ref.mensal[0]), arredondar(ref.mensal[1])];
-    memoria.push(`${freq} vezes por semana está dentro do pacote da referência: a faixa mensal é a própria faixa do pacote.`);
-  } else {
-    const min = (ref.mensal[0] / SESSOES_DO_PACOTE) * sessoes;
-    const max = (ref.mensal[1] / SESSOES_DO_PACOTE) * sessoes;
-    mensal = [arredondar(min), arredondar(max)];
-    memoria.push(
-      `${freq} ${freq === 1 ? "vez" : "vezes"} por semana está fora do pacote da referência, então é extrapolação: faixa do pacote ÷ ${SESSOES_DO_PACOTE} sessões × ${sessoes} sessões = ${brl(Math.round(min))} a ${brl(Math.round(max))}.`,
-    );
-  }
-  const aulaNoPacote: Faixa = [arredondar(mensal[0] / sessoes), arredondar(mensal[1] / sessoes)];
-  memoria.push(`Cada aula dentro do pacote: faixa mensal ÷ ${sessoes} sessões = ${faixaTxt(aulaNoPacote)}.`);
+  memoria.push(`Faixa mensal: ${brl(aula[0])} × ${sessoes} = ${brl(min)} e ${brl(aula[1])} × ${sessoes} = ${brl(max)}.`);
   memoria.push("Arredondamento: dezena mais próxima até R$ 1.000, cinquentena acima.");
+  memoria.push(`Aula avulsa, fora de pacote: ${faixaTxt(ref.avulsa)} (${origemRef}).`);
 
-  return { local, formato, ref, freq, sessoes, mensal, avulsa: ref.avulsa, aulaNoPacote, extrapolado, memoria };
+  return { local, formato, ref, freq, sessoes, mensal, avulsa: ref.avulsa, aulaNoPacote: aula, memoria };
 }
 
 /** Linhas da tabela da página: Alphaville, presencial, de 1 a 5 vezes por semana. */

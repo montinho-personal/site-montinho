@@ -6,7 +6,7 @@ import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
 import CalculadoraPrecoPersonal from "@/components/preco/CalculadoraPrecoPersonal";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
-import { FONTE_REFERENCIA, LOCAIS, REFERENCIAS, SESSOES_DO_PACOTE, calcular, faixaTxt, tabelaPorFrequencia } from "@/lib/preco-personal";
+import { FONTE_PACOTE, FONTE_REFERENCIA, LOCAIS, PACOTE_AULA, REFERENCIAS, calcular, faixaTxt, tabelaPorFrequencia } from "@/lib/preco-personal";
 
 /**
  * Calculadora de preço de personal trainer para Alphaville e região.
@@ -17,8 +17,10 @@ import { FONTE_REFERENCIA, LOCAIS, REFERENCIAS, SESSOES_DO_PACOTE, calcular, fai
  *
  * Divisão com o artigo /blog/quanto-custa-personal-trainer-alphaville: o
  * artigo explica o que entra no preço e como escolher; esta página faz a
- * conta por mês e por aula. Todo número daqui sai de lib/preco-personal.ts,
- * que é referência editorial do Personal por Perto, nunca "preço médio".
+ * conta por mês e por aula. Todo número daqui sai de lib/preco-personal.ts:
+ * a aula dentro do pacote é a faixa informada pelo Montinho (18/11/2026); a
+ * avulsa e o online são referência editorial do Personal por Perto. Nenhum
+ * dos dois é "preço médio".
  */
 
 const CAMINHO = "/ferramentas/calculadora-preco-personal-trainer-alphaville";
@@ -27,7 +29,7 @@ const NOME = "Calculadora de Preço de Personal Trainer em Alphaville";
 export const metadata: Metadata = {
   title: "Calculadora de Preço de Personal Trainer: Alphaville e Região",
   description:
-    "Escolha o local, o formato e quantas vezes por semana e veja a faixa de referência por aula e por mês em Alphaville, Tamboré, Barueri e Santana de Parnaíba.",
+    "Escolha o local, o formato e quantas vezes por semana e veja a faixa por aula e por mês em Alphaville, Tamboré, Barueri e Santana de Parnaíba.",
   alternates: { canonical: `${SITE_URL}${CAMINHO}` },
   openGraph: {
     title: `${NOME} | Montinho Personal Trainer`,
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
 const appSchema = aplicativoSchema({
   nome: NOME,
   descricao:
-    "Mostra a faixa de referência de preço de personal trainer por aula e por mês em Alphaville, Tamboré, Aldeia da Serra, Barueri e Santana de Parnaíba, por formato (condomínio, academia, domicílio ou online) e frequência semanal, com a memória do cálculo. As faixas são referência editorial, não pesquisa de preços.",
+    "Mostra a faixa de referência de preço de personal trainer por aula e por mês em Alphaville, Tamboré, Aldeia da Serra, Barueri e Santana de Parnaíba, por formato (condomínio, academia, domicílio ou online) e frequência semanal, com a memória do cálculo. As faixas são referência de quem atende na região e referência editorial, não pesquisa de preços.",
   caminho: CAMINHO,
   categoria: "UtilitiesApplication",
 });
@@ -57,25 +59,28 @@ const breadcrumbSchema = {
 };
 
 const ALPHA = REFERENCIAS.alphaville;
+const AULA_ALPHA = PACOTE_AULA.alphaville;
+const AULA_BARUERI = PACOTE_AULA["barueri-centro"];
 const TABELA = tabelaPorFrequencia("alphaville");
 const A2 = calcular("alphaville", "condominio", 2);
 const A3 = calcular("alphaville", "condominio", 3);
 const A5 = calcular("alphaville", "condominio", 5);
 const DATA_REF = new Date(`${FONTE_REFERENCIA.consultadaEm}T12:00:00`).toLocaleDateString("pt-BR", { day: "numeric", month: "long", year: "numeric" });
+const DATA_PACOTE = new Date(`${FONTE_PACOTE.informadaEm}T12:00:00`).toLocaleDateString("pt-BR", { day: "numeric", month: "long", year: "numeric" });
 const PPP_CALC = FONTE_REFERENCIA.url;
 
 const faq: ItemFAQ[] = [
   {
     question: "Quanto custa um personal trainer em Alphaville por mês?",
-    answer: `Pela referência editorial usada nesta calculadora, um pacote presencial de 2 a 3 vezes por semana em Alphaville fica na faixa de ${faixaTxt(ALPHA.mensal)} por mês, e o acompanhamento online, de ${faixaTxt(ALPHA.online)} por mês. É uma faixa de ordem de grandeza, não pesquisa de preços: o valor de cada profissional depende do horário, do local e do que entra no acompanhamento.`,
+    answer: `Depende de quantas vezes por semana. Dentro de um pacote, a aula em Alphaville fica na faixa de ${faixaTxt(AULA_ALPHA)}. Com 2 vezes por semana (cerca de ${A2.sessoes} aulas no mês), isso dá de ${faixaTxt(A2.mensal)} por mês; com 3 vezes (cerca de ${A3.sessoes} aulas), de ${faixaTxt(A3.mensal)}. É faixa de ordem de grandeza, não pesquisa de preços: o valor de cada profissional depende do horário, do local e do que entra no acompanhamento.`,
   },
   {
     question: "Quanto custa um personal trainer 3 vezes por semana?",
-    answer: `Três vezes por semana dão cerca de ${A3.sessoes} aulas no mês (3 × 52 ÷ 12). Em Alphaville, a referência para esse pacote é de ${faixaTxt(A3.mensal)} por mês, o que equivale a ${faixaTxt(A3.aulaNoPacote!)} por aula dentro do pacote.`,
+    answer: `Três vezes por semana dão cerca de ${A3.sessoes} aulas no mês (3 × 52 ÷ 12). Com a aula dentro do pacote entre ${faixaTxt(AULA_ALPHA)} em Alphaville, a faixa mensal fica de ${faixaTxt(A3.mensal)}. Em Barueri e Santana de Parnaíba, com a aula entre ${faixaTxt(AULA_BARUERI)}, fica de ${faixaTxt(calcular("barueri-centro", "condominio", 3).mensal)}.`,
   },
   {
-    question: "Quanto custa uma aula avulsa com personal trainer?",
-    answer: `A referência para aula avulsa presencial é de ${faixaTxt(ALPHA.avulsa)} em Alphaville e de ${faixaTxt(REFERENCIAS.barueri.avulsa)} em Barueri e em Santana de Parnaíba. A avulsa custa mais por aula do que a aula dentro de um pacote mensal, porque não dá previsibilidade de agenda ao profissional.`,
+    question: "Quanto custa uma aula com personal trainer?",
+    answer: `Dentro de um pacote, a faixa por aula é de ${faixaTxt(AULA_ALPHA)} em Alphaville, Tamboré e Aldeia da Serra e de ${faixaTxt(AULA_BARUERI)} em Barueri e Santana de Parnaíba, segundo o Montinho, que atende na região. Para aula avulsa, a referência editorial do Personal por Perto é de ${faixaTxt(ALPHA.avulsa)} em Alphaville e de ${faixaTxt(REFERENCIAS.barueri.avulsa)} em Barueri e Santana de Parnaíba.`,
   },
   {
     question: "Personal trainer cobra por aula ou por mês?",
@@ -87,7 +92,7 @@ const faq: ItemFAQ[] = [
   },
   {
     question: "Personal no condomínio custa mais caro?",
-    answer: "A referência não separa condomínio, academia e domicílio: a faixa presencial é a mesma. Na prática, no condomínio você não paga academia nem se desloca, e o profissional que já atende no seu residencial perde menos tempo no trajeto. Confirme na administração se o condomínio exige cadastro do profissional.",
+    answer: "As faixas não separam condomínio, academia e domicílio: a faixa presencial é a mesma. Na prática, no condomínio você não paga academia nem se desloca, e o profissional que já atende no seu residencial perde menos tempo no trajeto. Confirme na administração se o condomínio exige cadastro do profissional.",
   },
   {
     question: "A academia pode cobrar taxa do meu personal?",
@@ -95,11 +100,11 @@ const faq: ItemFAQ[] = [
   },
   {
     question: "Quanto tempo dura uma aula com personal trainer?",
-    answer: "Depende do que for combinado: há profissionais que trabalham com aulas mais curtas e outros com aulas de cerca de uma hora. A referência desta calculadora não distingue a duração, então pergunte quanto tempo dura a aula ao comparar dois orçamentos.",
+    answer: "Depende do que for combinado: há profissionais que trabalham com aulas mais curtas e outros com aulas de cerca de uma hora. As faixas desta calculadora não distinguem a duração, então pergunte quanto tempo dura a aula ao comparar dois orçamentos.",
   },
   {
     question: "Existe um preço médio de personal trainer em Alphaville?",
-    answer: "Não que possa ser citado com segurança. Não há pesquisa pública de preços de personal trainer em Alphaville com amostra e data. Por isso esta calculadora mostra faixa de referência editorial e nunca um valor médio ou exato.",
+    answer: "Não que possa ser citado com segurança. Não há pesquisa pública de preços de personal trainer em Alphaville com amostra e data. Por isso esta calculadora mostra faixas, com a origem de cada uma declarada, e nunca um valor médio ou exato.",
   },
   {
     question: "Esta calculadora mostra o preço do Montinho?",
@@ -151,29 +156,28 @@ export default function CalculadoraPrecoPersonalPage() {
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Quanto custa um personal trainer em Alphaville?</h2>
             <p className="text-gray-300 leading-relaxed mb-3">
               <strong className="text-white">
-                A referência para Alphaville é de {faixaTxt(ALPHA.avulsa)} por aula avulsa presencial, de {faixaTxt(ALPHA.mensal)} por mês no pacote de 2 a 3 vezes por semana e de {faixaTxt(ALPHA.online)} por mês no online.
+                Em Alphaville, a aula dentro de um pacote fica na faixa de {faixaTxt(AULA_ALPHA)}, o que dá de {faixaTxt(A3.mensal)} por mês para quem treina 3 vezes por semana. O acompanhamento online fica de {faixaTxt(ALPHA.online)} por mês.
               </strong>
             </p>
             <p className="text-gray-300 leading-relaxed">
-              São faixas de {FONTE_REFERENCIA.rotulo}, montadas por perfil de cidade pelo portal{" "}
-              <a href={PPP_CALC} className={ln} target="_blank" rel="noopener noreferrer">{FONTE_REFERENCIA.nome}</a> e consultadas em {DATA_REF}. Não são pesquisa de preços e não existe amostra por trás delas: servem para você chegar a uma conversa sabendo se o valor proposto está dentro ou muito fora do esperado.
+              A faixa por aula no pacote é a leitura do Montinho, que atende na região. A da aula avulsa ({faixaTxt(ALPHA.avulsa)}) e a do online são {FONTE_REFERENCIA.rotulo} do portal{" "}
+              <a href={PPP_CALC} className={ln} target="_blank" rel="noopener noreferrer">{FONTE_REFERENCIA.nome}</a>. Nenhuma delas é pesquisa de preços com amostra: servem para você chegar a uma conversa sabendo se o valor proposto está dentro ou muito fora do esperado.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Quanto custa por mês treinando 1, 2, 3, 4 ou 5 vezes por semana</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              <strong className="text-white">A conta começa em quantas aulas cabem no mês.</strong> Um mês tem em média 4,33 semanas (52 ÷ 12): 2 vezes por semana dão cerca de {A2.sessoes} aulas, 3 vezes dão cerca de {A3.sessoes} e 5 vezes, cerca de {A5.sessoes}. A tabela usa a referência de Alphaville, presencial.
+              <strong className="text-white">A conta é a aula dentro do pacote vezes as aulas que cabem no mês.</strong> Um mês tem em média 4,33 semanas (52 ÷ 12): 2 vezes por semana dão cerca de {A2.sessoes} aulas, 3 vezes dão cerca de {A3.sessoes} e 5 vezes, cerca de {A5.sessoes}. A tabela usa a faixa de Alphaville, {faixaTxt(AULA_ALPHA)} por aula.
             </p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
-                <caption className="sr-only">Faixa de referência por mês e por aula em Alphaville, presencial, de 1 a 5 vezes por semana</caption>
+                <caption className="sr-only">Faixa por mês em Alphaville, presencial, de 1 a 5 vezes por semana</caption>
                 <thead>
                   <tr className="border-b border-white/20">
                     <th scope="col" className={th}>Frequência</th>
                     <th scope="col" className={th}>Aulas no mês</th>
                     <th scope="col" className={th}>Por mês</th>
-                    <th scope="col" className={th}>Por aula no pacote</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -181,48 +185,43 @@ export default function CalculadoraPrecoPersonalPage() {
                     <tr key={r.freq} className="border-b border-white/10">
                       <td className={td}>{r.freq}× por semana</td>
                       <td className={td}>≈ {r.sessoes}</td>
-                      <td className={tdF}>{faixaTxt(r.mensal)}{r.extrapolado ? " *" : ""}</td>
-                      <td className={td}>{faixaTxt(r.aulaNoPacote!)}</td>
+                      <td className={tdF}>{faixaTxt(r.mensal)}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-gray-400 text-sm mt-3">
-              * Extrapolação. A referência só traz o pacote de 2 a 3 vezes por semana; para 1, 4 e 5 vezes, a calculadora divide a faixa do pacote por {SESSOES_DO_PACOTE} sessões e multiplica pelas aulas do mês.
-            </p>
             <p className="text-gray-300 leading-relaxed mt-4">
-              Frequência alta multiplica o custo rápido. Antes de fechar 5 vezes por semana, veja se a sua agenda segura esse ritmo: pagar por {A5.sessoes} aulas e fazer 10 é o pior negócio possível.
+              A faixa é larga porque junta profissionais, durações de aula e formatos bem diferentes. E frequência alta multiplica o custo rápido: antes de fechar 5 vezes por semana, veja se a sua agenda segura esse ritmo. Pagar por {A5.sessoes} aulas e fazer 10 é o pior negócio possível.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Alphaville, Tamboré, Aldeia da Serra, Barueri e Santana de Parnaíba</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              <strong className="text-white">A referência só tem faixa própria para Alphaville, Barueri e Santana de Parnaíba.</strong> Tamboré, Aldeia da Serra e o centro de Barueri usam a faixa mais ampla que os contém, e a calculadora avisa isso no resultado.
+              <strong className="text-white">Alphaville, Tamboré e Aldeia da Serra ficam em {faixaTxt(AULA_ALPHA)} por aula no pacote; Barueri e Santana de Parnaíba, em {faixaTxt(AULA_BARUERI)}.</strong> Para aula avulsa e online, a referência do Personal por Perto só tem faixa própria para Alphaville, Barueri e Santana de Parnaíba: Tamboré e Aldeia da Serra usam a da cidade, e a calculadora avisa isso no resultado.
             </p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
-                <caption className="sr-only">Faixas de referência por local</caption>
+                <caption className="sr-only">Faixas por local</caption>
                 <thead>
                   <tr className="border-b border-white/20">
                     <th scope="col" className={th}>Local</th>
-                    <th scope="col" className={th}>Referência usada</th>
+                    <th scope="col" className={th}>Aula no pacote</th>
                     <th scope="col" className={th}>Aula avulsa</th>
-                    <th scope="col" className={th}>Pacote 2 a 3×</th>
                     <th scope="col" className={th}>Online, por mês</th>
                   </tr>
                 </thead>
                 <tbody>
                   {LOCAIS.map((l) => {
                     const r = REFERENCIAS[l.ref];
+                    const nota = l.id !== l.ref && l.id !== "barueri-centro" ? ` (ref. ${r.nome})` : "";
                     return (
                       <tr key={l.id} className="border-b border-white/10">
                         <td className={tdF}>{l.nome}</td>
-                        <td className={td}>{r.nome}{l.aviso ? " (sem faixa própria)" : ""}</td>
-                        <td className={td}>{faixaTxt(r.avulsa)}</td>
-                        <td className={td}>{faixaTxt(r.mensal)}</td>
-                        <td className={td}>{faixaTxt(r.online)}</td>
+                        <td className={td}>{faixaTxt(PACOTE_AULA[l.id])}</td>
+                        <td className={td}>{faixaTxt(r.avulsa)}{nota}</td>
+                        <td className={td}>{faixaTxt(r.online)}{nota}</td>
                       </tr>
                     );
                   })}
@@ -231,14 +230,14 @@ export default function CalculadoraPrecoPersonalPage() {
             </div>
             <p className="text-gray-300 leading-relaxed mt-4">
               Mora em outra cidade? A{" "}
-              <a href={PPP_CALC} className={ln} target="_blank" rel="noopener noreferrer">calculadora do Personal por Perto</a> faz a mesma conta para o resto do Brasil.
+              <a href={PPP_CALC} className={ln} target="_blank" rel="noopener noreferrer">calculadora do Personal por Perto</a> faz a conta para o resto do Brasil.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>No condomínio, na academia ou a domicílio: o que muda no preço</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              <strong className="text-white">A referência não separa os três formatos presenciais, então a faixa é a mesma.</strong> O que muda é o que fica fora dela, e é isso que vale perguntar antes de fechar:
+              <strong className="text-white">As faixas não separam os três formatos presenciais, então o resultado é o mesmo.</strong> O que muda é o que fica fora dele, e é isso que vale perguntar antes de fechar:
             </p>
             <ul className="text-gray-300 leading-relaxed space-y-3 list-disc pl-5">
               <li>
@@ -264,7 +263,7 @@ export default function CalculadoraPrecoPersonalPage() {
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Aula avulsa ou pacote mensal?</h2>
             <p className="text-gray-300 leading-relaxed">
-              <strong className="text-white">A avulsa custa mais por aula; o pacote exige compromisso de agenda.</strong> Em Alphaville, a referência da aula avulsa é de {faixaTxt(ALPHA.avulsa)}, enquanto a aula dentro de um pacote de 3 vezes por semana equivale a {faixaTxt(A3.aulaNoPacote!)}. A avulsa faz sentido para experimentar o profissional ou para um treino pontual. Se você já sabe que vai manter a rotina, o pacote quase sempre é a decisão melhor.
+              <strong className="text-white">A avulsa serve para experimentar; o pacote exige compromisso de agenda.</strong> Em Alphaville, a aula dentro do pacote fica de {faixaTxt(AULA_ALPHA)} e a referência da aula avulsa, de {faixaTxt(ALPHA.avulsa)}. As duas faixas vêm de origens diferentes e se sobrepõem, então não dá para ler uma como desconto da outra: na mesma proposta, o pacote costuma sair mais em conta por aula do que a avulsa do mesmo profissional, porque dá previsibilidade de agenda a ele. Se você já sabe que vai manter a rotina, peça o valor do pacote.
             </p>
           </div>
 
@@ -289,18 +288,22 @@ export default function CalculadoraPrecoPersonalPage() {
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>De onde vêm os números e como a conta é feita</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              <strong className="text-white">As faixas não são pesquisa de preços praticados.</strong> São estimativas editoriais do portal {FONTE_REFERENCIA.nome}, construídas pelo perfil de cada cidade e consultadas em {DATA_REF}. Por isso esta página nunca diz "preço médio", não cita quantidade de profissionais e não mostra valor exato.
+              <strong className="text-white">Nenhuma faixa desta página é pesquisa de preços praticados.</strong> São duas origens, e cada resultado diz qual usou:
             </p>
+            <ul className="text-gray-300 leading-relaxed space-y-2 list-disc pl-5 mb-4">
+              <li><strong className="text-white">Aula dentro do pacote presencial:</strong> {FONTE_PACOTE.rotulo}, em {DATA_PACOTE}. É a leitura de quem trabalha no mercado local, sem amostra.</li>
+              <li><strong className="text-white">Aula avulsa e online:</strong> estimativas editoriais do portal {FONTE_REFERENCIA.nome}, construídas pelo perfil de cada cidade e consultadas em {DATA_REF}.</li>
+            </ul>
+            <p className="text-gray-300 leading-relaxed mb-4">Por isso esta página nunca diz "preço médio", não cita quantidade de profissionais e não mostra valor exato. A conta:</p>
             <ul className="text-gray-300 leading-relaxed space-y-2 list-disc pl-5">
               <li>Aulas por mês = vezes por semana × 52 ÷ 12, arredondado.</li>
-              <li>Para 2 e 3 vezes por semana, a faixa mensal é o próprio dado de pacote da referência.</li>
-              <li>Para 1, 4 e 5 vezes, a faixa do pacote é dividida por {SESSOES_DO_PACOTE} sessões e multiplicada pelas aulas do mês, e o resultado é marcado como extrapolação.</li>
+              <li>Faixa mensal presencial = aula dentro do pacote × aulas do mês.</li>
               <li>Online é mensal e não muda com a frequência.</li>
               <li>Arredondamento único: dezena mais próxima até R$ 1.000, cinquentena acima.</li>
               <li>Local sem faixa própria usa a referência mais ampla, e a tela avisa.</li>
             </ul>
             <p className="text-gray-300 leading-relaxed mt-4">
-              <strong className="text-white">Limites.</strong> A referência não distingue aula de 30 e de 60 minutos, aula individual de dupla, experiência do profissional nem condomínio, academia e domicílio. Também não inclui mensalidade de academia nem taxa de personal externo. A conta roda no seu navegador, sem servidor e sem texto gerado por IA.
+              <strong className="text-white">Limites.</strong> As faixas não distinguem aula de 30 e de 60 minutos, aula individual de dupla, experiência do profissional nem condomínio, academia e domicílio. Também não incluem mensalidade de academia nem taxa de personal externo. A conta roda no seu navegador, sem servidor e sem texto gerado por IA.
             </p>
           </div>
 
