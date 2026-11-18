@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { trackEvent, trackOncePerSession } from "@/lib/analytics";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import {
+  FONTE_PACOTE,
   FONTE_REFERENCIA,
   FORMATOS,
   FREQUENCIAS,
@@ -93,17 +94,16 @@ export default function CalculadoraPrecoPersonal() {
 
           <p className="text-sm text-gray-300 mt-4">Faixa de referência por mês</p>
           <p className="text-3xl sm:text-4xl font-bold text-white my-1" style={h}>{faixaTxt(res.mensal)}</p>
-          {res.extrapolado && <p className="text-xs text-[#BA9E50]">Extrapolação: a referência cobre pacotes de 2 a 3 vezes por semana.</p>}
 
           {res.avulsa && res.aulaNoPacote && (
             <dl className="grid sm:grid-cols-2 gap-4 mt-5">
               <div className="border border-white/15 p-4">
-                <dt className="text-sm text-gray-400">Por aula avulsa</dt>
-                <dd className="text-xl font-bold text-white mt-1">{faixaTxt(res.avulsa)}</dd>
-              </div>
-              <div className="border border-white/15 p-4">
                 <dt className="text-sm text-gray-400">Por aula dentro do pacote</dt>
                 <dd className="text-xl font-bold text-white mt-1">{faixaTxt(res.aulaNoPacote)}</dd>
+              </div>
+              <div className="border border-white/15 p-4">
+                <dt className="text-sm text-gray-400">Por aula avulsa</dt>
+                <dd className="text-xl font-bold text-white mt-1">{faixaTxt(res.avulsa)}</dd>
               </div>
             </dl>
           )}
@@ -120,7 +120,8 @@ export default function CalculadoraPrecoPersonal() {
           </details>
 
           <p className="text-gray-500 text-xs mt-4">
-            As faixas são {FONTE_REFERENCIA.rotulo} do portal {FONTE_REFERENCIA.nome}, montada por perfil de cidade. Não são pesquisa de preços nem valor de nenhum profissional específico, e não distinguem aula de 30 e de 60 minutos, aula em dupla nem experiência do profissional.
+            {res.formato.presencial ? <>A aula dentro do pacote é {FONTE_PACOTE.rotulo}. A aula avulsa é {FONTE_REFERENCIA.rotulo} do portal {FONTE_REFERENCIA.nome}. </> : <>A faixa do online é {FONTE_REFERENCIA.rotulo} do portal {FONTE_REFERENCIA.nome}. </>}
+            Nenhuma das duas é pesquisa de preços com amostra nem o valor de um profissional específico, e elas não distinguem aula de 30 e de 60 minutos, aula em dupla nem experiência do profissional.
           </p>
 
           <div className="mt-6 border border-white/15 p-4">
