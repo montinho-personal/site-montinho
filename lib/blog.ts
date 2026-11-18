@@ -102289,11 +102289,17 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Você pode fortalecer o abdômen em casa sem nenhum equipamento — e isso melhora postura, estabilidade e desempenho. Mas abdominal não queima gordura da barriga. Veja os melhores exercícios, uma rotina completa e o que realmente define a barriga.",
     category: "Treino",
     date: "2026-07-30",
-    updatedAt: "2026-07-31",
+    updatedAt: "2026-11-18",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["abdômen", "treino em casa", "core", "prancha", "exercícios abdominais"],
     faq: [
+      {
+        question:
+          "Quais são os tipos de abdominais?",
+        answer:
+          "Os principais se dividem pelo que o tronco faz: enrolar (abdominal supra e suas variações), elevar as pernas (infra, elevação de pernas, canivete), girar (oblíquo, bicicleta, rotação na polia) e resistir ao movimento (prancha, prancha lateral, dead bug, roda abdominal). Um treino completo tem um de cada grupo.",
+      },
       {
         question:
           "Treino de abdômen em casa funciona sem equipamento?",
@@ -102347,6 +102353,22 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Quando falamos em abdômen, a maioria pensa no reto abdominal — o músculo da frente, dos "gominhos". Mas o core é um conjunto: reto abdominal, oblíquos (laterais), transverso do abdômen (o "cinturão" profundo que estabiliza o tronco) e a musculatura lombar.</p>
 
 <p>Um bom treino em casa trabalha todas essas funções: flexionar, rotacionar, resistir ao movimento e estabilizar. É isso que a rotina abaixo faz.</p>
+
+<h2>Tipos de abdominais: os principais e o que cada um trabalha</h2>
+
+<p>Existem dezenas de nomes de abdominal, mas quase todos cabem em quatro grupos, pelo que o tronco faz:</p>
+
+<table>
+<thead><tr><th>Grupo</th><th>Exemplos</th><th>O que trabalha mais</th></tr></thead>
+<tbody>
+<tr><td>Enrolar o tronco</td><td><a href="/blog/abdominal-supra">abdominal supra</a> (crunch), abdominal com peso, abdominal na polia, abdominal declinado</td><td>Reto abdominal, com mais ênfase na parte de cima</td></tr>
+<tr><td>Elevar as pernas</td><td><a href="/blog/abdomen-inferior-exercicios">abdominal infra</a>, elevação de pernas, canivete, elevação de pernas na barra</td><td>Reto abdominal, com mais ênfase na parte de baixo, e flexores do quadril</td></tr>
+<tr><td>Girar o tronco</td><td><a href="/blog/abdominal-obliquo">abdominal oblíquo</a>, abdominal bicicleta, giro russo, rotação de tronco na polia</td><td>Oblíquos</td></tr>
+<tr><td>Resistir ao movimento</td><td><a href="/blog/prancha-abdominal-como-fazer-e-beneficios">prancha</a>, prancha lateral, dead bug, roda abdominal, pallof</td><td>Core inteiro, segurando a coluna parada</td></tr>
+</tbody>
+</table>
+
+<p>Listas de "21 tipos de abdominais" juntam variações do mesmo movimento. O que importa é ter um exercício de cada grupo, não decorar nomes. A seleção abaixo faz isso só com o peso do corpo.</p>
 
 <h2>Os melhores exercícios de abdômen para fazer em casa</h2>
 
@@ -119955,12 +119977,13 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
     excerpt: "O erro mais comum na academia de condomínio é comprar aparelho grande que ninguém usa. A ordem certa, o espaço, a manutenção e as regras, para quem vai decidir a compra.",
     category: "Academias",
     date: "2026-10-21",
-    updatedAt: "2026-10-21",
+    updatedAt: "2026-11-18",
     readTime: "8 min",
     author: "Montinho",
     tags: ["academia de condomínio", "aparelhos para academia de condomínio", "montar academia em condomínio", "síndico", "personal em condomínio"],
     faq: [
       { question: "Quais aparelhos colocar na academia do condomínio?", answer: "Comece pelo que mais gente usa: um ou dois aparelhos de cardio (esteira e bicicleta), halteres com suporte, banco ajustável, uma estação de polia (crossover ou multiestação) e colchonetes. Leg press e cadeiras de perna vêm depois, se houver espaço e verba." },
+      { question: "Quais aparelhos uma academia completa precisa ter?", answer: "Cardio (esteira, bicicleta e elíptico ou escada), pesos livres (halteres, barras, anilhas, bancos e um rack), máquinas de perna (leg press, extensora, flexora, panturrilha, abdução e adução), máquinas de tronco (puxada, remada e supino), polia e uma área livre com colchonetes e acessórios. Academia de condomínio não precisa de tudo isso: começa pelo que serve mais moradores." },
       { question: "Qual aparelho comprar primeiro para a academia do condomínio?", answer: "Halteres com suporte e um banco ajustável. São baratos perto de uma máquina, ocupam pouco espaço e servem para treinar o corpo inteiro, do morador iniciante ao avançado." },
       { question: "Esteira ou bicicleta para academia de condomínio?", answer: "Se só couber um, a esteira costuma ser o mais disputado. A bicicleta ocupa menos espaço, faz menos barulho e serve melhor a quem tem dor no joelho ou está com sobrepeso. Com espaço para dois, tenha os dois." },
       { question: "Que piso usar na academia do condomínio?", answer: "Piso emborrachado próprio para academia, mais grosso na área de pesos livres. Ele protege a laje e o próprio piso da queda de anilhas e halteres e reduz o barulho para os apartamentos de baixo." },
@@ -119990,6 +120013,20 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <li><strong>Máquinas de perna</strong> (leg press, cadeira extensora e flexora), se ainda houver espaço e verba.</li>
 </ol>
 <p>A lógica: primeiro o que serve a mais moradores, por menos espaço e menos dinheiro. Máquina grande que só faz um exercício vem por último.</p>
+
+<h2>O que uma academia completa tem (e o que o condomínio precisa)</h2>
+<p>Uma academia completa, de rede, costuma ter cinco áreas. Serve de referência para saber o que está faltando, não de lista de compras para o condomínio:</p>
+<table>
+<thead><tr><th>Área</th><th>Aparelhos</th><th>No condomínio</th></tr></thead>
+<tbody>
+<tr><td>Cardio</td><td>Esteira, bicicleta (vertical e horizontal), elíptico, escada, remo</td><td>1 ou 2 aparelhos</td></tr>
+<tr><td>Pesos livres</td><td>Halteres, barras, anilhas, bancos (reto, inclinado, ajustável), rack ou gaiola</td><td>Essencial: halteres e banco ajustável</td></tr>
+<tr><td>Máquinas de perna</td><td>Leg press, cadeira extensora, mesa flexora, panturrilha, abdutora e adutora, hack</td><td>Depois, se houver espaço</td></tr>
+<tr><td>Máquinas de tronco</td><td>Puxada, remada, supino na máquina, crucifixo (voador), desenvolvimento</td><td>Uma estação de polia cobre boa parte</td></tr>
+<tr><td>Área livre</td><td>Colchonetes, elásticos, bola, caixa, kettlebell, espaço para alongar</td><td>Essencial e barata</td></tr>
+</tbody>
+</table>
+<p>Para saber o nome e a função de cada máquina, veja <a href="/blog/aparelhos-de-academia-nomes">nomes dos aparelhos de academia</a>.</p>
 
 <h2>Como montar uma academia em condomínio, passo a passo</h2>
 <ol>

@@ -1708,3 +1708,9 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `batata-doce-emagrece` ("batata doce engorda?", 12.100): H2 "Batata-doce engorda?" com tabela por porção (TACO: cozida 76,8 kcal e 18,4 g de carboidrato em 100 g; inglesa cozida 51,6; arroz cozido 128) e FAQ. O "em excesso" virou subseção, com 384 kcal em 500 g pela TACO no lugar de "~400".
 - `treino-ao-ar-livre-estruturado` ("academia ao ar livre", 12.100): H2 "Academia ao ar livre: como usar os aparelhos da praça" (aparelhos mais comuns, como usar, o que trabalham, progressão e cuidados) e FAQ. Sem número sem fonte.
 
+## 2026-11-18 — "Viram seção ou FAQ" (itens 3 e 4)
+
+- Volumes do Planejador (Brasil) consultados para ordenar a seção 2: "tipos de abdominais" 6.600, "aparelhos de academia completa" 2.900, "fat burn" 1.000, "air bike crossfit" 720, "supino em casa" 210, "para que serve a barra fixa" 40, "hernia de disco jiu jitsu" 10; sem volume para os demais.
+- `treino-de-abdomen-em-casa` ("tipos de abdominais", do PAA de "abdominal oblíquo"): H2 com os 4 grupos (enrolar, elevar as pernas, girar, resistir), exemplos e links para supra, infra, oblíquo e prancha; FAQ. Entrou aqui porque `abdomen` é página do mapa de treino, não artigo.
+- `academia-de-condominio-quais-aparelhos-comprar` ("aparelhos de academia completa", do PAA de "aparelhos de academia nomes"): H2 com as 5 áreas de uma academia completa e o que o condomínio precisa de cada uma, link para `aparelhos-de-academia-nomes`; FAQ.
+
