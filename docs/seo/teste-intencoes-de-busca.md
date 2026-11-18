@@ -1724,3 +1724,9 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `treino-de-peito-em-casa` ("supino em casa", 210, das outras pesquisas de "supino na máquina"): H2 "Supino em casa: como fazer sem banco e sem barra" (supino no chão, press no elástico, flexão com carga) e FAQ; link para `supino-na-maquina`.
 - `como-fazer-barra-fixa` ("para que serve a barra fixa", 40, do PAA de "graviton academia"): H2 "Para que serve a barra fixa?" e FAQ; links para `forca-de-pegada-e-antebraco` e `graviton`.
 
+## 2026-11-18 — "Viram seção ou FAQ" (itens 9 e 10)
+
+- `beneficios-do-muay-thai` (pauta de lutas): as desvantagens já tinham seção e FAQ; entrou "Em quanto tempo o muay thai define o corpo?" (subseção e FAQ), sem prazo inventado, com o estudo de 5 semanas que o artigo já cita (Ouergui 2014).
+- `exercicio-para-perder-barriga` (PAA do tabata e do EPOC: "4 ou 7 exercícios"): H2 com a lista explicada (força primeiro, cardio e core como complemento) e FAQ. Corrigido de passagem o CTA "plano de treino e alimentação" (regra "não passa dieta").
+- Pulado na ordem: "ganhar 1 kg de músculo em 1 mês" (precisa de fonte para taxa de ganho; fica para um dia com pesquisa no PubMed).
+

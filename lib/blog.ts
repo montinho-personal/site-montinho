@@ -9495,6 +9495,22 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 
 
+<h2>Quais os 4 (ou 7) melhores exercícios para perder barriga?</h2>
+
+<p>Listas de "4 exercícios" ou "7 exercícios para perder barriga" circulam muito, mas o número é arbitrário: nenhum deles tira gordura da barriga em especial. Os que mais ajudam são os que gastam mais energia e mantêm o músculo enquanto você emagrece:</p>
+
+<ol>
+  <li><strong>Agachamento</strong> (ou leg press): pernas e glúteos, os maiores músculos do corpo.</li>
+  <li><strong>Levantamento terra</strong> (ou elevação pélvica): posterior de coxa, glúteo e costas.</li>
+  <li><strong>Remada</strong> (ou puxada): costas e braços.</li>
+  <li><strong>Supino ou flexão</strong>: peito, ombro e tríceps.</li>
+  <li><strong>Caminhada rápida ou bicicleta</strong>: o cardio que dá para fazer quase todo dia.</li>
+  <li><strong>Intervalado</strong> (HIIT), uma ou duas vezes por semana, para quem já tem base.</li>
+  <li><strong>Prancha e abdominais</strong>: fortalecem o core, como complemento.</li>
+</ol>
+
+<p>Os quatro primeiros são a parte de força; os outros três completam a semana. Quem faz os quatro com progressão de carga já tem o principal.</p>
+
 <h2>O protocolo completo para perder barriga</h2>
 
 <ol>
@@ -9532,11 +9548,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li><a href="/blog/cardio-antes-ou-depois-da-musculacao">Cardio antes ou depois da musculação</a></li>
 </ul>
 
-<p>Quer um plano de treino e alimentação montado especificamente para você perder gordura abdominal com eficiência? <a href="/consultoria">Conheça a consultoria do Montinho</a> e comece com o protocolo certo.</p>
+<p>Quer um treino montado para você perder gordura abdominal, com alguém acompanhando a execução e ajustando a carga? <a href="/consultoria">Conheça a consultoria do Montinho</a> e comece com o protocolo certo.</p>
     `,
     category: "Emagrecimento",
     date: "2026-06-26",
-    updatedAt: "2026-07-22",
+    updatedAt: "2026-11-18",
     readTime: "9 min",
     author: "Montinho Personal Trainer",
     tags: ["perder barriga", "gordura abdominal", "exercício", "emagrecimento", "redução localizada", "abdominais"],
@@ -9560,6 +9576,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
       {
         question: "HIIT é melhor que caminhada para perder barriga?",
         answer: "Ambos funcionam. O que importa é o déficit calórico total. HIIT é mais eficiente em tempo, mas exige boa capacidade física e recuperação. Caminhadas são mais sustentáveis e têm menos impacto no corpo."
+      },
+      {
+        question: "Quais os 4 melhores exercícios para perder barriga?",
+        answer: "Nenhum tira gordura só da barriga. Os que mais ajudam são os grandes de força: agachamento, levantamento terra (ou elevação pélvica), remada e supino ou flexão, somados a caminhada ou bicicleta. Eles gastam mais energia e mantêm o músculo enquanto o déficit tira a gordura do corpo todo."
       },
       {
         question: "Quanto tempo leva para perder gordura abdominal?",
