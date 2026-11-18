@@ -19,6 +19,7 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | ~~M2~~ | ~~Abdominal supra~~ publicado em 17/11 como `abdominal-supra` | 74.000 | — | — |
 | ~~M3~~ | ~~Rosca inversa~~ publicado em 17/11 como `rosca-inversa` | 27.100 | — | — |
 | ~~M3a~~ | ~~Abdominal oblíquo~~ publicado em 17/11 como `abdominal-obliquo` | 27.100 | — | — |
+| M3b | Prancha lateral | 27.100 | seção 2 da pauta (18/11) | Sem artigo; completa a série supra, infra, oblíquo e prancha. Pede pesquisa própria no SerpApi. |
 | M4 | Supino declinado | 18.100 | idem | Sem artigo. |
 | M5 | Tríceps no banco | 18.100 | idem | Sem artigo; faz em casa também. |
 | M6 | Levantamento terra sumô | 18.100 | idem | Variação sem página (o terra convencional e o agachamento sumô já têm). |
@@ -56,11 +57,11 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 
 | Assunto | Onde entra | Veio de |
 |---|---|---|
-| Prancha lateral (27.100/mês) | `prancha-abdominal-como-fazer-e-beneficios` (se a pesquisa mostrar intenção própria, vira artigo) | exercícios do cadastro sem artigo (17/11) |
+| ~~Prancha lateral (27.100/mês)~~ | movida para "Artigos novos" (M3b) em 18/11: volume de artigo próprio, exercício com id no cadastro (`prancha-lateral`), mesmo caso do abdominal oblíquo | exercícios do cadastro sem artigo (17/11) |
 | Tipos de abdominais (lista com os principais e o que cada um trabalha) | `abdomen` ou `treino-de-abdomen-em-casa` | PAA de "abdominal oblíquo" ("Quais são os 21 tipos de exercícios abdominais?"), 17/11 |
 | Supino em casa (210/mês), "supino sem máquina" | `treino-de-peito-em-casa` | outras pesquisas de "supino na máquina" (17/11) |
-| Batata doce engorda? (12.100/mês) | `batata-doce-emagrece` | série "engorda" (11/11) |
-| Academia ao ar livre: como usar os aparelhos da praça (12.100/mês para "academia ao ar livre") | `treino-ao-ar-livre-estruturado` (se a pesquisa mostrar intenção diferente da do artigo, vira artigo próprio) | autocompletar de "aparelhos de academia nomes" (16/11) |
+| ~~Batata doce engorda? (12.100/mês)~~ aplicado em 18/11 (H2 com tabela da TACO e FAQ) | `batata-doce-emagrece` | série "engorda" (11/11) |
+| ~~Academia ao ar livre: como usar os aparelhos da praça (12.100/mês para "academia ao ar livre")~~ aplicado em 18/11 (H2 com tabela dos aparelhos e FAQ) | `treino-ao-ar-livre-estruturado` (se a pesquisa mostrar intenção diferente da do artigo, vira artigo próprio) | autocompletar de "aparelhos de academia nomes" (16/11) |
 | Aparelhos de academia completos (o que uma academia precisa ter) | `academia-de-condominio-quais-aparelhos-comprar` | PAA de "aparelhos de academia nomes" (16/11) |
 | Sopa de macarrão engorda? (390/mês) | `sopa-emagrece` ou `macarrao-engorda`, quando houver dado de sopa na base | outras pesquisas de "macarrão engorda" (16/11) |
 | Zona de queima de gordura ("fat burn") | `zonas-de-frequencia-cardiaca` (já explica a "zona de queima" da esteira; falta o FAQ "o que é fat burn?") | PAA de "efeito afterburn" (16/11) |
