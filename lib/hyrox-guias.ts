@@ -162,6 +162,9 @@ export const HYROX_GUIAS_POSTS: BlogPost[] = [
 <h2>Preparação com acompanhamento</h2>
 <p>A planilha é igual para todo mundo; a semana de cada um não é. Quando você falta no dia da corrida cansada, quando a carga do agachamento para de subir ou quando o ritmo de prova sai mais lento que o planejado, alguém precisa decidir o que muda. Eu monto a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a> e ajusto conforme o que acontece em cada treino, na <a href="/consultoria-online">consultoria online</a> ou presencialmente nos locais de <a href="/onde-atendo">onde atendo</a>.</p>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja em 1 minuto como é a prova: 8 km de corrida, 8 estações e a parte que mais pesa no seu tempo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/A-sB4wESQBY?rel=0" title="HYROX em 1 minuto: qual é a parte mais longa da prova? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/estacoes-do-hyrox">Estações do Hyrox: ordem, pesos por categoria e técnica</a></li>
@@ -266,6 +269,9 @@ ${FONTE_FORMATO}
 <h2>Preparação com acompanhamento</h2>
 <p>Cada pessoa tem uma estação que derruba o tempo: o trenó para quem vem da corrida, a corrida para quem vem da musculação, a pegada para quase todo mundo no farmers carry. Eu observo onde você perde tempo, ajusto o treino da semana e acompanho a evolução até a prova, na <a href="/consultoria-online">consultoria online</a> ou presencialmente nos locais de <a href="/onde-atendo">onde atendo</a>. Veja como funciona a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a>.</p>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja em 1 minuto como é a prova: 8 km de corrida, 8 estações e a parte que mais pesa no seu tempo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/A-sB4wESQBY?rel=0" title="HYROX em 1 minuto: qual é a parte mais longa da prova? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/treino-de-hyrox">Treino de Hyrox: planilha de 8 semanas</a></li>
@@ -357,6 +363,9 @@ ${FONTE_REGRAS}
 
 <h2>Preparação com acompanhamento</h2>
 <p>Quem vem do CrossFit costuma chegar ao Hyrox com força e técnica sobrando e corrida faltando; quem vem da corrida, o contrário. Eu olho de onde você parte, monto a semana para o que falta e ajusto conforme a resposta de cada treino, na <a href="/consultoria-online">consultoria online</a> ou presencialmente nos locais de <a href="/onde-atendo">onde atendo</a>. Veja como funciona a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a>.</p>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja em 1 minuto como é a prova: 8 km de corrida, 8 estações e a parte que mais pesa no seu tempo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/A-sB4wESQBY?rel=0" title="HYROX em 1 minuto: qual é a parte mais longa da prova? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul>
@@ -460,6 +469,9 @@ ${FONTE_FORMATO}
 <h2>Preparação com acompanhamento</h2>
 <p>Tênis resolve conforto; o tempo vem do treino. Quando a corrida cai no quinto quilômetro ou o trenó trava, eu vejo onde está o problema, ajusto a semana e acompanho até a prova, na <a href="/consultoria-online">consultoria online</a> ou presencialmente nos locais de <a href="/onde-atendo">onde atendo</a>. Veja como funciona a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a>.</p>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja em 1 minuto como é a prova: 8 km de corrida, 8 estações e a parte que mais pesa no seu tempo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/A-sB4wESQBY?rel=0" title="HYROX em 1 minuto: qual é a parte mais longa da prova? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/estacoes-do-hyrox">Estações do Hyrox: ordem, pesos e técnica</a></li>
@@ -556,6 +568,9 @@ ${FONTE_FORMATO}
 <h2>Não se compare</h2>
 <p>O PFT dá um número, e número vira comparação rápido. Cada pessoa tem a própria genética, rotina e história, com altos e baixos. O tempo que importa é o seu no próximo teste. Se quiser montar a preparação comigo, <a href="/preparacao-para-hyrox">conheça a preparação para o Hyrox</a> ou veja <a href="/onde-atendo">onde atendo</a>.</p>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja em 1 minuto como é a prova: 8 km de corrida, 8 estações e a parte que mais pesa no seu tempo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/A-sB4wESQBY?rel=0" title="HYROX em 1 minuto: qual é a parte mais longa da prova? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/treino-de-hyrox">Treino de Hyrox: planilha de 8 semanas</a></li>
@@ -643,6 +658,9 @@ ${FONTE_FORMATO}
 
 <h2>Não se compare</h2>
 <p>A prova dá um tempo, e o tempo do lado vira comparação. Cada pessoa tem a própria genética, rotina e história, com altos e baixos. O que importa é encontrar um treino que dê para seguir pelo resto da vida, com aderência e progressão. Se quiser montar a preparação comigo, <a href="/preparacao-para-hyrox">conheça a preparação para o Hyrox</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja em 1 minuto como é a prova: 8 km de corrida, 8 estações e a parte que mais pesa no seu tempo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/A-sB4wESQBY?rel=0" title="HYROX em 1 minuto: qual é a parte mais longa da prova? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Fontes</h2>
 <ul>
@@ -735,6 +753,9 @@ ${FONTE_REGRAS}
 
 <h2>Preparação com acompanhamento</h2>
 <p>Eu organizo o treino da preparação e as orientações práticas de alimentação em volta dele; para plano alimentar completo, o caminho é um nutricionista. Na <a href="/preparacao-para-hyrox">preparação para o Hyrox</a>, a gente testa nos simulados o que vai ser feito no dia.</p>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja em 1 minuto como é a prova: 8 km de corrida, 8 estações e a parte que mais pesa no seu tempo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/A-sB4wESQBY?rel=0" title="HYROX em 1 minuto: qual é a parte mais longa da prova? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul>
@@ -833,6 +854,9 @@ ${FONTE_REGRAS}
 
 <h2>Preparação com acompanhamento</h2>
 <p>Numa dupla, o plano não é o de uma pessoa vezes dois: cada um tem um ponto fraco, e a divisão das estações depende disso. Na preparação em dupla, eu olho o desempenho de cada um nos simulados e ajusto a divisão e o treino até a prova. Veja como funciona a <a href="/preparacao-para-hyrox">preparação para o Hyrox</a>.</p>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Veja em 1 minuto como é a prova: 8 km de corrida, 8 estações e a parte que mais pesa no seu tempo.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/A-sB4wESQBY?rel=0" title="HYROX em 1 minuto: qual é a parte mais longa da prova? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul>

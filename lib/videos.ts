@@ -51,6 +51,35 @@ export interface VideoCanal {
 
 export const VIDEOS_CANAL: VideoCanal[] = [
   {
+    /* Short do HYROX (link enviado pelo Montinho em 18/11/2026). Sem o Montinho em cena; narração de locutor e imagens ilustrativas geradas por IA. Fatos só os do site: 8 × 1 km, 8 estações na ordem oficial, corrida como mais da metade do tempo. */
+    id: "A-sB4wESQBY",
+    slug: "hyrox-em-1-minuto",
+    titulo: "HYROX em 1 minuto: qual é a parte mais longa da prova?",
+    metaTitle: "HYROX em 1 Minuto: Qual é a Parte Mais Longa da Prova? (Vídeo)",
+    descricao:
+      "O HYROX são 8 trechos de 1 km de corrida, cada um seguido de uma estação: SkiErg, sled push, sled pull, burpee broad jump, remo, farmers carry, sandbag lunges e wall balls. A parte mais longa não é nenhuma estação: é a corrida.",
+    chamada: "8 estações, 8 km e uma pergunta: qual é a parte mais longa do HYROX? A resposta passa o vídeo inteiro escondida.",
+    texto: [
+      "A parte mais longa do HYROX não é nenhuma das estações. A prova é sempre a mesma conta: você corre 1 km e para numa estação. Oito vezes.",
+      "As estações vêm nesta ordem: 1.000 metros de SkiErg, sled push, sled pull, 80 metros de burpee broad jump, 1.000 metros de remo, farmers carry, sandbag lunges e, para fechar, 100 wall balls.",
+      "Mas repara no que vem entre uma estação e outra: a corrida. São 8 km no total, e ela ocupa mais da metade do tempo de prova. Por isso, treinar para HYROX é força e corrida juntas, no mesmo treino.",
+      "E o primeiro HYROX não é contra o relógio nem contra ninguém. É para terminar inteiro.",
+    ],
+    artigos: [
+      { href: "/blog/hyrox-o-que-e", nome: "HYROX: o que é" },
+      { href: "/blog/estacoes-do-hyrox", nome: "Estações do HYROX" },
+      { href: "/blog/treino-de-hyrox", nome: "Treino de HYROX" },
+      { href: "/preparacao-para-hyrox", nome: "Preparação para HYROX em Alphaville e Barueri" },
+    ],
+    ferramenta: { href: "/ferramentas/calculadora-tempo-hyrox", nome: "Calculadora de Tempo do HYROX" },
+    publicadoEm: "2026-11-18",
+    capa: {
+      vertical: "/videos/hyrox-em-1-minuto/capa-vertical.jpg",
+      horizontal: "/videos/hyrox-em-1-minuto/capa-horizontal.jpg",
+      cartao: "/videos/hyrox-em-1-minuto/capa-cartao.jpg",
+    },
+  },
+  {
     /* Short da São Silvestre (link enviado pelo Montinho em 12/11/2026). Narração com a voz dele; imagens ilustrativas geradas por IA. */
     id: "mgsqMgAx63c",
     slug: "primeira-sao-silvestre-como-chegar-inteiro",
