@@ -1789,3 +1789,5 @@ Evidência: `docs/seo/serp/calculadora-preco-personal-alphaville-2026-11-18.json
 **Segundo ajuste (18/11), a pedido do Montinho.** Online: piso de R$ 110 por mês em todos os locais (informado por ele); o teto continua o da referência editorial (R$ 550 em Alphaville, R$ 500 em Barueri e Santana de Parnaíba). No formato online a ferramenta não mostra mais a escolha de vezes por semana.
 
 **Terceiro ajuste (18/11), a pedido do Montinho.** Aula avulsa em Alphaville: R$ 100 a 350, informada por ele (antes R$ 100 a 250, da referência editorial). Resolve a sobreposição com o teto da aula no pacote (R$ 300). Tamboré, Aldeia da Serra, Barueri e Santana de Parnaíba seguem com a avulsa da referência (R$ 90 a 220).
+
+**Quarto ajuste (18/11), a pedido do Montinho.** Aula avulsa de R$ 100 a 350 também em Tamboré e Aldeia da Serra (informada por ele). Barueri e Santana de Parnaíba seguem com a avulsa da referência (R$ 90 a 220).

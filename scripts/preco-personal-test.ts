@@ -22,7 +22,7 @@ ok("mais aulas nunca custam menos por mês", LOCAIS.every((l) => { const m = [1,
 ok("online é mensal e não muda com a frequência", LOCAIS.every((l) => FREQUENCIAS.every((f) => { const r = calcular(l.id, "online", f); return r.avulsa === null && r.aulaNoPacote === null && r.mensal[0] === REFERENCIAS[l.ref].online[0] && r.mensal[1] === REFERENCIAS[l.ref].online[1]; })));
 ok("Alphaville 3×: R$ 650 a R$ 3.900 por mês", calcular("alphaville", "condominio", 3).mensal.join() === "650,3900");
 ok("online parte de R$ 110 por mês em todos os locais", LOCAIS.every((l) => calcular(l.id, "online", 3).mensal[0] === 110));
-ok("aula avulsa em Alphaville: R$ 100 a 350", calcular("alphaville", "academia", 3).avulsa!.join() === "100,350");
+ok("aula avulsa: R$ 100 a 350 em Alphaville, Tamboré e Aldeia; R$ 90 a 220 em Barueri e Santana", ["alphaville", "tambore", "aldeia-da-serra"].every((l) => calcular(l as "alphaville", "academia", 3).avulsa!.join() === "100,350") && ["barueri-centro", "santana-de-parnaiba"].every((l) => calcular(l as "alphaville", "academia", 3).avulsa!.join() === "90,220"));
 ok("Barueri 2×: R$ 360 a R$ 2.250 por mês", calcular("barueri-centro", "academia", 2).mensal.join() === "360,2250");
 ok("fallback nunca é silencioso", LOCAIS.filter((l) => l.id !== l.ref).every((l) => !!l.aviso && l.aviso.includes(REFERENCIAS[l.ref].nome)));
 ok("local com faixa própria não leva aviso", LOCAIS.filter((l) => l.id === l.ref).every((l) => l.aviso === null));

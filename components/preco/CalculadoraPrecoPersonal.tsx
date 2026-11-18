@@ -122,7 +122,7 @@ export default function CalculadoraPrecoPersonal() {
           </details>
 
           <p className="text-gray-500 text-xs mt-4">
-            {res.formato.presencial ? (res.ref.avulsaDoMontinho ? <>A aula dentro do pacote e a aula avulsa são {FONTE_PACOTE.rotulo}. </> : <>A aula dentro do pacote é {FONTE_PACOTE.rotulo}. A aula avulsa é {FONTE_REFERENCIA.rotulo} do portal {FONTE_REFERENCIA.nome}. </>) : <>O piso do online é {FONTE_PACOTE.rotulo}; o teto é {FONTE_REFERENCIA.rotulo} do portal {FONTE_REFERENCIA.nome}. </>}
+            {res.formato.presencial ? (res.avulsaDoMontinho ? <>A aula dentro do pacote e a aula avulsa são {FONTE_PACOTE.rotulo}. </> : <>A aula dentro do pacote é {FONTE_PACOTE.rotulo}. A aula avulsa é {FONTE_REFERENCIA.rotulo} do portal {FONTE_REFERENCIA.nome}. </>) : <>O piso do online é {FONTE_PACOTE.rotulo}; o teto é {FONTE_REFERENCIA.rotulo} do portal {FONTE_REFERENCIA.nome}. </>}
             Nenhuma faixa é pesquisa de preços com amostra nem o valor de um profissional específico, e elas não distinguem aula de 30 e de 60 minutos, aula em dupla nem experiência do profissional.
           </p>
 
