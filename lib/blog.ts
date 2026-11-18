@@ -25946,6 +25946,8 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Como calcular o custo real do personal trainer</h2>
 
+<p>Quer fazer a conta para o seu caso? A <a href="/ferramentas/calculadora-preco-personal-trainer-alphaville">calculadora de preço de personal trainer em Alphaville</a> mostra a faixa de referência por aula e por mês conforme o local, o formato e quantas vezes por semana você treina.</p>
+
 <p>Uma forma inteligente de avaliar o investimento é comparar o custo mensal com outros gastos que fazem parte do estilo de vida em Alphaville:</p>
 
 <table>

@@ -847,6 +847,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     icone: "pino",
     tags: ["academia", "alphaville", "barueri", "tambore", "onde treinar", "melhor academia", "smart fit", "bodytech", "perto de mim", "estacionamento"],
   },
+  {
+    id: "preco-personal",
+    href: "/ferramentas/calculadora-preco-personal-trainer-alphaville",
+    nome: "Calculadora de Preço de Personal em Alphaville",
+    resultado: "Veja a faixa de referência por aula e por mês, com a conta aberta.",
+    acao: "Calcular a faixa",
+    tempo: "3 escolhas · 20 segundos",
+    categoria: "alphaville",
+    icone: "pino",
+    tags: ["preco", "quanto custa", "personal trainer", "valor", "mensalidade", "por mes", "por aula", "alphaville", "tambore", "barueri", "santana de parnaiba", "aldeia da serra", "condominio", "online"],
+    selo: "novo",
+  },
 
   /* ── Apoio: não entra em categoria; é o fallback da página ─────────── */
   {
