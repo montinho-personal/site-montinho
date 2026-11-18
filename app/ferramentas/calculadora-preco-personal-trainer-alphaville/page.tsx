@@ -19,7 +19,8 @@ import { FONTE_PACOTE, FONTE_REFERENCIA, LOCAIS, PACOTE_AULA, REFERENCIAS, calcu
  * artigo explica o que entra no preço e como escolher; esta página faz a
  * conta por mês e por aula. Todo número daqui sai de lib/preco-personal.ts:
  * a aula dentro do pacote é a faixa informada pelo Montinho (18/11/2026); a
- * avulsa e o online são referência editorial do Personal por Perto. Nenhum
+ * avulsa de Alphaville e o piso do online também são dele; o resto é
+ * referência editorial do Personal por Perto. Nenhum
  * dos dois é "preço médio".
  */
 
@@ -80,7 +81,7 @@ const faq: ItemFAQ[] = [
   },
   {
     question: "Quanto custa uma aula com personal trainer?",
-    answer: `Dentro de um pacote, a faixa por aula é de ${faixaTxt(AULA_ALPHA)} em Alphaville, Tamboré e Aldeia da Serra e de ${faixaTxt(AULA_BARUERI)} em Barueri e Santana de Parnaíba, segundo o Montinho, que atende na região. Para aula avulsa, a referência editorial do Personal por Perto é de ${faixaTxt(ALPHA.avulsa)} em Alphaville e de ${faixaTxt(REFERENCIAS.barueri.avulsa)} em Barueri e Santana de Parnaíba.`,
+    answer: `Dentro de um pacote, a faixa por aula é de ${faixaTxt(AULA_ALPHA)} em Alphaville, Tamboré e Aldeia da Serra e de ${faixaTxt(AULA_BARUERI)} em Barueri e Santana de Parnaíba, segundo o Montinho, que atende na região. A aula avulsa em Alphaville fica de ${faixaTxt(ALPHA.avulsa)}, também segundo ele; em Barueri e Santana de Parnaíba, a referência editorial do Personal por Perto é de ${faixaTxt(REFERENCIAS.barueri.avulsa)}.`,
   },
   {
     question: "Personal trainer cobra por aula ou por mês?",
@@ -160,7 +161,7 @@ export default function CalculadoraPrecoPersonalPage() {
               </strong>
             </p>
             <p className="text-gray-300 leading-relaxed">
-              A faixa por aula no pacote é a leitura do Montinho, que atende na região. O piso do online também é dele. A faixa da aula avulsa ({faixaTxt(ALPHA.avulsa)}) e o teto do online são {FONTE_REFERENCIA.rotulo} do portal{" "}
+              A faixa por aula no pacote é a leitura do Montinho, que atende na região. A da aula avulsa ({faixaTxt(ALPHA.avulsa)}) e o piso do online também são dele. O teto do online é {FONTE_REFERENCIA.rotulo} do portal{" "}
               <a href={PPP_CALC} className={ln} target="_blank" rel="noopener noreferrer">{FONTE_REFERENCIA.nome}</a>. Nenhuma delas é pesquisa de preços com amostra: servem para você chegar a uma conversa sabendo se o valor proposto está dentro ou muito fora do esperado.
             </p>
           </div>
@@ -199,7 +200,7 @@ export default function CalculadoraPrecoPersonalPage() {
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Alphaville, Tamboré, Aldeia da Serra, Barueri e Santana de Parnaíba</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              <strong className="text-white">Alphaville, Tamboré e Aldeia da Serra ficam em {faixaTxt(AULA_ALPHA)} por aula no pacote; Barueri e Santana de Parnaíba, em {faixaTxt(AULA_BARUERI)}.</strong> Para aula avulsa e para o teto do online, a referência do Personal por Perto só tem faixa própria para Alphaville, Barueri e Santana de Parnaíba: Tamboré e Aldeia da Serra usam a da cidade, e a calculadora avisa isso no resultado.
+              <strong className="text-white">Alphaville, Tamboré e Aldeia da Serra ficam em {faixaTxt(AULA_ALPHA)} por aula no pacote; Barueri e Santana de Parnaíba, em {faixaTxt(AULA_BARUERI)}.</strong> A aula avulsa de Alphaville também é informada pelo Montinho. Para a avulsa das demais cidades e para o teto do online, a referência do Personal por Perto não tem faixa própria para Tamboré nem para Aldeia da Serra: eles usam a de Barueri e a de Santana de Parnaíba, e a calculadora avisa isso no resultado.
             </p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -263,7 +264,7 @@ export default function CalculadoraPrecoPersonalPage() {
           <div>
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Aula avulsa ou pacote mensal?</h2>
             <p className="text-gray-300 leading-relaxed">
-              <strong className="text-white">A avulsa serve para experimentar; o pacote exige compromisso de agenda.</strong> Em Alphaville, a aula dentro do pacote fica de {faixaTxt(AULA_ALPHA)} e a referência da aula avulsa, de {faixaTxt(ALPHA.avulsa)}. As duas faixas vêm de origens diferentes e se sobrepõem, então não dá para ler uma como desconto da outra: na mesma proposta, o pacote costuma sair mais em conta por aula do que a avulsa do mesmo profissional, porque dá previsibilidade de agenda a ele. Se você já sabe que vai manter a rotina, peça o valor do pacote.
+              <strong className="text-white">A avulsa serve para experimentar; o pacote exige compromisso de agenda.</strong> Em Alphaville, a aula avulsa fica de {faixaTxt(ALPHA.avulsa)} e a aula dentro do pacote, de {faixaTxt(AULA_ALPHA)}. Na mesma proposta, o pacote costuma sair mais em conta por aula do que a avulsa do mesmo profissional, porque dá previsibilidade de agenda a ele. Se você já sabe que vai manter a rotina, peça o valor do pacote.
             </p>
           </div>
 
@@ -293,7 +294,8 @@ export default function CalculadoraPrecoPersonalPage() {
             <ul className="text-gray-300 leading-relaxed space-y-2 list-disc pl-5 mb-4">
               <li><strong className="text-white">Aula dentro do pacote presencial:</strong> {FONTE_PACOTE.rotulo}, em {DATA_PACOTE}. É a leitura de quem trabalha no mercado local, sem amostra.</li>
               <li><strong className="text-white">Online:</strong> piso de {faixaTxt(ALPHA.online).split(" a ")[0]} por mês informado pelo Montinho; o teto de cada cidade vem da referência abaixo.</li>
-              <li><strong className="text-white">Aula avulsa e teto do online:</strong> estimativas editoriais do portal {FONTE_REFERENCIA.nome}, construídas pelo perfil de cada cidade e consultadas em {DATA_REF}.</li>
+              <li><strong className="text-white">Aula avulsa em Alphaville:</strong> também informada pelo Montinho.</li>
+              <li><strong className="text-white">Aula avulsa nas demais cidades e teto do online:</strong> estimativas editoriais do portal {FONTE_REFERENCIA.nome}, construídas pelo perfil de cada cidade e consultadas em {DATA_REF}.</li>
             </ul>
             <p className="text-gray-300 leading-relaxed mb-4">Por isso esta página nunca diz "preço médio", não cita quantidade de profissionais e não mostra valor exato. A conta:</p>
             <ul className="text-gray-300 leading-relaxed space-y-2 list-disc pl-5">

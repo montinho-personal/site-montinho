@@ -22,10 +22,11 @@ ok("mais aulas nunca custam menos por mês", LOCAIS.every((l) => { const m = [1,
 ok("online é mensal e não muda com a frequência", LOCAIS.every((l) => FREQUENCIAS.every((f) => { const r = calcular(l.id, "online", f); return r.avulsa === null && r.aulaNoPacote === null && r.mensal[0] === REFERENCIAS[l.ref].online[0] && r.mensal[1] === REFERENCIAS[l.ref].online[1]; })));
 ok("Alphaville 3×: R$ 650 a R$ 3.900 por mês", calcular("alphaville", "condominio", 3).mensal.join() === "650,3900");
 ok("online parte de R$ 110 por mês em todos os locais", LOCAIS.every((l) => calcular(l.id, "online", 3).mensal[0] === 110));
+ok("aula avulsa em Alphaville: R$ 100 a 350", calcular("alphaville", "academia", 3).avulsa!.join() === "100,350");
 ok("Barueri 2×: R$ 360 a R$ 2.250 por mês", calcular("barueri-centro", "academia", 2).mensal.join() === "360,2250");
 ok("fallback nunca é silencioso", LOCAIS.filter((l) => l.id !== l.ref).every((l) => !!l.aviso && l.aviso.includes(REFERENCIAS[l.ref].nome)));
 ok("local com faixa própria não leva aviso", LOCAIS.filter((l) => l.id === l.ref).every((l) => l.aviso === null));
-ok("a memória diz de onde vem cada número", todos.every((r) => r.memoria.some((m) => m.includes("referência editorial")) && r.memoria[0].includes("informada pelo Montinho")));
+ok("a memória diz de onde vem cada número", todos.every((r) => r.memoria[0].includes("informada pelo Montinho") && r.memoria.filter((m) => /R\$ \d.* a R\$|Teto:/.test(m) && !m.startsWith("Faixa mensal")).every((m) => m.includes("informada pelo Montinho") || m.includes("referência editorial"))));
 
 const fontes = ["app/ferramentas/calculadora-preco-personal-trainer-alphaville/page.tsx", "components/preco/CalculadoraPrecoPersonal.tsx"].map((f) => fs.readFileSync(f, "utf8")).join("\n");
 const semComentario = fontes.replace(/\/\*[\s\S]*?\*\//g, "");
