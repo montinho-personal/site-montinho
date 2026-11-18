@@ -43,3 +43,12 @@ avaliações que citem o lugar do treino; ligar o perfil à página de Alphavill
 Sem endereço falso e sem bairro no nome do perfil.
 
 **Endereço de verificação (informado pelo Renato em 16/11/2026):** Alphaville, Barueri. A distância, portanto, não explica a posição: o centro do perfil já está na área das buscas. Sobram como causas prováveis o endereço oculto (perfil de área de cobertura) e a falta do bairro no nome, que os líderes têm. Alavancas dentro das regras: avaliações recentes que citem Alphaville e Tamboré, áreas atendidas e serviços completos, fotos e postagens, e o site como reforço (página de Alphaville ligada ao perfil).
+
+### 17/11/2026: mudança no Perfil da Empresa
+
+O Renato alterou o perfil em 17/11/2026 (informado em 18/11). Propostas para a página de
+Alphaville (título e descrição) ficam em espera até medir o efeito do perfil: comparar o
+mapa na rotina de 16/12 e o Search Console da home e de `/personal-trainer-alphaville`
+com a linha de base de 18/11 (home 115 impressões, posição ~9; página 2 impressões, ~11,
+em 30 dias).
+
