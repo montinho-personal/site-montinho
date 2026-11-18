@@ -64,7 +64,7 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | ~~Academia ao ar livre: como usar os aparelhos da praça (12.100/mês para "academia ao ar livre")~~ aplicado em 18/11 (H2 com tabela dos aparelhos e FAQ) | `treino-ao-ar-livre-estruturado` (se a pesquisa mostrar intenção diferente da do artigo, vira artigo próprio) | autocompletar de "aparelhos de academia nomes" (16/11) |
 | ~~Aparelhos de academia completa (2.900/mês)~~ aplicado em 18/11 (H2 com as 5 áreas e FAQ) | `academia-de-condominio-quais-aparelhos-comprar` | PAA de "aparelhos de academia nomes" (16/11) |
 | Sopa de macarrão engorda? (390/mês) | `sopa-emagrece` ou `macarrao-engorda`, quando houver dado de sopa na base | outras pesquisas de "macarrão engorda" (16/11) |
-| Zona de queima de gordura ("fat burn", 1.000/mês) | `zonas-de-frequencia-cardiaca` (já explica a "zona de queima" da esteira; falta o FAQ "o que é fat burn?") | PAA de "efeito afterburn" (16/11) |
+| ~~Zona de queima de gordura ("fat burn", 1.000/mês)~~ aplicado em 18/11 (FAQ e menção na seção) | `zonas-de-frequencia-cardiaca` (já explica a "zona de queima" da esteira; falta o FAQ "o que é fat burn?") | PAA de "efeito afterburn" (16/11) |
 | Muay thai: desvantagens e em quanto tempo define o corpo | `beneficios-do-muay-thai` | pauta de lutas (outubro) |
 | Hérnia de disco e jiu-jitsu (10/mês) | `hernia-de-disco-pode-treinar` (com fonte médica) | pauta de lutas (outubro) |
 | É possível ganhar 1 kg de músculo em 1 mês? | simulador de ganho de massa / artigo de hipertrofia para iniciantes | pesquisa de exercícios por músculo |
@@ -73,7 +73,7 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | Quantas calorias queimar por treino | `exercicio-que-mais-queima-calorias` | PAA do EPOC (16/11) |
 | Para que serve a barra fixa (40/mês) | `como-fazer-barra-fixa` | PAA de "graviton academia" (16/11) |
 | Emagrecer pedalando 30 minutos por dia; minutos de bike para perder barriga | `bicicleta-emagrece` | PAA de "air bike" e "air bike emagrece" (16/11) |
-| Air bike no CrossFit (720/mês) | `crossfit-emagrece` | autocompletar de "air bike" (16/11) |
+| ~~Air bike no CrossFit (720/mês)~~ aplicado em 18/11 (H2 e FAQ, link para `air-bike`) | `crossfit-emagrece` | autocompletar de "air bike" (16/11) |
 
 ## 3. Materiais para baixar (iscas)
 
