@@ -1730,3 +1730,15 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `exercicio-para-perder-barriga` (PAA do tabata e do EPOC: "4 ou 7 exercícios"): H2 com a lista explicada (força primeiro, cardio e core como complemento) e FAQ. Corrigido de passagem o CTA "plano de treino e alimentação" (regra "não passa dieta").
 - Pulado na ordem: "ganhar 1 kg de músculo em 1 mês" (precisa de fonte para taxa de ganho; fica para um dia com pesquisa no PubMed).
 
+
+## 2026-11-18 — Medição de 28 dias das trocas de 21/10 (Gaviões, Bluefit Tamboré, condomínio)
+
+GSC pelo Supermetrics, 21/10 a 17/11 (28 dias), contra 90 dias até 20/10.
+
+| Página | Antes (90 dias) | Depois (28 dias) | Leitura |
+|---|---|---|---|
+| `academia-gavioes-alphaville` | 843 impr. (9,4/dia), 0 cliques, pos. 11,6 | 1.248 impr. (44,6/dia), 0 cliques, pos. 12,3 | Impressões ×4,7; clique continua zero; posição no começo da 2ª página |
+| `bluefit-tambore` (nova) | "bluefit tambore" caía em `bluefit-barueri` (~101 impr./90 dias, pos. ~11) | 565 impr., 1 clique, pos. 8,9; "bluefit tambore/tamboré/tambores" = 169 impr. aqui, pos. ~9,5, e só 9 em `bluefit-barueri` | A busca migrou para a página nova, na 1ª página |
+| `academia-de-condominio-quais-aparelhos-comprar` (nova) | ~44 impr./90 dias, pos. 34 a 71 (página antiga) | 169 impr., 0 cliques, pos. 26,5; buscas de condomínio divididas com `academia-em-condominio-como-aproveitar` | Subiu, mas as duas páginas disputam as mesmas buscas |
+
+Recomendação enviada ao Montinho: manter as três. Gaviões: o clique não subiu, mas o título antigo também tinha zero e a página está na posição 12; voltar não resolve. Condomínio: separar as duas páginas por intenção.
