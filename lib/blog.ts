@@ -12507,6 +12507,9 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se você precisa de orientação personalizada para estruturar sua ingestão proteica e treino durante o uso de Retatrutida, acesse a página de <a href="/consultoria">consultoria online</a> e saiba como posso ajudar.</p>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Proteína protege o músculo, mas não sozinha. Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/2YZNFdapE_s?rel=0" title="Quanto ingerir de proteina por dia — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -89489,6 +89492,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Aqui está a virada que a maioria demora anos para entender: <strong>cardio sozinho emagrece devagar — e desmotiva rápido.</strong> Quem emagrece de verdade combina três peças: musculação para preservar músculo, déficit calórico para queimar gordura e acompanhamento para ajustar o plano quando o corpo estaciona.</p>
 <p>É exatamente isso que faço na consultoria online: treino estruturado, estratégia de déficit realista e ajustes semanais baseados no seu progresso — para qualquer lugar do Brasil. A esteira você já tem; o método é o multiplicador. <a href="/contato">Agende uma avaliação</a> e pare de contar minutos sem contar resultados.</p>
 
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Quer saber em quanto tempo chega na sua meta? No vídeo, eu mostro como simular o seu prazo com o seu peso e a sua rotina.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/2NkNKAhku9A?rel=0" title="Quanto tempo para emagrecer? Simule a sua meta — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
 <p>Antes de seguir, um vídeo que resolve uma dúvida clássica: afinal, qual é o melhor aeróbico para emagrecer? A resposta vai bem além da esteira.</p>
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/Ok7H0mtcf-M?rel=0" title="Qual o melhor aeróbico para emagrecer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -116826,6 +116832,9 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <h2>O que fazer com esse número</h2>
 <p>Coloque ele no lugar certo. O polichinelo funciona muito bem como aquecimento, dentro de circuitos curtos e como quebra de sedentarismo para quem passa o dia sentado. Ele não funciona como plano. Se o seu objetivo é emagrecer, a ordem é esta: primeiro descubra <a href="/blog/quantas-calorias-eu-gasto-por-dia">quantas calorias você gasta por dia</a>, depois defina um déficit que dê para manter, e só então escolha o cardio que cabe na sua rotina. O polichinelo pode ser esse cardio. Só não pode ser a estratégia inteira.</p>
+
+<p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Antes de contar polichinelos, descubra quanto o seu corpo gasta por dia. No vídeo, eu mostro como fazer essa conta em 1 minuto.</p>
+<div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/iGStCDRk0Zg?rel=0" title="Quantas calorias você gasta por dia? TMB e TDEE — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
 <h2>Leia também</h2>
 <ul>
