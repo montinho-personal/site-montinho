@@ -32,7 +32,7 @@ export interface Oferta {
   musculacao: boolean;
   /** Dá para treinar? Visita guiada não é treino. */
   treino: boolean;
-  /** Preço confirmado, em reais. 0 = grátis. null = não publicado. */
+  /** Preço em reais. 0 = grátis. null = valor a consultar. Por decisão do Montinho (18/11/2026), só a Arena 18 mostra preço (grátis); as demais aparecem como "Valor a consultar". */
   preco: number | null;
   /** Texto do preço quando não há número confirmado para a unidade. */
   precoNota?: string;
@@ -64,7 +64,8 @@ export const OFERTAS: Oferta[] = [
     modalidade: "Musculação, com acesso a todas as áreas",
     musculacao: true,
     treino: true,
-    preco: 90,
+    preco: null,
+    precoNota: "Valor a consultar",
     como: "Pagamento direto no local. O estacionamento fica incluso por até 3 horas.",
     precisaAgendar: false,
     fonteNome: "Site oficial da NitroGym (página da unidade Tamboré)",
@@ -83,7 +84,7 @@ export const OFERTAS: Oferta[] = [
     musculacao: true,
     treino: true,
     preco: null,
-    precoNota: "Valor informado só na recepção",
+    precoNota: "Valor a consultar",
     como: "Contratada no dia do treino, na recepção da unidade. Não precisa agendar.",
     precisaAgendar: false,
     fonteNome: "Site oficial da Ironberg (planos e perguntas frequentes)",
@@ -102,7 +103,7 @@ export const OFERTAS: Oferta[] = [
     musculacao: false,
     treino: true,
     preco: null,
-    precoNota: "R$ 75 na tabela da rede; confirme o valor da unidade",
+    precoNota: "Valor a consultar",
     como: "Consulte a unidade antes de ir.",
     precisaAgendar: null,
     fonteNome: "Site oficial da Crosslift Blacksheep (tabela de planos da rede)",
@@ -139,7 +140,8 @@ export const OFERTAS: Oferta[] = [
     modalidade: "CrossFit (não é musculação)",
     musculacao: false,
     treino: true,
-    preco: 0,
+    preco: null,
+    precoNota: "Valor a consultar",
     como: "Aula separada da turma, para quem está começando. Agendada pelo site ou pelo WhatsApp da unidade.",
     precisaAgendar: true,
     fonteNome: "Site oficial do CrossFit Barueri",
@@ -157,7 +159,8 @@ export const OFERTAS: Oferta[] = [
     modalidade: "Jiu-jítsu (não é musculação)",
     musculacao: false,
     treino: true,
-    preco: 0,
+    preco: null,
+    precoNota: "Valor a consultar",
     como: "Consulte a academia para marcar.",
     precisaAgendar: null,
     fonteNome: "Site oficial da G13 Alphaville",
