@@ -50,6 +50,7 @@ export const FEIJAO_PAODEQUEIJO_MACA_POSTS: BlogPost[] = [
       "Quantas calorias tem o feijão por concha e colher, carioca ou preto, se feijão com arroz engorda, feijão à noite, proteína ou carboidrato e por que dá gases.",
     category: "Nutrição",
     date: "2026-11-15",
+    updatedAt: "2026-11-18",
     readTime: "6 min",
     author: "Montinho",
     tags: ["feijao", "calorias", "fibra", "arroz com feijao", "dieta"],
@@ -100,6 +101,16 @@ export const FEIJAO_PAODEQUEIJO_MACA_POSTS: BlogPost[] = [
           "O arroz. 100 g de arroz branco cozido têm 128 kcal; 100 g de feijão carioca cozido, 76.",
       },
       {
+        question: "Quantas colheres de arroz e feijão posso comer para emagrecer?",
+        answer:
+          "Não existe um número certo de colheres para emagrecer: o que decide é o total do dia. Pelas medidas do IBGE e a TACO, 1 colher de sopa de arroz (25 g) tem perto de 32 kcal e 1 colher de sopa de feijão (17 g), perto de 13 kcal. Um prato com 4 colheres de arroz e 4 de feijão fica perto de 180 kcal. A quantidade que cabe no seu dia é com o nutricionista.",
+      },
+      {
+        question: "Feijão engorda mais que arroz?",
+        answer:
+          "Não. No mesmo peso, o arroz tem mais calorias: 128 kcal em 100 g de arroz branco cozido, contra 76 kcal no feijão carioca. Uma escumadeira de arroz (85 g) tem perto de 109 kcal; uma concha de feijão (140 g), perto de 107.",
+      },
+      {
         question: "Quanto feijão posso comer por dia?",
         answer:
           "Para a maioria das pessoas, uma ou duas conchas por refeição cabem bem. Mais que isso pode caber, desde que você conte no total do dia.",
@@ -123,6 +134,19 @@ export const FEIJAO_PAODEQUEIJO_MACA_POSTS: BlogPost[] = [
 
 <h2>Feijão com arroz engorda?</h2>
 <p>Não necessariamente. Um prato com <strong>duas escumadeiras de arroz</strong> (170 g, perto de 218 kcal) e <strong>uma concha de feijão</strong> (140 g, perto de 107 kcal) fica em torno de <strong>325 kcal</strong> antes da carne e da salada. É uma base boa para quem quer emagrecer: o feijão sustenta e o arroz dá energia. O que muda é a porção. Veja <a href="/blog/arroz-engorda">arroz engorda?</a>.</p>
+
+<h2>Quantas colheres de arroz e feijão?</h2>
+<p>Não existe um número certo de colheres para emagrecer: o que decide é o total do dia. Mas dá para ver quanto cada medida pesa no prato:</p>
+<table>
+<thead><tr><th>Medida caseira</th><th>Arroz branco cozido</th><th>Feijão carioca cozido</th></tr></thead>
+<tbody>
+<tr><td>1 colher de sopa</td><td>25 g, cerca de 32 kcal</td><td>17 g, cerca de 13 kcal</td></tr>
+<tr><td>1 escumadeira</td><td>85 g, cerca de 109 kcal</td><td>35 g, cerca de 27 kcal</td></tr>
+<tr><td>1 concha</td><td>—</td><td>140 g, cerca de 107 kcal</td></tr>
+<tr><td>4 colheres de sopa</td><td>cerca de 128 kcal</td><td>cerca de 52 kcal</td></tr>
+</tbody>
+</table>
+<p>Pesos da tabela de medidas do IBGE; calorias da TACO. Repare que, colher por colher, o arroz pesa mais do que o feijão. Quem quer encaixar o prato num déficit costuma mexer primeiro na quantidade de arroz e no que vai junto (óleo, linguiça, bacon), não no feijão. Quanto cabe no seu dia é uma conta para fazer com o nutricionista; para ter uma ideia do seu gasto, use a <a href="/ferramentas/calculadora-deficit-calorico">Calculadora de Déficit Calórico</a>.</p>
 
 <h2>Qual feijão engorda mais?</h2>
 <table>
@@ -157,7 +181,7 @@ ${NAO_SE_COMPARE("feijão")}
 <h2>Fontes</h2>
 <ul>
 <li>${TACO}: feijão carioca, preto, fradinho, jalo, rajado, rosinha e roxo cozidos, feijão tropeiro mineiro, lentilha cozida, arroz tipo 1 cozido</li>
-<li>${IBGE} (concha, escumadeira e colher de sopa de feijão; escumadeira de arroz)</li>
+<li>${IBGE} (concha, escumadeira e colher de sopa de feijão; escumadeira e colher de sopa de arroz)</li>
 </ul>
 
 <h2>Leia também</h2>
@@ -178,6 +202,7 @@ ${NAO_SE_COMPARE("feijão")}
       "Quantas calorias tem o pão de queijo por unidade, por que ele é mais calórico que parece, pão de queijo ou pão francês, no café da manhã, na dieta e o congelado.",
     category: "Nutrição",
     date: "2026-11-15",
+    updatedAt: "2026-11-18",
     readTime: "6 min",
     author: "Montinho",
     tags: ["pao de queijo", "calorias", "cafe da manha", "lanche", "dieta"],
@@ -223,6 +248,21 @@ ${NAO_SE_COMPARE("feijão")}
           "Depende da marca. A TACO traz o pão de queijo assado; o congelado tem a informação no rótulo, na porção indicada.",
       },
       {
+        question: "2 ou 3 pães de queijo engordam?",
+        answer:
+          "Depende do tamanho e do resto do dia. Com pães de queijo médios (40 g, exemplo nosso), 2 unidades têm perto de 290 kcal e 3 unidades, perto de 436 kcal, pela TACO.",
+      },
+      {
+        question: "Comer pão de queijo todo dia engorda?",
+        answer:
+          "Não por ser todo dia, e sim pelo total. Um pão de queijo médio por dia (perto de 145 kcal) cabe numa rotina que está em déficit. O que costuma pesar é virar 3 ou 4 todo dia sem perceber, ou somar com outros lanches.",
+      },
+      {
+        question: "Pão de queijo à noite engorda?",
+        answer:
+          "O horário não engorda; o total do dia, sim. Um pão de queijo no jantar pesa o mesmo que no café. A diferença é que, à noite, ele costuma vir como lanche a mais.",
+      },
+      {
         question: "Quantos pães de queijo posso comer?",
         answer:
           "Para a maioria das pessoas, um ou dois médios por vez cabem bem. Mais que isso pode caber, desde que você conte no total do dia.",
@@ -257,6 +297,22 @@ ${NAO_SE_COMPARE("feijão")}
 </tbody>
 </table>
 <p>No mesmo peso, o pão de queijo tem mais calorias e muito mais gordura que o pão francês. A diferença por unidade não é enorme, mas o pão francês sustenta mais quando vem com ovo ou queijo branco. Veja <a href="/blog/pao-com-ovo-engorda">pão com ovo engorda?</a> e <a href="/blog/tapioca-engorda">tapioca engorda?</a>.</p>
+
+<h2>2 ou 3 pães de queijo engordam?</h2>
+<p>O que muda a conta é a quantidade, porque o pão de queijo é pequeno e calórico. Com o tamanho médio da tabela acima (40 g):</p>
+<table>
+<thead><tr><th>Quantidade</th><th>Calorias</th></tr></thead>
+<tbody>
+<tr><td>1 pão de queijo médio</td><td>cerca de 145 kcal</td></tr>
+<tr><td>2 pães de queijo médios</td><td>cerca de 290 kcal</td></tr>
+<tr><td>3 pães de queijo médios</td><td>cerca de 436 kcal</td></tr>
+<tr><td>5 pães de queijo médios</td><td>cerca de 726 kcal</td></tr>
+</tbody>
+</table>
+<p>Calorias da TACO; o peso de 40 g é exemplo nosso, porque o tamanho varia muito. Dois médios no café cabem na rotina de muita gente. Três ou mais, todo dia, somam mais de 400 kcal só nesse lanche, e é aí que a conta do dia costuma estourar.</p>
+
+<h2>Comer pão de queijo todo dia ou à noite engorda?</h2>
+<p>Nem o "todo dia" nem o horário engordam: o que conta é o total. Um pão de queijo médio por dia, perto de 145 kcal, cabe numa rotina em déficit. O problema costuma ser outro: virar 3 ou 4 sem perceber, ou entrar como lanche a mais à noite, depois de um dia que já fechou a conta. Para ter uma ideia de quanto cabe no seu dia, use a <a href="/ferramentas/calculadora-deficit-calorico">Calculadora de Déficit Calórico</a>.</p>
 
 <h2>Pão de queijo no café da manhã engorda?</h2>
 <p>Cabe, se você contar. <strong>Um ou dois médios</strong> com uma fonte de proteína (ovo, iogurte, queijo branco) e uma fruta fazem um café que sustenta. Só pão de queijo e café costuma dar fome cedo. Veja <a href="/blog/o-que-comer-no-cafe-da-manha-para-treinar">o que comer no café da manhã para treinar</a>.</p>

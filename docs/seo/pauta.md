@@ -76,9 +76,9 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | É possível ganhar 1 kg de músculo em 1 mês? | simulador de ganho de massa / artigo de hipertrofia para iniciantes | pesquisa de exercícios por músculo |
 | Peso oficial das estações | `estacoes-do-hyrox` (só com fonte oficial HYROX) | pauta de HYROX (08/10) |
 | ~~4 ou 7 exercícios para perder barriga~~ aplicado em 18/11 (H2 e FAQ) | `exercicio-para-perder-barriga` | PAA do tabata e do EPOC (16/11) |
-| Quantas calorias queimar por treino | `exercicio-que-mais-queima-calorias` | PAA do EPOC (16/11) |
+| ~~Quantas calorias queimar por treino~~ aplicado em 18/11 (H2 com OMS e tabela de 45 min, FAQ) | `exercicio-que-mais-queima-calorias` | PAA do EPOC (16/11) |
 | ~~Para que serve a barra fixa (40/mês)~~ aplicado em 18/11 (H2 e FAQ) | `como-fazer-barra-fixa` | PAA de "graviton academia" (16/11) |
-| Emagrecer pedalando 30 minutos por dia; minutos de bike para perder barriga | `bicicleta-emagrece` | PAA de "air bike" e "air bike emagrece" (16/11) |
+| ~~Emagrecer pedalando 30 minutos por dia; minutos de bike para perder barriga~~ aplicado em 18/11 (H2, H3 e 2 FAQs) | `bicicleta-emagrece` | PAA de "air bike" e "air bike emagrece" (16/11) |
 | ~~Air bike no CrossFit (720/mês)~~ aplicado em 18/11 (H2 e FAQ, link para `air-bike`) | `crossfit-emagrece` | autocompletar de "air bike" (16/11) |
 
 ## 3. Materiais para baixar (iscas)
@@ -101,7 +101,7 @@ que ficou de fora.
 | ~~05/11~~ | ~~`pao-com-ovo-engorda`~~ revisado em 16/11 |
 | ~~11/11~~ | ~~`pipoca-engorda`~~ revisado em 16/11 |
 | ~~11/11~~ | ~~`manga-engorda`, `melancia-engorda`~~ revisados em 17/11 |
-| 15/11 | `feijao-engorda`, `pao-de-queijo-engorda`, `maca-engorda` |
+| 15/11 | ~~`feijao-engorda`, `pao-de-queijo-engorda`~~ revisados em 18/11; `maca-engorda` |
 | 15/11 | `rosca-alternada`, `remada-cavalinho`, `desenvolvimento-arnold` |
 | 15/11 | 8 de consultoria online e dúvidas de treino (`consultoria-online-ou-personal-presencial`, `avaliacao-fisica-consultoria-online`, `personal-online-smart-fit`, `treinar-sozinho-na-academia-da-resultado`, `como-saber-se-a-ficha-de-treino-e-boa`, `treino-abc-ou-upper-lower`, `musculacao-para-emagrecer-quantas-vezes-por-semana`, `como-saber-se-o-treino-esta-funcionando`) |
 | 16/11 | `academias-de-jiu-jitsu-em-osasco`, `-carapicuiba`, `-cotia`, `-santana-de-parnaiba` (busca na cidade de cada página) |

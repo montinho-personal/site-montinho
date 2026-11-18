@@ -41,6 +41,9 @@ const LINHAS: Linha[] = [
 ].sort((a, b) => b.met - a.met);
 
 const TOP = LINHAS.slice(0, 5);
+/** Uma sessão de 45 minutos, para a pergunta "quantas calorias queimar por treino". */
+const TREINO_MIN = 45;
+const porTreino = (met: number) => kcalPorMinuto(met, P) * TREINO_MIN;
 const linha = (id: string) => COMPARADOR.find((a) => a.id === id)!;
 const CORDA = linha("corda"), CORRIDA = linha("corrida"), JIU = linha("jiujitsu"), ESCADA = linha("escada"), BIKE = linha("bicicleta");
 const CAMINHADA = linha("caminhada"), ELIPTICO = linha("eliptico"), NATACAO = linha("natacao"), BOXE = linha("boxe"), FUTEBOL = linha("futebol");
@@ -80,7 +83,7 @@ export const EXERCICIO_QUEIMA_POSTS: BlogPost[] = [
       "O ranking do gasto por hora, pelo seu peso, com os mesmos números das calculadoras do site: o que mais queima na academia, em casa e no esporte, e quanto tempo leva para gastar 200, 500 ou 1.000 kcal.",
     category: "Emagrecimento",
     date: "2026-10-23",
-    updatedAt: "2026-10-23",
+    updatedAt: "2026-11-18",
     readTime: "8 min",
     author: "Montinho",
     tags: ["exercício que mais queima calorias", "esporte que mais queima calorias", "qual exercício queima mais calorias", "tabela de queima de calorias", "queimar calorias"],
@@ -93,6 +96,7 @@ export const EXERCICIO_QUEIMA_POSTS: BlogPost[] = [
       { question: "Como queimar 1000 calorias em 1 hora?", answer: `Para ${P} kg, nem correndo forte cabe em uma hora: a 12 km/h, mil calorias levam cerca de ${hm(MIL_CORRIDA_12)}; pulando corda em ritmo moderado, ${hm(MIL_CORDA)}. Quem pesa mais chega lá mais rápido, mas pouca gente sustenta esse ritmo. Na prática, 1.000 kcal de exercício se juntam ao longo de vários dias, não numa hora.` },
       { question: "Qual exercício queima 500 calorias por dia?", answer: `Para ${P} kg: cerca de ${hm(minutosPara(500, CORRIDA.met))} de corrida a 10 km/h, ${hm(minutosPara(500, CORDA.met))} pulando corda, ${hm(minutosPara(500, BIKE.met))} de bicicleta ou ${hm(minutosPara(500, CAMINHADA.met))} de caminhada.` },
       { question: "Como queimar 300 calorias por dia?", answer: `Para ${P} kg: cerca de ${hm(minutosPara(300, CORRIDA.met))} de corrida, ${hm(minutosPara(300, BIKE.met))} de bicicleta ou ${hm(minutosPara(300, CAMINHADA.met))} de caminhada em passo moderado. Somar a caminhada do dia a dia também conta.` },
+      { question: "Quantas calorias devo queimar por treino?", answer: `Não existe um número certo: o que emagrece é a semana em déficit. A referência com fonte é de tempo: a OMS recomenda de 150 a 300 minutos de atividade moderada por semana e musculação pelo menos 2 vezes. Para ${P} kg, ${TREINO_MIN} minutos de musculação tradicional gastam cerca de ${dez(porTreino(MUSC_TRAD.met))} kcal e ${TREINO_MIN} minutos de corrida a 10 km/h, cerca de ${dez(porTreino(CORRIDA.met))} kcal.` },
       { question: "Quantas calorias queimar para perder 1 kg?", answer: `A conta clássica é ${mil(KCAL_POR_KG_GORDURA)} kcal por quilo de gordura. Ela serve de ordem de grandeza, não de promessa: o corpo se adapta e o gasto cai um pouco conforme o peso cai. Para ${P} kg, seriam cerca de ${Math.round(KG_CORRIDA)} horas de corrida, somadas ao longo das semanas.` },
       { question: "Quantos dias de caminhada para perder 1 kg?", answer: `Só com caminhada, sem mudar a alimentação, seriam cerca de ${Math.round(KG_CAMINHADA_DIAS)} dias de 30 minutos em passo moderado para ${P} kg, pela conta de ${mil(KCAL_POR_KG_GORDURA)} kcal por quilo. Com um pequeno déficit na alimentação, o caminho fica bem mais curto.` },
       { question: "Como queimar 3000 calorias por dia?", answer: `O gasto do dia já inclui o metabolismo e o movimento de rotina, então 3.000 kcal por dia não precisam vir só do exercício. Queimar 3.000 só treinando pediria cerca de ${hm(minutosPara(3000, CORRIDA.met))} de corrida a 10 km/h para ${P} kg. Para saber quanto você gasta no dia inteiro, use a calculadora de TMB e TDEE.` },
@@ -147,6 +151,20 @@ ${tabelaRanking}
 ${tabelaAlvos}
 <p><strong>Mil calorias em uma hora</strong> não cabem nem correndo forte, para ${P} kg: a 12 km/h, levam cerca de ${hm(MIL_CORRIDA_12)}; pulando corda em ritmo moderado, ${hm(MIL_CORDA)}; caminhando, ${hm(MIL_CAMINHADA)}. Para quem está emagrecendo, 300 a 500 kcal por dia de exercício, somadas a uma alimentação em ordem, rendem mais do que um dia de 1.000 e três parados.</p>
 
+<h2>Quantas calorias queimar por treino?</h2>
+<p><strong>Não existe um número certo por treino.</strong> O que decide o emagrecimento é a semana fechar em déficit, e quanto do déficit vem do exercício muda de pessoa para pessoa. Uma referência que tem fonte é a de tempo, não de calorias: a Organização Mundial da Saúde recomenda para adultos de 150 a 300 minutos de atividade moderada por semana (ou 75 a 150 de vigorosa) e musculação pelo menos 2 vezes por semana. Em calorias, um treino de ${TREINO_MIN} minutos para ${P} kg dá mais ou menos isto:</p>
+<table>
+<thead><tr><th>Treino de ${TREINO_MIN} minutos</th><th>Calorias, ${P} kg</th></tr></thead>
+<tbody>
+<tr><td>Musculação tradicional, com descanso</td><td>≈ ${dez(porTreino(MUSC_TRAD.met))} kcal</td></tr>
+<tr><td>Musculação em circuito</td><td>≈ ${dez(porTreino(MUSC_CIRC.met))} kcal</td></tr>
+<tr><td>Caminhada (${CAMINHADA.ritmo})</td><td>≈ ${dez(porTreino(CAMINHADA.met))} kcal</td></tr>
+<tr><td>Bicicleta (${BIKE.ritmo})</td><td>≈ ${dez(porTreino(BIKE.met))} kcal</td></tr>
+<tr><td>Corrida (${CORRIDA.ritmo})</td><td>≈ ${dez(porTreino(CORRIDA.met))} kcal</td></tr>
+</tbody>
+</table>
+<p>Repare que a musculação gasta menos na hora, e mesmo assim é a que preserva o músculo enquanto o peso cai. Por isso a pergunta útil não é "quantas calorias queimei hoje", e sim se a semana teve força e cardio na dose que você consegue repetir. O número exato do seu treino depende do peso e do ritmo: as calculadoras da tabela acima fazem a conta.</p>
+
 <h2>Quantas calorias queimar para perder 1 kg?</h2>
 <p>A conta clássica é <strong>${mil(KCAL_POR_KG_GORDURA)} kcal por quilo de gordura</strong>. Para ${P} kg, seriam cerca de ${Math.round(KG_CORRIDA)} horas de corrida, ou ${Math.round(KG_CAMINHADA_DIAS)} dias de 30 minutos de caminhada, sem mudar nada na comida. É uma ordem de grandeza, não uma promessa: o corpo se adapta, o gasto cai um pouco conforme o peso cai, e a balança oscila com água. Por isso o caminho que funciona junta exercício e um <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a> pequeno.</p>
 
@@ -169,6 +187,7 @@ ${tabelaAlvos}
 <ul>
 <li><a href="https://pacompendium.com/adult-compendium/" target="_blank" rel="noopener noreferrer">Herrmann SD, et al. 2024 Adult Compendium of Physical Activities (METs de cada atividade)</a></li>
 <li>American College of Sports Medicine. ACSM's Guidelines for Exercise Testing and Prescription (equação de corrida e fórmula kcal/min = MET × 3,5 × peso ÷ 200)</li>
+<li><a href="https://www.who.int/publications/i/item/9789240015128" target="_blank" rel="noopener noreferrer">Organização Mundial da Saúde. WHO guidelines on physical activity and sedentary behaviour, 2020</a> (150 a 300 minutos por semana e musculação 2 vezes)</li>
 <li><a href="${FONTE_HALL.url}" target="_blank" rel="noopener noreferrer">${FONTE_HALL.rotulo}</a> (por que os 7.700 kcal são aproximação)</li>
 </ul>`,
   },

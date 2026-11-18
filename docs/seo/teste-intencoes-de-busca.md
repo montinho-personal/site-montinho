@@ -1834,3 +1834,53 @@ Evidência: `docs/seo/serp/academias-diaria-aula-experimental-alphaville-2026-11
 **Título e descrição (página nova; linha de base do GSC zero em 18/11).** "Academia com Diária e Aula Experimental em Alphaville" / "Quer treinar hoje ou testar antes de assinar? Veja as academias de Alphaville e região com diária, aula avulsa e aula experimental, com preço, regra e fonte."
 
 **Ajuste no mesmo dia (18/11), a pedido do Montinho.** Só a Arena 18 mostra preço (aula experimental grátis com ele). Todas as outras ofertas aparecem como "Valor a consultar", inclusive as que a fonte publicava (day use da NitroGym, drop in da BlackSheep, aula experimental grátis do CrossFit Barueri e da G13). Saíram o filtro "só com preço confirmado" e a conta de idas no mês, que dependiam do preço; texto e FAQ deixaram de citar valores.
+
+
+## 2026-11-18 — Revisão diária: `feijao-engorda` e `pao-de-queijo-engorda`
+
+Evidência: `docs/seo/serp/feijao-pao-de-queijo-2026-11-18.json` (SerpApi, celular, São Paulo). 2 buscas + 2 autocompletar + 2 visões de IA em duas etapas = 6 da cota. Sem busca secundária: as duas principais vieram com PAA e visão de IA.
+
+**Formato.** Primeira página sem ferramenta e sem mapa: texto. Concorrentes fracos nas duas: Instagram, Facebook, Dailymotion e portais genéricos em "feijão engorda"; Receitas Globo, dieta.ai, Jornal da Franca e Liv Up em "pão de queijo engorda".
+
+**Visão de IA.** Feijão: abre com "Mito. O feijão não engorda", lista (calorias por 100 g, saciedade, um estudo da UFMG, nutrientes) e "o que pode fazer engordar" (preparo e porção); cita Metrópoles, Vitat, Terra, Growth, Coperaguas. Pão de queijo: "não engorda sozinho, mas é calórico", calorias por unidade de 50 g, problema da porção (4 ou 5 unidades), como incluir; cita Dieta.AI, Globo, Jornal da Franca, Liv Up. Os dois artigos já abrem do mesmo jeito (resposta + número da TACO); não citam o site.
+
+**feijao-engorda — o que mudou** (`updatedAt` 18/11): H2 "Quantas colheres de arroz e feijão?" com tabela de medidas do IBGE (colher de sopa, escumadeira, concha, 4 colheres) e calorias da TACO; FAQ "Quantas colheres de arroz e feijão posso comer para emagrecer?" (sem número prescrito: a quantidade é com o nutricionista) e "Feijão engorda mais que arroz?".
+
+| Tipo | Busca | Entrou? | Onde / por quê |
+|---|---|---|---|
+| Autocompletar | feijão engorda muito / ou não / ou emagrece / na dieta / a pessoa | ✅ | já respondidos no lead e no FAQ "Feijão emagrece?" |
+| Autocompletar | feijão engorda mais que arroz | ✅ | FAQ nova (antes só "Engorda mais arroz ou feijão?") |
+| Autocompletar | feijão engorda à noite | ✅ | já tinha H2 |
+| Autocompletar | feijão engorda mulher | ❌ | não há diferença por sexo com fonte |
+| PAA | Quantas colheres de arroz e feijão devo comer para emagrecer? | ✅ | H2 e FAQ novas, sem prescrever quantidade |
+| PAA | O arroz branco engorda? | ✅ | já linkado para `arroz-engorda` |
+| PAA | O que comer à noite para matar a fome e não engordar? | ✅ | já linkado para `o-que-comer-a-noite-para-nao-engordar` |
+| PAA | Como fazer feijão para quem tem gastrite? | ❌ | receita e condição de saúde: com médico ou nutricionista |
+| Visão de IA | estudo da UFMG sobre feijão e obesidade | ❌ | não localizado em fonte primária nesta sessão |
+| Outras pesquisas | (não vieram) | — | — |
+
+**pao-de-queijo-engorda — o que mudou** (`updatedAt` 18/11): H2 "2 ou 3 pães de queijo engordam?" com tabela de 1, 2, 3 e 5 unidades médias (TACO; 40 g é exemplo nosso) e H2 "Comer pão de queijo todo dia ou à noite engorda?"; FAQ "2 ou 3 pães de queijo engordam?", "Comer pão de queijo todo dia engorda?" e "Pão de queijo à noite engorda?".
+
+| Tipo | Busca | Entrou? | Onde / por quê |
+|---|---|---|---|
+| Autocompletar | engorda muito / ou não / ou emagrece / na dieta / ou é saudável | ✅ | lead e FAQ existentes |
+| Autocompletar | engorda mais que pão francês | ✅ | já tinha H2 e tabela |
+| Autocompletar | quantas calorias | ✅ | já tinha tabela por tamanho |
+| Autocompletar | se comer todo dia; à noite | ✅ | H2 e FAQ novas |
+| Autocompletar | 3 pão de queijo engorda | ✅ | H2 e FAQ novas (tabela por quantidade) |
+| Autocompletar | no café da manhã | ✅ | já tinha H2 |
+| Autocompletar | engorda a barriga | ✅ (parcial) | coberto pela lógica do total do dia; sem seção própria |
+| PAA | Quem está de dieta pode comer pão de queijo? / Quantos pães de queijo posso comer por dia? / O que engorda mais, pão francês ou pão de queijo? | ✅ | já tinham FAQ |
+| PAA | O que comer à noite para matar a fome e não engordar? | ✅ | link existente |
+| Outras pesquisas | Pão de queijo engorda mais que pão francês; 2 e 3 pão de queijo engorda; calorias 1 unidade | ✅ | H2 novo por quantidade; os outros já cobertos |
+| Visão de IA | versão caseira com ricota ou queijo minas | ❌ | receita; fora do que o site prescreve |
+
+**Propostas de título (esperam aprovação; nada trocado).**
+- feijão — ATUAL: "Feijão Engorda? Calorias por Concha, com Arroz e à Noite" / PROPOSTA: "Feijão Engorda ou Emagrece? Calorias por Concha e com Arroz" / MOTIVO: "ou emagrece" e "ou não" estão no topo do autocompletar; "à noite" segue no texto e no FAQ.
+- pão de queijo — ATUAL: "Pão de Queijo Engorda? Calorias por Unidade e no Café" / PROPOSTA: "Pão de Queijo Engorda? Calorias de 1, 2 e 3 Unidades" / MOTIVO: "2 pão de queijo" e "3 pão de queijo engorda" aparecem nas outras pesquisas e no autocompletar.
+
+## 2026-11-18 — "Viram seção ou FAQ" (itens 11 e 12)
+
+- `exercicio-que-mais-queima-calorias` ("quantas calorias queimar por treino", PAA do EPOC, 16/11): H2 "Quantas calorias queimar por treino?" com a recomendação da OMS (150 a 300 min/semana de atividade moderada e musculação 2 vezes, fonte nova na lista) e tabela de 45 minutos para 70 kg calculada pela lib (musculação tradicional e circuito, caminhada, bicicleta, corrida); FAQ. Sem meta de calorias inventada.
+- `bicicleta-emagrece` ("emagrecer pedalando 30 minutos por dia" e "minutos de bike para perder barriga", PAA de "air bike", 16/11): H2 "Pedalar 30 minutos por dia emagrece?" com tabela leve/moderado/forte para 70 kg (Compêndio, pela `lib/bicicleta.ts`: 180, 250 e 320 kcal) e o teto de perto de 0,8 kg/mês no moderado todos os dias (conta líquida, 7.700 kcal/kg); H3 sobre barriga; 2 FAQs; seção "Fontes" nova (Compêndio e Hall 2011).
+- Pulados na ordem: sopa de macarrão (sem dado na base), 1 kg de músculo (precisa de PubMed), peso das estações do HYROX (precisa de fonte oficial), hérnia e jiu-jítsu (precisa de fonte médica). Os 3 itens novos de 18/11 (academia mais cara, diária da Gaviões/Bluefit, personal na Smart Fit) dependem de fonte oficial que não abre nesta sessão.
