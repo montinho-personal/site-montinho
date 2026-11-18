@@ -9,8 +9,9 @@
  *     250. É a leitura de quem trabalha no mercado, não pesquisa com amostra.
  *  2. Online: piso de R$ 110 por mês informado pelo Montinho; o teto vem da
  *     referência abaixo.
- *  3. Aula avulsa em Alphaville: R$ 100 a 350, informada pelo Montinho.
- *  4. Aula avulsa nas demais cidades e teto do online: referência editorial do portal
+ *  3. Aula avulsa em Alphaville, Tamboré e Aldeia da Serra: R$ 100 a 350,
+ *     informada pelo Montinho.
+ *  4. Aula avulsa em Barueri e Santana de Parnaíba e teto do online: referência editorial do portal
  *     Personal por Perto (personalporperto.com.br), montada por perfil de
  *     cidade, consultada em 18/11/2026. Também sem amostra.
  *
@@ -58,8 +59,6 @@ export interface Referencia {
   nome: string;
   /** Aula avulsa presencial. */
   avulsa: Faixa;
-  /** true quando a faixa da avulsa foi informada pelo Montinho, e não lida da referência editorial. */
-  avulsaDoMontinho: boolean;
   /** Acompanhamento online, por mês: piso do Montinho, teto da referência editorial. */
   online: Faixa;
 }
@@ -68,10 +67,25 @@ export interface Referencia {
 export const ONLINE_MINIMO = 110;
 
 export const REFERENCIAS: Record<RefId, Referencia> = {
-  alphaville: { nome: "Alphaville", avulsa: [100, 350], avulsaDoMontinho: true, online: [ONLINE_MINIMO, 550] },
-  barueri: { nome: "Barueri", avulsa: [90, 220], avulsaDoMontinho: false, online: [ONLINE_MINIMO, 500] },
-  "santana-de-parnaiba": { nome: "Santana de Parnaíba", avulsa: [90, 220], avulsaDoMontinho: false, online: [ONLINE_MINIMO, 500] },
+  alphaville: { nome: "Alphaville", avulsa: [100, 250], online: [ONLINE_MINIMO, 550] },
+  barueri: { nome: "Barueri", avulsa: [90, 220], online: [ONLINE_MINIMO, 500] },
+  "santana-de-parnaiba": { nome: "Santana de Parnaíba", avulsa: [90, 220], online: [ONLINE_MINIMO, 500] },
 };
+
+/** Aula avulsa informada pelo Montinho (18/11/2026). Onde não há, vale a referência editorial. */
+const AVULSA_MONTINHO: Partial<Record<LocalId, Faixa>> = {
+  alphaville: [100, 350],
+  tambore: [100, 350],
+  "aldeia-da-serra": [100, 350],
+};
+
+export const avulsaDoMontinho = (l: LocalId) => l in AVULSA_MONTINHO;
+
+/** Faixa da aula avulsa do local: a do Montinho, quando há; senão a da referência editorial. */
+export function avulsaDe(localId: LocalId): Faixa {
+  const l = LOCAIS.find((x) => x.id === localId)!;
+  return AVULSA_MONTINHO[localId] ?? REFERENCIAS[l.ref].avulsa;
+}
 
 export interface Local {
   id: LocalId;
@@ -87,13 +101,13 @@ export const LOCAIS: Local[] = [
     id: "tambore",
     nome: "Tamboré",
     ref: "barueri",
-    aviso: "Aula avulsa e teto do online: Tamboré não tem faixa própria na referência do Personal por Perto, então o resultado usa a de Barueri.",
+    aviso: "Teto do online: Tamboré não tem faixa própria na referência do Personal por Perto, então o resultado usa a de Barueri.",
   },
   {
     id: "aldeia-da-serra",
     nome: "Aldeia da Serra",
     ref: "santana-de-parnaiba",
-    aviso: "Aula avulsa e teto do online: Aldeia da Serra não tem faixa própria na referência do Personal por Perto, então o resultado usa a de Santana de Parnaíba.",
+    aviso: "Teto do online: Aldeia da Serra não tem faixa própria na referência do Personal por Perto, então o resultado usa a de Santana de Parnaíba.",
   },
   {
     id: "barueri-centro",
@@ -164,6 +178,8 @@ export interface Resultado {
   mensal: Faixa;
   /** Presencial: faixa da aula avulsa. Online: null. */
   avulsa: Faixa | null;
+  /** true quando a faixa da avulsa foi informada pelo Montinho. */
+  avulsaDoMontinho: boolean;
   /** Presencial: quanto cada aula representa dentro do pacote. Online: null. */
   aulaNoPacote: Faixa | null;
   /** A conta, linha a linha, para quem quiser conferir. */
@@ -182,7 +198,7 @@ export function calcular(localId: LocalId, formatoId: FormatoId, freq: Frequenci
     memoria.push(`Piso do acompanhamento online: ${brl(ref.online[0])} por mês (${FONTE_PACOTE.rotulo}; não é pesquisa com amostra).`);
     memoria.push(`Teto: ${brl(ref.online[1])} por mês (${origemRef}).`);
     memoria.push("Online é cobrado por mês, não por aula: a frequência escolhida não muda a faixa.");
-    return { local, formato, ref, freq, sessoes, mensal: ref.online, avulsa: null, aulaNoPacote: null, memoria };
+    return { local, formato, ref, freq, sessoes, mensal: ref.online, avulsa: null, avulsaDoMontinho: false, aulaNoPacote: null, memoria };
   }
 
   const aula = PACOTE_AULA[local.id];
@@ -193,9 +209,11 @@ export function calcular(localId: LocalId, formatoId: FormatoId, freq: Frequenci
   memoria.push(`Sessões por mês: ${freq} × 52 ÷ 12 = ${((freq * 52) / 12).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}, arredondado para ${sessoes}.`);
   memoria.push(`Faixa mensal: ${brl(aula[0])} × ${sessoes} = ${brl(min)} e ${brl(aula[1])} × ${sessoes} = ${brl(max)}.`);
   memoria.push("Arredondamento: dezena mais próxima até R$ 1.000, cinquentena acima.");
-  memoria.push(`Aula avulsa, fora de pacote: ${faixaTxt(ref.avulsa)} (${ref.avulsaDoMontinho ? `${FONTE_PACOTE.rotulo}; não é pesquisa com amostra` : origemRef}).`);
+  const avulsa = avulsaDe(local.id);
+  const doMontinho = avulsaDoMontinho(local.id);
+  memoria.push(`Aula avulsa, fora de pacote: ${faixaTxt(avulsa)} (${doMontinho ? `${FONTE_PACOTE.rotulo}; não é pesquisa com amostra` : origemRef}).`);
 
-  return { local, formato, ref, freq, sessoes, mensal, avulsa: ref.avulsa, aulaNoPacote: aula, memoria };
+  return { local, formato, ref, freq, sessoes, mensal, avulsa, avulsaDoMontinho: doMontinho, aulaNoPacote: aula, memoria };
 }
 
 /** Linhas da tabela da página: Alphaville, presencial, de 1 a 5 vezes por semana. */
