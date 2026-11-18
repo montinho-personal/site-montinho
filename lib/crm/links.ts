@@ -132,6 +132,8 @@ export const LINKS: Record<string, LinkControlado> = {
   // Shorts de meme (06/11/2026): campanha única "memes_personal" e um utm_content por vídeo, para comparar os memes entre si.
   "yt-meme-gato": { destino: "/consultoria-online", utm_source: "youtube", utm_medium: "video", utm_campaign: "memes_personal", utm_content: "gato_julgamento", tipo: "social" },
   "wa-filmar": { destino: "/revisao-de-execucao", utm_source: "whatsapp", utm_medium: "status", utm_campaign: "status", utm_content: "como_filmar_exercicio", tipo: "social" },
+  /* Short "HYROX em 1 minuto" (18/11/2026): a tela final fala em treino para HYROX em Alphaville e Barueri. */
+  "yt-hyrox-8-vezes": { destino: "/preparacao-para-hyrox", utm_source: "youtube", utm_medium: "video", utm_campaign: "hyrox", utm_content: "descricao", tipo: "social" },
 };
 
 export function urlDoLink(slug: string, extra: Record<string, string> = {}): string | null {
