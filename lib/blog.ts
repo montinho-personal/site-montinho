@@ -1012,11 +1012,6 @@ export const blogPosts = ([
   <li><a href="/blog/quanto-tempo-para-aparecer-resultado-na-academia">Quanto Tempo Leva Para Aparecer Resultado na Academia?</a></li>
 </ul>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
-
 <p>O shape não é construído nos dias de ânimo, mas nos dias em que seria mais fácil desistir — como explico neste Short:</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
@@ -10808,8 +10803,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Se você está usando Mounjaro e quer garantir que está preservando o máximo de massa muscular possível durante o emagrecimento, posso te ajudar a montar um protocolo personalizado de treino. Acesse a página de <a href="/consultoria">consultoria online</a> e saiba como funciona.</p>
 
 <div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/2YZNFdapE_s?rel=0" title="Quanto ingerir de proteina por dia — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Usa Mounjaro e o peso está caindo? Veja no vídeo qual é o melhor treino para não perder músculo junto.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ul6Xi60zPeY?rel=0" title="Melhor treino para quem usa Mounjaro — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
@@ -10994,8 +10987,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Se você está usando Mounjaro e quer um plano estruturado de treino e suplementação para perder gordura sem sacrificar músculo, posso te ajudar. Acesse a página de <a href="/consultoria">consultoria online</a> e veja como funciona.</p>
 
 <div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/-GM20fw5_0w?rel=0" title="Tudo que voce precisa saber sobre creatina — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Usa Mounjaro e o peso está caindo? Veja no vídeo qual é o melhor treino para não perder músculo junto.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ul6Xi60zPeY?rel=0" title="Melhor treino para quem usa Mounjaro — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
@@ -11171,8 +11162,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Se você está usando Mounjaro e quer um plano integrado de treino e nutrição para preservar ao máximo sua massa muscular, <a href="/consultoria">acesse minha página de consultoria online</a> e saiba como posso te ajudar.</p>
 
 <div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/OZ_OLBMW3R4?rel=0" title="Whey concentrado, isolado e hidrolisado — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Usa Mounjaro e o peso está caindo? Veja no vídeo qual é o melhor treino para não perder músculo junto.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ul6Xi60zPeY?rel=0" title="Melhor treino para quem usa Mounjaro — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
@@ -12510,11 +12499,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Proteína protege o músculo, mas não sozinha. Veja no vídeo o que acontece com o seu músculo se você está na caneta e não treina.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/0uzpCxIJkBg?rel=0" title="O que acontece se você está na caneta e não treina? — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/2YZNFdapE_s?rel=0" title="Quanto ingerir de proteina por dia — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
-
 <h2>Leia também:</h2>
 <ul>
   <li><a href="/blog/retatrutida-faz-perder-musculos">Retatrutida faz perder músculos?</a></li>
@@ -13241,11 +13225,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <h2>Quer ajuda para manter o resultado?</h2>
 
 <p>Se você está emagrecendo — com ou sem medicamento — e quer estruturar o processo de forma que o resultado se mantenha a longo prazo, posso te ajudar com o treino personalizado, junto com o seu nutricionista. Acesse a página de <a href="/consultoria">consultoria online</a>.</p>
-
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
 
 <p>O efeito sanfona se quebra na reação ao primeiro erro — falo sobre essa mentalidade neste Short:</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Raiva e sangue no olho: a mentalidade de quem não desiste — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
@@ -14313,8 +14292,6 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p>Se você está usando Mounjaro, Retatrutida ou qualquer outro GLP-1 e quer garantir que o emagrecimento aconteça com preservação máxima de massa muscular, posso ajudar na minha <a href="/consultoria">consultoria online</a>. O programa de treino é adaptado ao seu contexto — incluindo o medicamento que você usa.</p>
 
 <div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gehbAtynbyQ?rel=0" title="Ozempic e Mounjaro: combo do emagrecimento — Twin e Felipe Donatto" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Usa Mounjaro e o peso está caindo? Veja no vídeo qual é o melhor treino para não perder músculo junto.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/ul6Xi60zPeY?rel=0" title="Melhor treino para quem usa Mounjaro — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
@@ -34627,11 +34604,6 @@ Verdade: Aeróbico emagrece, mas quem dá forma é o músculo. Sem treino de for
 
 <p>Com essa estrutura, treinar se torna menos uma decisão diária e mais uma parte automática de quem você é.</p>
 
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculacao para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
-
 <p>No Short abaixo, mostro a recompensa real de quem cumpre o que prometeu a si mesmo — a sensação de dever feito que constrói confiança:</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
@@ -36513,11 +36485,6 @@ Em pé em uma perna, agache devagar até 30-40° mantendo o joelho alinhado sobr
 <h2>Conclusão</h2>
 
 <p>Manter a dieta não é sobre motivação — é sobre sistemas. Flexibilidade planejada, ambiente configurado, expectativas realistas e foco no processo são as ferramentas que separam quem transforma o corpo de quem recomeça toda segunda-feira.</p>
-
-<div class="yt-embed">
-<p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mHZKGBlPHg4?rel=0" title="Como montar uma dieta — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
 
 <p>No Short abaixo, falo sobre a verdade que aprendi na prática: uma exceção vira duas, duas viram hábito — e quem chega lá é quem protege o objetivo:</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
@@ -63059,11 +63026,6 @@ Não é prioridade. Na primeira semana, foque em aprender os movimentos de muscu
 **O que comer antes de treinar?**
 Uma refeição leve 1-2 horas antes com carboidrato e proteína. Exemplos: banana com pasta de amendoim, pão integral com ovo, iogurte com fruta. Não treine completamente em jejum na primeira semana.
 
-<div class="yt-embed">
-<p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="Primeira Semana na Academia — Guia do Iniciante" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
-
 <p>A melhor parte dos primeiros treinos? A sensação de dever cumprido. É dela que falo neste Short:</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/GPuqJs_DRoY?rel=0" title="O poder da disciplina: a sensação de dever cumprido — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
@@ -72688,8 +72650,6 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <h2>One More Thing</h2>
 <p>É exatamente aqui que entra a virada. A <strong>consultoria online do Montinho</strong> transforma tudo o que você leu em sistema: plano montado, execução acompanhada, ajustes na hora certa — e aquele compromisso social que faz você aparecer nos dias em que a cama argumenta melhor. A ciência do hábito, mastigada e aplicada em você. <a href="/consultoria">Fale com ele e descubra como funciona a consultoria personalizada.</a></p>
 
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/gj3wy3TnYh0?rel=0" title="Tutorial da perda de gordura — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
 <p>Recomeçar exige mais atitude do que motivação — falo sobre isso neste Short:</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Raiva e sangue no olho: a mentalidade de quem não desiste — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
@@ -72791,8 +72751,6 @@ Um personal trainer não é luxo para quem tem tempo sobrando. É a diferença e
 <p><a href="/consultoria">Fale com o Montinho e veja como a consultoria pode destravar seu processo.</a></p>
 
 <p>Quem fez o trampo sabe: quando a estratégia cabe na sua vida e você a segue por tempo suficiente, é impossível dar errado — não porque alguém garante um número, mas porque você para de depender de sorte. Falo sobre essa mentalidade neste Short:</p>
-
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/dq84cT-fNtw?rel=0" title="O guia da musculação — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/izMrrSoJGBw?rel=0" title="Raiva e sangue no olho: a mentalidade de quem não desiste — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
@@ -89495,9 +89453,6 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p style="margin:2rem 0 1rem;color:#9ca3af;font-style:italic">Quer saber em quanto tempo chega na sua meta? No vídeo, eu mostro como simular o seu prazo com o seu peso e a sua rotina.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/2NkNKAhku9A?rel=0" title="Quanto tempo para emagrecer? Simule a sua meta — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
-<p>Antes de seguir, um vídeo que resolve uma dúvida clássica: afinal, qual é o melhor aeróbico para emagrecer? A resposta vai bem além da esteira.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/Ok7H0mtcf-M?rel=0" title="Qual o melhor aeróbico para emagrecer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/deficit-calorico-como-calcular">Déficit calórico: como calcular o seu</a></li>
@@ -90553,9 +90508,6 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>Quer trocar a vergonha por confiança já na próxima semana? <a href="/contato">Agende uma avaliação</a> e comece acompanhado.</p>
 
-<p>Antes de pisar na academia, vale absorver o básico com quem entende. No vídeo abaixo, o treinador Leandro Twin resume <strong>7 dicas essenciais para iniciantes na musculação</strong> — do aquecimento à escolha de cargas.</p>
-
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/CwrMldiBydA?rel=0" title="7 dicas de musculação para iniciantes — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <p>Toda transformação começa com uma decisão — inclusive a de entrar na academia pela primeira vez. É sobre isso este Short:</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
@@ -93559,9 +93511,6 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>A fome emocional é uma mensageira mal interpretada: ela avisa que algo precisa de atenção — estresse, cansaço, solidão, tédio. Enquanto você responder com comida, a mensagem volta amanhã, junto com a culpa e os quilos.</p>
 
 <p>O caminho é conhecido: aprenda a distinguir as duas fomes, mapeie seus gatilhos, crie a pausa entre o impulso e o ato, cuide do sono e use o treino como válvula de escape. Não é da noite para o dia — mas cada vez que você identifica a fome emocional e responde diferente, o circuito antigo enfraquece. Foi assim comigo. Pode ser assim com você.</p>
-
-<p>Sobre como montar uma alimentação que funciona na vida real — sem gatilhos de restrição extrema — veja o vídeo:</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mHZKGBlPHg4?rel=0" title="Dieta na prática" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <p>Quem conseguiu mudar de vida aprendeu a dizer não para aquilo que afastava do objetivo — como falo neste Short:</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
