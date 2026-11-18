@@ -1714,3 +1714,8 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
 - `treino-de-abdomen-em-casa` ("tipos de abdominais", do PAA de "abdominal oblíquo"): H2 com os 4 grupos (enrolar, elevar as pernas, girar, resistir), exemplos e links para supra, infra, oblíquo e prancha; FAQ. Entrou aqui porque `abdomen` é página do mapa de treino, não artigo.
 - `academia-de-condominio-quais-aparelhos-comprar` ("aparelhos de academia completa", do PAA de "aparelhos de academia nomes"): H2 com as 5 áreas de uma academia completa e o que o condomínio precisa de cada uma, link para `aparelhos-de-academia-nomes`; FAQ.
 
+## 2026-11-18 — "Viram seção ou FAQ" (itens 5 e 6)
+
+- `zonas-de-frequencia-cardiaca` ("fat burn", 1.000, do PAA de "efeito afterburn"): FAQ "O que é fat burn?" e o termo na seção "Zona para queimar gordura" (é a zona 2 do painel; proporção não é total).
+- `crossfit-emagrece` ("air bike crossfit", 720, do autocompletar de "air bike"): H2 "Air bike no CrossFit" (como aparece no WOD, o número do monitor é estimativa, ritmo) e FAQ; link para `air-bike`. Sem número de calorias novo (o artigo `air-bike` já traz as contas pelo Compêndio).
+

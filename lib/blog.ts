@@ -117259,13 +117259,14 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Sem saber a sua frequência cardíaca máxima, 'treine a 70%' não quer dizer nada. Aqui está a conta certa, as cinco zonas em batimentos e o que cada uma faz pelo seu corpo.",
     category: "Treino",
     date: "2026-09-03",
-    updatedAt: "2026-09-03",
+    updatedAt: "2026-11-18",
     readTime: "8 min",
     author: "Montinho",
     tags: ["frequência cardíaca", "zonas de treino", "zona 2", "cardio", "FC máxima", "longevidade"],
     faq: [
       { question: "Como calcular a frequência cardíaca máxima?", answer: "Pela fórmula de Tanaka: 208 menos 0,7 vezes a idade. Aos 40 anos dá 180 batimentos por minuto; aos 60, 166. A fórmula antiga de 220 menos a idade subestima a máxima de quem tem mais de 40 e foi abandonada pela ciência. As duas são estimativas: a máxima real varia cerca de 10 batimentos para cima ou para baixo." },
       { question: "Qual é a zona de frequência cardíaca para queimar gordura?", answer: "A zona 2, entre 60% e 70% da máxima, é onde o corpo usa a maior proporção de gordura como combustível. Mas proporção não é total: uma sessão em zona 4 queima mais calorias e mais gordura em números absolutos. Quem emagrece é o déficit calórico do dia; a zona 2 é a mais fácil de sustentar por muito tempo, e é isso que a torna útil." },
+      { question: "O que é fat burn?", answer: "É o nome em inglês da \"zona de queima de gordura\" que aparece em esteiras, bikes e relógios. Em geral corresponde à zona 2, de intensidade leve a moderada, onde a gordura é a maior proporção do combustível. Não quer dizer que ela emagrece mais: em calorias totais, um treino mais intenso no mesmo tempo gasta mais." },
       { question: "O que é zona 2 em batimentos?", answer: "Entre 60% e 70% da frequência cardíaca máxima. Para 40 anos, com máxima estimada de 180, fica entre 108 e 126 batimentos por minuto. Na prática, é o ritmo em que você conversa em frases inteiras com a respiração um pouco mais funda, e consegue manter por uma hora." },
       { question: "Preciso de relógio para treinar por zonas?", answer: "Não. A régua da fala resolve na maioria dos casos: na zona 2 você conversa normalmente, na 3 só frases curtas, na 4 palavras soltas, na 5 não fala. O relógio ajuda a registrar e comparar sessões, mas erra em quem tem máxima diferente da fórmula, e a régua corrige o relógio, não o contrário." },
       { question: "O que é o método de Karvonen?", answer: "É um jeito de calcular as zonas usando também a frequência de repouso: o percentual é aplicado sobre a reserva, que é a máxima menos o repouso, e o repouso é somado de volta. Fica mais fiel ao esforço real de quem tem repouso muito alto ou muito baixo. A calculadora do site troca para ele automaticamente quando você informa o repouso." },
@@ -117331,7 +117332,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Para 180 de máxima e 60 de repouso, a zona 2 fica entre 132 e 144, contra 108 a 126 pelo percentual simples. Parece muito, e é: quem usa o percentual simples com repouso normal costuma treinar a zona 2 leve demais. A calculadora troca de método sozinha quando você informa o repouso, e o repouso se mede ao acordar, antes de levantar, contando os batimentos por um minuto.</p>
 
 <h2>Zona para queimar gordura: a confusão mais comum</h2>
-<p>A zona 2 é onde o corpo usa a maior <strong>proporção</strong> de gordura como combustível. Isso virou "zona de queima de gordura" nas esteiras de academia, e daí virou a ideia de que treinar leve emagrece mais. Não é assim. Proporção não é total: uma sessão de 30 minutos em zona 4 queima mais calorias, e mais gramas de gordura em números absolutos, do que 30 minutos em zona 2. Quem emagrece é o <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a> do dia inteiro.</p>
+<p>A zona 2 é onde o corpo usa a maior <strong>proporção</strong> de gordura como combustível. Isso virou "zona de queima de gordura" (o <strong>fat burn</strong> do painel da esteira, da bike e do relógio) nas esteiras de academia, e daí virou a ideia de que treinar leve emagrece mais. Não é assim. Proporção não é total: uma sessão de 30 minutos em zona 4 queima mais calorias, e mais gramas de gordura em números absolutos, do que 30 minutos em zona 2. Quem emagrece é o <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a> do dia inteiro.</p>
 <p>O que torna a zona 2 útil para emagrecer é outra coisa: ela é a única que dá para fazer por uma hora, quatro vezes por semana, sem ficar destruído e sem sair com fome de lobo. Volume sustentável vence intensidade insustentável. Mas o motivo é a constância, não a "zona mágica".</p>
 
 <h2>Quem deve ter cuidado</h2>
@@ -119253,7 +119254,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
     excerpt: "Uma aula de CrossFit não é uma hora de WOD: tem aquecimento, força e explicação, e o WOD costuma durar 15 minutos. Veja quanto a aula gasta de verdade, de onde vem o mito das 1.000 kcal e o que faz o CrossFit emagrecer.",
     category: "Emagrecimento",
     date: "2026-09-23",
-    updatedAt: "2026-09-23",
+    updatedAt: "2026-11-18",
     readTime: "9 min",
     author: "Montinho",
     tags: ["crossfit", "emagrecimento", "queima de calorias", "wod", "treino funcional"],
@@ -119262,6 +119263,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
       { question: "É verdade que o CrossFit queima 1.000 calorias por aula?", answer: "Não para a maioria das pessoas. Para chegar a 1.000 kcal em uma hora, seria preciso fazer 60 minutos de WOD sem pausa pesando cerca de 120 kg. A aula real tem aquecimento, força e explicação, e o WOD costuma durar de 10 a 20 minutos." },
       { question: "O que gasta mais: AMRAP, EMOM ou Tabata?", answer: "No mesmo tempo de relógio, o AMRAP e o For time gastam mais, porque não têm pausa programada. No EMOM, o que sobra de cada minuto é descanso; no Tabata, um terço do tempo é pausa. Num WOD de 15 minutos, a diferença fica perto de 40 kcal para quem pesa 70 kg." },
       { question: "CrossFit emagrece mais que musculação?", answer: "Por hora, a aula de CrossFit costuma gastar um pouco mais que uma sessão comum de musculação, mas quem decide o emagrecimento é o déficit calórico da semana. O CrossFit ajuda porque junta força e condicionamento; a musculação ajuda porque constrói músculo com menos risco de lesão. Os dois funcionam com a alimentação em ordem." },
+      { question: "O que é a air bike no CrossFit?", answer: "É a bicicleta com ventilador e braços que se movem junto com os pedais (a Assault Bike é uma das marcas). Quanto mais força você faz, mais o ventilador resiste. No WOD ela aparece com meta em calorias do monitor, como \"15 calorias na bike\", e esse número é estimativa do aparelho, não o seu gasto exato." },
       { question: "Quantas vezes por semana fazer CrossFit para emagrecer?", answer: "Três aulas por semana já mudam o gasto da semana sem sobrecarregar ombro, lombar e joelho. Só do box, três aulas típicas somam no máximo cerca de 0,4 kg de gordura por mês para quem pesa 70 kg — o resto vem da alimentação." },
     ],
     content: `<p>Você sai do box encharcado, com as pernas tremendo, e o relógio diz que queimou mil calorias. A pergunta que fica é se isso é verdade — e se o CrossFit emagrece mesmo.</p>
@@ -119310,6 +119312,15 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <li><strong>Constância:</strong> horário marcado, turma e treino pronto fazem muita gente voltar — e constância vale mais que qualquer número de uma aula.</li>
 </ul>
 
+<h2>Air bike no CrossFit</h2>
+<p>A <strong>air bike</strong> é a bicicleta com ventilador na frente e braços que se movem junto com os pedais. Não tem carga para regular: quanto mais força você faz, mais o ventilador resiste. Por isso ela aparece tanto nos WODs: serve para o iniciante e para o atleta, cada um no seu ritmo.</p>
+<ul>
+<li><strong>Como aparece no treino:</strong> com meta em calorias do monitor ("15 calorias na bike") ou em tempo, como nos intervalos de 20 segundos forte e 10 de pausa.</li>
+<li><strong>O número do monitor:</strong> é estimativa do aparelho, e serve para comparar você com você mesmo na mesma bike. Não conte como o seu gasto exato.</li>
+<li><strong>Cuidado:</strong> começar forte demais faz o resto do WOD desandar. Ritmo que dá para manter vale mais.</li>
+</ul>
+<p>Para calorias por intensidade, diferença para a bicicleta comum e como usar fora do CrossFit, veja <a href="/blog/air-bike">air bike: o que é, como usar e quantas calorias queima</a>.</p>
+
 <h2>Cuidados para emagrecer sem se machucar</h2>
 <ul>
 <li><strong>Escale as cargas:</strong> o WOD escrito na lousa é para o atleta do box. Fazer com menos peso e boa técnica gasta quase o mesmo e protege ombro e lombar;</li>
@@ -119326,6 +119337,7 @@ Se o objetivo é quadríceps, pode. O que o hack não entrega é o trabalho de e
 <ul>
 <li><a href="/blog/crossfit-vs-musculacao">CrossFit ou musculação: qual é melhor para o seu objetivo</a></li>
 <li><a href="/blog/hiit-funciona">HIIT funciona? O que a ciência diz</a></li>
+<li><a href="/blog/air-bike">Air bike: o que é, como usar e quantas calorias queima</a></li>
 <li><a href="/blog/quantas-calorias-cortar-para-emagrecer">Quantas calorias cortar para emagrecer</a></li>
 <li><a href="/blog/como-manter-massa-muscular-emagrecendo">Como manter massa muscular emagrecendo</a></li>
 </ul>
