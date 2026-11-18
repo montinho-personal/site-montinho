@@ -1742,3 +1742,44 @@ GSC pelo Supermetrics, 21/10 a 17/11 (28 dias), contra 90 dias até 20/10.
 | `academia-de-condominio-quais-aparelhos-comprar` (nova) | ~44 impr./90 dias, pos. 34 a 71 (página antiga) | 169 impr., 0 cliques, pos. 26,5; buscas de condomínio divididas com `academia-em-condominio-como-aproveitar` | Subiu, mas as duas páginas disputam as mesmas buscas |
 
 Recomendação enviada ao Montinho: manter as três. Gaviões: o clique não subiu, mas o título antigo também tinha zero e a página está na posição 12; voltar não resolve. Condomínio: separar as duas páginas por intenção.
+
+
+## 2026-11-18 — Ferramenta nova: calculadora de preço de personal trainer (Alphaville e região)
+
+Página: `/ferramentas/calculadora-preco-personal-trainer-alphaville`. Motor: `lib/preco-personal.ts`. Teste: `scripts/preco-personal-test.ts`.
+Evidência: `docs/seo/serp/calculadora-preco-personal-alphaville-2026-11-18.json` (SerpApi, celular, Barueri). 3 buscas + 3 autocompletar curtos + 2 visões de IA em duas etapas (uma devolveu erro) = 11 da cota.
+
+**Formato (decidido pela pesquisa).** "calculadora preço personal trainer" não tem nenhuma calculadora de preço para o aluno na primeira página: só ferramenta para o profissional (calcularapido, Gymkee, PersonalGO), PDF do Scribd e Pinterest. Em "quanto custa personal trainer alphaville", a visão de IA faz ela mesma um "cálculo rápido de custo mensal" e termina perguntando frequência, local e objetivo, que são as entradas de uma calculadora. Logo: ferramenta, com tabela por frequência no texto.
+
+**Visão de IA.** Aparece nas buscas de preço em Alphaville. Abre com um parágrafo de faixa (aula avulsa R$ 100 a 250; pacote de 2 a 3 vezes R$ 500 a 1.500), depois lista por modalidade e a conta mensal. Cita `montinhopersonal.com.br` (o artigo `quanto-custa-personal-trainer-alphaville` e outra página), `personalporperto.com.br`, um site de personal da região e um diretório. O lead e o primeiro H2 da ferramenta respondem do mesmo jeito: faixa em negrito na primeira frase, com a origem declarada.
+
+**Concorrentes (fracos).** PedeGás (3 resultados de orçamento por cidade), Guis, Scribd, Pinterest e duas páginas que abrem como "Página Indisponível". O site aparece nessas buscas com páginas que não respondem preço (24 Wellness, NitroGym, Gênesis 1, Iguatemi, "Treinador Particular Alphaville"), e não com o artigo de preço. Há mapa com 3 perfis de personal: a busca também é local.
+
+**O que cada intenção mudou.**
+
+| Tipo | Busca | Entrou? | Onde / por quê |
+|---|---|---|---|
+| Autocompletar | quanto custa personal trainer por mês / mensal | ✅ | H2 da tabela por frequência e FAQ |
+| Autocompletar | quanto custa personal trainer particular | ✅ | "Aula avulsa ou pacote mensal?" |
+| Autocompletar | quanto custa um personal trainer em média | ✅ | FAQ "Existe um preço médio…?" (não existe pesquisa; a página não usa "média") |
+| Autocompletar | quanto custa personal trainer online | ✅ | H2 do online e formato "Online" na ferramenta |
+| Autocompletar | quanto custa personal trainer na smart fit | ❌ | outra academia, sem fonte oficial da regra; vira FAQ de `personal-online-smart-fit` se houver fonte |
+| Autocompletar | personal trainer alphaville sp / personal alphaville | ✅ | recorte Alphaville da ferramenta e título |
+| Autocompletar | personal trainer mulher alphaville | ❌ | já existe `personal-trainer-feminino-alphaville` |
+| Autocompletar | personal trainer ironberg alphaville | ❌ | guia `ironberg-alphaville`; atendimento lá não é confirmado |
+| Autocompletar | bruna trindade personal trainer alphaville; personal gym alphaville | ❌ | pessoa e marca |
+| PAA | Quanto custa treinar com personal? | ✅ | lead, primeiro H2 e FAQ |
+| PAA | Quanto custa um personal trainer 3 vezes por semana? | ✅ | tabela por frequência e FAQ |
+| PAA | Quanto tempo dura uma aula com personal trainer? | ✅ | FAQ e lista "o que perguntar" (sem número: a referência não distingue duração) |
+| PAA | Vale a pena pagar um personal trainer? | ❌ | pergunta de decisão, não de conta; vai para a pauta como artigo |
+| PAA | Qual é o melhor personal trainer online? | ❌ | ranking de pessoas |
+| PAA | Quanto ganha um personal trainer com consultoria online? | ❌ | intenção de quem quer ser personal |
+| Visão de IA | faixa por aula e por mês; conta de 3 vezes por semana; mensalidade da academia à parte | ✅ | lead, tabela, "o que muda no preço" |
+| Visão de IA | faixa por experiência do profissional | ❌ | a referência não distingue experiência; dito nos limites |
+| Outras pesquisas | (não vieram em nenhuma das 3 buscas) | — | — |
+
+**De onde vem cada faixa.** Todas são referência editorial do Personal por Perto (estimativa por perfil de cidade, sem amostra), consultada em 18/11/2026: Alphaville avulsa R$ 100 a 250, pacote de 2 a 3 vezes R$ 500 a 1.500, online R$ 220 a 550; Barueri R$ 90 a 220, R$ 450 a 1.300, R$ 200 a 500; Santana de Parnaíba R$ 90 a 220, R$ 450 a 1.300, R$ 190 a 500. Tamboré e centro de Barueri usam Barueri; Aldeia da Serra usa Santana de Parnaíba; a tela avisa. 1, 4 e 5 vezes por semana são extrapolação (pacote ÷ 11 × aulas do mês). O site não tem preços coletados em campo; taxa de condomínio ou de academia ficou fora por falta de fonte oficial.
+
+**Pendência aberta.** O artigo `quanto-custa-personal-trainer-alphaville` traz faixas diferentes (R$ 120 a mais de R$ 600 por sessão), sem fonte. Entrou só o link para a ferramenta; alinhar os números é revisão do artigo (fila de revisões).
+
+**Decisões.** URL sem barra final, como o resto do site. Sem `FECHAMENTO_COMPARACAO` (o texto fala de previsão do corpo, não de preço); a ponte para o WhatsApp vem depois do resultado. Título e descrição são de página nova: a linha de base do GSC é zero em 18/11.

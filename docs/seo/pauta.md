@@ -52,11 +52,13 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | 9a | Abdominal no TAF (teste físico de concurso) | 70 | autocompletar de "abdominal supra" (17/11) | Sem artigo; volume baixo. Só com o edital oficial de cada concurso como fonte (cada um tem regra própria). |
 | 9 | Fome depois do treino: por que acontece | 20 | PAA de "continua queimando calorias depois do treino" (16/11) | Sem artigo. Explicar sem prescrever alimentação (plano é do nutricionista). Volume baixo, mas aparece no PAA. |
 | ~~—~~ | ~~Efeito afterburn (EPOC)~~ | 18.100 ("epoc") | visão de IA do tabata (16/11) | Publicado em 16/11 como `efeito-afterburn-epoc`. |
+| P1 | Vale a pena pagar um personal trainer? | a consultar | PAA de "personal trainer alphaville preço" e de "calculadora preço personal trainer" (18/11) | Pergunta de decisão que aparece em 2 das 3 buscas de preço; o acervo tem preço e como escolher, mas não esta. Sem promessa de resultado: quando ajuda, quando não, o que conferir |
 
 ## 2. Viram seção ou FAQ de um artigo que já existe
 
 | Assunto | Onde entra | Veio de |
 |---|---|---|
+| Quanto custa personal trainer na Smart Fit (precisa de fonte oficial da regra para personal externo; sem fonte, não aplicar) | `personal-online-smart-fit` | autocompletar de "quanto custa personal trainer" (18/11) |
 | ~~Prancha lateral (27.100/mês)~~ | movida para "Artigos novos" (M3b) em 18/11: volume de artigo próprio, exercício com id no cadastro (`prancha-lateral`), mesmo caso do abdominal oblíquo | exercícios do cadastro sem artigo (17/11) |
 | ~~Tipos de abdominais (6.600/mês)~~ aplicado em 18/11 (H2 com os 4 grupos e FAQ) | `treino-de-abdomen-em-casa` | PAA de "abdominal oblíquo" ("Quais são os 21 tipos de exercícios abdominais?"), 17/11 |
 | ~~Supino em casa (210/mês), "supino sem máquina"~~ aplicado em 18/11 (H2 e FAQ) | `treino-de-peito-em-casa` | outras pesquisas de "supino na máquina" (17/11) |
@@ -100,6 +102,7 @@ que ficou de fora.
 | 15/11 | 8 de consultoria online e dúvidas de treino (`consultoria-online-ou-personal-presencial`, `avaliacao-fisica-consultoria-online`, `personal-online-smart-fit`, `treinar-sozinho-na-academia-da-resultado`, `como-saber-se-a-ficha-de-treino-e-boa`, `treino-abc-ou-upper-lower`, `musculacao-para-emagrecer-quantas-vezes-por-semana`, `como-saber-se-o-treino-esta-funcionando`) |
 | 16/11 | `academias-de-jiu-jitsu-em-osasco`, `-carapicuiba`, `-cotia`, `-santana-de-parnaiba` (busca na cidade de cada página) |
 | ~~05/11~~ | ~~`crucifixo-inverso`, `treino-tabata`~~ revisados em 16/11 |
+- `quanto-custa-personal-trainer-alphaville` (18/11): as faixas do artigo (R$ 120 a mais de R$ 600 por sessão) não têm fonte e não batem com a referência usada na calculadora de preço. Alinhar na revisão; a busca principal já foi feita em 18/11 (`docs/seo/serp/calculadora-preco-personal-alphaville-2026-11-18.json`).
 
 ## 5. Capas pendentes
 
