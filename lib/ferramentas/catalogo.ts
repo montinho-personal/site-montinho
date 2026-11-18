@@ -848,6 +848,18 @@ export const CATALOGO: FerramentaCatalogo[] = [
     tags: ["academia", "alphaville", "barueri", "tambore", "onde treinar", "melhor academia", "smart fit", "bodytech", "perto de mim", "estacionamento"],
   },
   {
+    id: "diaria-experimental",
+    href: "/ferramentas/academias-com-diaria-e-aula-experimental-alphaville",
+    nome: "Academias com Diária e Aula Experimental em Alphaville",
+    resultado: "Veja onde dá para treinar hoje ou testar antes de assinar, com preço e fonte.",
+    acao: "Ver as academias",
+    tempo: "2 filtros · na hora",
+    categoria: "alphaville",
+    icone: "pino",
+    tags: ["diaria", "day use", "aula avulsa", "drop in", "aula experimental", "treino experimental", "visita", "academia", "alphaville", "tambore", "barueri", "santana de parnaiba", "nitrogym", "ironberg", "testar academia", "treinar hoje"],
+    selo: "novo",
+  },
+  {
     id: "preco-personal",
     href: "/ferramentas/calculadora-preco-personal-trainer-alphaville",
     nome: "Calculadora de Preço de Personal em Alphaville",

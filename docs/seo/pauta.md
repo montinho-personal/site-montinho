@@ -53,11 +53,15 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | 9 | Fome depois do treino: por que acontece | 20 | PAA de "continua queimando calorias depois do treino" (16/11) | Sem artigo. Explicar sem prescrever alimentação (plano é do nutricionista). Volume baixo, mas aparece no PAA. |
 | ~~—~~ | ~~Efeito afterburn (EPOC)~~ | 18.100 ("epoc") | visão de IA do tabata (16/11) | Publicado em 16/11 como `efeito-afterburn-epoc`. |
 | P1 | Vale a pena pagar um personal trainer? | a consultar | PAA de "personal trainer alphaville preço" e de "calculadora preço personal trainer" (18/11) | Pergunta de decisão que aparece em 2 das 3 buscas de preço; o acervo tem preço e como escolher, mas não esta. Sem promessa de resultado: quando ajuda, quando não, o que conferir |
+| P2 | Aula experimental em academia é obrigatória? O que diz a lei | a consultar | PAA de "aula experimental academia alphaville" e autocompletar "aula experimental academia lei" (18/11) | Pergunta jurídica sem página no acervo. Só com fonte legal (lei ou Procon); sem fonte, não escrever |
+| P3 | Gympass (Wellhub) ou TotalPass: qual sai mais barato | a consultar | PAA de "day use academia barueri" (18/11) | Conferir antes se o acervo já cobre a comparação; preços só das tabelas oficiais |
 
 ## 2. Viram seção ou FAQ de um artigo que já existe
 
 | Assunto | Onde entra | Veio de |
 |---|---|---|
+| Qual é a academia mais cara de Alphaville? (só com mensalidades de fonte oficial) | `quanto-custa-academia-em-alphaville` | PAA de "academia diária alphaville" (18/11) |
+| Diária / day use da Gaviões e da Bluefit (só com fonte oficial da rede; sem fonte, não aplicar) | `academia-gavioes-alphaville`, `bluefit-alphaville` e a ferramenta de diária | autocompletar de "academia diária" e "day use academia" (18/11) |
 | Quanto custa personal trainer na Smart Fit (precisa de fonte oficial da regra para personal externo; sem fonte, não aplicar) | `personal-online-smart-fit` | autocompletar de "quanto custa personal trainer" (18/11) |
 | ~~Prancha lateral (27.100/mês)~~ | movida para "Artigos novos" (M3b) em 18/11: volume de artigo próprio, exercício com id no cadastro (`prancha-lateral`), mesmo caso do abdominal oblíquo | exercícios do cadastro sem artigo (17/11) |
 | ~~Tipos de abdominais (6.600/mês)~~ aplicado em 18/11 (H2 com os 4 grupos e FAQ) | `treino-de-abdomen-em-casa` | PAA de "abdominal oblíquo" ("Quais são os 21 tipos de exercícios abdominais?"), 17/11 |

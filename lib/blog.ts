@@ -82264,6 +82264,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
 
+<p>Quer treinar sem fechar plano, ou testar antes de assinar? Veja as <a href="/ferramentas/academias-com-diaria-e-aula-experimental-alphaville">academias com diária e aula experimental em Alphaville</a>, com preço, regra e fonte de cada uma.</p>
+
 <h2>Leia também</h2>
 <ul>
 <li><a href="/blog/10-melhores-academias-de-alphaville">Academias em Alphaville: o guia completo</a></li>
@@ -82486,6 +82488,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>No vídeo abaixo, do meu canal, falo sobre a decisão que dá início a toda transformação — o primeiro passo é escolher começar.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/yndKE1GrnUQ?rel=0" title="Toda transformação começa com uma decisão — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
+<p>Quer treinar sem fechar plano, ou testar antes de assinar? Veja as <a href="/ferramentas/academias-com-diaria-e-aula-experimental-alphaville">academias com diária e aula experimental em Alphaville</a>, com preço, regra e fonte de cada uma.</p>
 
 <h2>Leia também</h2>
 <ul>
@@ -82916,6 +82920,8 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 
 <p>No vídeo abaixo, do meu canal, falo sobre a verdade que faz toda a diferença nos resultados: constância vale mais que motivação.</p>
 <div style="max-width:360px;width:100%;margin:0 auto 2rem"><div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:12px"><iframe src="https://www.youtube.com/embed/DiH1OzIR6Yk?rel=0" title="Proteja o seu objetivo: constância vale mais que motivação — Montinho Personal Trainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px"></iframe></div></div>
+
+<p>Quer treinar sem fechar plano, ou testar antes de assinar? Veja as <a href="/ferramentas/academias-com-diaria-e-aula-experimental-alphaville">academias com diária e aula experimental em Alphaville</a>, com preço, regra e fonte de cada uma.</p>
 
 <h2>Leia também</h2>
 <ul>

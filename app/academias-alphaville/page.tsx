@@ -262,7 +262,7 @@ export default function AcademiasAlphavillePage() {
               esteira toda ocupada, aula coletiva tomando o espaço. Antes de
               assinar qualquer plano, faça a aula experimental exatamente no
               horário em que você pretende treinar. É o único jeito de saber como
-              vai ser a sua rotina de verdade. Aproveite a visita para confirmar
+              vai ser a sua rotina de verdade. Veja quais <Link href="/ferramentas/academias-com-diaria-e-aula-experimental-alphaville" className="underline underline-offset-4 hover:text-white">academias têm diária e aula experimental em Alphaville</Link>. Aproveite a visita para confirmar
               horário de funcionamento, valores e o que está incluído no plano —
               direto com a unidade.
             </p>
