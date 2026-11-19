@@ -352,6 +352,7 @@ ${NAO_SE_COMPARE("pão de queijo")}
       "Quantas calorias tem a maçã por unidade e fatia, fuji ou argentina, com casca, à noite, na dieta e comparada com banana, pera e manga.",
     category: "Nutrição",
     date: "2026-11-15",
+    updatedAt: "2026-11-19",
     readTime: "5 min",
     author: "Montinho",
     tags: ["maca", "frutas", "calorias", "fibra", "dieta"],
@@ -390,6 +391,16 @@ ${NAO_SE_COMPARE("pão de queijo")}
         question: "Maçã verde engorda menos?",
         answer:
           "A TACO não traz a maçã verde, então não há número oficial para comparar. Na prática, as variedades de maçã ficam próximas.",
+      },
+      {
+        question: "Maçã tem carboidrato ou proteína?",
+        answer:
+          "Quase só carboidrato. Pela TACO, 100 g de maçã fuji com casca têm 15,2 g de carboidrato, 0,3 g de proteína, praticamente nada de gordura e 1,3 g de fibra. Uma unidade média (150 g) dá cerca de 23 g de carboidrato. Para proteína, ela precisa de companhia: iogurte, queijo ou ovo.",
+      },
+      {
+        question: "Qual a melhor fruta para quem quer emagrecer?",
+        answer:
+          "A que você come no lugar de um lanche mais calórico e consegue manter. A maçã é uma boa candidata por ter poucas calorias e dar trabalho para comer, mas nenhuma fruta emagrece sozinha: o que decide é o total do dia. A comparação entre as frutas está em melhores frutas para emagrecer.",
       },
       {
         question: "Quantas maçãs posso comer por dia?",
@@ -436,6 +447,20 @@ ${NAO_SE_COMPARE("pão de queijo")}
 </tbody>
 </table>
 <p>Veja também <a href="/blog/banana-engorda">banana engorda?</a>, <a href="/blog/manga-engorda">manga engorda?</a> e <a href="/blog/melancia-engorda">melancia engorda?</a>.</p>
+
+<h2>Maçã tem carboidrato ou proteína?</h2>
+<p>Quase só carboidrato, e quase nada de proteína ou gordura. Pela TACO, a cada 100 g:</p>
+<table>
+<thead><tr><th>Maçã com casca (100 g)</th><th>Calorias</th><th>Carboidrato</th><th>Proteína</th><th>Fibra</th></tr></thead>
+<tbody>
+<tr><td>Fuji</td><td>55,5 kcal</td><td>15,2 g</td><td>0,3 g</td><td>1,3 g</td></tr>
+<tr><td>Argentina</td><td>62,5 kcal</td><td>16,6 g</td><td>0,2 g</td><td>2,0 g</td></tr>
+</tbody>
+</table>
+<p>Uma maçã fuji média (150 g) dá cerca de 23 g de carboidrato. Por isso ela funciona bem como lanche ou antes do treino, mas não segura a fome sozinha por muito tempo. Junto com uma fonte de proteína, como iogurte natural, queijo ou ovo, o lanche fica mais completo. Veja <a href="/blog/alimentos-ricos-em-proteina">alimentos ricos em proteína</a>.</p>
+
+<h2>Qual a melhor fruta para quem quer emagrecer?</h2>
+<p>A que você come no lugar de um lanche mais calórico, e consegue manter na rotina. A maçã é uma boa candidata: tem poucas calorias por unidade e dá trabalho para comer, o que ajuda a não exagerar. Mas nenhuma fruta emagrece sozinha. A comparação entre as frutas, com calorias e fibra de cada uma, está em <a href="/blog/melhores-frutas-para-emagrecer">melhores frutas para emagrecer</a>.</p>
 
 <h2>Quantas maçãs comer por dia?</h2>
 <p>Para a maioria das pessoas, <strong>uma ou duas por dia</strong> cabem bem, junto com outras frutas. Para saber quantas calorias cabem no seu dia, use a <a href="/ferramentas/calculadora-deficit-calorico">Calculadora de Déficit Calórico</a>.</p>

@@ -101,8 +101,8 @@ que ficou de fora.
 | ~~05/11~~ | ~~`pao-com-ovo-engorda`~~ revisado em 16/11 |
 | ~~11/11~~ | ~~`pipoca-engorda`~~ revisado em 16/11 |
 | ~~11/11~~ | ~~`manga-engorda`, `melancia-engorda`~~ revisados em 17/11 |
-| 15/11 | ~~`feijao-engorda`, `pao-de-queijo-engorda`~~ revisados em 18/11; `maca-engorda` |
-| 15/11 | `rosca-alternada`, `remada-cavalinho`, `desenvolvimento-arnold` |
+| 15/11 | ~~`feijao-engorda`, `pao-de-queijo-engorda`~~ revisados em 18/11; ~~`maca-engorda`~~ revisado em 19/11 |
+| 15/11 | ~~`rosca-alternada`~~ revisado em 19/11; `remada-cavalinho`, `desenvolvimento-arnold` |
 | 15/11 | 8 de consultoria online e dúvidas de treino (`consultoria-online-ou-personal-presencial`, `avaliacao-fisica-consultoria-online`, `personal-online-smart-fit`, `treinar-sozinho-na-academia-da-resultado`, `como-saber-se-a-ficha-de-treino-e-boa`, `treino-abc-ou-upper-lower`, `musculacao-para-emagrecer-quantas-vezes-por-semana`, `como-saber-se-o-treino-esta-funcionando`) |
 | 16/11 | `academias-de-jiu-jitsu-em-osasco`, `-carapicuiba`, `-cotia`, `-santana-de-parnaiba` (busca na cidade de cada página) |
 | ~~05/11~~ | ~~`crucifixo-inverso`, `treino-tabata`~~ revisados em 16/11 |

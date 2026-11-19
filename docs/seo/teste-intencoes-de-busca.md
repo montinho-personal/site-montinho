@@ -1884,3 +1884,41 @@ Evidência: `docs/seo/serp/feijao-pao-de-queijo-2026-11-18.json` (SerpApi, celul
 - `exercicio-que-mais-queima-calorias` ("quantas calorias queimar por treino", PAA do EPOC, 16/11): H2 "Quantas calorias queimar por treino?" com a recomendação da OMS (150 a 300 min/semana de atividade moderada e musculação 2 vezes, fonte nova na lista) e tabela de 45 minutos para 70 kg calculada pela lib (musculação tradicional e circuito, caminhada, bicicleta, corrida); FAQ. Sem meta de calorias inventada.
 - `bicicleta-emagrece` ("emagrecer pedalando 30 minutos por dia" e "minutos de bike para perder barriga", PAA de "air bike", 16/11): H2 "Pedalar 30 minutos por dia emagrece?" com tabela leve/moderado/forte para 70 kg (Compêndio, pela `lib/bicicleta.ts`: 180, 250 e 320 kcal) e o teto de perto de 0,8 kg/mês no moderado todos os dias (conta líquida, 7.700 kcal/kg); H3 sobre barriga; 2 FAQs; seção "Fontes" nova (Compêndio e Hall 2011).
 - Pulados na ordem: sopa de macarrão (sem dado na base), 1 kg de músculo (precisa de PubMed), peso das estações do HYROX (precisa de fonte oficial), hérnia e jiu-jítsu (precisa de fonte médica). Os 3 itens novos de 18/11 (academia mais cara, diária da Gaviões/Bluefit, personal na Smart Fit) dependem de fonte oficial que não abre nesta sessão.
+
+
+## 2026-11-19 — Revisão diária: `maca-engorda` e `rosca-alternada`
+
+Evidência: `docs/seo/serp/maca-rosca-alternada-2026-11-19.json` (SerpApi, celular, São Paulo). 2 buscas + 2 autocompletar + 2 visões de IA em duas etapas = 6 da cota.
+
+**Formato.** Maçã: texto; concorrentes fracos (YouTube, Facebook, Quora, Webnode, WordPress, blog de loja). Rosca alternada: a página traz vídeos e apps de exercício (Aurora Fit, Gymaholic, Fitwill); o texto sozinho tem mais dificuldade, e o artigo já tem um vídeo do canal.
+
+**Visão de IA.** Maçã: "Não, a maçã não engorda", lista curta (calorias de uma unidade, pectina e saciedade, contexto da dieta); cita Tua Saúde e ge. Rosca alternada: definição, músculos, execução em 4 passos, benefícios e erros; cita Treino Mestre, TotalPass, Terra, Abril. Os dois artigos já abrem do mesmo jeito; nenhum cita o site.
+
+**maca-engorda — o que mudou** (`updatedAt` 19/11): H2 "Maçã tem carboidrato ou proteína?" (tabela TACO fuji e argentina) e H2 "Qual a melhor fruta para quem quer emagrecer?" (link para `melhores-frutas-para-emagrecer`); 2 FAQs.
+
+| Tipo | Busca | Entrou? | Onde / por quê |
+|---|---|---|---|
+| Autocompletar | engorda ou emagrece / sim ou não / mito ou verdade / muito / se comer muito / na dieta | ✅ | lead e FAQ existentes |
+| Autocompletar | maçã engorda à noite | ✅ | já tinha H2 |
+| Autocompletar | maçã engorda cachorro; trinca-ferro; na geladeira | ❌ | animais e conservação, fora do tema |
+| PAA | Por que a maçã emagrece? / É bom comer maçã à noite? | ✅ | já cobertos |
+| PAA | Qual a melhor fruta para quem quer emagrecer? | ✅ | H2 e FAQ novos, com link |
+| PAA | A maçã tem carboidratos ou proteínas? | ✅ | H2 e FAQ novos (TACO) |
+| Visão de IA | pectina | ❌ | sem fonte primária nesta sessão; o artigo fala de fibra pela TACO |
+
+**rosca-alternada — o que mudou** (`updatedAt` 19/11): H2 "Na polia ou na máquina" e FAQ "Dá para fazer rosca alternada na polia ou na máquina?", com link para o substituidor de exercícios.
+
+| Tipo | Busca | Entrou? | Onde / por quê |
+|---|---|---|---|
+| Autocompletar | com halteres / para que serve / sentado / banco inclinado / banco 45 / no banco | ✅ | já tinha H2 |
+| Autocompletar | com rotação / com giro / com supinação | ✅ | já tinha H2 |
+| Autocompletar | martelo / ou direta | ✅ | já tinha FAQ e H2 |
+| Autocompletar | na polia / máquina | ✅ | H2 e FAQ novos |
+| PAA / outras pesquisas | (não vieram) | — | — |
+| Visão de IA | execução, músculos, erros | ✅ | já cobertos |
+
+**Propostas de título (esperam aprovação; nada trocado).**
+- maçã — ATUAL: "Maçã Engorda? Calorias por Unidade, à Noite e na Dieta" / PROPOSTA: "Maçã Engorda ou Emagrece? Calorias, à Noite e na Dieta" / MOTIVO: "ou emagrece" é a primeira sugestão do autocompletar.
+- rosca alternada — ATUAL: "Rosca Alternada: Como Fazer com Halteres e Erros Comuns" / sem proposta: o título já tem os termos principais do autocompletar.
+
+**"Viram seção ou FAQ" (19/11): nenhum item aplicado.** Os itens restantes dependem de fonte que esta sessão não alcança: sopa de macarrão (sem dado na base), 1 kg de músculo por mês (estudo), peso das estações do HYROX (fonte oficial), hérnia e jiu-jítsu (fonte médica), academia mais cara, diária da Gaviões/Bluefit e personal na Smart Fit (sites das academias, bloqueados aqui).
