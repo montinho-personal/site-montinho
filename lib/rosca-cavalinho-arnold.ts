@@ -40,6 +40,7 @@ export const ROSCA_CAVALINHO_ARNOLD_POSTS: BlogPost[] = [
       "Para que serve a rosca alternada, quais músculos trabalha, como fazer em pé, sentado e no banco inclinado, com ou sem giro do punho, os erros mais comuns e quando ela vale mais que a rosca direta.",
     category: "Treino",
     date: "2026-11-15",
+    updatedAt: "2026-11-19",
     readTime: "7 min",
     author: "Montinho",
     tags: ["rosca alternada", "bíceps", "halteres", "braço", "exercícios"],
@@ -73,6 +74,11 @@ export const ROSCA_CAVALINHO_ARNOLD_POSTS: BlogPost[] = [
         question: "Quantas séries e repetições fazer na rosca alternada?",
         answer:
           "Para a maioria das pessoas, de 2 a 4 séries de 8 a 15 repetições com cada braço, parando a 1 ou 2 repetições da falha. Conte as repetições por braço, não a soma dos dois.",
+      },
+      {
+        question: "Dá para fazer rosca alternada na polia ou na máquina?",
+        answer:
+          "Dá. Na polia baixa, com uma alça em cada mão ou um braço de cada vez, o cabo puxa o tempo todo, inclusive no alto do movimento, onde o halter quase não pesa. Na máquina de rosca com braços independentes, o banco e o apoio seguram o corpo, o que ajuda quem rouba com o tronco. A execução é a mesma: cotovelo parado, subida firme e descida controlada.",
       },
       {
         question: "Rosca alternada é diferente da rosca martelo?",
@@ -122,6 +128,14 @@ export const ROSCA_CAVALINHO_ARNOLD_POSTS: BlogPost[] = [
 <li><strong>Sentado, com as costas apoiadas:</strong> o corpo para, e o bíceps faz o trabalho. É a melhor opção para aprender ou para quem balança demais em pé.</li>
 <li><strong>No banco inclinado:</strong> deitado com o encosto a cerca de 45 graus, os braços ficam atrás do corpo, e o bíceps começa o movimento mais alongado. A carga cai, e vale como variação.</li>
 </ul>
+
+<h2>Na polia ou na máquina</h2>
+<p>A rosca alternada não precisa ser só com halteres:</p>
+<ul>
+<li><strong>Na polia baixa:</strong> com uma alça em cada mão, ou um braço de cada vez, o cabo mantém o bíceps trabalhando também no alto do movimento, onde o halter quase não pesa. Fique de frente para a polia, a um passo dela, com os cotovelos ao lado do corpo.</li>
+<li><strong>Na máquina de rosca com braços independentes:</strong> o banco e o apoio dos braços seguram o corpo. É uma boa opção para quem balança o tronco no halter ou está aprendendo o movimento.</li>
+</ul>
+<p>Em qualquer versão, a regra é a mesma do halter: cotovelo parado, subida firme e descida controlada. Se a polia ou a máquina estiver ocupada, o <a href="/ferramentas/substituidor-de-exercicios">substituidor de exercícios</a> mostra outras opções para o bíceps.</p>
 
 <h2>Os erros mais comuns</h2>
 <ul>
