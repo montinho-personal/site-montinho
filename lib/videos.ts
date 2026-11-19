@@ -51,6 +51,34 @@ export interface VideoCanal {
 
 export const VIDEOS_CANAL: VideoCanal[] = [
   {
+    /* Tutorial da Troca Certa (link enviado pelo Montinho em 18/11/2026). Gravação da própria ferramenta no celular, com legendas; sem narração. Números da TACO, pela ferramenta. */
+    id: "-43ur6B_NZU",
+    slug: "como-trocar-um-alimento-por-outro",
+    titulo: "Como trocar um alimento por outro sem errar a conta",
+    metaTitle: "Como Trocar um Alimento por Outro: Troca Certa (Vídeo)",
+    descricao:
+      "Como usar a Troca Certa, a calculadora de substituição de alimentos: escreva o que sai do prato, diga a quantidade e escolha o que manter (carboidrato, proteína ou calorias). O exemplo troca 150 g de arroz branco cozido.",
+    chamada: "Vai trocar o arroz pela batata-doce? Em 1 minuto, veja quanto colocar no lugar para a conta fechar.",
+    texto: [
+      "Trocar um alimento por outro parece simples, até a hora de decidir a quantidade. 150 g de arroz não viram 150 g de batata-doce: cada alimento tem uma quantidade diferente de carboidrato, proteína e calorias no mesmo peso.",
+      "Na Troca Certa são três passos. Primeiro, você escreve o que vai sair do prato. Depois, diz a quantidade, em gramas ou em medida caseira. Por fim, escolhe o que quer manter parecido: carboidrato, proteína ou calorias.",
+      "No exemplo do vídeo, 150 g de arroz branco cozido têm cerca de 42 g de carboidrato. Para manter esse carboidrato, a ferramenta mostra cerca de 230 g de batata-doce cozida ou 140 g de mandioca cozida. Com um toque, a comparação passa a ser pelas calorias. E a mesma conta serve para proteína, como no exemplo do peito de frango.",
+      "Os números vêm da TACO, a Tabela Brasileira de Composição de Alimentos. A ferramenta mostra a equivalência entre alimentos; a quantidade do seu plano é com o nutricionista.",
+    ],
+    artigos: [
+      { href: "/blog/arroz-engorda", nome: "Arroz engorda?" },
+      { href: "/blog/batata-doce-emagrece", nome: "Batata-doce emagrece?" },
+      { href: "/blog/alimentos-ricos-em-proteina", nome: "Alimentos ricos em proteína" },
+    ],
+    ferramenta: { href: "/ferramentas/substituicao-de-alimentos", nome: "Troca Certa: Substituição de Alimentos" },
+    publicadoEm: "2026-11-18",
+    capa: {
+      vertical: "/videos/como-trocar-um-alimento-por-outro/capa-vertical.jpg",
+      horizontal: "/videos/como-trocar-um-alimento-por-outro/capa-horizontal.jpg",
+      cartao: "/videos/como-trocar-um-alimento-por-outro/capa-cartao.jpg",
+    },
+  },
+  {
     /* Short do HYROX (link enviado pelo Montinho em 18/11/2026). Sem o Montinho em cena; narração de locutor e imagens ilustrativas geradas por IA. Fatos só os do site: 8 × 1 km, 8 estações na ordem oficial, corrida como mais da metade do tempo. */
     id: "A-sB4wESQBY",
     slug: "hyrox-em-1-minuto",

@@ -5,6 +5,8 @@ import { aplicativoSchema } from "@/lib/ferramentas/schema";
 import FAQ, { type ItemFAQ } from "@/components/ui/FAQ";
 import Compartilhar from "@/components/share/Compartilhar";
 import TrocaCerta from "@/components/alimentos/TrocaCerta";
+import YoutubeShortEmbed from "@/components/ui/YoutubeShortEmbed";
+import VideoMedido from "@/components/blog/VideoMedido";
 import BotaoImprimirLista from "@/components/alimentos/BotaoImprimirLista";
 import { alimentosIndexaveis } from "@/lib/alimentos/base";
 import { FONTES } from "@/lib/alimentos/fontes";
@@ -259,6 +261,9 @@ export default function SubstituicaoDeAlimentosPage() {
           <p className="text-gray-300 text-lg leading-relaxed">
             Você diz o que vai sair do prato. A calculadora diz quanto colocar no lugar, mantendo carboidratos, proteína ou calorias.
           </p>
+          <a href="#como-usar" className="inline-flex items-center gap-2 mt-4 min-h-[44px] text-sm text-[#BA9E50] underline underline-offset-4 hover:text-white print:hidden">
+            <span aria-hidden="true">▶</span> Ver como usar (vídeo de 55 s)
+          </a>
         </div>
       </section>
 
@@ -345,6 +350,18 @@ export default function SubstituicaoDeAlimentosPage() {
             <h2 className="text-2xl font-bold text-white mb-6" style={h}>Perguntas frequentes</h2>
             <FAQ itens={faq} placement="ferramenta-substituicao-alimentos" />
           </div>
+        </div>
+      </section>
+
+      {/* Tutorial do próprio Montinho: no fim da página; o atalho no topo leva até aqui. */}
+      <section id="como-usar" className="py-14 border-t border-white/10 bg-black scroll-mt-24 print:hidden">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-white mb-2" style={h}>Como usar, em vídeo</h2>
+          <p className="text-gray-300 mb-6">O que sai do prato, a quantidade e o que manter parecido: o vídeo mostra os três passos com o exemplo do arroz. <Link href="/videos/como-trocar-um-alimento-por-outro" className="underline underline-offset-4 hover:text-white">Ver a página do vídeo</Link>.</p>
+          <div data-video-medido>
+            <YoutubeShortEmbed videoId="-43ur6B_NZU" title="Como usar a Troca Certa, a calculadora de substituição de alimentos — Montinho Personal Trainer" />
+          </div>
+          <VideoMedido slug="substituicao-de-alimentos" seletor="[data-video-medido]" />
         </div>
       </section>
     </>
