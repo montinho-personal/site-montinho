@@ -79,6 +79,12 @@ export const ARTIGOS_COM_TESTE_MOBILIDADE: Record<string, ConviteArtigo> = {
       "Levar o braço acima da cabeça sem compensar com a lombar exige uma amplitude que nem todo mundo tem. O teste mede a sua. Ele não investiga dor — para isso o caminho é avaliação individual —, mas mostra o que dá para trabalhar.",
     rotulo: "Testar minha amplitude de ombro",
   },
+  /* Jogar videogame muito tempo faz mal (20/11/2026): quem passa horas na mesma posição quer saber o que travou. */
+  "jogar-videogame-muito-tempo-faz-mal": {
+    texto:
+      "Depois de horas na mesma posição, quadril, coluna e ombros costumam ser os primeiros a reclamar. O teste mede cinco regiões em cinco minutos e mostra quais duas pedem atenção primeiro, com os exercícios para cada uma.",
+    rotulo: "Ver o que travou",
+  },
 };
 
 export const SLUGS_COM_TESTE_MOBILIDADE = Object.keys(ARTIGOS_COM_TESTE_MOBILIDADE);

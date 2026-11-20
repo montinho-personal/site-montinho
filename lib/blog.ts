@@ -136,6 +136,7 @@ import { METABOLICO_APARELHOS_POSTS } from "./metabolico-aparelhos";
 import { SUPINO_MAQUINA_ABDOMINAL_SUPRA_POSTS } from "./supino-maquina-abdominal-supra";
 import { ROSCA_INVERSA_OBLIQUO_POSTS } from "./rosca-inversa-obliquo";
 import { VIDEOGAME_CALORIAS_POSTS } from "./videogame-calorias";
+import { GTA_6_POSTS } from "./gta-6";
 import { DOR_NO_TREINO_POSTS } from "./dor-no-treino";
 import { CONDOMINIOS_ALDEIA_POSTS } from "./condominios-aldeia-da-serra";
 import { DOCES_FIT_POSTS } from "./doces-fit";
@@ -188,6 +189,7 @@ export const blogPosts = ([
   ...SUPINO_MAQUINA_ABDOMINAL_SUPRA_POSTS,
   ...ROSCA_INVERSA_OBLIQUO_POSTS,
   ...VIDEOGAME_CALORIAS_POSTS,
+  ...GTA_6_POSTS,
   ...DOR_NO_TREINO_POSTS,
   ...CONDOMINIOS_ALDEIA_POSTS,
   ...DOCES_FIT_POSTS,
