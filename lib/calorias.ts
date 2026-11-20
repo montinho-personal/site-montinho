@@ -442,4 +442,6 @@ export const ARTIGOS_COM_LINK_DEFICIT: string[] = [
   "macarrao-engorda",
   /* Jogar videogame gasta calorias? (20/11/2026): a tabela dá o gasto do jogo; a conta que sobra é o dia inteiro. */
   "jogar-videogame-gasta-calorias",
+  /* GTA 6 tem academia (20/11/2026): o personagem tem a barra de calorias na tela; o leitor sai querendo a dele. */
+  "gta-6-tem-academia",
 ];

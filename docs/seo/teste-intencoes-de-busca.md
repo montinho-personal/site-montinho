@@ -1948,3 +1948,28 @@ Pedido do Montinho (20/11), um dia depois do lançamento do GTA 6. Evidência: `
 **Números.** Compêndio 2024 (categorias Video Games e Inactivity, consultado em pacompendium.com em 20/11): 07020 sentado vendo TV 1,0; 22040 videogame sentado 1,3; 22120 1,5; 22200 3,0; 22240 4,0; 22320 7,5. Gasto pela equação da ACSM, calculado no código (`lib/videogame-calorias.ts`); caminhada e musculação vêm das libs das calculadoras.
 
 **Ferramenta:** cartão de link da Calculadora de Déficit. **Capa:** pendente (entrou em "Capas pendentes"). **Título e descrição:** de página nova; linha de base do GSC zero em 20/11.
+
+
+## 2026-11-20 — Artigos novos: `gta-6-tem-academia` e `jogar-videogame-muito-tempo-faz-mal` (G2 e G3)
+
+Pedido do Montinho (20/11): "criar também os outros artigos de GTA 6". Evidência: `docs/seo/serp/gta-6-academia-e-videogame-2026-11-20.json`.
+
+**G2, "gta 6 vai ter academia"** (busca do dia feita pela sessão do Personal por Perto na mesma conta do SerpApi; não repetida, 0 da cota).
+- PAA: ✅ "Tem academia no GTA?" (FAQ, com a volta do sistema do San Andreas); ❌ "Vai ter jogo físico do GTA 6?", "Quando vai ser o GTA 6?", "O GTA 6 se passa em Vice City?" (sobre o jogo, não sobre treino).
+- Outras pesquisas: ❌ "Anitta gta 6", "Bistecone gta 6" (pessoas).
+- Autocompletar (sondagem de 19 e 20/11): ✅ "gta 6 vai ter academia", "lucia gta 6 academia" (FAQ); ❌ achievements, trailer, músicas.
+- Visão de IA: diz que tem academia e que treino, comida e corrida mudam o corpo, com leve RPG; cita Instagram, YouTube, Flow Games e Terra. ✅ treino, comida e sono mudando o corpo (com dois veículos: LADbible e IBTimes UK); ❌ "atributos de RPG", vestiário e calistenia (sem dois veículos verificáveis).
+- Quem ranqueia: post de academia no Instagram, YouTube, Estadão/TecMundo, um mapa de fã, G1 e DCM. Nenhuma página que compare com treino de verdade: é o ângulo da página.
+- Fontes do jogo: os sites dos veículos não abriram neste ambiente; a conferência foi pelos títulos e resumos indexados. Nome de quem falou pela Rockstar ficou de fora por ter um veículo só.
+
+**G3, "jogar videogame muito tempo faz mal"** (busca nova: página + autocompletar + visão de IA em 2 etapas = 3 da cota).
+- Autocompletar: ✅ "jogar videogame muito tempo faz mal", "jogar muito videogame faz mal" (título e lead).
+- PAA: ✅ "Quais são 3 pontos negativos dos jogos eletrônicos?" (FAQ); ❌ "É verdade que jogar videogame faz bem para a saúde?" (benefício cognitivo sem fonte que eu pudesse abrir; fora de treino), "Quem tem TDAH consegue jogar videogame?" (saúde mental, outro profissional), "Quais jogos distraem a mente?" (nada a ver).
+- Outras pesquisas: nenhuma.
+- Visão de IA: diz que faz mal quando substitui sono, atividade física e obrigações; lista postura, dor nas costas e punho, sedentarismo, sono e saúde mental. Cita Notibras, Prefeitura de São Paulo, SPSP, Terra, NiT, Canaltech. ✅ corpo parado, postura, punho, sono e quando vira problema (com OMS, Dunstan 2012, Henson 2020, Ekelund 2016); ❌ audição e saúde mental em detalhe (fora do tema de treino).
+- Quem ranqueia: Personare, Notibras, NiT (Portugal), SPSP, Facebook, podcast. Concorrência fraca e sem a parte prática (pausa entre partidas), que virou seção.
+- Canibalização: `quem-trabalha-sentado` e `postura-trabalho-sentado-exercicios` são do trabalho; esta é a busca de quem joga, e linka as duas.
+
+**Ferramenta:** G2 no link da Calculadora de Déficit; G3 no Teste de Mobilidade.
+**Capas:** padrão vetorial do site, sem crédito do Kairogen.
+**Ficou de fora e vira pauta:** nada que valha artigo. "treino para gamer" (autocompletar da outra sessão) é intenção de treino de mira, não de academia: não cabe.
