@@ -440,4 +440,6 @@ export const ARTIGOS_COM_LINK_DEFICIT: string[] = [
      treino pesa no emagrecimento, e a conta que decide é o déficit do dia. */
   "efeito-afterburn-epoc",
   "macarrao-engorda",
+  /* Jogar videogame gasta calorias? (20/11/2026): a tabela dá o gasto do jogo; a conta que sobra é o dia inteiro. */
+  "jogar-videogame-gasta-calorias",
 ];

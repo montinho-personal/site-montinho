@@ -55,6 +55,9 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | P1 | Vale a pena pagar um personal trainer? | a consultar | PAA de "personal trainer alphaville preço" e de "calculadora preço personal trainer" (18/11) | Pergunta de decisão que aparece em 2 das 3 buscas de preço; o acervo tem preço e como escolher, mas não esta. Sem promessa de resultado: quando ajuda, quando não, o que conferir |
 | P2 | Aula experimental em academia é obrigatória? O que diz a lei | a consultar | PAA de "aula experimental academia alphaville" e autocompletar "aula experimental academia lei" (18/11) | Pergunta jurídica sem página no acervo. Só com fonte legal (lei ou Procon); sem fonte, não escrever |
 | P3 | Gympass (Wellhub) ou TotalPass: qual sai mais barato | a consultar | PAA de "day use academia barueri" (18/11) | Conferir antes se o acervo já cobre a comparação; preços só das tabelas oficiais |
+| ~~G1~~ | ~~Jogar videogame gasta calorias? Quanto queima 1 hora (gancho GTA 6)~~ publicado em 20/11 como `jogar-videogame-gasta-calorias` | a consultar | pedido do Montinho (20/11), lançamento do GTA 6 em 19/11 | — |
+| G2 | A academia do GTA 6 e a vida real: o treino para o físico do personagem | a consultar | autocompletar "gta 6 vai ter academia", "lucia gta 6 academia" (20/11) | Gancho do lançamento. Do jogo, só o que tiver duas fontes; sem promessa de físico; sem imagem do jogo |
+| G3 | Maratona de GTA sem travar as costas: pausas e alongamento para quem joga horas | a consultar | pedido do Montinho (20/11) | Tempo sentado só com fonte oficial (OMS); linkar `como-sair-do-sedentarismo` e `jogar-videogame-gasta-calorias` |
 
 ## 2. Viram seção ou FAQ de um artigo que já existe
 
@@ -123,3 +126,4 @@ Quando houver crédito, faça a capa e risque a linha.
 | `treino-metabolico` | 16/11/2026 | pessoa em circuito com kettlebell, cronômetro ao fundo |
 | `aparelhos-de-academia-nomes` | 16/11/2026 | fileira de máquinas (leg press, puxada, extensora) vista de lado |
 | `macarrao-engorda` | 16/11/2026 | prato de macarrão ao sugo com garfo, e um pacote de massa seca ao lado |
+- `jogar-videogame-gasta-calorias` (20/11)

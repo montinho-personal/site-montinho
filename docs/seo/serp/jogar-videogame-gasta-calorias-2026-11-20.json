@@ -1,0 +1,130 @@
+{
+ "data": "2026-11-20",
+ "aparelho": "mobile",
+ "local": "Sao Paulo,State of Sao Paulo,Brazil",
+ "google": "google.com.br, pt-BR",
+ "buscas": [
+  {
+   "busca": "jogar videogame gasta calorias",
+   "autocompletar": {
+    "jogar videogame gasta calorias": [
+     "jogar videogame calorias"
+    ],
+    "videogame emagrece": [
+     "jogar videogame emagrece",
+     "video game para emagrecer",
+     "videogame emburrece",
+     "video emagrece",
+     "videogame em excesso faz mal"
+    ],
+    "quantas calorias gasta jogando": [
+     "quantas calorias gasta jogando futebol",
+     "quantas calorias gasta jogando volei",
+     "quantas calorias gasta jogando tenis",
+     "quantas calorias gasta jogando 1 hora de futebol",
+     "quantas calorias gasta jogando beach tennis",
+     "quantas calorias gasta jogando bola",
+     "quantas calorias gasta jogando ping pong",
+     "quantas calorias gasta jogando futsal",
+     "quantas calorias gasta jogando videogame",
+     "quantas calorias gasta jogando padel",
+     "quantas calorias gasta jogando futevôlei",
+     "quantas calorias gasta jogando frescobol",
+     "quantas calorias gasta jogando basquete",
+     "quantas calorias gasta jogando xadrez",
+     "quantas calorias gasta jogando boliche"
+    ]
+   },
+   "autocompletar_previo_mesmo_dia": {
+    "gta 6 academia": [
+     "lucia gta 6 academia",
+     "gta 6 vai ter academia",
+     "gta 6 achievements",
+     "gta 6 activities"
+    ],
+    "gta 6 musculação": [
+     "gta 6 academia",
+     "gta 6 mud club",
+     "gta 6 mud",
+     "gta 6 mudanças",
+     "gta 6 musicas"
+    ],
+    "jogar videogame engorda": [
+     "jogar videogame emagrece",
+     "jogar videogame perde calorias",
+     "jogar videogame gasta calorias",
+     "jogar videogame calorias"
+    ]
+   },
+   "pessoas_tambem_perguntam": [],
+   "outras_pesquisas": [],
+   "visao_de_ia": {
+    "texto": [
+     "Sim, jogar videogame queima calorias, mas o gasto varia muito entre jogos tradicionais no sofá e jogos de movimento (exergames).",
+     "Videogames tradicionais (sentado ou no sofá)",
+     "Mesmo parado, o corpo gasta energia e títulos competitivos ou de ação podem elevar temporariamente a frequência cardíaca. Um levantamento da plataforma Stakester com 50 jogadores de FIFA e Call of Duty: Warzone estimou médias de cerca de 210 kcal/hora para homens e 236 kcal/hora para mulheres (cerca de 420 a 474 kcal em duas horas). Ainda assim, esse gasto é baixo e não substitui exercícios físicos regulares nem garante emagrecimento sozinho.",
+     "Jogos de movimento (exergames)",
+     "Jogos de dança, esportes ou fitness (como Just Dance e Ring Fit Adventure) exigem esforço físico real, trabalham o sistema cardiorrespiratório e geram um gasto calórico bem maior do que jogar sentado.",
+     "Veja como jogos de movimento exigem esforço físico e aumentam o gasto calórico em comparação aos jogos tradicionais:",
+     "O que importa para emagrecer",
+     "Para perder peso, o fator decisivo é manter um déficit calórico ao longo do tempo. Passar muitas horas jogando pode facilitar o consumo de lanches calóricos e bebidas açucaradas ou reduzir o tempo de sono e de outras atividades físicas, o que compensa ou supera o pequeno gasto do jogo.",
+     "Você quer dicas para jogos ativos de movimento (como Just Dance ou Ring Fit) ou quer entender como conciliar a rotina de jogos com dieta e treino? Se quiser indicar o console ou PC que você usa, também posso sugerir opções específicas."
+    ],
+    "fontes": [
+     "Exame",
+     "Instagram",
+     "Portal iG",
+     "Reddit",
+     "YouTube"
+    ]
+   },
+   "organicos": [
+    {
+     "posicao": 1,
+     "titulo": "Quante calorie si bruciano giocando ai videogiochi?",
+     "endereco": "https://www.torrinomedica.it"
+    },
+    {
+     "posicao": 2,
+     "titulo": "Oyun oynamak yürümekten daha fazla kalori yakar mı, doğru mu bu? : r/NoStupidQuestions",
+     "endereco": "https://www.reddit.com"
+    },
+    {
+     "posicao": 3,
+     "titulo": "Quante calorie si bruciano giocando alla Playstation?",
+     "endereco": "https://it.quora.com"
+    },
+    {
+     "posicao": 4,
+     "titulo": "Исследование показывает, что геймеры сжигают столько же калорий за двухчасовую игровую сессию, сколько они сожгли бы, сделав 1000 приседаний. : r/gaming",
+     "endereco": "há 5 anos"
+    },
+    {
+     "posicao": 5,
+     "titulo": "Quante calorie bruciamo giocando ai videogiochi? Lo svela uno studio americano",
+     "endereco": "https://games.fanpage.it"
+    },
+    {
+     "posicao": 6,
+     "titulo": "Régime : 2 heures de jeux vidéo brûlent autant de calories que 1.000 abdos, selon une étude",
+     "endereco": "https://www.gamesider.com"
+    },
+    {
+     "posicao": 7,
+     "titulo": "Video Game \"Aktif\" Membakar Kalori",
+     "endereco": "https://www.tempo.co"
+    },
+    {
+     "posicao": 8,
+     "titulo": "Sapevi che i videogame fanno bruciare tante calorie quanto mille addominali in due ore di gioco? - Commenti memorabili",
+     "endereco": "https://www.commentimemorabili.it"
+    },
+    {
+     "posicao": 9,
+     "titulo": "Jugar videojuegos puede ayudarte a perder peso - Geek Room",
+     "endereco": "https://geekroom.al"
+    }
+   ]
+  }
+ ]
+}
