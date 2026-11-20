@@ -1924,3 +1924,27 @@ Evidência: `docs/seo/serp/maca-rosca-alternada-2026-11-19.json` (SerpApi, celul
 **"Viram seção ou FAQ" (19/11): nenhum item aplicado.** Os itens restantes dependem de fonte que esta sessão não alcança: sopa de macarrão (sem dado na base), 1 kg de músculo por mês (estudo), peso das estações do HYROX (fonte oficial), hérnia e jiu-jítsu (fonte médica), academia mais cara, diária da Gaviões/Bluefit e personal na Smart Fit (sites das academias, bloqueados aqui).
 
 **Título de `maca-engorda` trocado em 20/11, com aprovação do Montinho.** De "Maçã Engorda? Calorias por Unidade, à Noite e na Dieta" para "Maçã Engorda ou Emagrece? Calorias, à Noite e na Dieta" (H1 e title). Linha de base do GSC (Supermetrics, últimos 28 dias até 19/11; página publicada em 15/11): 487 impressões, 1 clique, CTR 0,2%, posição 9,3. Comparar em 18/12; se o clique não subir, voltar.
+
+
+## 2026-11-20 — Artigo novo: `jogar-videogame-gasta-calorias` (gancho GTA 6)
+
+Pedido do Montinho (20/11), um dia depois do lançamento do GTA 6. Evidência: `docs/seo/serp/jogar-videogame-gasta-calorias-2026-11-20.json` (SerpApi, celular, São Paulo): 1 busca + 7 autocompletar + visão de IA em duas etapas = 9 da cota.
+
+**Formato e concorrência.** A primeira página só tem resultados estrangeiros (italiano, francês, turco, russo, espanhol, indonésio) e Reddit/Quora: não existe página em português respondendo. Texto com tabela.
+
+**Visão de IA.** "Sim, queima, mas varia entre jogo no sofá e exergame"; cita um levantamento da Stakester (plataforma de apostas, 50 jogadores, ~210 kcal/h) e Exame, iG, Reddit. O artigo abre com a resposta direta e o número do Compêndio. ❌ O número da Stakester não entrou: não é estudo publicado.
+
+| Tipo | Busca | Entrou? | Onde / por quê |
+|---|---|---|---|
+| Autocompletar | jogar videogame calorias / gasta calorias / perde calorias | ✅ | lead, H2 e tabela por peso |
+| Autocompletar | jogar videogame emagrece / video game para emagrecer | ✅ | H2 e FAQ |
+| Autocompletar | jogar videogame engorda | ✅ | H2 e FAQ |
+| Autocompletar | quantas calorias gasta jogando videogame | ✅ | H2 "1 hora de videogame" |
+| Autocompletar | quantas calorias gasta jogando futebol / vôlei / tênis / beach tennis / padel / basquete / futevôlei / boliche / xadrez | ❌ | outros esportes; futebol já tem calculadora; os outros viram candidatos (ver pauta) |
+| Autocompletar | videogame emburrece; videogame em excesso faz mal | ❌ | cognição e saúde mental, fora do que o site faz |
+| Autocompletar | gta 6 vai ter academia; lucia gta 6 academia | ❌ aqui | pauta G2 |
+| Visão de IA | exergames (Just Dance, Ring Fit) | ✅ | linhas de jogo de movimento do Compêndio, sem citar marca |
+
+**Números.** Compêndio 2024 (categorias Video Games e Inactivity, consultado em pacompendium.com em 20/11): 07020 sentado vendo TV 1,0; 22040 videogame sentado 1,3; 22120 1,5; 22200 3,0; 22240 4,0; 22320 7,5. Gasto pela equação da ACSM, calculado no código (`lib/videogame-calorias.ts`); caminhada e musculação vêm das libs das calculadoras.
+
+**Ferramenta:** cartão de link da Calculadora de Déficit. **Capa:** pendente (entrou em "Capas pendentes"). **Título e descrição:** de página nova; linha de base do GSC zero em 20/11.
