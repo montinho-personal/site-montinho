@@ -177,7 +177,7 @@ ${NAO_SE_COMPARE("rosca alternada", "A sua régua é o seu próprio braço: o me
   {
     slug: "remada-cavalinho",
     title: "Remada Cavalinho: Como Fazer, Músculos e Erros Comuns",
-    metaTitle: "Remada Cavalinho: Como Fazer na Barra T e Erros Comuns",
+    metaTitle: "Remada Cavalinho: Como Fazer, Músculos e o Que Substitui",
     metaDescription:
       "Remada cavalinho é a remada na barra presa no chão ou na máquina com apoio no peito. Veja a pegada, a posição das costas e os erros que levam a dor lombar.",
     excerpt:
@@ -329,7 +329,7 @@ ${NAO_SE_COMPARE("remada cavalinho", "A sua régua é a sua postura: as mesmas c
   {
     slug: "desenvolvimento-arnold",
     title: "Desenvolvimento Arnold: Como Fazer, Músculos e Erros Comuns",
-    metaTitle: "Desenvolvimento Arnold: Como Fazer o Arnold Press",
+    metaTitle: "Desenvolvimento Arnold com Halteres: Como Fazer e Para Que Serve",
     metaDescription:
       "Desenvolvimento Arnold é o desenvolvimento com halteres que gira as palmas na subida. Veja como fazer o giro, o que muda no ombro e quem deve evitar.",
     excerpt:
