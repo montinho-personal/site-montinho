@@ -184,6 +184,7 @@ ${NAO_SE_COMPARE("rosca alternada", "A sua régua é o seu próprio braço: o me
       "Para que serve a remada cavalinho, quais músculos trabalha, como fazer na barra T livre, com o triângulo e na máquina com apoio no peito, os erros mais comuns e a diferença para a remada curvada.",
     category: "Treino",
     date: "2026-11-15",
+    updatedAt: "2026-11-20",
     readTime: "8 min",
     author: "Montinho",
     tags: ["remada cavalinho", "barra T", "costas", "remada", "exercícios"],
@@ -228,6 +229,21 @@ ${NAO_SE_COMPARE("rosca alternada", "A sua régua é o seu próprio braço: o me
         answer:
           "Para a maioria das pessoas, de 3 a 4 séries de 6 a 12 repetições, parando a 1 ou 2 repetições da falha. A carga é a que você puxa sem mudar a posição das costas.",
       },
+      {
+        question: "O que substitui a remada cavalinho?",
+        answer:
+          "Qualquer remada com o tronco inclinado ou apoiado: a remada curvada com barra ou com halteres, a remada unilateral com a mão no banco, a remada baixa na polia ou a remada com o peito apoiado num banco inclinado. O que importa é puxar levando os cotovelos para trás, com as costas na mesma posição.",
+      },
+      {
+        question: "Dá para fazer remada cavalinho com halteres ou em casa?",
+        answer:
+          "Com halteres, o mais parecido é a remada curvada com os dois halteres, palmas viradas uma para a outra, ou deitado de bruços num banco inclinado. Em casa, sem barra, funcionam a remada com halter ou galão de água e a remada com elástico preso numa porta. Não é a mesma máquina, mas é o mesmo movimento.",
+      },
+      {
+        question: "Remada cavalinho com pegada pronada ou neutra?",
+        answer:
+          "Neutra é a do triângulo, com as palmas viradas uma para a outra e os cotovelos perto do corpo. Pronada é com as palmas para baixo, numa barra ou alça larga, e abre os cotovelos. As duas trabalham as costas; a neutra costuma deixar usar mais carga.",
+      },
     ],
     content: `<img src="/blog-images/remada-cavalinho-capa.webp" alt="Capa: Remada cavalinho. Como fazer na barra T. Ilustração da barra presa no chão com o pegador em V" title="Remada Cavalinho — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 
@@ -261,8 +277,9 @@ ${NAO_SE_COMPARE("rosca alternada", "A sua régua é o seu próprio braço: o me
 <h2>Pegada aberta ou fechada?</h2>
 <ul>
 <li><strong>Fechada e neutra (triângulo):</strong> os cotovelos passam perto do corpo, e o latíssimo trabalha mais. É a forma mais comum.</li>
-<li><strong>Aberta (barra ou alças largas):</strong> os cotovelos se afastam, e o meio das costas e a parte de trás do ombro participam mais.</li>
+<li><strong>Aberta e pronada (barra ou alças largas, palmas para baixo):</strong> os cotovelos se afastam, e o meio das costas e a parte de trás do ombro participam mais.</li>
 </ul>
+<p>Na máquina articulada, as alças costumam ter as duas opções: a neutra (palmas uma para a outra) e a pronada (palmas para baixo).</p>
 <p>As duas funcionam. Dá para alternar ao longo das semanas.</p>
 
 <h2>Os erros mais comuns</h2>
@@ -277,6 +294,17 @@ ${NAO_SE_COMPARE("rosca alternada", "A sua régua é o seu próprio braço: o me
 <h2>Remada cavalinho ou remada curvada com barra?</h2>
 <p>As duas trabalham as costas com o tronco inclinado. Na cavalinho, a barra sobe por um caminho fixo e as mãos ficam mais juntas, o que costuma facilitar manter a postura e usar carga. A <a href="/blog/como-fazer-remada-curvada-tecnica">remada curvada com barra</a> exige mais equilíbrio e mais da lombar. Uma das duas num treino já basta.</p>
 <p>Se a lombar incomoda nas duas, as opções são a cavalinho com apoio no peito, a <a href="/blog/como-fazer-remada-baixa">remada baixa</a> sentada ou a <a href="/blog/como-fazer-remada-unilateral">remada unilateral</a> com a mão apoiada no banco.</p>
+
+<h2>O que substitui a remada cavalinho?</h2>
+<p>Barra T ocupada, academia sem o aparelho ou treino em casa: o que você precisa manter é o movimento, puxar com o tronco inclinado ou apoiado levando os cotovelos para trás.</p>
+<ul>
+<li><strong>Com halteres:</strong> remada curvada com os dois halteres e as palmas viradas uma para a outra, ou deitado de bruços num banco inclinado (a versão "com apoio no peito" sem máquina).</li>
+<li><strong>Na polia:</strong> a <a href="/blog/como-fazer-remada-baixa">remada baixa</a> sentada, com o triângulo, ou a remada no cross com o tronco inclinado.</li>
+<li><strong>Com barra:</strong> a <a href="/blog/como-fazer-remada-curvada-tecnica">remada curvada</a>, com mais exigência da lombar.</li>
+<li><strong>Um braço de cada vez:</strong> a <a href="/blog/como-fazer-remada-unilateral">remada unilateral</a> com a mão apoiada no banco.</li>
+<li><strong>Em casa:</strong> remada com halter, galão de água ou mochila com peso, ou com elástico preso numa porta.</li>
+</ul>
+<p>Para escolher na hora qual troca faz sentido no seu treino, use o <a href="/ferramentas/substituidor-de-exercicios">substituidor de exercícios</a>.</p>
 
 <h2>Quantas séries e repetições?</h2>
 <p>Para a maioria das pessoas, <strong>3 a 4 séries de 6 a 12 repetições</strong>, parando a 1 ou 2 repetições da falha. A carga certa é a que você puxa sem mudar a posição das costas. Quando completar o topo da faixa assim, acrescente um pouco de peso (<a href="/blog/progressao-de-carga">progressão de carga</a>).</p>
@@ -308,6 +336,7 @@ ${NAO_SE_COMPARE("remada cavalinho", "A sua régua é a sua postura: as mesmas c
       "Para que serve o desenvolvimento Arnold, quais músculos trabalha, como fazer o giro sentado ou em pé, os erros mais comuns, a diferença para o desenvolvimento com halteres e quem deve evitar.",
     category: "Treino",
     date: "2026-11-15",
+    updatedAt: "2026-11-20",
     readTime: "7 min",
     author: "Montinho",
     tags: ["desenvolvimento arnold", "arnold press", "ombro", "halteres", "exercícios"],
@@ -352,6 +381,21 @@ ${NAO_SE_COMPARE("remada cavalinho", "A sua régua é a sua postura: as mesmas c
         answer:
           "Para a maioria das pessoas, de 2 a 4 séries de 8 a 12 repetições, parando a 1 ou 2 repetições da falha. A carga costuma ser menor que no desenvolvimento comum, por causa do giro.",
       },
+      {
+        question: "Dá para fazer o desenvolvimento Arnold na máquina ou com barra?",
+        answer:
+          "Não do mesmo jeito. O que define o Arnold é o giro das palmas, e na máquina de desenvolvimento e na barra as mãos ficam presas numa posição. Nesses equipamentos você faz um desenvolvimento comum, que também treina o ombro. Para o giro, só com halteres.",
+      },
+      {
+        question: "Dá para fazer o desenvolvimento Arnold unilateral ou alternado?",
+        answer:
+          "Dá. Unilateral, com um halter de cada vez, ajuda a corrigir diferença de força entre os lados e exige mais do abdômen para o corpo não inclinar. Alternado, um braço sobe enquanto o outro desce. A carga e o giro são os mesmos.",
+      },
+      {
+        question: "Quais são os melhores exercícios para o ombro?",
+        answer:
+          "Um de empurrar para cima (desenvolvimento com halteres, Arnold ou máquina), a elevação lateral para a lateral do ombro e um exercício para a parte de trás, como o crucifixo inverso ou o face pull. Com esses três, as três partes do deltoide trabalham.",
+      },
     ],
     content: `<img src="/blog-images/desenvolvimento-arnold-capa.webp" alt="Capa: Desenvolvimento Arnold. Como fazer o giro. Ilustração de dois halteres com setas de rotação" title="Desenvolvimento Arnold — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
 
@@ -381,6 +425,13 @@ ${NAO_SE_COMPARE("remada cavalinho", "A sua régua é a sua postura: as mesmas c
 <li><strong>Em pé:</strong> o abdômen e os glúteos trabalham para segurar o corpo. É mais fácil arquear a lombar para empurrar; se isso acontecer, a carga está alta.</li>
 </ul>
 
+<h2>Na máquina, com barra ou unilateral?</h2>
+<ul>
+<li><strong>Máquina e barra:</strong> não dá para fazer o Arnold de verdade, porque as mãos ficam presas e não giram. Na máquina ou com barra, o exercício vira um desenvolvimento comum, que também treina o ombro.</li>
+<li><strong>Unilateral:</strong> um halter só, o outro braço na cintura ou segurando no banco. Ajuda a corrigir diferença entre os lados e pede mais do abdômen.</li>
+<li><strong>Alternado:</strong> um braço sobe enquanto o outro desce, sempre com o giro.</li>
+</ul>
+
 <h2>Os erros mais comuns</h2>
 <ul>
 <li><strong>Carga alta demais.</strong> O giro pede halteres mais leves que os do desenvolvimento comum. Comece leve e suba aos poucos.</li>
@@ -392,7 +443,7 @@ ${NAO_SE_COMPARE("remada cavalinho", "A sua régua é a sua postura: as mesmas c
 
 <h2>Arnold ou desenvolvimento com halteres?</h2>
 <p>Os dois trabalham a frente do ombro. O Arnold tem o giro, que aumenta o caminho do movimento e pede carga menor. O <a href="/blog/como-fazer-desenvolvimento-ombros">desenvolvimento com halteres comum</a> permite mais carga e é mais simples de aprender. Não é questão de um ser melhor: um dos dois num treino já basta, e alternar ao longo das semanas funciona.</p>
-<p>Para a lateral do ombro, que dá a aparência de ombro largo, o exercício principal continua sendo a <a href="/blog/como-fazer-elevacao-lateral">elevação lateral</a>.</p>
+<p>Para a lateral do ombro, que dá a aparência de ombro largo, o exercício principal continua sendo a <a href="/blog/como-fazer-elevacao-lateral">elevação lateral</a>. Para a parte de trás, o crucifixo inverso ou o face pull. Um exercício de empurrar, a elevação lateral e um para trás já cobrem as três partes do ombro.</p>
 
 <h2>Quem deve evitar?</h2>
 <p>Quem sente dor no ombro ao girar o braço, quem tem <a href="/blog/sindrome-do-impacto-no-ombro">síndrome do impacto</a> ou lesão no manguito rotador ainda não resolvida. O giro com os braços acima da cabeça é justamente a posição que mais incomoda nesses casos. O desenvolvimento comum, com os cotovelos um pouco à frente do corpo, costuma ser mais confortável. Veja também <a href="/blog/dor-no-ombro-ao-treinar">dor no ombro ao treinar</a>.</p>
