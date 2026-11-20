@@ -58,6 +58,13 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | ~~G1~~ | ~~Jogar videogame gasta calorias? Quanto queima 1 hora (gancho GTA 6)~~ publicado em 20/11 como `jogar-videogame-gasta-calorias` | a consultar | pedido do Montinho (20/11), lançamento do GTA 6 em 19/11 | — |
 | G2 | A academia do GTA 6 e a vida real: o treino para o físico do personagem | a consultar | autocompletar "gta 6 vai ter academia", "lucia gta 6 academia" (20/11) | Gancho do lançamento. Do jogo, só o que tiver duas fontes; sem promessa de físico; sem imagem do jogo |
 | G3 | Maratona de GTA sem travar as costas: pausas e alongamento para quem joga horas | a consultar | pedido do Montinho (20/11) | Tempo sentado só com fonte oficial (OMS); linkar `como-sair-do-sedentarismo` e `jogar-videogame-gasta-calorias` |
+| X1 | Cansaço depois do treino: quando é normal (e cansaço nas pernas) | a consultar | pauta do Personal por Perto (publicado lá em 17/11 como `cansaco-depois-do-treino`, PAA "É normal ficar muito cansado depois do treino?") | Aqui só existe `cansaco-e-falta-de-disposicao` (cansaço do dia a dia, outra intenção). Pesquisa própria no SerpApi; texto escrito do zero, sem copiar o de lá |
+| X2 | Quando trocar de personal trainer | a consultar | pauta do Personal por Perto (`guias/trocar-de-personal-trainer`, 20/11) | Sem página aqui. Busca de quem já contrata e está insatisfeito, e cai no WhatsApp |
+| X3 | Coach de academia ou personal trainer: a diferença | a consultar | pauta do Personal por Perto (`guias/coach-de-academia`, 20/11) | Sem página aqui. Mostrar o que o personal faz depois da ficha (posicionamento do site) |
+| X4 | Treinar duas vezes por dia vale a pena? | a consultar | pauta do Personal por Perto (`musculacao/treinar-duas-vezes-por-dia`, 20/11) | Nada no acervo com "duas vezes por dia" |
+| X5 | Academia lotada: como treinar no horário de pico | a consultar | pauta do Personal por Perto (`musculacao/academia-lotada-como-treinar`, 20/11) | Aqui só existe o guia local `academias-menos-lotadas-alphaville`; o "como treinar" liga nele |
+| X6 | Princípios do treinamento | a consultar | pauta do Personal por Perto (item 7 lá, PAA "Quais são os 7 princípios básicos do treinamento?") | Nada no acervo; liga em progressão de carga. Baixa prioridade nos dois sites |
+| X7 | Treinar no calor: cuidados para o verão | a consultar | pauta do Personal por Perto (`guias/treinar-no-calor-e-no-frio`, 20/11) | Aqui só há "projeto verão" de estética, nada sobre treinar no calor. Sazonal: Trends antes de pautar |
 
 ## 2. Viram seção ou FAQ de um artigo que já existe
 
@@ -66,6 +73,8 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | Qual é a academia mais cara de Alphaville? (só com mensalidades de fonte oficial) | `quanto-custa-academia-em-alphaville` | PAA de "academia diária alphaville" (18/11) |
 | Diária / day use da Gaviões e da Bluefit (só com fonte oficial da rede; sem fonte, não aplicar) | `academia-gavioes-alphaville`, `bluefit-alphaville` e a ferramenta de diária | autocompletar de "academia diária" e "day use academia" (18/11) |
 | Quanto custa personal trainer na Smart Fit (precisa de fonte oficial da regra para personal externo; sem fonte, não aplicar) | `personal-online-smart-fit` | autocompletar de "quanto custa personal trainer" (18/11) |
+| Por que o peso varia de um dia para o outro (2 kg a mais no fim do dia) | `a-balanca-mente` | pauta do Personal por Perto (artigo lá: `peso-varia-de-um-dia-para-o-outro`, 20/11) |
+| Primeiros sinais de que você está emagrecendo | `balanca-nao-muda-mas-o-corpo-muda` | pauta do Personal por Perto (artigo lá: `sinais-de-que-esta-emagrecendo`, 20/11) |
 | ~~Prancha lateral (27.100/mês)~~ | movida para "Artigos novos" (M3b) em 18/11: volume de artigo próprio, exercício com id no cadastro (`prancha-lateral`), mesmo caso do abdominal oblíquo | exercícios do cadastro sem artigo (17/11) |
 | ~~Tipos de abdominais (6.600/mês)~~ aplicado em 18/11 (H2 com os 4 grupos e FAQ) | `treino-de-abdomen-em-casa` | PAA de "abdominal oblíquo" ("Quais são os 21 tipos de exercícios abdominais?"), 17/11 |
 | ~~Supino em casa (210/mês), "supino sem máquina"~~ aplicado em 18/11 (H2 e FAQ) | `treino-de-peito-em-casa` | outras pesquisas de "supino na máquina" (17/11) |
