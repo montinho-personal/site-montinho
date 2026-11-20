@@ -113,7 +113,9 @@ export const VIDEOGAME_CALORIAS_POSTS: BlogPost[] = [
         answer: "O jogo em si não, porque o gasto é quase o mesmo de ficar parado. O que pesa é o que vem junto: horas seguidas sentado, refrigerante e lanche ao lado do controle e sono mais curto. Se a semana fecha acima do que você gasta, o peso sobe, com ou sem videogame.",
       },
     ],
-    content: `<p><strong>Jogar videogame gasta calorias?</strong> Gasta, mas quase nada além do que o corpo gastaria parado. Pelo Compêndio de Atividades Físicas, jogar sentado com controle vale <strong>${met1(VG_PARADO.met)} MET</strong>, contra ${met1(SENTADO_TV.met)} de ficar sentado vendo TV. Para uma pessoa de ${P} kg, uma hora de jogo gasta perto de <strong>${dez(porHora(VG_PARADO.met))} kcal</strong>, e só cerca de ${dez(extraPorHora(VG_PARADO.met))} a mais do que ficar parado.</p>
+    content: `<img src="/blog-images/jogar-videogame-gasta-calorias-capa.webp" alt="Capa: Videogame queima? Quanto gasta 1 hora jogando. Ilustração de um controle de videogame com uma chama" title="Jogar Videogame Gasta Calorias? Quanto Queima 1 Hora de Jogo — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p><strong>Jogar videogame gasta calorias?</strong> Gasta, mas quase nada além do que o corpo gastaria parado. Pelo Compêndio de Atividades Físicas, jogar sentado com controle vale <strong>${met1(VG_PARADO.met)} MET</strong>, contra ${met1(SENTADO_TV.met)} de ficar sentado vendo TV. Para uma pessoa de ${P} kg, uma hora de jogo gasta perto de <strong>${dez(porHora(VG_PARADO.met))} kcal</strong>, e só cerca de ${dez(extraPorHora(VG_PARADO.met))} a mais do que ficar parado.</p>
 <p>Com o lançamento do GTA 6, em 19 de novembro de 2026, muita gente vai passar a noite (ou o fim de semana) no sofá. Vale saber o que isso faz com o gasto do dia, e onde está a diferença de verdade: nos jogos de movimento.</p>
 
 <h2>Quantas calorias gasta 1 hora de videogame?</h2>

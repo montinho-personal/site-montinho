@@ -77,7 +77,9 @@ export const SUPINO_MAQUINA_ABDOMINAL_SUPRA_POSTS: BlogPost[] = [
           "Não. No Smith você deita num banco embaixo de uma barra presa em trilhos. No supino na máquina, chamado de chest press, você empurra alças, quase sempre sentado. Os dois têm o caminho guiado.",
       },
     ],
-    content: `<p>O <strong>supino na máquina</strong>, também chamado de <em>chest press</em>, é o supino com o caminho guiado: você senta, segura as alças e empurra. Ele treina o mesmo peito do supino com barra, com menos coisa para controlar ao mesmo tempo. Por isso é ótimo para quem está começando e muito útil para quem já treina e quer levar a série perto do limite com segurança.</p>
+    content: `<img src="/blog-images/supino-na-maquina-capa.webp" alt="Capa: Supino na máquina. Como fazer o chest press. Ilustração de uma máquina de supino com seta de empurrar" title="Supino na Máquina: Como Fazer, Para Que Serve e Como Ajustar — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p>O <strong>supino na máquina</strong>, também chamado de <em>chest press</em>, é o supino com o caminho guiado: você senta, segura as alças e empurra. Ele treina o mesmo peito do supino com barra, com menos coisa para controlar ao mesmo tempo. Por isso é ótimo para quem está começando e muito útil para quem já treina e quer levar a série perto do limite com segurança.</p>
 
 <h2>Para que serve o supino na máquina?</h2>
 <p>Para treinar o <strong>peito</strong> (peitoral maior), com ajuda do <strong>tríceps</strong> e da <strong>frente do ombro</strong>. A diferença para o supino com barra está no controle: a máquina segura a trajetória, então o corpo não precisa equilibrar o peso. Sobra mais atenção para empurrar.</p>
@@ -197,7 +199,9 @@ export const SUPINO_MAQUINA_ABDOMINAL_SUPRA_POSTS: BlogPost[] = [
           "Não sozinho. Ele fortalece o músculo, mas a gordura da barriga sai do corpo todo, com o déficit de calorias mantido por semanas. Fazer centenas de abdominais não queima a gordura daquele lugar.",
       },
     ],
-    content: `<p>O <strong>abdominal supra</strong> é o abdominal mais conhecido, o <em>crunch</em>: deitado, você enrola o tronco e descola só a parte de cima das costas do chão. É simples, mas quase todo mundo faz algum detalhe que tira o trabalho da barriga e joga para o pescoço ou para o quadril. Corrigir isso vale mais do que fazer mais repetições.</p>
+    content: `<img src="/blog-images/abdominal-supra-capa.webp" alt="Capa: Abdominal supra. Como fazer o crunch. Ilustração de um colchonete e do tronco subindo" title="Abdominal Supra: Como Fazer, O Que Trabalha e Diferença para o Infra — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p>O <strong>abdominal supra</strong> é o abdominal mais conhecido, o <em>crunch</em>: deitado, você enrola o tronco e descola só a parte de cima das costas do chão. É simples, mas quase todo mundo faz algum detalhe que tira o trabalho da barriga e joga para o pescoço ou para o quadril. Corrigir isso vale mais do que fazer mais repetições.</p>
 
 <h2>O que o abdominal supra trabalha?</h2>
 <p>O <strong>reto abdominal</strong>, o músculo da frente da barriga. Ele vai do osso do púbis até as costelas, e as faixas que formam os "gominhos" não dividem músculos diferentes: é um músculo só. O supra trabalha o reto inteiro, com um pouco mais de ênfase na parte de cima, porque é o tronco que se move em direção ao quadril.</p>

@@ -79,7 +79,9 @@ export const ROSCA_INVERSA_OBLIQUO_POSTS: BlogPost[] = [
           "De 2 a 3 séries de 12 a 20 repetições funcionam bem para a maioria. A carga costuma ser menor que a da rosca direta, porque o antebraço é mais fraco nessa posição.",
       },
     ],
-    content: `<p>A <strong>rosca inversa</strong> é a rosca feita com as palmas das mãos viradas para baixo. Parece só um detalhe da pegada, mas muda o músculo que mais trabalha: sai o bíceps do centro e entra o <strong>antebraço</strong>. É o exercício que ajuda a deixar o antebraço proporcional ao braço e a segurar melhor a barra nos exercícios de puxar.</p>
+    content: `<img src="/blog-images/rosca-inversa-capa.webp" alt="Capa: Rosca inversa. Como fazer a pegada pronada. Ilustração de duas barras em alturas diferentes com uma seta de subida" title="Rosca Inversa: Para Que Serve, Como Fazer e Qual Músculo Trabalha — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p>A <strong>rosca inversa</strong> é a rosca feita com as palmas das mãos viradas para baixo. Parece só um detalhe da pegada, mas muda o músculo que mais trabalha: sai o bíceps do centro e entra o <strong>antebraço</strong>. É o exercício que ajuda a deixar o antebraço proporcional ao braço e a segurar melhor a barra nos exercícios de puxar.</p>
 
 <h2>Para que serve a rosca inversa?</h2>
 <ul>
@@ -187,7 +189,9 @@ export const ROSCA_INVERSA_OBLIQUO_POSTS: BlogPost[] = [
           "Os que você faz bem e consegue progredir: um para enrolar o tronco (abdominal supra ou na polia), um para elevar as pernas (infra) e um para girar ou resistir ao giro (oblíquo ou prancha lateral). Com os três, o abdômen inteiro trabalha.",
       },
     ],
-    content: `<p>O <strong>abdominal oblíquo</strong> é o abdominal que trabalha a lateral da barriga. Os oblíquos giram o tronco e inclinam para o lado, mas a função mais importante deles no dia a dia é <strong>segurar o tronco firme</strong> quando alguma coisa tenta girá-lo. Um treino de abdômen que só tem abdominal supra deixa essa parte de fora.</p>
+    content: `<img src="/blog-images/abdominal-obliquo-capa.webp" alt="Capa: Abdominal oblíquo. Como fazer e as variações. Ilustração de um colchonete com setas de giro" title="Abdominal Oblíquo: Como Fazer, Para Que Serve e os Melhores Exercícios — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p>O <strong>abdominal oblíquo</strong> é o abdominal que trabalha a lateral da barriga. Os oblíquos giram o tronco e inclinam para o lado, mas a função mais importante deles no dia a dia é <strong>segurar o tronco firme</strong> quando alguma coisa tenta girá-lo. Um treino de abdômen que só tem abdominal supra deixa essa parte de fora.</p>
 
 <h2>Para que serve o oblíquo?</h2>
 <p>São dois músculos de cada lado: o <strong>oblíquo externo</strong>, mais por fora, e o <strong>oblíquo interno</strong>, por baixo dele. Juntos, eles:</p>
