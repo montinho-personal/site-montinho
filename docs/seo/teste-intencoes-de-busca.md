@@ -1998,3 +1998,11 @@ Evidência: `docs/seo/serp/remada-cavalinho-desenvolvimento-arnold-2026-11-20.js
 - Primeiros sinais de que está emagrecendo: H2 e FAQ no mesmo artigo.
 
 **Ficou de fora:** nada que valha artigo. Não cabe: horas de treino e medida de braço do Arnold (pessoa, sem fonte), "gif".
+
+
+## 2026-11-20 — Títulos aprovados pelo Montinho ("pode seguir"): `remada-cavalinho` e `desenvolvimento-arnold`
+
+- `remada-cavalinho`: metaTitle "Remada Cavalinho: Como Fazer na Barra T e Erros Comuns" → "Remada Cavalinho: Como Fazer, Músculos e o Que Substitui".
+- `desenvolvimento-arnold`: metaTitle "Desenvolvimento Arnold: Como Fazer o Arnold Press" → "Desenvolvimento Arnold com Halteres: Como Fazer e Para Que Serve".
+- Linha de base do Search Console (Supermetrics, últimos 28 dias até 20/11): remada-cavalinho 25 impr., 0 clique, pos. 7,4; desenvolvimento-arnold 40 impr., 0 clique, pos. 8,7. Comparar em 18/12; se o clique não subir, voltar.
+- updatedAt não mudou (troca de título não é mudança de conteúdo).
