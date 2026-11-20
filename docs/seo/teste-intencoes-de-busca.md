@@ -1922,3 +1922,5 @@ Evidência: `docs/seo/serp/maca-rosca-alternada-2026-11-19.json` (SerpApi, celul
 - rosca alternada — ATUAL: "Rosca Alternada: Como Fazer com Halteres e Erros Comuns" / sem proposta: o título já tem os termos principais do autocompletar.
 
 **"Viram seção ou FAQ" (19/11): nenhum item aplicado.** Os itens restantes dependem de fonte que esta sessão não alcança: sopa de macarrão (sem dado na base), 1 kg de músculo por mês (estudo), peso das estações do HYROX (fonte oficial), hérnia e jiu-jítsu (fonte médica), academia mais cara, diária da Gaviões/Bluefit e personal na Smart Fit (sites das academias, bloqueados aqui).
+
+**Título de `maca-engorda` trocado em 20/11, com aprovação do Montinho.** De "Maçã Engorda? Calorias por Unidade, à Noite e na Dieta" para "Maçã Engorda ou Emagrece? Calorias, à Noite e na Dieta" (H1 e title). Linha de base do GSC (Supermetrics, últimos 28 dias até 19/11; página publicada em 15/11): 487 impressões, 1 clique, CTR 0,2%, posição 9,3. Comparar em 18/12; se o clique não subir, voltar.

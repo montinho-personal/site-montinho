@@ -344,8 +344,8 @@ ${NAO_SE_COMPARE("pão de queijo")}
   },
   {
     slug: "maca-engorda",
-    title: "Maçã Engorda? Calorias por Unidade, à Noite e na Dieta",
-    metaTitle: "Maçã Engorda? Calorias por Unidade, à Noite e na Dieta",
+    title: "Maçã Engorda ou Emagrece? Calorias, à Noite e na Dieta",
+    metaTitle: "Maçã Engorda ou Emagrece? Calorias, à Noite e na Dieta",
     metaDescription:
       "Uma maçã fuji média tem perto de 83 kcal e é quase toda água e fibra. Veja se maçã engorda, se pode comer à noite, maçã com casca e como ela se compara a outras frutas.",
     excerpt:
