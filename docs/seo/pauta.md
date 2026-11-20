@@ -128,11 +128,11 @@ Quando houver crédito, faça a capa e risque a linha.
 
 | Artigo | Publicado em | Cena sugerida |
 |---|---|---|
-| `rosca-inversa` | 17/11/2026 | pessoa em pé fazendo rosca com a barra, palmas para baixo |
-| `abdominal-obliquo` | 17/11/2026 | pessoa deitada girando o tronco, cotovelo em direção ao joelho oposto |
-| `supino-na-maquina` | 17/11/2026 | pessoa sentada na máquina de supino empurrando as alças |
-| `abdominal-supra` | 17/11/2026 | pessoa deitada no colchonete fazendo crunch |
-| `treino-metabolico` | 16/11/2026 | pessoa em circuito com kettlebell, cronômetro ao fundo |
-| `aparelhos-de-academia-nomes` | 16/11/2026 | fileira de máquinas (leg press, puxada, extensora) vista de lado |
-| `macarrao-engorda` | 16/11/2026 | prato de macarrão ao sugo com garfo, e um pacote de massa seca ao lado |
-- `jogar-videogame-gasta-calorias` (20/11)
+| ~~`rosca-inversa`~~ | 17/11/2026 | ✅ capa feita em 20/11 no padrão vetorial do site (título, etiquetas, desenho e logo) |
+| ~~`abdominal-obliquo`~~ | 17/11/2026 | ✅ capa feita em 20/11 no padrão vetorial do site (título, etiquetas, desenho e logo) |
+| ~~`supino-na-maquina`~~ | 17/11/2026 | ✅ capa feita em 20/11 no padrão vetorial do site (título, etiquetas, desenho e logo) |
+| ~~`abdominal-supra`~~ | 17/11/2026 | ✅ capa feita em 20/11 no padrão vetorial do site (título, etiquetas, desenho e logo) |
+| ~~`treino-metabolico`~~ | 16/11/2026 | ✅ capa feita em 20/11 no padrão vetorial do site (título, etiquetas, desenho e logo) |
+| ~~`aparelhos-de-academia-nomes`~~ | 16/11/2026 | ✅ capa feita em 20/11 no padrão vetorial do site (título, etiquetas, desenho e logo) |
+| ~~`macarrao-engorda`~~ | 16/11/2026 | ✅ capa feita em 20/11 no padrão vetorial do site (título, etiquetas, desenho e logo) |
+- ~~`jogar-videogame-gasta-calorias` (20/11)~~ ✅ capa feita em 20/11 no padrão vetorial do site

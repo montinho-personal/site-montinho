@@ -86,7 +86,9 @@ export const METABOLICO_APARELHOS_POSTS: BlogPost[] = [
           "Dá, com o peso do corpo, halteres ou elástico. Monte um circuito de 4 a 6 exercícios, de 30 a 45 segundos cada, com pausa curta entre eles e 1 a 2 minutos ao fim de cada volta.",
       },
     ],
-    content: `<p>O <strong>treino metabólico</strong> é o treino de queimação: carga moderada, muitas repetições e quase nenhuma pausa. Você sai ofegante e com o músculo ardendo. O nome é de academia, e costuma vir junto com outro, o <strong>treino tensional</strong>, mais pesado e com mais descanso. Saber a diferença ajuda a usar cada um no momento certo.</p>
+    content: `<img src="/blog-images/treino-metabolico-capa.webp" alt="Capa: Treino metabólico. O que é e como montar. Ilustração de um kettlebell e um cronômetro" title="Treino Metabólico: O Que É, Para Que Serve e Como Montar — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p>O <strong>treino metabólico</strong> é o treino de queimação: carga moderada, muitas repetições e quase nenhuma pausa. Você sai ofegante e com o músculo ardendo. O nome é de academia, e costuma vir junto com outro, o <strong>treino tensional</strong>, mais pesado e com mais descanso. Saber a diferença ajuda a usar cada um no momento certo.</p>
 
 <h2>O que é treino metabólico?</h2>
 <p>É um jeito de combinar <strong>carga, repetições e descanso</strong> em que o descanso encolhe. A carga fica moderada, as repetições sobem (em geral acima de 12) e as pausas ficam curtas, muitas vezes em circuito ou em séries combinadas, um exercício emendado no outro.</p>
@@ -213,7 +215,9 @@ export const METABOLICO_APARELHOS_POSTS: BlogPost[] = [
           "As máquinas são um bom começo: o caminho do movimento é guiado e é fácil ajustar a carga. Aos poucos, os pesos livres (halteres e barra) entram junto. O mais importante é aprender a regular cada aparelho para o seu corpo.",
       },
     ],
-    content: `<p>Chegar na academia e não saber o nome dos aparelhos é normal. Este guia junta os <strong>nomes mais usados</strong>, o músculo que cada aparelho trabalha e o link para aprender a usar cada um. Os nomes mudam um pouco de academia para academia; quando houver mais de um, vão todos.</p>
+    content: `<img src="/blog-images/aparelhos-de-academia-nomes-capa.webp" alt="Capa: Aparelhos de academia. O nome e a função de cada um. Ilustração de três aparelhos de academia" title="Aparelhos de Academia: Nomes e Para Que Serve Cada Um — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p>Chegar na academia e não saber o nome dos aparelhos é normal. Este guia junta os <strong>nomes mais usados</strong>, o músculo que cada aparelho trabalha e o link para aprender a usar cada um. Os nomes mudam um pouco de academia para academia; quando houver mais de um, vão todos.</p>
 
 <h2>Aparelhos de perna e glúteo</h2>
 <table>

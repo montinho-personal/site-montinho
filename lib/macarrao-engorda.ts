@@ -95,7 +95,9 @@ export const MACARRAO_ENGORDA_POSTS: BlogPost[] = [
           "Depende da quantidade. 50 g de sardinha em óleo somam cerca de 143 kcal ao prato e trazem proteína. Escorrer bem o óleo da lata ajuda a não somar gordura à toa.",
       },
     ],
-    content: `<p><strong>Macarrão engorda?</strong> Sozinho, não. Cru, ele tem praticamente as mesmas calorias que o arroz cru. O que transforma um prato de macarrão numa refeição pesada é a quantidade de massa e o que vai por cima: creme de leite, queijo, óleo e embutidos.</p>
+    content: `<img src="/blog-images/macarrao-engorda-capa.webp" alt="Capa: Macarrão engorda? Calorias, porção e molho. Ilustração de um prato de macarrão com molho e garfo" title="Macarrão Engorda? Calorias, Mais que Arroz e à Noite — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p><strong>Macarrão engorda?</strong> Sozinho, não. Cru, ele tem praticamente as mesmas calorias que o arroz cru. O que transforma um prato de macarrão numa refeição pesada é a quantidade de massa e o que vai por cima: creme de leite, queijo, óleo e embutidos.</p>
 
 <h2>Quantas calorias tem o macarrão?</h2>
 <table>
