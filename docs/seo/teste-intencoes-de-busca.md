@@ -1973,3 +1973,28 @@ Pedido do Montinho (20/11): "criar também os outros artigos de GTA 6". Evidênc
 **Ferramenta:** G2 no link da Calculadora de Déficit; G3 no Teste de Mobilidade.
 **Capas:** padrão vetorial do site, sem crédito do Kairogen.
 **Ficou de fora e vira pauta:** nada que valha artigo. "treino para gamer" (autocompletar da outra sessão) é intenção de treino de mira, não de academia: não cabe.
+
+
+## 2026-11-20 — Rotina diária: revisões de `remada-cavalinho` e `desenvolvimento-arnold` + 2 itens de "viram seção"
+
+Evidência: `docs/seo/serp/remada-cavalinho-desenvolvimento-arnold-2026-11-20.json` (SerpApi, celular, São Paulo; 2 buscas × página + autocompletar = 4 da cota; visão de IA veio inteira).
+
+**Remada cavalinho**
+- Autocompletar: ✅ máquina, barra, pronada, pegada neutra, com halteres, na polia, com suporte, substituir, aberta, trabalha qual músculo, livre, articulada, t bar (já cobertos ou incluídos: pegada pronada x neutra, substituições).
+- PAA: ✅ "Para que serve", "Como se faz", "Diferença para a remada curvada" (já existiam); ✅ "O que substitui a remada cavalinho?" (H2 e FAQ novos).
+- Outras pesquisas: ✅ com halteres, em casa, polia, no cross, substituir (H2 "O que substitui", 2 FAQs); ✅ aberta, fechada, articulada, com suporte (já cobertos; pronada e neutra acrescentadas).
+- Visão de IA: define, lista músculos, passo a passo, pegadas e substitutos; cita Instagram, YouTube, TotalPass, Treino Mestre, Abril, Evox, RepCount. ✅ substitutos e pegadas.
+- Quem ranqueia: vídeo do Facebook de academia, TotalPass, Evox, inShape. Tem vídeo na página: o texto sozinho disputa com vídeo.
+
+**Desenvolvimento Arnold**
+- Autocompletar: ✅ com halteres, sentado, trabalha qual músculo, para que serve, em pé, press (já cobertos); ✅ máquina, barra, unilateral, alternado (H2 e 2 FAQs novos).
+- PAA: ✅ "Qual parte do corpo trabalha" (já); ✅ "Quais são os 3 melhores exercícios para o ombro?" (FAQ nova e parágrafo); ❌ "Quantas horas por dia Arnold treinava?" e "Quanto de braço o Arnold tinha?" (pessoa, sem fonte oficial).
+- Outras pesquisas: ✅ e desenvolvimento normal, quem criou, substituto (já); ❌ "gif" (formato).
+- Visão de IA: define, músculos, execução, cuidados; cita Instagram, YouTube, Cia Athletica, Abril, TotalPass. Nada novo além das variações.
+- Quem ranqueia: Instagram, YouTube, Hercules, Calistree, GymTrack. Concorrência de vídeo e de app.
+
+**Itens de "viram seção" aplicados** (sem busca nova; pesquisa do Personal por Perto de 17 e 20/11):
+- Por que o peso varia de um dia para o outro: H2 e FAQ em `balanca-nao-muda-mas-o-corpo-muda` (Kreitzman 1992: água do glicogênio; Orsama 2014: peso sobe no fim de semana). A linha da pauta apontava para `a-balanca-mente`, que é vídeo; destino corrigido.
+- Primeiros sinais de que está emagrecendo: H2 e FAQ no mesmo artigo.
+
+**Ficou de fora:** nada que valha artigo. Não cabe: horas de treino e medida de braço do Arnold (pessoa, sem fonte), "gif".

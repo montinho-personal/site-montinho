@@ -24593,7 +24593,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     excerpt: "A balança parou mas as roupas estão mais folgadas. Você não regrediu — você está progredindo de um jeito que a balança não consegue mostrar.",
     category: "Emagrecimento",
     date: "2026-06-27",
-    updatedAt: "2026-08-24",
+    updatedAt: "2026-11-20",
     readTime: "6 min",
     author: "Montinho",
     tags: ["composição corporal", "balança", "gordura", "massa muscular", "recomposição"],
@@ -24644,6 +24644,27 @@ RIR 3 = parou com 3 reps sobrando.</p>
 </ul>
 <p>Ou seja: 1kg de gordura ocupa mais espaço físico do que 1kg de músculo. Trocar gordura por músculo, mesmo com o mesmo peso, literalmente reduz o volume corporal. Daí a roupa mais folgada.</p>
 
+<h2>Por que o peso varia tanto de um dia para o outro</h2>
+<p>Pesar 1 a 2 kg a mais no fim do dia, ou depois de um fim de semana, quase nunca é gordura. É o peso de coisas que entram e saem do corpo o tempo todo:</p>
+<ul>
+  <li><strong>Água guardada com o carboidrato:</strong> o glicogênio, a reserva de carboidrato do músculo e do fígado, fica estocado junto com água, em torno de 3 a 4 gramas de água para cada grama de glicogênio. Um dia com mais carboidrato enche esse estoque, e a balança sobe.</li>
+  <li><strong>Sal:</strong> uma refeição mais salgada faz o corpo segurar mais água por um ou dois dias.</li>
+  <li><strong>Comida e bebida ainda no corpo:</strong> o que você comeu e bebeu no dia pesa até ser digerido e eliminado. Por isso o peso da noite é sempre maior que o da manhã.</li>
+  <li><strong>Treino forte e ciclo menstrual:</strong> músculo recém-treinado e a fase do ciclo também mudam a quantidade de água retida.</li>
+</ul>
+<p>O padrão aparece até na semana. Num estudo finlandês que acompanhou pessoas se pesando todo dia, o peso subia no sábado e no domingo e voltava a cair ao longo da semana. Para engordar 1 kg de gordura de verdade, é preciso comer milhares de calorias acima do que se gasta, o que não acontece de um dia para o outro.</p>
+<p>Por isso, se você se pesa todo dia, olhe a <strong>média da semana</strong>, sempre de manhã, em jejum e depois de ir ao banheiro. A comparação que vale é uma semana contra a outra.</p>
+
+<h2>Primeiros sinais de que você está emagrecendo</h2>
+<p>Antes de a balança mostrar uma tendência clara, o corpo costuma dar outros sinais:</p>
+<ul>
+  <li>a calça que fecha com menos esforço e o cinto que pede um furo a menos;</li>
+  <li>a medida da cintura na fita, no mesmo ponto, caindo de um mês para o outro;</li>
+  <li>a média semanal do peso descendo devagar, mesmo com dias de alta no meio;</li>
+  <li>a carga do treino se mantendo ou subindo, sinal de que o músculo está sendo preservado.</li>
+</ul>
+<p>Se em 4 semanas nem a média do peso nem a cintura mudaram, aí sim vale rever a rotina. Veja <a href="/blog/deficit-calorico-como-calcular">como calcular o déficit calórico</a>.</p>
+
 <h2>Como medir progresso sem depender só da balança</h2>
 <ul>
   <li><strong>Medidas corporais:</strong> cintura, quadril, braço — medidas com fita mensalmente</li>
@@ -24658,7 +24679,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Se você está confuso sobre o que seu corpo está fazendo, um profissional pode interpretar os dados (balança + medidas + performance + bioimpedância) e ajustar a estratégia. Consulte a <a href="/consultoria">página de consultoria</a>. Veja também o artigo sobre <a href="/blog/deficit-calorico-como-calcular">déficit calórico</a> — para entender quando a balança deve mesmo se mover.</p>
 
-<p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/26040348/" target="_blank" rel="noopener noreferrer">Hall et al. (2015) — metabolismo e emagrecimento (PubMed)</a>.</p>
+<p><strong>Referências científicas:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/26040348/" target="_blank" rel="noopener noreferrer">Hall et al. (2015) — metabolismo e emagrecimento (PubMed)</a>; Kreitzman SN et al. Glycogen storage: illusions of easy weight loss, excessive weight regain, and distortions in estimates of body composition. American Journal of Clinical Nutrition, 1992; Orsama AL et al. Weight rhythms: weight increases during weekends and decreases during weekdays. Obesity Facts, 2014.</p>
 
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
@@ -24674,6 +24695,14 @@ RIR 3 = parou com 3 reps sobrando.</p>
       {
         question: "Quanto tempo leva para ver diferença visual no corpo?",
         answer: "As primeiras mudanças mensuráveis (depleção de glicogênio, redução de inchaço, pequena perda de gordura) aparecem em 2–4 semanas. Mudanças visíveis no espelho para outras pessoas: 6–12 semanas de consistência. Mudanças que impressionam em fotos: 3–6 meses.",
+      },
+      {
+        question: "Por que o peso varia tanto de um dia para o outro?",
+        answer: "Porque a balança pesa também água, sal e comida ainda no corpo. Um dia com mais carboidrato ou mais sal faz o corpo guardar mais água, e o peso da noite é sempre maior que o da manhã. Subir 1 a 2 kg de um dia para o outro quase nunca é gordura. Compare a média da semana, sempre pesando de manhã, em jejum.",
+      },
+      {
+        question: "Quais são os primeiros sinais de que estou emagrecendo?",
+        answer: "A roupa mais folgada, a cintura diminuindo na fita métrica e a média semanal do peso descendo devagar, mesmo com dias de alta no meio. Se a carga do treino se mantém, o músculo está sendo preservado.",
       },
       {
         question: "Devo me pesar todo dia?",
