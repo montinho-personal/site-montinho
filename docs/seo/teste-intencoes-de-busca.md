@@ -2006,3 +2006,27 @@ Evidência: `docs/seo/serp/remada-cavalinho-desenvolvimento-arnold-2026-11-20.js
 - `desenvolvimento-arnold`: metaTitle "Desenvolvimento Arnold: Como Fazer o Arnold Press" → "Desenvolvimento Arnold com Halteres: Como Fazer e Para Que Serve".
 - Linha de base do Search Console (Supermetrics, últimos 28 dias até 20/11): remada-cavalinho 25 impr., 0 clique, pos. 7,4; desenvolvimento-arnold 40 impr., 0 clique, pos. 8,7. Comparar em 18/12; se o clique não subir, voltar.
 - updatedAt não mudou (troca de título não é mudança de conteúdo).
+
+
+## 2026-11-21 — Rotina diária: revisões de `consultoria-online-ou-personal-presencial` e `avaliacao-fisica-consultoria-online` + 2 itens de "viram seção"
+
+Evidência: `docs/seo/serp/consultoria-online-avaliacao-fisica-2026-11-21.json` (SerpApi, celular, São Paulo; 2 buscas × página + autocompletar + visão de IA em 2 etapas = 6 da cota).
+
+**Consultoria online ou personal presencial**
+- Autocompletar: vazio. Outras pesquisas: nenhuma. A busca tem PAA, então não houve busca secundária.
+- PAA: ✅ "Qual o valor de uma consultoria com personal?" (FAQ nova, com a referência da calculadora de preço do site: online a partir de R$ 110/mês, e link para a calculadora); ✅ "O que é consultoria online personal trainer?" (FAQ nova); ✅ "Vale a pena contratar um personal trainer online?" (já respondida); ❌ "Pode dar consultoria sem cref?" (regra do site: não citar CREF).
+- Visão de IA: compara custo, flexibilidade, correção na hora e modelo híbrido; cita TrainerStudio, Epaminondas Sá, Biotreino, MFIT, Instagram, YouTube. Tudo já estava no artigo (tabela e "Dá para misturar").
+- Quem ranqueia: Instagram, páginas para personal (vender consultoria), YouTube. Intenção misturada com quem quer ser personal; o artigo segue do lado do aluno.
+
+**Avaliação física online**
+- Autocompletar: ✅ "grátis/gratuita" (H2 nova com as ferramentas gratuitas do site e FAQ); ✅ "como fazer", "fotos" (já cobertos); ✅ "7 dobras online" (FAQ nova: não dá a distância); ❌ "curso de avaliação física online" e "programa de avaliação física" (quem quer ser profissional).
+- PAA: ✅ "Como fazer avaliação física passo a passo?" (já); ❌ "Quais são os melhores aplicativos para avaliação física?" (ferramenta de profissional); ❌ "Qual o valor de uma avaliação física?" (sem fonte de preço); ✅ "O que seria a avaliação física?" (já).
+- Visão de IA: anamnese, medidas em casa, testes a distância, limitação da medida caseira; cita YouTube, Sanny, Next Fit, arvo.guru, Diabetes Journals. ✅ testes a distância (Cooper, mobilidade) e limite das dobras.
+- Quem ranqueia: softwares para profissional (Terrazul, NossoPersonal, Next Fit), arvo.guru e páginas de app. Quase nada do lado do aluno.
+
+**Itens de "viram seção" aplicados** (sem busca nova):
+- "É possível ganhar 1 kg de músculo em 1 mês?": FAQ em `hipertrofia-para-iniciantes` (Benito et al., 2020, IJERPH: média de 1,53 kg em 111 estudos).
+- Hérnia de disco e jiu-jitsu: FAQ em `hernia-de-disco-pode-treinar` (NICE NG59 como referência geral de exercício na dor lombar; volta condicionada à liberação médica).
+- "Peso oficial das estações": já estava atendido em `estacoes-do-hyrox` (tabela com fonte oficial); riscado sem mudança.
+
+**Ficou de fora:** nada que valha artigo. Não cabe: CREF (regra do site), cursos e apps para profissional, preço de avaliação sem fonte.
