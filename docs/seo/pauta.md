@@ -84,9 +84,9 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | Sopa de macarrão engorda? (390/mês) | `sopa-emagrece` ou `macarrao-engorda`, quando houver dado de sopa na base | outras pesquisas de "macarrão engorda" (16/11) |
 | ~~Zona de queima de gordura ("fat burn", 1.000/mês)~~ aplicado em 18/11 (FAQ e menção na seção) | `zonas-de-frequencia-cardiaca` (já explica a "zona de queima" da esteira; falta o FAQ "o que é fat burn?") | PAA de "efeito afterburn" (16/11) |
 | ~~Muay thai: desvantagens e em quanto tempo define o corpo~~ aplicado em 18/11 (desvantagens já existiam; entrou "em quanto tempo define", subseção e FAQ) | `beneficios-do-muay-thai` | pauta de lutas (outubro) |
-| Hérnia de disco e jiu-jitsu (10/mês) | `hernia-de-disco-pode-treinar` (com fonte médica) | pauta de lutas (outubro) |
-| É possível ganhar 1 kg de músculo em 1 mês? | simulador de ganho de massa / artigo de hipertrofia para iniciantes | pesquisa de exercícios por músculo |
-| Peso oficial das estações | `estacoes-do-hyrox` (só com fonte oficial HYROX) | pauta de HYROX (08/10) |
+| ~~Hérnia de disco e jiu-jitsu (10/mês)~~ aplicado em 21/11 (FAQ, NICE NG59 como referência geral) | `hernia-de-disco-pode-treinar` (com fonte médica) | pauta de lutas (outubro) |
+| ~~É possível ganhar 1 kg de músculo em 1 mês?~~ aplicado em 21/11 (FAQ em `hipertrofia-para-iniciantes`, Benito 2020) | simulador de ganho de massa / artigo de hipertrofia para iniciantes | pesquisa de exercícios por músculo |
+| ~~Peso oficial das estações~~ já atendido: tabela de pesos com fonte oficial do HYROX (conferido em 21/11) | `estacoes-do-hyrox` (só com fonte oficial HYROX) | pauta de HYROX (08/10) |
 | ~~4 ou 7 exercícios para perder barriga~~ aplicado em 18/11 (H2 e FAQ) | `exercicio-para-perder-barriga` | PAA do tabata e do EPOC (16/11) |
 | ~~Quantas calorias queimar por treino~~ aplicado em 18/11 (H2 com OMS e tabela de 45 min, FAQ) | `exercicio-que-mais-queima-calorias` | PAA do EPOC (16/11) |
 | ~~Para que serve a barra fixa (40/mês)~~ aplicado em 18/11 (H2 e FAQ) | `como-fazer-barra-fixa` | PAA de "graviton academia" (16/11) |
@@ -115,7 +115,7 @@ que ficou de fora.
 | ~~11/11~~ | ~~`manga-engorda`, `melancia-engorda`~~ revisados em 17/11 |
 | 15/11 | ~~`feijao-engorda`, `pao-de-queijo-engorda`~~ revisados em 18/11; ~~`maca-engorda`~~ revisado em 19/11 |
 | 15/11 | ~~`rosca-alternada`~~ revisado em 19/11; ~~`remada-cavalinho`, `desenvolvimento-arnold`~~ revisados em 20/11 |
-| 15/11 | 8 de consultoria online e dúvidas de treino (`consultoria-online-ou-personal-presencial`, `avaliacao-fisica-consultoria-online`, `personal-online-smart-fit`, `treinar-sozinho-na-academia-da-resultado`, `como-saber-se-a-ficha-de-treino-e-boa`, `treino-abc-ou-upper-lower`, `musculacao-para-emagrecer-quantas-vezes-por-semana`, `como-saber-se-o-treino-esta-funcionando`) |
+| 15/11 | 8 de consultoria online e dúvidas de treino (~~`consultoria-online-ou-personal-presencial`, `avaliacao-fisica-consultoria-online`~~ revisados em 21/11, `personal-online-smart-fit`, `treinar-sozinho-na-academia-da-resultado`, `como-saber-se-a-ficha-de-treino-e-boa`, `treino-abc-ou-upper-lower`, `musculacao-para-emagrecer-quantas-vezes-por-semana`, `como-saber-se-o-treino-esta-funcionando`) |
 | 16/11 | `academias-de-jiu-jitsu-em-osasco`, `-carapicuiba`, `-cotia`, `-santana-de-parnaiba` (busca na cidade de cada página) |
 | ~~05/11~~ | ~~`crucifixo-inverso`, `treino-tabata`~~ revisados em 16/11 |
 - `quanto-custa-personal-trainer-alphaville` (18/11): as faixas do artigo (R$ 120 a mais de R$ 600 por sessão) não têm fonte e não batem com a referência usada na calculadora de preço. Alinhar na revisão; a busca principal já foi feita em 18/11 (`docs/seo/serp/calculadora-preco-personal-alphaville-2026-11-18.json`).

@@ -40,6 +40,7 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
       "As diferenças reais entre consultoria online e personal presencial: correção da execução, horário, lugar, custo e constância. E os sinais de que você precisa de um ou de outro.",
     category: "Treino",
     date: "2026-11-15",
+    updatedAt: "2026-11-21",
     readTime: "7 min",
     author: "Montinho",
     tags: ["consultoria online", "personal trainer", "personal presencial", "treino personalizado"],
@@ -58,6 +59,16 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
         question: "Consultoria online é mais barata que personal presencial?",
         answer:
           "Em geral, sim, porque o profissional não precisa estar presente em cada sessão. O valor de cada formato depende do plano e da duração. Os números estão no artigo sobre quanto custa uma consultoria online.",
+      },
+      {
+        question: "Qual o valor de uma consultoria online com personal trainer?",
+        answer:
+          "Depende do que está incluído: frequência de ajustes, correção de vídeos e contato direto. Como referência, a calculadora de preço do site parte de R$ 110 por mês para a consultoria online, e o presencial é cobrado por aula, com pacote mensal pela frequência na semana.",
+      },
+      {
+        question: "O que é consultoria online de personal trainer?",
+        answer:
+          "É o treino montado e acompanhado a distância: o personal monta o plano para a sua rotina e o lugar onde você treina, corrige a execução pelos vídeos que você manda e ajusta o plano quando a carga trava ou a semana muda. Você treina sozinho, sem o profissional ao lado.",
       },
       {
         question: "Iniciante pode começar pela consultoria online?",
@@ -137,6 +148,7 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
 <h2>Como funciona comigo</h2>
 <p>Eu atendo nos dois formatos. O presencial é em Alphaville e região: na Arena 18, na academia do seu condomínio ou na sua casa. Em outra academia, depende das regras do local para personal externo e de combinação prévia. Detalhes em <a href="/personal-trainer-alphaville">personal trainer em Alphaville</a>.</p>
 <p>A <a href="/consultoria-online">consultoria online</a> vale para qualquer lugar do Brasil: plano montado para a sua rotina, vídeo de execução de cada exercício, correção dos seus vídeos, ajustes quando a carga trava ou a semana muda, e conversa direta comigo pelo WhatsApp. Não tem aula ao vivo, e o plano alimentar fica com o nutricionista.</p>
+<p>Para ter uma ideia do valor de cada formato antes de conversar, use a <a href="/ferramentas/calculadora-preco-personal-trainer-alphaville">calculadora de preço de personal trainer</a>: ela mostra a faixa do presencial pela frequência da semana e a da consultoria online.</p>
 <p>Se você ainda não sabe qual combina com você, a primeira conversa serve exatamente para isso.</p>
 
 <div class="yt-embed">
@@ -157,6 +169,7 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
       "O que entra numa avaliação física a distância, como tirar fotos e medidas em casa do jeito certo, o que ela não consegue medir e como a reavaliação mostra se o plano está funcionando.",
     category: "Treino",
     date: "2026-11-15",
+    updatedAt: "2026-11-21",
     readTime: "7 min",
     author: "Montinho",
     tags: ["avaliação física", "consultoria online", "medidas corporais", "evolução"],
@@ -190,6 +203,16 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
         question: "De quanto em quanto tempo refazer a avaliação?",
         answer:
           "As medidas e fotos costumam ser refeitas a cada algumas semanas, porque mudanças pequenas não aparecem de uma semana para a outra. O peso dá para acompanhar pela média semanal. O intervalo certo é combinado com quem acompanha você.",
+      },
+      {
+        question: "Dá para fazer avaliação física online grátis?",
+        answer:
+          "Uma parte, sim. Com fita métrica, balança e as calculadoras gratuitas do site, você mede a relação cintura-altura, estima o percentual de gordura, testa a mobilidade e o condicionamento. O que não sai de graça e sozinho é a leitura disso tudo e o plano que vem depois.",
+      },
+      {
+        question: "Dá para fazer avaliação de 7 dobras online?",
+        answer:
+          "Não. A avaliação de dobras cutâneas precisa de adipômetro e de alguém treinado pinçando a pele nos mesmos pontos, presencialmente. A distância, as medidas de cintura e as fotos padronizadas fazem esse papel de acompanhar a evolução.",
       },
       {
         question: "A avaliação online avalia postura e mobilidade?",
@@ -241,6 +264,17 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
 <li><strong>Força máxima com segurança.</strong> Testar carga máxima sozinho não vale o risco; a evolução das cargas de trabalho já mostra a força subindo.</li>
 </ul>
 <p>Se você já tem um exame de bioimpedância ou DEXA, ele entra como referência. Não é obrigatório.</p>
+
+<h2>Avaliação física online grátis: o que dá para fazer sozinho</h2>
+<p>Antes de contratar qualquer coisa, dá para tirar uma primeira fotografia de onde você está com as ferramentas gratuitas do site:</p>
+<ul>
+<li><strong>Cintura e altura:</strong> a <a href="/ferramentas/relacao-cintura-altura">relação cintura-altura</a> é a medida mais simples de gordura abdominal.</li>
+<li><strong>Percentual de gordura:</strong> a <a href="/ferramentas/calculadora-percentual-de-gordura">calculadora de percentual de gordura</a> estima a partir de medidas com fita. É estimativa, não exame.</li>
+<li><strong>Mobilidade:</strong> o <a href="/ferramentas/teste-mobilidade">teste de mobilidade</a> mede cinco regiões em cinco minutos.</li>
+<li><strong>Condicionamento:</strong> o <a href="/ferramentas/teste-de-cooper">teste de Cooper</a> mostra quanto você corre ou caminha em 12 minutos.</li>
+</ul>
+<p>Avaliação de dobras cutâneas (a de 7 dobras, por exemplo) não dá para fazer online: ela precisa de adipômetro e de alguém treinado, ao vivo. A distância, cintura e fotos fazem esse papel.</p>
+<p>O que as ferramentas não fazem é juntar tudo e transformar em plano. Esse é o trabalho da avaliação dentro da consultoria.</p>
 
 <h2>A reavaliação: é ela que mostra o resultado</h2>
 <p>A primeira avaliação diz de onde você parte. As seguintes dizem se o plano está funcionando. Fotos e medidas costumam ser refeitas a cada algumas semanas, porque mudanças pequenas não aparecem de uma semana para a outra. Entre uma e outra, a carga dos exercícios, a média do peso e a constância dos treinos já contam a história.</p>

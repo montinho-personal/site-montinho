@@ -7103,7 +7103,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Iniciante na musculação tem uma vantagem que quem treina há anos nunca mais vai ter: o newbie gains. Entenda como aproveitá-lo ao máximo.",
     category: "Hipertrofia",
     date: "2026-06-26",
-    updatedAt: "2026-07-29",
+    updatedAt: "2026-11-21",
     readTime: "12 min",
     author: "Montinho Personal Trainer",
     tags: [
@@ -7139,6 +7139,11 @@ RIR 3 = parou com 3 reps sobrando.</p>
         question: "O que é newbie gains e quanto tempo dura?",
         answer:
           "Newbie gains é o período de ganhos acelerados de força e massa muscular que ocorre nos primeiros 6 a 18 meses de treino. Nesse período, o corpo responde ao estímulo do treino de força de forma desproporcional em comparação a praticantes avançados — qualquer estímulo bem estruturado produz resultado. Aproveitar esse período com treino consistente e alimentação adequada é a maior vantagem que um iniciante tem.",
+      },
+      {
+        question: "É possível ganhar 1 kg de músculo em 1 mês?",
+        answer:
+          "Em um mês, é raro. Numa meta-análise com 111 estudos de musculação em homens adultos saudáveis (Benito e colaboradores, 2020), o ganho médio de massa muscular foi de cerca de 1,5 kg ao longo de programas que duraram de algumas semanas a um ano. Iniciantes ganham mais rápido que quem já treina, mas o quilo a mais na balança no primeiro mês é, em boa parte, água e glicogênio guardados no músculo. Medida de braço e coxa e carga subindo contam melhor a história.",
       },
       {
         question: "Posso treinar todos os dias como iniciante?",
@@ -16017,6 +16022,7 @@ RIR 3 = parou com 3 reps sobrando.</p>
     `,
     category: "Lesões",
     date: "2026-06-26",
+    updatedAt: "2026-11-21",
     readTime: "12 min",
     author: "Montinho Personal Trainer",
     tags: ["hérnia de disco", "hérnia lombar", "L4-L5", "L5-S1", "musculação com hérnia", "core", "personal trainer alphaville", "reabilitação lombar"],
@@ -16036,6 +16042,10 @@ RIR 3 = parou com 3 reps sobrando.</p>
       {
         question: "Musculação piora a hérnia de disco?",
         answer: "Não quando supervisionada por profissional qualificado. A musculação com técnica correta, exercícios adequados e progressão de carga sensata fortalece a musculatura estabilizadora da coluna, reduz a carga sobre o disco e melhora o quadro clínico. O que piora a hérnia são exercícios realizados com técnica errada, cargas excessivas e padrões de movimento que sobrecarregam o disco."
+      },
+      {
+        question: "Quem tem hérnia de disco pode treinar jiu-jitsu?",
+        answer: "Depende da fase e da liberação médica. As diretrizes para dor lombar, como a do NICE (Reino Unido), recomendam exercício, e muita gente com hérnia volta a lutar. Mas o jiu-jitsu tem flexão e torção da coluna com carga, quedas e pressão do adversário, que são justamente as posições que mais incomodam na fase de dor. O caminho mais comum é voltar depois que a dor está controlada, começar pelas aulas técnicas, deixar o treino livre (rola) para depois e fortalecer tronco e quadril na musculação ao mesmo tempo. Dor que irradia para a perna, formigamento ou perda de força é motivo para voltar ao médico antes de treinar."
       }
     ]
   },
