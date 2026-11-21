@@ -2030,3 +2030,11 @@ Evidência: `docs/seo/serp/consultoria-online-avaliacao-fisica-2026-11-21.json` 
 - "Peso oficial das estações": já estava atendido em `estacoes-do-hyrox` (tabela com fonte oficial); riscado sem mudança.
 
 **Ficou de fora:** nada que valha artigo. Não cabe: CREF (regra do site), cursos e apps para profissional, preço de avaliação sem fonte.
+
+
+## 2026-11-21 — Títulos aprovados pelo Montinho ("pode seguir"): `consultoria-online-ou-personal-presencial` e `avaliacao-fisica-consultoria-online`
+
+- `consultoria-online-ou-personal-presencial`: metaTitle "Consultoria Online ou Personal Presencial: Qual Escolher?" → "Consultoria Online ou Personal Presencial: Qual Escolher e Qual o Valor".
+- `avaliacao-fisica-consultoria-online`: metaTitle "Avaliação Física Online: Como Funciona na Consultoria" → "Avaliação Física Online: Como Fazer, Fotos e o Que Dá Grátis".
+- Linha de base do Search Console (Supermetrics, últimos 28 dias até 21/11): consultoria 11 impr., 0 clique, pos. 4,9; avaliação 5 impr., 0 clique, pos. 19,6. Comparar em 19/12; se o clique não subir, voltar.
+- updatedAt não mudou.

@@ -33,7 +33,7 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
   {
     slug: "consultoria-online-ou-personal-presencial",
     title: "Consultoria Online ou Personal Presencial: Qual Escolher?",
-    metaTitle: "Consultoria Online ou Personal Presencial: Qual Escolher?",
+    metaTitle: "Consultoria Online ou Personal Presencial: Qual Escolher e Qual o Valor",
     metaDescription:
       "O presencial corrige cada série na hora; a consultoria online dá liberdade de horário e acompanha a semana toda. Veja para quem cada formato funciona.",
     excerpt:
@@ -162,7 +162,7 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
   {
     slug: "avaliacao-fisica-consultoria-online",
     title: "Avaliação Física na Consultoria Online: Como Funciona",
-    metaTitle: "Avaliação Física Online: Como Funciona na Consultoria",
+    metaTitle: "Avaliação Física Online: Como Fazer, Fotos e o Que Dá Grátis",
     metaDescription:
       "Sem bioimpedância nem adipômetro, a avaliação online usa histórico, fotos, medidas, peso médio e vídeos. Veja como medir em casa e o que ela mostra.",
     excerpt:
