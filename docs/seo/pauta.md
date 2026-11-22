@@ -71,8 +71,8 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | Assunto | Onde entra | Veio de |
 |---|---|---|
 | Qual é a academia mais cara de Alphaville? (só com mensalidades de fonte oficial) | `quanto-custa-academia-em-alphaville` | PAA de "academia diária alphaville" (18/11) |
-| Diária / day use da Gaviões e da Bluefit (só com fonte oficial da rede; sem fonte, não aplicar) | `academia-gavioes-alphaville`, `bluefit-alphaville` e a ferramenta de diária | autocompletar de "academia diária" e "day use academia" (18/11) |
-| Quanto custa personal trainer na Smart Fit (precisa de fonte oficial da regra para personal externo; sem fonte, não aplicar) | `personal-online-smart-fit` | autocompletar de "quanto custa personal trainer" (18/11) |
+| Diária / day use da Gaviões e da Bluefit (só com fonte oficial da rede; sem fonte, não aplicar). 22/11: site da Bluefit sem menção a diária; site da Gaviões não abre neste ambiente. Fica. | `academia-gavioes-alphaville`, `bluefit-alphaville` e a ferramenta de diária | autocompletar de "academia diária" e "day use academia" (18/11) |
+| ~~Quanto custa personal trainer na Smart Fit~~ aplicado em 22/11 (regra oficial da Smart Fit: personal credenciado e regras da unidade; a rede não publica preço; FAQ e seção) | `personal-online-smart-fit` | autocompletar de "quanto custa personal trainer" (18/11) |
 | ~~Por que o peso varia de um dia para o outro (2 kg a mais no fim do dia)~~ aplicado em 20/11 (H2 e FAQ, Kreitzman 1992 e Orsama 2014) | `balanca-nao-muda-mas-o-corpo-muda` (a linha apontava para `a-balanca-mente`, que é vídeo, não artigo) | pauta do Personal por Perto (20/11) |
 | ~~Primeiros sinais de que você está emagrecendo~~ aplicado em 20/11 (H2 e FAQ) | `balanca-nao-muda-mas-o-corpo-muda` | pauta do Personal por Perto (20/11) |
 | ~~Prancha lateral (27.100/mês)~~ | movida para "Artigos novos" (M3b) em 18/11: volume de artigo próprio, exercício com id no cadastro (`prancha-lateral`), mesmo caso do abdominal oblíquo | exercícios do cadastro sem artigo (17/11) |
@@ -115,7 +115,7 @@ que ficou de fora.
 | ~~11/11~~ | ~~`manga-engorda`, `melancia-engorda`~~ revisados em 17/11 |
 | 15/11 | ~~`feijao-engorda`, `pao-de-queijo-engorda`~~ revisados em 18/11; ~~`maca-engorda`~~ revisado em 19/11 |
 | 15/11 | ~~`rosca-alternada`~~ revisado em 19/11; ~~`remada-cavalinho`, `desenvolvimento-arnold`~~ revisados em 20/11 |
-| 15/11 | 8 de consultoria online e dúvidas de treino (~~`consultoria-online-ou-personal-presencial`, `avaliacao-fisica-consultoria-online`~~ revisados em 21/11, `personal-online-smart-fit`, `treinar-sozinho-na-academia-da-resultado`, `como-saber-se-a-ficha-de-treino-e-boa`, `treino-abc-ou-upper-lower`, `musculacao-para-emagrecer-quantas-vezes-por-semana`, `como-saber-se-o-treino-esta-funcionando`) |
+| 15/11 | 8 de consultoria online e dúvidas de treino (~~`consultoria-online-ou-personal-presencial`, `avaliacao-fisica-consultoria-online`~~ revisados em 21/11, ~~`personal-online-smart-fit`, `treinar-sozinho-na-academia-da-resultado`~~ revisados em 22/11, `como-saber-se-a-ficha-de-treino-e-boa`, `treino-abc-ou-upper-lower`, `musculacao-para-emagrecer-quantas-vezes-por-semana`, `como-saber-se-o-treino-esta-funcionando`) |
 | 16/11 | `academias-de-jiu-jitsu-em-osasco`, `-carapicuiba`, `-cotia`, `-santana-de-parnaiba` (busca na cidade de cada página) |
 | ~~05/11~~ | ~~`crucifixo-inverso`, `treino-tabata`~~ revisados em 16/11 |
 - `quanto-custa-personal-trainer-alphaville` (18/11): as faixas do artigo (R$ 120 a mais de R$ 600 por sessão) não têm fonte e não batem com a referência usada na calculadora de preço. Alinhar na revisão; a busca principal já foi feita em 18/11 (`docs/seo/serp/calculadora-preco-personal-alphaville-2026-11-18.json`).

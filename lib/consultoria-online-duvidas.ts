@@ -301,6 +301,7 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
       "Como funciona a consultoria online para quem treina na Smart Fit ou em outra academia de rede, como montar o treino com os aparelhos da unidade, horário de pico e o que avaliar antes de contratar.",
     category: "Treino",
     date: "2026-11-15",
+    updatedAt: "2026-11-22",
     readTime: "6 min",
     author: "Montinho",
     tags: ["smart fit", "consultoria online", "personal online", "academia"],
@@ -323,7 +324,17 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
       {
         question: "Personal presencial pode atender dentro da Smart Fit?",
         answer:
-          "Depende da regra da academia para personal externo. Antes de combinar, confira com a sua unidade. A consultoria online não tem essa questão, porque o personal não precisa estar lá.",
+          "Pode, pela própria Smart Fit: o aluno pode treinar com personal particular desde que o profissional seja credenciado e siga as regras da unidade. Como a regra de entrada de personal externo varia, confirme na recepção antes de fechar. O app da rede tem a aba \"Personal\", que lista os profissionais de cada unidade.",
+      },
+      {
+        question: "Quanto custa personal trainer na Smart Fit?",
+        answer:
+          "A Smart Fit não publica tabela de preço de personal: o valor é combinado direto com o profissional. O que a rede vende é o Smart Fit Coach, a consultoria online dela. Para ter uma referência do presencial pela frequência na semana, como 2 vezes, e da consultoria online, use a calculadora de preço de personal trainer do site.",
+      },
+      {
+        question: "O que é o Smart Fit Coach?",
+        answer:
+          "É a consultoria online oficial da Smart Fit: depois da adesão, você conversa com um professor sobre objetivo e rotina e recebe um plano para fazer na academia ou em casa, com videochamadas mensais e chat para dúvidas, segundo a própria rede. Uma consultoria online independente faz o mesmo papel, com o profissional que você escolher.",
       },
       {
         question: "E se a academia estiver cheia no horário em que eu treino?",
@@ -369,8 +380,19 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
 <h2>Gravar a execução na academia</h2>
 <p>A correção na consultoria online vem dos seus vídeos. Celular apoiado no chão ou num banco, de lado ou na diagonal, pegando o corpo inteiro e a série completa. Enquadre só você, sem filmar outras pessoas, e respeite as regras da sua unidade. O passo a passo está em <a href="/blog/como-filmar-seu-exercicio">como filmar o seu exercício</a>.</p>
 
+<h2>Professor de salão, Smart Fit Coach ou personal: qual a diferença?</h2>
+<p>Pela própria Smart Fit, há três formatos de acompanhamento:</p>
+<ul>
+<li><strong>Professor de salão (incluso no plano):</strong> monta o treino inicial, explica os aparelhos e tira dúvidas, mas atende o salão inteiro, não fica ao seu lado a série toda.</li>
+<li><strong>Smart Fit Coach (pago à parte):</strong> a consultoria online da rede, com plano montado por um professor, videochamadas mensais e chat.</li>
+<li><strong>Personal particular:</strong> acompanhamento individual na sessão, contratado direto com o profissional.</li>
+</ul>
+<p>Uma consultoria online independente, como a minha, faz o papel do segundo formato com o profissional que você escolheu, e com correção da execução pelos seus vídeos.</p>
+
 <h2>E personal presencial dentro da Smart Fit?</h2>
-<p>Depende da regra da academia para personal externo, e isso pode variar. Confira com a sua unidade antes de combinar qualquer coisa. O meu presencial é em Alphaville e região: na Arena 18, em condomínios ou em casa. Em outra academia, depende das regras do local para personal externo e de combinação prévia. A consultoria online funciona em qualquer academia, porque eu não preciso estar lá.</p>
+<p>A Smart Fit permite treinar com personal particular, desde que ele seja credenciado e siga as regras da unidade. Como essa regra muda de unidade para unidade, confirme na recepção antes de combinar qualquer coisa. No app da rede, a aba "Personal" mostra os profissionais de cada unidade.</p>
+<p><strong>Quanto custa?</strong> A rede não publica tabela: o valor é combinado com o profissional. Para ter uma referência pela frequência na semana, use a <a href="/ferramentas/calculadora-preco-personal-trainer-alphaville">calculadora de preço de personal trainer</a>.</p>
+<p>O meu presencial é em Alphaville e região: na Arena 18, em condomínios ou em casa. Em outra academia, depende das regras do local para personal externo e de combinação prévia.</p>
 
 <h2>O que avaliar antes de contratar</h2>
 <ul>
@@ -391,6 +413,11 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
 </div>
 
 <h2>Não se compare</h2>
-<p>A academia cheia é o lugar onde mais dá vontade de olhar a carga do outro. Cada um tem a própria genética, rotina e história, com altos e baixos. A sua régua é a sua ficha: a mesma execução, com um pouco mais de carga ou uma repetição a mais que na semana passada.</p>`,
+<p>A academia cheia é o lugar onde mais dá vontade de olhar a carga do outro. Cada um tem a própria genética, rotina e história, com altos e baixos. A sua régua é a sua ficha: a mesma execução, com um pouco mais de carga ou uma repetição a mais que na semana passada.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.smartfit.com.br/news/academia/personal-trainer-smart-fit/" target="_blank" rel="noopener noreferrer">Smart Fit: personal trainer na Smart Fit, como funciona o acompanhamento</a> (professor de salão, Smart Fit Coach e regra para personal particular; conferido em 22/11/2026)</li>
+</ul>`,
   },
 ];

@@ -2038,3 +2038,26 @@ Evidência: `docs/seo/serp/consultoria-online-avaliacao-fisica-2026-11-21.json` 
 - `avaliacao-fisica-consultoria-online`: metaTitle "Avaliação Física Online: Como Funciona na Consultoria" → "Avaliação Física Online: Como Fazer, Fotos e o Que Dá Grátis".
 - Linha de base do Search Console (Supermetrics, últimos 28 dias até 21/11): consultoria 11 impr., 0 clique, pos. 4,9; avaliação 5 impr., 0 clique, pos. 19,6. Comparar em 19/12; se o clique não subir, voltar.
 - updatedAt não mudou.
+
+
+## 2026-11-22 — Rotina diária: revisões de `personal-online-smart-fit` e `treinar-sozinho-na-academia-da-resultado` + 1 item de "viram seção"
+
+Evidência: `docs/seo/serp/smart-fit-treinar-sozinho-2026-11-22.json` (SerpApi, celular, São Paulo; 2 buscas × página + autocompletar + visão de IA em 2 etapas = 6 da cota).
+
+**Personal online Smart Fit**
+- Autocompletar: ✅ "personal trainer smart fit valor" e "preço" (FAQ e parágrafo: a rede não publica preço; link para a calculadora); ❌ "reclame aqui" (reputação de terceiros), "rj" (outra cidade).
+- PAA: ✅ "Quanto custa um personal 2 vezes por semana?" (calculadora por frequência); ❌ "Quanto ganha um personal na Smart Fit?" (quem quer ser personal); ❌ "Qual a forma mais barata de treinar na Smart Fit?" e "Pode ir 2x no dia?" (planos e regras da rede, sem fonte conferida).
+- Outras pesquisas: nenhuma.
+- Visão de IA: diz que o serviço oficial é o Smart Fit Coach (consultoria online), que há professor de salão incluso e que dá para buscar personal no app; cita a página oficial da Smart Fit. ✅ H2 nova com os três formatos e FAQ do Smart Fit Coach, com a página oficial como fonte (conferida em 22/11).
+- Quem ranqueia: Smart Fit (Instagram, site, Facebook, central de ajuda) e Reddit. A busca é dominada pela marca.
+
+**Treinar sozinho na academia dá resultado**
+- Autocompletar: vazio. Outras pesquisas: nenhuma.
+- PAA: ✅ "Quanto tempo de academia para ter um resultado?" (já respondida); ✅ "O que acontece com o corpo se malhar todos os dias?" (FAQ e link para `treinar-todos-os-dias-faz-mal`); ❌ "ganhar massa em casa" e "perder barriga com musculação" (outros temas, com artigo próprio no acervo).
+- Visão de IA: diz que dá resultado com planejamento, execução, progressão e descanso; alerta para carga pesada sem segurança. Cita UOL, Body Nutry, Abril, A Crítica. ✅ H2 nova "Segurança: carga pesada sem ninguém por perto" e FAQ.
+- Quem ranqueia: Instagram, Body Nutry, UOL, Personal por Perto (5º) e workoutwithme.
+
+**Item de "viram seção" aplicado:** "Quanto custa personal trainer na Smart Fit" (entrou na própria revisão de `personal-online-smart-fit`, com a regra oficial da rede).
+**Itens que ficam, com o motivo:** diária da Gaviões e da Bluefit (site da Bluefit sem menção; Gaviões não abre neste ambiente); academia mais cara de Alphaville (sem mensalidades de fonte oficial acessível); sopa de macarrão (sem dado de sopa na base). Por isso, hoje só 1 item de seção.
+
+**Ficou de fora:** nada que valha artigo.

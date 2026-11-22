@@ -39,6 +39,7 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
       "Treinar sozinho funciona para muita gente. Veja o que precisa existir para dar resultado, os sinais de que você travou, os erros mais comuns e quando vale pedir ajuda.",
     category: "Treino",
     date: "2026-11-15",
+    updatedAt: "2026-11-22",
     readTime: "7 min",
     author: "Montinho",
     tags: ["treinar sozinho", "academia", "musculação", "resultado"],
@@ -67,6 +68,16 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
         question: "Vergonha de treinar sozinho na academia: o que fazer?",
         answer:
           "Ir com o treino pronto ajuda muito: saber a ordem dos exercícios e onde fica cada aparelho tira a sensação de estar perdido. Horários mais vazios e fone de ouvido também. Em poucas semanas, a academia vira um lugar conhecido.",
+      },
+      {
+        question: "É seguro fazer supino e agachamento pesado sozinho?",
+        answer:
+          "É, com as proteções certas: no agachamento, use o rack com as travas de segurança na altura certa; no supino com barra, use o rack com travas ou troque por halteres, que dá para largar ao lado. Sem ninguém para ajudar, pare a série com 1 ou 2 repetições ainda possíveis nos exercícios em que a barra fica sobre você.",
+      },
+      {
+        question: "Posso treinar todos os dias sozinho?",
+        answer:
+          "Pode, se o treino for dividido para o mesmo músculo não trabalhar pesado em dias seguidos e se houver pelo menos um dia mais leve na semana. Treinar pesado todo dia, sem descanso, costuma travar o resultado em vez de acelerar.",
       },
       {
         question: "Dá para ganhar massa muscular treinando sozinho?",
@@ -105,6 +116,16 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
 <li><strong>Revise a cada quatro a seis semanas:</strong> a carga subiu? As medidas mudaram? Se não, algo no plano precisa mudar.</li>
 </ol>
 <p>A ficha que você usa é boa? O checklist está em <a href="/blog/como-saber-se-a-ficha-de-treino-e-boa">como saber se a ficha de treino é boa</a>.</p>
+
+<h2>Segurança: carga pesada sem ninguém por perto</h2>
+<p>Quem treina sozinho não tem quem segure a barra. Isso não impede treino pesado, só muda o jeito:</p>
+<ul>
+<li><strong>Agachamento:</strong> no rack, com as travas de segurança logo abaixo da altura mais baixa do seu agachamento. Se a repetição não sobe, você apoia a barra nelas.</li>
+<li><strong>Supino com barra:</strong> no rack com travas, ou troque pelo supino com halteres, que dá para largar ao lado do corpo.</li>
+<li><strong>Máquinas e Smith:</strong> bons para chegar perto da falha com segurança, porque têm trava.</li>
+<li><strong>Falha só onde é seguro:</strong> nos exercícios em que a barra fica sobre você, pare com 1 ou 2 repetições ainda possíveis.</li>
+</ul>
+<p>E dá para treinar todos os dias? Dá, com divisão e descanso entre o mesmo músculo; o detalhe está em <a href="/blog/treinar-todos-os-dias-faz-mal">treinar todos os dias faz mal?</a>.</p>
 
 <h2>Quando vale ter alguém acompanhando</h2>
 <ul>
