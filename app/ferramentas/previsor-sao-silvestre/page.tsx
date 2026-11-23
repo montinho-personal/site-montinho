@@ -69,7 +69,7 @@ const faq: ItemFAQ[] = [
   },
   {
     question: "Qual o tempo limite da São Silvestre?",
-    answer: "No regulamento de 2025, o tempo máximo de prova é de 2h30, contado a partir da largada da última onda. Confira o regulamento de 2026 quando for publicado.",
+    answer: "Pelo regulamento oficial de 2026, o tempo máximo de prova é de 3 horas, contado a partir das 9h50, para todos os atletas, qualquer que seja o pelotão ou o horário de largada. Ou seja, a prova fecha às 12h50.",
   },
   {
     question: "Quantos km tem a São Silvestre?",
@@ -169,7 +169,7 @@ export default function PrevisorSaoSilvestrePage() {
             <ul className="space-y-2 text-gray-300 leading-relaxed">
               <li><strong className="text-white">Recorde:</strong> 42min59s, de Kibiwott Kandie (Quênia), em 2019.</li>
               <li><strong className="text-white">Vencedores de 2025:</strong> Muse Gizachew (Etiópia), 44min28s, e Sisilia Panga (Tanzânia), 51min08s.</li>
-              <li><strong className="text-white">Tempo limite:</strong> 2h30 a partir da largada da última onda, pelo regulamento de 2025.</li>
+              <li><strong className="text-white">Tempo limite:</strong> 3 horas contadas a partir das 9h50 (a prova fecha às 12h50), para todos os pelotões, pelo regulamento de 2026.</li>
             </ul>
             <p className="text-gray-400 text-sm mt-3">
               Fontes: regulamento oficial da 100ª São Silvestre; Gazeta Esportiva e Wikipédia (recorde); CNN Brasil e Olympics.com (2025).
