@@ -294,7 +294,7 @@ export const CONSULTORIA_ONLINE_DUVIDAS_POSTS: BlogPost[] = [
   {
     slug: "personal-online-smart-fit",
     title: "Personal Online Treinando na Smart Fit: Vale a Pena?",
-    metaTitle: "Personal Online na Smart Fit: Como Funciona e Vale a Pena?",
+    metaTitle: "Personal Trainer na Smart Fit: Preço, Regras e Opção Online",
     metaDescription:
       "Dá para ter treino personalizado sem sair da Smart Fit: o plano usa os aparelhos da sua unidade e você envia vídeos. Veja como funciona e para quem vale.",
     excerpt:
