@@ -32,7 +32,7 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
   {
     slug: "treinar-sozinho-na-academia-da-resultado",
     title: "Treinar Sozinho na Academia Dá Resultado?",
-    metaTitle: "Treinar Sozinho na Academia Dá Resultado? O Que Avaliar",
+    metaTitle: "Treinar Sozinho na Academia Dá Resultado? Como Fazer com Segurança",
     metaDescription:
       "Dá, quando o plano faz sentido, a carga sobe e você vai toda semana. Veja onde quem treina sozinho costuma travar e como perceber isso a tempo.",
     excerpt:

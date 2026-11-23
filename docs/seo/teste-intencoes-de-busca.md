@@ -2061,3 +2061,11 @@ Evidência: `docs/seo/serp/smart-fit-treinar-sozinho-2026-11-22.json` (SerpApi, 
 **Itens que ficam, com o motivo:** diária da Gaviões e da Bluefit (site da Bluefit sem menção; Gaviões não abre neste ambiente); academia mais cara de Alphaville (sem mensalidades de fonte oficial acessível); sopa de macarrão (sem dado de sopa na base). Por isso, hoje só 1 item de seção.
 
 **Ficou de fora:** nada que valha artigo.
+
+
+## 2026-11-23 — Títulos aprovados pelo Montinho ("pode seguir com os títulos"): `personal-online-smart-fit` e `treinar-sozinho-na-academia-da-resultado`
+
+- `personal-online-smart-fit`: metaTitle "Personal Online na Smart Fit: Como Funciona e Vale a Pena?" → "Personal Trainer na Smart Fit: Preço, Regras e Opção Online".
+- `treinar-sozinho-na-academia-da-resultado`: metaTitle "Treinar Sozinho na Academia Dá Resultado? O Que Avaliar" → "Treinar Sozinho na Academia Dá Resultado? Como Fazer com Segurança".
+- Linha de base do Search Console (Supermetrics, últimos 28 dias até 23/11): Smart Fit 25 impr., 0 clique, pos. 19,7; treinar sozinho 4 impr., 0 clique, pos. 7,3. Comparar em 21/12; se o clique não subir, voltar.
+- updatedAt não mudou.
