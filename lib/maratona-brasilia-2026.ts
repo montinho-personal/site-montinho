@@ -23,14 +23,17 @@ export const MARATONA_BRASILIA_2026_POSTS: BlogPost[] = [
     category: "Corrida",
     tipo: "noticia",
     date: "2026-10-03",
+    updatedAt: "2026-11-24",
     readTime: "3 min",
     author: "Montinho Personal Trainer",
     tags: ["Maratona de Brasília", "Maratona Monumental", "resultado maratona", "corrida de rua"],
     content: `<img src="/blog-images/maratona-de-brasilia-2026-capa.webp" alt="Resultado da Maratona de Brasília 2026 — domingo, 22 de novembro" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<blockquote><p><strong>A prova ainda não aconteceu. A maratona e a meia são no domingo, 22 de novembro; os 5 e 10 km, no sábado, 21.</strong> Esta página é atualizada com os vencedores assim que o resultado oficial for divulgado.</p></blockquote>
+<blockquote><p><strong>Atualizado em 24 de novembro de 2026.</strong> A prova foi no domingo, 22 de novembro. O campeão masculino da maratona está confirmado por dois veículos; a campeã feminina e os vencedores da meia entram aqui quando o resultado oficial da cronometragem for publicado.</p></blockquote>
 
 <h2>Quem ganhou a Maratona de Brasília 2026?</h2>
-<p><strong>Resultado: aguardando a prova.</strong> Os vencedores da maratona e da meia, no masculino e no feminino, entram aqui no domingo, 22 de novembro, com o resultado oficial.</p>
+<p><strong>Maratona masculina:</strong> <strong>Jonailton França da Cruz</strong>, de Barra do Garças (MT), venceu os 42 km em <strong>2h26</strong>. André Luiz Silva Antônio foi o segundo, com 2h31, e Alex Ivo de Aguiar o terceiro, com 2h31min35s, segundo o jornal Semana7, com base na cronometragem oficial.</p>
+<p><strong>Maratona feminina e meia maratona:</strong> aguardando o resultado oficial. Os nomes que circularam até agora apareceram em uma fonte só, e aqui só entra o que tiver fonte oficial ou dois veículos.</p>
+<p>Não confunda com a Maratona Brasília de abril, outra prova: os campeões de abril não são os da Monumental.</p>
 
 <h2>Como consultar o seu resultado</h2>
 <p>O resultado individual, com o tempo líquido pelo chip, sai no site oficial e na cronometragem depois da chegada. Horários, percurso e tabela de pace estão em <a href="/blog/maratona-de-brasilia-2026">Maratona de Brasília 2026</a>.</p>
@@ -44,9 +47,11 @@ export const MARATONA_BRASILIA_2026_POSTS: BlogPost[] = [
 <h2>Fontes</h2>
 <ul>
 <li><a href="https://maratonamonumentalbsb.com.br/" target="_blank" rel="noopener noreferrer">Maratona Monumental de Brasília — site oficial</a></li>
+<li><a href="https://www.semana7.com.br/geral-economia/atleta-de-barra-do-garcas-e-campeao-da-maratona-monumental-de-brasilia/84870" target="_blank" rel="noopener noreferrer">Semana7: atleta de Barra do Garças é campeão da Maratona Monumental de Brasília</a></li>
+<li><a href="https://www.gotrilha.com.br/resultados/maratona-monumental-de-brasilia" target="_blank" rel="noopener noreferrer">GoTrilha: resultados da Maratona Monumental 2026</a> (vencedor masculino dos 42 km)</li>
 </ul>`,
     faq: [
-      { question: "Quem ganhou a Maratona de Brasília 2026?", answer: "A maratona e a meia acontecem no domingo, 22 de novembro de 2026. Os vencedores entram nesta página assim que o resultado oficial for divulgado." },
+      { question: "Quem ganhou a Maratona de Brasília 2026?", answer: "Na maratona masculina, Jonailton França da Cruz, de Barra do Garças (MT), em 2h26, à frente de André Luiz Silva Antônio (2h31) e Alex Ivo de Aguiar (2h31min35s). A campeã feminina e os vencedores da meia entram aqui com o resultado oficial." },
       { question: "Que horas larga a Maratona de Brasília 2026?", answer: "A maratona às 5h e a meia às 6h do domingo, 22/11. Os 5 e 10 km largam no sábado, 21/11, às 17h, confirmado no regulamento de novembro." },
     ],
   },
