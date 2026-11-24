@@ -54,7 +54,9 @@ export const LUTAS_REGIAO_POSTS: BlogPost[] = [
     readTime: "6 min",
     author: "Montinho Personal Trainer",
     tags: ["jiu-jitsu Osasco", "academia de luta", "Osasco", "jiu-jitsu infantil"],
-    content: `<p>Osasco tem equipes de jiu-jitsu tradicionais, algumas com mais de vinte anos na cidade, e academias espalhadas do Centro ao Km 18. Este guia mostra onde procurar, como escolher e o que perguntar antes de se matricular.</p>
+    content: `<img src="/blog-images/academias-de-jiu-jitsu-em-osasco-capa.webp" alt="Capa: Jiu-jitsu em Osasco. Como escolher e preço. Ilustração de uma faixa de jiu-jitsu com nó" title="Academias de jiu-jitsu em Osasco: como escolher, infantil e preço — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p>Osasco tem equipes de jiu-jitsu tradicionais, algumas com mais de vinte anos na cidade, e academias espalhadas do Centro ao Km 18. Este guia mostra onde procurar, como escolher e o que perguntar antes de se matricular.</p>
 
 <h2>Onde treinar jiu-jitsu em Osasco</h2>
 <ul>
@@ -102,7 +104,9 @@ ${LINKS}`,
     readTime: "6 min",
     author: "Montinho Personal Trainer",
     tags: ["jiu-jitsu Carapicuíba", "muay thai Carapicuíba", "academia de luta", "Carapicuíba"],
-    content: `<p>Em Carapicuíba, boa parte das academias de luta junta jiu-jitsu, muay thai e boxe no mesmo espaço, do Centro à Vila Dirce. Isso ajuda quem quer experimentar mais de uma luta antes de escolher. Veja onde procurar e o que perguntar.</p>
+    content: `<img src="/blog-images/academias-de-jiu-jitsu-em-carapicuiba-capa.webp" alt="Capa: Jiu-jitsu em Carapicuíba. Como escolher e muay thai. Ilustração de uma faixa de jiu-jitsu com nó" title="Academias de jiu-jitsu em Carapicuíba: como escolher, infantil e muay thai — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p>Em Carapicuíba, boa parte das academias de luta junta jiu-jitsu, muay thai e boxe no mesmo espaço, do Centro à Vila Dirce. Isso ajuda quem quer experimentar mais de uma luta antes de escolher. Veja onde procurar e o que perguntar.</p>
 
 <h2>Onde treinar jiu-jitsu em Carapicuíba</h2>
 <ul>
@@ -150,7 +154,9 @@ ${LINKS}`,
     readTime: "6 min",
     author: "Montinho Personal Trainer",
     tags: ["jiu-jitsu Cotia", "jiu-jitsu Granja Viana", "academia de luta", "Cotia", "Granja Viana"],
-    content: `<p>Em Cotia, a procura por jiu-jitsu se concentra na Granja Viana, onde está boa parte das academias de luta da cidade. Veja onde procurar e o que perguntar antes de se matricular.</p>
+    content: `<img src="/blog-images/academias-de-jiu-jitsu-em-cotia-capa.webp" alt="Capa: Jiu-jitsu em Cotia. Granja Viana e como escolher. Ilustração de uma faixa de jiu-jitsu com nó" title="Academias de jiu-jitsu em Cotia e Granja Viana: como escolher e infantil — Montinho Personal Trainer" width="1536" height="1024" loading="eager" decoding="async" style="width:100%;height:auto;border-radius:8px;"/>
+
+<p>Em Cotia, a procura por jiu-jitsu se concentra na Granja Viana, onde está boa parte das academias de luta da cidade. Veja onde procurar e o que perguntar antes de se matricular.</p>
 
 <h2>Onde treinar jiu-jitsu na Granja Viana e em Cotia</h2>
 <ul>
