@@ -1348,6 +1348,12 @@ e a medição de 28 dias (24/11) olha impressões, cliques e as consultas que en
   anos" são as duas primeiras sugestões do autocompletar.
 - Descrições reescritas nos dois (confirmam a resposta e deixam a dúvida aberta).
 
+**Medição de 28 dias (27/10 a 23/11, Search Console pela Supermetrics, conferida em 24/11):**
+- `beneficios-do-muay-thai`: 170 impressões, 0 clique, posição média 27,0. "Corpo feminino" entrou: "muay thai define o corpo feminino" 39 impr., pos. 9,0 (a maior consulta da página); "benefícios do muay thai feminino" 5 impr., pos. 65; "no corpo feminino" 1 impr., pos. 6. As buscas genéricas ("benefícios do muay thai") seguem na posição 57 a 69.
+- `crossfit-da-massa-muscular`: 554 impressões, 3 cliques, CTR 0,54%, posição 6,9. "Depois dos 50" não apareceu em nenhuma consulta. As principais: "crossfit ganha massa muscular" 37 impr., pos. 7,3; "crossfit cria massa muscular" 7; "quanto tempo de crossfit para definir o corpo" 7, pos. 10.
+- Auditoria: soma das páginas = consulta agregada por página (170 e 554); as consultas listadas somam menos que as impressões por causa dos termos ocultos do Search Console; linha de base zero (páginas de 24/10), então não há "antes" para comparar o clique, só o volume que entrou.
+- Conclusão: voltar ao título antigo não faz sentido nos dois (os termos antigos, "fôlego/agilidade" e "como ganhar mais", não aparecem nas buscas). Proposta de ajuste enviada ao Montinho, aguardando aprovação.
+
 ## 2026-10-27 — Artigo novo: Six Alphaville
 
 - Pesquisa: prints do autocompletar ("six alphaville academia", "fotos", "mensalidade", "six barueri"), PAA (mensalidade, onde fica, academia mais cara de Alphaville, dono), "Outras pessoas pesquisaram" (endereço, fotos, valor da mensalidade, Six Itaim, Six Vila Nova) e export do Answer the Public (Google, Bing, PAA e modelos de IA).
