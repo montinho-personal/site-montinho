@@ -523,7 +523,7 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
   {
     slug: "como-saber-se-o-treino-esta-funcionando",
     title: "Como Saber se o Treino de Musculação Está Funcionando",
-    metaTitle: "Como Saber se o Treino de Musculação Está Funcionando",
+    metaTitle: "Como Saber se o Treino Está Funcionando (Perna, Glúteo e em Casa)",
     metaDescription:
       "Carga subindo, medidas mudando e fotos diferentes ao longo das semanas. Veja os sinais de que o treino funciona, os que enganam e quanto tempo esperar.",
     excerpt:
