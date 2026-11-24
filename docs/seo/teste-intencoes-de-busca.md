@@ -2128,3 +2128,11 @@ Evidência: `docs/seo/serp/musculacao-emagrecer-treino-funcionando-2026-11-24.js
 **Itens de "viram seção":** nenhum aplicado; os 3 que restam seguem sem fonte.
 **Fila de revisões:** com estes, os 8 de 15/11 estão revisados. Restam os 4 de jiu-jitsu (busca na cidade de cada página) e `quanto-custa-personal-trainer-alphaville`.
 **Ficou de fora:** nada que valha artigo.
+
+
+## 2026-11-24 — Título aprovado pelo Montinho ("pode seguir"): `como-saber-se-o-treino-esta-funcionando`
+
+- metaTitle "Como Saber se o Treino de Musculação Está Funcionando" → "Como Saber se o Treino Está Funcionando (Perna, Glúteo e em Casa)".
+- `musculacao-para-emagrecer-quantas-vezes-por-semana`: título mantido (já usa as palavras da busca).
+- Linha de base do Search Console (Supermetrics, últimos 28 dias até 24/11): 42 impr., 0 clique, pos. 7,5. Comparar em 22/12; se o clique não subir, voltar.
+- updatedAt não mudou.
