@@ -154,6 +154,7 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
       "Um checklist para avaliar a ficha da academia: volume por músculo, frequência, ordem dos exercícios, repetições, progressão e se ela cabe na sua semana. Com os sinais de ficha genérica.",
     category: "Treino",
     date: "2026-11-15",
+    updatedAt: "2026-11-24",
     readTime: "7 min",
     author: "Montinho",
     tags: ["ficha de treino", "academia", "treino", "musculação"],
@@ -182,6 +183,21 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
         question: "Ficha de treino ABC é boa?",
         answer:
           "Pode ser, desde que cada músculo receba séries suficientes. O ponto fraco do ABC clássico é treinar cada músculo uma vez por semana. Para quem treina três dias, um full body ou um upper/lower costuma distribuir melhor.",
+      },
+      {
+        question: "Como saber se meu treino está fraco (fofo)?",
+        answer:
+          "Os sinais: você termina as séries com muitas repetições sobrando, a carga é a mesma há semanas e o dia seguinte não tem nenhum cansaço. Para hipertrofia, a maioria das séries deve acabar com 1 ou 2 repetições ainda possíveis, e a carga ou as repetições precisam subir aos poucos.",
+      },
+      {
+        question: "Como saber se meu treino está excessivo?",
+        answer:
+          "Os sinais: a carga cai de uma semana para a outra, o cansaço não passa entre um treino e outro, o sono piora e as articulações começam a doer. Quando isso acontece, menos séries ou uma semana mais leve costumam devolver o rendimento.",
+      },
+      {
+        question: "Como montar uma boa ficha de treino?",
+        answer:
+          "Comece pelos dias que você tem na semana, escolha uma divisão que faça cada músculo trabalhar pelo menos duas vezes, ponha os exercícios grandes primeiro e anote as cargas para elas subirem. O passo a passo está no guia de como montar um treino ABC.",
       },
       {
         question: "Ficha de treino com 3 séries de 12 é boa?",
@@ -226,6 +242,15 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
 </ul>
 <p>Ficha genérica não é necessariamente ruim. Para quem está começando, ela pode render bem por um tempo. O problema aparece quando o corpo para de responder e ninguém ajusta.</p>
 
+<h2>Treino fraco ou treino demais: os sinais</h2>
+<p>O checklist mostra se a ficha está bem montada. O seu corpo mostra se ela está na dose certa:</p>
+<ul>
+<li><strong>Treino fraco ("fofo"):</strong> as séries acabam com muitas repetições sobrando, a carga não muda há semanas e no dia seguinte não há cansaço nenhum.</li>
+<li><strong>Treino demais:</strong> a carga cai de uma semana para a outra, o cansaço não passa entre os treinos, o sono piora e as articulações começam a reclamar.</li>
+<li><strong>Na dose certa:</strong> a maioria das séries termina com 1 ou 2 repetições ainda possíveis, e a carga ou as repetições sobem um pouco a cada semana ou duas.</li>
+</ul>
+<p>Para montar uma do zero, veja <a href="/blog/como-montar-treino-abc">como montar um treino ABC</a>.</p>
+
 <h2>E se a ficha não passar no checklist?</h2>
 <p>Ajuste o que dá: some séries onde falta, distribua o músculo em dois dias, coloque os exercícios grandes primeiro. Para ver como montar do zero, veja <a href="/blog/como-montar-treino-de-hipertrofia">como montar um treino de hipertrofia</a> e, se a dúvida for a divisão, <a href="/blog/treino-abc-ou-upper-lower">treino ABC ou upper/lower</a>.</p>
 <p>Se preferir que alguém faça isso com você, na <a href="/consultoria-online">consultoria online</a> eu monto o plano para a sua semana e para a sua academia, e mudo quando a carga trava.</p>
@@ -248,6 +273,7 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
       "As diferenças entre o treino ABC e o upper/lower: frequência por músculo, duração do treino, dias por semana e recuperação. Com exemplos e qual escolher para 3, 4, 5 ou 6 dias.",
     category: "Treino",
     date: "2026-11-15",
+    updatedAt: "2026-11-24",
     readTime: "8 min",
     author: "Montinho",
     tags: ["treino ABC", "upper lower", "divisão de treino", "hipertrofia"],
@@ -276,6 +302,26 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
         question: "Upper/lower é para iniciante?",
         answer:
           "Pode ser. Muitos iniciantes começam com full body 2 a 3 vezes por semana e passam para upper/lower quando sobem para 4 dias. O que importa é aprender os exercícios e fazer a carga subir.",
+      },
+      {
+        question: "Qual o melhor treino: AB ou ABC?",
+        answer:
+          "Depende dos dias. Com 2 ou 4 dias por semana, o AB (que pode ser o próprio upper/lower) faz cada músculo trabalhar duas vezes. Com 3 dias, o ABC treina cada músculo só uma vez; o AB alternado (A, B, A numa semana; B, A, B na outra) costuma render mais.",
+      },
+      {
+        question: "O treino full body é melhor que o dividido?",
+        answer:
+          "Não é melhor nem pior: com o mesmo número de séries por músculo na semana, os resultados tendem a ser parecidos. O full body encaixa bem em 2 ou 3 dias; o upper/lower, em 4; o ABC, em 3 ou 6.",
+      },
+      {
+        question: "Dá para fazer upper/lower 5 dias por semana?",
+        answer:
+          "Dá. As formas mais comuns são repetir o ciclo (superior, inferior, superior, inferior, superior, e a semana seguinte começa pelo inferior) ou fazer 4 dias de upper/lower e usar o quinto para o ponto que você quer priorizar, com volume menor.",
+      },
+      {
+        question: "Treino upper/lower muda para homem e mulher?",
+        answer:
+          "A divisão é a mesma. O que muda é a ênfase pelo objetivo de cada um: quem quer priorizar glúteos e pernas põe mais séries no dia inferior; quem quer priorizar peito e costas, no superior.",
       },
       {
         question: "Quantos exercícios por treino no upper/lower?",
@@ -332,6 +378,14 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
 <li><strong>C, pernas:</strong> agachamento, stiff, leg press, flexora, panturrilha.</li>
 </ul>
 <p>Feito três vezes por semana, cada músculo recebe um treino. Feito seis (ABCABC), recebe dois. Como montar em <a href="/blog/como-montar-treino-abc">como montar um treino ABC</a>.</p>
+
+<h2>E com 5 dias, ABCD ou full body?</h2>
+<ul>
+<li><strong>Upper/lower com 5 dias:</strong> repita o ciclo (superior, inferior, superior, inferior, superior, e a semana seguinte começa pelo inferior) ou faça 4 dias de upper/lower e use o quinto para o ponto que quer priorizar, com pouco volume. Detalhes em <a href="/blog/treino-upper-lower-superior-inferior">treino upper/lower</a>.</li>
+<li><strong>ABCD:</strong> cada músculo costuma aparecer uma vez por semana. Funciona, mas pede mais séries por sessão para chegar ao mesmo volume. Veja <a href="/blog/treino-abcd-para-hipertrofia">treino ABCD para hipertrofia</a>.</li>
+<li><strong>Full body:</strong> encaixa melhor em 2 ou 3 dias. A comparação está em <a href="/blog/full-body-vs-divisao-abc">full body ou divisão ABC</a>.</li>
+</ul>
+<p>Com o mesmo número de séries por músculo na semana, a divisão importa menos do que conseguir repetir a semana inteira, mês após mês.</p>
 
 <h2>Então, qual eu escolho?</h2>
 <p>O que você consegue cumprir. Se quatro dias é a sua realidade, comece pelo upper/lower. Se você vai seis dias e gosta de treino curto, ABCABC. Se são três, pense em full body. E qualquer divisão só funciona com carga subindo ao longo das semanas (<a href="/blog/progressao-de-carga">progressão de carga</a>).</p>

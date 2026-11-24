@@ -2069,3 +2069,25 @@ Evidência: `docs/seo/serp/smart-fit-treinar-sozinho-2026-11-22.json` (SerpApi, 
 - `treinar-sozinho-na-academia-da-resultado`: metaTitle "Treinar Sozinho na Academia Dá Resultado? O Que Avaliar" → "Treinar Sozinho na Academia Dá Resultado? Como Fazer com Segurança".
 - Linha de base do Search Console (Supermetrics, últimos 28 dias até 23/11): Smart Fit 25 impr., 0 clique, pos. 19,7; treinar sozinho 4 impr., 0 clique, pos. 7,3. Comparar em 21/12; se o clique não subir, voltar.
 - updatedAt não mudou.
+
+
+## 2026-11-24 — Rotina diária: revisões de `como-saber-se-a-ficha-de-treino-e-boa` e `treino-abc-ou-upper-lower` (sem item de seção)
+
+Evidência: `docs/seo/serp/ficha-de-treino-abc-upper-lower-2026-11-24.json` (SerpApi, celular, São Paulo; 2 buscas × página + autocompletar + visão de IA em 2 etapas = 6 da cota).
+
+**Como saber se a ficha de treino é boa**
+- Autocompletar e outras pesquisas: vazios.
+- PAA: ✅ "Como saber se meu treino é fofo?" (H2 "Treino fraco ou treino demais" e FAQ); ✅ "Como montar uma boa ficha de treino?" (FAQ e link para `como-montar-treino-abc`); ❌ "Estou há 1 mês na academia e não emagreço" (outro tema, com artigos de emagrecimento no acervo); ❌ "O que é hipertrofia?" (definição genérica, tem artigo próprio).
+- Visão de IA: rotina, nível, progressão, volume e descanso, anotar cargas, revisar; cita Instagram, Facebook, Abril, Action 360, Reddit. ✅ o "teste na prática" virou a seção de sinais; o resto já estava no checklist.
+- Quem ranqueia: Facebook, Reddit (r/Maromba, inclusive "treino excessivo"), Instagram. Só redes sociais e fórum: busca com prioridade (concorrência fraca). ✅ "treino excessivo" virou FAQ.
+
+**Treino ABC ou upper/lower**
+- Autocompletar: ✅ "abcd upper lower" (H2 nova "E com 5 dias, ABCD ou full body?"); ✅ "upper lower é bom" (já); ❌ "avançado" (coberto pelo artigo `treino-upper-lower-superior-inferior`, linkado).
+- PAA: ✅ "Qual o melhor treino AB ou ABC?" (FAQ); ✅ "O treino Full Body é melhor?" (FAQ e link para `full-body-vs-divisao-abc`); ✅ "Como é a divisão upper e lower?" (já); ❌ "O que não se deve fazer depois do treino?" (outro tema).
+- Outras pesquisas: ✅ "4 dias" (já), "5 dias" (H2 e FAQ), "masculino/feminino" (FAQ: a divisão não muda pelo sexo), "é bom", "completo" (já).
+- Visão de IA: a escolha depende dos dias e do volume semanal; cita Netshoes, Theros App, Duxfit, Cia Athletica, Manalinda, Reddit. Nada novo além do que entrou.
+- Quem ranqueia: Instagram, Duxfit, Reddit, Meu Treinador, Scribd, Hipertrofia.org.
+
+**Itens de "viram seção":** nenhum aplicado. Os 3 que restam seguem sem fonte: academia mais cara de Alphaville (sem mensalidades oficiais), diária da Gaviões e da Bluefit (sem menção oficial), sopa de macarrão (sem dado na base).
+
+**Ficou de fora:** nada que valha artigo.
