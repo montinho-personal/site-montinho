@@ -2105,3 +2105,26 @@ Evidência: `docs/seo/serp/ficha-de-treino-abc-upper-lower-2026-11-24.json` (Ser
 - `treino-abc-ou-upper-lower`: metaTitle "Treino ABC ou Upper/Lower: Qual Escolher para Hipertrofia?" → "Treino ABC ou Upper Lower: Qual Escolher com 3, 4 ou 5 Dias".
 - Linha de base do Search Console (Supermetrics, últimos 28 dias até 24/11): ficha 13 impr., 1 clique, pos. 4,5; ABC x upper/lower 90 impr., 1 clique, pos. 8,4. Comparar em 22/12; se o clique não subir, voltar.
 - updatedAt não mudou.
+
+
+## 2026-11-24 (2ª rodada) — Rotina diária: revisões de `musculacao-para-emagrecer-quantas-vezes-por-semana` e `como-saber-se-o-treino-esta-funcionando` (sem item de seção)
+
+Evidência: `docs/seo/serp/musculacao-emagrecer-treino-funcionando-2026-11-24.json` (SerpApi, celular, São Paulo; 6 da cota).
+
+**Musculação para emagrecer: quantas vezes por semana**
+- Autocompletar: ✅ "3 vezes por semana" (já), "5 vezes por semana emagrece" (H2 e FAQ), "emagrece quantos quilos por semana" (FAQ, com CDC).
+- PAA: ✅ "É possível perder barriga com musculação?" (FAQ e link); ✅ "melhor treino para emagrecer" (já: como montar a semana); ❌ "É possível perder 5 kg em 1 semana?" (promessa de prazo); ❌ "O que faz perder mais peso na academia?" (coberto por `exercicio-que-mais-queima-calorias`).
+- Outras pesquisas: ✅ 2, 3, 4 e 5 vezes por semana (H2 nova "2, 3, 4 ou 5 vezes"; FAQ de 2x e de 5x); ❌ "ganhar massa", "divisão abcde", "tabela de treino" (outros artigos do acervo).
+- Visão de IA: 3 a 5 vezes, por nível; déficit, massa magra, descanso; cita UOL, Terra, Smart Fit, Engenharia do Corpo, Nav Dasa. Tudo coberto.
+- Quem ranqueia: Engenharia do Corpo, UOL, Smart Fit, Terra, Cia Athletica. Concorrência forte (veículos).
+
+**Como saber se o treino está funcionando**
+- Autocompletar: ✅ "treino em casa", "treino de perna", "treino de glúteo" (H2 nova e 2 FAQs).
+- PAA: ✅ "Quanto tempo o corpo começa a evoluir" (já); ✅ "1 mês de academia já dá resultado" (FAQ, veio das outras pesquisas); ❌ "quantas vezes por semana", "30 minutos por dia", "1 semana de academia" (outros artigos).
+- Outras pesquisas: ✅ "ganhando massa muscular ou gordura" (FAQ e item na H2), "glúteo está crescendo", "nas pernas" (H2); ✅ "de quanto em quanto tempo mudar o treino" (já, com link); ❌ "sensação pós treino frases" (nada a ver).
+- Visão de IA: desempenho, fôlego, energia, sono, medidas; dor e exaustão não definem. Cita Veja Saúde, Growth, Action 360, UOL. Tudo coberto.
+- Quem ranqueia: Veja Saúde, UOL, YouTube, Action 360, Reddit.
+
+**Itens de "viram seção":** nenhum aplicado; os 3 que restam seguem sem fonte.
+**Fila de revisões:** com estes, os 8 de 15/11 estão revisados. Restam os 4 de jiu-jitsu (busca na cidade de cada página) e `quanto-custa-personal-trainer-alphaville`.
+**Ficou de fora:** nada que valha artigo.

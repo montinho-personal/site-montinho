@@ -409,6 +409,7 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
       "Quantas vezes por semana fazer musculação para emagrecer, se 3 treinos bastam, quando acrescentar cardio e por que o que acontece fora da academia decide mais do que o número de treinos.",
     category: "Emagrecimento",
     date: "2026-11-15",
+    updatedAt: "2026-11-24",
     readTime: "7 min",
     author: "Montinho",
     tags: ["musculação", "emagrecer", "frequência de treino", "déficit calórico"],
@@ -439,6 +440,26 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
           "Um treino completo de musculação costuma caber em menos de uma hora. Treinar mais tempo não compensa uma alimentação acima do gasto. O artigo sobre a duração ideal do treino detalha a conta.",
       },
       {
+        question: "Musculação 2 vezes por semana dá resultado?",
+        answer:
+          "Dá, principalmente para quem está começando: com dois treinos de corpo inteiro, cada músculo trabalha duas vezes na semana, que é o mínimo que as diretrizes de saúde pedem. Para emagrecer, o resto vem da alimentação e de se mexer mais nos outros dias.",
+      },
+      {
+        question: "Musculação 5 vezes por semana emagrece mais?",
+        answer:
+          "Só se você conseguir manter. Cinco treinos gastam mais calorias que três, mas a diferença na semana é pequena perto do que a alimentação faz. Se cinco dias cabem na sua rotina e você se recupera bem, ótimo; se viram faltas, três bem feitos rendem mais.",
+      },
+      {
+        question: "Musculação emagrece quantos quilos por semana?",
+        answer:
+          "Sozinha, pouco: o treino gasta algumas centenas de calorias por sessão. O ritmo da balança vem do déficit da semana inteira. Como referência, as diretrizes de obesidade costumam trabalhar com perda de 0,5 a 1 kg por semana; a musculação entra para que esse peso perdido seja gordura, e não músculo.",
+      },
+      {
+        question: "É possível perder barriga com musculação?",
+        answer:
+          "É, mas não escolhendo exercício para a barriga. A gordura sai do corpo todo quando a semana fecha em déficit; o abdominal fortalece o músculo, não queima a gordura que está por cima. A musculação ajuda mantendo a massa muscular enquanto o peso desce.",
+      },
+      {
         question: "Treino full body ou dividido para emagrecer?",
         answer:
           "Com 3 dias, o full body costuma encaixar melhor, porque treina cada músculo três vezes. Com 4 dias, o upper/lower. A divisão importa menos do que a constância e a carga subindo.",
@@ -463,6 +484,16 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
 <li><strong>Carga subindo</strong> ao longo das semanas, mesmo em déficit. Se a força começar a cair muito, o déficit pode estar grande demais.</li>
 </ul>
 <p>Com 4 dias, upper/lower funciona bem. A comparação de divisões está em <a href="/blog/treino-abc-ou-upper-lower">treino ABC ou upper/lower</a>.</p>
+
+<h2>2, 3, 4 ou 5 vezes por semana: o que muda</h2>
+<ul>
+<li><strong>2 vezes:</strong> funciona, com treinos de corpo inteiro. É o mínimo para cada músculo trabalhar duas vezes na semana, e um bom começo para quem está parado.</li>
+<li><strong>3 vezes:</strong> o ponto que mais cabe na vida real. Dá resultado, como mostra a seção acima.</li>
+<li><strong>4 vezes:</strong> permite dividir em superior e inferior e pôr mais séries por músculo.</li>
+<li><strong>5 vezes:</strong> gasta um pouco mais, mas só vale se você se recupera e não falta. Cinco treinos planejados que viram três feitos rendem menos do que três planejados e feitos.</li>
+</ul>
+<p>E quantos quilos por semana? O treino sozinho muda pouco a balança. O ritmo vem do déficit da semana; a musculação decide <em>o que</em> você perde, protegendo o músculo. Vale também para a barriga: ela diminui quando o corpo todo perde gordura, não com mais abdominal. Veja <a href="/blog/exercicio-para-perder-barriga">exercício para perder barriga</a>.</p>
+<p><small>Referências desta seção: Organização Mundial da Saúde, diretrizes de atividade física de 2020 (fortalecimento muscular em pelo menos 2 dias por semana); CDC, "Steps for Losing Weight" (perda gradual de cerca de 0,5 a 1 kg por semana).</small></p>
 
 <h2>E o cardio?</h2>
 <p>Não é obrigatório, mas ajuda a aumentar o gasto. Caminhar todo dia costuma ser mais fácil de manter e atrapalha menos o treino de força que sessões longas e intensas. Se gosta de corrida ou bicicleta, entra também. Veja <a href="/blog/melhor-treino-para-emagrecer">melhor treino para emagrecer</a>.</p>
@@ -499,6 +530,7 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
       "Os sinais de que o treino de musculação está funcionando (carga, medidas, fotos, constância) e os que enganam (dor muscular, suor, cansaço). Com o que fazer quando nada muda.",
     category: "Treino",
     date: "2026-11-15",
+    updatedAt: "2026-11-24",
     readTime: "7 min",
     author: "Montinho",
     tags: ["resultado", "musculação", "progressão de carga", "evolução"],
@@ -522,6 +554,26 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
         question: "O peso não muda: o treino não está funcionando?",
         answer:
           "Não necessariamente. Quem treina e come bem pode perder gordura e ganhar músculo ao mesmo tempo, com o peso parado. A cintura, as fotos e a carga contam mais do que a balança nesse caso.",
+      },
+      {
+        question: "Como saber se o treino de perna ou de glúteo está funcionando?",
+        answer:
+          "Pelos mesmos sinais, olhando para aquela região: a carga do agachamento, do leg press ou da elevação pélvica sobe ao longo das semanas, e a medida da coxa ou do quadril na fita, tirada no mesmo ponto, muda de um mês para o outro. Sentir o músculo queimar ou ficar dolorido não é a prova.",
+      },
+      {
+        question: "Como saber se estou ganhando massa muscular ou gordura?",
+        answer:
+          "Compare três coisas ao longo de um mês: a carga dos exercícios, a medida da cintura e as medidas de braço e coxa. Carga subindo, braço e coxa subindo e cintura parada ou caindo apontam para músculo. Cintura subindo mais rápido que o resto aponta para gordura.",
+      },
+      {
+        question: "Como saber se o treino em casa está funcionando?",
+        answer:
+          "Sem carga para anotar, anote repetições e variações: mais repetições com a mesma execução, uma variação mais difícil do mesmo exercício ou menos descanso para o mesmo trabalho. Se isso evolui e as medidas acompanham, o treino está funcionando.",
+      },
+      {
+        question: "1 mês de academia já dá resultado?",
+        answer:
+          "Dá, mas não o que se vê no espelho. No primeiro mês, o que mais muda é a força, a disposição e a facilidade nos exercícios. As mudanças visíveis costumam precisar de dois a três meses de treino constante.",
       },
       {
         question: "Por que a carga parou de subir?",
@@ -559,6 +611,13 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
 <li><strong>Pump.</strong> O músculo "cheio" depois da série passa em horas.</li>
 <li><strong>A balança de um dia.</strong> Oscila com água, sal e intestino. Use a média da semana.</li>
 <li><strong>A balança parada.</strong> Quem perde gordura e ganha músculo ao mesmo tempo pode ficar com o mesmo peso e mudar bastante.</li>
+</ul>
+
+<h2>Perna, glúteo e treino em casa: o que olhar em cada caso</h2>
+<ul>
+<li><strong>Perna e glúteo:</strong> a carga do agachamento, do leg press ou da elevação pélvica subindo ao longo das semanas, e a medida da coxa e do quadril na fita, sempre no mesmo ponto, mudando de um mês para o outro. Queimação e dor no dia seguinte não provam nada.</li>
+<li><strong>Treino em casa:</strong> sem carga para anotar, anote repetições e variações. Mais repetições com a mesma execução, ou uma variação mais difícil do mesmo exercício, são a "carga subindo" de quem treina em casa.</li>
+<li><strong>Músculo ou gordura?</strong> Carga subindo, braço e coxa aumentando e cintura parada ou caindo apontam para músculo. Cintura subindo mais rápido que o resto aponta para gordura.</li>
 </ul>
 
 <h2>Quanto tempo esperar</h2>
