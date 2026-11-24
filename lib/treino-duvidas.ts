@@ -147,7 +147,7 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
   {
     slug: "como-saber-se-a-ficha-de-treino-e-boa",
     title: "Como Saber se a Ficha de Treino da Academia É Boa",
-    metaTitle: "Como Saber se a Ficha de Treino da Academia É Boa",
+    metaTitle: "Como Saber se a Ficha de Treino É Boa (ou Se o Treino Está Fraco)",
     metaDescription:
       "Conte as séries de cada músculo, veja quantas vezes ele é treinado na semana e se a carga tem como subir. Um checklist para avaliar a sua ficha.",
     excerpt:
@@ -266,7 +266,7 @@ export const TREINO_DUVIDAS_POSTS: BlogPost[] = [
   {
     slug: "treino-abc-ou-upper-lower",
     title: "Treino ABC ou Upper/Lower: Qual Escolher?",
-    metaTitle: "Treino ABC ou Upper/Lower: Qual Escolher para Hipertrofia?",
+    metaTitle: "Treino ABC ou Upper Lower: Qual Escolher com 3, 4 ou 5 Dias",
     metaDescription:
       "O ABC treina cada músculo uma vez na volta da divisão; o upper/lower costuma treinar duas. Veja qual encaixa nos seus dias de treino e como montar cada um.",
     excerpt:

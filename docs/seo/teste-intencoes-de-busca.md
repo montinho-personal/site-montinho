@@ -2091,3 +2091,11 @@ Evidência: `docs/seo/serp/ficha-de-treino-abc-upper-lower-2026-11-24.json` (Ser
 **Itens de "viram seção":** nenhum aplicado. Os 3 que restam seguem sem fonte: academia mais cara de Alphaville (sem mensalidades oficiais), diária da Gaviões e da Bluefit (sem menção oficial), sopa de macarrão (sem dado na base).
 
 **Ficou de fora:** nada que valha artigo.
+
+
+## 2026-11-24 — Títulos aprovados pelo Montinho ("pode seguir com os títulos"): `como-saber-se-a-ficha-de-treino-e-boa` e `treino-abc-ou-upper-lower`
+
+- `como-saber-se-a-ficha-de-treino-e-boa`: metaTitle "Como Saber se a Ficha de Treino da Academia É Boa" → "Como Saber se a Ficha de Treino É Boa (ou Se o Treino Está Fraco)".
+- `treino-abc-ou-upper-lower`: metaTitle "Treino ABC ou Upper/Lower: Qual Escolher para Hipertrofia?" → "Treino ABC ou Upper Lower: Qual Escolher com 3, 4 ou 5 Dias".
+- Linha de base do Search Console (Supermetrics, últimos 28 dias até 24/11): ficha 13 impr., 1 clique, pos. 4,5; ABC x upper/lower 90 impr., 1 clique, pos. 8,4. Comparar em 22/12; se o clique não subir, voltar.
+- updatedAt não mudou.
