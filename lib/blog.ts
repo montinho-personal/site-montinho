@@ -40324,6 +40324,7 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
   excerpt: "Alongamento estático antes do treino pode reduzir sua força em até 8%. Mobilidade articular dinâmica, ao contrário, prepara o corpo sem custo de performance. Veja o protocolo certo para cada articulação.",
   category: "Treinamento",
   date: "2026-06-27",
+  updatedAt: "2026-11-25",
   readTime: "10 min",
   author: "Montinho",
   tags: ["mobilidade articular", "aquecimento pré-treino", "mobilidade pré-treino", "exercícios de mobilidade", "alongamento dinâmico"],
@@ -40417,6 +40418,25 @@ Segure um bastão com pegada aberta à frente e leve sobre a cabeça até as cos
 
 <p>Flexão, extensão e rotação suaves. Nunca rotações rápidas. Especialmente importante antes de treino de costas e exercícios com barra nas costas.</p>
 
+<h2>10 exercícios de mobilidade para fazer em casa</h2>
+
+<p>Uma lista curta, sem equipamento (só o foam roller é opcional), que cobre as articulações que mais travam. Faça de 8 a 10 repetições lentas de cada, ou de 20 a 30 segundos nos que são de posição:</p>
+
+<ol>
+  <li><strong>Tornozelo na parede:</strong> joelho em direção à parede sem tirar o calcanhar do chão.</li>
+  <li><strong>Círculos de tornozelo</strong> para os dois lados.</li>
+  <li><strong>Agachamento profundo com apoio</strong>, segurando numa porta ou num móvel firme.</li>
+  <li><strong>90/90 de quadril:</strong> sentado, uma perna dobrada à frente e outra ao lado, girando de um lado para o outro.</li>
+  <li><strong>Afundo com alongamento da frente do quadril</strong>, contraindo o glúteo da perna de trás.</li>
+  <li><strong>Gato e camelo</strong>, de quatro apoios, arredondando e estendendo a coluna.</li>
+  <li><strong>Rotação torácica de quatro apoios</strong>, mão atrás da cabeça, cotovelo em direção ao teto.</li>
+  <li><strong>Livro aberto:</strong> deitado de lado, joelhos dobrados, abra o braço de cima até o outro lado.</li>
+  <li><strong>Círculos de braço</strong>, pequenos e aumentando aos poucos.</li>
+  <li><strong>Pescoço:</strong> inclinação e rotação suaves, sem movimento rápido.</li>
+</ol>
+
+<p>Em 8 a 10 minutos você passa pelos dez. Para saber quais regiões estão mais travadas no seu caso, use o <a href="/ferramentas/teste-mobilidade">teste de mobilidade</a>.</p>
+
 <h2>Protocolo completo por tipo de treino</h2>
 
 <table>
@@ -40476,6 +40496,7 @@ Verdade: atletas de elite de musculação e powerlifting incluem trabalho de mob
 
 `,
   faq: [
+      { question: "Quais são 10 exercícios de mobilidade?", answer: "Tornozelo na parede, círculos de tornozelo, agachamento profundo com apoio, 90/90 de quadril, afundo com alongamento da frente do quadril, gato e camelo, rotação torácica de quatro apoios, livro aberto, círculos de braço e mobilidade suave de pescoço. Dá para fazer os dez em casa, em 8 a 10 minutos." },
       {
         question: "O que é mobilidade articular e por que ela é importante?",
         answer: "Mobilidade articular é a capacidade de mover uma articulação ativamente por toda sua amplitude de movimento com controle neuromuscular. É diferente de flexibilidade, que é passiva. Para o treino, mobilidade importa porque determina a qualidade técnica dos exercícios — quem tem mobilidade de tornozelo restrita não agacha com profundidade adequada; quem tem ombro rígido não desenvolve com segurança.",
@@ -95564,10 +95585,12 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Sair do sedentarismo não comeca na academia, comeca na cabeca. Veja um caminho realista para se mexer sem se machucar, sem se odiar e sem desistir na segunda semana.",
     category: "Saúde",
     date: "2026-07-22",
+    updatedAt: "2026-11-25",
     readTime: "11 min",
     author: "Montinho Personal Trainer",
     tags: ["sedentarismo", "saúde", "iniciantes", "hábitos", "emagrecimento"],
     faq: [
+      { question: "Como sair do sedentarismo em casa?", answer: "Levante a cada 30 minutos, use a escada e faça três vezes por semana 10 a 15 minutos de exercícios simples: sentar e levantar da cadeira, flexão na parede e ponte de glúteo. Qualquer movimento conta mais do que nenhum, segundo a OMS." },
       {
         question:
           "Quanto tempo de exercício por dia e o mínimo para sair do sedentarismo?",
@@ -95660,6 +95683,20 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Existe um tipo de gasto calórico que quase ninguém considera: o gasto das pequenas movimentações do dia, como levantar, cozinhar, subir escada, andar até a padaria. Ele pode representar uma fatia enorme das suas calorias diárias e é justamente o que o sedentário perde.</p>
 
 <p>Aumentar essas microescolhas muda o jogo sem exigir "treino". Estacionar mais longe, usar a escada, levantar a cada meia hora. Parece bobo, mas soma. Se o tema te interessa, entenda por que o <a href="/blog/metabolismo-lento-existe">metabolismo lento raramente é o vilão</a> que dizem ser.</p>
+
+<h2>Como sair do sedentarismo em casa</h2>
+
+<p>Não precisa de academia nem de equipamento para dar o primeiro passo. A Organização Mundial da Saúde é clara: qualquer movimento conta mais do que nenhum, e trocar tempo sentado por atividade, mesmo leve, já traz benefício. Em casa, um começo que funciona:</p>
+
+<ul>
+  <li><strong>Levantar a cada 30 minutos</strong> de cadeira ou sofá: ir até a cozinha, buscar água, andar pela casa enquanto fala ao telefone.</li>
+  <li><strong>Escada:</strong> se tem escada em casa ou no prédio, suba e desça alguns lances, no seu ritmo.</li>
+  <li><strong>Sentar e levantar da cadeira:</strong> 2 a 3 séries de 8 a 10, sem usar as mãos se conseguir.</li>
+  <li><strong>Flexão na parede:</strong> mãos apoiadas na parede, 2 a 3 séries de 8 a 10.</li>
+  <li><strong>Ponte de glúteo deitado:</strong> 2 a 3 séries de 10.</li>
+</ul>
+
+<p>Três vezes por semana, com 10 a 15 minutos, já é o suficiente para as primeiras semanas. O objetivo é o mesmo da caminhada: criar o hábito antes de aumentar a carga.</p>
 
 <h2>E a academia? Quando entra?</h2>
 
