@@ -2182,3 +2182,8 @@ Evidência: `docs/seo/serp/agenda-25-11-2026-11-25.json` (SerpApi, celular, São
 - `treino-para-casal`: H2 "Treino em dupla ao ar livre".
 
 **Ficou de fora → pauta:** vale artigo: Y3 "O que não fazer depois do treino". Vira seção: sedentarismo em casa, 10 exercícios de mobilidade, correr 30 min todo dia. Não cabe: nervosismo ao dirigir, coordenação motora, perguntas de golfe que não são treino (roupa, custo, o que ensina), o que beber antes da caminhada.
+
+
+## 2026-11-25 — Títulos das revisões de 25/11: mantidos
+
+O Montinho pediu para não trocar as propostas de título de `como-treinar-no-calor`, `corrida-e-musculacao` e `musculacao-e-ciclismo`. Ficam como estão.

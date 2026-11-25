@@ -23,16 +23,17 @@ export const MARATONA_BRASILIA_2026_POSTS: BlogPost[] = [
     category: "Corrida",
     tipo: "noticia",
     date: "2026-10-03",
-    updatedAt: "2026-11-24",
+    updatedAt: "2026-11-25",
     readTime: "3 min",
     author: "Montinho Personal Trainer",
     tags: ["Maratona de Brasília", "Maratona Monumental", "resultado maratona", "corrida de rua"],
     content: `<img src="/blog-images/maratona-de-brasilia-2026-capa.webp" alt="Resultado da Maratona de Brasília 2026 — domingo, 22 de novembro" width="1800" height="1013" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
-<blockquote><p><strong>Atualizado em 24 de novembro de 2026.</strong> A prova foi no domingo, 22 de novembro. O campeão masculino da maratona está confirmado por dois veículos; a campeã feminina e os vencedores da meia entram aqui quando o resultado oficial da cronometragem for publicado.</p></blockquote>
+<blockquote><p><strong>Atualizado em 25 de novembro de 2026.</strong> A prova foi no domingo, 22 de novembro. O campeão masculino e a campeã feminina da maratona estão confirmados por dois veículos; no feminino, a própria cronometragem ainda chama a classificação de extraoficial. Os vencedores da meia entram aqui quando houver fonte oficial ou dois veículos.</p></blockquote>
 
 <h2>Quem ganhou a Maratona de Brasília 2026?</h2>
 <p><strong>Maratona masculina:</strong> <strong>Jonailton França da Cruz</strong>, de Barra do Garças (MT), venceu os 42 km em <strong>2h26</strong>. André Luiz Silva Antônio foi o segundo, com 2h31, e Alex Ivo de Aguiar o terceiro, com 2h31min35s, segundo o jornal Semana7, com base na cronometragem oficial.</p>
-<p><strong>Maratona feminina e meia maratona:</strong> aguardando o resultado oficial. Os nomes que circularam até agora apareceram em uma fonte só, e aqui só entra o que tiver fonte oficial ou dois veículos.</p>
+<p><strong>Maratona feminina:</strong> <strong>Marily dos Santos</strong>, alagoana de Joaquim Gomes, de 48 anos, venceu os 42 km em <strong>3h11min23s</strong>. Talita Borges, de Arapiraca (AL), foi a segunda, 12 segundos atrás, com 3h11min35s, segundo o JG Notícias e a Tribuna do Sertão. A página da cronometragem ainda identifica essa classificação como extraoficial.</p>
+<p><strong>Meia maratona:</strong> aguardando o resultado oficial. Aqui só entra o que tiver fonte oficial ou dois veículos.</p>
 <p>Não confunda com a Maratona Brasília de abril, outra prova: os campeões de abril não são os da Monumental.</p>
 
 <h2>Como consultar o seu resultado</h2>
@@ -49,9 +50,11 @@ export const MARATONA_BRASILIA_2026_POSTS: BlogPost[] = [
 <li><a href="https://maratonamonumentalbsb.com.br/" target="_blank" rel="noopener noreferrer">Maratona Monumental de Brasília — site oficial</a></li>
 <li><a href="https://www.semana7.com.br/geral-economia/atleta-de-barra-do-garcas-e-campeao-da-maratona-monumental-de-brasilia/84870" target="_blank" rel="noopener noreferrer">Semana7: atleta de Barra do Garças é campeão da Maratona Monumental de Brasília</a></li>
 <li><a href="https://www.gotrilha.com.br/resultados/maratona-monumental-de-brasilia" target="_blank" rel="noopener noreferrer">GoTrilha: resultados da Maratona Monumental 2026</a> (vencedor masculino dos 42 km)</li>
+<li><a href="https://www.jgnoticias.com/aos-48-anos-marily-dos-santos-vence-maratona-em-brasilia-e-enche-joaquim-gomes-de-orgulho/" target="_blank" rel="noopener noreferrer">JG Notícias: aos 48 anos, Marily dos Santos vence maratona em Brasília</a></li>
+<li><a href="https://www.tribunadosertao.com.br/cidades/2026/11/23/1028224-talita-borges-de-arapiraca-e-segunda-no-resultado-provisorio-da-maratona-de-brasilia" target="_blank" rel="noopener noreferrer">Tribuna do Sertão: Talita Borges é segunda no resultado provisório da Maratona de Brasília</a></li>
 </ul>`,
     faq: [
-      { question: "Quem ganhou a Maratona de Brasília 2026?", answer: "Na maratona masculina, Jonailton França da Cruz, de Barra do Garças (MT), em 2h26, à frente de André Luiz Silva Antônio (2h31) e Alex Ivo de Aguiar (2h31min35s). A campeã feminina e os vencedores da meia entram aqui com o resultado oficial." },
+      { question: "Quem ganhou a Maratona de Brasília 2026?", answer: "Na maratona masculina, Jonailton França da Cruz, de Barra do Garças (MT), em 2h26, à frente de André Luiz Silva Antônio (2h31) e Alex Ivo de Aguiar (2h31min35s). Na feminina, Marily dos Santos, de Alagoas, em 3h11min23s, 12 segundos à frente de Talita Borges (classificação ainda extraoficial na cronometragem). Os vencedores da meia entram aqui com o resultado oficial." },
       { question: "Que horas larga a Maratona de Brasília 2026?", answer: "A maratona às 5h e a meia às 6h do domingo, 22/11. Os 5 e 10 km largam no sábado, 21/11, às 17h, confirmado no regulamento de novembro." },
     ],
   },
