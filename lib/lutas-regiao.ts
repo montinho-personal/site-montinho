@@ -44,7 +44,7 @@ export const LUTAS_REGIAO_POSTS: BlogPost[] = [
   {
     slug: "academias-de-jiu-jitsu-em-osasco",
     title: "Academias de jiu-jitsu em Osasco: como escolher, infantil e preço",
-    metaTitle: "Academias de Jiu-Jitsu em Osasco: Infantil, Preço e Equipes",
+    metaTitle: "Jiu-Jitsu em Osasco: Academias, Infantil e Gratuito",
     metaDescription:
       "Onde treinar jiu-jitsu em Osasco: equipes da cidade, como escolher a academia, turmas infantis, o que entra no preço e quanto você gasta de energia no tatame.",
     excerpt:
