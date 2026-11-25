@@ -85,6 +85,18 @@ export const ARTIGOS_COM_TESTE_MOBILIDADE: Record<string, ConviteArtigo> = {
       "Depois de horas na mesma posição, quadril, coluna e ombros costumam ser os primeiros a reclamar. O teste mede cinco regiões em cinco minutos e mostra quais duas pedem atenção primeiro, com os exercícios para cada uma.",
     rotulo: "Ver o que travou",
   },
+  /* Exercícios para quem dirige muito (25/11/2026): horas ao volante travam quadril, coluna e pescoço. */
+  "exercicios-para-quem-dirige-muito": {
+    texto:
+      "Quem sai do carro com o quadril travado e o pescoço duro quer saber por onde começar. O teste mede cinco regiões em cinco minutos, com uma parede por perto, e aponta as duas que mais pedem atenção para quem passa horas ao volante.",
+    rotulo: "Descobrir o que o volante travou",
+  },
+  /* Treino para golfe (25/11/2026): o swing depende de quadril e coluna torácica que girem. */
+  "treino-para-golfe": {
+    texto:
+      "No swing, quadril e coluna torácica que não giram viram trabalho extra para a lombar. O teste mede cinco regiões em cinco minutos e mostra quais duas estão mais travadas, com os exercícios para cada uma, antes de você levar isso para o campo.",
+    rotulo: "Testar minha mobilidade para o swing",
+  },
 };
 
 export const SLUGS_COM_TESTE_MOBILIDADE = Object.keys(ARTIGOS_COM_TESTE_MOBILIDADE);

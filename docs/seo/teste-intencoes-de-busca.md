@@ -2136,3 +2136,49 @@ Evidência: `docs/seo/serp/musculacao-emagrecer-treino-funcionando-2026-11-24.js
 - `musculacao-para-emagrecer-quantas-vezes-por-semana`: título mantido (já usa as palavras da busca).
 - Linha de base do Search Console (Supermetrics, últimos 28 dias até 24/11): 42 impr., 0 clique, pos. 7,5. Comparar em 22/12; se o clique não subir, voltar.
 - updatedAt não mudou.
+
+
+## 2026-11-25 — Agenda de temas do Montinho ("pode fazer tudo"): 2 artigos novos, 3 revisões e 6 itens de seção
+
+Evidência: `docs/seo/serp/agenda-25-11-2026-11-25.json` (SerpApi, celular, São Paulo; 5 buscas, 15 da cota: página, autocompletar e visão de IA em duas etapas em cada).
+
+**Novo: `exercicios-para-quem-dirige-muito` (Y1)**
+- Autocompletar: ✅ "exercícios para quem dirige muito" (título e H1), "quem dirige muito", "exercícios para quem trabalha dirigindo" (FAQ de quem trabalha dirigindo).
+- PAA: ❌ "nervosismo ao dirigir" (não cabe); ❌ "10 exercícios de mobilidade" (vira seção em `mobilidade-articular-pre-treino`); ❌ "sair do sedentarismo em casa" (vira seção em `como-sair-do-sedentarismo`); ❌ "coordenação motora" (outro assunto).
+- Visão de IA: alongamentos nas paradas (pescoço, ombros, tronco, panturrilha, flexores do quadril), caminhada, agachamento assistido, fortalecimento. Lead e H2 respondem no mesmo formato, com a força da semana como diferença. Cita fisioterapia, Instagram, TikTok, YouTube (fontes fracas).
+- Quem ranqueia: Boa Forma, blog de oficina, TikTok, clínica, Instagram, blog de rastreador. Concorrência fraca; tem vídeo.
+- Ferramenta: Teste de Mobilidade (convite próprio).
+
+**Novo: `treino-para-golfe` (Y2)**
+- Autocompletar: só "treino golfe" (o resto é goleiro): demanda baixa.
+- PAA: ❌ "o que o golfe ensina", "roupa", "quanto custa", "o que é preciso" (não cabem: não é treino).
+- Visão de IA: força (agachamento, split squat, terra, remadas), core anti-rotação, prancha lateral, mobilidade, swings lentos. Coberto em H2.
+- Quem ranqueia: Sunday Golf, P4S, Fit For Golf, WHOOP, pga.com, Hydrow, PureGym, todos estrangeiros traduzidos. Por isso entrou mesmo com demanda baixa, em texto curto.
+- Ferramenta: Teste de Mobilidade (convite próprio).
+
+**Revisão: `como-treinar-no-calor`** (updatedAt 25/11)
+- Autocompletar: ✅ "sem passar mal" (H2 nova e FAQ), "é bom" e "ajuda" (H2 nova e FAQ), "calor intenso" (coberto pelos sinais de alerta).
+- PAA: ✅ "melhor treinar no calor ou no frio" (H2 e FAQ); ❌ "500 calorias por dia" (já em `exercicio-que-mais-queima-calorias`); ❌ "o que não fazer depois do treino" (vale artigo: Y3); ❌ "o que beber antes da caminhada para emagrecer" (alimentação, não cabe).
+- Visão de IA: horários antes das 10h ou depois das 16h/17h, aclimatação, hidratação, roupas, sinais de alerta. Corrigido: a janela era 11h–15h sem fonte; agora 10h–16h com o guia do Ministério da Saúde. Dado de desidratação trocado pelo do ACSM (2007); aclimatação de 10 a 14 dias com Nichols (2014). Entrou "Não se compare".
+
+**Revisão: `corrida-e-musculacao`** (updatedAt 25/11)
+- Autocompletar: ✅ "em dias alternados" e "no mesmo dia" (H2 com tabela), "emagrece", "para emagrecer", "dias alternados emagrece" (H2 e FAQ), "hipertrofia" (interferência, Schumann 2022), "como conciliar" (já); ❌ "tênis", "garmin", "planilha", "em inglês", "natação" (outras intenções).
+- PAA: ✅ "melhor correr ou malhar" (H2, diretriz da OMS 2020); ❌ "método 12-3-3-30" (coberto em `caminhada-na-esteira-inclinada`); ❌ "1 kg de músculo em 1 mês" (já em `hipertrofia-para-iniciantes`); ❌ "correr 30 minutos todos os dias" (vira FAQ em `corrida-de-rua-iniciante`).
+- Visão de IA: economia de corrida, menos lesões, ordem pela prioridade, separar estímulos. Coberto. Cita Bodytech, Webrun, JAMA.
+- Corrigido: "6 horas de intervalo" sem fonte virou "algumas horas" com a meta-análise de Schumann (2022), em que 3 h já protegeram a força explosiva. Removido o `faqSchema` com perguntas de hipertrofia que não eram deste artigo (o campo não é usado pela página). Entrou "Não se compare".
+
+**Revisão: `musculacao-e-ciclismo`** (updatedAt 25/11)
+- Autocompletar: ✅ "no mesmo dia" (H2 e FAQ), "musculação ciclistas" (já).
+- PAA: ✅ "pedalar ou musculação" (H2), "o que o ciclismo faz com o corpo" (na mesma H2), "bicicleta na academia" (FAQ), "quem quer ganhar massa pode pedalar" (H2 e FAQ, Schumann 2022).
+- Visão de IA: torque, core, saúde óssea, 1 a 3 sessões por semana, ordem pela prioridade. Coberto.
+- Corrigido: números sem fonte (7% de potência, 5% de economia, 0,3 kg, "meta-análise de 2020") saíram; entraram Rønnestad (5 min no máximo depois de 185 min de pedal) e Sunde (economia de pedalada), com PubMed. Atributo `title` quebrado no iframe do vídeo corrigido. Entrou "Não se compare".
+
+**Itens de "viram seção" (agenda do Montinho, sem busca nova)**, todos com updatedAt 25/11:
+- `personal-trainer-para-executivos-alphaville`: H2 "Executivas" e FAQ.
+- `musculacao-para-adolescentes`: H2 do atendimento (liberação médica, técnica antes da carga, família) e FAQ.
+- `personal-trainer-a-domicilio-alphaville`: H2 "Treino em casa com privacidade" e FAQ.
+- `dor-no-joelho-no-agachamento`: os sinais de médico já existiam; entrou H2 do afundo por etapas e FAQ. `exercicios-para-fortalecer-joelho` não mudou.
+- `treino-de-30-minutos-funciona`: H2 do treino de 45 minutos com tabela.
+- `treino-para-casal`: H2 "Treino em dupla ao ar livre".
+
+**Ficou de fora → pauta:** vale artigo: Y3 "O que não fazer depois do treino". Vira seção: sedentarismo em casa, 10 exercícios de mobilidade, correr 30 min todo dia. Não cabe: nervosismo ao dirigir, coordenação motora, perguntas de golfe que não são treino (roupa, custo, o que ensina), o que beber antes da caminhada.
