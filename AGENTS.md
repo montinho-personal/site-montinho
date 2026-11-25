@@ -208,21 +208,28 @@ aprovação.
 
 # Capa de artigo: só no padrão, ou nenhuma
 
-Regra pedida pelo Montinho em 16/11/2026. A capa do blog segue um padrão
-só: ilustração em estilo serigrafia gerada no Kairogen (papel creme,
-vermelho, preto e mostarda, sem texto, sem logo e sem pessoa real), com
-título em letra condensada, três ícones redondos com rótulo e o logo
-montados por cima, sem encostar na ilustração.
+Regra pedida pelo Montinho em 16/11/2026 e trocada por ele em 25/11/2026
+("Quero que crie no nosso padrão do site"). A capa do blog segue um padrão
+só, **vetorial, feita no código, sem gerar imagem paga**: papel creme
+(#F1E6CC), título em duas linhas em letra condensada (primeira em vermelho
+#D8402A, segunda em preto #151515), subtítulo curto de uma linha, três
+etiquetas mostarda (#E0A82E) com rótulo, um desenho simples em formas
+chapadas nas mesmas cores à direita, sem encostar no título, e o logo do
+site em preto no canto inferior direito. Sem pessoa real e sem marca de
+terceiros.
 
-- Antes de criar, confira o saldo (`get_credits`) e o preço
-  (`estimate_cost`). Uma imagem com duas cenas lado a lado, recortada, serve
-  para duas capas pelo preço de uma.
-- **Sem crédito para fazer no padrão, não faça capa.** Nada de capa só
-  tipográfica, desenho improvisado ou imagem de outro artigo. O artigo sai
-  sem a tag `<img>` de capa (o compartilhamento usa o `og-image.jpg` padrão)
-  e o slug entra em "Capas pendentes" de `docs/seo/pauta.md`.
-- Quando houver crédito de novo, faça as pendentes e tire da lista. Trocar
-  ou acrescentar a capa não muda o `updatedAt`.
+- Formato: 1536 × 1024, em WebP, salvo em
+  `public/blog-images/<slug>-capa.webp`. O HTML da capa é renderizado no
+  Chromium (Playwright) e o logo é composto por cima com o sharp; os
+  scripts usados até aqui seguem esse modelo.
+- Antes de publicar, olhe a capa: título, subtítulo e etiquetas não podem
+  se sobrepor, e o desenho não pode encostar no texto nem no logo.
+- Nada de capa só tipográfica sem desenho nem imagem de outro artigo. Se
+  não der para fazer no padrão, o artigo sai sem a tag `<img>` de capa (o
+  compartilhamento usa o `og-image.jpg` padrão) e o slug entra em "Capas
+  pendentes" de `docs/seo/pauta.md`.
+- Kairogen não entra na capa; imagem paga só quando o Montinho pedir.
+  Trocar ou acrescentar a capa não muda o `updatedAt`.
 
 # Data de atualização: só quando o conteúdo muda de verdade
 
