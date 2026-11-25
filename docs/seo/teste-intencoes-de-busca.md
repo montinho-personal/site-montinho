@@ -2236,3 +2236,10 @@ Evidência: `docs/seo/serp/jiu-jitsu-osasco-carapicuiba-2026-11-25.json` (SerpAp
 - `mobilidade-articular-pre-treino`: H2 com os 10 exercícios e FAQ, com link para o teste de mobilidade.
 
 **Ficou de fora:** nada que valha artigo. "Jiu-jitsu japonês x brasileiro" não cabe no site (história de luta, não treino).
+
+
+## 2026-11-25 — Título aprovado pelo Montinho ("aprovado"): `academias-de-jiu-jitsu-em-osasco`
+
+- metaTitle "Academias de Jiu-Jitsu em Osasco: Infantil, Preço e Equipes" → "Jiu-Jitsu em Osasco: Academias, Infantil e Gratuito".
+- Linha de base do Search Console (Supermetrics, últimos 28 dias até 25/11): sem impressões para a página (consulta vazia). Comparar em 23/12; qualquer impressão já é ganho, mas se o clique não vier, voltar.
+- updatedAt não mudou.
