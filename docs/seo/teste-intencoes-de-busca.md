@@ -2187,3 +2187,16 @@ Evidência: `docs/seo/serp/agenda-25-11-2026-11-25.json` (SerpApi, celular, São
 ## 2026-11-25 — Títulos das revisões de 25/11: mantidos
 
 O Montinho pediu para não trocar as propostas de título de `como-treinar-no-calor`, `corrida-e-musculacao` e `musculacao-e-ciclismo`. Ficam como estão.
+
+
+## 2026-11-25 — Novo: `resultado-sao-silvestre-2026` (página pronta antes da prova)
+
+Pedido do Montinho: páginas de resultado publicadas antes do evento, para já estarem indexadas, e atualizadas só no dia. Evidência: `docs/seo/serp/resultado-sao-silvestre-2026-11-25.json` (SerpApi, celular, São Paulo; 3 da cota).
+
+- Autocompletar: ✅ "resultado são silvestre 2026" (título e slug); ✅ "2025 elite" (seção de referência com o resultado de 2025); ✅ "chiptiming" (seção "como consultar o seu resultado", sem citar empresa de cronometragem sem fonte de 2026); ❌ anos antigos (2004 a 2024: ficam em `vencedores-sao-silvestre`, que tem a história).
+- PAA: ✅ "Quanto tempo fez o ganhador" (H2 e FAQ); ✅ "Quem foram todos os campeões" (link para `vencedores-sao-silvestre`); ✅ "São Silvestre 2026 valor" (link para a inscrição pelo guia da prova); ❌ "São Silvestre já teve 42 km?" (história sem fonte à mão; não cabe aqui).
+- Visão de IA: diz que a 101ª é em 31/12/2026 e lista o pódio de 2025. Cita ESPN, Instagram, ACidade ON, Correr Brasília, Diário da Guanabara, Open Results.
+- Quem ranqueia: notícias do ano anterior, Instagram, Open Results, World Athletics. Ninguém tem a página de 2026 pronta.
+- Canibalização: `vencedores-sao-silvestre` é a história (campeões, recordes, brasileiros); esta é a edição de 2026. Uma linka a outra.
+- Ferramenta: previsor da São Silvestre embutido (oitavo e último lugar do registro `ARTIGOS_COM_PREVISOR_SS`).
+- Atualização: tarefas agendadas para 31/12 e 02/01.

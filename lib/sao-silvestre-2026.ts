@@ -585,4 +585,47 @@ ${FONTES_SS}`,
       { question: "Dá para trocar o titular da inscrição?", answer: "Sim, só no dia da retirada do kit, com taxa de R$ 100." },
     ],
   },
+  {
+    slug: "resultado-sao-silvestre-2026",
+    title: "Resultado da São Silvestre 2026: vencedores e tempos",
+    metaTitle: "Resultado São Silvestre 2026: Vencedores e Tempos",
+    metaDescription:
+      "Resultado da São Silvestre 2026 (31/12): quem venceu no masculino e no feminino, tempos, melhores brasileiros e onde consultar o seu resultado.",
+    excerpt:
+      "Vencedores e tempos da 101ª São Silvestre, os melhores brasileiros e onde consultar o seu resultado. Atualizado no dia da prova.",
+    category: "Corrida",
+    tipo: "noticia",
+    date: "2026-11-25",
+    readTime: "3 min",
+    author: AUTOR,
+    tags: ["São Silvestre", "resultado São Silvestre", "São Silvestre 2026", "corrida de rua"],
+    content: `<img src="/blog-images/resultado-sao-silvestre-2026-capa.webp" alt="Capa: resultado da São Silvestre 2026, vencedores e tempos, com um pódio e um troféu" width="1536" height="1024" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<blockquote><p><strong>O resultado entra aqui no dia da prova.</strong> A 101ª São Silvestre é na quinta-feira, 31 de dezembro de 2026. Vencedores, tempos e melhores brasileiros são publicados nesta página quando houver fonte oficial ou dois veículos.</p></blockquote>
+
+<h2>Quem ganhou a São Silvestre 2026?</h2>
+<p><strong>Masculino:</strong> aguardando a prova (31/12).</p>
+<p><strong>Feminino:</strong> aguardando a prova (31/12).</p>
+<p><strong>Melhores brasileiros:</strong> aguardando a prova (31/12).</p>
+
+<h2>Quanto tempo fez o ganhador da São Silvestre?</h2>
+<p>Como referência, na 100ª edição, em 2025, o etíope <strong>Muse Gizachew</strong> venceu em <strong>44min28s</strong> e a tanzaniana <strong>Sisilia Panga</strong> em <strong>51min08s</strong>; Fábio Jesus e Núbia Oliveira foram o 3º e a 3ª. O recorde dos 15 km é de 42min59s no masculino (Kibiwott Kandie, 2019) e 48min35s no feminino (Jemima Sumgong, 2016). A lista completa de campeões, recordes e brasileiros que já venceram está em <a href="/blog/vencedores-sao-silvestre">vencedores da São Silvestre</a>.</p>
+
+<h2>Como consultar o seu resultado</h2>
+<p>O resultado individual, com o tempo líquido do chip (contado a partir do momento em que você cruza o tapete da largada, não do tiro), sai no site oficial da prova depois da chegada. Tenha à mão o número de peito ou o nome usado na inscrição.</p>
+<p>Pelo regulamento de 2026, o tempo máximo de prova é de 3 horas contadas a partir das 9h50: a prova fecha às 12h50 para todos os pelotões.</p>
+
+<h2>Quando e onde é a São Silvestre 2026?</h2>
+<p>Na <strong>quinta-feira, 31 de dezembro de 2026</strong>, pela manhã, em São Paulo: 15 km com largada e chegada na Avenida Paulista. O trajeto trecho a trecho está em <a href="/blog/percurso-sao-silvestre">percurso da São Silvestre</a>, e a retirada do kit em <a href="/blog/retirada-kit-sao-silvestre-2026">retirada do kit</a>. Para saber o seu tempo provável, use o previsor abaixo.</p>
+
+<h2>Não se compare</h2>
+<p>Os campeões disputam segundos; a maior parte de quem corre leva bem mais de uma hora, e isso não diz nada sobre quem é melhor. Cada um tem a própria genética, rotina e história, com altos e baixos. O que importa é um treino que você consiga seguir o ano inteiro, com aderência e progressão. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+${FONTES_SS}`,
+    faq: [
+      { question: "Quem ganhou a São Silvestre 2026?", answer: "A prova é em 31 de dezembro de 2026. Os vencedores do masculino e do feminino entram nesta página no dia, com fonte oficial ou de dois veículos." },
+      { question: "Quanto tempo fez o ganhador da São Silvestre?", answer: "Em 2025, Muse Gizachew (Etiópia) venceu em 44min28s e Sisilia Panga (Tanzânia) em 51min08s. O recorde é de 42min59s no masculino e 48min35s no feminino." },
+      { question: "Como ver o meu resultado da São Silvestre?", answer: "O resultado individual, com o tempo líquido do chip, sai no site oficial da prova depois da chegada. Use o número de peito ou o nome da inscrição." },
+      { question: "Qual o tempo máximo da São Silvestre 2026?", answer: "Pelo regulamento de 2026, 3 horas contadas a partir das 9h50, para todos os pelotões: a prova fecha às 12h50." },
+    ],
+  },
 ];
