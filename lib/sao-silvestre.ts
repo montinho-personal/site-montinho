@@ -159,6 +159,7 @@ export const ARTIGOS_COM_PREVISOR_SS: string[] = [
   "primeira-sao-silvestre-dicas",
   "tenis-para-sao-silvestre",
   "retirada-kit-sao-silvestre-2026",
+  "resultado-sao-silvestre-2026",
 ];
 
 /** Variante de LINK: os artigos da prova embutem o previsor; aqui só os que tratam de outra coisa e usam o tempo como referência. */

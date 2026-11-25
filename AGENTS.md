@@ -231,6 +231,26 @@ terceiros.
 - Kairogen não entra na capa; imagem paga só quando o Montinho pedir.
   Trocar ou acrescentar a capa não muda o `updatedAt`.
 
+# Evento com resultado: página pronta antes, atualizada no dia
+
+Regra pedida pelo Montinho em 25/11/2026. Toda prova ou evento que o site
+cobre e que tem resultado (corrida, Hyrox, luta) ganha uma página
+`resultado-<evento>-<ano>` publicada **semanas antes**, para já estar
+indexada quando a busca explodir no dia. Modelo: `resultado-maratona-de-brasilia-2026`
+e `resultado-sao-silvestre-2026`.
+
+- Antes do evento a página já é útil: data e local, resultado da edição
+  anterior como referência, recorde, como consultar o resultado individual
+  e link para os guias da prova. Os campos do resultado ficam como
+  "aguardando a prova (data)", sem palpite nem favorito sem fonte.
+- No dia, uma tarefa agendada (one-shot, criada junto com a página)
+  preenche vencedores e tempos com fonte oficial ou dois veículos, troca o
+  aviso do topo, atualiza o FAQ e o `updatedAt`. Classificação ainda
+  extraoficial entra marcada como tal. Se não houver fonte suficiente,
+  não publica e tenta de novo na tarefa seguinte.
+- Não se cria página nova no dia do resultado: só se atualiza a que já
+  existe.
+
 # Data de atualização: só quando o conteúdo muda de verdade
 
 Todo artigo do blog editado de forma substancial (seção nova, FAQ nova,
