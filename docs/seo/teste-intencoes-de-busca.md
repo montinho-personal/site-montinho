@@ -2213,3 +2213,26 @@ Evidência: `docs/seo/serp/ufc-arabia-saudita-2026-11-25.json` (SerpApi, celular
 - Quem ranqueia: ufc.com.br (vídeo de 2024), Ag. Fight, YouTube, UOL (2025), Super Lutas. Ninguém com a edição de 2026 em texto.
 - Ferramenta: calculadora de boxe no artigo do evento; hub e resultado em `ARTIGOS_SEM_FERRAMENTA` (registro de artes marciais no teto).
 - Resultado: atualização agendada para 5/12, 19h.
+
+
+## 2026-11-25 (rotina diária) — Revisões de `academias-de-jiu-jitsu-em-osasco` e `academias-de-jiu-jitsu-em-carapicuiba`, mais 2 itens de seção
+
+Evidência: `docs/seo/serp/jiu-jitsu-osasco-carapicuiba-2026-11-25.json` (SerpApi, celular, Osasco e Carapicuíba; 4 da cota; nenhuma das duas veio com visão de IA).
+
+**Jiu-jitsu em Osasco** (updatedAt 25/11)
+- Autocompletar: ✅ "infantil", "gratuito" (já havia; gratuito ganhou aula experimental e promoções); ✅ "perto de mim", "centro", "rochdale", "novo osasco", "padroeira" (H2 nova por bairro, sem inventar academia por bairro); ✅ "g13", "soneca" (entraram na lista pelo site oficial de cada uma); ❌ "alliance", "seven", "templo" (sem fonte oficial achada; a FAQ da Alliance pede para confirmar com a equipe); ❌ "dentro de 800 m" (é do mapa).
+- PAA: ✅ "valor mensal" (já: o que entra no preço, sem número sem fonte); ✅ "melhores academias" (lista ampliada); ✅ "Quem faz jiu-jitsu é lutador?" (H2 e FAQ); ❌ "diferença de jiu-jitsu para jiu-jitsu" (japonês x brasileiro: não cabe num guia de cidade).
+- Outras pesquisas: ✅ "gratuito", "infantil", "perto de mim", "Gracie Barra Osasco" (unidade confirmada pelo Instagram oficial; FAQ nova), "G13", "Soneca"; ❌ "Gracie Barra mensalidade" (a equipe não publica), "Gracie Barra Jaguaribe", "fotos", "academia João de Andrade" (sem fonte).
+- Quem ranqueia: Instagram da Gracie Barra, diretório de academias, sites da Soneca, G13 e Checkmat Team Gutty, Reddit. Mapa: G13BJJ Km 18 (5,0, 151 avaliações), Soneca (5,0, 83), Legacy (5,0, 19).
+
+**Jiu-jitsu em Carapicuíba** (updatedAt 25/11)
+- Autocompletar: ✅ "infantil", "academia", "aula" (já), "infinit" (Infinity já estava, pelo Wellhub); ❌ "ct smoking" (sem fonte oficial).
+- PAA: ✅ "valor mensal" (já); ✅ "O que se faz no jiu-jitsu?" (H2 e FAQ); ✅ "Tem que pagar para entrar?" (H2 e FAQ); ❌ "maior academia de jiu-jitsu do Brasil" (não cabe).
+- Outras pesquisas: ✅ "muay thai em Carapicuíba" (já); ✅ "Ryan Gracie Parque Jandaia" (já; site próprio da unidade citado); ✅ "academia Ariston" (GTF, na Cidade Ariston, pela página de parceira no Gurupass).
+- Quem ranqueia: Instagram e site da Ryan Gracie Carapicuíba, Wellhub (Infinity), Instagram da Checkmat P. Team (entrou), Guigo, Superprof, Gurupass. Mapa: CT Maffei (4,9, 229), CT Lepeck's (5,0, 33), Team Kuma (5,0, 52), sem fonte oficial além do mapa: ficaram de fora.
+
+**Itens de "viram seção"** (sem busca nova), updatedAt 25/11:
+- `como-sair-do-sedentarismo`: H2 "Como sair do sedentarismo em casa" e FAQ (OMS: qualquer movimento conta).
+- `mobilidade-articular-pre-treino`: H2 com os 10 exercícios e FAQ, com link para o teste de mobilidade.
+
+**Ficou de fora:** nada que valha artigo. "Jiu-jitsu japonês x brasileiro" não cabe no site (história de luta, não treino).

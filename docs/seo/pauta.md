@@ -90,8 +90,8 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | ~~Dor no joelho: sinais que pedem médico e adaptar o afundo~~ aplicado em 25/11: os sinais já existiam em `dor-no-joelho-no-agachamento`; entrou H2 do afundo por etapas e FAQ | conferir `dor-no-joelho-no-agachamento` e `exercicios-para-fortalecer-joelho`; seção no que não cobrir (fonte médica) | agenda de temas do Montinho (25/11) |
 | ~~Treino de 45 minutos~~ aplicado em 25/11 (H2 com tabela) | seção em `treino-de-30-minutos-funciona` | agenda de temas do Montinho (25/11) |
 | ~~Treino em dupla ao ar livre~~ aplicado em 25/11 (H2) | seção em `treino-para-casal` | agenda de temas do Montinho (25/11) |
-| Como sair do sedentarismo em casa | `como-sair-do-sedentarismo` | PAA de "exercícios para quem dirige muito" (25/11) |
-| 10 exercícios de mobilidade (lista para fazer em casa) | `mobilidade-articular-pre-treino` | PAA de "exercícios para quem dirige muito" (25/11) |
+| ~~Como sair do sedentarismo em casa~~ aplicado em 25/11 (H2 e FAQ, OMS) | `como-sair-do-sedentarismo` | PAA de "exercícios para quem dirige muito" (25/11) |
+| ~~10 exercícios de mobilidade~~ aplicado em 25/11 (H2 com a lista e FAQ) | `mobilidade-articular-pre-treino` | PAA de "exercícios para quem dirige muito" (25/11) |
 | É bom correr 30 minutos todos os dias? | FAQ em `corrida-de-rua-iniciante` (já tem "correr todos os dias sendo iniciante"; falta a de 30 minutos) | PAA de "corrida e musculação" (25/11) |
 | Sopa de macarrão engorda? (390/mês) | `sopa-emagrece` ou `macarrao-engorda`, quando houver dado de sopa na base | outras pesquisas de "macarrão engorda" (16/11) |
 | ~~Zona de queima de gordura ("fat burn", 1.000/mês)~~ aplicado em 18/11 (FAQ e menção na seção) | `zonas-de-frequencia-cardiaca` (já explica a "zona de queima" da esteira; falta o FAQ "o que é fat burn?") | PAA de "efeito afterburn" (16/11) |
@@ -129,7 +129,7 @@ que ficou de fora.
 | 15/11 | ~~`feijao-engorda`, `pao-de-queijo-engorda`~~ revisados em 18/11; ~~`maca-engorda`~~ revisado em 19/11 |
 | 15/11 | ~~`rosca-alternada`~~ revisado em 19/11; ~~`remada-cavalinho`, `desenvolvimento-arnold`~~ revisados em 20/11 |
 | 15/11 | 8 de consultoria online e dúvidas de treino (~~`consultoria-online-ou-personal-presencial`, `avaliacao-fisica-consultoria-online`~~ revisados em 21/11, ~~`personal-online-smart-fit`, `treinar-sozinho-na-academia-da-resultado`~~ revisados em 22/11, ~~`como-saber-se-a-ficha-de-treino-e-boa`, `treino-abc-ou-upper-lower`~~ revisados em 24/11, ~~`musculacao-para-emagrecer-quantas-vezes-por-semana`, `como-saber-se-o-treino-esta-funcionando`~~ revisados em 24/11): os 8 revisados |
-| 16/11 | `academias-de-jiu-jitsu-em-osasco`, `-carapicuiba`, `-cotia`, `-santana-de-parnaiba` (busca na cidade de cada página) |
+| 16/11 | ~~`academias-de-jiu-jitsu-em-osasco`, `-carapicuiba`~~ revisados em 25/11; `-cotia`, `-santana-de-parnaiba` (busca na cidade de cada página) |
 | ~~05/11~~ | ~~`crucifixo-inverso`, `treino-tabata`~~ revisados em 16/11 |
 - `quanto-custa-personal-trainer-alphaville` (18/11): as faixas do artigo (R$ 120 a mais de R$ 600 por sessão) não têm fonte e não batem com a referência usada na calculadora de preço. Alinhar na revisão; a busca principal já foi feita em 18/11 (`docs/seo/serp/calculadora-preco-personal-alphaville-2026-11-18.json`).
 
