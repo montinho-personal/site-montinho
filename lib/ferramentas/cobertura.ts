@@ -66,6 +66,8 @@ export const ARTIGOS_SEM_FERRAMENTA: Record<string, string> = {
   "treino-tabata": "Treino pronto com tempo fixo (20 s de esforço, 10 s de pausa, 8 rodadas): o leitor sai com o protocolo, não com uma conta; o gasto de 4 minutos não tem número confiável, e quem quer emagrecer vai à calculadora de déficit pelo link.",
   "treino-de-abdomen-rapido": "Treino pronto para fazer: o leitor sai com o circuito, não com uma conta; quem quer emagrecer a barriga é levado à calculadora de déficit pelo texto.",
   "brasileiros-ufc-vegas-123": "Hub de quem luta e contra quem: o leitor sai com nomes e horários, sem conta na cabeça; a calculadora de jiu-jitsu fica no artigo do evento.",
+  "brasileiros-ufc-arabia-saudita": "Hub de quem luta e contra quem: o leitor sai com nomes e horários, sem conta na cabeça; a calculadora de boxe fica no artigo do evento.",
+  "resultado-ufc-arabia-saudita-2026": "Página de resultado: o leitor sai sabendo quem venceu, sem conta na cabeça; o registro de artes marciais está no teto de oito e a calculadora de boxe fica no artigo do evento.",
   "brasileiros-ufc-vegas-124": "Hub de quem luta e contra quem: o leitor sai com nomes e horários, sem conta na cabeça; a calculadora fica no artigo do evento.",
   "brasileiros-ufc-334": "Hub de quem luta e contra quem: o leitor sai com nomes e horários, sem conta na cabeça; a calculadora fica no artigo do evento.",
   "resultado-ufc-334": "Notícia de resultado: o leitor sai com quem ganhou, sem conta na cabeça; a calculadora fica no artigo do evento.",

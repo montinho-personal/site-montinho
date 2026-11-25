@@ -4,6 +4,185 @@ import type { BlogPost } from "./blog";
  *  fonte oficial (ufc.com.br) ou de dois veículos independentes. */
 export const UFC_2026_POSTS: BlogPost[] = [
   {
+    slug: "ufc-arabia-saudita-adesanya-magomedov",
+    title: "UFC Arábia Saudita 2026: Adesanya x Magomedov, horário, card e onde assistir",
+    metaTitle: "UFC Arábia Saudita 2026: Horário, Card e Onde Assistir",
+    metaDescription:
+      "UFC Arábia Saudita, sábado 5/12: Adesanya x Magomedov na principal e Mairon Santos no card principal. Horário de Brasília, onde assistir e o card.",
+    excerpt:
+      "Data, horário de Brasília, onde assistir e card do UFC Arábia Saudita de 5 de dezembro, com Israel Adesanya x Shara Magomedov e sete brasileiros.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-11-25",
+    readTime: "4 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC Arábia Saudita", "Israel Adesanya", "Shara Magomedov", "Mairon Santos"],
+    content: `<img src="/blog-images/ufc-arabia-saudita-adesanya-magomedov-capa.webp" alt="Capa: UFC Arábia Saudita, sábado 5/12, às 15h, com uma luva de boxe" width="1536" height="1024" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<blockquote><p>Informações verificadas em 25 de novembro de 2026 na página oficial do evento. O card ainda pode mudar; esta página é atualizada até a luta.</p></blockquote>
+<p>O <strong>UFC Arábia Saudita</strong> é no <strong>sábado, 5 de dezembro de 2026</strong>, no The Venue, em Riade. A luta principal é <strong>Israel Adesanya x Shara Magomedov</strong>, no peso-médio. O brasileiro <strong>Mairon Santos</strong> está no card principal, contra Akbar Abdullaev, e outros seis brasileiros lutam nas preliminares.</p>
+
+<h2>Que horas é o UFC Arábia Saudita?</h2>
+<p>Como a luta é em Riade, o evento é de dia no Brasil: o card preliminar começa às <strong>12h</strong> e o card principal às <strong>15h</strong>, no horário de Brasília, pela página oficial do UFC.</p>
+
+<h2>Onde assistir ao UFC Arábia Saudita ao vivo</h2>
+<p>No <strong>Paramount+</strong>, que exibe o UFC no Brasil, com o card preliminar e o principal.</p>
+
+<h2>Card do UFC Arábia Saudita</h2>
+<p>Os brasileiros estão em negrito. Veja todos eles em <a href="/blog/brasileiros-ufc-arabia-saudita">brasileiros no UFC Arábia Saudita</a>.</p>
+<h3>Card principal (15h)</h3>
+<table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
+<tr><td>Israel Adesanya x Shara Magomedov</td><td>Peso-médio (luta principal)</td></tr>
+<tr><td>Ian Machado Garry x Yaroslav Amosov</td><td>Peso meio-médio</td></tr>
+<tr><td>Levan Chokheli x Islam Dulatov</td><td>Peso meio-médio</td></tr>
+<tr><td>Serghei Spivac x Mario Pinto</td><td>Peso-pesado</td></tr>
+<tr><td><strong>Mairon Santos</strong> x Akbar Abdullaev</td><td>Peso-leve</td></tr>
+<tr><td>Magomed Tuchalov x Ion Cutelaba</td><td>Peso meio-pesado</td></tr>
+</tbody></table>
+<h3>Card preliminar (12h)</h3>
+<table><thead><tr><th>Luta</th><th>Categoria</th></tr></thead><tbody>
+<tr><td>Luke Riley x <strong>Gabriel Santos</strong></td><td>Peso-pena</td></tr>
+<tr><td><strong>Bruno Silva</strong> x <strong>Jafel Filho</strong></td><td>Peso-mosca</td></tr>
+<tr><td>Uran Satybaldiev x Ivan Gnizditskiy</td><td>Peso meio-pesado</td></tr>
+<tr><td><strong>Marco Tulio</strong> x Jun Yong Park</td><td>Peso-médio</td></tr>
+<tr><td>Pavel Andrusca x Mahammadali Osmanli</td><td>Peso-galo</td></tr>
+<tr><td><strong>Modestino Rodrigues</strong> x Matthieu Duclos</td><td>Peso-médio</td></tr>
+<tr><td>Abdul Hussein x Hecher Sosa</td><td>Peso-galo</td></tr>
+<tr><td>Mateusz Rębecki x <strong>Elves Brener</strong></td><td>Peso-leve</td></tr>
+</tbody></table>
+<p>A ordem das lutas pode mudar até o dia do evento.</p>
+
+<h2>Quem é Mairon Santos?</h2>
+<p>Mairon Santos nasceu em <strong>São João de Meriti, no Rio de Janeiro</strong>, e luta no <strong>peso-leve</strong> do UFC. Pelo perfil oficial, o cartel profissional é de <strong>18 vitórias e 1 derrota</strong>, ele treina na Xtreme Couture, em Las Vegas, e estreou no UFC em agosto de 2024, depois de vencer o reality The Ultimate Fighter.</p>
+
+<h2>Últimas lutas de Mairon Santos</h2>
+<table><thead><tr><th>Data</th><th>Adversário</th><th>Resultado</th></tr></thead><tbody>
+<tr><td>7/12/2025 (UFC 323)</td><td>Muhammad Naimov</td><td>Vitória por nocaute técnico, 3º round</td></tr>
+<tr><td>17/5/2025</td><td>Sodiq Yusuff</td><td>Vitória por decisão unânime</td></tr>
+<tr><td>9/3/2025 (UFC 313)</td><td>Francis Marshall</td><td>Vitória por decisão dividida</td></tr>
+</tbody></table>
+<p>Ele chega com seis vitórias seguidas, pelo perfil oficial. Para entender como os lutadores se preparam, veja <a href="/blog/treino-de-lutador-mma">treino de lutador de MMA</a> e <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>.</p>
+
+<h2>Quem ganhou?</h2>
+<p>O resultado entra no dia do evento em <a href="/blog/resultado-ufc-arabia-saudita-2026">resultado do UFC Arábia Saudita</a>.</p>
+
+<h2>Quanto se gasta numa aula de boxe</h2>
+<p>Adesanya é um dos maiores trocadores da história do UFC, e boa parte do treino de quem luta de pé é com luvas. Se você treina boxe ou muay thai e quer saber quanto gasta numa aula, faça a conta com o seu peso na calculadora abaixo.</p>
+
+<h2>Não se compare</h2>
+<p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-december-05-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Arábia Saudita: Adesanya x Magomedov (página oficial, card, categorias, horários e transmissão, conferida em 25/11/2026)</a></li>
+<li><a href="https://www.ufc.com.br/athlete/mairon-santos-alves" target="_blank" rel="noopener noreferrer">UFC — Mairon Santos (perfil oficial: cidade natal, cartel e últimas lutas)</a></li>
+</ul>`,
+    faq: [
+      { question: "Quando é o UFC Arábia Saudita?", answer: "No sábado, 5 de dezembro de 2026, no The Venue, em Riade, na Arábia Saudita." },
+      { question: "Que horas começa o UFC Arábia Saudita?", answer: "O card preliminar às 12h e o card principal às 15h, horário de Brasília." },
+      { question: "Onde assistir ao UFC Arábia Saudita?", answer: "No Paramount+, que transmite o card preliminar e o principal no Brasil." },
+      { question: "Qual é a luta principal do UFC Arábia Saudita?", answer: "Israel Adesanya x Shara Magomedov, no peso-médio." },
+      { question: "Quem é Mairon Santos?", answer: "Um peso-leve brasileiro de São João de Meriti (RJ), com cartel de 18 vitórias e 1 derrota pelo perfil oficial do UFC. Ele enfrenta Akbar Abdullaev no card principal." },
+    ],
+  },
+  {
+    slug: "brasileiros-ufc-arabia-saudita",
+    title: "Brasileiros no UFC Arábia Saudita: quem luta, contra quem e que horas",
+    metaTitle: "Brasileiros no UFC Arábia Saudita: Quem Luta e Que Horas",
+    metaDescription:
+      "Os sete brasileiros do UFC Arábia Saudita (5/12): Mairon Santos no card principal, o duelo Bruno Silva x Jafel Filho e mais. Adversários e horários.",
+    excerpt:
+      "Mairon Santos, Gabriel Santos, Bruno Silva, Jafel Filho, Marco Tulio, Modestino Rodrigues e Elves Brener no UFC Arábia Saudita: contra quem lutam e a que horas.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-11-25",
+    readTime: "3 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC Arábia Saudita", "brasileiros no UFC", "Mairon Santos", "Jafel Filho"],
+    content: `<img src="/blog-images/brasileiros-ufc-arabia-saudita-capa.webp" alt="Capa: brasileiros no UFC de 5/12, sete no card da Arábia Saudita" width="1536" height="1024" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<p>Sete brasileiros estão no <strong>UFC Arábia Saudita</strong>, no <strong>sábado, 5 de dezembro de 2026</strong>, em Riade. <strong>Mairon Santos</strong> é o único no card principal; os outros seis lutam nas preliminares, incluindo um duelo brasileiro entre <strong>Bruno Silva</strong> e <strong>Jafel Filho</strong>. A luta principal é Israel Adesanya x Shara Magomedov. Horários, transmissão e o card completo em <a href="/blog/ufc-arabia-saudita-adesanya-magomedov">UFC Arábia Saudita: horário, card e onde assistir</a>.</p>
+
+<h2>Quem são os brasileiros do UFC Arábia Saudita</h2>
+<h3>Card principal (15h)</h3>
+<ul>
+<li><strong>Mairon Santos</strong> x Akbar Abdullaev: peso-leve.</li>
+</ul>
+<h3>Card preliminar (12h)</h3>
+<ul>
+<li><strong>Gabriel Santos</strong> x Luke Riley: peso-pena.</li>
+<li><strong>Bruno Silva</strong> x <strong>Jafel Filho</strong>: duelo brasileiro no peso-mosca.</li>
+<li><strong>Marco Tulio</strong> x Jun Yong Park: peso-médio.</li>
+<li><strong>Modestino Rodrigues</strong> x Matthieu Duclos: peso-médio.</li>
+<li><strong>Elves Brener</strong> x Mateusz Rębecki: peso-leve.</li>
+</ul>
+
+<h2>Que horas lutam os brasileiros?</h2>
+<p>O card preliminar começa às <strong>12h</strong> e o card principal às <strong>15h</strong>, no horário de Brasília. A transmissão é no Paramount+. A ordem exata das lutas pode mudar até o dia do evento.</p>
+
+<h2>Quem ganhou? Os resultados dos brasileiros</h2>
+<p>Os resultados entram no dia em <a href="/blog/resultado-ufc-arabia-saudita-2026">resultado do UFC Arábia Saudita</a>.</p>
+
+<h2>Como os lutadores chegam à balança</h2>
+<p>Todos passam pela pesagem na véspera, e muitos fazem corte de peso. Entenda o processo em <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a>, e como eles treinam em <a href="/blog/treino-de-lutador-mma">treino de lutador de MMA</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-december-05-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Arábia Saudita: Adesanya x Magomedov (página oficial, card, categorias e horários, conferida em 25/11/2026)</a></li>
+<li>Nacionalidade pela bandeira de cada atleta na página oficial do evento; Mairon Santos também pelo perfil oficial (cidade natal), em 25/11/2026.</li>
+</ul>`,
+    faq: [
+      { question: "Quais brasileiros lutam no UFC Arábia Saudita?", answer: "Sete: Mairon Santos no card principal; Gabriel Santos, Bruno Silva, Jafel Filho, Marco Tulio, Modestino Rodrigues e Elves Brener no preliminar." },
+      { question: "Contra quem luta Mairon Santos?", answer: "Contra Akbar Abdullaev, no peso-leve, no card principal do UFC Arábia Saudita, em 5 de dezembro de 2026." },
+      { question: "Tem luta entre brasileiros no UFC Arábia Saudita?", answer: "Tem: Bruno Silva x Jafel Filho, no peso-mosca, no card preliminar." },
+      { question: "Que horas lutam os brasileiros no UFC Arábia Saudita?", answer: "O card preliminar começa às 12h e o principal às 15h, horário de Brasília." },
+    ],
+  },
+  {
+    slug: "resultado-ufc-arabia-saudita-2026",
+    title: "Resultado UFC Arábia Saudita 2026: quem venceu e os brasileiros",
+    metaTitle: "Resultado UFC Arábia Saudita 2026: Quem Venceu",
+    metaDescription:
+      "Resultado do UFC Arábia Saudita (5/12): Adesanya x Magomedov, Mairon Santos x Abdullaev e como foram os sete brasileiros. Atualizado no dia.",
+    excerpt:
+      "Quem venceu Adesanya x Magomedov e o resultado de cada brasileiro do UFC Arábia Saudita. Atualizado no dia do evento.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-11-25",
+    readTime: "3 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC Arábia Saudita", "resultado UFC", "Israel Adesanya", "Mairon Santos"],
+    content: `<img src="/blog-images/resultado-ufc-arabia-saudita-2026-capa.webp" alt="Capa: resultado do UFC Arábia Saudita, quem venceu em 5/12" width="1536" height="1024" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<blockquote><p><strong>O resultado entra aqui no dia do evento.</strong> O UFC Arábia Saudita é no sábado, 5 de dezembro de 2026, em Riade, com card principal às 15h (Brasília). Cada resultado é publicado quando houver fonte oficial ou dois veículos.</p></blockquote>
+
+<h2>Quem ganhou Adesanya x Magomedov?</h2>
+<p>Aguardando o evento (5/12).</p>
+
+<h2>Resultados dos brasileiros no UFC Arábia Saudita</h2>
+<table><thead><tr><th>Luta</th><th>Resultado</th></tr></thead><tbody>
+<tr><td><strong>Mairon Santos</strong> x Akbar Abdullaev</td><td>Aguardando o evento (5/12)</td></tr>
+<tr><td><strong>Gabriel Santos</strong> x Luke Riley</td><td>Aguardando o evento (5/12)</td></tr>
+<tr><td><strong>Bruno Silva</strong> x <strong>Jafel Filho</strong></td><td>Aguardando o evento (5/12)</td></tr>
+<tr><td><strong>Marco Tulio</strong> x Jun Yong Park</td><td>Aguardando o evento (5/12)</td></tr>
+<tr><td><strong>Modestino Rodrigues</strong> x Matthieu Duclos</td><td>Aguardando o evento (5/12)</td></tr>
+<tr><td><strong>Elves Brener</strong> x Mateusz Rębecki</td><td>Aguardando o evento (5/12)</td></tr>
+</tbody></table>
+<p>O card completo, os horários e onde assistir estão em <a href="/blog/ufc-arabia-saudita-adesanya-magomedov">UFC Arábia Saudita: horário, card e onde assistir</a>, e quem é cada brasileiro em <a href="/blog/brasileiros-ufc-arabia-saudita">brasileiros no UFC Arábia Saudita</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com.br/event/ufc-fight-night-december-05-2026" target="_blank" rel="noopener noreferrer">UFC — UFC Arábia Saudita: Adesanya x Magomedov (página oficial, conferida em 25/11/2026)</a></li>
+</ul>`,
+    faq: [
+      { question: "Quem ganhou Adesanya x Magomedov?", answer: "A luta é no sábado, 5 de dezembro de 2026. O resultado entra nesta página no dia, com fonte oficial ou de dois veículos." },
+      { question: "Quando é o UFC Arábia Saudita?", answer: "Sábado, 5 de dezembro de 2026, em Riade. Card preliminar às 12h e principal às 15h, horário de Brasília." },
+    ],
+  },
+  {
     slug: "ufc-vegas-123-moicano-nolan",
     title: "Moicano x Nolan: horário, onde assistir e card do UFC Vegas 123",
     metaTitle: "Moicano x Nolan: Horário e Onde Assistir o UFC Vegas 123",

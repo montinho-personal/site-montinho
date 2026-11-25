@@ -2200,3 +2200,16 @@ Pedido do Montinho: páginas de resultado publicadas antes do evento, para já e
 - Canibalização: `vencedores-sao-silvestre` é a história (campeões, recordes, brasileiros); esta é a edição de 2026. Uma linka a outra.
 - Ferramenta: previsor da São Silvestre embutido (oitavo e último lugar do registro `ARTIGOS_COM_PREVISOR_SS`).
 - Atualização: tarefas agendadas para 31/12 e 02/01.
+
+
+## 2026-11-25 — Rotina do UFC: UFC Arábia Saudita (5/12), 3 páginas novas
+
+Evidência: `docs/seo/serp/ufc-arabia-saudita-2026-11-25.json` (SerpApi, celular, São Paulo; 4 da cota: página, 2 autocompletares, visão de IA). Card, categorias, horários e transmissão na página oficial ufc.com.br; Mairon Santos no perfil oficial.
+
+- Autocompletar: ✅ "ufc arabia saudita 2026", "horario", "hoje" (título e H2 de horário); ✅ "resultados" (página `resultado-ufc-arabia-saudita-2026`, publicada antes, pela regra de evento com resultado); ❌ "2025", "2024" (edições passadas), "cartelera", "donde ver", "peleador" (espanhol).
+- "mairon santos": ✅ "ufc", "cartel", "proxima luta", "ultima luta", "tuf" (seção "Quem é" e tabela das últimas lutas, do perfil oficial); ❌ "idade", "altura", "cicatriz" (sem fonte oficial à mão; a rotina proíbe idade sem confirmação), "tapology", "sherdog", "wikipedia", "fighting nerds" (sites).
+- PAA: ✅ "Tem luta do UFC hoje?" (coberto pela data); ❌ "força militar da Arábia Saudita" (nada a ver); ❌ "canal de UFC na Sky" (só a transmissão oficial, Paramount+); ❌ "quanto custa uma entrada" (não cabe).
+- Visão de IA: data, local, horários (12h e 15h), Paramount+ e card, citando ufc.com.br. Diz "outros quatro brasileiros nas preliminares"; a página oficial mostra seis (Gabriel Santos, Bruno Silva, Jafel Filho, Marco Tulio, Modestino Rodrigues e Elves Brener). Vale a oficial.
+- Quem ranqueia: ufc.com.br (vídeo de 2024), Ag. Fight, YouTube, UOL (2025), Super Lutas. Ninguém com a edição de 2026 em texto.
+- Ferramenta: calculadora de boxe no artigo do evento; hub e resultado em `ARTIGOS_SEM_FERRAMENTA` (registro de artes marciais no teto).
+- Resultado: atualização agendada para 5/12, 19h.
