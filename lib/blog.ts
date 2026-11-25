@@ -137,6 +137,7 @@ import { SUPINO_MAQUINA_ABDOMINAL_SUPRA_POSTS } from "./supino-maquina-abdominal
 import { ROSCA_INVERSA_OBLIQUO_POSTS } from "./rosca-inversa-obliquo";
 import { VIDEOGAME_CALORIAS_POSTS } from "./videogame-calorias";
 import { GTA_6_POSTS } from "./gta-6";
+import { DIRIGIR_GOLFE_POSTS } from "./dirigir-golfe";
 import { DOR_NO_TREINO_POSTS } from "./dor-no-treino";
 import { CONDOMINIOS_ALDEIA_POSTS } from "./condominios-aldeia-da-serra";
 import { DOCES_FIT_POSTS } from "./doces-fit";
@@ -190,6 +191,7 @@ export const blogPosts = ([
   ...ROSCA_INVERSA_OBLIQUO_POSTS,
   ...VIDEOGAME_CALORIAS_POSTS,
   ...GTA_6_POSTS,
+  ...DIRIGIR_GOLFE_POSTS,
   ...DOR_NO_TREINO_POSTS,
   ...CONDOMINIOS_ALDEIA_POSTS,
   ...DOCES_FIT_POSTS,
@@ -15574,6 +15576,16 @@ RIR 3 = parou com 3 reps sobrando.</p>
   <li>Dor noturna que acorda o aluno</li>
 </ul>
 
+<h2>E o afundo? Como voltar depois da liberação</h2>
+<p>O afundo costuma ser o exercício que mais incomoda quem tem dor no joelho, porque concentra o peso numa perna só e exige controle do joelho da frente. Depois que o médico liberar, a volta é por etapas, sempre dentro de uma dor baixa, que não piora no dia seguinte:</p>
+<ol>
+<li><strong>Afundo parado com apoio:</strong> mão numa parede ou num banco, descendo só até onde não dói. Sem carga.</li>
+<li><strong>Afundo para trás:</strong> dar o passo para trás em vez de para a frente costuma ser mais bem tolerado, porque a descida fica mais controlada.</li>
+<li><strong>Amplitude aumentando aos poucos,</strong> semana a semana, mantendo o joelho alinhado com o pé, sem cair para dentro.</li>
+<li><strong>Só então carga e afundo andando.</strong> Halteres leves primeiro; o afundo para a frente e o andando entram por último.</li>
+</ol>
+<p>Se a dor sobe de uma sessão para outra, volte uma etapa. E se aparecer algum dos sinais da lista acima, a decisão volta para o médico.</p>
+
 <h2>Resumo prático</h2>
 <p>A dor no joelho no agachamento é, na maioria das vezes, consequência de problemas corrigíveis: joelho valgo por fraqueza de glúteo, déficit de dorsiflexão de tornozelo, síndrome patelofemoral ou técnica inadequada. A abordagem correta é identificar a causa, adaptar as variações de agachamento para amplitudes e posições toleráveis, fortalecer a musculatura do quadril e do quadríceps de forma progressiva, e reintroduzir gradualmente o agachamento pleno conforme a dor regride.</p>
 
@@ -15595,11 +15607,12 @@ RIR 3 = parou com 3 reps sobrando.</p>
 `,
     category: "Lesões",
     date: "2026-06-26",
-    updatedAt: "2026-11-04",
+    updatedAt: "2026-11-25",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["dor no joelho", "agachamento", "síndrome patelofemoral", "joelho valgo", "tendinopatia patelar", "musculação", "personal trainer alphaville", "lesão no joelho"],
     faq: [
+      { question: "Quem tem dor no joelho pode fazer afundo?", answer: "Depois da liberação médica, sim, por etapas: afundo parado com apoio e amplitude curta, depois afundo para trás, aumento gradual da amplitude e, só no fim, carga e afundo andando. Se a dor aumenta de uma sessão para outra, volte uma etapa." },
       { question: "Quem tem dor no joelho pode agachar fundo?", answer: "Depende. Para o joelho saudável, agachar fundo com técnica e carga adequadas não faz mal: uma revisão de 2013 concluiu que o agachamento profundo, com técnica aprendida e carga progressiva, não aumenta o risco para o joelho. Com dor, muitas vezes basta reduzir a profundidade ou a carga por um tempo e ir aumentando a amplitude aos poucos." },
       { question: "Com dor no joelho, devo parar de treinar perna?", answer: "Não. Fortalecer coxas e quadril é uma das coisas que mais ajudam o joelho com dor. A diretriz de 2019 sobre dor na frente do joelho recomenda esse fortalecimento como tratamento principal, e uma revisão Cochrane mostrou que o exercício reduz a dor e melhora a função na artrose de joelho. O que muda é o exercício, a amplitude e a carga. Lesão recente, inchaço ou falseio pedem avaliação antes." },
       {
@@ -20478,11 +20491,12 @@ RIR 3 = parou com 3 reps sobrando.</p>
       "Treinar em casa em Alphaville não significa abrir mão de qualidade. Com protocolo individualizado e acompanhamento presencial, o resultado chega — independente do local.",
     category: "Treinamento",
     date: "2026-06-27",
-    updatedAt: "2026-10-08",
+    updatedAt: "2026-11-25",
     readTime: "7 min",
     author: "Montinho Personal Trainer",
     tags: ["personal trainer", "domicílio", "Alphaville", "treino em casa"],
     faq: [
+      { question: "Personal em casa é bom para quem tem vergonha de treinar na academia?", answer: "É uma das razões mais comuns para escolher o treino a domicílio: sem plateia, você aprende os exercícios, erra e repete no seu ritmo. O treino é montado para o espaço da casa ou do condomínio e encaixado na rotina da família." },
       { question: "Qual o valor de um personal trainer em casa em Alphaville?", answer: "Depende da frequência semanal, do tipo de plano e do deslocamento até a sua casa. No pacote semanal, o valor por sessão é menor que na aula avulsa. Os planos são apresentados numa conversa rápida pelo WhatsApp." },
       { question: "Quanto custa um personal trainer 3 vezes por semana?", answer: "Três treinos por semana é a frequência mais procurada, e no pacote o valor por sessão fica menor que na aula avulsa. A proposta exata depende do horário e do local — chame no WhatsApp para conhecer os planos." },
       { question: "Existe grupo de WhatsApp para treinar em casa?", answer: "Grupo com treino genérico raramente se ajusta à sua casa, ao seu equipamento e às suas limitações. Se a ideia é treinar em casa com orientação e pagando menos que o presencial, a consultoria online entrega um treino individual acompanhado pelo WhatsApp." },
@@ -20544,6 +20558,14 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <h2>Quanto custa personal trainer em casa e os tipos de plano</h2>
 <p>O valor do personal a domicílio depende da frequência semanal, do tipo de plano e do deslocamento. Os formatos são: <strong>pacote por frequência semanal</strong> (de 2 a 5 treinos, com valor por sessão menor quanto mais treinos), <strong>pacote flexível</strong> (aulas para usar no ritmo possível) e <strong>consultoria online</strong> — o formato mais acessível para quem quer treinar em casa com treino individual e acompanhamento pelo WhatsApp. Para ver qual cabe na sua rotina, <a href="/contato">fale comigo pelo WhatsApp</a> e conheça os planos.</p>
+
+<h2>Treino em casa com privacidade</h2>
+<p>Muita gente escolhe o treino a domicílio menos pela comodidade e mais pela privacidade. Sem plateia, sem espelho cheio de gente, sem ninguém olhando a carga: para quem está voltando a treinar, acabou de ter filho, está acima do peso ou simplesmente não gosta de academia cheia, isso muda tudo. Na prática:</p>
+<ul>
+<li><strong>O espaço se adapta.</strong> Uma sala, a varanda, a garagem ou a academia do condomínio no horário vazio. O treino é montado para o espaço que existe, com o material que levo e o que você já tem.</li>
+<li><strong>A rotina da família entra na conta.</strong> Horário que não bate com a saída da escola, treino mais silencioso se tem bebê dormindo, mudança de cômodo quando a casa está cheia.</li>
+<li><strong>Erro sem plateia.</strong> Aprender um exercício novo, errar e repetir é mais fácil quando ninguém está vendo. Para muita gente, essa é a diferença entre desistir na segunda semana e criar o hábito.</li>
+</ul>
 
 <h2>Como funciona o atendimento</h2>
 <p>Antes da primeira sessão, fazemos uma conversa inicial para entender objetivo, histórico e limitações. Visito o espaço disponível, avalio o equipamento e montamos juntos o protocolo. As sessões acontecem com presença exclusiva — sem outros alunos no mesmo horário, atenção total durante toda a sessão. Entre as sessões, suporte pelo WhatsApp para dúvidas e ajustes. Revisão mensal do protocolo com base na resposta real do corpo.</p>
@@ -26214,6 +26236,16 @@ RIR 3 = parou com 3 reps sobrando.</p>
 
 <p>Começar a treinar pesado sem uma avaliação funcional completa é jogar no escuro. Desequilíbrios musculares não detectados, mobilidade limitada e histórico de lesões precisam ser mapeados para que o programa seja seguro e eficiente desde o início.</p>
 
+<h2>Executivas: força e energia com a agenda cheia</h2>
+<p>Boa parte de quem me procura com esse perfil é mulher: diretora, sócia, médica, advogada, muitas vezes conciliando a empresa com filhos e casa. O desafio é o mesmo dos executivos, com uma diferença prática: o tempo livre costuma ser ainda mais picado. O que funciona:</p>
+<ul>
+<li><strong>Sessões objetivas, de 45 a 50 minutos,</strong> com começo, meio e fim definidos. Sem fila de aparelho e sem treino que se estende porque "ainda dá tempo".</li>
+<li><strong>Força como prioridade.</strong> Musculação com progressão de carga é o que mais devolve energia no dia a dia e protege músculo e articulações ao longo dos anos. Cardio entra como complemento, não como base.</li>
+<li><strong>Local que poupa deslocamento:</strong> em casa, na academia do condomínio ou na Arena 18. Treinar onde você já está é o que mais aumenta a chance de manter a rotina.</li>
+<li><strong>Ajuste pela semana real.</strong> Semana de fechamento, viagem, filho doente: o treino encolhe, muda de formato ou vira online, mas não some.</li>
+</ul>
+<p>Na prática, a decisão mais comum é na hora: se a noite foi curta e a reunião atrasou, o treino daquele dia fica mais curto e menos pesado. Constância vale mais do que um treino perfeito por semana.</p>
+
 <h2>Como funciona meu atendimento para executivos em Alphaville</h2>
 
 <p>Trabalho exclusivamente com clientes em Alphaville, Tamboré e Barueri, com uma agenda limitada que me permite dar atenção personalizada a cada pessoa. Meu modelo de atendimento foi construído ao longo de mais de 20 anos para atender as necessidades específicas de executivos que precisam de resultado real dentro de uma rotina exigente.</p>
@@ -26257,11 +26289,12 @@ RIR 3 = parou com 3 reps sobrando.</p>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Schoenfeld et al. (2017) — volume de treino e hipertrofia muscular (PubMed)</a>.</p>`,
     category: "Treinamento",
     date: "2026-06-27",
-    updatedAt: "2026-07-22",
+    updatedAt: "2026-11-25",
     readTime: "11 min",
     author: "Montinho",
     tags: ["personal trainer executivos alphaville", "treino para executivos", "personal trainer alphaville", "fitness executivo", "treino para quem trabalha muito"],
     faq: [
+      { question: "Personal trainer para executivas: o treino é diferente?", answer: "Os princípios são os mesmos (força como base, volume ajustado ao estresse e ao sono), mas a agenda costuma ser ainda mais picada. Por isso funcionam sessões objetivas de 45 a 50 minutos, em casa, no condomínio ou na Arena 18, e um plano que se adapta à semana em vez de sumir quando ela aperta." },
       {
         question: "Personal trainer para executivos em Alphaville é diferente do convencional?",
         answer: "Sim, e muito. Executivos têm estresse crônico elevado, sono reduzido, postura comprometida por horas sentados e janelas de tempo menores para treinar. Um bom personal trainer adapta volume, intensidade e seleção de exercícios a essa realidade específica, em vez de aplicar programas genéricos.",
@@ -39769,6 +39802,7 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
   excerpt: "A musculação para adolescentes virou alvo de mitos e desinformação. A ciência atual é clara: com orientação adequada, o treinamento de força é seguro e benéfico para jovens. Veja o que funciona na prática.",
   category: "Treinamento",
   date: "2026-06-27",
+  updatedAt: "2026-11-25",
   readTime: "10 min",
   author: "Montinho",
   tags: ["musculação para adolescentes", "musculação jovem", "musculação trava crescimento", "treino para jovens", "idade para musculação"],
@@ -39894,6 +39928,16 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
 
 <p>Nesses casos, uma conversa aberta e, se necessário, acompanhamento de um psicólogo esportivo é o melhor caminho.</p>
 
+<h2>Personal trainer para adolescente em Alphaville: como funciona</h2>
+<p>Quando a família procura acompanhamento para um adolescente, o combinado é simples e vem antes do primeiro treino:</p>
+<ul>
+<li><strong>Liberação médica antes de começar.</strong> Uma consulta com o pediatra ou o médico que acompanha o adolescente, principalmente se ele tem alguma condição de saúde, dor ou pratica outro esporte com volume alto.</li>
+<li><strong>Técnica antes da carga.</strong> As primeiras semanas são para aprender os movimentos (agachar, empurrar, puxar, levantar do chão) com carga leve. A carga sobe quando a execução está estável, não quando o colega da escola levanta mais.</li>
+<li><strong>Conversa com a família.</strong> Pai ou mãe sabem o objetivo, a frequência e o que esperar. Assunto de alimentação fica com o nutricionista; o treino caminha junto.</li>
+<li><strong>Objetivo do adolescente, não da internet.</strong> Muitos chegam querendo o corpo de influenciador. O trabalho é transformar isso em metas que dependem dele: aprender um exercício, subir carga com técnica, treinar duas ou três vezes por semana sem faltar.</li>
+</ul>
+<p>O atendimento pode ser em casa, no condomínio ou na Arena 18, sempre com um responsável sabendo de tudo.</p>
+
 <h2>Conclusão</h2>
 
 <p>Musculação para adolescentes é segura, benéfica e recomendada pelas principais organizações de medicina esportiva do mundo. O que causa dano não é o treino de força — é a carga excessiva, a técnica incorreta e a falta de supervisão. Com orientação profissional, progressão responsável e nutrição adequada, o treinamento de força é um dos melhores presentes que um adolescente pode dar para a sua saúde de longo prazo.</p>
@@ -39911,6 +39955,7 @@ Alternativa sem máquina. Coloque uma prancha ou pesos sob os pés para amplitud
 </ul>
 <p><strong>Referência científica:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/28090049/" target="_blank" rel="noopener noreferrer">Evidências científicas sobre treinamento (PubMed)</a>.</p>`,
   faq: [
+      { question: "Personal trainer para adolescente: precisa de liberação médica?", answer: "É o recomendado: uma consulta com o pediatra ou com o médico que acompanha o adolescente antes de começar, principalmente se houver dor, alguma condição de saúde ou outro esporte com volume alto. Depois, o treino começa pela técnica, com carga leve." },
       {
         question: "Com que idade pode começar a fazer musculação?",
         answer: "Não existe uma idade mínima absoluta — o critério é a maturidade neuromuscular e comportamental. Crianças de 6-7 anos já podem fazer exercícios de força com peso corporal supervisionados. O treino com pesos externos é introduzido progressivamente a partir dos 11-13 anos, com cargas maiores após a maturação sexual inicial.",
@@ -43424,16 +43469,10 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   excerpt: "A combinação de corrida e musculação é o sonho — e o pesadelo — de muitos praticantes. O problema não é fazer as duas: é a falta de planejamento que gera interferência entre os estímulos e resultado ruim nas duas.",
   category: "Treinamento",
   date: "2026-06-27",
-  readTime: "10 min",
+  updatedAt: "2026-11-25",
+  readTime: "12 min",
   author: "Montinho",
   tags: ["corrida e musculação", "combinar corrida musculação", "efeito de interferência", "corrida hipertrofia", "musculação para corredor"],
-    faqSchema: [
-      { question: "Quantas vezes por semana devo treinar para ganhar massa muscular?", answer: "Para hipertrofia, a literatura científica aponta que treinar cada grupo muscular 2 vezes por semana com volume adequado é mais eficaz do que treinar apenas 1 vez. 3 a 5 sessões semanais são o intervalo mais comum para iniciantes a avançados." },
-      { question: "Qual a carga ideal para hipertrofia?", answer: "Estudos de Brad Schoenfeld e Eric Helms mostram que cargas entre 30% e 85% do 1RM podem promover hipertrofia quando levadas próximo à falha. O intervalo de 6 a 20 repetições com esforço progressivo é o mais prático e eficaz." },
-      { question: "Quanto tempo de descanso entre as séries?", answer: "Para hipertrofia, descansos de 2 a 3 minutos entre séries são superiores a descansos curtos (<1 min), pois permitem maior volume e intensidade total. Pesquisa publicada no Journal of Strength and Conditioning Research confirma essa recomendação." },
-      { question: "O que é sobrecarga progressiva e por que é essencial?", answer: "Sobrecarga progressiva é o aumento gradual do estímulo de treino (carga, volume ou intensidade) ao longo do tempo. É o principal mecanismo de adaptação muscular e deve ser aplicada de forma planejada para resultados consistentes." },
-      { question: "Devo treinar até a falha em todas as séries?", answer: "Treinar até a falha não é necessário em todas as séries e pode aumentar o risco de lesão e o tempo de recuperação. Pesquisas de Mike Israetel e colaboradores indicam que trabalhar com 1 a 3 repetições na reserva (RIR) é suficiente para hipertrofia máxima." }
-    ],
   content: `<p>Correr e levantar peso são dois dos hábitos mais saudáveis que uma pessoa pode ter. Mas combiná-los sem estratégia cria o que os fisiologistas chamam de "efeito de interferência" — onde os dois adaptam em direções opostas e comprometem um ao outro.</p>
 
 
@@ -43457,7 +43496,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <li>AMPK inibe a sinalização da mTOR — logo, treino aeróbico após treino de força pode reduzir o estímulo de hipertrofia</li>
 </ul>
 
-<p>Mas estudos mais recentes mostram que o efeito de interferência é muito menor do que Hickson observou — porque o protocolo dele era extremo (duas sessões diárias, altíssimo volume). Com planejamento adequado, a interferência é mínima.</p>
+<p>Mas estudos mais recentes mostram que o efeito de interferência é muito menor do que Hickson observou — porque o protocolo dele era extremo (duas sessões diárias, altíssimo volume). A meta-análise de <a href="https://pubmed.ncbi.nlm.nih.gov/34757594/" target="_blank" rel="noopener noreferrer">Schumann e colegas (Sports Medicine, 2022)</a>, que reuniu 43 estudos, concluiu que combinar treino aeróbico e de força <strong>não prejudica a hipertrofia nem o ganho de força máxima</strong>. A exceção foi a força explosiva, que sofreu mais quando os dois treinos eram feitos na mesma sessão do que quando havia pelo menos 3 horas de intervalo.</p>
 
 <h2>Quando a interferência é real e quando não é</h2>
 
@@ -43470,7 +43509,7 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 
 <p><strong>Interferência mínima ou nula quando:</strong></p>
 <ul>
-<li>Corrida e musculação têm pelo menos 6 horas de intervalo no mesmo dia</li>
+<li>Corrida e musculação têm algumas horas de intervalo no mesmo dia (na meta-análise de 2022, 3 horas ou mais já reduziram a perda de força explosiva)</li>
 <li>São realizadas em dias alternados</li>
 <li>O volume de cada modalidade é moderado e apropriado para recuperação</li>
 <li>A nutrição suporta as demandas de ambas</li>
@@ -43491,6 +43530,22 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 </table>
 
 <p><strong>Importante</strong>: quando os objetivos são claros, o ideal é dias separados — não a sequência dentro da sessão.</p>
+
+<h2>Corrida e musculação em dias alternados ou no mesmo dia?</h2>
+
+<p>É a dúvida número um de quem pesquisa o tema. As duas formas funcionam; o que muda é o que cada uma exige:</p>
+
+<table>
+<thead><tr><th></th><th>Dias alternados</th><th>No mesmo dia</th></tr></thead>
+<tbody>
+<tr><td>Recuperação</td><td>Mais fácil: cada treino chega descansado</td><td>Exige cuidar da ordem e do volume</td></tr>
+<tr><td>Dias de treino na semana</td><td>Precisa de mais dias (4 a 6)</td><td>Cabe em menos dias (3 ou 4)</td></tr>
+<tr><td>Interferência</td><td>Praticamente nula</td><td>Pequena, menor ainda com horas de intervalo</td></tr>
+<tr><td>Para quem serve</td><td>Quem tem tempo na semana e quer as duas bem feitas</td><td>Quem tem poucos dias livres</td></tr>
+</tbody>
+</table>
+
+<p>Se for no mesmo dia, comece pelo que é prioridade e deixe o outro mais leve. Uma corrida curta e fácil depois da musculação de superiores atrapalha pouco; um treino de tiro depois de agachamento pesado atrapalha os dois.</p>
 
 <h2>Como distribuir corrida e musculação na semana</h2>
 
@@ -43544,6 +43599,16 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 <li><strong>Prevenção de lesões</strong>: a maioria das lesões de corrida (joelho de corredor, síndrome da banda IT, canelite) tem relação com fraqueza de glúteo, quadríceps ou fraqueza de core — que a musculação corrige</li>
 </ul>
 
+<h2>Corrida e musculação emagrece?</h2>
+
+<p>Combinar as duas é uma das formas mais completas de treinar para emagrecer: a corrida aumenta o gasto da semana e a musculação ajuda a manter a massa muscular enquanto o peso cai. Mas o que decide a perda de gordura é o balanço entre o que você gasta e o que come ao longo das semanas, não a modalidade. A alimentação fica com o nutricionista; o treino é feito para caber na sua rotina e ser repetido.</p>
+
+<p>Dias alternados funcionam bem para emagrecer porque deixam cada treino com qualidade e diminuem o risco de dor e lesão, que é o que mais interrompe a rotina de quem começa a correr. Para ter uma noção do gasto de cada treino, use a <a href="/ferramentas/calculadora-corrida">calculadora de pace e calorias da corrida</a>.</p>
+
+<h2>É melhor correr ou fazer musculação?</h2>
+
+<p>Depende do objetivo, e na maioria dos casos a resposta é "os dois". A corrida desenvolve o condicionamento cardiovascular; a musculação desenvolve força e massa muscular e protege as articulações. Para saúde geral, a <a href="https://www.who.int/publications/i/item/9789240015128" target="_blank" rel="noopener noreferrer">diretriz de atividade física da Organização Mundial da Saúde (2020)</a> inclui as duas coisas: atividade aeróbica ao longo da semana e fortalecimento muscular em pelo menos 2 dias. Se só der para escolher uma agora, escolha a que você vai conseguir manter.</p>
+
 <h2>Nutrição para quem faz os dois</h2>
 
 <p>Combinar as duas modalidades aumenta as demandas nutricionais:</p>
@@ -43556,7 +43621,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
 
 <h2>Conclusão</h2>
 
-<p>Corrida e musculação são totalmente compatíveis — e com planejamento, se potencializam mutuamente. A chave é respeitar a hierarquia: o objetivo principal determina a prioridade de volume e intensidade. Dias separados ou intervalo de 6+ horas entre modalidades minimizam a interferência. E nutrição adequada para suportar ambas as demandas é tão importante quanto o planejamento de treino.</p>
+<p>Corrida e musculação são totalmente compatíveis — e com planejamento, se potencializam mutuamente. A chave é respeitar a hierarquia: o objetivo principal determina a prioridade de volume e intensidade. Dias separados ou algumas horas de intervalo entre as modalidades minimizam a interferência. E nutrição adequada para suportar ambas as demandas é tão importante quanto o planejamento de treino.</p>
+
+<h2>Não se compare</h2>
+
+<p>Tem gente que corre 40 km por semana e ainda ganha massa; tem gente que sente a perna pesada com duas corridas. Cada um tem a própria genética, rotina e história. O plano certo é o que você consegue repetir semana após semana, ajustando quando a carga para de subir ou o pace piora. É isso que faço com quem treina comigo: observar a resposta e mexer na distribuição antes que uma modalidade atrapalhe a outra.</p>
 
 <div class="yt-embed">
 <p class="yt-caption">Se preferir, assista ao video abaixo para aprofundar este tema.</p>
@@ -43573,7 +43642,11 @@ Corpo completamente horizontal. 5×5s já é considerado avançado.</p>
   faq: [
       {
         question: "Posso fazer corrida e musculação no mesmo dia?",
-        answer: "Sim, mas com cuidado. O ideal é fazer musculação primeiro (se a prioridade é hipertrofia) ou corrida primeiro (se a prioridade é performance de corrida). Um intervalo de 6+ horas entre as sessões minimiza a interferência. Corrida longa imediatamente após treino pesado de perna é a combinação mais prejudicial para ambos os objetivos.",
+        answer: "Sim. O ideal é fazer musculação primeiro (se a prioridade é hipertrofia) ou corrida primeiro (se a prioridade é performance de corrida). Algumas horas de intervalo reduzem a interferência; na meta-análise de Schumann (2022), 3 horas ou mais já protegeram a força explosiva. Corrida longa imediatamente após treino pesado de perna é a combinação mais prejudicial para ambos os objetivos.",
+      },
+      {
+        question: "Corrida e musculação em dias alternados emagrece?",
+        answer: "Ajuda, porque soma o gasto da corrida com a preservação de massa muscular da musculação, e os dias alternados deixam cada treino mais bem feito. Mas a perda de gordura depende do balanço entre gasto e alimentação ao longo das semanas.",
       },
       {
         question: "Corrida atrapalha o ganho de massa muscular?",
@@ -56492,8 +56565,8 @@ Completar os primeiros 5km é uma das conquistas mais marcantes para quem começ
     excerpt: "Ciclistas que ignoram a musculação chegam a um platô cedo e se machucam mais. Veja como a força complementa a bike sem atrapalhar o treino aeróbico.",
     category: "Treinamento",
     date: "2026-06-28",
-    updatedAt: "2026-06-28",
-    readTime: "8 min",
+    updatedAt: "2026-11-25",
+    readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["ciclismo", "musculação", "potência", "bike", "prevenção de lesões", "treino complementar"],
     content: `<p>Ciclistas têm uma relação curiosa com a musculação: sabem que deveriam fazer, mas com frequência a abandonam por medo de ganhar peso ou perder "as pernas". Esse medo não tem base científica — e custa potência, saúde e longevidade no esporte. Montinho treina ciclistas amadores e competitivos em Alphaville há mais de 15 anos e a combinação certa transforma o pedal.</p>
@@ -56506,7 +56579,7 @@ Completar os primeiros 5km é uma das conquistas mais marcantes para quem começ
 
 ## A Ciência por Trás da Força no Ciclismo
 
-Um estudo da *Scandinavian Journal of Medicine & Science in Sports* (2010) é clássico: ciclistas que adicionaram 12 semanas de treino de força pesado (agachamento 4x4 rep, alta carga) melhoraram **potência de pico em 7%** e **economia de pedalada em 5%** — sem ganho de peso. Mais recentemente, meta-análise de 2020 no *Journal of Strength and Conditioning Research* confirmou: força máxima de membros inferiores é um dos maiores preditores de performance em ciclismo de resistência.
+Os estudos mais citados vêm da Noruega. Em ciclistas bem treinados, acrescentar treino de força pesado ao treino normal de bike melhorou a força das pernas e o desempenho num teste de 5 minutos no máximo feito depois de 185 minutos de pedal, justamente o momento decisivo de uma prova longa ([Rønnestad e colegas](https://pubmed.ncbi.nlm.nih.gov/19903319/)). Em ciclistas competitivos, 8 semanas de treino de força máxima (agachamento com poucas repetições e carga alta) melhoraram a economia de pedalada ([Sunde e colegas, 2010](https://pubmed.ncbi.nlm.nih.gov/19855311/)).
 
 A razão é simples: quanto maior sua força máxima, menor o percentual dela que você usa a cada pedalada. Isso significa menor recrutamento muscular por pedalo, maior eficiência e retardo da fadiga.
 
@@ -56514,7 +56587,7 @@ A razão é simples: quanto maior sua força máxima, menor o percentual dela qu
 
 ### Agachamento Livre (O Mais Importante)
 
-O agachamento trabalha quadriceps, glúteo e posterior de coxa — exatamente os músculos do pedalada. Para ciclistas, o protocolo nórdico norueguês (4 séries de 4 repetições com carga alta, 3-5 min de descanso) demonstrou maior transferência para potência no ciclismo do que protocolos tradicionais de hipertrofia.
+O agachamento trabalha quadríceps, glúteo e posterior de coxa — exatamente os músculos da pedalada. Nos estudos noruegueses, o que funcionou foram séries de poucas repetições com carga alta e descanso longo, não séries longas até a queimação.
 
 ### Stiff e Leg Curl
 
@@ -56539,10 +56612,22 @@ Prancha frontal, prancha lateral e bird-dog estabilizam a pelve e reduzem energi
 ## Mitos e Verdades
 
 **Mito: musculação vai me fazer ganhar peso e prejudicar a subida.**
-Verdade: protocolos de força (4-6 reps, cargas altas) geram adaptação neuromuscular com mínimo ganho de massa. Estudos com ciclistas mostraram ganho médio de 0,3kg de massa magra após 12 semanas — irrelevante para a relação potência/peso.
+Verdade: séries de poucas repetições com carga alta desenvolvem força principalmente pela adaptação do sistema nervoso. Com o volume de bike alto da rotina de ciclista, o ganho de massa tende a ser pequeno, e a melhora de força compensa na relação potência/peso.
 
 **Mito: pedalar muito já fortalece as pernas.**
 Verdade: pedalar fortalece resistência muscular, não força máxima. São qualidades diferentes. Sem treino específico de força, o ciclista chega a um platô de potência que só mais quilômetros não resolve.
+
+## Musculação e Ciclismo no Mesmo Dia
+
+Dá para fazer, desde que a ordem siga a prioridade do dia. Se o treino importante é o de bike (intervalado, subida forte), pedale primeiro e deixe a musculação para depois ou para outro horário. Se o dia é de força, faça a musculação descansado e deixe para depois um pedal leve, que até ajuda a soltar as pernas. O que não funciona é agachamento pesado seguido de treino intenso na bike: os dois saem piores. Para quem prioriza o ciclismo, 1 a 3 sessões de musculação por semana costumam bastar.
+
+## Pedalar ou Musculação: Qual É Melhor?
+
+Não é uma escolha. O ciclismo desenvolve o condicionamento cardiovascular e a resistência das pernas, com pouco impacto nas articulações; a musculação desenvolve força, protege tendões e ossos (pedalar quase não estimula a densidade óssea, por não ter impacto) e corrige desequilíbrios. Quem só pedala tende a ficar com quadríceps forte e costas, core e membros superiores esquecidos.
+
+## Quem Quer Ganhar Massa Muscular Pode Pedalar?
+
+Pode. A meta-análise de [Schumann e colegas (2022)](https://pubmed.ncbi.nlm.nih.gov/34757594/) concluiu que somar treino aeróbico ao treino de força não prejudica a hipertrofia. O cuidado é com o volume: pedal longo e intenso no mesmo período em que você tenta ganhar massa nas pernas cobra recuperação. Pedais leves ou moderados, em outro horário ou em outro dia, convivem bem com a musculação.
 
 ## Erros Comuns de Ciclistas na Musculação
 
@@ -56553,11 +56638,17 @@ Verdade: pedalar fortalece resistência muscular, não força máxima. São qual
 
 ## Conclusão
 
-A combinação musculação + ciclismo é superior ao ciclismo isolado para potência, prevenção de lesões e longevidade no esporte. Montinho atende ciclistas presencialmente em Alphaville/Tambore e online em todo o Brasil. [Entre em contato pelo WhatsApp](https://wa.me/5511981063409) e monte seu programa integrado.
+A combinação musculação + ciclismo é superior ao ciclismo isolado para potência, prevenção de lesões e longevidade no esporte.
+
+## Não se Compare
+
+O ciclista do seu grupo que sobe a serra mais rápido pode ter anos de pedal, outra genética e outra rotina. Cada um tem a própria história, com altos e baixos. O que muda o seu pedal é um treino de força que você consiga manter a temporada inteira, ajustado quando o calendário de provas aperta ou quando a perna chega pesada no treino de bike.
+
+Montinho atende ciclistas presencialmente em Alphaville/Tamboré e online em todo o Brasil. [Entre em contato pelo WhatsApp](https://wa.me/5511981063409) e monte seu treino de força para a bike.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mOn0uTTR57A?rel=0" title="A Importância do Cardio no Treino — Leandro Twin"Musculação para Ciclistas" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/mOn0uTTR57A?rel=0" title="A Importância do Cardio no Treino — Leandro Twin" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
 `,
@@ -56565,6 +56656,9 @@ A combinação musculação + ciclismo é superior ao ciclismo isolado para pot�
       { question: "Musculação atrapalha o ciclismo?", answer: "Não, quando bem programada. O erro é fazer musculação pesada de pernas no dia anterior a um treino intenso de bike. Com organização semanal correta, a musculação melhora potência sem prejudicar a recuperação." },
       { question: "Quantas séries de agachamento para ciclistas?", answer: "Para desenvolver força máxima com transferência para o ciclismo, protocolos de 3-5 séries de 3-6 repetições com carga alta (80-90% de 1RM) são mais efetivos do que séries longas de 12-15 reps." },
       { question: "Ciclista deve fazer musculação de membros superiores?", answer: "Sim, especialmente para ciclistas de mountain bike e gravel. Remada, desenvolvimento e trabalho de core melhoram controle da bike em terreno irregular e reduzem fadiga de ombros em descidas longas." },
+      { question: "Posso fazer musculação e ciclismo no mesmo dia?", answer: "Pode. Faça primeiro o treino que é prioridade no dia e deixe o outro mais leve. Evite agachamento pesado seguido de treino intenso na bike, porque os dois saem piores." },
+      { question: "Quem quer ganhar massa muscular pode pedalar?", answer: "Pode. A meta-análise de Schumann (2022) concluiu que somar treino aeróbico ao treino de força não prejudica a hipertrofia. Controle o volume de pedal intenso e prefira pedais leves em outro horário ou dia." },
+      { question: "Pode fazer bicicleta na academia?", answer: "Pode. A bike ergométrica serve como aquecimento antes da musculação (5 a 10 minutos leves) ou como cardio depois. Se a meta for força nas pernas, deixe o pedal intenso para outro dia." },
       { question: "Qual o melhor momento da temporada para treinar pesado na academia?", answer: "A entressafra (período sem provas) é o momento ideal para força máxima. Na temporada, reduza para 1-2 dias de manutenção com cargas moderadas para não comprometer a recuperação dos treinos de bike." },
     ],
   },
@@ -63258,7 +63352,7 @@ Durante o exercício, o corpo gera calor. Em temperatura ambiente normal, a sudo
 
 ## Hidratação: A Regra Mais Importante
 
-A desidratação é o maior limitador de performance no calor. Já com 2% de desidratação (1,4 kg para uma pessoa de 70 kg), a performance cai entre 10-20%. Com 5%, o risco de golpe de calor começa.
+A desidratação é o maior limitador de performance no calor. O posicionamento do American College of Sports Medicine sobre reposição de líquidos ([ACSM, 2007](https://pubmed.ncbi.nlm.nih.gov/17277604/)) aponta que perder mais de 2% do peso corporal em suor (1,4 kg para uma pessoa de 70 kg) já prejudica o desempenho aeróbico, e o efeito é maior justamente no calor.
 
 **Protocolo de hidratação para treino no calor:**
 
@@ -63274,11 +63368,11 @@ A desidratação é o maior limitador de performance no calor. Já com 2% de des
 
 ## Horário: Evite o Pico de Calor
 
-O horário mais perigoso para treino ao ar livre é entre **11h e 15h** — quando a radiação solar é mais intensa e a temperatura está no pico.
+O Ministério da Saúde orienta evitar a exposição direta ao sol **entre 10h e 16h** nos dias de calor forte e adaptar o horário e a intensidade da atividade física ao ambiente ([guia do Ministério da Saúde sobre calor](https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/calor)). Para quem treina na rua, essa é a janela a evitar.
 
 **Horários recomendados:**
-- Manhã cedo: 6h-9h (temperatura amena, menor umidade relativa)
-- Final da tarde: após 17h (sol mais fraco, temperatura caindo)
+- Manhã cedo: antes das 10h, de preferência até as 9h
+- Final da tarde: depois das 16h, melhor ainda depois das 17h, quando o sol já perdeu força
 
 Para treinos em academia com ar-condicionado, o horário tem impacto menor — mas a hidratação e as adaptações de intensidade ainda se aplicam.
 
@@ -63304,6 +63398,17 @@ No calor, sua intensidade percebida é maior para a mesma carga objetiva. Isso �
 - Monitore a frequência cardíaca — no calor, ela sobe mais rápido
 - Prefira natação (refresca o corpo) ou bike indoor (com ventilação)
 
+## Como Treinar no Calor sem Passar Mal
+
+É a dúvida que mais aparece na busca. Na prática, quem passa mal no calor quase sempre juntou três coisas: chegou ao treino já com pouca água no corpo, pegou o horário de sol forte e manteve a intensidade de um dia fresco. Um roteiro simples:
+
+1. **Antes:** beba água ao longo do dia, não só na hora do treino, e faça uma refeição leve 1 a 2 horas antes.
+2. **Aquecimento:** mais curto e mais leve. No calor, o corpo já chega aquecido.
+3. **Durante:** comece abaixo do normal e só suba se estiver bem. Na musculação, aumente o descanso entre as séries; no cardio, aceite um ritmo mais lento.
+4. **Depois:** reponha líquido e não vá direto para o sol ou para o carro fechado. Uma ducha fresca ajuda a baixar a temperatura.
+
+Quando acompanho aluno em dia quente, o ajuste é decidido na hora: se a frequência cardíaca sobe mais que o normal no aquecimento, o treino daquele dia muda. Não é perder o treino, é trocar o estímulo por um que o corpo aguenta naquele dia.
+
 ## Sinais de Alerta — Quando Parar
 
 **Pare o treino imediatamente se sentir:**
@@ -63317,12 +63422,22 @@ Em caso de golpe de calor (hyperthermia): mova-se para local fresco, aplique ág
 
 ## Aclimatação: O Corpo se Adapta
 
-Se você não está acostumado a treinar no calor, o corpo precisa de 10-14 dias para se aclimatar. Durante esse período:
+Se você não está acostumado a treinar no calor, o corpo precisa de um tempo para se aclimatar: uma revisão sobre doenças do calor no esporte ([Nichols, 2014](https://pmc.ncbi.nlm.nih.gov/articles/PMC4596225/)) descreve a aclimatação ideal ao longo de 10 a 14 dias de treinos no calor, com aumento gradual. Durante esse período:
 - Aumente gradualmente a duração e intensidade no calor
 - Espere maior suor (mecanismo de adaptação — o corpo aprende a suar mais cedo e mais eficientemente)
 - Frequência cardíaca de repouso no calor vai diminuir com a adaptação
 
 Após a aclimatação, a performance no calor melhora significativamente.
+
+## Treinar no Calor É Bom? Ajuda em Alguma Coisa?
+
+Treinar no calor não é "melhor" que treinar em temperatura amena: o mesmo treino custa mais esforço, a frequência cardíaca sobe mais e o rendimento cai. O que existe de positivo é a **aclimatação**: quem se expõe ao calor de forma gradual passa a suar mais cedo e a tolerar melhor dias quentes, o que ajuda quem tem prova ou jogo no verão.
+
+**Treinar no calor ajuda a emagrecer?** Não do jeito que parece. O peso que some na balança depois de um treino suado é água, e volta quando você se hidrata. A perda de gordura depende do gasto ao longo das semanas, e treinar no calor costuma até reduzir o quanto você consegue fazer.
+
+## É Melhor Treinar no Calor ou no Frio?
+
+Para desempenho, temperaturas amenas vencem: o corpo gasta menos energia para se resfriar e sobra mais para o treino. O frio pede aquecimento mais longo e roupa em camadas, mas raramente é o que limita o treino. O calor, sim. Por isso, nos meses quentes vale levar o treino para o horário mais fresco ou para um ambiente ventilado, em vez de brigar com a temperatura.
 
 ## Nutrição no Calor
 
@@ -63349,6 +63464,10 @@ Não. Roupas de sauna (neoprene) aumentam o risco de desidratação e golpe de c
 **Treinar em dia de chuva com temperatura amena é melhor?**
 Em geral sim — temperatura e umidade menores facilitam a termorregulação e melhoram a performance.
 
+## Não se Compare
+
+No calor, a comparação engana ainda mais: o colega que corre no mesmo ritmo de sempre pode estar aclimatado, ter treinado mais cedo ou simplesmente responder diferente à temperatura. Cada um tem a própria genética, rotina e história. O que importa é você manter o treino durante o verão inteiro, ajustando o que for preciso, em vez de forçar um dia e perder a semana seguinte.
+
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
 <div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/hSioheHqH7I?rel=0" title="Como Treinar no Calor com Segurança" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -63357,14 +63476,17 @@ Em geral sim — temperatura e umidade menores facilitam a termorregulação e m
 `,
     category: "Treinamento",
     date: "2026-06-28",
-    updatedAt: "2026-06-28",
-    readTime: "8 min",
+    updatedAt: "2026-11-25",
+    readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["treinar no calor", "hidratação treino", "segurança treino verão", "golpe de calor", "performance no calor"],
     faq: [
       { question: "Quanto beber durante o treino no calor?", answer: "150-250ml a cada 15-20 minutos. Em treinos acima de 60 minutos com muito suor, adicione eletrólitos (sódio)." },
       { question: "Qual é o sinal mais perigoso no calor?", answer: "Parar de suar com temperatura corporal muito alta é sinal de golpe de calor — emergência médica. Mova-se para local fresco e chame socorro imediatamente." },
-      { question: "Posso treinar normalmente no calor?", answer: "Sim, com adaptações: hidratação extra, horário adequado (evite 11h-15h), roupas dry-fit claras e redução de 10-20% na intensidade." },
+      { question: "Posso treinar normalmente no calor?", answer: "Sim, com adaptações: hidratação extra, horário adequado (o Ministério da Saúde orienta evitar o sol direto entre 10h e 16h), roupas leves e claras e redução da intensidade nos primeiros dias." },
+      { question: "Como treinar no calor sem passar mal?", answer: "Chegue hidratado, prefira o horário antes das 10h ou depois das 16h, faça um aquecimento mais curto, comece abaixo da intensidade normal e aumente o descanso. Pare se sentir tontura, náusea, dor de cabeça forte ou confusão." },
+      { question: "Treinar no calor ajuda a emagrecer?", answer: "Não de forma relevante. O peso que cai depois de um treino suado é água e volta com a hidratação. A perda de gordura depende do gasto ao longo das semanas, não da temperatura." },
+      { question: "É melhor treinar no calor ou no frio?", answer: "Para desempenho, temperaturas amenas são melhores. No calor o corpo gasta energia para se resfriar e o rendimento cai. O frio pede aquecimento mais longo, mas raramente limita o treino." },
     ],
   },
   {
@@ -93930,6 +94052,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Falta de tempo é a desculpa número um para não treinar. Mas a ciência mostra que sessões curtas e bem estruturadas geram resultado real. O segredo não é treinar mais tempo: é treinar melhor dentro do tempo que você tem.",
     category: "Treino",
     date: "2026-07-19",
+    updatedAt: "2026-11-25",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["treino curto", "falta de tempo", "hipertrofia", "produtividade", "treino eficiente"],
@@ -94053,6 +94176,19 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Em dias impossíveis, um treino em casa com o peso do corpo ou elásticos mantém o estímulo e — talvez mais importante — mantém o hábito. Vinte minutos em casa valem infinitamente mais que zero. Montei um roteiro completo de <a href="/blog/treino-em-casa-sem-equipamento">treino em casa sem equipamento</a> para esses dias.</p>
 
 <p>E se o problema é treinar no intervalo do trabalho sem passar mal ou sem energia, veja minhas sugestões de <a href="/blog/lanches-pre-treino-executivos">lanches pré-treino para quem tem rotina de executivo</a>.</p>
+
+<h2>E o treino de 45 minutos? Como dividir o tempo</h2>
+<p>Com 15 minutos a mais, dá para montar uma sessão completa, com tudo no lugar. A divisão que uso com quem tem 45 minutos:</p>
+<table>
+<thead><tr><th>Parte</th><th>Tempo</th><th>O que entra</th></tr></thead>
+<tbody>
+<tr><td>Aquecimento</td><td>5 a 8 min</td><td>Mobilidade das articulações do dia e séries leves do primeiro exercício</td></tr>
+<tr><td>Força</td><td>25 a 30 min</td><td>3 a 5 exercícios multiarticulares, com a carga e o descanso que o objetivo pede</td></tr>
+<tr><td>Condicionamento</td><td>8 a 10 min</td><td>Circuito curto, bike, remo ou tiros, se o objetivo pedir</td></tr>
+<tr><td>Volta à calma</td><td>3 a 5 min</td><td>Caminhada leve e respiração, ou alongamento de quem precisa</td></tr>
+</tbody>
+</table>
+<p>Se o dia apertar, o condicionamento é o primeiro a sair, e a força fica. Em semana de hipertrofia, os 45 minutos podem ir quase todos para a força.</p>
 
 <h2>O erro que anula o treino curto</h2>
 
@@ -100277,7 +100413,7 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
       "Treinar com o parceiro pode ser o empurrão que faltava para a constância — ou uma fonte de atrito. A diferença está em como vocês estruturam a rotina. Veja como treinar junto respeitando os níveis de cada um.",
     category: "Treino",
     date: "2026-07-28",
-    updatedAt: "2026-08-12",
+    updatedAt: "2026-11-25",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["treino em casal", "motivação", "hábito", "musculação", "constância"],
@@ -100345,6 +100481,17 @@ Flexões (regular, fechada, declinada), agachamento com peso corporal ou mochila
 <p>Para dias corridos ou quem treina em casa. Monte 6 estações (agachamento, flexão, remada com elástico, afundo, prancha, polichinelo). Enquanto um executa 40 segundos, o outro descansa e cronometra; depois trocam. O descanso de um é o turno do outro — o treino rende e ninguém fica parado.</p>
 <h3>3. Cardio compartilhado</h3>
 <p>Caminhada acelerada no fim do dia, trilha no fim de semana, bike juntos. Vale como treino complementar e como ritual do casal. Intensidades diferentes? Sem problema: em esteiras ou na rua, cada um no seu ritmo, lado a lado.</p>
+
+<h2>Treino em dupla ao ar livre</h2>
+<p>Praça, parque ou a área verde do condomínio funcionam bem para treinar a dois, com pouco material. Exercícios em parceria que costumo usar:</p>
+<ul>
+<li><strong>Remada com elástico:</strong> um segura a ponta parado, o outro rema. Depois trocam.</li>
+<li><strong>Agachamento frente a frente com toque de mãos:</strong> sobem juntos e batem as mãos no alto. O ritmo de um puxa o do outro.</li>
+<li><strong>Prancha com toque:</strong> os dois em prancha, de frente, alternando o toque de mão.</li>
+<li><strong>Passe de bola:</strong> arremesso de bola de borracha ou medicine ball leve, de frente ou de lado.</li>
+<li><strong>Revezamento:</strong> um corre ou faz um tiro curto enquanto o outro faz uma série; quando um chega, o outro sai.</li>
+</ul>
+<p><strong>Níveis diferentes:</strong> a dupla faz o mesmo exercício pelo mesmo tempo (30 ou 40 segundos), e cada um faz quantas repetições der, na sua versão. Um faz flexão no chão, o outro com as mãos no banco; um usa o elástico mais forte, o outro o mais leve. Os dois terminam juntos, ninguém espera ninguém.</p>
 
 <h2>Exemplo prático: semana de treino para casal</h2>
 <ul>

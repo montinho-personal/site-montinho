@@ -65,8 +65,9 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | X5 | Academia lotada: como treinar no horário de pico | a consultar | pauta do Personal por Perto (`musculacao/academia-lotada-como-treinar`, 20/11) | Aqui só existe o guia local `academias-menos-lotadas-alphaville`; o "como treinar" liga nele |
 | X6 | Princípios do treinamento | a consultar | pauta do Personal por Perto (item 7 lá, PAA "Quais são os 7 princípios básicos do treinamento?") | Nada no acervo; liga em progressão de carga. Baixa prioridade nos dois sites |
 | ~~X7~~ | ~~Treinar no calor: cuidados para o verão~~ já existe `como-treinar-no-calor` (28/06): a varredura de 20/11 errou o termo. Movido para "Revisões pendentes" com prioridade (25/11) | — | pauta do Personal por Perto (20/11) | — |
-| Y1 | Mobilidade para quem dirige muito: quadril, coluna e pescoço | a consultar | agenda de temas enviada pelo Montinho (25/11) | Nada sobre motorista ou carro no acervo (busca normalizada por dirig, motorista, carro, volante). Público de Alphaville que passa horas no trânsito; liga no Teste de Mobilidade e em `postura-trabalho-sentado-exercicios`. Pesquisa no SerpApi antes de escrever |
-| Y2 | Treino para golfe: rotação, quadril e estabilidade no swing | a consultar | agenda de temas enviada pelo Montinho (25/11) | Nada de golfe no acervo. Conferir volume da busca antes de escrever; se vier fraca, não entra |
+| ~~Y1~~ | ~~Mobilidade para quem dirige muito~~ publicado em 25/11 como `exercicios-para-quem-dirige-muito` | a consultar | agenda de temas enviada pelo Montinho (25/11) | Nada sobre motorista ou carro no acervo (busca normalizada por dirig, motorista, carro, volante). Público de Alphaville que passa horas no trânsito; liga no Teste de Mobilidade e em `postura-trabalho-sentado-exercicios`. Pesquisa no SerpApi antes de escrever |
+| ~~Y2~~ | ~~Treino para golfe~~ publicado em 25/11 como `treino-para-golfe` (demanda baixa, mas a primeira página é só de marca estrangeira traduzida: entrou curto) | a consultar | agenda de temas enviada pelo Montinho (25/11) | Nada de golfe no acervo. Conferir volume da busca antes de escrever; se vier fraca, não entra |
+| Y3 | O que não fazer depois do treino (e o que fazer) | a consultar | PAA de "como treinar no calor" ("O que não se deve fazer depois do treino?"), 25/11 | Nada no acervo com essa intenção (só `alongamento-antes-ou-depois-do-treino` e proteína). Pergunta ampla de iniciante; liga em recuperação, alongamento e hidratação. Pesquisa própria antes de escrever |
 
 ## 2. Viram seção ou FAQ de um artigo que já existe
 
@@ -83,12 +84,15 @@ Prioridade do Montinho (16/11/2026): **musculação primeiro**. Tema novo de tre
 | ~~Batata doce engorda? (12.100/mês)~~ aplicado em 18/11 (H2 com tabela da TACO e FAQ) | `batata-doce-emagrece` | série "engorda" (11/11) |
 | ~~Academia ao ar livre: como usar os aparelhos da praça (12.100/mês para "academia ao ar livre")~~ aplicado em 18/11 (H2 com tabela dos aparelhos e FAQ) | `treino-ao-ar-livre-estruturado` (se a pesquisa mostrar intenção diferente da do artigo, vira artigo próprio) | autocompletar de "aparelhos de academia nomes" (16/11) |
 | ~~Aparelhos de academia completa (2.900/mês)~~ aplicado em 18/11 (H2 com as 5 áreas e FAQ) | `academia-de-condominio-quais-aparelhos-comprar` | PAA de "aparelhos de academia nomes" (16/11) |
-| Executivas: força e energia com agenda cheia (sessões objetivas, em casa ou no condomínio) | seção ou FAQ em `personal-trainer-para-executivos-alphaville` (hoje escrito no masculino) | agenda de temas do Montinho (25/11) |
-| Personal para adolescente em Alphaville: técnica antes da carga, conversa com a família, liberação médica | seção em `musculacao-para-adolescentes` | agenda de temas do Montinho (25/11) |
-| Treino em casa com privacidade: sem plateia, espaço da casa, rotina da família | seção em `personal-trainer-a-domicilio-alphaville` | agenda de temas do Montinho (25/11) |
-| Dor no joelho: sinais que pedem médico e adaptar o afundo depois da liberação | conferir `dor-no-joelho-no-agachamento` e `exercicios-para-fortalecer-joelho`; seção no que não cobrir (fonte médica) | agenda de temas do Montinho (25/11) |
-| Treino de 45 minutos: como dividir aquecimento, força, condicionamento e volta à calma | seção em `treino-de-30-minutos-funciona` | agenda de temas do Montinho (25/11) |
-| Treino em dupla ao ar livre: exercícios em parceria e níveis diferentes | seção em `treino-para-casal` | agenda de temas do Montinho (25/11) |
+| ~~Executivas: força e energia com agenda cheia~~ aplicado em 25/11 (H2 e FAQ) | seção ou FAQ em `personal-trainer-para-executivos-alphaville` (hoje escrito no masculino) | agenda de temas do Montinho (25/11) |
+| ~~Personal para adolescente em Alphaville~~ aplicado em 25/11 (H2 e FAQ) | seção em `musculacao-para-adolescentes` | agenda de temas do Montinho (25/11) |
+| ~~Treino em casa com privacidade~~ aplicado em 25/11 (H2 e FAQ) | seção em `personal-trainer-a-domicilio-alphaville` | agenda de temas do Montinho (25/11) |
+| ~~Dor no joelho: sinais que pedem médico e adaptar o afundo~~ aplicado em 25/11: os sinais já existiam em `dor-no-joelho-no-agachamento`; entrou H2 do afundo por etapas e FAQ | conferir `dor-no-joelho-no-agachamento` e `exercicios-para-fortalecer-joelho`; seção no que não cobrir (fonte médica) | agenda de temas do Montinho (25/11) |
+| ~~Treino de 45 minutos~~ aplicado em 25/11 (H2 com tabela) | seção em `treino-de-30-minutos-funciona` | agenda de temas do Montinho (25/11) |
+| ~~Treino em dupla ao ar livre~~ aplicado em 25/11 (H2) | seção em `treino-para-casal` | agenda de temas do Montinho (25/11) |
+| Como sair do sedentarismo em casa | `como-sair-do-sedentarismo` | PAA de "exercícios para quem dirige muito" (25/11) |
+| 10 exercícios de mobilidade (lista para fazer em casa) | `mobilidade-articular-pre-treino` | PAA de "exercícios para quem dirige muito" (25/11) |
+| É bom correr 30 minutos todos os dias? | FAQ em `corrida-de-rua-iniciante` (já tem "correr todos os dias sendo iniciante"; falta a de 30 minutos) | PAA de "corrida e musculação" (25/11) |
 | Sopa de macarrão engorda? (390/mês) | `sopa-emagrece` ou `macarrao-engorda`, quando houver dado de sopa na base | outras pesquisas de "macarrão engorda" (16/11) |
 | ~~Zona de queima de gordura ("fat burn", 1.000/mês)~~ aplicado em 18/11 (FAQ e menção na seção) | `zonas-de-frequencia-cardiaca` (já explica a "zona de queima" da esteira; falta o FAQ "o que é fat burn?") | PAA de "efeito afterburn" (16/11) |
 | ~~Muay thai: desvantagens e em quanto tempo define o corpo~~ aplicado em 18/11 (desvantagens já existiam; entrou "em quanto tempo define", subseção e FAQ) | `beneficios-do-muay-thai` | pauta de lutas (outubro) |
@@ -118,7 +122,7 @@ que ficou de fora.
 
 | Publicado em | Artigos |
 |---|---|
-| **Prioridade (25/11)** | `como-treinar-no-calor` (antes do verão: horários, sinais de alerta, treino ao ar livre), `corrida-e-musculacao` (organizar os dias e a ordem dos treinos), `musculacao-e-ciclismo` (core, mobilidade, encaixe na semana de pedal). Veio da agenda de temas enviada pelo Montinho |
+| ~~**Prioridade (25/11)**~~ | ~~`como-treinar-no-calor`, `corrida-e-musculacao`, `musculacao-e-ciclismo`~~ revisados em 25/11 com pesquisa no SerpApi (registro em teste-intencoes-de-busca.md) |
 | ~~05/11~~ | ~~`pao-com-ovo-engorda`~~ revisado em 16/11 |
 | ~~11/11~~ | ~~`pipoca-engorda`~~ revisado em 16/11 |
 | ~~11/11~~ | ~~`manga-engorda`, `melancia-engorda`~~ revisados em 17/11 |
