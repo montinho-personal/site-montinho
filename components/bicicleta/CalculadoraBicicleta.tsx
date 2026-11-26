@@ -191,7 +191,7 @@ export default function CalculadoraBicicleta({ placement }: { placement: string 
       ? terr.met !== null
         ? `${terr.nome.toLowerCase()}`
         : faixa ? `${faixa.nome.toLowerCase()}, ${dec(velocidade!)} km/h` : "na rua"
-      : porWatts && faixaW ? `${dec(watts)} W` : `esforço ${esforco(esforcoId).nome.toLowerCase()}`;
+      : porWatts && faixaW ? `${dec(watts ?? 0)} W` : `esforço ${esforco(esforcoId).nome.toLowerCase()}`;
   const resumoWhats = resultado
     ? `${formataTempo(resultado.minutosTotais)} de bicicleta (${rotuloSessao}) ≈ ${kc(resultado.kcal)} kcal`
     : trab
