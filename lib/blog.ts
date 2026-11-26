@@ -56465,7 +56465,7 @@ Se você joga padel em Alphaville, Barueri ou Santana de Parnaíba, a musculaç�
     excerpt: "Começar a correr parece simples — é só calçar o tênis e sair. Mas a maioria das pessoas para na segunda semana por dor ou desânimo. Este guia muda isso.",
     category: "Treinamento",
     date: "2026-06-28",
-    updatedAt: "2026-06-28",
+    updatedAt: "2026-11-26",
     readTime: "10 min",
     author: "Montinho Personal Trainer",
     tags: ["corrida de rua", "iniciante", "5km", "treino", "cardio", "emagrecimento"],
@@ -56552,6 +56552,14 @@ Para corridas até 45 minutos, não é necessário gel ou suplemento durante o e
 - [Proteína pós-treino](/blog/quanta-proteina-por-dia-para-ganhar-massa-muscular) — 20-30g em até 2h após o treino
 - Hidratação: 400-600ml de água nas 2h antes do treino
 
+## É Bom Correr 30 Minutos Todos os Dias?
+
+Para quem está começando, não é o melhor caminho. O coração e o pulmão se adaptam mais rápido do que tendões, articulações e ossos, e é nessa diferença que o iniciante se machuca: o fôlego diz que dá, a canela e o joelho ainda não aguentam. Por isso o programa deste guia começa com 3 dias por semana, com descanso entre eles.
+
+E a saúde não pede tanto. A Organização Mundial da Saúde recomenda de 150 a 300 minutos de atividade moderada por semana, ou de 75 a 150 de atividade vigorosa, mais exercício de fortalecimento muscular em pelo menos 2 dias ([diretriz da OMS, 2020](https://www.who.int/publications/i/item/9789240015128)). Três corridas de 30 minutos somam 90 minutos por semana, já dentro da faixa vigorosa para quem corre num ritmo que deixa a conversa curta. Num estudo observacional de longo prazo com adultos, quem corria menos de 51 minutos por semana teve menor mortalidade do que quem não corria ([Lee et al., 2014, JACC](https://pubmed.ncbi.nlm.nih.gov/25082581/)); o estudo não prova causa, mas mostra que o benefício não depende de volume alto.
+
+Se você já corre há meses sem dor e quer correr todo dia, dá para fazer com cuidado: alterne dias leves e dias mais fortes, mantenha pelo menos um dia sem correr, faça musculação duas vezes por semana (veja [corrida e musculação](/blog/corrida-e-musculacao)) e pare se aparecer dor articular. Constância vale mais do que volume.
+
 ## Erros Comuns de Iniciantes
 
 1. Aumentar quilometragem rápido demais (regra dos 10%)
@@ -56560,18 +56568,23 @@ Para corridas até 45 minutos, não é necessário gel ou suplemento durante o e
 4. Não fazer aquecimento (5 min de caminhada rápida antes de correr)
 5. Comparar progresso com corredores experientes
 
+## Não se Compare
+
+O colega que corre 10 km sem esforço tem anos de estrada, outra genética e outra rotina. Cada um tem a própria história, com altos e baixos. O que muda o seu corpo é um treino que dê para repetir semana após semana, com progressão no seu ritmo.
+
 ## Conclusão
 
 Completar os primeiros 5km é uma das conquistas mais marcantes para quem começa. Com a progressão certa e apoio de musculação, você chega lá sem se machucar. Se você está em Alphaville, Barueri ou Santana de Parnaíba e quer um programa montado do zero para corrida e academia, [fale com o Montinho](https://wa.me/5511981063409). Consultoria online disponível para todo o Brasil.
 
 <div class="yt-embed">
 <p class="yt-caption">Assista ao vídeo abaixo para aprofundar este tema.</p>
-<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/hSioheHqH7I?rel=0" title="Aeróbico Antes ou Depois da Musculação? — Leandro Twin"Como Começar a Correr do Zero" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="yt-wrapper"><iframe src="https://www.youtube.com/embed/hSioheHqH7I?rel=0" title="Como Começar a Correr do Zero" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
 `,
     faq: [
       { question: "Quanto tempo leva para completar 5km sem parar?", answer: "Com o programa de 8 semanas descrito neste guia, a maioria dos iniciantes consegue correr 5km contínuos ao final. Fatores como sobrepeso significativo ou condicionamento muito baixo podem estender para 10-12 semanas — o que é completamente normal." },
+      { question: "É bom correr 30 minutos todos os dias?", answer: "Para iniciante, não é o ideal: tendões e articulações se adaptam mais devagar que o fôlego, e correr todo dia nos primeiros meses aumenta o risco de lesão. A OMS recomenda de 75 a 150 minutos de atividade vigorosa por semana, e 3 corridas de 30 minutos já passam do mínimo. Quem já corre há meses sem dor pode correr mais dias, alternando dias leves e fortes, com pelo menos um dia sem correr e musculação na semana." },
       { question: "Posso correr todos os dias sendo iniciante?", answer: "Não é recomendado. Iniciantes devem começar com 3 dias por semana para permitir que tendões e articulações se adaptem ao impacto. Correr todos os dias nos primeiros meses é uma das causas mais comuns de lesão por overuse." },
       { question: "Qual o melhor horário para correr?", answer: "O melhor horário é o que você consegue manter consistente. Do ponto de vista fisiológico, a performance tende a ser ligeiramente melhor no fim da tarde (temperatura corporal mais alta, coordenação melhor). Mas consistência supera horário ideal." },
       { question: "Devo correr com dor no joelho?", answer: "Não. Dor articular (diferente de dor muscular) é sinal para parar. Dor no joelho durante ou após a corrida pode indicar síndrome iliotibial, condromalácia ou outros problemas que pioram com o uso continuado. Descanse, aplique gelo e consulte um médico se persistir." },
