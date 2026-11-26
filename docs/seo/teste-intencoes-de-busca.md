@@ -2243,3 +2243,11 @@ Evidência: `docs/seo/serp/jiu-jitsu-osasco-carapicuiba-2026-11-25.json` (SerpAp
 - metaTitle "Academias de Jiu-Jitsu em Osasco: Infantil, Preço e Equipes" → "Jiu-Jitsu em Osasco: Academias, Infantil e Gratuito".
 - Linha de base do Search Console (Supermetrics, últimos 28 dias até 25/11): sem impressões para a página (consulta vazia). Comparar em 23/12; qualquer impressão já é ganho, mas se o clique não vier, voltar.
 - updatedAt não mudou.
+
+
+## 2026-11-26 (rotina diária) — Revisões adiadas por limite do SerpApi; 1 item de seção aplicado
+
+- **Revisões de `academias-de-jiu-jitsu-em-cotia` e `-santana-de-parnaiba`: não feitas.** O SerpApi respondeu "Rate limit exceeded" (limite de ritmo, não de cota) em 6 tentativas espaçadas por 75 segundos, de 18h42 a 18h50 UTC. Regra do AGENTS.md: sem pesquisa não se revisa às cegas. As duas continuam na fila; a próxima rodada tenta de novo. O artigo de Cotia lista uma academia só e é o que mais ganha com a pesquisa.
+- **Item aplicado:** `corrida-de-rua-iniciante`, "É bom correr 30 minutos todos os dias?" (PAA de "corrida e musculação", 25/11). H2 e FAQ novos, com a diretriz da OMS de 2020 (150 a 300 min moderados ou 75 a 150 vigorosos por semana, mais fortalecimento em 2 dias) e Lee et al. 2014, JACC (observacional: quem corria menos de 51 min por semana teve menor mortalidade que quem não corria; sem causa provada). Entrou também "Não se compare" e foi corrigido o atributo quebrado no título do vídeo. updatedAt 26/11.
+- **Item não aplicado:** "Sopa de macarrão engorda?" depende de dado de sopa na base de alimentos, que não existe. Os outros dois itens livres (academia mais cara de Alphaville, diária da Gaviões e da Bluefit) dependem de valores de fonte oficial que não temos.
+- **Ficou de fora:** nada novo.
