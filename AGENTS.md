@@ -46,6 +46,68 @@ Na resposta final ao Montinho, diga que a conferência foi feita, quantas
 páginas, e o que foi achado e corrigido (ou "tudo certo"). Se algo não
 pôde ser conferido, diga o quê e por quê.
 
+# Rotina diária de auditoria das ferramentas: 2 por dia
+
+Pedido do Montinho em 26/11/2026. Todo dia, uma tarefa agendada audita
+**2 ferramentas** de `/ferramentas`, na ordem da fila de
+`docs/ferramentas/auditoria-diaria.md` (as mais vistas primeiro).
+
+**Por que 2 por dia (decisão de ritmo):** cada ferramenta exige refazer as
+contas à mão contra a fonte e julgar o que é erro; o teto é a qualidade da
+conferência, não o Google.
+
+**Os sete passos, para cada ferramenta:**
+
+1. **Abrir o site no navegador** (página da ferramenta no ar).
+2. **Testar botões e funcionalidades:** todos os campos, botões, abas,
+   compartilhar, copiar, e os casos de borda (campo vazio, zero, valor
+   absurdo, vírgula e ponto decimal, mínimo e máximo).
+3. **Verificar a versão mobile** (iPhone 13): sem rolagem lateral, nada
+   sobreposto, teclado numérico nos campos de número, resultado visível
+   sem caçar.
+4. **Executar testes automatizados:** `tsc` e o teste da ferramenta em
+   `scripts/` (comparando com as falhas de base). Se a ferramenta não tem
+   teste, criar um com os casos conferidos no passo 5.
+5. **Verificar se as contas estão 100% corretas:** pelo menos 5 casos
+   (típico, mínimo, máximo e dois de borda) recalculados de forma
+   independente a partir da fonte primária da fórmula (artigo original,
+   Compêndio de Atividades Físicas, diretriz oficial), e comparados com o
+   que a tela mostra, incluindo arredondamento e unidade. Conferir também
+   se a fonte citada na página é a que o código usa.
+6. **Identificar erros e corrigi-los.** Erro de conta, de arredondamento,
+   de unidade, de texto que contradiz o número, de botão ou de layout é
+   corrigido na hora, com teste que trava o caso. Mudança de fórmula ou de
+   referência (trocar a equação, não só corrigir um erro) vai como
+   proposta ao Montinho, não direto.
+7. **Repetir os testes após as correções**, no navegador (computador e
+   celular) e nos automatizados, até passar tudo.
+
+**Especialistas (um subagente por papel, com leitura independente):**
+
+- **Engenheiro de QA:** roda `scripts/conferir-no-navegador.mjs` e testa à
+  mão, com Playwright, os fluxos e os casos de borda no computador e no
+  celular, olhando os prints.
+- **Especialista da área da ferramenta** (fisiologista do exercício para
+  gasto calórico, FC, 1RM e corrida; nutricionista esportivo para
+  proteína, macros, creatina, cafeína e calorias de alimentos; estatístico
+  ou avaliador físico para composição corporal): recebe só a página e a
+  fonte, **sem ver o código**, refaz as contas à mão e devolve os valores
+  esperados. A comparação com o código é feita depois, para a conferência
+  não herdar o erro.
+- **Revisor de código:** lê o motor da ferramenta em `lib/` atrás de
+  arredondamento, unidade, limite e divisão por zero.
+
+**Regras que continuam valendo:** a ferramenta entrega a informação antes
+do CTA; sem dieta prescrita; sem promessa de resultado; fato e fórmula só
+com fonte. Correção de conta ou de texto que muda o que o leitor aprende
+não tem `updatedAt` (páginas de `app/`), mas entra no registro.
+
+**Publicação:** PR único do dia, merge, conferência no navegador de novo
+no ar, linha da fila preenchida (data e resultado) e entrada no "Registro"
+do mesmo arquivo. No fim, mandar ao Montinho, curto: as 2 ferramentas, o
+que foi conferido, as contas refeitas (caso, esperado, mostrado), o que
+foi corrigido e o que espera decisão dele.
+
 # Artigos novos: a decisão de ferramenta é obrigatória
 
 Todo artigo publicado a partir de 2026-08-29 precisa passar por uma decisão
