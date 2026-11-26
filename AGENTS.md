@@ -4,6 +4,48 @@
 This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
 <!-- END:nextjs-agent-rules -->
 
+# Toda mudança no site é conferida no navegador
+
+Regra pedida pelo Montinho em 25/11/2026, para **toda** ação no site
+(artigo novo, revisão, seção, título, ferramenta, componente, página de
+serviço, correção). Não é opcional e não depende de ele pedir. A tarefa só
+termina quando os seis passos passaram:
+
+1. **Abrir o site no navegador.** Cada página que a mudança tocou, de
+   verdade, no Chromium (Playwright), não só `curl`.
+2. **Testar botões e funcionalidades.** Calculadoras e formulários
+   preenchidos e enviados, botões clicados, links internos respondendo,
+   botões do WhatsApp com link válido (wa.me ou `/l/`).
+3. **Verificar a versão mobile.** Mesma conferência no celular (iPhone 13):
+   sem rolagem lateral, nada sobreposto, e olhar o print do topo.
+4. **Executar testes automatizados.** `npx tsc --noEmit -p .` e os testes
+   de `scripts/` do que foi tocado, comparando com as falhas de base.
+5. **Identificar erros e corrigi-los.** Erro de JavaScript, pedido do
+   próprio site com 4xx/5xx, imagem quebrada, link quebrado, página sem
+   título ou descrição, mais de um `<h1>`, vazamento no celular.
+6. **Repetir os testes após as correções**, até passar tudo.
+
+Como fazer (passos 1, 2, 3 e 5 de uma vez):
+
+```bash
+# depois do deploy, no site no ar (slug vira /blog/<slug>; caminho com / vale para qualquer página)
+node scripts/conferir-no-navegador.mjs <slug> /ferramentas/<ferramenta> ...
+# antes do deploy, contra o servidor local
+BASE=http://localhost:3000 node scripts/conferir-no-navegador.mjs <slug>
+```
+
+O script abre cada página no computador e no celular, rola até o fim,
+preenche os campos, clica nos botões, confere os links internos e tira
+dois prints (topo e depois dos cliques). Ele bloqueia analytics, o registro
+de lead do WhatsApp e a IA, para a conferência não sujar o CRM nem os
+números. Recurso externo barrado pela rede do ambiente (YouTube, Google
+Ads) aparece como aviso `!`, não como erro do site. Sai com código 1 se
+achar problema.
+
+Na resposta final ao Montinho, diga que a conferência foi feita, quantas
+páginas, e o que foi achado e corrigido (ou "tudo certo"). Se algo não
+pôde ser conferido, diga o quê e por quê.
+
 # Artigos novos: a decisão de ferramenta é obrigatória
 
 Todo artigo publicado a partir de 2026-08-29 precisa passar por uma decisão
@@ -201,7 +243,9 @@ data e registre em `docs/seo/teste-intencoes-de-busca.md`. Entra no mesmo
 PR das revisões.
 
 **Publicação:** testes do repositório (tsc e os testes do que foi tocado,
-comparando com as falhas de base), PR, merge, conferir no ar. No fim,
+comparando com as falhas de base), PR, merge e a conferência no navegador
+(regra "Toda mudança no site é conferida no navegador", no computador e no
+celular, com `scripts/conferir-no-navegador.mjs`). No fim,
 mandar ao Montinho os links (das revisões e dos 2 itens aplicados), as
 intenções separadas por tipo com ✅/❌ e as propostas de título que esperam
 aprovação.
