@@ -191,7 +191,7 @@ export default function CalculadoraBicicleta({ placement }: { placement: string 
       ? terr.met !== null
         ? `${terr.nome.toLowerCase()}`
         : faixa ? `${faixa.nome.toLowerCase()}, ${dec(velocidade!)} km/h` : "na rua"
-      : porWatts && faixaW ? `${watts} W` : `esforço ${esforco(esforcoId).nome.toLowerCase()}`;
+      : porWatts && faixaW ? `${dec(watts)} W` : `esforço ${esforco(esforcoId).nome.toLowerCase()}`;
   const resumoWhats = resultado
     ? `${formataTempo(resultado.minutosTotais)} de bicicleta (${rotuloSessao}) ≈ ${kc(resultado.kcal)} kcal`
     : trab
@@ -526,7 +526,7 @@ export default function CalculadoraBicicleta({ placement }: { placement: string 
                 <p className="text-white font-bold text-3xl sm:text-4xl leading-none" style={h}>
                   {kg(trab.kgPorMes)}<span className="text-lg font-normal text-gray-300"> kg</span>
                 </p>
-                <p className="text-gray-400 text-sm mt-2">no máximo, pela conta linear · {Math.round(trab.kmPorMes)} km pedalados no mês</p>
+                <p className="text-gray-400 text-sm mt-2">no máximo, pela conta linear · {Math.round(trab.kmPorMes).toLocaleString("pt-BR")} km pedalados no mês</p>
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed mb-4 max-w-2xl">
