@@ -19,8 +19,8 @@
  * POR QUE A CALCULADORA NÃO DIZ 7 g PARA 70 kg
  *
  * Várias calculadoras brasileiras multiplicam o peso por 0,1 ou 0,06 g/kg
- * como dose diária. Esses fatores não vêm do consenso: 0,1 g/kg aparece em
- * estudos de saturação de curta duração, não de manutenção. Aqui a conta é
+ * como dose diária. Esses fatores não vêm do consenso para uso contínuo: o
+ * 0,1 g/kg aparece em alguns estudos, e a posição da ISSN não o adota. Aqui a conta é
  * a da ISSN, e a página mostra por que o número é menor.
  *
  * O QUE A CALCULADORA NÃO PERGUNTA

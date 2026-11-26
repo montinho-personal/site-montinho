@@ -138,5 +138,13 @@ ok(`descrição entre 130 e 155 (${desc.length})`, desc.length >= 130 && desc.le
 ok("FAQ com 43 perguntas no schema", (pag.match(/question: "/g) ?? []).length === 43 && /"@type": "FAQPage"/.test(pag));
 ok("todo link interno da página existe", [...pag.matchAll(/href="\/blog\/([^"]+)"/g)].every((m) => blogPosts.some((p) => p.slug === m[1])));
 
+bloco("9. CORREÇÕES DA AUDITORIA DE 26/11/2026 (travadas)");
+ok("3 g com dosador de 20 g: a conta dá 0 e a tela diz 'menos de meia medida'", medidas(3, 20) === 0 && /menos de meia medida/.test(comp));
+ok("acima de 166 kg o teto de 5 g aparece como limite, não como arredondamento", referencia(200).diaria === MANUTENCAO_MAX && referencia(200).calculada > MANUTENCAO_MAX && /acima da maior dose da faixa estudada/.test(comp));
+ok("a FAQ da mulher não diz 'chega a menos' (60 kg e 28% dão a mesma dose da referência)", !/chega a menos/.test(pag) && referencia(60).diaria === Math.round(pratica(60, 28).porMassaMagra));
+ok("a tela não afirma 'bastante músculo' só porque a dose passou da referência", !/bastante músculo para o seu peso/.test(comp));
+ok("o 0,1 g/kg não tem duas origens contraditórias na página", !/protocolos curtos/.test(pag) && !/curta duração/.test(readFileSync("lib/creatina.ts", "utf8")));
+ok("a duração do pote avisa que conta o mínimo da faixa de saturação", /contando \{sat\.dias\} dias/.test(comp));
+
 console.log(`\n${falhas === 0 ? "TUDO OK" : `${falhas} FALHA(S)`}\n`);
 process.exit(falhas === 0 ? 0 : 1);

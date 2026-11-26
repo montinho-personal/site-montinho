@@ -92,7 +92,7 @@ const faq: ItemFAQ[] = [
   { question: "Posso tomar 20 g de creatina por dia?", answer: `Só na saturação: cerca de ${g2(G_POR_KG_SATURACAO)} g por kg por dia (uns 20 g para 70 kg), divididos em ${4} porções, por 5 a 7 dias. Depois disso, volta para ${MANUTENCAO_MIN} a ${MANUTENCAO_MAX} g. Não é uma dose para tomar sempre.` },
   { question: "Quantas colheres ou scoops de creatina devo tomar?", answer: "Colher e scoop não têm peso padrão: cada marca usa um dosador, e colher cheia ou rasa muda a quantidade. Veja no rótulo quantos gramas tem a medida do seu produto; dois scoops só fazem sentido se a medida for pequena e a soma ficar na dose diária. A balança de cozinha resolve a dúvida." },
   { question: "Quanto de creatina tomar para hipertrofia?", answer: `A mesma dose: ${MANUTENCAO_MIN} a ${MANUTENCAO_MAX} g por dia. A creatina ajuda a hipertrofia porque permite treinar com um pouco mais de carga e volume; dose maior não aumenta esse efeito.` },
-  { question: "Mulher precisa de menos creatina que homem?", answer: `Pelo consenso, a faixa é a mesma: ${MANUTENCAO_MIN} a ${MANUTENCAO_MAX} g. Quem ajusta pela massa magra (${g3(G_POR_KG_MASSA_MAGRA)} g por kg de massa magra) chega a menos, porque a mulher costuma ter menos músculo para o mesmo peso — uma mulher de 60 kg com 28% de gordura fica perto de ${g(pratica(60, 28).porMassaMagra)} g. Não é o sexo que muda a dose, é quanto do peso é músculo.` },
+  { question: "Mulher precisa de menos creatina que homem?", answer: `Pelo consenso, a faixa é a mesma: ${MANUTENCAO_MIN} a ${MANUTENCAO_MAX} g. Quem ajusta pela massa magra (${g3(G_POR_KG_MASSA_MAGRA)} g por kg de massa magra) pode chegar a um número um pouco diferente, conforme o quanto do peso é músculo — uma mulher de 60 kg com 28% de gordura fica perto de ${g(pratica(60, 28).porMassaMagra)} g, igual à referência pelo peso. Não é o sexo que muda a dose, é quanto do peso é músculo.` },
   { question: "Precisa tomar creatina todos os dias?", answer: "Sim. A creatina funciona por acúmulo no músculo, não por efeito do dia — o que mantém os estoques cheios é a constância." },
   { question: "Precisa tomar creatina no dia que não treina?", answer: "Sim, na mesma dose. O estoque do músculo não depende do treino daquele dia, e parar nos dias de descanso faz ele baixar." },
   { question: "Creatina antes ou depois do treino?", answer: "Tanto faz na prática. Alguns estudos sugerem uma pequena vantagem perto do treino, mas o que decide é tomar todo dia. Escolha o horário que você não esquece." },
@@ -260,8 +260,8 @@ export default function CalculadoraCreatinaPage() {
             <h2 className="text-2xl font-bold text-white mb-4" style={h}>Quanto de creatina por kg?</h2>
             <p className="text-gray-300 leading-relaxed">
               Cerca de <strong className="text-white">{g2(G_POR_KG_MANUTENCAO)} g por kg</strong> na manutenção e {g2(G_POR_KG_SATURACAO)} g por kg na
-              saturação. Algumas calculadoras usam 0,1 g por kg — 7 g para 70 kg — como dose diária. Esse fator vem de protocolos curtos de
-              saturação, não do consenso para uso contínuo, e só faz o pote acabar mais rápido.
+              saturação. Algumas calculadoras usam 0,1 g por kg — 7 g para 70 kg — como dose diária. Esse fator aparece em alguns estudos, mas não é o
+              consenso para uso contínuo, e só faz o pote acabar mais rápido.
             </p>
           </div>
 
