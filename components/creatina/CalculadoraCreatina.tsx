@@ -267,9 +267,10 @@ export default function CalculadoraCreatina({ placement }: { placement: string }
                   </>
                 ) : (
                   <>
-                    Pelo seu peso, a conta de {g2(G_POR_KG_MANUTENCAO)} g por kg dá {g2(ref.calculada)} g, que arredonda para{" "}
-                    <strong className="text-white">{g(ref.diaria)} g</strong>. Fica dentro da faixa estudada, de {MANUTENCAO_MIN} a{" "}
-                    {MANUTENCAO_MAX} g por dia.
+                    Pelo seu peso, a conta de {g2(G_POR_KG_MANUTENCAO)} g por kg dá {g2(ref.calculada)} g
+                    {Math.round(ref.calculada) > MANUTENCAO_MAX
+                      ? <>, acima da maior dose da faixa estudada. A referência fica no limite da faixa, <strong className="text-white">{g(ref.diaria)} g</strong>: de {MANUTENCAO_MIN} a {MANUTENCAO_MAX} g por dia.</>
+                      : <>, que arredonda para <strong className="text-white">{g(ref.diaria)} g</strong>. Fica dentro da faixa estudada, de {MANUTENCAO_MIN} a {MANUTENCAO_MAX} g por dia.</>}
                     {ref.atletaGrande && <> Para atletas muito grandes, o consenso menciona doses de 5 a 10 g — vale conversar com quem acompanha você.</>}
                   </>
                 )}
@@ -331,7 +332,7 @@ export default function CalculadoraCreatina({ placement }: { placement: string }
                       </table>
                       <p className="text-gray-400 text-sm leading-relaxed mt-3 max-w-2xl">
                         {prat.porMassaMagra > ref.diaria
-                          ? <>Pela sua massa magra, a conta dá {g(prat.porMassaMagra)} g — mais que a referência, porque você tem bastante músculo para o seu peso.</>
+                          ? <>Pela sua massa magra, a conta dá {g(prat.porMassaMagra)} g, acima da referência de {g(ref.diaria)} g: essa conta parte da massa magra, não do peso total.</>
                           : <>Pela sua massa magra, a conta fica perto da referência.</>}{" "}
                         A dose alta não mostrou render mais que 5 g no uso contínuo: o estoque do músculo tem um teto, e o que passa dele
                         sai na urina. Qualquer valor desta tabela é seguro para adultos saudáveis.
@@ -427,7 +428,7 @@ export default function CalculadoraCreatina({ placement }: { placement: string }
                           <p className="text-white font-bold text-3xl" style={h}>{duracao.dias} dias <span className="text-lg font-normal text-gray-300">≈ {meses(duracao.dias)} meses</span></p>
                           <p className="text-gray-300 text-sm mt-2">
                             {duracao.consumoSaturacao !== null
-                              ? <>A saturação usa cerca de {g(duracao.consumoSaturacao)} g; sobram {g(duracao.restante!)} g para a manutenção de {g(ref.diaria)} g por dia.</>
+                              ? <>A saturação usa cerca de {g(duracao.consumoSaturacao)} g (contando {sat.dias} dias, o mínimo da faixa de {sat.dias} a {DIAS_SATURACAO_MAX}); sobram {g(duracao.restante!)} g para a manutenção de {g(ref.diaria)} g por dia.</>
                               : <>Na dose de {g(ref.diaria)} g por dia.</>}
                           </p>
                         </>
@@ -464,7 +465,11 @@ export default function CalculadoraCreatina({ placement }: { placement: string }
                   </div>
                   {medOk ? (
                     <p className="text-gray-300 mt-3">
-                      {g(ref.diaria)} g equivalem a cerca de <strong className="text-white">{g(medidas(ref.diaria, med))} {medidas(ref.diaria, med) === 1 ? "medida" : "medidas"}</strong>.
+                      {g(ref.diaria)} g equivalem a cerca de{" "}
+                      <strong className="text-white">
+                        {medidas(ref.diaria, med) === 0 ? "menos de meia medida" : `${g(medidas(ref.diaria, med))} ${medidas(ref.diaria, med) === 1 ? "medida" : "medidas"}`}
+                      </strong>
+                      {medidas(ref.diaria, med) > 0 && <> ({g(medidas(ref.diaria, med) * med)} g, a medida é arredondada para meia)</>}.
                     </p>
                   ) : medidaTexto.trim() !== "" && <p className="text-gray-400 text-sm mt-2">Use o valor do rótulo, entre 0,5 e 20 g.</p>}
                   <p className="text-gray-400 text-sm mt-2 max-w-xl">

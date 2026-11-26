@@ -56,10 +56,15 @@ ok("a soma das partes é o total", perto(r.kcalPedalando + r.kcalParado, r.kcal)
 ok("60 min moderado, 70 kg, sem parada = 588 kcal", perto(calcula(70, 8.0, 60).kcal, 588));
 ok("com 10 min parado gasta menos que a tabela", r.kcal < kcalSeFosseContinuo(70, 8.0, 60));
 ok("líquido desconta 1 MET do tempo todo", perto(r.kcalLiquida, r.kcal - kcalPorMinuto(1, 70) * 60));
-ok("parado maior que o total é travado no total", calcula(70, 8.0, 30, 45).minutosPedalando === 0);
+ok("parado maior que o total: a conta ainda protege (defesa)", calcula(70, 8.0, 30, 45).minutosPedalando === 0);
+ok("parado >= total é inválido na entrada (a tela avisa, não corta em silêncio)", !paradoValido(45, 30) && !paradoValido(30, 30));
+ok("parado menor que o total é válido; sem total conhecido vale só o teto", paradoValido(10, 60) && paradoValido(10) && !paradoValido(121) && !paradoValido(-1));
 ok("kg/mês = líquido × vezes ÷ 7700 × 52/12", perto(kgPorMes(500, 3), (500 * 3 / 7700) * 52 / 12));
 
 bloco("4. IR DE BIKE PARA O TRABALHO");
+ok("trabalho: 300 km em 5 min dá velocidade fora da faixa (a tela não calcula)", !velocidadeValida(velocidadeMedia(300, 5)));
+ok("trabalho: 0,5 km em 600 min dá velocidade fora da faixa", !velocidadeValida(velocidadeMedia(0.5, 600)));
+ok("trabalho: 8 km em 30 min é válido", velocidadeValida(velocidadeMedia(8, 30)));
 const t = trabalho(70, 8, 30, 5);
 ok("ida e volta: 2 trechos por dia", perto(t.kcalPorDia, calcula(70, MET_TRABALHO, 30).kcal * 2));
 ok("8 km em 30 min = 16 km/h", perto(t.velocidade, 16));

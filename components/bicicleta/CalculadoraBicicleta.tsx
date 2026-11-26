@@ -123,7 +123,7 @@ export default function CalculadoraBicicleta({ placement }: { placement: string 
   const minutos = parseNumero(minutosTexto);
   const minutosOk = minutosValidos(minutos);
   const parado = paradoTexto.trim() === "" ? 0 : parseNumero(paradoTexto);
-  const paradoOk = paradoValido(parado);
+  const paradoOk = paradoValido(parado, minutosOk ? minutos : null);
   const km = parseNumero(kmTexto);
   const kmOk = kmValido(km);
   const velDigitada = parseNumero(velTexto);
@@ -151,7 +151,9 @@ export default function CalculadoraBicicleta({ placement }: { placement: string 
   const kgMes = resultado ? kgPorMes(resultado.kcalLiquida, vezes) : null;
   const tabela = resultado && resultado.minutosParado > 0 ? kcalSeFosseContinuo(peso!, met!, resultado.minutosTotais) : null;
   const comparacao = resultado ? compara(peso!, resultado.minutosTotais) : null;
-  const trab = modo === "trabalho" && pesoOk && kmIdaOk && minIdaOk ? trabalho(peso, kmIda, minIda, dias) : null;
+  const velTrabalho = kmIdaOk && minIdaOk ? velocidadeMedia(kmIda, minIda) : null;
+  const velTrabalhoOk = velocidadeValida(velTrabalho);
+  const trab = modo === "trabalho" && pesoOk && kmIdaOk && minIdaOk && velTrabalhoOk ? trabalho(peso, kmIda, minIda, dias) : null;
 
   useEffect(() => {
     const el = raiz.current;
@@ -189,7 +191,7 @@ export default function CalculadoraBicicleta({ placement }: { placement: string 
       ? terr.met !== null
         ? `${terr.nome.toLowerCase()}`
         : faixa ? `${faixa.nome.toLowerCase()}, ${dec(velocidade!)} km/h` : "na rua"
-      : porWatts && faixaW ? `${watts} W` : `esforço ${esforco(esforcoId).nome.toLowerCase()}`;
+      : porWatts && faixaW ? `${dec(watts ?? 0)} W` : `esforço ${esforco(esforcoId).nome.toLowerCase()}`;
   const resumoWhats = resultado
     ? `${formataTempo(resultado.minutosTotais)} de bicicleta (${rotuloSessao}) ≈ ${kc(resultado.kcal)} kcal`
     : trab
@@ -361,7 +363,7 @@ export default function CalculadoraBicicleta({ placement }: { placement: string 
                 <span className="text-gray-300 text-lg">minutos</span>
               </div>
               <p id={idc("parado-ajuda")} className="text-gray-400 text-sm mt-2 min-h-[20px] max-w-xl">
-                {paradoTexto.trim() !== "" && !paradoOk ? `Use de 0 a ${PARADO_MAX} minutos.` : "Na cidade, uns 10 minutos por hora é comum. Deixe em branco se pedalou direto."}
+                {paradoTexto.trim() !== "" && !paradoOk ? (parado !== null && minutosOk && parado >= minutos ? "O tempo parado precisa ser menor que o tempo total da sessão." : `Use de 0 a ${PARADO_MAX} minutos.`) : "Na cidade, uns 10 minutos por hora é comum. Deixe em branco se pedalou direto."}
               </p>
             </div>
           )}
@@ -399,7 +401,9 @@ export default function CalculadoraBicicleta({ placement }: { placement: string 
               ? `Use de ${KM_MIN} a ${KM_MAX} km.`
               : minIdaTexto.trim() !== "" && !minIdaOk
                 ? `Use de ${MINUTOS_MIN} a ${MINUTOS_MAX} minutos.`
-                : "A volta entra sozinha. Se o caminho de volta é bem diferente, use a média dos dois."}
+                : kmIdaOk && minIdaOk && !velTrabalhoOk
+                  ? `Esses números dão ${velTrabalho !== null ? Math.round(velTrabalho * 10) / 10 : ""} km/h de média. Confira os km e os minutos: a ferramenta aceita de ${VELOCIDADE_MIN} a ${VELOCIDADE_MAX} km/h.`
+                  : "A volta entra sozinha. Se o caminho de volta é bem diferente, use a média dos dois."}
           </p>
           <div className="mb-7">
             <span className="block text-gray-300 text-sm font-medium mb-2" id={idc("dias")}>Quantos dias por semana você vai de bike?</span>
@@ -522,7 +526,7 @@ export default function CalculadoraBicicleta({ placement }: { placement: string 
                 <p className="text-white font-bold text-3xl sm:text-4xl leading-none" style={h}>
                   {kg(trab.kgPorMes)}<span className="text-lg font-normal text-gray-300"> kg</span>
                 </p>
-                <p className="text-gray-400 text-sm mt-2">no máximo, pela conta linear · {Math.round(trab.kmPorMes)} km pedalados no mês</p>
+                <p className="text-gray-400 text-sm mt-2">no máximo, pela conta linear · {Math.round(trab.kmPorMes).toLocaleString("pt-BR")} km pedalados no mês</p>
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed mb-4 max-w-2xl">

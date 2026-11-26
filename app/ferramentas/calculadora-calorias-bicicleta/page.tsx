@@ -94,7 +94,8 @@ const TABELA_60 = kcalSeFosseContinuo(PESO, MODERADO.met, 60);
 const TRAB_8 = trabalho(PESO, 8, 30, 5);
 const TRES_45 = kgPorMes(R45.kcalLiquida, 3);
 const MINUTOS_TAB = [10, 15, 20, 30, 40, 50, 60];
-const H_1KG = KCAL_POR_KG_GORDURA / KCAL_MIN_MOD / 60;
+/* Pelo líquido (descontado o que a pessoa gastaria parada), a mesma base do "kg por mês" da calculadora. */
+const H_1KG = KCAL_POR_KG_GORDURA / (R30.kcalLiquida / 30) / 60;
 const ERGO = (id: "leve" | "moderado" | "forte", min: number) => calcula(PESO, metDoEsforco(id), min).kcal;
 const RUA = (min: number) => calcula(PESO, MODERADO.met, min).kcal;
 const TRILHA_60 = calcula(PESO, TERRENOS[1].met!, 60).kcal;
@@ -109,7 +110,7 @@ const metF = (n: number) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1
 const faq: ItemFAQ[] = [
   {
     question: "Quantas calorias gasta pedalar 30 minutos?",
-    answer: `Para ${PESO} kg em ritmo moderado, de 19 a 22 km/h, cerca de ${kc(R30.kcal)} kcal; em 45 minutos, ${kc(R45.kcal)}. Em passeio, a 12 a 16 km/h, é pouco mais da metade disso. O peso e a velocidade mudam tudo — por isso a calculadora pede os dois.`,
+    answer: `Para ${PESO} kg em ritmo moderado, de 19 a 22 km/h, cerca de ${kc(R30.kcal)} kcal; em 45 minutos, ${kc(R45.kcal)}. Em passeio, a 12 a 16 km/h, são cerca de ${kc(PASSEIO_30)} kcal nos mesmos 30 minutos. O peso e a velocidade mudam tudo — por isso a calculadora pede os dois.`,
   },
   {
     question: "Bicicleta ergométrica ou de rua: qual gasta mais?",
@@ -153,7 +154,7 @@ const faq: ItemFAQ[] = [
   },
   {
     question: "Quanto pedalar para perder 1 kg?",
-    answer: `Um quilo de gordura guarda cerca de ${KCAL_POR_KG_GORDURA.toLocaleString("pt-BR")} kcal. Em ritmo moderado, para ${PESO} kg, isso daria perto de ${Math.round(H_1KG)} horas de pedal. É conta teórica: ninguém perde peso só pedalando, e o corpo não responde de forma linear. A bike soma ao déficit da semana; quem decide é o conjunto com a alimentação.`,
+    answer: `Um quilo de gordura guarda cerca de ${KCAL_POR_KG_GORDURA.toLocaleString("pt-BR")} kcal. Em ritmo moderado, para ${PESO} kg, isso daria perto de ${Math.round(H_1KG)} horas de pedal, contando só o que o pedal gasta além do repouso (a mesma base do "quilos por mês" da calculadora). É conta teórica: ninguém perde peso só pedalando, e o corpo não responde de forma linear. A bike soma ao déficit da semana; quem decide é o conjunto com a alimentação.`,
   },
   {
     question: "O que acontece se fizer 30 minutos de bike todo dia?",

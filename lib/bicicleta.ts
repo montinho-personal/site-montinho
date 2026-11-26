@@ -186,7 +186,9 @@ export const PRESETS_MINUTOS = [30, 45, 60, 90] as const;
 export const pesoValido = (p: number | null): p is number => p !== null && p >= PESO_MIN && p <= PESO_MAX;
 export const minutosValidos = (m: number | null): m is number => m !== null && m >= MINUTOS_MIN && m <= MINUTOS_MAX;
 export const kmValido = (k: number | null): k is number => k !== null && k >= KM_MIN && k <= KM_MAX;
-export const paradoValido = (m: number | null): m is number => m !== null && m >= 0 && m <= PARADO_MAX;
+/** O parado cabe no tempo total: com minutos conhecidos, precisa ser menor que eles (senão não sobra pedal). */
+export const paradoValido = (m: number | null, minutosTotais: number | null = null): m is number =>
+  m !== null && m >= 0 && m <= PARADO_MAX && (minutosTotais === null || m < minutosTotais);
 export const velocidadeValida = (v: number | null): v is number => v !== null && v >= VELOCIDADE_MIN && v <= VELOCIDADE_MAX;
 export const wattsValidos = (w: number | null): w is number => w !== null && faixaDe(w) !== null;
 
