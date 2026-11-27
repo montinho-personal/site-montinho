@@ -27,7 +27,20 @@ import type { BlogPost } from "./blog";
  * ficaram de fora. Os sites dos veículos não abriram neste ambiente; a
  * conferência foi feita pelos títulos e resumos indexados de cada um.
  *
+ * AMPLIAÇÃO DE 27/11/2026 (pedido do Montinho): o Search Console mostrou que
+ *   quem chega ao G2 busca "academias gta 6" e "localização". Entraram a
+ *   tabela das 9 academias e a missão Making Gainz no G2, e dois artigos
+ *   novos: G4 "como-treinar-no-gta-6" e G5 "como-engordar-e-emagrecer-no-gta-6".
+ *   SerpApi com limite de requisições; as intenções vieram das buscas reais do
+ *   Search Console (20 a 27/11). Fatos do jogo só com dois guias grandes
+ *   concordando (Game8, GameSpot, Game Rant, Dexerto, Push Square, TheGamer,
+ *   GamesRadar), conferidos pelos títulos e resumos indexados: os sites não
+ *   abrem neste ambiente. Divergências (limite de treinos por dia, efeito dos
+ *   esteroides no corpo) ficaram de fora.
+ *
  * FERRAMENTA
+ * - G4: dispensado (ARTIGOS_SEM_FERRAMENTA); linka a Calculadora de Proteína.
+ * - G5: link da Calculadora de Déficit (ARTIGOS_COM_LINK_DEFICIT).
  * - G2: link da Calculadora de Déficit (ARTIGOS_COM_LINK_DEFICIT): o leitor
  *   sai com "quanto eu gasto e quanto como", a barra que o personagem tem e
  *   ele não.
@@ -43,6 +56,8 @@ const NAO_SE_COMPARE = (gancho: string) => `<h2>Não se compare</h2>
 
 const T_G2 = "GTA 6 Tem Academia? O Treino do Jogo e o da Vida Real";
 const T_G3 = "Jogar Videogame Muito Tempo Faz Mal? O Que Acontece com o Corpo";
+const T_G4 = "Como Treinar no GTA 6: Força, Cardio e Foco (e o Treino de Verdade)";
+const T_G5 = "Como Engordar e Emagrecer no GTA 6 (e Por Que na Vida Real Demora Mais)";
 
 export const GTA_6_POSTS: BlogPost[] = [
   {
@@ -55,10 +70,26 @@ export const GTA_6_POSTS: BlogPost[] = [
       "O que se sabe da academia do GTA 6, como treino, comida e sono mudam Jason e Lucia, e o que disso funciona igual na vida real (e em quanto tempo).",
     category: "Treinamento",
     date: "2026-11-20",
+    updatedAt: "2026-11-27",
     readTime: "5 min",
     author: "Montinho",
     tags: ["GTA 6", "videogame", "academia", "hipertrofia", "sono"],
     faq: [
+      {
+        question: "Onde ficam as academias no GTA 6?",
+        answer:
+          "São nove, segundo os guias do Game8, da GameSpot e da Game Rant: Muscle Sands e Venus Fitness em Ocean Beach; Grand Majestic e Vice Seven Condominiums em Tequesta; Dynamix Fitness em Bayside; Zenith em Downtown; e Aichi Condominiums, Y Hotel Fitness Club e Ajax Gym em Washington Beach. No mapa, aparecem com o ícone de haltere.",
+      },
+      {
+        question: "Qual academia é de graça no GTA 6?",
+        answer:
+          "A Muscle Sands, ao ar livre na praia de Ocean Beach, não cobra matrícula. A casa do Jason, em Key Lento, também tem área de treino. Nas outras, a matrícula vai de $ 250 (Grand Majestic) a $ 1.800 (Ajax Gym) e é paga uma vez só.",
+      },
+      {
+        question: "Tem personal trainer no GTA 6?",
+        answer:
+          "Na missão Making Gainz, do capítulo 4, a Lucia treina com o Nate, um fisiculturista, na Ajax Gym, e ele oferece esteroides no meio do treino. Não há um personal trainer para contratar no jogo, segundo os guias publicados até agora.",
+      },
       {
         question: "GTA 6 vai ter academia?",
         answer:
@@ -87,16 +118,38 @@ export const GTA_6_POSTS: BlogPost[] = [
     ],
     content: `${CAPA("gta-6-tem-academia", "GTA 6 tem academia? O treino do jogo e o da vida real. Ilustração de um controle de videogame ao lado de um halter", T_G2)}
 
-<p><strong>Tem.</strong> No GTA 6, lançado em 19 de novembro de 2026, Jason e Lucia podem treinar, e o corpo dos dois muda com o que você faz no jogo: exercício ganha músculo, comida demais aumenta o peso e noites sem dormir aparecem no visual. Abaixo, o que foi noticiado antes do lançamento e quanto disso funciona igual na vida real, com o olhar de quem passa o dia dentro de academia.</p>
+<p><strong>Tem, e são nove.</strong> No GTA 6, lançado em 19 de novembro de 2026, há nove academias em Leonida, da Muscle Sands, de graça na praia de Ocean Beach, até a Ajax Gym, a mais cara, por $ 1.800. Jason e Lucia treinam, e o corpo dos dois muda com o que você faz no jogo: exercício ganha músculo, comida demais aumenta o peso e noites sem dormir aparecem no visual. Abaixo, onde fica cada academia e quanto disso funciona igual na vida real, com o olhar de quem passa o dia dentro de academia.</p>
+
+<h2>Onde ficam as academias no GTA 6</h2>
+<p>São <strong>nove academias</strong> em Leonida, segundo os guias do Game8, da GameSpot e da Game Rant, publicados depois do lançamento. No mapa do jogo, elas aparecem com o ícone de haltere. A matrícula é paga <strong>uma vez só</strong>, na recepção, e vale para Jason e Lucia. Sem ela, dá para usar os aparelhos só um número limitado de vezes.</p>
+<table><thead><tr><th>Academia</th><th>Bairro</th><th>Matrícula</th><th>O que tem a mais</th></tr></thead><tbody>
+<tr><td><strong>Muscle Sands</strong></td><td>Ocean Beach (na areia, ao ar livre)</td><td>Grátis</td><td>A academia de praia "famosa entre fisiculturistas"</td></tr>
+<tr><td>Grand Majestic Gym</td><td>Tequesta</td><td>$ 250</td><td>Comida e mesa de sinuca</td></tr>
+<tr><td>Vice Seven Condominiums Gym</td><td>Tequesta</td><td>$ 450</td><td>Só os aparelhos</td></tr>
+<tr><td>Dynamix Fitness</td><td>Bayside</td><td>$ 600</td><td>Guarda-roupa</td></tr>
+<tr><td>Venus Fitness</td><td>Ocean Beach</td><td>$ 600</td><td>Guarda-roupa</td></tr>
+<tr><td>Zenith</td><td>Downtown</td><td>$ 750</td><td>Comida e guarda-roupa</td></tr>
+<tr><td>Aichi Condominiums Outdoor Gym</td><td>Washington Beach</td><td>$ 950</td><td>Academia grande ao ar livre</td></tr>
+<tr><td>Y Hotel Fitness Club</td><td>Washington Beach</td><td>$ 1.200</td><td>Piscina e bar</td></tr>
+<tr><td>Ajax Gym (Lawton Theater)</td><td>Washington Beach</td><td>$ 1.800</td><td>Piscina e vários andares</td></tr>
+</tbody></table>
+<p>Os guias concordam no bairro e no preço, mas descrevem o ponto exato de formas um pouco diferentes. Para chegar, o mais seguro é marcar o ícone de haltere no mapa. Segundo a GameSpot, a Ajax e a Y Hotel também são liberadas de graça durante a história.</p>
+
+<h3>Qual academia é de graça no GTA 6?</h3>
+<p>A <strong>Muscle Sands</strong>, na praia de Ocean Beach, não cobra matrícula. A casa do Jason, em Key Lento, também tem área de treino, que não entra na conta das nove academias. Quem quer treinar sem gastar o dinheiro do jogo começa por esses dois lugares.</p>
+
+<h3>Lucia tem personal trainer? A missão Making Gainz</h3>
+<p>Mais ou menos. Na missão <strong>Making Gainz</strong>, do capítulo 4, a Lucia treina na Ajax Gym com o Nate, um fisiculturista. No meio da sequência de treinos ele oferece esteroides, e aceitar ou recusar é a escolha da missão. Os guias do Game8 e da Game Rant concordam que aceitar deixa os desafios de botão mais fáceis. Eles discordam sobre o efeito no corpo da Lucia depois disso.</p>
+<p>Na vida real, a escolha não é de botão. No Brasil, o Conselho Federal de Medicina proíbe a prescrição de esteroides anabolizantes para ganho de massa muscular, estética ou desempenho esportivo (Resolução CFM nº 2.333/2023). Um personal trainer de verdade faz o oposto do Nate: ajusta carga, volume e descanso para você ganhar músculo sem atalho.</p>
 
 <h2>O que se sabe da academia do GTA 6</h2>
-<p>Na cobertura da prévia do jogo, veículos como <strong>LADbible</strong> e <strong>IBTimes UK</strong> descreveram o mesmo sistema:</p>
+<p>Antes do lançamento, na cobertura da prévia do jogo, veículos como <strong>LADbible</strong> e <strong>IBTimes UK</strong> descreveram o mesmo sistema:</p>
 <ul>
 <li><strong>Treino muda o corpo:</strong> exercício faz Jason e Lucia ganharem músculo.</li>
 <li><strong>Comida conta:</strong> comer em excesso aumenta o peso do personagem.</li>
 <li><strong>Sono e farra também:</strong> dormir pouco e exagerar na noite pesam na aparência.</li>
 </ul>
-<p>A ideia lembra o GTA San Andreas, de 2004, em que o personagem também engordava ou ganhava músculo conforme o jogador decidia. Detalhes como quantas idas à academia mudam o corpo, que exercícios existem e quais números o jogo usa por trás não foram publicados oficialmente, então ficam fora deste texto.</p>
+<p>A ideia lembra o GTA San Andreas, de 2004, em que o personagem também engordava ou ganhava músculo conforme o jogador decidia. Como o treino funciona dentro do jogo (força, cardio, foco e as janelas de treino) está em <a href="/blog/como-treinar-no-gta-6">como treinar no GTA 6</a>, e o peso, em <a href="/blog/como-engordar-e-emagrecer-no-gta-6">como engordar e emagrecer no GTA 6</a>.</p>
 
 <h2>No jogo x na vida real</h2>
 <p>O jogo acertou os três botões. Treino, comida e sono são mesmo o que muda um corpo. A diferença é o relógio.</p>
@@ -121,6 +174,11 @@ ${NAO_SE_COMPARE("Não se compare com o Jason, com a Lucia nem com ninguém da a
 
 <h2>Fontes</h2>
 <ul>
+<li>Game8. GTA 6: All Gym Locations, 2026 (guia pós-lançamento)</li>
+<li>GameSpot. All Gym Locations In GTA 6, 2026</li>
+<li>Game Rant. All Gym Locations in GTA 6, 2026</li>
+<li>Game8 e PowerPyx. Making Gainz Walkthrough; Game Rant. Should You Accept or Reject the Steroids in GTA 6?, 2026</li>
+<li>Conselho Federal de Medicina. Resolução CFM nº 2.333/2023 (prescrição de terapias hormonais com esteroides androgênicos e anabolizantes)</li>
 <li>LADbible. New GTA 6 gameplay preview has players "getting fat" as controversial feature returns, 27/08/2026</li>
 <li>IBTimes UK. GTA 6 gameplay takes realism to new level as diet and sleep transform Jason and Lucia, 2026</li>
 <li>Moritani T, deVries HA. Neural factors versus hypertrophy in the time course of muscle strength gain. American Journal of Physical Medicine, 1979</li>
@@ -130,6 +188,8 @@ ${NAO_SE_COMPARE("Não se compare com o Jason, com a Lucia nem com ninguém da a
 
 <h2>Leia também</h2>
 <ul>
+<li><a href="/blog/como-treinar-no-gta-6">Como treinar no GTA 6: força, cardio e foco</a></li>
+<li><a href="/blog/como-engordar-e-emagrecer-no-gta-6">Como engordar e emagrecer no GTA 6</a></li>
 <li><a href="/blog/jogar-videogame-gasta-calorias">Jogar videogame gasta calorias?</a></li>
 <li><a href="/blog/jogar-videogame-muito-tempo-faz-mal">Jogar videogame muito tempo faz mal?</a></li>
 <li><a href="/blog/quanto-tempo-para-ganhar-massa-muscular">Quanto tempo para ganhar massa muscular</a></li>
@@ -232,6 +292,189 @@ ${NAO_SE_COMPARE("Não se compare com quem treina todo dia nem com o personagem 
 <li><a href="/blog/jogar-videogame-gasta-calorias">Jogar videogame gasta calorias?</a></li>
 <li><a href="/blog/gta-6-tem-academia">GTA 6 tem academia? O treino do jogo e o da vida real</a></li>
 <li><a href="/blog/quem-trabalha-sentado">Quem trabalha sentado</a></li>
+</ul>`,
+  },
+  {
+    slug: "como-treinar-no-gta-6",
+    title: T_G4,
+    metaTitle: "Como Treinar no GTA 6: Força, Cardio e Foco",
+    metaDescription:
+      "No GTA 6, o app Fitness mede força, cardio e foco até o nível 4, e quem perde a janela de treino cai de nível. Veja como funciona e o que vale na vida real.",
+    excerpt:
+      "Como funciona o treino no GTA 6: os três atributos, as janelas de treino, a proteína e o cardio. E o que disso é igual (ou não) no seu treino de verdade.",
+    category: "Treinamento",
+    date: "2026-11-27",
+    readTime: "6 min",
+    author: "Montinho",
+    tags: ["GTA 6", "videogame", "musculação", "cardio", "frequência de treino"],
+    faq: [
+      {
+        question: "Como treinar no GTA 6?",
+        answer:
+          "Pelo app Fitness do celular do personagem: ele mostra Força, Cardio e Foco e as janelas de treino de cada um. Força e cardio sobem na academia, em casa ou na rua (correndo, pedalando, nadando), e o treino só conta se for terminado dentro da janela. Os três atributos vão até o nível 4.",
+      },
+      {
+        question: "O que cada atributo faz no GTA 6?",
+        answer:
+          "Segundo os guias da Dexerto, Game8 e TheGamer: Força aumenta a vida máxima, Cardio aumenta o fôlego (stamina) máximo e Foco aumenta o tempo de câmera lenta no combate.",
+      },
+      {
+        question: "Perde nível se parar de treinar no GTA 6?",
+        answer:
+          "Perde. Quem deixa passar as janelas de treino seguidas vê o nível de Força ou de Cardio cair, segundo os guias da Dexerto, Push Square e Game Rant. Na vida real também se perde, mas devagar: algumas semanas parado tiram pouco de quem treinou meses.",
+      },
+      {
+        question: "Como aumentar a stamina no GTA 6?",
+        answer:
+          "Treinando Cardio: esteira ou bicicleta na academia, saco de pancada, ou correr, pedalar e nadar pela cidade, sempre dentro da janela de treino do app Fitness, até o nível 4.",
+      },
+      {
+        question: "Proteína ajuda no treino do GTA 6?",
+        answer:
+          "Segundo os guias, tomar proteína depois do treino de força encurta a espera até a próxima janela. Na vida real, o que mais pesa é a proteína total do dia, não o minuto exato depois do treino.",
+      },
+    ],
+    content: `${CAPA("como-treinar-no-gta-6", "Como treinar no GTA 6: força, cardio e foco. Ilustração de uma barra com anilhas e um tênis de corrida", T_G4)}
+
+<p><strong>No GTA 6, o treino acontece pelo app Fitness, no celular do personagem.</strong> Ele mede três atributos, Força, Cardio e Foco, que vão do nível 1 ao 4. Para subir, Jason e Lucia precisam terminar treinos dentro das "janelas de treino" do app, e quem deixa as janelas passarem cai de nível. É o que descrevem os guias publicados depois do lançamento, em 19 de novembro de 2026, por Dexerto, Game8, Push Square, TheGamer e Game Rant. Abaixo, como funciona e o que disso vale para o seu treino de verdade.</p>
+
+<h2>Os três atributos do GTA 6</h2>
+<table><thead><tr><th>Atributo</th><th>O que faz no jogo</th><th>Como sobe</th></tr></thead><tbody>
+<tr><td><strong>Força</strong></td><td>Aumenta a vida máxima</td><td>Aparelhos de musculação, na academia ou em casa</td></tr>
+<tr><td><strong>Cardio</strong></td><td>Aumenta o fôlego (stamina) máximo</td><td>Esteira, bicicleta, saco de pancada, correr, pedalar e nadar</td></tr>
+<tr><td><strong>Foco</strong></td><td>Aumenta o tempo de câmera lenta no combate</td><td>Atividades fora da academia, como estande de tiro e meditação</td></tr>
+</tbody></table>
+<p>O treino só vale quando aparece a mensagem de treino completo. Se você sai no meio, perde o que fez naquela sessão. Para a esteira e a bicicleta, é preciso ser matriculado numa das <a href="/blog/gta-6-tem-academia">nove academias do GTA 6</a>. Correr, pedalar e nadar pela cidade também contam para o Cardio.</p>
+
+<h2>Janela de treino: o jogo cobra constância</h2>
+<p>O app mostra uma janela para Força e outra para Cardio. Treinar dentro dela faz o atributo subir; deixar as janelas passarem, uma atrás da outra, faz o nível cair.</p>
+<p>Essa é a parte que o GTA 6 acertou em cheio. O que muda um corpo não é o treino perfeito de um dia: é aparecer de novo na semana seguinte. A Organização Mundial da Saúde recomenda musculação pelo menos 2 dias por semana, e 150 a 300 minutos de atividade aeróbica moderada. Quantas vezes treinar cada músculo, na prática, está em <a href="/blog/frequencia-de-treino">frequência de treino</a>.</p>
+
+<h3>Onde o jogo exagera: perder nível rápido</h3>
+<p>No jogo, poucas janelas perdidas já derrubam um nível. Na vida real, o corpo é mais generoso. Na revisão de Mujika e Padilla sobre destreino, a força se mantém bem nas primeiras semanas sem treinar, e o condicionamento aeróbico cai antes que a força. Uma semana de férias não apaga meses de academia. Os prazos estão em <a href="/blog/destreino-quanto-tempo-perde-massa">destreino: em quanto tempo se perde massa</a>.</p>
+
+<h2>Proteína depois do treino</h2>
+<p>Nos guias, a proteína depois do treino de força encurta a espera até a próxima janela. Na vida real, a proteína ajuda, mas o horário pesa menos do que o jogo sugere. O posicionamento da International Society of Sports Nutrition diz que o mais importante é a quantidade total de proteína ao longo do dia, dividida em refeições. Para ter uma estimativa da sua, use a <a href="/ferramentas/calculadora-de-proteina">Calculadora de Proteína</a>. O plano alimentar em si é com o nutricionista.</p>
+
+<h2>Sono: no jogo e fora dele</h2>
+<p>A Rockstar disse, antes do lançamento, que o sono de Jason e Lucia é acompanhado e que noites sem dormir aparecem no corpo. Os guias também dizem que chegar descansado e com proteína em dia ajuda a treinar todos os dias do jogo. Fora do jogo, vale igual: num estudo do Annals of Internal Medicine, adultos em dieta que dormiram 5,5 horas por noite perderam mais massa magra do que quando dormiram 8,5 horas. Veja <a href="/blog/quantas-horas-de-sono-para-ganhar-massa-e-emagrecer">quantas horas de sono para ganhar massa e emagrecer</a>.</p>
+
+<h2>Do GTA para a academia de verdade</h2>
+<p>O GTA 6 ensina a lógica certa: treinar com regularidade, fazer força e cardio, comer proteína e dormir. O que ele não mostra é o meio do caminho: a semana em que a carga não sobe, o dia em que o exercício não encaixou, a rotina que mudou. Aí não existe app que avise. Alguém precisa olhar o que está acontecendo e ajustar.</p>
+<p>Para começar, três treinos de musculação por semana já cabem na rotina de quem joga à noite: <a href="/blog/hipertrofia-para-iniciantes">hipertrofia para iniciantes</a>. E para o fôlego de verdade, <a href="/blog/corrida-para-iniciantes">corrida para iniciantes</a>.</p>
+
+${NAO_SE_COMPARE("O Jason chega ao nível 4 em poucos dias de jogo; você não precisa chegar a lugar nenhum na semana que vem.")}
+
+<p><strong>Resumindo:</strong> no GTA 6, Força dá vida, Cardio dá fôlego e Foco dá câmera lenta, todos até o nível 4, e quem perde as janelas de treino cai de nível. Na vida real, a regra da constância é a mesma; só o relógio é mais lento, para ganhar e para perder.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li>Dexerto. GTA 6 workout guide: How to get maximum health, stamina &amp; focus, 2026</li>
+<li>Game8. GTA 6: How to Increase Stamina, 2026</li>
+<li>Push Square. GTA 6: Workouts Explained &amp; Why to Do Them, 2026</li>
+<li>TheGamer. How To Reach Max Health In GTA 6, 2026</li>
+<li>Game Rant. Strength &amp; Cardio Fitness Guide in GTA 6, 2026</li>
+<li>Kotaku. GTA San Andreas Weight System Returning In GTA 6, Rockstar Confirms, 2026</li>
+<li>Organização Mundial da Saúde. Diretrizes sobre atividade física e comportamento sedentário, 2020</li>
+<li>Mujika I, Padilla S. Detraining: loss of training-induced physiological and performance adaptations. Sports Medicine, 2000</li>
+<li>Jäger R, et al. International Society of Sports Nutrition position stand: protein and exercise. Journal of the International Society of Sports Nutrition, 2017</li>
+<li>Nedeltcheva AV, et al. Insufficient sleep undermines dietary efforts to reduce adiposity. Annals of Internal Medicine, 2010</li>
+</ul>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/gta-6-tem-academia">Academias do GTA 6: onde ficam e quanto custam</a></li>
+<li><a href="/blog/como-engordar-e-emagrecer-no-gta-6">Como engordar e emagrecer no GTA 6</a></li>
+<li><a href="/blog/jogar-videogame-gasta-calorias">Jogar videogame gasta calorias?</a></li>
+</ul>`,
+  },
+  {
+    slug: "como-engordar-e-emagrecer-no-gta-6",
+    title: T_G5,
+    metaTitle: "Como Engordar e Emagrecer no GTA 6",
+    metaDescription:
+      "No GTA 6, fast food até o app mostrar superávit e uma noite de sono engordam Jason e Lucia. Veja como emagrecer no jogo e por que na vida real demora mais.",
+    excerpt:
+      "Como o peso funciona no GTA 6: superávit no app Fitness, sono, treino e o limite de gordura. E a conta de verdade por trás de engordar e emagrecer.",
+    category: "Emagrecimento",
+    date: "2026-11-27",
+    readTime: "5 min",
+    author: "Montinho",
+    tags: ["GTA 6", "videogame", "emagrecimento", "déficit calórico", "superávit calórico"],
+    faq: [
+      {
+        question: "Como engordar no GTA 6?",
+        answer:
+          "Segundo os guias do Game8 e da GamesRadar: comer fast food (Burger Shot ou Taco Bomb, por exemplo) até o app Fitness mostrar superávit calórico, dormir na cama e repetir o ciclo, sem treinar, até o app indicar sobrepeso e gordura máxima.",
+      },
+      {
+        question: "Como emagrecer no GTA 6?",
+        answer:
+          "O caminho inverso: comer menos, sem ficar em superávit, e fazer os treinos de cardio e de força dentro das janelas do app Fitness. Treinar também transforma o personagem, ganhando músculo.",
+      },
+      {
+        question: "Dá para ficar muito gordo no GTA 6?",
+        answer:
+          "Não muito. Jogadores que chegaram ao peso máximo de Jason e Lucia mostraram que os dois ficam só um pouco mais pesados, bem menos do que o CJ do GTA San Andreas, segundo a GamesRadar.",
+      },
+      {
+        question: "Quanto tempo leva para engordar 1 kg na vida real?",
+        answer:
+          "Depende de quanto você come acima do que gasta. A conta clássica usa cerca de 7.700 kcal por quilo de gordura, e o corpo ainda se ajusta no caminho. Um excesso de 300 kcal por dia, por exemplo, leva semanas, não uma noite de sono.",
+      },
+    ],
+    content: `${CAPA("como-engordar-e-emagrecer-no-gta-6", "Como engordar e emagrecer no GTA 6. Ilustração de um hambúrguer ao lado de uma balança", T_G5)}
+
+<p><strong>No GTA 6, para engordar basta comer fast food até o app Fitness mostrar "superávit" e dormir.</strong> Repetindo o ciclo sem treinar, Jason e Lucia chegam ao peso máximo. Para emagrecer, é o contrário: comer menos e treinar. É o que descrevem os guias do Game8 e da GamesRadar, publicados depois do lançamento, em 19 de novembro de 2026. A Rockstar já tinha dito, antes, que comida, treino e sono mudam o corpo dos personagens. Abaixo, como funciona no jogo e a conta de verdade por trás.</p>
+
+<h2>Como engordar no GTA 6</h2>
+<ol>
+<li><strong>Coma fast food</strong>, como Burger Shot ou Taco Bomb, até o app Fitness avisar <strong>superávit calórico</strong>. O guia do Game8 fala em cerca de quatro itens.</li>
+<li><strong>Durma na cama.</strong> O ganho de peso aparece depois do sono, não na hora em que você come.</li>
+<li><strong>Repita</strong> até o app mostrar sobrepeso e gordura máxima.</li>
+<li><strong>Não treine</strong> nesse período e prefira ir de carro, para não queimar o que comeu.</li>
+</ol>
+<p>O limite é modesto. Segundo a GamesRadar, jogadores que levaram Jason e Lucia ao peso máximo mostraram que os dois ficam só um pouco mais pesados, bem menos do que o CJ do GTA San Andreas.</p>
+
+<h2>Como emagrecer no GTA 6</h2>
+<p>É o caminho inverso: parar de ficar em superávit e treinar dentro das janelas do app Fitness. O cardio ajuda a queimar, e a força transforma o personagem, ganhando músculo, como lembra a GameSpot. Como os treinos funcionam, com os níveis de força, cardio e foco, está em <a href="/blog/como-treinar-no-gta-6">como treinar no GTA 6</a>.</p>
+
+<h2>No jogo x na vida real</h2>
+<p>O GTA 6 usa a lógica certa: comer acima do que se gasta faz o peso subir, comer abaixo faz descer. O que ele não faz é a conta de verdade.</p>
+
+<h3>Uma noite de sono não engorda ninguém</h3>
+<p>No jogo, quatro lanches e uma noite de sono já mudam o corpo. Fora dele, a conta clássica usa cerca de 7.700 kcal por quilo de gordura (Wishnofsky). Um excesso de 300 kcal por dia leva semanas para virar um quilo. O modelo de Kevin Hall, publicado na Lancet, mostra ainda que o corpo se ajusta no caminho: o gasto muda junto com o peso, então a curva fica cada vez mais lenta. Por isso o peso de um dia para o outro diz pouco: é mais água e comida no intestino do que gordura.</p>
+
+<h3>Emagrecer: déficit, e com músculo junto</h3>
+<p>Na vida real, emagrecer pede déficit calórico por semanas. Para uma estimativa de quanto o seu dia gasta e de quanto seria um déficit razoável, use a <a href="/ferramentas/calculadora-deficit-calorico">Calculadora de Déficit Calórico</a>. A musculação entra para o peso que sai ser mais gordura e menos músculo; o passo a passo está em <a href="/blog/deficit-calorico-como-calcular">como calcular o déficit calórico</a>. O plano alimentar em si é com o nutricionista; o treino caminha junto com ele.</p>
+
+<h3>Sono: o jogo está certo de novo</h3>
+<p>A Rockstar fez o sono contar, e a ciência concorda. Num estudo do Annals of Internal Medicine, adultos em dieta que dormiram 5,5 horas por noite perderam menos gordura e mais massa magra do que quando dormiram 8,5 horas, comendo a mesma coisa.</p>
+
+<h3>E se o objetivo for ganhar peso?</h3>
+<p>Quem quer ganhar peso na vida real não precisa de fast food: precisa de superávit com comida de verdade e de treino de força, para o ganho vir mais em músculo. Veja <a href="/blog/como-ganhar-peso-saudavel">como ganhar peso de forma saudável</a>.</p>
+
+${NAO_SE_COMPARE("O peso do Jason muda numa noite de sono; o seu não, e tudo bem.")}
+
+<p><strong>Resumindo:</strong> no GTA 6, fast food até o superávit e uma noite de sono engordam o personagem, e treino com menos comida emagrece. Na vida real, a lógica é a mesma, mas a conta leva semanas, e o corpo se ajusta no caminho.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li>Game8. GTA 6: How to Get Fat, 2026</li>
+<li>GamesRadar. GTA 6 players confirm "True Fat Jason" and "max weight Lucia" aren't very fat at all, 2026</li>
+<li>GamesRadar. GTA 6 brings back a fan-favorite San Andreas feature: you'll get chubby if you eat a lot, 2026</li>
+<li>GameSpot. GTA 6 Fans Are Convinced The Game Has A Bodybuilding System, And Here's Why, 2026</li>
+<li>Kotaku. GTA San Andreas Weight System Returning In GTA 6, Rockstar Confirms, 2026</li>
+<li>Wishnofsky M. Caloric equivalents of gained or lost weight. American Journal of Clinical Nutrition, 1958</li>
+<li>Hall KD, et al. Quantification of the effect of energy imbalance on bodyweight. The Lancet, 2011</li>
+<li>Nedeltcheva AV, et al. Insufficient sleep undermines dietary efforts to reduce adiposity. Annals of Internal Medicine, 2010</li>
+</ul>
+
+<h2>Leia também</h2>
+<ul>
+<li><a href="/blog/gta-6-tem-academia">Academias do GTA 6: onde ficam e quanto custam</a></li>
+<li><a href="/blog/como-treinar-no-gta-6">Como treinar no GTA 6: força, cardio e foco</a></li>
+<li><a href="/blog/jogar-videogame-gasta-calorias">Jogar videogame gasta calorias?</a></li>
 </ul>`,
   },
 ];

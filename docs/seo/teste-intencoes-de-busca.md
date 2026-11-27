@@ -2251,3 +2251,29 @@ Evidência: `docs/seo/serp/jiu-jitsu-osasco-carapicuiba-2026-11-25.json` (SerpAp
 - **Item aplicado:** `corrida-de-rua-iniciante`, "É bom correr 30 minutos todos os dias?" (PAA de "corrida e musculação", 25/11). H2 e FAQ novos, com a diretriz da OMS de 2020 (150 a 300 min moderados ou 75 a 150 vigorosos por semana, mais fortalecimento em 2 dias) e Lee et al. 2014, JACC (observacional: quem corria menos de 51 min por semana teve menor mortalidade que quem não corria; sem causa provada). Entrou também "Não se compare" e foi corrigido o atributo quebrado no título do vídeo. updatedAt 26/11.
 - **Item não aplicado:** "Sopa de macarrão engorda?" depende de dado de sopa na base de alimentos, que não existe. Os outros dois itens livres (academia mais cara de Alphaville, diária da Gaviões e da Bluefit) dependem de valores de fonte oficial que não temos.
 - **Ficou de fora:** nada novo.
+
+
+## 2026-11-27 — GTA 6: academias no `gta-6-tem-academia` e artigos novos `como-treinar-no-gta-6` e `como-engordar-e-emagrecer-no-gta-6`
+
+Pedido do Montinho (27/11): "onde fica as academias no GTA 6 ... se der faz até artigos ... tudo que envolva os treinos de musculação, cardio, alimentação e vida fitness no GTA".
+
+**Pesquisa:** SerpApi com "Rate limit exceeded" (3º dia). As intenções vieram das buscas reais do Search Console (Supermetrics, 19 a 27/11, consultas com "gta"): 2.098 impressões no `gta-6-tem-academia`, 3 cliques, CTR 0,14%, posição 11.
+
+| Busca (Search Console) | Impressões | Onde entrou |
+|---|---|---|
+| academias gta 6 / academia gta 6 / gta 6 academias / academias no gta 6 | 110 / 93 / 14 / 15 | ✅ H2 "Onde ficam as academias no GTA 6" (tabela das 9) e FAQ |
+| localização academia gta 6 / academia gta 6 localização / onde fica a academia no gta 6 | 9 / 7 / 4 | ✅ mesma H2 |
+| tem academia no gta 6 / vai ter academia no gta 6 | 5 / 1 | ✅ já respondido (lead agora diz "Tem, e são nove") |
+| lucia personal trainer gta 6 / gta 6 personal trainer | 2 / 3 (1 clique) | ✅ H3 "Lucia tem personal trainer? A missão Making Gainz" e FAQ |
+| treino gta 6 / gta 6 treino | 4 / 1 | ✅ artigo novo `como-treinar-no-gta-6` |
+| gta 6 engordar | 2 | ✅ artigo novo `como-engordar-e-emagrecer-no-gta-6` |
+| gta 6 tem quantas horas de jogo / gta quantos tem / jason do gta 6 | 2 / 2 / 1 | ❌ não cabe (duração do jogo e personagem, nada de treino) |
+
+**Fontes do jogo:** só fato com dois guias grandes concordando (Game8, GameSpot, Game Rant, Dexerto, Push Square, TheGamer, GamesRadar, Kotaku), conferidos pelos títulos e resumos indexados; os sites não abrem neste ambiente (proxy recusa; a liberação no ambiente foi recusada pelo serviço). Ficaram de fora por divergência ou fonte única: limite de treinos por dia, desafio de 5 dias, efeito dos esteroides no corpo, ponto exato de cada academia, torneio de boxe, triatlo. Fonte de saúde: Resolução CFM nº 2.333/2023 (anabolizantes), OMS 2020, Mujika e Padilla 2000, Jäger 2017 (ISSN), Wishnofsky 1958, Hall 2011, Nedeltcheva 2010.
+
+**Ficou de fora:** nada que valha artigo; "quantas horas de jogo" e "Jason do GTA 6" não são do tema do site.
+
+**Proposta de título (espera aprovação), `gta-6-tem-academia`:**
+- ATUAL: GTA 6 Tem Academia? O Treino do Jogo e o da Vida Real
+- PROPOSTA: Academias no GTA 6: Onde Ficam e o Treino da Vida Real
+- MOTIVO: "academias gta 6" e "localização" são as buscas com mais impressões; CTR 0,14% com o título que só responde "se tem". Linha de base: 2.098 impressões, 3 cliques, posição 11 (20 a 27/11).
