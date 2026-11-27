@@ -183,6 +183,74 @@ export const UFC_2026_POSTS: BlogPost[] = [
     ],
   },
   {
+    slug: "resultado-ufc-335",
+    title: "Resultado do UFC 335: quem ganhou Charles Oliveira x Diego Lopes",
+    metaTitle: "Resultado UFC 335: Quem Ganhou Oliveira x Diego Lopes",
+    metaDescription:
+      "Resultado do UFC 335 (12/12, Las Vegas): Charles do Bronx x Diego Lopes pelo cinturão BMF, Poatan x Pavlovich e os brasileiros do card. Atualizado no dia.",
+    excerpt:
+      "Quem venceu Charles Oliveira x Diego Lopes, Alex Poatan x Pavlovich e o resultado de cada luta do UFC 335. Atualizado assim que sair o resultado.",
+    category: "Treinamento",
+    tipo: "noticia",
+    date: "2026-11-27",
+    readTime: "4 min",
+    author: "Montinho Personal Trainer",
+    tags: ["UFC", "UFC 335", "resultado UFC", "Charles do Bronx", "Diego Lopes", "Alex Poatan"],
+    content: `<img src="/blog-images/resultado-ufc-335-capa.webp" alt="Capa: resultado do UFC 335, quem venceu em 12/12" width="1536" height="1024" loading="eager" style="width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem;" />
+<blockquote><p><strong>Esta página é atualizada assim que sair o resultado.</strong> O UFC 335 é no sábado, 12 de dezembro de 2026, na T-Mobile Arena, em Las Vegas, com card principal às 23h (Brasília). Cada resultado entra aqui com fonte oficial ou de dois veículos.</p></blockquote>
+
+<h2>Quem ganhou Charles Oliveira x Diego Lopes?</h2>
+<p>Aguardando o evento (12/12). A luta principal é no peso-leve e vale o cinturão BMF, o título simbólico do "lutador mais casca-grossa" do UFC. Segundo o próprio UFC, é a quinta disputa desse cinturão. Os dois aparecem com a bandeira do Brasil na página oficial do evento, então o card tem uma luta principal entre brasileiros.</p>
+
+<h2>Quem ganhou Alex Poatan x Sergei Pavlovich?</h2>
+<p>Aguardando o evento (12/12). A luta co-principal é no peso-pesado: Alex "Poatan" Pereira enfrenta o russo Sergei Pavlovich.</p>
+
+<h2>Card completo e resultados do UFC 335</h2>
+<table><thead><tr><th>Luta</th><th>Categoria</th><th>Resultado</th></tr></thead><tbody>
+<tr><td colspan="3"><strong>Card principal (23h)</strong></td></tr>
+<tr><td><strong>Charles Oliveira</strong> x <strong>Diego Lopes</strong></td><td>Peso-leve (cinturão BMF)</td><td>Aguardando o evento (12/12)</td></tr>
+<tr><td><strong>Alex Pereira</strong> x Sergei Pavlovich</td><td>Peso-pesado</td><td>Aguardando o evento (12/12)</td></tr>
+<tr><td>Brandon Moreno x Charles Johnson</td><td>Peso-mosca</td><td>Aguardando o evento (12/12)</td></tr>
+<tr><td>Damian Pinas x Baisangur Susurkaev</td><td>Peso-médio</td><td>Aguardando o evento (12/12)</td></tr>
+<tr><td>Kyler Phillips x Ethyn Ewing</td><td>Peso-galo</td><td>Aguardando o evento (12/12)</td></tr>
+<tr><td colspan="3"><strong>Card preliminar (a partir das 19h)</strong></td></tr>
+<tr><td>Jacqueline Cavalcanti x Michelle Montague</td><td>Peso-galo feminino</td><td>Aguardando o evento (12/12)</td></tr>
+<tr><td>Quentin Pasley x Junior Tafa</td><td>Peso meio-pesado</td><td>Aguardando o evento (12/12)</td></tr>
+<tr><td><strong>Roque Conceição</strong> x Nilson Rojas</td><td>Peso-mosca</td><td>Aguardando o evento (12/12)</td></tr>
+</tbody></table>
+<p>O card é o publicado na página oficial do UFC em 27/11. Até a pesagem ainda pode haver troca de lutador, e a página é ajustada se isso acontecer.</p>
+
+<h2>Resultados dos brasileiros no UFC 335</h2>
+<p>Pela bandeira da página oficial, são quatro brasileiros no card: <strong>Charles Oliveira</strong> e <strong>Diego Lopes</strong>, na luta principal, <strong>Alex Pereira</strong>, no co-principal, e <strong>Roque Conceição</strong>, no card preliminar. Quem vencer entra aqui no dia.</p>
+
+<h2>Que horas começa o UFC 335 e onde assistir</h2>
+<ul>
+<li><strong>Card preliminar:</strong> blocos às 19h e às 21h (Brasília).</li>
+<li><strong>Card principal:</strong> 23h (Brasília).</li>
+<li><strong>Onde assistir:</strong> no <strong>Paramount+</strong>, que a página oficial do UFC indica para o Brasil.</li>
+</ul>
+
+<h2>Como os lutadores chegam à luta</h2>
+<p>Todos passam pela pesagem oficial na véspera. Entenda o processo em <a href="/blog/corte-de-peso-ufc">corte de peso no UFC</a> e como é a preparação em <a href="/blog/treino-de-lutador-mma">treino de lutador de MMA</a>.</p>
+
+<h2>Não se compare</h2>
+<p>Cada lutador tem a sua história, e você tem a sua. O que dá certo é um treino que você consiga seguir por anos. Se quiser montar o seu comigo, <a href="/consultoria-online">conheça o acompanhamento</a> ou fale comigo pelo WhatsApp no fim da página.</p>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.ufc.com.br/event/ufc-335" target="_blank" rel="noopener noreferrer">UFC — UFC 335: Oliveira x Lopes (página oficial: card, categorias, bandeiras, horários e transmissão, conferida em 27/11/2026)</a></li>
+<li><a href="https://www.bjpenn.com/mma-news/charles-oliveira/ufc-335-main-card-confirmed-charles-oliveira-vs-diego-lopes-officially-headlines/" target="_blank" rel="noopener noreferrer">BJPenn.com — UFC 335 main card confirmed, Oliveira x Lopes pelo cinturão BMF</a></li>
+<li><a href="https://bloodyelbow.com/2026/11/15/ufc-335-gets-new-main-card-matchup-announced-less-than-a-month-out-via-released-bout-order/" target="_blank" rel="noopener noreferrer">Bloody Elbow — ordem das lutas do UFC 335</a></li>
+</ul>`,
+    faq: [
+      { question: "Quem ganhou Charles Oliveira x Diego Lopes?", answer: "A luta é no sábado, 12 de dezembro de 2026, em Las Vegas. O resultado entra nesta página assim que sair, com fonte oficial ou de dois veículos." },
+      { question: "Quem ganhou Alex Poatan x Pavlovich?", answer: "A luta co-principal do UFC 335 é no sábado, 12 de dezembro. O resultado entra nesta página assim que sair." },
+      { question: "Quando é o UFC 335?", answer: "Sábado, 12 de dezembro de 2026, na T-Mobile Arena, em Las Vegas. Card preliminar a partir das 19h e principal às 23h, horário de Brasília." },
+      { question: "Onde assistir ao UFC 335?", answer: "No Paramount+, que a página oficial do UFC indica para o Brasil." },
+      { question: "Quais brasileiros lutam no UFC 335?", answer: "Pela bandeira da página oficial: Charles Oliveira e Diego Lopes (luta principal), Alex Pereira (co-principal) e Roque Conceição (card preliminar)." },
+    ],
+  },
+  {
     slug: "ufc-vegas-123-moicano-nolan",
     title: "Moicano x Nolan: horário, onde assistir e card do UFC Vegas 123",
     metaTitle: "Moicano x Nolan: Horário e Onde Assistir o UFC Vegas 123",
