@@ -49,6 +49,7 @@ import {
   velocidadeMedida,
   velocidadeValida,
   origemDoMet,
+  parseInteiro,
 } from "../lib/caminhada";
 import { formataTempo as formataTempoAud } from "../lib/polichinelo";
 import { ARTIGOS_COM_CALCULADORA_TDEE } from "../lib/tdee";
@@ -239,6 +240,10 @@ ok("metodologia: 3 km/h diz que o valor fica preso na ponta, não 'interpolado'"
 ok("metodologia: 4,5 km/h é interpolado", /interpolado/.test(origemDoMet(4.5)));
 ok("kcal com separador de milhar no card, no compartilhar e no líquido", (compCam.match(/arredondaKcal\([^)]*\)\)?\.toLocaleString\("pt-BR"\)/g) ?? []).length >= 4);
 ok("modo passos mostra a cadência, não uma distância que a página diz não calcular", /Cadência usada/.test(compCam));
+
+ok("passos com ponto ou espaço de milhar: '10.000' e '10 000' viram 10000", parseInteiro("10.000") === 10000 && parseInteiro("10 000") === 10000 && parseInteiro("1.500") === 1500);
+ok("campo inteiro continua aceitando o resto", parseInteiro("7500") === 7500 && parseInteiro("1.5") === 1.5 && parseInteiro("abc") === null && parseInteiro("") === null);
+ok("passos e meta usam parseInteiro", /parseInteiro\(passosTexto\)/.test(compCam) && /parseInteiro\(kcalTexto\)/.test(compCam));
 
 console.log(`\n${falhas === 0 ? "TUDO OK" : `${falhas} FALHA(S)`}\n`);
 process.exit(falhas === 0 ? 0 : 1);

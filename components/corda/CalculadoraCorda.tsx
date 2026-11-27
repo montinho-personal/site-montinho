@@ -35,6 +35,9 @@ import {
   pulandoValido,
   ritmo,
   type RitmoId,
+  descansoEfetivo,
+  MINUTOS_PULANDO_ALERTA,
+  NOTA_VOLUME_ALTO_CORDA,
 } from "@/lib/corda";
 
 /**
@@ -92,7 +95,7 @@ export default function CalculadoraCorda({ placement }: { placement: string }) {
   const blocosOk = blocosValidos(blocos);
   const pulando = parseNumero(pulandoTexto);
   const pulandoOk = pulandoValido(pulando);
-  const descanso = parseNumero(descansoTexto);
+  const descanso = descansoEfetivo(descansoTexto, blocos, parseNumero);
   const descansoOk = descansoValido(descanso);
 
   const resultado = pesoOk && blocosOk && pulandoOk && descansoOk ? calcula(peso, rt, blocos, pulando, descanso) : null;
@@ -213,11 +216,13 @@ export default function CalculadoraCorda({ placement }: { placement: string }) {
       </div>
       <p className="text-gray-400 text-sm mb-6 min-h-[20px] max-w-xl" data-testid="ajuda-blocos">
         {!blocosOk && blocosTexto.trim() !== ""
-          ? `Use de 1 a ${BLOCOS_MAX} blocos, em número inteiro.`
+          ? `Use de 1 a ${int(BLOCOS_MAX)} blocos, em número inteiro.`
           : !pulandoOk && pulandoTexto.trim() !== ""
-            ? `Cada bloco pode ter de ${PULANDO_MIN} a ${PULANDO_MAX} segundos.`
+            ? `Cada bloco pode ter de ${int(PULANDO_MIN)} a ${int(PULANDO_MAX)} segundos.`
             : !descansoOk && descansoTexto.trim() !== ""
               ? `O descanso vai de 0 a ${DESCANSO_MAX} segundos.`
+              : blocosOk && blocos > 1 && pulandoOk && descansoTexto.trim() === ""
+                ? "Falta o descanso entre os blocos, em segundos (se não parou, use 0)."
               : "Pulou direto? Use 1 bloco com o tempo todo, em segundos, e 0 de descanso."}
       </p>
 
@@ -256,6 +261,12 @@ export default function CalculadoraCorda({ placement }: { placement: string }) {
                 <p className="text-gray-400 text-sm mt-2">no máximo, pela conta linear</p>
               </div>
             </div>
+
+            {resultado.minutosPulando > MINUTOS_PULANDO_ALERTA && (
+              <p className="text-gray-300 leading-relaxed mb-4 max-w-2xl border-l-2 pl-4" style={{ borderColor: "#BA9E50" }} data-testid="alerta-volume">
+                {NOTA_VOLUME_ALTO_CORDA}
+              </p>
+            )}
 
             <p className="text-gray-300 leading-relaxed mb-4 max-w-2xl">
               Descontando o que você gastaria parado, o treino acrescentou cerca de{" "}

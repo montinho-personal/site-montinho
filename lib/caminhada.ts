@@ -64,6 +64,17 @@ import {
 export { arredondaKcal, formataTempo, kcalPorMinuto, parseNumero, KCAL_POR_KG_GORDURA };
 export type { Fonte };
 
+/**
+ * Para campo de número inteiro (passos, kcal): aceita o ponto ou o espaço de
+ * milhar que se digita no Brasil ("10.000", "10 000"), além do que parseNumero
+ * já aceita. Só vale com grupos de 3 dígitos, então "1.5" continua decimal.
+ */
+export function parseInteiro(texto: string): number | null {
+  const t = texto.trim();
+  if (/^\d{1,3}([. ]\d{3})+$/.test(t)) return Number(t.replace(/[. ]/g, ""));
+  return parseNumero(t);
+}
+
 /* ───────────────────────── Fontes ───────────────────────── */
 
 /** O Compêndio, na parte que interessa aqui: as faixas de caminhada. */

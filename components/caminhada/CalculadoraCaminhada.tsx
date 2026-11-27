@@ -50,6 +50,7 @@ import {
   metDaInclinacao,
   metNoPlano,
   minutosValidos,
+  parseInteiro,
   parseNumero,
   passosValidos,
   pesoValido,
@@ -133,9 +134,9 @@ export default function CalculadoraCaminhada({ placement }: { placement: string 
   const minutosOk = minutosValidos(minutos);
   const km = useMemo(() => parseNumero(kmTexto), [kmTexto]);
   const kmOk = kmValidos(km);
-  const passos = useMemo(() => parseNumero(passosTexto), [passosTexto]);
+  const passos = useMemo(() => parseInteiro(passosTexto), [passosTexto]);
   const passosOk = passosValidos(passos);
-  const alvoKcal = useMemo(() => parseNumero(kcalTexto), [kcalTexto]);
+  const alvoKcal = useMemo(() => parseInteiro(kcalTexto), [kcalTexto]);
   const kcalOk = kcalValida(alvoKcal);
 
   const rit = ritmoDe(ritmoId);
