@@ -262,13 +262,15 @@ pedir:
 
 Pauta é sugestão: nada é escrito sem o Montinho escolher.
 
-# Rotina diária de revisão: 2 por dia
+# Rotina diária de revisão: 1 por dia
 
-Pedido do Montinho em 16/11/2026. Todo dia, uma tarefa agendada revisa
-**2 artigos** com pesquisa do SerpApi, aplica **2 itens** de "Viram seção
-ou FAQ de um artigo que já existe" (desde 18/11/2026) e alimenta a pauta.
+Pedido do Montinho em 16/11/2026; reduzido de 2 para 1 revisão por dia em
+26/11/2026, para a soma dos sites caber na cota do SerpApi. Todo dia, uma
+tarefa agendada revisa **1 artigo** com pesquisa do SerpApi, aplica **2
+itens** de "Viram seção ou FAQ de um artigo que já existe" (desde
+18/11/2026) e alimenta a pauta.
 
-**Por que 2 por dia (decisão de ritmo):** cada revisão exige julgamento
+**Por que 1 por dia (decisão de ritmo):** cada revisão exige julgamento
 por item (o que entra, o que sai, fonte de cada dado), e a cota do SerpApi
 é uma só para todos os sites do Montinho (plano pago desde 16/11/2026,
 1.000 buscas por mês; o orçamento somado das rotinas está no CLAUDE.md,
@@ -282,8 +284,9 @@ pelo Supermetrics, dos últimos 28 dias), um de cada vez.
 **Orçamento de busca por revisão:** a busca principal (página + 
 autocompletar = 2), mais 1 se a visão de IA vier em duas etapas. Busca
 secundária só se a principal vier fraca (sem PAA e sem outras pesquisas).
-Não repetir busca já feita. Se o SerpApi responder sem cota ou fora do
-ar, pare e avise o Montinho; não peça print sem ele concordar.
+Não repetir busca já feita. Se o SerpApi responder sem cota, com limite
+de requisições ou fora do ar, pare e avise o Montinho; não peça print sem
+ele concordar.
 
 **Cada revisão segue o fluxo inteiro:** canibalização, fontes (fato só com
 fonte oficial ou dois veículos), H2 e FAQ do que as pessoas buscam,
@@ -294,7 +297,7 @@ Título e descrição: só proposta (ATUAL / PROPOSTA / MOTIVO), nunca troca
 sem o Montinho aprovar.
 
 **Mais 2 itens de "Viram seção ou FAQ" por dia** (pedido do Montinho em
-18/11/2026). Além das 2 revisões, aplique 2 itens da seção 2 de
+18/11/2026). Além da revisão, aplique 2 itens da seção 2 de
 `docs/seo/pauta.md`, os de maior volume primeiro: a seção ou o FAQ entra
 no artigo indicado, com a pesquisa que já está registrada (sem busca nova
 no SerpApi). Mesmo critério de qualquer conteúdo: fato só com fonte,
