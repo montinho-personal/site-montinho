@@ -339,13 +339,15 @@ export function arredondaQuantidade(q: number): number {
 /** Tempo legível. Abaixo de um minuto vira segundos; acima de uma hora, horas. */
 export function formataTempo(minutos: number): string {
   if (!Number.isFinite(minutos) || minutos <= 0) return "—";
-  if (minutos < 1) return `${Math.round(minutos * 60)} s`;
-  if (minutos < 60) {
-    const m = Math.round(minutos);
-    return `${m} ${m === 1 ? "minuto" : "minutos"}`;
+  if (minutos < 1) {
+    const s = Math.round(minutos * 60);
+    if (s < 60) return `${s} s`;
   }
-  const h = Math.floor(minutos / 60);
-  const m = Math.round(minutos % 60);
+  /* Arredonda o total antes de separar as horas: 119,6 min é "2 h", não "1 h 60 min". */
+  const total = Math.max(1, Math.round(minutos));
+  if (total < 60) return `${total} ${total === 1 ? "minuto" : "minutos"}`;
+  const h = Math.floor(total / 60);
+  const m = total % 60;
   return m === 0 ? `${h} h` : `${h} h ${m} min`;
 }
 

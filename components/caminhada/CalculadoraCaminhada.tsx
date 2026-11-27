@@ -42,6 +42,7 @@ import {
   formataTempo,
   formataVelocidade,
   fraseContexto,
+  origemDoMet,
   inclinacaoValida,
   kcalLiquida,
   kcalValida,
@@ -54,7 +55,6 @@ import {
   pesoValido,
   ritmo as ritmoDe,
   cadenciaPara,
-  velocidadeMedida,
   velocidadeValida,
   type RitmoId,
 } from "@/lib/caminhada";
@@ -190,10 +190,10 @@ export default function CalculadoraCaminhada({ placement }: { placement: string 
   }
 
   const linhasShare = resultado
-    ? [`${formataTempo(resultado.minutos)} de caminhada`, `≈ ${formataKm(resultado.km)}`, `≈ ${arredondaKcal(resultado.kcal)} kcal`]
+    ? [`${formataTempo(resultado.minutos)} de caminhada`, `≈ ${formataKm(resultado.km)}`, `≈ ${arredondaKcal(resultado.kcal).toLocaleString("pt-BR")} kcal`]
     : [];
   const resumoWhats = resultado
-    ? `${formataTempo(resultado.minutos)} de caminhada ≈ ${arredondaKcal(resultado.kcal)} kcal`
+    ? `${formataTempo(resultado.minutos)} de caminhada ≈ ${arredondaKcal(resultado.kcal).toLocaleString("pt-BR")} kcal`
     : null;
 
   const idc = (s: string) => `${s}-cam-${placement}`;
@@ -501,7 +501,7 @@ export default function CalculadoraCaminhada({ placement }: { placement: string 
               <div className={modo === "meta" ? "border border-white/15 p-5" : "border border-[#BA9E50]/60 bg-[#BA9E50]/[0.06] p-5"}>
                 <p className="text-gray-400 text-xs mb-1">Gasto estimado</p>
                 <p className="text-white font-bold text-4xl sm:text-5xl leading-none" style={h}>
-                  {arredondaKcal(resultado.kcal)}
+                  {arredondaKcal(resultado.kcal).toLocaleString("pt-BR")}
                   <span className="text-lg font-normal text-gray-300"> kcal</span>
                 </p>
               </div>
@@ -512,9 +512,9 @@ export default function CalculadoraCaminhada({ placement }: { placement: string 
                 </p>
               </div>
               <div className="border border-white/15 p-5">
-                <p className="text-gray-400 text-xs mb-1">{modo === "passos" ? "Distância" : "Distância · passos"}</p>
+                <p className="text-gray-400 text-xs mb-1">{modo === "passos" ? "Cadência usada" : "Distância · passos"}</p>
                 <p className="text-white font-bold text-3xl sm:text-4xl leading-none" style={h}>
-                  {formataKm(resultado.km)}
+                  {modo === "passos" ? <>{cadencia}<span className="text-lg font-normal text-gray-300"> passos/min</span></> : formataKm(resultado.km)}
                 </p>
                 {modo !== "passos" && (
                   <p className="text-gray-400 text-sm mt-1">≈ {arredondaPassos(resultado.passos).toLocaleString("pt-BR")} passos</p>
@@ -558,16 +558,14 @@ export default function CalculadoraCaminhada({ placement }: { placement: string 
                   </p>
                   <p>
                     O MET no plano ({fmt(metNoPlano(resultado.velocidade))}) é{" "}
-                    {velocidadeMedida(resultado.velocidade)
-                      ? `o do Compêndio de Atividades Físicas para ${rit.faixa}`
-                      : "interpolado entre as faixas de velocidade que o Compêndio de Atividades Físicas mediu"}
+                    {origemDoMet(resultado.velocidade)}
                     .
                     {resultado.inclinacao > 0 &&
                       ` A inclinação soma ${fmt(metDaInclinacao(resultado.velocidade, resultado.inclinacao))} METs, pelo termo vertical da equação de caminhada da ACSM (1,8 × velocidade em m/min × inclinação).`}
                   </p>
                   <p>
                     Esse gasto é bruto. Descontando o que você gastaria parado nesse tempo (1 MET), a caminhada acrescenta cerca de{" "}
-                    <span className="text-white">{arredondaKcal(kcalLiquida(resultado, peso))} kcal</span> ao seu dia.
+                    <span className="text-white">{arredondaKcal(kcalLiquida(resultado, peso)).toLocaleString("pt-BR")} kcal</span> ao seu dia.
                   </p>
                 </div>
               )}

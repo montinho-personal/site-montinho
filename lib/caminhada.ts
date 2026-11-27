@@ -280,6 +280,24 @@ export function velocidadeMedida(velocidadeKmH: number): boolean {
 }
 
 /**
+ * De onde saiu o MET no plano, em palavras, para a metodologia não mentir:
+ * ponto medido (com a faixa do próprio ponto, não a do botão marcado),
+ * preso na ponta (abaixo do primeiro ou acima do último ponto) ou
+ * interpolado entre dois pontos.
+ */
+export function origemDoMet(velocidadeKmH: number): string {
+  const medido = RITMOS.find((r) => Math.abs(r.velocidade - velocidadeKmH) < 0.001);
+  if (medido) return `o do Compêndio de Atividades Físicas para ${medido.faixa}`;
+  const primeiro = RITMOS[0];
+  const ultimo = RITMOS[RITMOS.length - 1];
+  if (velocidadeKmH < primeiro.velocidade)
+    return `o do ponto mais lento que a calculadora usa do Compêndio de Atividades Físicas (${formataVelocidade(primeiro.velocidade)}); abaixo disso o valor fica igual, sem interpolar`;
+  if (velocidadeKmH > ultimo.velocidade)
+    return `o do ponto mais rápido que a calculadora usa do Compêndio de Atividades Físicas (${formataVelocidade(ultimo.velocidade)}); acima disso o valor fica igual, porque já se aproxima da corrida`;
+  return "interpolado entre as faixas de velocidade que o Compêndio de Atividades Físicas mediu";
+}
+
+/**
  * O acréscimo da inclinação, em METs.
  *
  * Termo vertical da equação da ACSM: 1,8 × v(m/min) × inclinação(fração),
@@ -411,7 +429,7 @@ export function fraseContexto(pesoKg: number, r: Resultado): string {
   return (
     `Para uma pessoa de ${peso} kg, uma caminhada de ${formataTempo(r.minutos)} a ` +
     `${formataVelocidade(r.velocidade)}${onde} representa um gasto estimado de aproximadamente ` +
-    `${arredondaKcal(r.kcal)} kcal — cerca de ${formataKm(r.km)} e ${arredondaPassos(r.passos).toLocaleString("pt-BR")} passos.`
+    `${arredondaKcal(r.kcal).toLocaleString("pt-BR")} kcal — cerca de ${formataKm(r.km)} e ${arredondaPassos(r.passos).toLocaleString("pt-BR")} passos.`
   );
 }
 
