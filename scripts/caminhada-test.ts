@@ -245,5 +245,7 @@ ok("passos com ponto ou espaço de milhar: '10.000' e '10 000' viram 10000", par
 ok("campo inteiro continua aceitando o resto", parseInteiro("7500") === 7500 && parseInteiro("1.5") === 1.5 && parseInteiro("abc") === null && parseInteiro("") === null);
 ok("passos e meta usam parseInteiro", /parseInteiro\(passosTexto\)/.test(compCam) && /parseInteiro\(kcalTexto\)/.test(compCam));
 
+ok("velocidade digitada inválida esconde o resultado (não mostra o do ritmo)", /if \(!pesoOk \|\| velocidadeInvalida\) return null/.test(compCam));
+
 console.log(`\n${falhas === 0 ? "TUDO OK" : `${falhas} FALHA(S)`}\n`);
 process.exit(falhas === 0 ? 0 : 1);

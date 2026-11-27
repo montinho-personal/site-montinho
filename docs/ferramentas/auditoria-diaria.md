@@ -11,8 +11,8 @@ topo (a segunda volta pega o que mudou no meio do caminho).
 |---|---|---|---|---|---|
 | 1 | `/ferramentas/calculadora-calorias-bicicleta` | 32673 | 76 | 26/11/2026 | Contas certas (39 casos, nenhum acima de 1 kcal). 4 correções de texto e validação; pendente de decisão: base do kg/mês e escada de watts 2011 x 2024 |
 | 2 | `/ferramentas/calculadora-creatina` | 19150 | 55 | 26/11/2026 | Contas certas (mais de 40 casos, nenhum acima de 0,1 g). 6 correções de texto e dosador; pendente de decisão: saturação sem teto em pesos altos e fontes Gann/Candow/Cribb não verificadas |
-| 3 | `/ferramentas/calculadora-calorias-pular-corda` | 18909 | 109 |  |  |
-| 4 | `/ferramentas/calculadora-calorias-caminhada` | 16905 | 14 |  |  |
+| 3 | `/ferramentas/calculadora-calorias-pular-corda` | 18909 | 109 | 27/11/2026 | Contas certas (11 casos e tabelas, METs do Compêndio 2011 conferidos). 5 correções: tempo '1 h 60 min', descanso vazio, alerta acima de 1 h, '1.800', fonte da corrida no FAQ |
+| 4 | `/ferramentas/calculadora-calorias-caminhada` | 16905 | 14 | 27/11/2026 | Contas certas nos modos tempo, km, passos e meta (24 casos). 7 correções de texto e validação; pendente de decisão: MET da esteira interpolado dentro da faixa e piso de 3,0 abaixo de 4 km/h |
 | 5 | `/ferramentas/calculadora-calorias-escada` | 16892 | 85 |  |  |
 | 6 | `/ferramentas/substituicao-de-alimentos` | 16090 | 77 |  |  |
 | 7 | `/ferramentas/calculadora-whey` | 14463 | 173 |  |  |
@@ -75,6 +75,41 @@ topo (a segunda volta pega o que mudou no meio do caminho).
 
 Uma entrada por dia: o que foi conferido, contas refeitas (com a fonte da
 fórmula), erros achados e corrigidos, e o que ficou pendente de decisão do Montinho.
+
+### 27/11/2026: calculadora de calorias pulando corda e calculadora de calorias da caminhada
+
+Especialistas: fisiologista do exercício (só a página e o Compêndio, sem código), QA no navegador (computador e iPhone 13) e revisor de código.
+
+**Contas refeitas (70 kg salvo indicação; kcal/min = MET × 3,5 × kg ÷ 200):**
+
+| Ferramenta | Caso | Esperado | Mostrado |
+|---|---|---|---|
+| Corda | moderado, 10×30 s / 60 s | 86,6 kcal | 87 |
+| Corda | moderado, 15×60 s / 45 s, 3× | 233,5 kcal; 0,34 kg/mês | 235; 0,3 |
+| Corda | 30 kg, 1×60 s (mínimo) | 6,2 kcal | 6 |
+| Corda | 250 kg rápido, 1×60 s (máximo) | 53,8 kcal | 54 |
+| Corda | 1×1.800 s moderado | 433,6 kcal | 435 |
+| Caminhada | 30 min moderado (3,8 MET) | 139,6 kcal | 140 |
+| Caminhada | 30 kg / 250 kg, 30 min | 59,9 / 498,8 | 60 / 500 |
+| Caminhada | 10.000 passos moderado | 465,5 kcal; 8,3 km | 465; 8,3 km |
+| Caminhada | meta 300 kcal moderado | 64,4 min | 1 h 4 min |
+| Caminhada | 95 kg, 6 km/h, 9%, 45 min | 705,5 kcal | 705 |
+
+**Corrigido (com teste em `scripts/corda-test.ts` e `scripts/caminhada-test.ts`):**
+- `formataTempo` (`lib/polichinelo.ts`, usado por várias calculadoras) mostrava "1 h 60 min" e "60 minutos"; agora arredonda antes de separar as horas.
+- Caminhada: "Como calculamos" citava a faixa do botão de ritmo, não a da velocidade digitada; abaixo de 4 km/h dizia "interpolado" quando o valor fica preso na ponta.
+- Caminhada: kcal sem ponto de milhar (cartão, frase, compartilhar, WhatsApp).
+- Caminhada: modo passos mostrava distância; agora mostra a cadência usada.
+- Caminhada: "a distância também quase dobra" virou "cresce mais de 60%".
+- Caminhada: passos e meta aceitam "10.000" e "10 000".
+- Caminhada: velocidade digitada inválida não mostra mais o resultado do ritmo como se fosse o dela.
+- Corda: descanso vazio com 1 bloco vale 0; com mais blocos, a tela diz que falta.
+- Corda: aviso acima de 1 h pulando (o QA chegou a 167 kg/mês sem aviso).
+- Corda: "1.800 segundos" com ponto; FAQ diz que a corrida a 10 km/h (385 kcal) sai da equação da ACSM, a mesma da calculadora de corrida (o fisiologista esperava o Compêndio 2024, 9,3 MET, cerca de 340).
+
+**Espera decisão do Montinho (mudança de fórmula):**
+1. Esteira: o MET no plano é interpolado também dentro das faixas do Compêndio (4,8 km/h dá 3,6 MET, o Compêndio dá 3,8). Diferença de até cerca de 19 kcal em 30 min. Opção A: manter e dizer na página que interpola dentro da faixa. Opção B: usar o valor da faixa.
+2. Abaixo de 4 km/h o MET fica em 3,0; o Compêndio 2024 dá 2,3 abaixo de 3,2 km/h e 2,8 entre 3,2 e 3,9. A 3 km/h a página superestima cerca de 26 kcal em 30 min.
 
 ### 26/11/2026: calculadora de calorias na bicicleta e calculadora de creatina
 

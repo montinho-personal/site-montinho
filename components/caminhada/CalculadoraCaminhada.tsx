@@ -149,8 +149,10 @@ export default function CalculadoraCaminhada({ placement }: { placement: string 
 
   /* O resultado de cada modo. Null enquanto faltar dado — a view não inventa zero. */
   /* Conta barata: sem useMemo, recalcula a cada render. */
+  /* Velocidade digitada e inválida: sem resultado, para não mostrar o do ritmo como se fosse o dela. */
+  const velocidadeInvalida = mostrarEsteira && velocidadeTexto.trim() !== "" && !velocidadeValida(velocidadeCustom);
   const resultado = (() => {
-    if (!pesoOk) return null;
+    if (!pesoOk || velocidadeInvalida) return null;
     if (modo === "tempo") return minutosOk ? deTempo(minutos, peso, velocidade, incl, cadencia) : null;
     if (modo === "distancia") return kmOk ? deDistancia(km, peso, velocidade, incl, cadencia) : null;
     if (modo === "passos") return passosOk ? dePassos(passos, peso, velocidade, incl, cadencia) : null;

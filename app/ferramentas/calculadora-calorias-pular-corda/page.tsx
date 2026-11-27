@@ -157,7 +157,7 @@ const faq: ItemFAQ[] = [
   },
   {
     question: "Pular corda queima mais calorias que correr?",
-    answer: `Por minuto pulando, sim: em ritmo moderado, para ${PESO} kg, a corda gasta cerca de ${kc(POR_MIN * 30)} kcal em 30 minutos contínuos, contra ${kc(CORRIDA_30)} kcal correndo a 8 km/h e ${kc(CORRIDA_10KMH_30)} a 10 km/h. Mas a corrida se sustenta por 30 minutos seguidos e a corda quase nunca: num treino real de corda de 30 minutos, com descansos, o gasto fica perto de ${kc(BLOCOS_30.kcal)} kcal — menos que a corrida contínua.`,
+    answer: `Por minuto pulando, sim: em ritmo moderado, para ${PESO} kg, a corda gasta cerca de ${kc(POR_MIN * 30)} kcal em 30 minutos contínuos, contra ${kc(CORRIDA_30)} kcal correndo a 8 km/h e ${kc(CORRIDA_10KMH_30)} a 10 km/h (a corrida pela equação da ACSM, a mesma da calculadora de corrida do site). Mas a corrida se sustenta por 30 minutos seguidos e a corda quase nunca: num treino real de corda de 30 minutos, com descansos, o gasto fica perto de ${kc(BLOCOS_30.kcal)} kcal — menos que a corrida contínua.`,
   },
   {
     question: "Pular corda emagrece rápido?",

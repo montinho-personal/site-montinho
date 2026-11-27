@@ -107,5 +107,7 @@ ok("tela avisa quando falta o descanso", /Falta o descanso entre os blocos/.test
 ok("alerta de volume acima de 1 h pulando", MINUTOS_PULANDO_ALERTA === 60 && /resultado\.minutosPulando > MINUTOS_PULANDO_ALERTA/.test(comp));
 ok("mensagem de limite com ponto de milhar (1.800)", /int\(PULANDO_MAX\)/.test(comp));
 
+ok("FAQ diz de onde vem a corrida a 10 km/h", /equação da ACSM, a mesma da calculadora de corrida/.test(readFileSync("app/ferramentas/calculadora-calorias-pular-corda/page.tsx", "utf8")));
+
 console.log(`\n${falhas === 0 ? "TUDO OK" : `${falhas} FALHA(S)`}\n`);
 process.exit(falhas === 0 ? 0 : 1);
