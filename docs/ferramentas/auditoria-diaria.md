@@ -12,7 +12,7 @@ topo (a segunda volta pega o que mudou no meio do caminho).
 | 1 | `/ferramentas/calculadora-calorias-bicicleta` | 32673 | 76 | 26/11/2026 | Contas certas (39 casos, nenhum acima de 1 kcal). 4 correções de texto e validação; pendente de decisão: base do kg/mês e escada de watts 2011 x 2024 |
 | 2 | `/ferramentas/calculadora-creatina` | 19150 | 55 | 26/11/2026 | Contas certas (mais de 40 casos, nenhum acima de 0,1 g). 6 correções de texto e dosador; pendente de decisão: saturação sem teto em pesos altos e fontes Gann/Candow/Cribb não verificadas |
 | 3 | `/ferramentas/calculadora-calorias-pular-corda` | 18909 | 109 | 27/11/2026 | Contas certas (11 casos e tabelas, METs do Compêndio 2011 conferidos). 5 correções: tempo '1 h 60 min', descanso vazio, alerta acima de 1 h, '1.800', fonte da corrida no FAQ |
-| 4 | `/ferramentas/calculadora-calorias-caminhada` | 16905 | 14 | 27/11/2026 | Contas certas nos modos tempo, km, passos e meta (24 casos). 7 correções de texto e validação; pendente de decisão: MET da esteira interpolado dentro da faixa e piso de 3,0 abaixo de 4 km/h |
+| 4 | `/ferramentas/calculadora-calorias-caminhada` | 16905 | 14 | 27/11/2026 | Contas certas nos modos tempo, km, passos e meta (24 casos). 7 correções de texto e validação; MET da esteira passou a ser o da faixa do Compêndio e abaixo de 4 km/h usa 2,3 e 2,8 (decidido e aplicado em 27/11) |
 | 5 | `/ferramentas/calculadora-calorias-escada` | 16892 | 85 |  |  |
 | 6 | `/ferramentas/substituicao-de-alimentos` | 16090 | 77 |  |  |
 | 7 | `/ferramentas/calculadora-whey` | 14463 | 173 |  |  |
@@ -107,7 +107,9 @@ Especialistas: fisiologista do exercício (só a página e o Compêndio, sem có
 - Corda: aviso acima de 1 h pulando (o QA chegou a 167 kg/mês sem aviso).
 - Corda: "1.800 segundos" com ponto; FAQ diz que a corrida a 10 km/h (385 kcal) sai da equação da ACSM, a mesma da calculadora de corrida (o fisiologista esperava o Compêndio 2024, 9,3 MET, cerca de 340).
 
-**Espera decisão do Montinho (mudança de fórmula):**
+**Decidido em 27/11 (o Montinho deixou a escolha para o bom senso da auditoria) e aplicado no mesmo dia:** opção B no item 1 (valor da faixa do Compêndio, sem interpolar) e correção do item 2 pelo Compêndio 2024 (2,3 METs abaixo de 3,2 km/h; 2,8 de 3,2 a 3,8 km/h). O 12-3-30 para 70 kg foi de 315 para 320 kcal (plano de 135 para 140) e o artigo `caminhada-na-esteira-inclinada` foi atualizado com os números novos (updatedAt 27/11). Teste em `scripts/caminhada-test.ts` trava cada faixa.
+
+**O que estava pendente:**
 1. Esteira: o MET no plano é interpolado também dentro das faixas do Compêndio (4,8 km/h dá 3,6 MET, o Compêndio dá 3,8). Diferença de até cerca de 19 kcal em 30 min. Opção A: manter e dizer na página que interpola dentro da faixa. Opção B: usar o valor da faixa.
 2. Abaixo de 4 km/h o MET fica em 3,0; o Compêndio 2024 dá 2,3 abaixo de 3,2 km/h e 2,8 entre 3,2 e 3,9. A 3 km/h a página superestima cerca de 26 kcal em 30 min.
 

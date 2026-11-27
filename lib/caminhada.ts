@@ -22,8 +22,8 @@
  *     kcal/min = MET × 3,5 × peso(kg) ÷ 200
  *
  * O MET da caminhada NO PLANO vem do Compêndio de Atividades Físicas
- * (edição 2024), que mede por faixa de velocidade. Entre uma faixa e outra
- * o valor é interpolado, e a metodologia diz isso em voz alta.
+ * (edição 2024), que mede por faixa de velocidade. A velocidade recebe o
+ * valor da faixa em que cai, sem interpolar (FAIXAS_PLANO, abaixo).
  *
  * A INCLINAÇÃO vem da equação de caminhada da ACSM, que separa o custo de
  * andar na horizontal do custo de subir:
@@ -262,50 +262,60 @@ export function inclinacaoValida(i: number | null): i is number {
 /* ───────────────────────── O MET ───────────────────────── */
 
 /**
- * MET no plano para uma velocidade qualquer.
+ * As faixas do Compêndio 2024 para caminhada no plano, superfície firme, em
+ * km/h (o Compêndio publica em mph; 1 mph = 1,609 km/h). Mudança de
+ * 27/11/2026, depois da auditoria, com o aval do Montinho: a velocidade digitada recebe o MET da
+ * faixa em que cai, sem interpolar, porque a página diz que o valor é o do
+ * Compêndio e a interpolação dava outro número dentro da mesma faixa
+ * (4,8 km/h saía com 3,6 MET; o Compêndio dá 3,8).
  *
- * Nos pontos medidos pelo Compêndio devolve o valor do Compêndio. Entre
- * dois pontos, interpola em linha reta — e fora das pontas segura no valor
- * da ponta, porque extrapolar uma reta para 8 km/h daria um número de
- * caminhada para o que já é corrida.
+ * O Compêndio deixa dois vãos sem medida: de 2,4 a 2,5 mph (3,9 a 4 km/h) e
+ * de 2,5 a 2,8 mph (4 a 4,5 km/h). Os dois ficam com o 3,0 de 2,5 mph, a
+ * medida logo abaixo, para não inflar o gasto de quem anda devagar.
+ *
+ * Abaixo de 3,2 km/h (2 mph) o valor é 2,3; de 3,2 a 3,8 km/h, 2,8. Até
+ * 27/11 a calculadora segurava em 3,0 abaixo de 4 km/h e superestimava
+ * quem anda mais devagar.
  */
-export function metNoPlano(velocidadeKmH: number): number {
-  const pontos = RITMOS.map((r) => ({ v: r.velocidade, met: r.met }));
-  if (velocidadeKmH <= pontos[0].v) return pontos[0].met;
-  const ultimo = pontos[pontos.length - 1];
-  if (velocidadeKmH >= ultimo.v) return ultimo.met;
-  for (let i = 0; i < pontos.length - 1; i++) {
-    const a = pontos[i];
-    const b = pontos[i + 1];
-    if (velocidadeKmH >= a.v && velocidadeKmH <= b.v) {
-      const t = (velocidadeKmH - a.v) / (b.v - a.v);
-      return a.met + t * (b.met - a.met);
-    }
-  }
-  return ultimo.met;
+export interface FaixaPlano {
+  /** Velocidade mínima da faixa, em km/h (inclusiva). */
+  desde: number;
+  met: number;
+  codigo: string;
+  faixa: string;
+}
+export const FAIXAS_PLANO: FaixaPlano[] = [
+  { desde: 0, met: 2.3, codigo: "17151", faixa: "menos de 3,2 km/h" },
+  { desde: 3.2, met: 2.8, codigo: "17152", faixa: "3,2 a 3,8 km/h" },
+  { desde: 3.9, met: 3.0, codigo: "17170", faixa: "cerca de 4 km/h (de 3,9 a 4,4 km/h a calculadora usa esse valor)" },
+  { desde: 4.5, met: 3.8, codigo: "17190", faixa: "4,5 a 5,5 km/h" },
+  { desde: 5.6, met: 4.8, codigo: "17200", faixa: "5,6 a 6,3 km/h" },
+  { desde: 6.4, met: 5.5, codigo: "17220", faixa: "6,4 a 7 km/h" },
+];
+
+/** A faixa do Compêndio em que a velocidade cai (arredondada a 1 casa, como se digita na esteira). */
+export function faixaDoPlano(velocidadeKmH: number): FaixaPlano {
+  const v = Math.round(velocidadeKmH * 10) / 10;
+  let achada = FAIXAS_PLANO[0];
+  for (const f of FAIXAS_PLANO) if (v >= f.desde) achada = f;
+  return achada;
 }
 
-/** A velocidade corresponde a um ponto medido, ou a conta interpolou? Para a metodologia dizer a verdade. */
+/** MET no plano: o da faixa do Compêndio em que a velocidade cai. */
+export function metNoPlano(velocidadeKmH: number): number {
+  return faixaDoPlano(velocidadeKmH).met;
+}
+
+/** A velocidade corresponde a um dos ritmos dos botões? */
 export function velocidadeMedida(velocidadeKmH: number): boolean {
   return RITMOS.some((r) => Math.abs(r.velocidade - velocidadeKmH) < 0.001);
 }
 
-/**
- * De onde saiu o MET no plano, em palavras, para a metodologia não mentir:
- * ponto medido (com a faixa do próprio ponto, não a do botão marcado),
- * preso na ponta (abaixo do primeiro ou acima do último ponto) ou
- * interpolado entre dois pontos.
- */
+/** De onde saiu o MET no plano, em palavras: sempre a faixa da velocidade usada, não a do botão marcado. */
 export function origemDoMet(velocidadeKmH: number): string {
-  const medido = RITMOS.find((r) => Math.abs(r.velocidade - velocidadeKmH) < 0.001);
-  if (medido) return `o do Compêndio de Atividades Físicas para ${medido.faixa}`;
-  const primeiro = RITMOS[0];
-  const ultimo = RITMOS[RITMOS.length - 1];
-  if (velocidadeKmH < primeiro.velocidade)
-    return `o do ponto mais lento que a calculadora usa do Compêndio de Atividades Físicas (${formataVelocidade(primeiro.velocidade)}); abaixo disso o valor fica igual, sem interpolar`;
-  if (velocidadeKmH > ultimo.velocidade)
-    return `o do ponto mais rápido que a calculadora usa do Compêndio de Atividades Físicas (${formataVelocidade(ultimo.velocidade)}); acima disso o valor fica igual, porque já se aproxima da corrida`;
-  return "interpolado entre as faixas de velocidade que o Compêndio de Atividades Físicas mediu";
+  const f = faixaDoPlano(velocidadeKmH);
+  const acima = velocidadeKmH > 7 ? "; acima de 7 km/h o valor fica igual, porque já se aproxima da corrida" : "";
+  return `o do Compêndio de Atividades Físicas para ${f.faixa}${acima}`;
 }
 
 /**
@@ -366,7 +376,7 @@ export function deDistancia(km: number, pesoKg: number, velocidade: number, incl
 
 /**
  * A cadência que corresponde a uma velocidade. Nos ritmos medidos é a do
- * ritmo; entre eles, interpolada como o MET. Sem isso, quem digita a
+ * ritmo; entre eles, interpolada (a cadência não vem do Compêndio, é contínua). Sem isso, quem digita a
  * velocidade da esteira no modo passos teria tempo por uma cadência e
  * distância por outra velocidade — dois números que não conversam.
  */
