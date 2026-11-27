@@ -397,7 +397,7 @@ export default function CalculadoraCaminhadaPage() {
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
               Muda mais do que a maioria imagina. Entre o passeio a 4 km/h e o passo quase de corrida a 6,5
-              km/h, o gasto por minuto quase dobra — e a distância percorrida no mesmo tempo também. A tabela é
+              km/h, o gasto por minuto quase dobra, e a distância percorrida no mesmo tempo cresce mais de 60%. A tabela é
               para {PESO_PADRAO} kg em 30 minutos, no plano.
             </p>
             <div className="overflow-x-auto mb-3">

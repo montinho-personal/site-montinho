@@ -97,6 +97,13 @@ export const BLOCOS_MAX = 40;
 export const PULANDO_MIN = 10;
 export const PULANDO_MAX = 1800;
 export const DESCANSO_MAX = 300;
+/** Acima disso pulando, a tela avisa que o número é fora do comum (auditoria de 27/11/2026). */
+export const MINUTOS_PULANDO_ALERTA = 60;
+export const NOTA_VOLUME_ALTO_CORDA =
+  "Mais de uma hora de corda só pulando é muito acima do que um treino costuma ter: confira os blocos e os segundos. Mesmo para quem aguenta, a conta linear fica cada vez mais otimista, porque o ritmo cai com o cansaço.";
+/** Descanso vazio vale 0 quando é 1 bloco só (não há intervalo); com mais blocos, falta o dado. */
+export const descansoEfetivo = (texto: string, blocos: number | null, parse: (t: string) => number | null): number | null =>
+  texto.trim() === "" && blocos === 1 ? 0 : parse(texto);
 export const VEZES_SEMANA = [1, 2, 3, 4, 5] as const;
 
 export const pesoValido = (p: number | null): p is number => p !== null && p >= PESO_MIN && p <= PESO_MAX;

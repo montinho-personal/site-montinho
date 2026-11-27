@@ -7,7 +7,7 @@ import { marked } from "marked";
 import { splitAtPrimeiraSecao } from "../lib/cta/placement";
 import {
   ARTIGOS_COM_CALCULADORA_CORDA, MET_DESCANSO, RITMOS, TREINOS, blocosValidos, calcula, descansoValido, kcalPor100Saltos,
-  kcalPorMinuto, kcalSeFosseContinuo, kgPorMes, pesoValido, pulandoValido, ritmo, ritmoPelaContagem, tabelaTreinos,
+  kcalPorMinuto, kcalSeFosseContinuo, descansoEfetivo, parseNumero, MINUTOS_PULANDO_ALERTA, kgPorMes, pesoValido, pulandoValido, ritmo, ritmoPelaContagem, tabelaTreinos,
 } from "../lib/corda";
 import { ARTIGOS_COM_LINK_ATIVIDADES, ATIVIDADES } from "../lib/atividades";
 import { CANONICA } from "../lib/ferramentas/canonica";
@@ -98,6 +98,16 @@ const titulo = pag.match(/title: "([^"]+)"/)![1];
 const desc = pag.match(/description:\s*\n?\s*"([^"]+)"/)![1];
 ok(`título entre 45 e 58 (${titulo.length})`, titulo.length >= 45 && titulo.length <= 58);
 ok(`descrição entre 130 e 155 (${desc.length})`, desc.length >= 130 && desc.length <= 155);
+
+console.log("\nCORREÇÕES DA AUDITORIA DE 27/11/2026 (travadas)");
+ok("descanso vazio com 1 bloco vale 0", descansoEfetivo("", 1, parseNumero) === 0);
+ok("descanso vazio com 10 blocos continua faltando", descansoEfetivo("", 10, parseNumero) === null);
+ok("descanso digitado é lido normal", descansoEfetivo("45", 10, parseNumero) === 45);
+ok("tela avisa quando falta o descanso", /Falta o descanso entre os blocos/.test(comp));
+ok("alerta de volume acima de 1 h pulando", MINUTOS_PULANDO_ALERTA === 60 && /resultado\.minutosPulando > MINUTOS_PULANDO_ALERTA/.test(comp));
+ok("mensagem de limite com ponto de milhar (1.800)", /int\(PULANDO_MAX\)/.test(comp));
+
+ok("FAQ diz de onde vem a corrida a 10 km/h", /equação da ACSM, a mesma da calculadora de corrida/.test(readFileSync("app/ferramentas/calculadora-calorias-pular-corda/page.tsx", "utf8")));
 
 console.log(`\n${falhas === 0 ? "TUDO OK" : `${falhas} FALHA(S)`}\n`);
 process.exit(falhas === 0 ? 0 : 1);

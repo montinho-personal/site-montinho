@@ -48,7 +48,10 @@ import {
   tabelaPorTempo,
   velocidadeMedida,
   velocidadeValida,
+  origemDoMet,
+  parseInteiro,
 } from "../lib/caminhada";
+import { formataTempo as formataTempoAud } from "../lib/polichinelo";
 import { ARTIGOS_COM_CALCULADORA_TDEE } from "../lib/tdee";
 import { ARTIGOS_COM_CALCULADORA_FC, ARTIGOS_COM_LINK_FC } from "../lib/fc";
 import { CANONICA } from "../lib/ferramentas/canonica";
@@ -227,6 +230,22 @@ ok("a simulação de 1 kg vem com o aviso", /NÃO significa/.test(tool));
 ok("a página diz que os números são brutos", /brutos/.test(tool));
 ok("a página linka os artigos do cluster",
   /quanto-tempo-de-esteira-para-emagrecer/.test(tool) && /quanto-tempo-de-caminhada-por-dia/.test(tool) && /10-mil-passos-por-dia-emagrece/.test(tool));
+
+console.log("\nCORREÇÕES DA AUDITORIA DE 27/11/2026 (travadas)");
+const compCam = readFileSync("components/caminhada/CalculadoraCaminhada.tsx", "utf8");
+ok("tempo na virada da hora: 119,6 min é '2 h', não '1 h 60 min'", formataTempoAud(119.6) === "2 h" && formataTempoAud(59.6) === "1 h" && formataTempoAud(125.2) === "2 h 5 min");
+ok("tempo abaixo de 1 min que arredonda para 60 s vira '1 minuto'", formataTempoAud(0.999) === "1 minuto" && formataTempoAud(0.5) === "30 s");
+ok("metodologia: 6 km/h cita a faixa de 6 km/h, não a do botão marcado", origemDoMet(6).includes("5,6 a 6,3 km/h"));
+ok("metodologia: 3 km/h diz que o valor fica preso na ponta, não 'interpolado'", /fica igual, sem interpolar/.test(origemDoMet(3)) && !/interpolado/.test(origemDoMet(3)));
+ok("metodologia: 4,5 km/h é interpolado", /interpolado/.test(origemDoMet(4.5)));
+ok("kcal com separador de milhar no card, no compartilhar e no líquido", (compCam.match(/arredondaKcal\([^)]*\)\)?\.toLocaleString\("pt-BR"\)/g) ?? []).length >= 4);
+ok("modo passos mostra a cadência, não uma distância que a página diz não calcular", /Cadência usada/.test(compCam));
+
+ok("passos com ponto ou espaço de milhar: '10.000' e '10 000' viram 10000", parseInteiro("10.000") === 10000 && parseInteiro("10 000") === 10000 && parseInteiro("1.500") === 1500);
+ok("campo inteiro continua aceitando o resto", parseInteiro("7500") === 7500 && parseInteiro("1.5") === 1.5 && parseInteiro("abc") === null && parseInteiro("") === null);
+ok("passos e meta usam parseInteiro", /parseInteiro\(passosTexto\)/.test(compCam) && /parseInteiro\(kcalTexto\)/.test(compCam));
+
+ok("velocidade digitada inválida esconde o resultado (não mostra o do ritmo)", /if \(!pesoOk \|\| velocidadeInvalida\) return null/.test(compCam));
 
 console.log(`\n${falhas === 0 ? "TUDO OK" : `${falhas} FALHA(S)`}\n`);
 process.exit(falhas === 0 ? 0 : 1);
