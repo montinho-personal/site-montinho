@@ -86,14 +86,19 @@ ok("a cadência moderada é ~100 passos/min (Tudor-Locke)", MOD.cadencia === 100
 ok("a cadência cresce com o ritmo", RITMOS.every((r, i) => i === 0 || r.cadencia > RITMOS[i - 1].cadencia));
 
 // ─── 2 ──────────────────────────────────────────────────────────────────────
-bloco("2. MET NO PLANO: MEDIDO NOS PONTOS, INTERPOLADO ENTRE ELES");
+bloco("2. MET NO PLANO: O DA FAIXA DO COMPÊNDIO 2024, SEM INTERPOLAR (27/11/2026)");
 
 for (const r of RITMOS) ok(`a ${r.velocidade} km/h devolve exatamente ${r.met}`, metNoPlano(r.velocidade) === r.met);
-ok("entre 5 e 6 km/h fica entre 3,8 e 4,8", metNoPlano(5.5) > 3.8 && metNoPlano(5.5) < 4.8);
-ok("5,5 km/h é o meio: 4,3", perto(metNoPlano(5.5), 4.3, 0.0001));
-ok("abaixo de 4 km/h segura no 3,0 (não extrapola para baixo)", metNoPlano(3) === 3.0);
-ok("acima de 6,5 km/h segura no 5,5 (corrida é outra equação)", metNoPlano(7) === 5.5);
-ok("os pontos medidos são reconhecidos", velocidadeMedida(5) && !velocidadeMedida(5.5));
+// Faixas em km/h a partir do Compêndio em mph (17151, 17152, 17170, 17190, 17200, 17220).
+const casosFaixa: [number, number][] = [
+  [3, 2.3], [3.1, 2.3], [3.2, 2.8], [3.8, 2.8], [3.9, 3.0], [4, 3.0], [4.4, 3.0],
+  [4.5, 3.8], [4.8, 3.8], [5.5, 3.8], [5.6, 4.8], [6.3, 4.8], [6.4, 5.5], [7, 5.5],
+];
+for (const [v, met] of casosFaixa) ok(`${v} km/h usa ${met} METs`, metNoPlano(v) === met, `deu ${metNoPlano(v)}`);
+ok("4,8 km/h (12-3-30) é 3,8, como o botão Moderado (a interpolação dava 3,6)", metNoPlano(4.8) === MOD.met);
+ok("acima de 7 km/h segura no 5,5 (corrida é outra equação)", metNoPlano(7.5) === 5.5);
+ok("velocidade com mais casas cai na faixa do valor arredondado (5,55 → 5,6)", metNoPlano(5.55) === 4.8);
+ok("os pontos dos botões são reconhecidos", velocidadeMedida(5) && !velocidadeMedida(5.5));
 
 // ─── 3 ──────────────────────────────────────────────────────────────────────
 bloco("3. A INCLINAÇÃO É O TERMO VERTICAL DA ACSM");
@@ -170,7 +175,7 @@ const tr = tabelaPorRitmo(70, 30);
 ok("o gasto cresce com o ritmo", tr.every((l, i) => i === 0 || l.kcal > tr[i - 1].kcal));
 const ti = tabelaPorInclinacao(70, 30, 4.8);
 ok("o gasto cresce com a inclinação", ti.every((l, i) => i === 0 || l.kcal > ti[i - 1].kcal));
-ok("a linha de 0% é o plano", ti[0].inclinacao === 0 && perto(ti[0].met, 3.6, 0.05));
+ok("a linha de 0% é o plano (3,8 a 4,8 km/h)", ti[0].inclinacao === 0 && perto(ti[0].met, 3.8, 0.0001));
 const umQuilo = simulacaoUmQuilo(70, 5, 0, 100);
 ok("1 kg de gordura em caminhada moderada leva mais de 24 h (para ninguém tentar)", umQuilo.minutos > 24 * 60);
 
@@ -236,8 +241,9 @@ const compCam = readFileSync("components/caminhada/CalculadoraCaminhada.tsx", "u
 ok("tempo na virada da hora: 119,6 min é '2 h', não '1 h 60 min'", formataTempoAud(119.6) === "2 h" && formataTempoAud(59.6) === "1 h" && formataTempoAud(125.2) === "2 h 5 min");
 ok("tempo abaixo de 1 min que arredonda para 60 s vira '1 minuto'", formataTempoAud(0.999) === "1 minuto" && formataTempoAud(0.5) === "30 s");
 ok("metodologia: 6 km/h cita a faixa de 6 km/h, não a do botão marcado", origemDoMet(6).includes("5,6 a 6,3 km/h"));
-ok("metodologia: 3 km/h diz que o valor fica preso na ponta, não 'interpolado'", /fica igual, sem interpolar/.test(origemDoMet(3)) && !/interpolado/.test(origemDoMet(3)));
-ok("metodologia: 4,5 km/h é interpolado", /interpolado/.test(origemDoMet(4.5)));
+ok("metodologia: 3 km/h cita a faixa de menos de 3,2 km/h", origemDoMet(3).includes("menos de 3,2 km/h") && !/interpol/.test(origemDoMet(3)));
+ok("metodologia: 4,8 km/h cita 4,5 a 5,5 km/h", origemDoMet(4.8).includes("4,5 a 5,5 km/h"));
+ok("12-3-30 para 70 kg: 320 kcal (plano 140)", arredondaKcal(deTempo(30, 70, 4.8, 12, 100).kcal) === 320 && arredondaKcal(deTempo(30, 70, 4.8, 0, 100).kcal) === 140);
 ok("kcal com separador de milhar no card, no compartilhar e no líquido", (compCam.match(/arredondaKcal\([^)]*\)\)?\.toLocaleString\("pt-BR"\)/g) ?? []).length >= 4);
 ok("modo passos mostra a cadência, não uma distância que a página diz não calcular", /Cadência usada/.test(compCam));
 

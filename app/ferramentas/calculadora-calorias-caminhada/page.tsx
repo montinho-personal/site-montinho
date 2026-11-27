@@ -560,9 +560,11 @@ export default function CalculadoraCaminhadaPage() {
             </div>
             <p className="text-gray-300 leading-relaxed mb-4">
               Os valores de MET no plano vêm do {FONTE_COMPENDIO_CAMINHADA.rotuloCurto}, que{" "}
-              {FONTE_COMPENDIO_CAMINHADA.resumo} Entre uma faixa e outra a calculadora{" "}
-              <strong className="text-white">interpola</strong>, e diz isso na metodologia do resultado — o
-              Compêndio mediu faixas, não cada décimo de km/h, e fingir que mediu seria inventar precisão.
+              {FONTE_COMPENDIO_CAMINHADA.resumo} Na esteira, a velocidade digitada recebe o valor da{" "}
+              <strong className="text-white">faixa do Compêndio em que cai</strong>, sem interpolar: o Compêndio
+              mediu faixas, não cada décimo de km/h. Por isso o gasto dá um salto na virada de uma faixa para
+              outra (de 5,5 para 5,6 km/h, por exemplo), e abaixo de 3,9 km/h o valor é menor: 2,8 METs de 3,2 a
+              3,8 km/h e 2,3 abaixo de 3,2 km/h.
             </p>
             <div className="overflow-x-auto mb-4">
               <table className="w-full text-sm border-collapse">
