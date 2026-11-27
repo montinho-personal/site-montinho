@@ -348,10 +348,18 @@ cobre e que tem resultado (corrida, Hyrox, luta) ganha uma página
 indexada quando a busca explodir no dia. Modelo: `resultado-maratona-de-brasilia-2026`
 e `resultado-sao-silvestre-2026`.
 
-- Antes do evento a página já é útil: data e local, resultado da edição
-  anterior como referência, recorde, como consultar o resultado individual
-  e link para os guias da prova. Os campos do resultado ficam como
-  "aguardando a prova (data)", sem palpite nem favorito sem fonte.
+- **Vale para todo evento com resultado que o site cobre** (reforçado pelo
+  Montinho em 27/11/2026): corrida, Hyrox, UFC e qualquer outra luta ou
+  prova. Ao saber do evento, a página de resultado é criada junto, sem
+  esperar pedido.
+- **O artigo sai completo antes do evento**, não um rascunho: data, local,
+  horários de Brasília, onde assistir ou acompanhar, card ou percurso
+  completo em tabela com a coluna de resultado, os brasileiros, a edição
+  anterior ou o recorde quando houver, como consultar o resultado
+  individual, FAQ, "Não se compare", fontes e capa no padrão. O único
+  aviso é que a página **será atualizada assim que sair o resultado**; os
+  campos do resultado ficam como "aguardando o evento (data)", sem palpite
+  nem favorito sem fonte.
 - No dia, uma tarefa agendada (one-shot, criada junto com a página)
   preenche vencedores e tempos com fonte oficial ou dois veículos, troca o
   aviso do topo, atualiza o FAQ e o `updatedAt`. Classificação ainda
